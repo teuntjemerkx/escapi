@@ -207,7 +207,7 @@ function HoeWerktHet({ sluit }: { sluit: () => void }) {
           ))}
         </ol>
         <p className="begin-besturing">
-          Lopen met <kbd>W</kbd> <kbd>A</kbd> <kbd>S</kbd> <kbd>D</kbd> of de pijltjes, rondkijken door te slepen. Op een tablet tik je gewoon op de grond.
+          Lopen met <kbd>W</kbd> <kbd>A</kbd> <kbd>S</kbd> <kbd>D</kbd>. Klik in beeld en kijk rond met de muis. Kijk naar een opdracht en klik of druk <kbd>E</kbd> om hem te openen. Op een tablet tik je.
         </p>
       </div>
     </div>

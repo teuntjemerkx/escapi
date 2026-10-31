@@ -686,13 +686,13 @@ function Besturing() {
   return (
     <div className="uitleg-rij">
       <div>
-        <Footprints size={24} /> Lopen: W A S D · draaien: Q E of pijltjes
+        <Footprints size={24} /> Lopen: W A S D · draaien: muis of pijltjes
       </div>
       <div>
-        <Move3d size={24} /> Sleep om rond te kijken: de muis blijft dan vast. Esc = muis los (voor de knoppen)
+        <Move3d size={24} /> Klik in beeld: de muis zit vast en je kijkt rond. Esc = muis los (voor de knoppen)
       </div>
       <div>
-        <Target size={24} /> Mik met het vizier en klik, of tik op een icoon
+        <Target size={24} /> Kijk naar een opdracht en klik of druk E om hem te openen
       </div>
       <div>
         <Keyboard size={24} /> Sneltoetsen: K = klusboek · M = wereldkaart · H = hulp

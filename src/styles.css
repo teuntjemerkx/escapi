@@ -487,3 +487,14 @@ body.muis-vast .hud-rechts { opacity: 0.5; transition: opacity 0.3s ease; }
 .vast-melding.weg { opacity: 0; transform: translate(-50%, 8px); }
 .vast-melding kbd, .vast-toetsen kbd { display: inline-block; min-width: 22px; padding: 0 6px; border-radius: 6px; border: 1px solid rgba(255, 255, 255, 0.3); background: rgba(255, 255, 255, 0.08); font: 600 13px/1.6 var(--font); }
 .vast-toetsen { font-size: 13px; color: var(--tekst-zacht); display: inline-flex; gap: 6px; align-items: center; flex-wrap: wrap; justify-content: center; }
+
+/* richten: wat in je vizier staat, open je met één klik of E */
+.vizier.gericht { width: 14px; height: 14px; margin: -7px 0 0 -7px; background: transparent; border: 2px solid var(--accent); box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.35), 0 0 14px rgba(255, 138, 61, 0.6); transition: all 0.15s ease; }
+.vizier.dicht { background: rgba(255, 255, 255, 0.5); }
+.richt-melding { position: fixed; left: 50%; top: calc(50% + 46px); transform: translateX(-50%); z-index: 15; display: inline-flex; align-items: center; gap: 10px; padding: 8px 16px 8px 8px; border-radius: 999px; border: 1px solid var(--glas-rand); background: var(--glas-dik); -webkit-backdrop-filter: var(--glas-blur); backdrop-filter: var(--glas-blur); color: var(--tekst); font: 500 15px var(--font); cursor: pointer; box-shadow: var(--glas-schaduw); max-width: calc(100vw - 32px); animation: richt-in 0.18s ease; }
+.richt-melding kbd { display: grid; place-items: center; width: 30px; height: 30px; border-radius: 8px; background: var(--accent); color: var(--accent-donker); font: 700 15px var(--font); }
+.richt-melding .richt-of { color: var(--tekst-stil); }
+.richt-melding strong { font-weight: 600; }
+.richt-melding.dicht { padding-left: 14px; color: var(--tekst-zacht); }
+.richt-slot { color: var(--bijna); font-size: 12px; }
+@keyframes richt-in { from { opacity: 0; transform: translate(-50%, 6px); } to { opacity: 1; transform: translate(-50%, 0); } }

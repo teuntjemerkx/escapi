@@ -1,7 +1,7 @@
 // De motor van elke wereld: stations, iconen boven de stations, kavels, kluizen, lampjes,
 // klikken op de grond en de poort met sleutelgaten en eindcheck-lampjes.
 import { Billboard } from '@react-three/drei';
-import { useFrame } from '@react-three/fiber';
+import { useFrame, useThree } from '@react-three/fiber';
 import { animate } from 'animejs';
 import { useEffect, useMemo, useRef, useState } from 'react';
 import * as THREE from 'three';
@@ -22,6 +22,7 @@ import { wisAtlas } from './atlas';
 import { cam, speler, useSpel } from './store';
 import { Bordje, FONT, useTextuur } from './tekst';
 import { blokken, cijferVan, codesVan, isKeuze, isKlaar, isOpen, klusVan, naKluis, volgendDoel } from './voortgang';
+import { extraDoelen, richt, useRicht } from './richten';
 
 type V2 = [number, number];
 
@@ -292,6 +293,69 @@ function DoelRand({ w, d, y, kleur = '#ff8a3d' }: { w: number; d: number; y: num
  */
 const MAX_ICONEN = 6;
 const iconRang = new Map<string, number>();
+
+type Gericht = { id: string; titel: string; dicht: string | null; actie: () => void };
+
+/**
+ * Richten: welk station (of andere knop, zoals de codezuil) staat nu in je vizier en is dichtbij genoeg?
+ * Dat open je met één klik, met E of met Enter (zie invoer.ts en richten.ts). Geen muur ertussen.
+ */
+function Richten() {
+  const camera = useThree((s) => s.camera);
+  const n = useRef(0);
+  const vooruit = useMemo(() => new THREE.Vector3(), []);
+  useFrame(() => {
+    if (++n.current % 3 !== 0) return;
+    const s = useSpel.getState();
+    const fp = s.cameraStand === 'eerste' && s.modus === 'lopen' && !s.kaart;
+    let beste: Gericht | null = null;
+    if (fp) {
+      camera.getWorldDirection(vooruit);
+      const c = camera.position;
+      let score = Infinity;
+      const kijk = (id: string, x: number, y: number, z: number, bereik: number, v: number, titel: string, dicht: string | null, actie: () => void) => {
+        if (v !== speler.verdieping) return;
+        const dx = x - c.x;
+        const dy = y - c.y;
+        const dz = z - c.z;
+        const dh = Math.hypot(dx, dz);
+        if (dh > bereik) return;
+        const len = Math.hypot(dx, dy, dz) || 1;
+        const hoek = Math.acos(Math.min(1, (dx * vooruit.x + dy * vooruit.y + dz * vooruit.z) / len));
+        // dichtbij mag je wat ruimer mikken
+        if (hoek > (dh < 1.8 ? 0.6 : 0.34)) return;
+        const sc = hoek + dh * 0.035;
+        if (sc >= score) return;
+        if (!lijnVrij(c.x, c.z, x, z, 0.05, true, v)) return;
+        score = sc;
+        beste = { id, titel, dicht, actie };
+      };
+      for (const st of stationsVan()) {
+        const voet = st.tafel ? Math.max(...st.tafel) / 2 : st.botser ? Math.max(...st.botser) / 2 : st.grootte * 0.4;
+        const bereik = st.kavel ? Math.max(4.2, Math.max(...st.kavel) * 0.6 + 2) : Math.max(3.6, voet + 2.8);
+        const open = isOpen(st, s.fase, s.docent, s.voortgang);
+        const dicht = open ? null : st.rol === 'kluis' ? 'gaat open bij "Zelf doen"' : 'nog op slot';
+        kijk(st.id, st.pos[0], hoogteVan(st) + Math.min(1.1, st.grootte * 0.32), st.pos[1], bereik, st.verdieping ?? 0, st.titel, dicht, () => gaNaar(st));
+      }
+      for (const [id, d] of extraDoelen) kijk(id, d.pos.x, d.pos.y, d.pos.z, d.bereik, d.v, d.titel, null, d.actie);
+    }
+    const b = beste as Gericht | null;
+    richt.id = b?.id ?? null;
+    richt.actie = b?.actie ?? null;
+    const nu = useRicht.getState().doel;
+    if ((nu?.id ?? null) !== (b?.id ?? null) || (nu && b && nu.dicht !== b.dicht)) useRicht.setState({ doel: b ? { id: b.id, titel: b.titel, dicht: b.dicht } : null });
+  });
+  useEffect(
+    () => () => {
+      richt.id = null;
+      richt.actie = null;
+      useRicht.setState({ doel: null });
+    },
+    [],
+  );
+  return null;
+}
+
 function IconRegie() {
   const n = useRef(0);
   useFrame(() => {
@@ -342,7 +406,8 @@ function Marker({ st, doel }: { st: Station; doel: boolean }) {
     }
     if (ref.current) {
       ref.current.position.y = y + Math.sin(t * 2 + st.pos[0]) * 0.1;
-      const s = doel ? 1.4 + Math.sin(t * 4) * 0.07 : soort === 'slot' ? 0.62 : soort === 'code' ? 1.12 : 1;
+      const gericht = richt.id === st.id;
+      const s = (doel ? 1.4 + Math.sin(t * 4) * 0.07 : soort === 'slot' ? 0.62 : soort === 'code' ? 1.12 : 1) * (gericht ? 1.25 : 1);
       ref.current.scale.setScalar(s);
     }
     if (ring.current) {
@@ -446,6 +511,22 @@ function PoortGebouw({ open }: { open: number }) {
 /** Zuil bij de poort: toont of het eindslot nog dicht is. */
 function PoortZuil({ doel, pos }: { doel: boolean; pos: [number, number, number] }) {
   const fase = useSpel((s) => s.fase);
+  const zuil = useRef<THREE.Group>(null);
+  const gebruik = () => {
+    if (useSpel.getState().modus !== 'lopen') return;
+    geluid('klik');
+    const s = useSpel.getState();
+    if (s.fase === 'klaar') return;
+    s.setKaart('poort');
+  };
+  // de zuil kun je ook richten en met één klik of E gebruiken (zie Richten)
+  useFrame(() => {
+    if (!zuil.current || extraDoelen.has('poortzuil')) return;
+    const p = zuil.current.getWorldPosition(new THREE.Vector3());
+    p.y += 1;
+    extraDoelen.set('poortzuil', { pos: p, titel: 'Codeslot van de uitgang', actie: gebruik, v: 0, bereik: 3.4 });
+  });
+  useEffect(() => () => void extraDoelen.delete('poortzuil'), []);
   const tex = useTextuur(
     0.8,
     0.5,
@@ -465,14 +546,12 @@ function PoortZuil({ doel, pos }: { doel: boolean; pos: [number, number, number]
   );
   return (
     <group
+      ref={zuil}
       position={pos}
       onClick={(e) => {
         e.stopPropagation();
-        if (wasSlepen() || useSpel.getState().modus !== 'lopen') return;
-        geluid('klik');
-        const s = useSpel.getState();
-        if (s.fase === 'klaar') return;
-        s.setKaart('poort');
+        if (wasSlepen()) return;
+        gebruik();
       }}
     >
       <Blok size={[0.8, 1.3, 0.8]} pos={[0, 0.65, 0]} color="#3a4442" r={0.1} />
@@ -660,6 +739,7 @@ export function WereldScene() {
       </Statisch>
       {plan && <GebouwLevend plan={verdiepingPlan(plan, 0)} />}
       <IconRegie />
+      <Richten />
       {/* andere verdiepingen (ook een kelder, verdieping −1): elk een eigen groep */}
       {plan &&
         vs

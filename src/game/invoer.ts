@@ -1,9 +1,10 @@
-// Besturing: toetsenbord (WASD + pijltjes, Q/E draaien) en rondkijken met de muis of je vinger.
+// Besturing: toetsenbord (WASD + pijltjes) en rondkijken met de muis of je vinger.
 //
-// Door je eigen ogen (eerste persoon) werkt het zoals in moderne games: begin je te slepen om rond te kijken, dan
-// wordt de muis "vastgezet" (pointer lock). Daarna kijk je rond door alleen de muis te bewegen; klikken kiest wat er
-// midden in beeld staat (het vizier). Esc maakt de muis weer vrij. Openen van een opdracht maakt hem ook vrij.
+// Door je eigen ogen (eerste persoon) werkt het zoals in moderne games: één klik in beeld zet de muis "vast"
+// (pointer lock) en daarna kijk je rond door alleen de muis te bewegen. Staat er een opdracht in je vizier, dan
+// opent die klik (of E, of Enter) hem meteen: zie richten.ts. Esc maakt de muis vrij (voor de knoppen bovenin).
 // Alle kijkbewegingen gaan via `kijk` en worden in Speler.tsx zacht verwerkt (geen schokken).
+import { gebruikRicht, richt } from './richten';
 import { cam, useSpel } from './store';
 
 export const toetsen = new Set<string>();
@@ -43,6 +44,8 @@ export function koppelInvoer(canvas: HTMLElement) {
     laatsteX = e.clientX;
     laatsteY = e.clientY;
     actieveId = e.pointerId;
+    // één klik in beeld zet de muis vast (je hoeft niet eerst te slepen)
+    if (e.pointerType === 'mouse' && e.button === 0 && eersteLopen()) vergrendel();
   };
   const beweeg = (e: PointerEvent) => {
     if (muisVast.aan) return; // dan regelt `vastBeweeg` het
@@ -79,7 +82,19 @@ export function koppelInvoer(canvas: HTMLElement) {
     e.stopImmediatePropagation();
     e.preventDefault();
     sleepAfstand = 0;
+    // staat er een opdracht in je vizier? Dan opent de klik die (meteen, zonder Esc)
+    if (richt.actie) {
+      if (e.type === 'click') gebruikRicht();
+      return;
+    }
     midden(e.type, e);
+  };
+  // Muis (nog) niet vast, of tikken op een tablet: een klik of tik in beeld opent ook wat in je vizier staat.
+  const vrijeKlik = (e: MouseEvent) => {
+    if (muisVast.aan || !e.isTrusted || wasSlepen() || !eersteLopen() || !richt.actie) return;
+    e.stopImmediatePropagation();
+    e.preventDefault();
+    gebruikRicht();
   };
   const wiel = (e: WheelEvent) => {
     if (useSpel.getState().modus !== 'lopen') return;
@@ -98,6 +113,7 @@ export function koppelInvoer(canvas: HTMLElement) {
   canvas.addEventListener('pointerdown', vang as EventListener, true);
   canvas.addEventListener('pointerup', vang as EventListener, true);
   canvas.addEventListener('click', vang, true);
+  canvas.addEventListener('click', vrijeKlik, true);
   canvas.addEventListener('pointerdown', neer);
   window.addEventListener('pointermove', beweeg);
   document.addEventListener('mousemove', vastBeweeg);
@@ -109,7 +125,15 @@ export function koppelInvoer(canvas: HTMLElement) {
   const kd = (e: KeyboardEvent) => {
     const doel = e.target as HTMLElement | null;
     if (doel && (doel.tagName === 'INPUT' || doel.tagName === 'TEXTAREA' || doel.isContentEditable)) return;
-    toetsen.add(e.key.toLowerCase());
+    const k = e.key.toLowerCase();
+    // E of Enter: gebruik wat in je vizier staat
+    if ((k === 'e' || k === 'enter') && !e.repeat && eersteLopen() && richt.actie) {
+      if (doel && doel.tagName === 'BUTTON') return;
+      e.preventDefault();
+      gebruikRicht();
+      return;
+    }
+    toetsen.add(k);
   };
   const ku = (e: KeyboardEvent) => toetsen.delete(e.key.toLowerCase());
   const blur = () => toetsen.clear();
@@ -122,6 +146,7 @@ export function koppelInvoer(canvas: HTMLElement) {
     canvas.removeEventListener('pointerdown', vang as EventListener, true);
     canvas.removeEventListener('pointerup', vang as EventListener, true);
     canvas.removeEventListener('click', vang, true);
+    canvas.removeEventListener('click', vrijeKlik, true);
     canvas.removeEventListener('pointerdown', neer);
     window.removeEventListener('pointermove', beweeg);
     document.removeEventListener('mousemove', vastBeweeg);
@@ -147,11 +172,11 @@ export function richtingUitToetsen(): [number, number] {
   return [x, z];
 }
 
-/** Draaien met de toetsen (door je eigen ogen): pijltje links/rechts of Q/E. −1 = links, 1 = rechts. */
+/** Draaien met de toetsen (door je eigen ogen): pijltje links/rechts. −1 = links, 1 = rechts. (E is nu "gebruiken".) */
 export function draaiUitToetsen(): number {
   if (useSpel.getState().cameraStand !== 'eerste') return 0;
   let r = 0;
-  if (toetsen.has('arrowleft') || toetsen.has('q')) r -= 1;
-  if (toetsen.has('arrowright') || toetsen.has('e')) r += 1;
+  if (toetsen.has('arrowleft')) r -= 1;
+  if (toetsen.has('arrowright')) r += 1;
   return r;
 }

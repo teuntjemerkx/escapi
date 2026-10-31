@@ -4,6 +4,7 @@ import * as THREE from 'three';
 import { RoomEnvironment } from 'three/examples/jsm/environments/RoomEnvironment.js';
 import { CameraKoppeling } from './game/inspectie';
 import { koppelInvoer, muisVast } from './game/invoer';
+import { gebruikRicht, useRicht } from './game/richten';
 import { P } from './game/palette';
 import { Regie } from './game/Regie';
 import { Speler } from './game/Speler';
@@ -342,14 +343,36 @@ function Vizier() {
       window.removeEventListener('muisvast', w);
     };
   }, []);
+  const doel = useRicht((s) => s.doel);
   if (!fp) return null;
   return (
     <>
-      {vast && <div className="vizier" aria-hidden />}
+      {vast && <div className={`vizier${doel ? (doel.dicht ? ' dicht' : ' gericht') : ''}`} aria-hidden />}
+      {doel && (
+        <button className={`richt-melding${doel.dicht ? ' dicht' : ''}`} onClick={() => gebruikRicht()} aria-label={doel.dicht ? `${doel.titel}: ${doel.dicht}` : `Open ${doel.titel}`}>
+          {doel.dicht ? (
+            <>
+              <span className="richt-slot" aria-hidden>
+                ●
+              </span>
+              <span>
+                <strong>{doel.titel}</strong> · {doel.dicht}
+              </span>
+            </>
+          ) : (
+            <>
+              <kbd>E</kbd>
+              <span>
+                <span className="richt-of">of klik</span> <strong>{doel.titel}</strong>
+              </span>
+            </>
+          )}
+        </button>
+      )}
       {vast && (
         <div className={`vast-melding${melding ? '' : ' weg'}`} role="status">
           <span>
-            De muis zit vast: je kijkt rond door te bewegen. Druk op <kbd>Esc</kbd> om op de knoppen te klikken.
+            Kijk rond met de muis. Kijk naar een opdracht en klik (of druk <kbd>E</kbd>) om hem te openen. <kbd>Esc</kbd> = muis los voor de knoppen.
           </span>
           <span className="vast-toetsen">
             <kbd>K</kbd> klusboek <kbd>M</kbd> wereldkaart <kbd>H</kbd> hulp
@@ -357,7 +380,7 @@ function Vizier() {
         </div>
       )}
       <div className={`kijk-uitleg${vast || geleerd ? ' klein' : ''}`} aria-live="polite">
-        {vast ? 'Klik = kies wat in het midden staat · Esc = muis los voor de knoppen' : 'Sleep met de muis om rond te kijken · WASD = lopen · Q/E = draaien'}
+        {vast ? 'Klik of E = openen wat je ziet · Esc = muis los voor de knoppen' : 'Klik in beeld om rond te kijken · WASD = lopen'}
       </div>
     </>
   );
