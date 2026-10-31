@@ -1,16 +1,15 @@
-// Frank: het grote, groene (en heel lieve) monster van het Spookkasteel. Hij loopt door het kasteel, zegt gedag
-// en legt dingen uit (waar je heen moet, hoe een som werkt, een rekenweetje over de kamer). Zit je vast bij een
-// opdracht, dan komt hij naar je toe om te helpen. Je kunt ook op hem tikken.
+// Frank: overdag de tuinman van Slot Maansteyn, 's nachts iets anders. Hij dwaalt door het slot en jaagt op je.
+// Alleen in zijn tuin is hij rustig: daar (en als je echt vastzit) legt hij uit hoe een som werkt.
 //
-// En heel soms laat hij je schrikken. Dat regelt een kleine regisseur (zoals in horrorgames):
-// - Een spanningsmeter loopt op terwijl je rondloopt: sneller in het donker en als Frank in de buurt is.
-//   Na een fout antwoord of een vraag krijg je eerst rust; na elk schrikmoment duurt het langer tot het volgende.
-// - Is de meter vol, dan kiest hij een manier die nu past (en niet twee keer dezelfde achter elkaar):
-//   • om de hoek: hij wacht naast een deuropening op je route en springt tevoorschijn als je erdoor loopt;
-//   • achter je: sta je even stil, dan sluipt hij achter je (je hoort de vloer kraken) tot je je omdraait;
-//   • lamp uit: je zaklamp valt even uit, en als hij weer aangaat, staat Frank voor je.
-// - Zie je hem al voordat hij kan schrikken? Dan is hij betrapt en lacht hij erom.
-// Na elk schrikmoment lacht hij en geeft hij als goedmakertje een tip. De docent kan schrikken uitzetten.
+// Hoe hij bang maakt (op basis van onderzoek naar horrorgames, zie docs/ontwerp/horror-wereld2.md):
+// - Een regisseur houdt de spanning bij: sneller in het donker en als Frank in de buurt is. Na een fout antwoord of
+//   een vraag krijg je eerst rust. Echte schrikmomenten zijn zeldzaam (anders went het).
+// - Daartussen zie je hem: ver weg in een gang, stil, starend. Schijn je erop of kom je dichterbij, dan is hij weg.
+// - Is de spanning hoog, dan slaat hij toe: om de hoek, achter je als je stilstaat, of als je lamp uitvalt.
+// - Na een schrikmoment zit hij soms achter je aan. Ren naar het licht of naar zijn tuin. Pakt hij je, dan valt je lamp
+//   even uit en is hij weer weg (je verliest niets).
+// Geluid (voetstappen, adem, gefluister, hartslag) en beeld (korrel, kleurranden) komen uit horror.tsx.
+// De docent kan schrikken uitzetten: dan blijft alleen de sfeer.
 import { Html } from '@react-three/drei';
 import { useFrame, useThree, type ThreeEvent } from '@react-three/fiber';
 import { useEffect, useMemo, useRef, useState } from 'react';
@@ -27,10 +26,11 @@ import { huidig, stationsVan } from '../werelden';
 import type { Plattegrond } from '../werelden/types';
 import { FrankLijf, leegLeden, zetHouding, type Houding } from './frankModel';
 import { FRANK_HOI, frankTip, uitlegVoor } from './frankTips';
+import { frankNu, horror } from './horror';
 
 type V2 = [number, number];
 type Soort = 'hoek' | 'achter' | 'lamp';
-type Stand = 'wacht' | 'loop' | 'praat' | 'loer' | 'besluip' | 'schrik' | 'lach' | 'betrapt';
+type Stand = 'wacht' | 'loop' | 'praat' | 'loer' | 'besluip' | 'schrik' | 'lach' | 'betrapt' | 'staar' | 'jaag';
 
 /** Lievelingsplekken op de begane grond: rond zijn tuin midden op de binnenplaats (Slot Maansteyn). */
 const TUIN: V2[] = [
@@ -45,23 +45,23 @@ const TUIN: V2[] = [
  */
 const RUSTIG = new Set(['bospad', 'brug', 'poortzaal', 'uitleg', 'binnenplaats', 'walgangO', 'walgangW', 'balkon', 'uitkijk', 'kerkhof', 'bouwplaats', 'rotstrap', 'steiger']);
 
-const SCHAAL = 0.9;
+const SCHAAL = 1.0;
 /** Horizontale halve kijkhoek (als cosinus) waarbinnen je iets ziet. */
 const KIJK = Math.cos((52 * Math.PI) / 180);
-const DREMPEL_EERSTE = 60;
-const DREMPEL: V2 = [100, 170];
+const DREMPEL_EERSTE = 45;
+const DREMPEL: V2 = [55, 95];
+/** Tijd tussen twee keer dat je hem in de verte ziet staan (s). */
+const STAAR: V2 = [30, 60];
+/** Zo snel rent hij als hij achter je aan zit (jij loopt 4,6 m/s: je kunt hem ontlopen). */
+const JAAG_SNEL = 3.7;
 const RUST_NA_FOUT = 75;
 const RUST_NA_VRAAG = 12;
 
-const SCHRIK = ['BWAAAH!', 'BOEHAHAAA!', 'GRAAAUW!'];
-const LACH = ['Haha, sorry! Ik kon het niet laten.', 'Hihi, schrok je? Ik ben het maar, Frank!', 'Oeps! Niet boos zijn, hoor.'];
-const BETRAPT = [
-  'Oh! Je zag me al. Volgende keer krijg ik je!',
-  'Hé, niet stiekem kijken! Ik zat me net te verstoppen.',
-  'Verstoppertje is lastig als je zo groot bent als ik.',
-];
-const BOO_NA = ['Daar was Frank weer! Hij vindt dat zo grappig.', 'Frank toch! Gelukkig geeft hij er altijd een tip bij.', 'Ik schrok zelf ook! En ik ben een spook.'];
-const BOO_EERSTE = 'Haha, dat was Frank! Hij ziet er eng uit, maar hij is heel lief. Zit je vast? Tik op Frank, dan legt hij het uit.';
+const FLUISTER = ['Ik zie je wel…', 'Je bent niet alleen hier.', 'Tel maar mee… tot ik je vind.', 'Waarom ren je weg?', 'Ik hoor je ademen.', 'Nog even… en dan ben je van mij.'];
+const BETRAPT = ['…', 'Kijk niet zo naar me.', 'Nog niet.'];
+const BOO_NA = ['Daar was hij weer… Blijf in het licht!', 'Snel! In zijn tuin ben je veilig.', 'Ik hoor hem nog steeds…', 'Niet stilstaan. Hij komt terug.'];
+const BOO_EERSTE = 'Dat was Frank. Overdag is hij de tuinman, maar ’s nachts dwaalt hij door het slot. Alleen in zijn tuin is hij rustig: daar helpt hij je zelfs met de sommen.';
+const BOO_GEPAKT = ['Hij had je bijna! Blijf bewegen.', 'Weg hier! Naar het licht!', 'Zijn tuin! Daar ben je veilig.'];
 
 const duurVan = (t: string) => Math.min(11, Math.max(3.5, 2.5 + t.length / 14));
 const kies = <T,>(l: T[], n: number) => l[n % l.length];
@@ -102,6 +102,9 @@ function nieuweStaat() {
     hint: false,
     lunge: false,
     verschenen: false,
+    /** Wanneer hij weer in de verte mag verschijnen, en wanneer hij zijn route opnieuw zoekt tijdens de jacht. */
+    volgendeStaar: 35,
+    padTot: 0,
     // jij
     stil: 0,
     vorige: null as V2 | null,
@@ -121,6 +124,8 @@ function loopPlekken(plan: Plattegrond) {
   }
   return uit;
 }
+
+let klokNu = 0;
 
 export function FrankNPC() {
   const ref = useRef<THREE.Group>(null);
@@ -471,7 +476,32 @@ export function FrankNPC() {
     s.spanning = s.drempel * 0.45;
     s.volgendeKeer = s.klok + 20;
     s.laatsteSoort = s.soort;
-    geluid('lach');
+    horror.fluister(0, 0.05);
+  };
+  /** Weg in het donker: hij duikt later ergens anders weer op. */
+  const verdwijn = () => {
+    s.v = 0;
+    const plek = TUIN[Math.floor(Math.random() * TUIN.length)];
+    s.pos.set(plek[0], 0, plek[1]);
+    s.pad = [];
+    s.stand = 'wacht';
+    s.tot = 6 + Math.random() * 6;
+    s.naarJou = false;
+    zegFrank(null);
+  };
+  /** Ergens ver voor je, waar je hem kunt zien staan (9–16 m, in je blikveld, vrij zicht). */
+  const staarPlek = (): V2 | null => {
+    const p = speler.pos;
+    const v = speler.verdieping;
+    const basis = Math.atan2(voor.x, voor.z);
+    for (let i = 0; i < 16; i++) {
+      const a = basis + (Math.random() - 0.5) * 0.9;
+      const afst = 9 + Math.random() * 7;
+      const x = p.x + Math.sin(a) * afst;
+      const z = p.z + Math.cos(a) * afst;
+      if (goedePlek(x, z, v) && ziet(x, z)) return [x, z];
+    }
+    return null;
   };
   const praat = (t: string) => {
     s.stand = 'praat';
@@ -492,7 +522,8 @@ export function FrankNPC() {
   const klik = (e: ThreeEvent<MouseEvent>) => {
     if (wasSlepen() || useSpel.getState().modus !== 'lopen' || !ref.current?.visible) return;
     e.stopPropagation();
-    if (s.stand === 'loer' || s.stand === 'besluip') betrapt();
+    if (s.stand === 'staar') verdwijn();
+    else if (s.stand === 'loer' || s.stand === 'besluip') betrapt();
     else if ((s.stand === 'wacht' || s.stand === 'loop' || s.stand === 'praat') && s.klok > s.klikTot) {
       s.klikTot = s.klok + 3;
       praatMetHulp();
@@ -507,9 +538,10 @@ export function FrankNPC() {
     [],
   );
 
-  useFrame((_, rawDt) => {
+  useFrame(({ clock }, rawDt) => {
     const g = ref.current;
     if (!g) return;
+    klokNu = clock.getElapsedTime();
     const dt = Math.min(rawDt, 0.05);
     if (dt <= 0) return;
     s.klok += dt;
@@ -542,6 +574,15 @@ export function FrankNPC() {
     if (regie && rustig && s.klok >= s.rustTot) {
       const k = kamerOp(plan, p.x, p.z, speler.verdieping);
       s.spanning += dt * (k?.donker ? 1.5 : 1) * (afstand < 14 ? 1.6 : 1);
+    }
+    if (regie && rustig && !s.hulpNodig && s.spanning > s.drempel * 0.3 && s.spanning < s.drempel && s.klok >= s.volgendeStaar && s.klok >= s.rustTot) {
+      s.volgendeStaar = s.klok + tussen(STAAR);
+      const plek = staarPlek();
+      if (plek) {
+        zetNeer(plek[0], plek[1]);
+        s.richting = kijkNaarJou();
+        s.stand = 'staar';
+      }
     }
     if (regie && rustig && !s.hulpNodig && s.spanning >= s.drempel && s.klok >= s.volgendeKeer && s.klok >= s.rustTot) {
       // niet als je net bij een opdracht staat
@@ -585,9 +626,9 @@ export function FrankNPC() {
             const l = voorPlek();
             if (l) s.pos.set(l[0], s.pos.y, l[1]);
           }
-          geluid('brul');
-          cam.schok = 1;
-          zegFrank(kies(SCHRIK, s.aantal), 1.6);
+          horror.stinger(s.soort === 'lamp');
+          cam.schok = 1.2;
+          zegFrank(null);
           s.aantal++;
           s.spanning = 0;
           s.laatsteSoort = s.soort;
@@ -610,11 +651,20 @@ export function FrankNPC() {
           }
         }
         if (s.fase > 1.5) {
-          const t = `${kies(LACH, s.aantal)} Hier is een tip om het goed te maken. ${frankTip(s.klok)}`;
-          s.stand = 'lach';
-          s.tot = duurVan(t);
-          zegFrank(t);
-          geluid('lach');
+          // soms zit hij daarna achter je aan; anders fluistert hij iets en trekt hij zich terug in het donker
+          if (Math.random() < 0.45 && regieOK()) {
+            s.stand = 'jaag';
+            s.sinds = s.klok;
+            s.pad = [];
+            s.padTot = 0;
+            zegFrank(null);
+          } else {
+            const t = kies(FLUISTER, s.aantal);
+            s.stand = 'lach';
+            s.tot = 3.2;
+            zegFrank(t);
+            horror.fluister(0, 0.05);
+          }
         }
         break;
       }
@@ -624,11 +674,65 @@ export function FrankNPC() {
         s.tot -= dt;
         s.richting += hoekVerschil(kijkNaarJou(), s.richting) * Math.min(1, dt * 4);
         if (s.tot <= 0 || (s.stand === 'praat' && afstand > 7)) {
-          if (s.stand === 'lach' && (s.aantal === 1 || Math.random() < 0.35)) zeg(s.aantal === 1 ? BOO_EERSTE : kies(BOO_NA, s.aantal), 'melding');
+          if (s.stand === 'lach' && (s.aantal === 1 || Math.random() < 0.45)) zeg(s.aantal === 1 ? BOO_EERSTE : kies(BOO_NA, s.aantal), 'melding');
           zegFrank(null);
-          kiesDoel();
+          if (s.stand === 'praat') kiesDoel();
+          else verdwijn();
         }
         break;
+      case 'staar': {
+        // ver weg, stil, starend. Schijn je erop, kom je dichterbij of duurt het te lang: weg is hij.
+        s.richting = kijkNaarJou();
+        const lens = zaklampStaat.lens;
+        const tx = s.pos.x - lens.x;
+        const tz = s.pos.z - lens.z;
+        const ty = s.pos.y + 1.4 - lens.y;
+        const tl = Math.hypot(tx, ty, tz) || 1;
+        const beschenen = zaklampStaat.aan > 0.5 && (tx * zaklampStaat.richting.x + ty * zaklampStaat.richting.y + tz * zaklampStaat.richting.z) / tl > Math.cos(0.11);
+        if (!zelfdeVloer || !lopend || afstand < 6.5 || s.klok - s.sinds > 4.5 || (beschenen && s.klok - s.sinds > 0.35)) {
+          if (zelfdeVloer && lopend) horror.fluister(0, 0.04);
+          verdwijn();
+        }
+        break;
+      }
+      case 'jaag': {
+        // hij rent op je af; in het licht van een veilige plek, op een andere verdieping of na 9 s houdt hij op
+        s.richting = kijkNaarJou();
+        if (!zelfdeVloer || !regieOK() || s.klok - s.sinds > 9) {
+          horror.fluister(0, 0.04);
+          verdwijn();
+          break;
+        }
+        if (afstand < 1.05) {
+          // gepakt: nog één keer schrikken, de lamp valt even uit en hij is weer weg
+          horror.stinger(true);
+          cam.schok = 1.6;
+          zaklampStaat.uitvalTot = Math.max(zaklampStaat.uitvalTot, klokNu + 1.8);
+          zeg(kies(BOO_GEPAKT, s.aantal), 'melding');
+          s.spanning = 0;
+          s.volgendeKeer = s.klok + 25;
+          verdwijn();
+          break;
+        }
+        if (s.klok > s.padTot || !s.pad.length) {
+          s.pad = zoekPad(s.pos.x, s.pos.z, p.x, p.z, (x, z) => Math.hypot(x - p.x, z - p.z) < 0.9, s.v) ?? [];
+          s.padTot = s.klok + 0.5;
+        }
+        const doel = s.pad[0];
+        if (doel) {
+          const dx = doel[0] - s.pos.x;
+          const dz = doel[1] - s.pos.z;
+          const d = Math.hypot(dx, dz);
+          if (d < 0.25) s.pad.shift();
+          else {
+            const v = JAAG_SNEL * dt;
+            s.pos.x += (dx / d) * Math.min(v, d);
+            s.pos.z += (dz / d) * Math.min(v, d);
+          }
+        }
+        s.stap += dt * 9.5;
+        break;
+      }
       case 'loop': {
         const doel = s.pad[0];
         if (!doel) {
@@ -681,10 +785,14 @@ export function FrankNPC() {
       switch (s.stand) {
         case 'loop':
           return 'loop';
+        case 'jaag':
+          return 'ren';
         case 'schrik':
           return 'schrik';
+        case 'staar':
+          return 'staar';
         case 'lach':
-          return 'lach';
+          return 'staan';
         case 'loer':
         case 'besluip':
           return 'loer';
@@ -697,12 +805,21 @@ export function FrankNPC() {
       }
     })();
     zetHouding(leden.current, houding, s.klok, s.stap, dt);
+    frankNu.pos.copy(s.pos);
+    frankNu.v = s.v;
+    frankNu.stand = s.stand;
+    frankNu.zichtbaar = g.visible;
+    frankNu.loopt = (s.stand === 'loop' || s.stand === 'jaag') && !verstopt;
+    frankNu.jaagt = s.stand === 'jaag';
+    frankNu.loert = s.stand === 'loer' || s.stand === 'besluip';
     // hij kijkt je aan als je in de buurt bent
     const hoofd = leden.current.hoofd;
     if (hoofd) {
       const wil = afstand < 7 && s.stand !== 'loer' ? THREE.MathUtils.clamp(hoekVerschil(kijkNaarJou(), s.richting), -0.9, 0.9) : 0;
       hoofd.rotation.y += (wil - hoofd.rotation.y) * Math.min(1, dt * 4);
-      hoofd.rotation.z = Math.sin(s.klok * 1.3) * 0.03;
+      // staart hij je aan, dan hangt zijn hoofd scheef en schokt het af en toe
+      const scheef = s.stand === 'staar' ? 0.42 + (Math.sin(s.klok * 7.3) > 0.97 ? 0.12 : 0) : s.stand === 'lach' ? 0.25 : 0;
+      hoofd.rotation.z += (scheef + Math.sin(s.klok * 1.3) * 0.03 - hoofd.rotation.z) * Math.min(1, dt * 6);
     }
   });
 

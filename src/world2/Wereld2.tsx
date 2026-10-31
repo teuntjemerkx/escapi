@@ -501,13 +501,13 @@ export function Wereld2Levend() {
         <Schim trigger={[-14.2, 3.0, 2.2]} van={[-19, -1]} naar={[-10, 5]} />
       </Binnen>
       </OpVerdieping>
-      <Spreekplek gebied={[0, 22, 4, 8]} tekst="De brug! Onder ons ligt het meer. Daar voor ons is de poort." geluidje={null} />
-      <Spreekplek gebied={[0, 2, 15, 12]} tekst="De binnenplaats! Kijk, in het midden: de tuin van Frank, met de vijver." geluidje={null} />
-      <Spreekplek gebied={[14.5, 1, 3, 13]} tekst="Brrr... de spookgang. Blijf maar dicht bij mij!" />
-      <Spreekplek gebied={[12, 11, 7, 5]} tekst="Een trap naar toren B. Daar boven gaat de rondgang verder." geluidje="kraak" />
-      <Spreekplek gebied={[-14.25, 1, 3.5, 13]} tekst="De ertsgang. Hier rijdt de ertswagen naar de smidse." geluidje="kraak" />
-      <Spreekplek gebied={[19, 0, 5.5, 21]} tekst="Het kerkhof. Gelukkig is het hier rustig." geluidje={null} />
-      <Spreekplek gebied={[2.5, -17.5, 20, 6]} tekst="De bouwplaats. Toren C wordt verbouwd. Daar is de achterpoort!" geluidje={null} />
+      <Spreekplek gebied={[0, 22, 4, 8]} tekst="Sst… de brug. Onder ons ligt het zwarte meer. Daar voor ons is de poort." geluidje={null} />
+      <Spreekplek gebied={[0, 2, 15, 12]} tekst="De binnenplaats. In het midden ligt Franks tuin, met de vijver. Daar is het veilig." geluidje={null} />
+      <Spreekplek gebied={[14.5, 1, 3, 13]} tekst="De spookgang… Hoor je dat ook? Blijf in het licht van je lamp." />
+      <Spreekplek gebied={[12, 11, 7, 5]} tekst="Een trap naar toren B. Hij kraakt. Boven gaat de rondgang verder." geluidje="kraak" />
+      <Spreekplek gebied={[-14.25, 1, 3.5, 13]} tekst="De ertsgang. Hier reed de ertswagen naar de smidse. Niemand duwt hem meer… toch?" geluidje="kraak" />
+      <Spreekplek gebied={[19, 0, 5.5, 21]} tekst="Het kerkhof. Het is hier stil. Te stil." geluidje={null} />
+      <Spreekplek gebied={[2.5, -17.5, 20, 6]} tekst="De bouwplaats. Toren C wordt verbouwd. Daar is de achterpoort: je weg naar buiten." geluidje={null} />
 
       {/* ── Eerste verdieping ── */}
       <Verdieping nr={1}>
@@ -534,9 +534,9 @@ export function Wereld2Levend() {
           <Spin pos={[-12.0, 3.0, 2.0]} lengte={1.5} />
         </Binnen>
         </OpVerdieping>
-        <Spreekplek verdieping={1} gebied={[12, 11, 7.5, 5.5]} tekst="Torenkamer B. Hier komt een nieuwe houten vloer." geluidje={null} />
-        <Spreekplek verdieping={1} gebied={[-5.5, 11, 4.5, 5.5]} tekst="De walgang! Kijk over de kantelen: daar is de brug, en het bos waar je vandaan kwam." geluidje={null} />
-        <Spreekplek verdieping={1} gebied={[-12, 1, 7.5, 13]} tekst="De galerij... Die ogen kijken je echt na. Kijk door het raam: Franks tuin van boven!" />
+        <Spreekplek verdieping={1} gebied={[12, 11, 7.5, 5.5]} tekst="Torenkamer B. Hier komt een nieuwe houten vloer. De oude is… weg." geluidje={null} />
+        <Spreekplek verdieping={1} gebied={[-5.5, 11, 4.5, 5.5]} tekst="De walgang. Kijk over de kantelen: de brug, en het bos waar je vandaan kwam. Zo ver weg." geluidje={null} />
+        <Spreekplek verdieping={1} gebied={[-12, 1, 7.5, 13]} tekst="De galerij… De ogen in de schilderijen volgen je. Kijk door het raam: Franks tuin, van boven." />
         <Spreekplek verdieping={1} gebied={[-12.5, -10.5, 8.5, 8.5]} tekst="De wachtkamer van de donjon. Met de trap kun je weer naar beneden." geluidje="kraak" />
       </Verdieping>
 
@@ -567,9 +567,9 @@ export function Wereld2Levend() {
           <Mistbank gebied={[0, -10, 15.5, 7.5]} sterkte={0.08} kleur="#8f96b8" />
         </Binnen>
         </OpVerdieping>
-        <Spreekplek verdieping={-1} gebied={[0, -2.5, 15, 6]} tekst="De cisterne onder de binnenplaats. Zie je het licht uit de put? Dat is de maan." />
-        <Spreekplek verdieping={-1} gebied={[-12, -2.5, 7.5, 6.5]} tekst="De kerker... Gelukkig zijn de cellen leeg. Nou ja, bijna." geluidje="kraak" />
-        <Spreekplek verdieping={-1} gebied={[10.5, -3, 4.5, 5.5]} tekst="Een crypte onder de kapel. Sssst... niet iedereen wakker maken!" />
+        <Spreekplek verdieping={-1} gebied={[0, -2.5, 15, 6]} tekst="De cisterne onder de binnenplaats. Het licht uit de put is de maan. Het enige licht hier." />
+        <Spreekplek verdieping={-1} gebied={[-12, -2.5, 7.5, 6.5]} tekst="De kerker… De cellen zijn leeg. Bijna allemaal." geluidje="kraak" />
+        <Spreekplek verdieping={-1} gebied={[10.5, -3, 4.5, 5.5]} tekst="Een crypte onder de kapel. Sssst… maak ze niet wakker." />
       </Verdieping>
     </>
   );
@@ -653,7 +653,7 @@ export function Wereld2Donjon() {
           <Spinnenweb hoek={[-8, -6]} naar={[-1, -1]} />
         </Binnen>
         </OpVerdieping>
-        <Spreekplek verdieping={2} gebied={[-12.5, -10.5, 8.5, 8.5]} tekst="Torenkamer D. Deze kamer is te huur!" geluidje={null} />
+        <Spreekplek verdieping={2} gebied={[-12.5, -10.5, 8.5, 8.5]} tekst="Torenkamer D. Hier woont niemand meer. Al heel lang niet." geluidje={null} />
       </Verdieping>
       <Verdieping nr={3}>
         <Vensters punten={RAMEN_DONJON} />
@@ -669,7 +669,7 @@ export function Wereld2Donjon() {
           <Spinnenweb hoek={[-17, -6]} naar={[1, -1]} />
         </Binnen>
         </OpVerdieping>
-        <Spreekplek verdieping={3} gebied={[-12.5, -10.5, 8.5, 8.5]} tekst="De wachtpost. Hier hield de wachter de brug in de gaten. Nog één trap!" geluidje="kraak" />
+        <Spreekplek verdieping={3} gebied={[-12.5, -10.5, 8.5, 8.5]} tekst="De wachtpost. Hier hield de wachter de brug in de gaten. Hij is nooit naar beneden gekomen." geluidje="kraak" />
       </Verdieping>
       <Verdieping nr={4}>
         <Statisch>
@@ -683,7 +683,7 @@ export function Wereld2Donjon() {
         <Spreekplek
           verdieping={4}
           gebied={[-12.5, -10.5, 8.5, 8.5]}
-          tekst="Je staat boven op de donjon! Kijk omlaag: het hele slot ligt eronder, net een plattegrond."
+          tekst="Boven op de donjon. Kijk omlaag: het hele slot ligt eronder, net een plattegrond. En ergens daar beneden… is hij."
           geluidje={null}
         />
       </Verdieping>

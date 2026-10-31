@@ -9,11 +9,14 @@
 // en daarbinnen past de resolutie zich aan aan hoe snel het apparaat is (zie `bijsturen`).
 import { N8AOPostPass } from 'n8ao';
 import {
+  BlendFunction,
   BloomEffect,
   BrightnessContrastEffect,
+  ChromaticAberrationEffect,
   EffectComposer,
   EffectPass,
   HueSaturationEffect,
+  NoiseEffect,
   RenderPass,
   SMAAEffect,
   SMAAPreset,
@@ -24,6 +27,12 @@ import {
 import * as THREE from 'three';
 
 export type Kwaliteit = 'hoog' | 'midden' | 'laag';
+
+/**
+ * Sfeer-effecten die een wereld per beeld mag zetten (Wereld 2: angst). Korrel = filmkorrel (0..1),
+ * aberratie = kleurranden aan de randen (0..1), vignet = extra donkere rand (0..1). Standaard alles uit.
+ */
+export const sfeerFx = { korrel: 0, aberratie: 0, vignet: 0 };
 
 /** Hoogste pixeldichtheid per stand (de resolutie gaat vanzelf omlaag als het te zwaar is). */
 export const MAX_DPR: Record<Kwaliteit, number> = { hoog: 2, midden: 1.5, laag: 1 };
@@ -41,6 +50,9 @@ export class Beeld {
   effecten: EffectPass;
   smaa: SMAAEffect;
   randen: EffectPass;
+  korrel: NoiseEffect;
+  aberratie: ChromaticAberrationEffect;
+  vignet: VignetteEffect;
   kwaliteit: Kwaliteit = 'midden';
 
   constructor(
@@ -102,7 +114,12 @@ export class Beeld {
     const verzadiging = new HueSaturationEffect({ hue: 0, saturation: 0.07 });
     const tonen = new ToneMappingEffect({ mode: ToneMappingMode.NEUTRAL });
     const vignet = new VignetteEffect({ offset: 0.32, darkness: 0.42 });
-    this.effecten = new EffectPass(camera, this.bloom, tonen, contrast, verzadiging, vignet);
+    this.vignet = vignet;
+    // filmkorrel en kleurranden: staan uit, tenzij een wereld ze via sfeerFx aanzet (angst in het spookslot)
+    this.korrel = new NoiseEffect({ blendFunction: BlendFunction.OVERLAY, premultiply: false });
+    this.korrel.blendMode.opacity.value = 0;
+    this.aberratie = new ChromaticAberrationEffect({ offset: new THREE.Vector2(0, 0), radialModulation: true, modulationOffset: 0.25 });
+    this.effecten = new EffectPass(camera, this.bloom, tonen, contrast, verzadiging, this.aberratie, vignet, this.korrel);
     this.composer.addPass(this.effecten);
 
     this.smaa = new SMAAEffect({ preset: SMAAPreset.MEDIUM });
@@ -131,6 +148,10 @@ export class Beeld {
   }
 
   render(dt: number, laag: { sluier: boolean; stage: boolean; hand: boolean; wereldTonen: boolean }) {
+    this.korrel.blendMode.opacity.value = sfeerFx.korrel * 0.55;
+    const a = sfeerFx.aberratie * 0.006;
+    this.aberratie.offset.set(a, a * 0.6);
+    this.vignet.darkness = 0.42 + sfeerFx.vignet * 0.5;
     this.sluier.enabled = laag.sluier;
     this.stage.enabled = laag.stage;
     this.hand.enabled = laag.hand;

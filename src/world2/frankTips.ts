@@ -10,7 +10,7 @@ import { huidig, stationsVan } from '../werelden';
 import type { Kamer, Station } from '../werelden/types';
 
 export const FRANK_HOI =
-  'Hoi, ik ben Frank! Ik zie er eng uit, maar ik ben heel lief. Zit je ergens vast? Kom dan even bij mij, dan leg ik het uit.';
+  'Sst… Ik ben Frank. Hier, in mijn tuin, doe ik je niets. Zit je ergens vast? Blijf even staan, dan leg ik het uit.';
 
 const VERDIEPING = ['op de begane grond', 'op de eerste verdieping', 'op de tweede verdieping'];
 const waar = (v: number) => (v < 0 ? 'in de kelder' : VERDIEPING[v] ?? 'boven in de donjon');

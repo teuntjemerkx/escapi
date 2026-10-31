@@ -4,6 +4,7 @@ import { KLUSSEN, LAMPJES } from './klussen';
 import { OPDRACHTEN, STATIONS, WERKBOEK } from './stations';
 import { PLAN, SPAWN } from './huis';
 import { FrankNPC } from './FrankNPC';
+import { HorrorLaag } from './horror';
 import { registreerDecor, Wereld2Decor, Wereld2Donjon, Wereld2Levend } from './Wereld2';
 import { Wereld2Omgeving } from './Omgeving';
 import { Boo } from './Boo';
@@ -15,7 +16,7 @@ export const wereld2: WereldDef = {
   kleur: '#9b7be0',
   missie: {
     opdrachtgever: 'Boo, het kasteelspook',
-    regels: ['Het is Halloween. De achterpoort van Slot Maansteyn zit op slot.', 'Drie sleutels liggen in drie kluizen.', 'Vind de codes, open de kluizen en vaar weg met de boot.'],
+    regels: ['Het is nacht in Slot Maansteyn. De achterpoort zit op slot, en je bent niet alleen.', 'Drie sleutels liggen in drie kluizen.', 'Vind de codes, open de kluizen en vaar weg met de boot. Blijf in het licht.'],
   },
   leerdoel: ['Je rekent met omtrek, oppervlakte en inhoud.', 'Je rekent maten om met de trap.', 'Zo open je de kluizen van het kasteel.'],
   samenvatting: ['Omtrek: tel alle zijden op.', 'Oppervlakte: lengte × breedte.', 'Inhoud: lengte × breedte × hoogte.', 'Omrekenen: gebruik de trap.'],
@@ -37,23 +38,24 @@ export const wereld2: WereldDef = {
       <Wereld2Levend />
       <Wereld2Donjon />
       <FrankNPC />
+      <HorrorLaag />
     </>
   ),
   Omgeving: Wereld2Omgeving,
   maatje: {
     naam: 'Boo',
     wie: 'het kasteelspook',
-    kleur: '#c9b6ff',
+    kleur: '#b9c6cf',
     Model: Boo,
     intro: [
-      ['Boe! Schrik maar niet.', 'Ik ben Boo, het spook van dit kasteel.'],
-      ['Dit is Slot Maansteyn.', 'Het staat op een rots, midden in een meer.'],
-      ['Het is Halloween. De achterpoort zit op slot.', 'Daar ligt de boot naar huis. Je hebt drie sleutels nodig.'],
-      ['De sleutels liggen in drie kluizen.', 'Los de rekenraadsels op. Zo vind je de codes.'],
-      ['Het is donker in het bos. Je hebt een zaklamp.', 'Hij schijnt waar je heen loopt.'],
-      ['Ik zweef met je mee en ik help je.', 'Kom! Volg het bospad en loop over de brug naar de poort.'],
+      ['Sst. Niet zo hard.', 'Ik ben Boo. Ik spook hier al driehonderd jaar.'],
+      ['Dit is Slot Maansteyn, op een rots midden in het meer.', 'Hier woont ook Frank, de tuinman.'],
+      ['Overdag is hij aardig. Maar ’s nachts…', 'dwaalt hij door de gangen. Hij hoort alles.'],
+      ['De boot naar huis ligt achter de achterpoort.', 'Je hebt drie sleutels nodig, uit drie kluizen. De codes vind je met de rekenraadsels.'],
+      ['Je hebt alleen je zaklamp.', 'Blijf in het licht. Hoor je voetstappen? Blijf dan niet staan.'],
+      ['In zijn tuin, op de binnenplaats, is Frank rustig.', 'Daar helpt hij je zelfs. Kom. Volg het bospad naar de brug.'],
     ],
-    goed: ['Boe-ja!', 'Spookachtig goed!', 'Joehoe!', 'Griezelig knap!'],
+    goed: ['Goed zo.', 'Klopt. Snel, verder.', 'Knap… voor hij komt.', 'Ja. Dat is het.'],
   },
   camera: 'eerste',
   sfeer: {

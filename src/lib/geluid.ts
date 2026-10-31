@@ -4,6 +4,11 @@ import { useSpel } from '../game/store';
 let ctx: AudioContext | null = null;
 let achtergrond: { stop: () => void } | null = null;
 
+/** De gedeelde Web Audio-context (voor eigen geluidslagen, zoals het horrorgeluid in Wereld 2). */
+export function audioContext() {
+  return context();
+}
+
 function context() {
   if (!ctx) {
     const AC = window.AudioContext || (window as unknown as { webkitAudioContext: typeof AudioContext }).webkitAudioContext;

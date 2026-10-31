@@ -1,5 +1,5 @@
-// Frank in 3D: een groot, groen monster in een donker pak, met echte ledematen (heup, knie, schouder, elleboog),
-// handen met vingers, een vierkant hoofd met wenkbrauwboog, oogleden, neus, oren, een pony en boutjes in zijn nek.
+// Frank in 3D: lang, bleek en mager in een donker pak, met echte ledematen (heup, knie, schouder, elleboog),
+// te lange armen en vingers, holle oogkassen met gloeiende pupillen, een open mond en hechtingen rond zijn nek.
 // Elk lichaamsdeel is samengevoegd tot één mesh (Statisch), zodat hij weinig tekenwerk kost.
 import { useMemo, type MutableRefObject } from 'react';
 import * as THREE from 'three';
@@ -9,17 +9,39 @@ import { Statisch } from '../game/statisch';
 
 type V3 = [number, number, number];
 
-const HUID = '#8ab872';
-const HUID_D = '#6c9659';
+const HUID = '#9ea493';
+const HUID_D = '#7b8271';
 const HAAR = '#18171c';
-const JAS = '#2f3833';
-const JAS_D = '#222925';
-const HEMD = '#d8d2c2';
+const JAS = '#1d211f';
+const JAS_D = '#141716';
+const HEMD = '#8f8a7c';
 const BROEK = '#26252c';
 const LAARS = '#151314';
 const ZOOL = '#0b0a0a';
-const METAAL = '#9ba1a7';
-const OOGWIT = '#ddd8c0';
+const OOGKAS = '#0d0908';
+const MOND = '#060404';
+const DRAAD = '#1a1512';
+/** Pupillen die licht geven (helderder dan wit, dus ze gloeien na in de nabewerking). */
+const OOG_GLOED = new THREE.MeshBasicMaterial({ color: new THREE.Color(4.2, 0.6, 0.22), toneMapped: false });
+/** Een zachte gloed om elke pupil (ook zonder bloom zie je in de verte twee rode puntjes). */
+let gloedKaart: THREE.Texture | null = null;
+function oogGloed() {
+  if (!gloedKaart) {
+    const c = document.createElement('canvas');
+    c.width = c.height = 64;
+    const g = c.getContext('2d')!;
+    const r = g.createRadialGradient(32, 32, 0, 32, 32, 32);
+    r.addColorStop(0, 'rgba(255,120,60,1)');
+    r.addColorStop(0.25, 'rgba(255,60,20,0.55)');
+    r.addColorStop(1, 'rgba(255,0,0,0)');
+    g.fillStyle = r;
+    g.fillRect(0, 0, 64, 64);
+    gloedKaart = new THREE.CanvasTexture(c);
+    gloedKaart.colorSpace = THREE.SRGBColorSpace;
+  }
+  return gloedKaart;
+}
+const OOG_HALO = new THREE.SpriteMaterial({ map: oogGloed(), blending: THREE.AdditiveBlending, depthWrite: false, transparent: true, toneMapped: false, opacity: 0.9 });
 
 // ── gedeelde vormen ──
 const cache = new Map<string, THREE.BufferGeometry>();
@@ -133,34 +155,34 @@ export function FrankLijf({ leden }: { leden: MutableRefObject<FrankLeden> }) {
           ))}
           <D geo={bol()} kleur={ZOOL} pos={[0, 0.43, 0.197]} schaal={[0.017, 0.017, 0.012]} rough={0.4} />
           <D geo={bol()} kleur={ZOOL} pos={[0, 0.3, 0.185]} schaal={[0.017, 0.017, 0.012]} rough={0.4} />
-          {/* nek met boutjes */}
-          <D geo={cil(0.095, 0.105, 0.2)} kleur={HUID} pos={[0, 0.93, 0]} rough={0.6} />
-          {zijden.map((k) => (
-            <group key={`bout${k}`} position={[k * 0.12, 0.9, 0]} rotation={[0, 0, Math.PI / 2]}>
-              <D geo={cil(0.026, 0.026, 0.1)} kleur={METAAL} rough={0.35} metal={0.8} />
-              <D geo={cil(0.042, 0.042, 0.03)} kleur={METAAL} pos={[0, k * -0.05, 0]} rough={0.35} metal={0.8} />
-            </group>
-          ))}
+          {/* lange dunne nek met een gehechte naad eromheen */}
+          <D geo={cil(0.078, 0.092, 0.24)} kleur={HUID} pos={[0, 0.95, 0]} rough={0.6} />
+          <mesh geometry={vorm('naad', () => new THREE.TorusGeometry(0.083, 0.006, 6, 28).rotateX(Math.PI / 2))} material={mat(DRAAD, { rough: 0.8 })} position={[0, 0.96, 0]} />
+          {Array.from({ length: 10 }, (_, j) => {
+            const a = (j / 10) * Math.PI * 2;
+            return <D key={`st${j}`} geo={cil(0.0035, 0.0035, 0.034)} kleur={DRAAD} pos={[Math.sin(a) * 0.085, 0.96, Math.cos(a) * 0.085]} rot={[0, a, 0.25]} rough={0.8} />;
+          })}
         </Statisch>
         {/* armen: schouder, elleboog, grote groene handen met vingers */}
         {zijden.map((k, i) => (
           <group key={`arm${k}`} ref={(e) => void (l.schouder[i] = e)} position={[k * 0.41, 0.7, 0]}>
             <Statisch>
-              <D geo={bol()} kleur={JAS} schaal={[0.12, 0.12, 0.12]} rough={0.88} />
-              <D geo={cil(0.11, 0.095, 0.4)} kleur={JAS} pos={[0, -0.2, 0]} rough={0.88} />
+              <D geo={bol()} kleur={JAS} schaal={[0.11, 0.11, 0.11]} rough={0.88} />
+              <D geo={cil(0.095, 0.08, 0.5)} kleur={JAS} pos={[0, -0.25, 0]} rough={0.88} />
             </Statisch>
-            <group ref={(e) => void (l.elleboog[i] = e)} position={[0, -0.4, 0]}>
+            <group ref={(e) => void (l.elleboog[i] = e)} position={[0, -0.5, 0]}>
               <Statisch>
-                <D geo={bol()} kleur={JAS} schaal={[0.096, 0.096, 0.096]} rough={0.88} />
-                <D geo={cil(0.095, 0.086, 0.32)} kleur={JAS} pos={[0, -0.16, 0]} rough={0.88} />
-                <D geo={cil(0.093, 0.099, 0.05)} kleur={JAS_D} pos={[0, -0.31, 0]} rough={0.85} />
-                <D geo={cil(0.08, 0.08, 0.03)} kleur={HEMD} pos={[0, -0.345, 0]} rough={0.75} />
-                <D geo={cil(0.05, 0.056, 0.07)} kleur={HUID} pos={[0, -0.38, 0]} rough={0.6} />
-                <D geo={bol()} kleur={HUID} pos={[k * -0.005, -0.46, 0]} schaal={[0.042, 0.095, 0.078]} rough={0.6} />
-                {[-0.045, -0.015, 0.015, 0.045].map((z) => (
-                  <D key={`v${z}`} geo={pil(0.021, 0.075)} kleur={HUID} pos={[k * -0.012, -0.585, z]} rot={[0, 0, k * 0.22]} rough={0.6} />
+                <D geo={bol()} kleur={JAS} schaal={[0.082, 0.082, 0.082]} rough={0.88} />
+                <D geo={cil(0.08, 0.07, 0.4)} kleur={JAS} pos={[0, -0.2, 0]} rough={0.88} />
+                <D geo={cil(0.077, 0.083, 0.05)} kleur={JAS_D} pos={[0, -0.39, 0]} rough={0.85} />
+                <D geo={cil(0.066, 0.066, 0.03)} kleur={HEMD} pos={[0, -0.425, 0]} rough={0.75} />
+                <D geo={cil(0.04, 0.046, 0.08)} kleur={HUID} pos={[0, -0.465, 0]} rough={0.6} />
+                <D geo={bol()} kleur={HUID} pos={[k * -0.005, -0.55, 0]} schaal={[0.036, 0.09, 0.07]} rough={0.6} />
+                {/* lange, knokige vingers */}
+                {[-0.042, -0.014, 0.014, 0.042].map((z, j) => (
+                  <D key={`v${z}`} geo={pil(0.0155, 0.15 - Math.abs(j - 1.5) * 0.02)} kleur={HUID} pos={[k * -0.018, -0.7, z]} rot={[z * 2.2, 0, k * 0.2]} rough={0.6} />
                 ))}
-                <D geo={pil(0.024, 0.055)} kleur={HUID} pos={[k * -0.03, -0.47, 0.075]} rot={[0.75, 0, k * -0.3]} rough={0.6} />
+                <D geo={pil(0.018, 0.08)} kleur={HUID} pos={[k * -0.03, -0.57, 0.07]} rot={[0.75, 0, k * -0.3]} rough={0.6} />
               </Statisch>
             </group>
           </group>
@@ -173,14 +195,16 @@ export function FrankLijf({ leden }: { leden: MutableRefObject<FrankLeden> }) {
             <D geo={kist(0.38, 0.06, 0.07, 0.025)} kleur={HUID_D} pos={[0, 0.335, 0.19]} rough={0.62} />
             {zijden.map((k) => (
               <group key={`oog${k}`} position={[k * 0.08, 0.285, 0.185]}>
-                <D geo={bol()} kleur={OOGWIT} schaal={[0.036, 0.036, 0.036]} rough={0.3} />
-                <D geo={bol()} kleur="#2b2b20" pos={[0, -0.004, 0.031]} schaal={[0.016, 0.016, 0.01]} rough={0.2} />
-                <D geo={lid()} kleur={HUID_D} rot={[0.55, 0, 0]} schaal={[0.04, 0.04, 0.04]} rough={0.62} />
+                {/* holle, zwarte oogkassen met kleine gloeiende pupillen: in het donker zie je alleen die */}
+                <D geo={bol()} kleur={OOGKAS} schaal={[0.046, 0.042, 0.034]} rough={0.95} />
+                <mesh geometry={bol()} material={OOG_GLOED} position={[0, -0.004, 0.03]} scale={[0.016, 0.016, 0.01]} />
+                <D geo={lid()} kleur={HUID_D} rot={[0.6, 0, 0]} schaal={[0.05, 0.045, 0.045]} rough={0.62} />
               </group>
             ))}
             <D geo={bol()} kleur={HUID} pos={[0, 0.215, 0.205]} schaal={[0.04, 0.065, 0.05]} rough={0.58} />
-            <D geo={pil(0.011, 0.12)} kleur="#2a3324" pos={[0, 0.125, 0.193]} rot={[0, 0, Math.PI / 2]} rough={0.7} />
-            <D geo={pil(0.014, 0.09)} kleur={HUID_D} pos={[0, 0.107, 0.188]} rot={[0, 0, Math.PI / 2]} rough={0.6} />
+            {/* open mond: een donker gat, iets scheef */}
+            <D geo={bol()} kleur={MOND} pos={[0.008, 0.112, 0.19]} rot={[0, 0, 0.12]} schaal={[0.05, 0.034, 0.02]} rough={1} />
+            <D geo={pil(0.01, 0.08)} kleur={HUID_D} pos={[0.008, 0.148, 0.192]} rot={[0, 0, Math.PI / 2 + 0.12]} rough={0.6} />
             {zijden.map((k) => (
               <D key={`oor${k}`} geo={bol()} kleur={HUID_D} pos={[k * 0.2, 0.25, 0]} schaal={[0.028, 0.055, 0.04]} rough={0.6} />
             ))}
@@ -194,13 +218,17 @@ export function FrankLijf({ leden }: { leden: MutableRefObject<FrankLeden> }) {
             <D geo={kist(0.43, 0.2, 0.22, 0.05)} kleur={HAAR} pos={[0, 0.4, -0.11]} rough={0.75} />
             <D geo={pony()} kleur={HAAR} pos={[0, 0.45, 0.175]} rough={0.75} />
           </Statisch>
+          {/* gloed om de pupillen (buiten Statisch: sprites worden niet samengevoegd) */}
+          {zijden.map((k) => (
+            <sprite key={`gloed${k}`} material={OOG_HALO} position={[k * 0.08, 0.281, 0.235]} scale={[0.11, 0.11, 1]} />
+          ))}
         </group>
       </group>
     </group>
   );
 }
 
-export type Houding = 'staan' | 'loop' | 'zwaai' | 'schrik' | 'lach' | 'loer' | 'schouders' | 'praat';
+export type Houding = 'staan' | 'loop' | 'ren' | 'staar' | 'zwaai' | 'schrik' | 'lach' | 'loer' | 'schouders' | 'praat';
 
 const naar = (o: THREE.Object3D | null | undefined, x: number, y: number, z: number, k: number) => {
   if (!o) return;
@@ -212,24 +240,35 @@ const naar = (o: THREE.Object3D | null | undefined, x: number, y: number, z: num
 /** Zet de ledematen in een houding (zacht overvloeiend). `stap` = fase van de loopcyclus, `t` = tijd. */
 export function zetHouding(l: FrankLeden, h: Houding, t: number, stap: number, dt: number) {
   const k = Math.min(1, dt * (h === 'schrik' ? 18 : 7));
-  const loopt = h === 'loop';
+  const loopt = h === 'loop' || h === 'ren';
+  const ren = h === 'ren';
   const s = Math.sin(stap);
   for (let i = 0; i < 2; i++) {
     const kant = i === 0 ? -1 : 1;
     const fase = i === 0 ? s : -s;
     const knieFase = Math.sin(stap + (i === 0 ? 0 : Math.PI) + 1.3);
     const hurk = h === 'loer' || h === 'schrik';
-    naar(l.heup[i], loopt ? fase * 0.42 : hurk ? -0.2 : 0, 0, kant * 0.03, k);
-    naar(l.knie[i], loopt ? 0.08 + Math.max(0, knieFase) * 0.75 : hurk ? 0.42 : 0.04, 0, 0, k);
+    naar(l.heup[i], loopt ? fase * (ren ? 0.62 : 0.42) : hurk ? -0.2 : 0, 0, kant * 0.03, k);
+    naar(l.knie[i], loopt ? 0.08 + Math.max(0, knieFase) * (ren ? 1.05 : 0.75) : hurk ? 0.42 : 0.04, 0, 0, k);
     // gehurkt komen de voeten iets omhoog (dij -0.2 en scheen +0.22 kort de benen ~2 cm in): heup mee omlaag
     const hp = l.heup[i];
     if (hp) hp.position.y += (0.98 - (hurk ? 0.022 : 0) - hp.position.y) * k;
     let sx = 0,
       sz = kant * 0.07,
       ex = -0.18;
-    if (loopt) {
+    if (ren) {
+      // rennen met de armen naar je uitgestoken, de vingers grijpend
+      sx = -1.35 + fase * 0.18;
+      sz = kant * 0.1;
+      ex = -0.15 - Math.max(0, fase) * 0.2;
+    } else if (loopt) {
       sx = -fase * 0.38;
       ex = -0.25 - Math.max(0, -fase) * 0.25;
+    } else if (h === 'staar') {
+      // slap hangende armen, schouders iets op
+      sx = 0.04;
+      sz = kant * 0.02;
+      ex = -0.04;
     } else if (h === 'zwaai' && i === 1) {
       sx = -2.5;
       sz = 0.25 + Math.sin(t * 9) * 0.28;
@@ -263,10 +302,11 @@ export function zetHouding(l: FrankLeden, h: Houding, t: number, stap: number, d
     const op = loopt ? Math.abs(Math.cos(stap)) * 0.035 : Math.sin(t * 1.6) * 0.008;
     // gehurkt zakt het bovenlijf mee (dij -0.2, knie +0.42: samen ongeveer 9 cm lager)
     r.position.y = 0.98 + op - (h === 'loer' || h === 'schrik' ? 0.09 : 0);
-    const voorover = h === 'schrik' ? 0.34 : h === 'loer' ? 0.14 : h === 'lach' ? -0.08 + Math.sin(t * 22) * 0.035 : loopt ? 0.05 : 0;
+    const voorover = h === 'schrik' ? 0.34 : h === 'loer' ? 0.14 : h === 'lach' ? -0.08 + Math.sin(t * 22) * 0.035 : ren ? 0.26 : h === 'staar' ? 0.1 : loopt ? 0.05 : 0;
     naar(r, voorover, loopt ? s * 0.06 : 0, loopt ? s * 0.03 : 0, k);
   }
-  // bij het schrikken buigt hij zijn hoofd naar je toe, bij het lachen gooit hij het naar achteren
+  // bij het schrikken buigt hij zijn hoofd naar je toe, bij het lachen gooit hij het naar achteren;
+  // als hij staart, hangt zijn hoofd scheef (de kanteling zelf zet FrankNPC)
   const kop = l.hoofd;
-  if (kop) kop.rotation.x += ((h === 'schrik' ? 0.22 : h === 'lach' ? -0.28 : 0) - kop.rotation.x) * k;
+  if (kop) kop.rotation.x += ((h === 'schrik' ? 0.22 : h === 'lach' ? -0.28 : h === 'staar' ? 0.18 : ren ? -0.12 : 0) - kop.rotation.x) * k;
 }

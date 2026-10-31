@@ -1,117 +1,117 @@
-// Boo, het kasteelspook: het maatje van Wereld 2. Een zacht wit spookje met een heksenhoedje
-// en een pompoenlampje. Zwaait, knippert met zijn ogen en wiebelt met zijn hoedje.
+// Boo, het kasteelspook: het maatje van Wereld 2. Een bleek, doorschijnend laken met holle ogen en een open mond,
+// dat traag zweeft en een oude ijzeren lantaarn met een kaarsje vasthoudt. Eng om te zien, maar hij helpt je.
 import { useFrame } from '@react-three/fiber';
 import { useMemo, useRef } from 'react';
 import * as THREE from 'three';
 
 export function Boo() {
+  const lijfRef = useRef<THREE.Group>(null);
+  const zoom = useRef<THREE.Group>(null);
+  const kop = useRef<THREE.Group>(null);
   const armL = useRef<THREE.Group>(null);
   const armR = useRef<THREE.Group>(null);
-  const ogen = useRef<THREE.Group>(null);
-  const hoed = useRef<THREE.Group>(null);
+  const vlam = useRef<THREE.Mesh>(null);
   const m = useMemo(() => {
-    // lijf: draaivorm van kruin tot zoom
+    // laken: draaivorm van kruin tot zoom, smal bovenin en wijd uitlopend
     const profiel = [
-      [0.0, 0.46],
-      [0.18, 0.44],
-      [0.32, 0.37],
-      [0.42, 0.24],
-      [0.47, 0.06],
-      [0.49, -0.14],
-      [0.52, -0.32],
-      [0.56, -0.42],
+      [0.0, 0.5],
+      [0.16, 0.48],
+      [0.29, 0.4],
+      [0.36, 0.26],
+      [0.38, 0.08],
+      [0.42, -0.14],
+      [0.5, -0.34],
+      [0.58, -0.46],
     ].map(([x, y]) => new THREE.Vector2(x, y));
-    const lijf = new THREE.LatheGeometry(profiel, 28);
+    const lijf = new THREE.LatheGeometry(profiel, 32);
+    // plooien: de onderrand golft
+    const p = lijf.attributes.position as THREE.BufferAttribute;
+    for (let i = 0; i < p.count; i++) {
+      const x = p.getX(i);
+      const y = p.getY(i);
+      const z = p.getZ(i);
+      const a = Math.atan2(x, z);
+      const onder = THREE.MathUtils.smoothstep(-y, 0.0, 0.46);
+      const r = 1 + Math.sin(a * 7) * 0.07 * onder + Math.sin(a * 3 + 1) * 0.03 * onder;
+      p.setXYZ(i, x * r, y - Math.abs(Math.sin(a * 7)) * 0.05 * onder, z * r);
+    }
+    lijf.computeVertexNormals();
     return {
       lijf,
-      wit: new THREE.MeshStandardMaterial({ color: '#f4f1ff', emissive: '#c9b6ff', emissiveIntensity: 0.35, roughness: 0.5 }),
-      zwart: new THREE.MeshStandardMaterial({ color: '#1b1626', roughness: 0.3 }),
-      glim: new THREE.MeshBasicMaterial({ color: '#ffffff' }),
-      wang: new THREE.MeshBasicMaterial({ color: '#ff9fc4', transparent: true, opacity: 0.75 }),
-      hoed: new THREE.MeshStandardMaterial({ color: '#4b2f7a', roughness: 0.7 }),
-      band: new THREE.MeshStandardMaterial({ color: '#ff8a3d', roughness: 0.6 }),
-      pompoen: new THREE.MeshStandardMaterial({ color: '#ff8a1f', emissive: '#ff6a00', emissiveIntensity: 0.25, roughness: 0.6 }),
-      licht: new THREE.MeshBasicMaterial({ color: '#ffd36b', toneMapped: false }),
-      steel: new THREE.MeshStandardMaterial({ color: '#4f6b2a' }),
+      laken: new THREE.MeshStandardMaterial({ color: '#aeb9be', emissive: '#5f7887', emissiveIntensity: 0.22, roughness: 0.9, transparent: true, opacity: 0.66, depthWrite: false, side: THREE.DoubleSide }),
+      gat: new THREE.MeshBasicMaterial({ color: '#030405' }),
+      ijzer: new THREE.MeshStandardMaterial({ color: '#2a2724', roughness: 0.55, metalness: 0.6 }),
+      glas: new THREE.MeshStandardMaterial({ color: '#d9c38e', emissive: '#ffb347', emissiveIntensity: 0.55, roughness: 0.2, transparent: true, opacity: 0.45 }),
+      vlam: new THREE.MeshBasicMaterial({ color: new THREE.Color(2.2, 1.3, 0.5), toneMapped: false }),
+      kaars: new THREE.MeshStandardMaterial({ color: '#e6dcc4', roughness: 0.6 }),
     };
   }, []);
   useFrame(({ clock }) => {
     const t = clock.getElapsedTime();
-    if (armL.current) armL.current.rotation.z = 0.5 + Math.sin(t * 5) * 0.45;
-    if (armR.current) armR.current.rotation.z = -0.35 + Math.sin(t * 2) * 0.1;
-    if (ogen.current) ogen.current.scale.y = t % 3.6 < 0.12 ? 0.12 : 1;
-    if (hoed.current) hoed.current.rotation.z = 0.22 + Math.sin(t * 1.8) * 0.06;
+    if (lijfRef.current) {
+      lijfRef.current.rotation.z = Math.sin(t * 0.7) * 0.04;
+      lijfRef.current.rotation.x = Math.sin(t * 0.5 + 1) * 0.03;
+    }
+    if (zoom.current) zoom.current.rotation.y = Math.sin(t * 0.9) * 0.12;
+    // af en toe knakt zijn hoofd opzij
+    if (kop.current) {
+      const knak = Math.sin(t * 0.37) > 0.82 ? 0.32 : 0;
+      kop.current.rotation.z += (knak - kop.current.rotation.z) * 0.08;
+    }
+    if (armL.current) armL.current.rotation.z = 0.95 + Math.sin(t * 0.8) * 0.05;
+    if (armR.current) armR.current.rotation.z = -0.55 + Math.sin(t * 0.8 + 1) * 0.04;
+    if (vlam.current) {
+      const f = 0.85 + Math.sin(t * 13) * 0.08 + Math.sin(t * 29) * 0.05;
+      vlam.current.scale.set(f, 1 + (1 - f) * 2, f);
+    }
   });
   return (
-    <group>
-      <mesh geometry={m.lijf} material={m.wit} />
-      {/* golvende zoom */}
-      {Array.from({ length: 7 }, (_, i) => {
-        const a = (i / 7) * Math.PI * 2;
-        return (
-          <mesh key={i} material={m.wit} position={[Math.sin(a) * 0.45, -0.42, Math.cos(a) * 0.45]} scale={[1, 0.62, 1]}>
-            <sphereGeometry args={[0.115, 12, 8]} />
+    <group ref={lijfRef}>
+      <group ref={zoom}>
+        <mesh geometry={m.lijf} material={m.laken} />
+      </group>
+      {/* gezicht: holle, langgerekte oogkassen en een open mond, uitgesneden in het laken */}
+      <group ref={kop} position={[0, 0.12, 0]}>
+        {[-0.12, 0.12].map((x) => (
+          <mesh key={x} material={m.gat} position={[x, 0.08, 0.355]} rotation={[0, x * 1.4, x * 0.9]} scale={[0.055, 0.1, 0.02]}>
+            <sphereGeometry args={[1, 14, 10]} />
           </mesh>
-        );
-      })}
-      {/* gezicht */}
-      <group ref={ogen} position={[0, 0.14, 0.43]}>
-        {[-0.15, 0.15].map((x) => (
-          <group key={x} position={[x, 0, 0]}>
-            <mesh material={m.zwart} scale={[1, 1.35, 0.6]}>
-              <sphereGeometry args={[0.075, 14, 10]} />
-            </mesh>
-            <mesh material={m.glim} position={[0.025, 0.04, 0.045]}>
-              <sphereGeometry args={[0.022, 8, 6]} />
-            </mesh>
-          </group>
         ))}
-      </group>
-      {[-0.26, 0.26].map((x) => (
-        <mesh key={x} material={m.wang} position={[x, 0.02, 0.41]} rotation={[0, x * 1.2, 0]}>
-          <circleGeometry args={[0.055, 14]} />
+        <mesh material={m.gat} position={[0.01, -0.13, 0.37]} rotation={[0, 0, 0.1]} scale={[0.05, 0.085, 0.02]}>
+          <sphereGeometry args={[1, 14, 10]} />
         </mesh>
-      ))}
-      <mesh material={m.zwart} position={[0, -0.03, 0.465]} rotation={[0, 0, Math.PI]} scale={[1, 0.8, 0.5]}>
-        <torusGeometry args={[0.06, 0.022, 8, 14, Math.PI]} />
-      </mesh>
-      {/* armpjes */}
-      <group ref={armL} position={[-0.44, -0.04, 0.05]}>
-        <mesh material={m.wit} position={[-0.1, 0, 0]} scale={[1.35, 0.72, 0.72]}>
+      </group>
+      {/* slappe armen onder het laken */}
+      <group ref={armL} position={[-0.36, 0.02, 0.04]}>
+        <mesh material={m.laken} position={[-0.14, 0, 0]} scale={[1.7, 0.55, 0.6]}>
           <sphereGeometry args={[0.1, 12, 8]} />
         </mesh>
       </group>
-      <group ref={armR} position={[0.44, -0.08, 0.08]}>
-        <mesh material={m.wit} position={[0.1, 0, 0]} scale={[1.35, 0.72, 0.72]}>
+      <group ref={armR} position={[0.36, -0.02, 0.06]}>
+        <mesh material={m.laken} position={[0.14, 0, 0]} scale={[1.7, 0.55, 0.6]}>
           <sphereGeometry args={[0.1, 12, 8]} />
         </mesh>
-        {/* pompoenlampje */}
-        <group position={[0.24, -0.2, 0.08]}>
-          <mesh material={m.pompoen} scale={[1, 0.82, 1]}>
-            <sphereGeometry args={[0.12, 14, 10]} />
+        {/* oude ijzeren lantaarn met een kaarsje */}
+        <group position={[0.3, -0.3, 0.06]}>
+          <mesh material={m.ijzer} position={[0, 0.2, 0]}>
+            <torusGeometry args={[0.045, 0.007, 6, 14, Math.PI]} />
           </mesh>
-          <mesh material={m.licht} position={[0, 0.0, 0.105]} scale={[1, 0.6, 1]}>
-            <circleGeometry args={[0.055, 3]} />
+          <mesh material={m.ijzer} position={[0, 0.13, 0]}>
+            <coneGeometry args={[0.08, 0.07, 4]} />
           </mesh>
-          <mesh material={m.steel} position={[0, 0.11, 0]}>
-            <cylinderGeometry args={[0.015, 0.02, 0.06, 6]} />
+          <mesh material={m.glas} rotation={[0, Math.PI / 4, 0]}>
+            <boxGeometry args={[0.1, 0.18, 0.1]} />
           </mesh>
-          <mesh material={m.zwart} position={[0, 0.2, 0]}>
-            <torusGeometry args={[0.07, 0.008, 6, 12, Math.PI]} />
+          <mesh material={m.ijzer} position={[0, -0.1, 0]} rotation={[0, Math.PI / 4, 0]}>
+            <boxGeometry args={[0.13, 0.025, 0.13]} />
+          </mesh>
+          <mesh material={m.kaars} position={[0, -0.05, 0]}>
+            <cylinderGeometry args={[0.018, 0.018, 0.07, 8]} />
+          </mesh>
+          <mesh ref={vlam} material={m.vlam} position={[0, 0.0, 0]}>
+            <sphereGeometry args={[0.014, 8, 6]} />
           </mesh>
         </group>
-      </group>
-      {/* heksenhoedje */}
-      <group ref={hoed} position={[0.08, 0.42, 0]}>
-        <mesh material={m.hoed} position={[0, 0.02, 0]}>
-          <cylinderGeometry args={[0.3, 0.3, 0.03, 24]} />
-        </mesh>
-        <mesh material={m.band} position={[0, 0.07, 0]}>
-          <cylinderGeometry args={[0.17, 0.18, 0.06, 20]} />
-        </mesh>
-        <mesh material={m.hoed} position={[0.02, 0.26, 0]} rotation={[0, 0, -0.18]}>
-          <coneGeometry args={[0.17, 0.42, 20]} />
-        </mesh>
       </group>
     </group>
   );

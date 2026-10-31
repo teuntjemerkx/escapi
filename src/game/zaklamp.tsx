@@ -95,51 +95,64 @@ function vlak(kleur: string, opts: { emissive?: string; e?: number; metal?: numb
 /** Draai een vorm zo dat zijn +y-as naar voren wijst (−z), zoals de lamp. */
 const vooruit = (g: THREE.BufferGeometry) => g.rotateX(-Math.PI / 2);
 
-/** Het model: lamp met brede kop, hand met vingers om het handvat, duim bij de knop, mouw. */
+/** Het model: een metalen staaflamp (zwart geanodiseerd, chromen rand, gloeiende lens) in een leren handschoen. */
 function maakModel() {
-  const metaal = vlak('#262a31', { emissive: '#101317', metal: 0.7, rough: 0.3 });
-  const chroom = vlak('#d4d8de', { emissive: '#4a4d52', metal: 0.9, rough: 0.2 });
+  const metaal = vlak('#17191d', { emissive: '#0b0c0e', metal: 0.75, rough: 0.36 });
+  const groef = vlak('#0c0d0f', { emissive: '#050506', metal: 0.6, rough: 0.55 });
+  const chroom = vlak('#c3c8cf', { emissive: '#2a2c30', metal: 1, rough: 0.16 });
   const lens = new THREE.MeshBasicMaterial({ color: '#fff4dc', transparent: true, toneMapped: false, fog: false });
-  const rubber = vlak('#2c2f33', { emissive: '#0c0d0e', rough: 0.9 });
-  const huid = vlak('#e8b993', { emissive: '#3a2014', e: 0.4, rough: 0.6 });
-  const nagel = vlak('#f3d3bd', { emissive: '#3a2418', e: 0.4, rough: 0.35 });
-  const mouw = vlak('#8a4f2c', { emissive: '#1e0e06', e: 0.5, rough: 0.85 });
-  const knop = vlak('#3a3d42', { emissive: '#101113', rough: 0.6 });
+  const reflector = vlak('#e8e2d2', { emissive: '#a89a7c', e: 0.9, metal: 1, rough: 0.12 });
+  const rubber = vlak('#1f2022', { emissive: '#08090a', rough: 0.92 });
+  const leer = vlak('#2c2724', { emissive: '#0e0b0a', e: 0.6, rough: 0.62 });
+  const naad = vlak('#1a1614', { emissive: '#070605', rough: 0.8 });
+  const mouw = vlak('#262a30', { emissive: '#0a0b0d', e: 0.6, rough: 0.92 });
+  const boord = vlak('#1c1f24', { emissive: '#08090a', e: 0.6, rough: 0.95 });
 
-  // lamp: staart, handvat (met ribbels), hals, brede kop, chromen ring en de lens
+  // lamp: staartkap, slanke koker, taps toelopende hals, kop met koelribbels, chromen rand, reflector en lens
   const profiel = [
-    [0.0, -0.135],
-    [0.02, -0.135],
-    [0.0235, -0.13],
-    [0.0235, -0.105],
-    [0.0215, -0.1],
-    [0.0215, 0.06],
-    [0.023, 0.07],
-    [0.031, 0.11],
-    [0.041, 0.148],
-    [0.043, 0.152],
+    [0.0, -0.152],
+    [0.0165, -0.152],
+    [0.0185, -0.148],
+    [0.0185, -0.118],
+    [0.0168, -0.114],
+    [0.0165, 0.078],
+    [0.0175, 0.088],
+    [0.0255, 0.122],
+    [0.0262, 0.128],
+    [0.0262, 0.176],
+    [0.0278, 0.179],
+    [0.0278, 0.188],
+    [0.0235, 0.189],
   ].map(([r, y]) => new THREE.Vector2(r, y));
   const delen: { geo: THREE.BufferGeometry; mat: THREE.Material }[] = [];
   const voeg = (geo: THREE.BufferGeometry, mat: THREE.Material) => delen.push({ geo, mat });
-  voeg(new THREE.CylinderGeometry(0.06, 0.07, 0.34, 16, 1, true).rotateX(-1.2).rotateZ(-0.45).translate(0.085, -0.115, 0.215), mouw);
-  voeg(vooruit(new THREE.LatheGeometry(profiel, 28)), metaal);
-  for (let i = 0; i < 7; i++) voeg(vooruit(new THREE.CylinderGeometry(0.0224, 0.0224, 0.006, 20).translate(0, -0.085 + i * 0.012, 0)), rubber);
-  voeg(vooruit(new THREE.CylinderGeometry(0.0445, 0.0445, 0.03, 32, 1, true).translate(0, 0.167, 0)), chroom);
-  voeg(vooruit(new THREE.TorusGeometry(0.0425, 0.0035, 8, 32).rotateX(Math.PI / 2).translate(0, 0.182, 0)), chroom);
-  voeg(vooruit(new THREE.CircleGeometry(0.039, 32).rotateX(-Math.PI / 2).translate(0, 0.183, 0)), lens);
-  voeg(new THREE.BoxGeometry(0.012, 0.007, 0.022).translate(0, 0.024, -0.03), knop);
-  // hand: handpalm aan de rechterkant, vier gekrulde vingers onder het handvat door, duim bovenop
-  voeg(new THREE.SphereGeometry(1, 18, 12).scale(0.032, 0.04, 0.062).translate(0.03, -0.006, 0.0), huid);
+  // mouw van een donkere jas, met een boord bij de pols
+  voeg(new THREE.CylinderGeometry(0.058, 0.07, 0.34, 18, 1, true).rotateX(-1.2).rotateZ(-0.45).translate(0.085, -0.115, 0.215), mouw);
+  voeg(new THREE.CylinderGeometry(0.052, 0.056, 0.05, 18).rotateX(-1.2).rotateZ(-0.45).translate(0.052, -0.05, 0.085), boord);
+  voeg(vooruit(new THREE.LatheGeometry(profiel, 32)), metaal);
+  // grip: drie smalle groeven in de koker, en koelribbels op de kop
+  for (let i = 0; i < 3; i++) voeg(vooruit(new THREE.CylinderGeometry(0.0168, 0.0168, 0.004, 24).translate(0, -0.1 + i * 0.016, 0)), groef);
+  for (let i = 0; i < 3; i++) voeg(vooruit(new THREE.CylinderGeometry(0.0258, 0.0258, 0.003, 28).translate(0, 0.138 + i * 0.011, 0)), groef);
+  voeg(vooruit(new THREE.TorusGeometry(0.0256, 0.0024, 8, 32).rotateX(Math.PI / 2).translate(0, 0.189, 0)), chroom);
+  // reflector: een ondiepe kom achter de lens, en de lens zelf
+  voeg(vooruit(new THREE.CylinderGeometry(0.0232, 0.009, 0.012, 28, 1, true).translate(0, 0.183, 0)), reflector);
+  voeg(vooruit(new THREE.CircleGeometry(0.0228, 32).rotateX(-Math.PI / 2).translate(0, 0.1885, 0)), lens);
+  // rubberen drukknop bovenop, oogje voor een koord aan de staart
+  voeg(new THREE.SphereGeometry(1, 12, 8).scale(0.0075, 0.0045, 0.011).translate(0, 0.0168, -0.055), rubber);
+  voeg(new THREE.TorusGeometry(0.006, 0.0016, 6, 14).rotateY(Math.PI / 2).translate(0, -0.012, 0.158), chroom);
+  // hand in een leren handschoen: handpalm rechts, vier gekrulde vingers om de koker, duim langs de bovenkant
+  voeg(new THREE.SphereGeometry(1, 18, 12).scale(0.03, 0.038, 0.06).translate(0.027, -0.004, 0.0), leer);
   for (let i = 0; i < 4; i++) {
-    const z = -0.045 + i * 0.024;
-    const dik = 0.0105 - i * 0.0007;
-    voeg(new THREE.TorusGeometry(0.0335, dik, 8, 14, 3.25).rotateZ(-3.25 + 0.2).translate(0, 0, z), huid);
+    const z = -0.043 + i * 0.023;
+    const dik = 0.0108 - i * 0.0007;
+    voeg(new THREE.TorusGeometry(0.0285, dik, 8, 16, 3.25).rotateZ(-3.25 + 0.2).translate(0, 0, z), leer);
     const a = -3.05;
-    voeg(new THREE.SphereGeometry(dik, 10, 8).translate(Math.cos(a) * 0.0335, Math.sin(a) * 0.0335, z), huid);
+    voeg(new THREE.SphereGeometry(dik * 1.02, 10, 8).translate(Math.cos(a) * 0.0285, Math.sin(a) * 0.0285, z), leer);
+    // naad over de knokkels
+    voeg(new THREE.TorusGeometry(0.0285 + dik * 0.96, 0.0011, 4, 10, 1.1).rotateZ(-0.9).translate(0, 0, z), naad);
   }
-  const duim = new THREE.CapsuleGeometry(0.0115, 0.05, 4, 10).rotateX(Math.PI / 2).rotateY(-0.25).translate(0.016, 0.027, -0.008);
-  voeg(duim, huid);
-  voeg(new THREE.SphereGeometry(1, 10, 8).scale(0.008, 0.003, 0.009).translate(0.01, 0.038, -0.034), nagel);
+  const duim = new THREE.CapsuleGeometry(0.0112, 0.05, 4, 10).rotateX(Math.PI / 2).rotateY(-0.25).translate(0.014, 0.022, -0.012);
+  voeg(duim, leer);
   return delen;
 }
 
