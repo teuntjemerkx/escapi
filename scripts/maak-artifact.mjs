@@ -2,7 +2,7 @@
 import { execSync } from 'node:child_process';
 import { mkdirSync, readFileSync, readdirSync, writeFileSync } from 'node:fs';
 
-execSync('npx vite build', { stdio: 'inherit' });
+execSync('npx vite build', { stdio: 'inherit', env: { ...process.env, EEN_BESTAND: '1' } });
 const assets = readdirSync('dist/assets');
 const js = assets.filter((f) => f.endsWith('.js')).map((f) => readFileSync(`dist/assets/${f}`, 'utf8')).join('\n');
 const css = assets.filter((f) => f.endsWith('.css')).map((f) => readFileSync(`dist/assets/${f}`, 'utf8')).join('\n');

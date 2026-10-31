@@ -16,7 +16,7 @@ angst, geen bloed of geweld in beeld, en de rekenopdrachten blijven altijd speel
 
 ## Wat er in het spel zit
 
-- **Frank** is overdag de tuinman, 's nachts iets anders: bleek, donkere kleren, gloeiende ogen. Geen grappige teksten meer.
+- **Frank** is overdag de tuinman, 's nachts iets anders: lang en mager, holle oogkassen met gloeiende pupillen (ook in de verte te zien), een open mond, te lange armen en vingers en een gehechte nek. Als hij staart, hangt zijn hoofd scheef en schokt het; als hij jaagt, rent hij met zijn armen naar je uitgestoken. Geen grappige teksten meer.
   - *In de verte:* hij staat stil in een gang en kijkt je aan. Schijn je erop of kom je dichterbij, dan is hij weg.
   - *Toeslaan:* om de hoek, achter je als je stilstaat, of als je lamp uitvalt. Stinger, schok, daarna fluistert hij.
   - *Achtervolging (± de helft van de keren):* hij rent je achterna (net iets langzamer dan jij). Ren naar het licht of zijn tuin. Pakt hij je, dan valt je lamp even uit en is hij weg. Je verliest niets.
@@ -24,6 +24,8 @@ angst, geen bloed of geweld in beeld, en de rekenopdrachten blijven altijd speel
 - **Geluid** (live gemaakt met Web Audio): bromtoon, wind, gefluister, gekraak, bonken, deuren, Franks voetstappen en adem in 3D, je hartslag, stingers en een snelle puls tijdens de jacht.
 - **Beeld:** filmkorrel, kleurranden en een donkere rand die meegroeien met de angst (en meekloppen met je hart). De zaklamp hapert als hij dichtbij is.
 - **Het slot:** gekraste tekst op de muren ("HIJ ZIET JE", "BLIJF IN HET LICHT", "TEL DE STAPPEN"). In donkere hoeken kijken soms twee ogen je aan; schijn je erop, dan zijn ze weg.
+- **Boo** (het maatje) is geen schattig heksje meer, maar een bleek, doorschijnend laken met holle ogen en een oude lantaarn. Hij helpt nog steeds, maar fluistert.
+- **Zaklamp:** een metalen staaflamp in een leren handschoen, met reflector en gloeiende lens.
 - **Docent:** "Schrikmomenten" uit = geen toeslaan en geen jacht, wel de sfeer.
 
 Code: `src/world2/horror.tsx` (geluid, angst, muren, ogen), `src/world2/FrankNPC.tsx` (regie), `src/world2/frankModel.tsx` (uiterlijk), `src/game/beeld.ts` (`sfeerFx`).

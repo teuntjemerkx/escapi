@@ -547,8 +547,9 @@ function trapRechthoek(tr: Trap) {
 }
 
 /** Hoe diep de groefjes in een vloer zijn, en hoe glad hij is (tegels en steen glanzen meer). */
-const VLOER_RELIEF: Partial<Record<Vloer, number>> = { planken: 1.1, visgraat: 1.1, vlonder: 1.4, tegels: 0.8, steen: 1.6, kinderkopjes: 2.4, grind: 1.6, beton: 0.6, asfalt: 0.8, tapijt: 0.5, gras: 1, zand: 0.7, sneeuw: 0.5 };
-const VLOER_GLANS: Partial<Record<Vloer, number>> = { planken: 0.62, visgraat: 0.55, tegels: 0.42, steen: 0.7, beton: 0.8, tapijt: 1 };
+const VLOER_RELIEF: Partial<Record<Vloer, number>> = { planken: 1.0, visgraat: 1.0, vlonder: 1.3, tegels: 0.7, steen: 1.4, kinderkopjes: 1.5, grind: 1.4, beton: 0.5, asfalt: 0.7, tapijt: 0.5, gras: 1, zand: 0.7, sneeuw: 0.5, terrazzo: 0.25 };
+/** Ruwheid: gepolijste vloeren (terrazzo, tegels, gelakt hout) weerspiegelen de omgeving zacht. */
+const VLOER_GLANS: Partial<Record<Vloer, number>> = { planken: 0.5, visgraat: 0.42, tegels: 0.3, terrazzo: 0.24, steen: 0.66, beton: 0.72, rubber: 0.85, rooster: 0.5, tapijt: 1 };
 
 function KamerVloer({ k, gaten = [] }: { k: Kamer; gaten?: number[][] }) {
   const soort = k.vloer ?? 'planken';

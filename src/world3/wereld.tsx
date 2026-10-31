@@ -41,6 +41,7 @@ export const wereld3: WereldDef | null = {
   Levend: MarkthalLevend,
   Omgeving: MarkthalOmgeving,
   sfeer: {
+    hdri: 'hall',
     achtergrond: 'linear-gradient(180deg, #3b3560 0%, #7d4f7a 26%, #d9776a 52%, #f4a964 74%, #fbd49a 100%)',
     mist: ['#d78a72', 26, 85],
     hemel: ['#ffd8b4', '#5a4446', 0.78],

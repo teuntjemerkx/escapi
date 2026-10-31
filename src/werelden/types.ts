@@ -6,6 +6,9 @@ import type { Fase, Weergave } from '../game/store';
 
 export type Ondergrond = 'gras' | 'tegels' | 'zand' | 'grind';
 
+/** De HDRI-opnames die het spel gebruikt (zie Omgeving in App.tsx). */
+export type Hdri = 'sunset' | 'night' | 'hall' | 'lobby' | 'lab';
+
 export interface Station {
   id: string;
   titel: string;
@@ -322,6 +325,8 @@ export interface Sfeer {
   lantaarn?: number;
   /** Sterkte van de reflecties (standaard 0,2). */
   glans?: number;
+  /** Echte omgevingsopname (HDRI, CC0 van Poly Haven via @pmndrs/assets) voor reflecties en zacht licht. */
+  hdri?: Hdri;
   /** Werpt de zon (of maan) schaduw? Standaard ja. In een donkere wereld met zaklamp scheelt uit veel tekenwerk. */
   schaduw?: boolean;
   /** Zaklamp: het poppetje schijnt met een lichtbundel vooruit (donkere werelden). */

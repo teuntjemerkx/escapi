@@ -59,6 +59,7 @@ export const wereld2: WereldDef = {
   },
   camera: 'eerste',
   sfeer: {
+    hdri: 'night',
     // nacht boven het Nevelmeer; de maan staat laag in het noorden, achter de donjon
     achtergrond: 'linear-gradient(180deg, #08122c 0%, #10204f 38%, #2c4f9a 68%, #5283d4 86%, #22304a 100%)',
     mist: ['#141e3c', 14, 58],

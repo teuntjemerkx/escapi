@@ -10,6 +10,7 @@
     "verify": "node scripts/verify-data.mjs src/data/onderdeel*.json"
   },
   "dependencies": {
+    "@pmndrs/assets": "1.7.0",
     "@react-three/drei": "10.7.9",
     "@react-three/fiber": "9.8.2",
     "animejs": "4.5.0",

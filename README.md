@@ -26,3 +26,9 @@ Bouwen: `npm run build` (uitvoer in `dist/`). Data controleren: `npm run verify`
 ## Online
 
 Elke push naar `main` wordt automatisch door Vercel gebouwd en gepubliceerd.
+
+## Beeld en geluid
+
+- **Omgevingslicht:** echte HDRI-opnames van [Poly Haven](https://polyhaven.com/hdris) (CC0), verkleind door [@pmndrs/assets](https://github.com/pmndrs/assets) (CC0). Per wereld: zonsondergang (haven), nacht (spookkasteel), hal (markthal), lobby (winkelcentrum) en lab (controlekamer).
+- **Kleur:** AgX-tonemapping (filmische kleurweergave) met lichte contrast- en kleurcorrectie.
+- **Geluid in wereld 2:** helemaal live gemaakt met Web Audio, zonder opgenomen geluiden. Zie [docs/ontwerp/horror-wereld2.md](docs/ontwerp/horror-wereld2.md).

@@ -50,6 +50,7 @@ export const wereld1: WereldDef | null = {
   Omgeving: Wereld1Omgeving,
   // Basis: het gouden uur. FaseSfeer (sfeer.tsx) schuift per fase op naar het blauwe uur.
   sfeer: {
+    hdri: 'sunset',
     achtergrond: 'linear-gradient(180deg, #5f8fc4 0%, #8fb2d8 30%, #e9c7a4 52%, #f3c99a 58%, #8a6f62 70%, #3a3340 100%)',
     mist: ['#e9c7a4', 45, 170],
     hemel: ['#cfe0f5', '#6a5644', 0.9],

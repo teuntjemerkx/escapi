@@ -42,6 +42,7 @@ export const wereld5: WereldDef = {
   // Een meetstation op een bergrichel: heldere, koude nacht met noorderlicht en blauw maanlicht. Het dal ligt diep onder je.
   Omgeving: Wereld5Omgeving,
   sfeer: {
+    hdri: 'lab',
     achtergrond:
       'radial-gradient(70% 40% at 26% 12%, rgba(70, 255, 170, 0.34) 0%, rgba(70, 255, 170, 0) 70%), radial-gradient(60% 36% at 72% 8%, rgba(170, 95, 255, 0.32) 0%, rgba(170, 95, 255, 0) 70%), radial-gradient(90% 42% at 50% 24%, rgba(60, 210, 200, 0.16) 0%, rgba(60, 210, 200, 0) 75%), linear-gradient(180deg, #07122a 0%, #0c1d3a 45%, #0a1630 70%, #050a16 100%)',
     mist: ['#0d1a33', 45, 270],

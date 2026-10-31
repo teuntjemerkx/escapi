@@ -54,6 +54,7 @@ export const wereld4: WereldDef | null = {
   Omgeving: Wereld4Omgeving,
   // blauw uur in de stad: diepblauwe lucht boven het glas, warme lantaarns en roze/cyaan neon
   sfeer: {
+    hdri: 'lobby',
     achtergrond: 'radial-gradient(120% 95% at 50% 22%, #4b4f9a 0%, #262a63 45%, #0d0e24 100%)',
     mist: ['#1f2148', 26, 88],
     hemel: ['#c8ccff', '#3a3040', 0.82],

@@ -2,6 +2,7 @@ import { Canvas, useFrame, useThree } from '@react-three/fiber';
 import { useEffect, useMemo, useRef, useState } from 'react';
 import * as THREE from 'three';
 import { RoomEnvironment } from 'three/examples/jsm/environments/RoomEnvironment.js';
+import { EXRLoader } from 'three/examples/jsm/loaders/EXRLoader.js';
 import { CameraKoppeling } from './game/inspectie';
 import { koppelInvoer, muisVast } from './game/invoer';
 import { gebruikRicht, useRicht } from './game/richten';
@@ -24,7 +25,7 @@ import { Maatje3D, MaatjeFotos, useMaatje, useMaatjeCss } from './game/maatje';
 import { huidig } from './werelden';
 import { Beginpagina } from './ui/Begin';
 import { Merk } from './ui/Merk';
-import type { Sfeer } from './werelden/types';
+import type { Hdri, Sfeer } from './werelden/types';
 
 function Invoer() {
   const gl = useThree((s) => s.gl);
@@ -37,21 +38,51 @@ const SCHADUW = OVERZICHT ? 62 : 28;
 const TEXEL = (SCHADUW * 2) / 2048;
 const midden = new THREE.Vector3();
 
-/** Zachte reflecties van een neutrale studio-omgeving (laag gedoseerd). */
-function Omgeving({ binnen, glans }: { binnen: boolean; glans?: number }) {
+/** Echte omgevingsopnames (HDRI, CC0, Poly Haven via @pmndrs/assets). Ze worden pas geladen als een wereld ze nodig heeft. */
+const HDRI: Record<Hdri, () => Promise<{ default: string }>> = {
+  sunset: () => import('@pmndrs/assets/hdri/sunset.exr'),
+  night: () => import('@pmndrs/assets/hdri/night.exr'),
+  hall: () => import('@pmndrs/assets/hdri/hall.exr'),
+  lobby: () => import('@pmndrs/assets/hdri/lobby.exr'),
+  lab: () => import('@pmndrs/assets/hdri/lab.exr'),
+};
+
+/**
+ * Reflecties en zacht omgevingslicht. Eerst een neutrale studio (direct klaar), daarna de echte HDRI van de wereld:
+ * glas, metaal en natte stenen weerspiegelen dan een echte lucht of hal in plaats van een grijze doos.
+ */
+function Omgeving({ binnen, glans, hdri }: { binnen: boolean; glans?: number; hdri?: Hdri }) {
   const gl = useThree((s) => s.gl);
   const scene = useThree((s) => s.scene);
   useEffect(() => {
     const pmrem = new THREE.PMREMGenerator(gl);
-    const env = pmrem.fromScene(new RoomEnvironment(), 0.04).texture;
+    let env = pmrem.fromScene(new RoomEnvironment(), 0.04).texture;
+    let weg = false;
     scene.environment = env;
     scene.environmentIntensity = glans ?? (binnen ? 0.2 : 0.28);
+    if (hdri) {
+      HDRI[hdri]()
+        .then((m) => new EXRLoader().loadAsync(m.default))
+        .then((tex) => {
+          if (weg) return tex.dispose();
+          tex.mapping = THREE.EquirectangularReflectionMapping;
+          const echt = pmrem.fromEquirectangular(tex).texture;
+          tex.dispose();
+          env.dispose();
+          env = echt;
+          scene.environment = echt;
+          // de verkleinde opnames geven minder licht dan de studio: iets meer sterkte, zodat reflecties zichtbaar blijven
+          scene.environmentIntensity = (glans ?? (binnen ? 0.2 : 0.28)) * 1.6;
+        })
+        .catch(() => {});
+    }
     return () => {
+      weg = true;
       scene.environment = null;
       env.dispose();
       pmrem.dispose();
     };
-  }, [gl, scene, binnen, glans]);
+  }, [gl, scene, binnen, glans, hdri]);
   return null;
 }
 
@@ -455,7 +486,7 @@ function Spel() {
         }}
       >
         <Lucht css={def.sfeer?.achtergrond ?? def.lucht ?? (binnen ? DONKER : `linear-gradient(180deg, ${P.lucht} 0%, ${P.lucht} 100%)`)} />
-        <Omgeving binnen={binnen} glans={def.sfeer?.glans} />
+        <Omgeving binnen={binnen} glans={def.sfeer?.glans} hdri={def.sfeer?.hdri} />
         {!binnen && <fog attach="fog" args={[P.lucht, 110, 260]} />}
         {def.sfeer?.mist && <Mist key={`mist-${wereld}`} mist={def.sfeer.mist} dicht={!!def.sfeer.zaklamp} />}
         <Licht key={`licht-${wereld}`} binnen={binnen} sfeer={def.sfeer} />

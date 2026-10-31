@@ -350,10 +350,10 @@ export function vloerTextuur(soort: Vloer, kleur: string) {
           // lichte steen met fijne gekleurde korrels en hier en daar een grotere
           ctx.fillStyle = kleur;
           ctx.fillRect(0, 0, w, h);
-          const korrels = ['#9a8f80', '#c9bfae', '#7d7468', '#f4efe6', '#b5a48c', '#8e9aa3'];
-          for (let k = 0; k < 9000; k++) {
+          const korrels = ['#b3a998', '#cfc6b6', '#a39886', '#f4efe6', '#c2b49e', '#a9b1b6'];
+          for (let k = 0; k < 12000; k++) {
             ctx.fillStyle = korrels[Math.floor(rnd() * korrels.length)];
-            const r = rnd() < 0.06 ? 3 + rnd() * 4 : 0.8 + rnd() * 1.8;
+            const r = rnd() < 0.015 ? 2 + rnd() * 2.5 : 0.6 + rnd() * 1.3;
             ctx.beginPath();
             ctx.ellipse(rnd() * w, rnd() * h, r, r * (0.6 + rnd() * 0.4), rnd() * 3, 0, Math.PI * 2);
             ctx.fill();

@@ -51,6 +51,9 @@ export class Beeld {
   smaa: SMAAEffect;
   randen: EffectPass;
   korrel: NoiseEffect;
+  tonen: ToneMappingEffect;
+  verzadiging: HueSaturationEffect;
+  contrast: BrightnessContrastEffect;
   aberratie: ChromaticAberrationEffect;
   vignet: VignetteEffect;
   kwaliteit: Kwaliteit = 'midden';
@@ -110,9 +113,13 @@ export class Beeld {
     this.composer.addPass(this.maatje);
 
     this.bloom = new BloomEffect({ mipmapBlur: true, luminanceThreshold: 1.0, luminanceSmoothing: 0.3, intensity: 0.7, radius: 0.75, levels: 6 });
-    const contrast = new BrightnessContrastEffect({ brightness: 0, contrast: 0.07 });
-    const verzadiging = new HueSaturationEffect({ hue: 0, saturation: 0.07 });
-    const tonen = new ToneMappingEffect({ mode: ToneMappingMode.NEUTRAL });
+    // AgX: filmische kleurweergave (zachte hooglichten, natuurlijke lucht); iets meer contrast en kleur zodat het niet flets wordt
+    const contrast = new BrightnessContrastEffect({ brightness: 0, contrast: 0.12 });
+    const verzadiging = new HueSaturationEffect({ hue: 0, saturation: 0.18 });
+    const tonen = new ToneMappingEffect({ mode: ToneMappingMode.AGX });
+    this.tonen = tonen;
+    this.verzadiging = verzadiging;
+    this.contrast = contrast;
     const vignet = new VignetteEffect({ offset: 0.32, darkness: 0.42 });
     this.vignet = vignet;
     // filmkorrel en kleurranden: staan uit, tenzij een wereld ze via sfeerFx aanzet (angst in het spookslot)

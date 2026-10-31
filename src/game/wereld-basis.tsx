@@ -169,97 +169,109 @@ const MARKER_KLEUR: Record<MarkerSoort, string> = {
   'kluis-open': '#5fe0a1',
 };
 
-/** Zwevend icoon in de stijl van de interface: donker glas, witte rand, gekleurde ring. */
+/** Zwevend icoon: een strakke, gevulde stip met een wit symbool, een dunne witte rand en een zachte gloed. */
+const MARKER_VUL: Record<MarkerSoort, string> = {
+  slot: 'rgba(52,58,60,0.78)',
+  verplicht: '#ff7f2e',
+  keuze: '#8a74ef',
+  klaar: '#2fb67a',
+  code: '#161c1c',
+  kluis: '#161c1c',
+  'kluis-open': '#2fb67a',
+};
 function MarkerIcoon({ soort, deel, klusKleur, symbool, cijfer }: { soort: MarkerSoort; deel: number; klusKleur?: string; symbool?: number; cijfer?: number }) {
-  const kleur = soort === 'code' || soort === 'kluis' ? klusKleur ?? '#ffffff' : MARKER_KLEUR[soort];
   const stap = Math.round(deel * 12);
   const tex = useTextuur(
     0.9,
     0.9,
     (ctx, w, h) => {
       const m = w / 2;
-      const r = w / 2 - 12;
-      ctx.fillStyle = 'rgba(0,0,0,0.22)';
-      ctx.beginPath();
-      ctx.arc(m, m + 6, r, 0, Math.PI * 2);
-      ctx.fill();
-      ctx.fillStyle = 'rgba(10,18,16,0.88)';
+      const r = w * 0.3;
+      const accent = soort === 'code' || soort === 'kluis' ? klusKleur ?? '#ffffff' : MARKER_KLEUR[soort];
+      // zachte gloed in de eigen kleur
+      const gloed = ctx.createRadialGradient(m, m, r * 0.7, m, m, w / 2);
+      gloed.addColorStop(0, accent + (soort === 'slot' ? '22' : '66'));
+      gloed.addColorStop(1, accent + '00');
+      ctx.fillStyle = gloed;
+      ctx.fillRect(0, 0, w, h);
+      // de stip
+      ctx.fillStyle = MARKER_VUL[soort];
       ctx.beginPath();
       ctx.arc(m, m, r, 0, Math.PI * 2);
       ctx.fill();
-      ctx.lineWidth = 5;
-      ctx.strokeStyle = 'rgba(255,255,255,0.92)';
+      ctx.lineWidth = 3.5;
+      ctx.strokeStyle = 'rgba(255,255,255,0.95)';
       ctx.stroke();
+      // voortgang (of de kleur van de klus): een dunne boog net buiten de stip
+      const deelRing = soort === 'klaar' || soort === 'code' || soort === 'kluis-open' ? 0 : soort === 'slot' || soort === 'kluis' ? 0 : Math.max(stap / 12, 0);
       ctx.lineCap = 'round';
-      ctx.lineWidth = 12;
-      // ring: voortgang, of de kleur van de klus
-      ctx.strokeStyle = klusKleur && soort !== 'slot' ? klusKleur : 'rgba(255,255,255,0.14)';
-      if (klusKleur && soort === 'verplicht') ctx.globalAlpha = 0.55;
-      ctx.beginPath();
-      ctx.arc(m, m, r - 18, 0, Math.PI * 2);
-      ctx.stroke();
-      ctx.globalAlpha = 1;
-      const deelRing = soort === 'klaar' || soort === 'code' || soort === 'kluis-open' ? 1 : soort === 'slot' || soort === 'kluis' ? 0 : Math.max(stap / 12, 0);
-      if (deelRing > 0.002 && soort !== 'code') {
-        ctx.strokeStyle = MARKER_KLEUR[soort];
+      if (klusKleur && soort !== 'slot') {
+        ctx.lineWidth = 5;
+        ctx.strokeStyle = klusKleur;
         ctx.beginPath();
-        ctx.arc(m, m, r - 18, -Math.PI / 2, -Math.PI / 2 + deelRing * Math.PI * 2);
+        ctx.arc(m, m, r + 9, 0, Math.PI * 2);
         ctx.stroke();
       }
-      ctx.fillStyle = kleur;
-      ctx.strokeStyle = kleur;
+      if (deelRing > 0.002) {
+        ctx.lineWidth = 5;
+        ctx.strokeStyle = '#ffffff';
+        ctx.beginPath();
+        ctx.arc(m, m, r + 9, -Math.PI / 2, -Math.PI / 2 + deelRing * Math.PI * 2);
+        ctx.stroke();
+      }
+      ctx.fillStyle = '#ffffff';
+      ctx.strokeStyle = '#ffffff';
       ctx.lineJoin = 'round';
       ctx.textAlign = 'center';
       ctx.textBaseline = 'middle';
       if (soort === 'verplicht') {
-        ctx.fillStyle = MARKER_KLEUR.verplicht;
-        ctx.font = `700 ${h * 0.42}px Inter, ${FONT}`;
-        ctx.fillText('!', m, m + 3);
+        ctx.font = `800 ${h * 0.3}px Inter, ${FONT}`;
+        ctx.fillText('!', m, m + 2);
       } else if (soort === 'keuze') {
         ctx.beginPath();
         for (let i = 0; i < 10; i++) {
-          const rr = i % 2 ? w * 0.09 : w * 0.2;
+          const rr = i % 2 ? w * 0.06 : w * 0.135;
           const a = -Math.PI / 2 + (i * Math.PI) / 5;
-          ctx.lineTo(m + Math.cos(a) * rr, m + Math.sin(a) * rr);
+          ctx.lineTo(m + Math.cos(a) * rr, m + 3 + Math.sin(a) * rr);
         }
         ctx.closePath();
         ctx.fill();
       } else if (soort === 'klaar' || soort === 'kluis-open') {
-        ctx.lineWidth = w * 0.07;
-        ctx.beginPath();
-        ctx.moveTo(w * 0.35, h * 0.51);
-        ctx.lineTo(w * 0.46, h * 0.62);
-        ctx.lineTo(w * 0.66, h * 0.39);
-        ctx.stroke();
-      } else if (soort === 'code') {
-        tekenSymbool(ctx, symbool ?? 0, w * 0.37, h * 0.5, w * 0.12, klusKleur ?? '#ffffff');
-        ctx.fillStyle = '#ffffff';
-        ctx.font = `700 ${h * 0.3}px Inter, ${FONT}`;
-        ctx.fillText(String(cijfer ?? ''), w * 0.63, h * 0.52);
-      } else if (soort === 'kluis') {
-        // kluisje met draaiknop
-        ctx.lineWidth = w * 0.04;
-        ctx.strokeRect(w * 0.33, h * 0.33, w * 0.34, h * 0.34);
-        ctx.beginPath();
-        ctx.arc(m, m, w * 0.07, 0, Math.PI * 2);
-        ctx.stroke();
-      } else {
-        ctx.fillStyle = MARKER_KLEUR.slot;
-        ctx.strokeStyle = MARKER_KLEUR.slot;
         ctx.lineWidth = w * 0.045;
         ctx.beginPath();
-        ctx.arc(m, h * 0.44, w * 0.09, Math.PI, 0);
+        ctx.moveTo(w * 0.4, h * 0.51);
+        ctx.lineTo(w * 0.47, h * 0.58);
+        ctx.lineTo(w * 0.61, h * 0.43);
         ctx.stroke();
-        ctx.fillRect(w * 0.37, h * 0.45, w * 0.26, h * 0.19);
+      } else if (soort === 'code') {
+        tekenSymbool(ctx, symbool ?? 0, w * 0.41, h * 0.5, w * 0.075, klusKleur ?? '#ffffff');
+        ctx.fillStyle = '#ffffff';
+        ctx.font = `700 ${h * 0.2}px Inter, ${FONT}`;
+        ctx.fillText(String(cijfer ?? ''), w * 0.585, h * 0.515);
+      } else if (soort === 'kluis') {
+        ctx.lineWidth = w * 0.028;
+        ctx.strokeRect(w * 0.39, h * 0.39, w * 0.22, h * 0.22);
+        ctx.beginPath();
+        ctx.arc(m, m, w * 0.045, 0, Math.PI * 2);
+        ctx.stroke();
+      } else {
+        // slot
+        ctx.globalAlpha = 0.85;
+        ctx.lineWidth = w * 0.03;
+        ctx.beginPath();
+        ctx.arc(m, h * 0.46, w * 0.055, Math.PI, 0);
+        ctx.stroke();
+        ctx.fillRect(w * 0.42, h * 0.46, w * 0.16, h * 0.12);
+        ctx.globalAlpha = 1;
       }
     },
-    `marker3-${soort}-${stap}-${klusKleur ?? ''}-${symbool ?? ''}-${cijfer ?? ''}`,
+    `marker4-${soort}-${stap}-${klusKleur ?? ''}-${symbool ?? ''}-${cijfer ?? ''}`,
     256,
   );
   return (
     <mesh>
       <planeGeometry args={[0.9, 0.9]} />
-      <meshBasicMaterial map={tex} transparent depthWrite={false} toneMapped={false} />
+      <meshBasicMaterial map={tex} transparent depthWrite={false} toneMapped={false} opacity={soort === 'klaar' || soort === 'slot' ? 0.75 : 1} />
     </mesh>
   );
 }
@@ -270,7 +282,7 @@ function DoelRand({ w, d, y, kleur = '#ff8a3d' }: { w: number; d: number; y: num
   useFrame(({ clock }) => {
     materiaal.opacity = 0.45 + Math.sin(clock.getElapsedTime() * 4) * 0.3;
   });
-  const dik = 0.16;
+  const dik = 0.08;
   return (
     <group position={[0, y, 0]}>
       {[
@@ -407,7 +419,10 @@ function Marker({ st, doel }: { st: Station; doel: boolean }) {
     if (ref.current) {
       ref.current.position.y = y + Math.sin(t * 2 + st.pos[0]) * 0.1;
       const gericht = richt.id === st.id;
-      const s = (doel ? 1.4 + Math.sin(t * 4) * 0.07 : soort === 'slot' ? 0.62 : soort === 'code' ? 1.12 : 1) * (gericht ? 1.25 : 1);
+      // dichtbij wordt het icoon kleiner (dan zegt de melding in beeld al wat het is)
+      const ver = Math.hypot(st.pos[0] - speler.pos.x, st.pos[1] - speler.pos.z);
+      const dicht = THREE.MathUtils.clamp(ver / 7, 0.55, 1);
+      const s = (doel ? 1.25 + Math.sin(t * 4) * 0.05 : soort === 'slot' ? 0.6 : soort === 'klaar' ? 0.7 : soort === 'code' ? 1.05 : 0.9) * (gericht ? 1.15 : 1) * dicht;
       ref.current.scale.setScalar(s);
     }
     if (ring.current) {
@@ -434,8 +449,8 @@ function Marker({ st, doel }: { st: Station; doel: boolean }) {
       {doel && st.kavel && <DoelRand w={d ? st.kavel[1] : st.kavel[0]} d={d ? st.kavel[0] : st.kavel[1]} y={HOOGTE_KAVEL + 0.03} />}
       {doel && !st.kavel && (
         <mesh ref={ring} rotation={[-Math.PI / 2, 0, 0]} position={[0, hoogteVan(st) + 0.04, 0]}>
-          <ringGeometry args={[Math.max(1.2, st.grootte * 0.35), Math.max(1.35, st.grootte * 0.35 + 0.15), 48]} />
-          <meshBasicMaterial color={randKleur} transparent opacity={0.5} depthWrite={false} toneMapped={false} />
+          <ringGeometry args={[Math.max(1.2, st.grootte * 0.35), Math.max(1.27, st.grootte * 0.35 + 0.07), 64]} />
+          <meshBasicMaterial color={randKleur} transparent opacity={0.4} depthWrite={false} toneMapped={false} />
         </mesh>
       )}
     </group>
