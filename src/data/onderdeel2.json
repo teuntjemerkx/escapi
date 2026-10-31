@@ -1,0 +1,5250 @@
+{
+ "onderdeel": 2,
+ "titel": "Oriëntatie in de 2- en 3-dimensionale wereld",
+ "opdrachten": [
+  {
+   "id": "O2-INS-01",
+   "onderdeel": 2,
+   "sectie": "instap",
+   "nummer": "1",
+   "afbeeldingen": [],
+   "flags": [],
+   "autoCheck": true,
+   "origineel": "Op een kaart is 1 cm gelijk aan 250 meter. Hoe ver is de supermarkt van school als de afstand op de kaart 4 cm is?",
+   "vraag": [
+    "Op de schatkaart is 1 cm in het echt 250 meter.",
+    "Het kasteel en de molen liggen 4 cm uit elkaar.",
+    "Hoe ver is dat in het echt?"
+   ],
+   "type": "getal",
+   "paneel": "verhoudingstabel",
+   "object3d": "kaarttafel",
+   "stappen": [
+    {
+     "tekst": "Zet de schaal in de tabel",
+     "som": "1 cm → 250 m",
+     "expr": null,
+     "uitkomst": "1 cm = 250 m",
+     "invoer": false,
+     "tabel": {
+      "boven": [
+       "1 cm",
+       "4 cm"
+      ],
+      "onder": [
+       "250 m",
+       "?"
+      ],
+      "pijl": "× 4"
+     }
+    },
+    {
+     "tekst": "Doe keer 4",
+     "som": "4 × 250",
+     "expr": "4*250",
+     "uitkomst": 1000,
+     "eenheid": "m",
+     "invoer": true,
+     "tabel": {
+      "boven": [
+       "1 cm",
+       "4 cm"
+      ],
+      "onder": [
+       "250 m",
+       "1000 m"
+      ],
+      "pijl": "× 4"
+     }
+    }
+   ],
+   "antwoord": {
+    "waarde": 1000,
+    "eenheid": "m",
+    "expr": "4*250"
+   },
+   "voorbeeld": {
+    "vraag": [
+     "Op de kaart is 1 cm in het echt 500 meter.",
+     "De kerk ligt 3 cm van het kasteel.",
+     "Hoe ver is dat?"
+    ],
+    "stappen": [
+     {
+      "tekst": "Doe keer 3",
+      "som": "3 × 500",
+      "expr": "3*500",
+      "uitkomst": 1500,
+      "eenheid": "m",
+      "invoer": true,
+      "tabel": {
+       "boven": [
+        "1 cm",
+        "3 cm"
+       ],
+       "onder": [
+        "500 m",
+        "1500 m"
+       ],
+       "pijl": "× 3"
+      }
+     }
+    ],
+    "antwoord": {
+     "waarde": 1500,
+     "eenheid": "m",
+     "expr": "3*500"
+    }
+   }
+  },
+  {
+   "id": "O2-INS-02",
+   "onderdeel": 2,
+   "sectie": "instap",
+   "nummer": "2",
+   "afbeeldingen": [],
+   "flags": [],
+   "autoCheck": true,
+   "origineel": "Een rechthoekige tuin is 6 meter lang en 4 meter breed. Wat is de oppervlakte van de tuin? A. 20 m² B. 24 m² C. 30 m² D. 40 m²",
+   "vraag": [
+    "De kruidentuin van de heks is 6 meter lang.",
+    "De kruidentuin is 4 meter breed.",
+    "Hoe groot is de kruidentuin?"
+   ],
+   "type": "keuze",
+   "keuzes": [
+    "20 m²",
+    "24 m²",
+    "30 m²",
+    "40 m²"
+   ],
+   "paneel": "keuze",
+   "object3d": "moestuin",
+   "stappen": [
+    {
+     "tekst": "Lengte keer breedte",
+     "som": "6 × 4",
+     "expr": "6*4",
+     "uitkomst": 24,
+     "eenheid": "m²",
+     "invoer": true,
+     "deel": "grond"
+    }
+   ],
+   "antwoord": {
+    "waarde": "24 m²",
+    "expr": null,
+    "alternatieven": [
+     "B"
+    ]
+   },
+   "voorbeeld": {
+    "vraag": [
+     "Een kruidenbed is 5 meter lang en 3 meter breed.",
+     "Hoe groot is het bed?"
+    ],
+    "stappen": [
+     {
+      "tekst": "Lengte keer breedte",
+      "som": "5 × 3",
+      "expr": "5*3",
+      "uitkomst": 15,
+      "eenheid": "m²",
+      "invoer": true
+     }
+    ],
+    "antwoord": {
+     "waarde": 15,
+     "eenheid": "m²",
+     "expr": "5*3"
+    }
+   }
+  },
+  {
+   "id": "O2-INS-03",
+   "onderdeel": 2,
+   "sectie": "instap",
+   "nummer": "3",
+   "afbeeldingen": [],
+   "flags": [],
+   "autoCheck": true,
+   "origineel": "Een doos is 50 cm lang, 30 cm breed en 20 cm hoog. Wat is de inhoud van de doos in liters? (1 liter = 1000 cm³)",
+   "vraag": [
+    "De heks heeft een kist in de Ridderzaal gezet.",
+    "De kist is 50 cm lang, 30 cm breed en 20 cm hoog.",
+    "Hoeveel liter toverdrank past erin?",
+    "Tip: 1 liter = 1000 cm³."
+   ],
+   "type": "getal",
+   "paneel": "eenhedentrap",
+   "object3d": "verhuisdoos",
+   "stappen": [
+    {
+     "tekst": "Reken de inhoud uit",
+     "som": "50 × 30 × 20",
+     "expr": "50*30*20",
+     "uitkomst": 30000,
+     "eenheid": "cm³",
+     "invoer": true,
+     "deel": "doos"
+    },
+    {
+     "tekst": "Maak er liters van",
+     "som": "30.000 : 1000",
+     "expr": "30000/1000",
+     "uitkomst": 30,
+     "eenheid": "liter",
+     "invoer": true,
+     "trap": {
+      "van": "cm³",
+      "naar": "dm³"
+     }
+    }
+   ],
+   "antwoord": {
+    "waarde": 30,
+    "eenheid": "liter",
+    "expr": "50*30*20/1000"
+   },
+   "voorbeeld": {
+    "vraag": [
+     "Een kistje is 40 cm lang, 25 cm breed en 10 cm hoog.",
+     "Hoeveel liter past erin?"
+    ],
+    "stappen": [
+     {
+      "tekst": "Inhoud",
+      "som": "40 × 25 × 10",
+      "expr": "40*25*10",
+      "uitkomst": 10000,
+      "eenheid": "cm³",
+      "invoer": true
+     },
+     {
+      "tekst": "Naar liters",
+      "som": "10.000 : 1000",
+      "expr": "10000/1000",
+      "uitkomst": 10,
+      "eenheid": "liter",
+      "invoer": true,
+      "trap": {
+       "van": "cm³",
+       "naar": "dm³"
+      }
+     }
+    ],
+    "antwoord": {
+     "waarde": 10,
+     "eenheid": "liter",
+     "expr": "40*25*10/1000"
+    }
+   }
+  },
+  {
+   "id": "O2-INS-04",
+   "onderdeel": 2,
+   "sectie": "instap",
+   "nummer": "4",
+   "afbeeldingen": [],
+   "flags": [
+    {
+     "soort": "dubbelzinnig",
+     "beschrijving": "\"Ongeveer\": het precieze antwoord is 2,4 minuten (2 minuten en 24 seconden).",
+     "voorstel": "De app rekent alles van 2 tot en met 3 minuten goed."
+    }
+   ],
+   "autoCheck": true,
+   "origineel": "Je moet van lokaal B naar lokaal C lopen. Dat is 200 meter. Je loopt gemiddeld 5 km per uur. Hoe lang doe je er ongeveer over?",
+   "vraag": [
+    "De wegwijzer in de gang wijst naar de torens.",
+    "Van toren B naar toren C is 200 meter.",
+    "Je loopt 5 km per uur.",
+    "Hoeveel minuten loop je ongeveer?"
+   ],
+   "type": "getal",
+   "paneel": "verhoudingstabel",
+   "object3d": "wegwijzer",
+   "stappen": [
+    {
+     "tekst": "Maak meters van 5 km",
+     "som": "5 × 1000",
+     "expr": "5*1000",
+     "uitkomst": 5000,
+     "eenheid": "m",
+     "invoer": true,
+     "trap": {
+      "van": "km",
+      "naar": "m"
+     }
+    },
+    {
+     "tekst": "5000 m in 60 minuten. Deel door 5.",
+     "som": "60 : 5",
+     "expr": "60/5",
+     "uitkomst": 12,
+     "eenheid": "minuten",
+     "invoer": true,
+     "tabel": {
+      "boven": [
+       "5000 m",
+       "1000 m"
+      ],
+      "onder": [
+       "60 min",
+       "12 min"
+      ],
+      "pijl": ": 5"
+     }
+    },
+    {
+     "tekst": "1000 m in 12 minuten. Deel weer door 5.",
+     "som": "12 : 5",
+     "expr": "12/5",
+     "uitkomst": 2.4,
+     "eenheid": "minuten",
+     "invoer": true,
+     "tabel": {
+      "boven": [
+       "1000 m",
+       "200 m"
+      ],
+      "onder": [
+       "12 min",
+       "2,4 min"
+      ],
+      "pijl": ": 5"
+     }
+    }
+   ],
+   "antwoord": {
+    "waarde": 2.4,
+    "eenheid": "minuten",
+    "expr": "200/5000*60",
+    "tolerantie": 0.6
+   },
+   "voorbeeld": {
+    "vraag": [
+     "Je loopt 300 meter door de gang.",
+     "Je loopt 6 km per uur.",
+     "Hoeveel minuten loop je?"
+    ],
+    "stappen": [
+     {
+      "tekst": "Maak meters van 6 km",
+      "som": "6 × 1000",
+      "expr": "6*1000",
+      "uitkomst": 6000,
+      "eenheid": "m",
+      "invoer": true,
+      "trap": {
+       "van": "km",
+       "naar": "m"
+      }
+     },
+     {
+      "tekst": "Deel door 20",
+      "som": "60 : 20",
+      "expr": "60/20",
+      "uitkomst": 3,
+      "eenheid": "minuten",
+      "invoer": true,
+      "tabel": {
+       "boven": [
+        "6000 m",
+        "300 m"
+       ],
+       "onder": [
+        "60 min",
+        "3 min"
+       ],
+       "pijl": ": 20"
+      }
+     }
+    ],
+    "antwoord": {
+     "waarde": 3,
+     "eenheid": "minuten",
+     "expr": "300/6000*60"
+    }
+   }
+  },
+  {
+   "id": "O2-INS-05",
+   "onderdeel": 2,
+   "sectie": "instap",
+   "nummer": "5",
+   "afbeeldingen": [],
+   "flags": [],
+   "autoCheck": true,
+   "origineel": "Een kamer heeft een lengte van 5 meter en een breedte van 3 meter. Hoeveel m² laminaat heb je nodig om de vloer helemaal te bedekken?",
+   "vraag": [
+    "De torenkamer krijgt een nieuwe houten vloer.",
+    "De kamer is 5 meter lang en 3 meter breed.",
+    "Hoeveel m² hout heb je nodig?"
+   ],
+   "type": "getal",
+   "paneel": "deelsommen",
+   "object3d": "laminaat",
+   "stappen": [
+    {
+     "tekst": "Lengte keer breedte",
+     "som": "5 × 3",
+     "expr": "5*3",
+     "uitkomst": 15,
+     "eenheid": "m²",
+     "invoer": true,
+     "deel": "vloer"
+    }
+   ],
+   "antwoord": {
+    "waarde": 15,
+    "eenheid": "m²",
+    "expr": "5*3"
+   },
+   "voorbeeld": {
+    "vraag": [
+     "Een kamer is 4 meter lang en 3 meter breed.",
+     "Hoeveel m² vloer is dat?"
+    ],
+    "stappen": [
+     {
+      "tekst": "Lengte keer breedte",
+      "som": "4 × 3",
+      "expr": "4*3",
+      "uitkomst": 12,
+      "eenheid": "m²",
+      "invoer": true
+     }
+    ],
+    "antwoord": {
+     "waarde": 12,
+     "eenheid": "m²",
+     "expr": "4*3"
+    }
+   }
+  },
+  {
+   "id": "O2-INS-06",
+   "onderdeel": 2,
+   "sectie": "instap",
+   "nummer": "6",
+   "afbeeldingen": [],
+   "flags": [
+    {
+     "soort": "tekst",
+     "beschrijving": "\"Je fietst 4 kilometer lang, 12 kilometer per uur\" is een rommelige zin.",
+     "voorstel": "In de app: korte zinnen, zelfde getallen."
+    }
+   ],
+   "autoCheck": true,
+   "origineel": "Je fietst 4 kilometer lang, 12 kilometer per uur naar je stageplek. Hoelang zit je op de fiets?",
+   "vraag": [
+    "De bode van de graaf fietst 4 km naar het dorp.",
+    "Hij fietst 12 km per uur.",
+    "Hoeveel minuten fietst hij?"
+   ],
+   "type": "getal",
+   "paneel": "verhoudingstabel",
+   "object3d": "fiets",
+   "stappen": [
+    {
+     "tekst": "12 km in 60 minuten",
+     "som": "12 km → 60 min",
+     "expr": null,
+     "uitkomst": "60 min",
+     "invoer": false,
+     "tabel": {
+      "boven": [
+       "12 km",
+       "4 km"
+      ],
+      "onder": [
+       "60 min",
+       "?"
+      ],
+      "pijl": ": 3"
+     }
+    },
+    {
+     "tekst": "Deel door 3",
+     "som": "60 : 3",
+     "expr": "60/3",
+     "uitkomst": 20,
+     "eenheid": "minuten",
+     "invoer": true,
+     "tabel": {
+      "boven": [
+       "12 km",
+       "4 km"
+      ],
+      "onder": [
+       "60 min",
+       "20 min"
+      ],
+      "pijl": ": 3"
+     }
+    }
+   ],
+   "antwoord": {
+    "waarde": 20,
+    "eenheid": "minuten",
+    "expr": "4/12*60"
+   },
+   "voorbeeld": {
+    "vraag": [
+     "De bode fietst 3 km.",
+     "Hij fietst 12 km per uur.",
+     "Hoeveel minuten fietst hij?"
+    ],
+    "stappen": [
+     {
+      "tekst": "Deel door 4",
+      "som": "60 : 4",
+      "expr": "60/4",
+      "uitkomst": 15,
+      "eenheid": "minuten",
+      "invoer": true,
+      "tabel": {
+       "boven": [
+        "12 km",
+        "3 km"
+       ],
+       "onder": [
+        "60 min",
+        "15 min"
+       ],
+       "pijl": ": 4"
+      }
+     }
+    ],
+    "antwoord": {
+     "waarde": 15,
+     "eenheid": "minuten",
+     "expr": "3/12*60"
+    }
+   }
+  },
+  {
+   "id": "O2-INS-07",
+   "onderdeel": 2,
+   "sectie": "instap",
+   "nummer": "7",
+   "afbeeldingen": [],
+   "flags": [],
+   "autoCheck": true,
+   "origineel": "Een blik frisdrank heeft een inhoud van 330 ml. Hoeveel cm³ is dat?",
+   "vraag": [
+    "In de bibliotheek staat een flesje toverdrank.",
+    "Er zit 330 ml in.",
+    "Hoeveel cm³ is dat?"
+   ],
+   "type": "getal",
+   "paneel": "eenhedentrap",
+   "object3d": "blikje",
+   "stappen": [
+    {
+     "tekst": "1 ml is 1 cm³",
+     "som": "330 ml = ... cm³",
+     "expr": "330",
+     "uitkomst": 330,
+     "eenheid": "cm³",
+     "invoer": true,
+     "trap": {
+      "van": "ml",
+      "naar": "cm³"
+     }
+    }
+   ],
+   "antwoord": {
+    "waarde": 330,
+    "eenheid": "cm³",
+    "expr": "330"
+   },
+   "voorbeeld": {
+    "vraag": [
+     "In een flesje zit 500 ml.",
+     "Hoeveel cm³ is dat?"
+    ],
+    "stappen": [
+     {
+      "tekst": "1 ml is 1 cm³",
+      "som": "500 ml = ... cm³",
+      "expr": "500",
+      "uitkomst": 500,
+      "eenheid": "cm³",
+      "invoer": true,
+      "trap": {
+       "van": "ml",
+       "naar": "cm³"
+      }
+     }
+    ],
+    "antwoord": {
+     "waarde": 500,
+     "eenheid": "cm³",
+     "expr": "500"
+    }
+   }
+  },
+  {
+   "id": "O2-INS-08",
+   "onderdeel": 2,
+   "sectie": "instap",
+   "nummer": "8",
+   "afbeeldingen": [],
+   "flags": [],
+   "autoCheck": true,
+   "origineel": "Een zwembad is 8 meter lang, 4 meter breed en 1,5 meter diep. Hoeveel liter water past er in het zwembad? A. 48.000 liter B. 4.800 liter C. 480 liter D. 800 liter",
+   "vraag": [
+    "Dit is het badhuis van de graaf.",
+    "Het bad is 8 m lang, 4 m breed en 1,5 m diep.",
+    "Hoeveel liter water past erin?"
+   ],
+   "type": "keuze",
+   "keuzes": [
+    "48.000 liter",
+    "4.800 liter",
+    "480 liter",
+    "800 liter"
+   ],
+   "paneel": "keuze",
+   "object3d": "tuinzwembad",
+   "stappen": [
+    {
+     "tekst": "Reken de inhoud uit",
+     "som": "8 × 4 × 1,5",
+     "expr": "8*4*1.5",
+     "uitkomst": 48,
+     "eenheid": "m³",
+     "invoer": true,
+     "deel": "water"
+    },
+    {
+     "tekst": "Maak er liters van",
+     "som": "48 × 1000",
+     "expr": "48*1000",
+     "uitkomst": 48000,
+     "eenheid": "liter",
+     "invoer": true,
+     "trap": {
+      "van": "m³",
+      "naar": "dm³"
+     }
+    }
+   ],
+   "antwoord": {
+    "waarde": "48.000 liter",
+    "expr": null,
+    "alternatieven": [
+     "A"
+    ]
+   },
+   "voorbeeld": {
+    "vraag": [
+     "Een badje is 6 m lang, 3 m breed en 1 m diep.",
+     "Hoeveel liter past erin?"
+    ],
+    "stappen": [
+     {
+      "tekst": "Inhoud",
+      "som": "6 × 3 × 1",
+      "expr": "6*3*1",
+      "uitkomst": 18,
+      "eenheid": "m³",
+      "invoer": true
+     },
+     {
+      "tekst": "Naar liters",
+      "som": "18 × 1000",
+      "expr": "18*1000",
+      "uitkomst": 18000,
+      "eenheid": "liter",
+      "invoer": true,
+      "trap": {
+       "van": "m³",
+       "naar": "dm³"
+      }
+     }
+    ],
+    "antwoord": {
+     "waarde": 18000,
+     "eenheid": "liter",
+     "expr": "6*3*1*1000"
+    }
+   }
+  },
+  {
+   "id": "O2-INS-09",
+   "onderdeel": 2,
+   "sectie": "instap",
+   "nummer": "9",
+   "afbeeldingen": [],
+   "flags": [],
+   "autoCheck": true,
+   "origineel": "Op een plattegrond is de afstand tussen twee gebouwen 6 cm. 1 cm op de plattegrond = 100 meter in het echt. Wat is de echte afstand?",
+   "vraag": [
+    "Op de plattegrond liggen de kapel en de stallen 6 cm uit elkaar.",
+    "1 cm is in het echt 100 meter.",
+    "Hoe ver is dat in het echt?"
+   ],
+   "type": "getal",
+   "paneel": "verhoudingstabel",
+   "object3d": "plattegrond",
+   "stappen": [
+    {
+     "tekst": "Doe keer 6",
+     "som": "6 × 100",
+     "expr": "6*100",
+     "uitkomst": 600,
+     "eenheid": "m",
+     "invoer": true,
+     "tabel": {
+      "boven": [
+       "1 cm",
+       "6 cm"
+      ],
+      "onder": [
+       "100 m",
+       "600 m"
+      ],
+      "pijl": "× 6"
+     }
+    }
+   ],
+   "antwoord": {
+    "waarde": 600,
+    "eenheid": "m",
+    "expr": "6*100"
+   },
+   "voorbeeld": {
+    "vraag": [
+     "Op de plattegrond is het 8 cm.",
+     "1 cm is 50 meter.",
+     "Hoe ver is dat in het echt?"
+    ],
+    "stappen": [
+     {
+      "tekst": "Doe keer 8",
+      "som": "8 × 50",
+      "expr": "8*50",
+      "uitkomst": 400,
+      "eenheid": "m",
+      "invoer": true,
+      "tabel": {
+       "boven": [
+        "1 cm",
+        "8 cm"
+       ],
+       "onder": [
+        "50 m",
+        "400 m"
+       ],
+       "pijl": "× 8"
+      }
+     }
+    ],
+    "antwoord": {
+     "waarde": 400,
+     "eenheid": "m",
+     "expr": "8*50"
+    }
+   }
+  },
+  {
+   "id": "O2-INS-10",
+   "onderdeel": 2,
+   "sectie": "instap",
+   "nummer": "10",
+   "afbeeldingen": [],
+   "flags": [],
+   "autoCheck": true,
+   "origineel": "Een poster is 1,2 meter hoog en 0,8 meter breed. Wat is de oppervlakte van de poster?",
+   "vraag": [
+    "In de galerij hangt een schilderij van graaf Dracul.",
+    "Het is 1,2 meter hoog en 0,8 meter breed.",
+    "Hoe groot is het schilderij in m²?"
+   ],
+   "type": "getal",
+   "paneel": "deelsommen",
+   "object3d": "abri",
+   "stappen": [
+    {
+     "tekst": "Hoogte keer breedte",
+     "som": "1,2 × 0,8",
+     "expr": "1.2*0.8",
+     "uitkomst": 0.96,
+     "eenheid": "m²",
+     "invoer": true,
+     "deel": "poster"
+    }
+   ],
+   "antwoord": {
+    "waarde": 0.96,
+    "eenheid": "m²",
+    "expr": "1.2*0.8"
+   },
+   "voorbeeld": {
+    "vraag": [
+     "Een spiegel is 1,5 meter breed en 0,6 meter hoog.",
+     "Hoe groot is de spiegel?"
+    ],
+    "stappen": [
+     {
+      "tekst": "Breedte keer hoogte",
+      "som": "1,5 × 0,6",
+      "expr": "1.5*0.6",
+      "uitkomst": 0.9,
+      "eenheid": "m²",
+      "invoer": true
+     }
+    ],
+    "antwoord": {
+     "waarde": 0.9,
+     "eenheid": "m²",
+     "expr": "1.5*0.6"
+    }
+   }
+  },
+  {
+   "id": "O2-INS-11",
+   "onderdeel": 2,
+   "sectie": "instap",
+   "nummer": "11",
+   "afbeeldingen": [
+    "image28.png"
+   ],
+   "flags": [
+    {
+     "soort": "tekst",
+     "beschrijving": "Figuur 7 is een vierkant dat op zijn punt staat. Een vierkant is ook een ruit.",
+     "voorstel": "De app rekent \"ruit\" goed bij figuur 7, want \"vierkant\" hoort al bij figuur 2."
+    }
+   ],
+   "autoCheck": true,
+   "origineel": "In onderstaande afbeelding zie je 8 2D figuren. Welke naam hoort bij het figuur? Kies uit: ruit, driehoek, ovaal, parallellogram, vierkant, cirkel, vijfhoek en rechthoek",
+   "vraag": [
+    "In de tuin van de graaf liggen 8 bloemperken.",
+    "Elk perk heeft een vorm.",
+    "Geef elk perk de goede naam."
+   ],
+   "type": "koppel",
+   "paneel": "koppel",
+   "object3d": "bloemperken",
+   "koppel": {
+    "items": [
+     {
+      "label": "Perk 1",
+      "antwoord": "cirkel"
+     },
+     {
+      "label": "Perk 2",
+      "antwoord": "vierkant"
+     },
+     {
+      "label": "Perk 3",
+      "antwoord": "rechthoek"
+     },
+     {
+      "label": "Perk 4",
+      "antwoord": "ovaal"
+     },
+     {
+      "label": "Perk 5",
+      "antwoord": "driehoek"
+     },
+     {
+      "label": "Perk 6",
+      "antwoord": "vijfhoek"
+     },
+     {
+      "label": "Perk 7",
+      "antwoord": "ruit"
+     },
+     {
+      "label": "Perk 8",
+      "antwoord": "parallellogram"
+     }
+    ],
+    "opties": [
+     "ruit",
+     "driehoek",
+     "ovaal",
+     "parallellogram",
+     "vierkant",
+     "cirkel",
+     "vijfhoek",
+     "rechthoek"
+    ]
+   },
+   "context": [
+    {
+     "soort": "tekening",
+     "beschrijving": "8 genummerde figuren: 1 rode cirkel, 2 blauw vierkant, 3 gele rechthoek, 4 groene ovaal, 5 gele driehoek, 6 groenblauwe vijfhoek, 7 paarse ruit (op zijn punt), 8 oranje parallellogram."
+    }
+   ],
+   "beeld": [
+    {
+     "afbeelding": "image28.png",
+     "vorm": "model",
+     "ontwerp": "Een parkje bij het startplein met 8 bloemperken. Elk perk heeft een eigen vorm en kleur bloemen (rood, blauw, geel, groen, groenblauw, paars, oranje). Bij elk perk staat een paaltje met een nummer.",
+     "toont": [
+      "nummers 1 t/m 8",
+      "de 8 vormen"
+     ],
+     "grap": "In het ovale perk zit een egel te slapen."
+    }
+   ],
+   "stappen": [],
+   "antwoord": {
+    "waarde": "1 cirkel, 2 vierkant, 3 rechthoek, 4 ovaal, 5 driehoek, 6 vijfhoek, 7 ruit, 8 parallellogram",
+    "expr": null
+   },
+   "voorbeeld": {
+    "vraag": [
+     "Het schild van een ridder is rond.",
+     "Welke vorm is dat?"
+    ],
+    "stappen": [
+     {
+      "tekst": "Rond aan alle kanten",
+      "som": "geen hoeken",
+      "expr": null,
+      "uitkomst": "cirkel",
+      "invoer": false
+     }
+    ],
+    "antwoord": {
+     "waarde": "cirkel",
+     "expr": null
+    }
+   }
+  },
+  {
+   "id": "O2-INS-12",
+   "onderdeel": 2,
+   "sectie": "instap",
+   "nummer": "12",
+   "afbeeldingen": [
+    "image29.png"
+   ],
+   "flags": [
+    {
+     "soort": "auteursrecht",
+     "beschrijving": "Foto of scan uit een externe bron.",
+     "voorstel": "Getallen overnemen, beeld opnieuw maken in 3D (zie beeld)."
+    },
+    {
+     "soort": "tekst",
+     "beschrijving": "De keuzelijst eindigt met een komma en wisselt hoofdletters.",
+     "voorstel": "In de app: nette lijst in kleine letters."
+    }
+   ],
+   "autoCheck": true,
+   "origineel": "In onderstaande afbeelding zie je 3D figuren, welke naam hoort bij het figuur? Kies uit: Bol, Kegel, piramide, balk, cilinder, prisma, kubus,",
+   "vraag": [
+    "De jonge ridders oefenen op 7 klimtoestellen.",
+    "Elk toestel is een 3D-figuur.",
+    "Geef elk toestel de goede naam."
+   ],
+   "type": "koppel",
+   "paneel": "koppel",
+   "object3d": "speeltuin",
+   "koppel": {
+    "items": [
+     {
+      "label": "Toestel 1",
+      "antwoord": "kubus"
+     },
+     {
+      "label": "Toestel 2",
+      "antwoord": "balk"
+     },
+     {
+      "label": "Toestel 3",
+      "antwoord": "bol"
+     },
+     {
+      "label": "Toestel 4",
+      "antwoord": "kegel"
+     },
+     {
+      "label": "Toestel 5",
+      "antwoord": "prisma"
+     },
+     {
+      "label": "Toestel 6",
+      "antwoord": "piramide"
+     },
+     {
+      "label": "Toestel 7",
+      "antwoord": "cilinder"
+     }
+    ],
+    "opties": [
+     "bol",
+     "kegel",
+     "piramide",
+     "balk",
+     "cilinder",
+     "prisma",
+     "kubus"
+    ]
+   },
+   "context": [
+    {
+     "soort": "tekening",
+     "beschrijving": "7 genummerde figuren: 1 kubus, 2 balk (staand), 3 bol, 4 kegel, 5 driezijdig prisma, 6 piramide met vierkant grondvlak, 7 cilinder."
+    }
+   ],
+   "beeld": [
+    {
+     "afbeelding": "image29.png",
+     "vorm": "model",
+     "ontwerp": "Een speeltuin met 7 klimtoestellen in de vorm van de figuren: een kubus-klimblok, een hoge balk-toren, een bol-klimrek, een kegel-tent, een prisma-glijbaan, een piramide-klimnet en een cilinder-kruiptunnel. Elk toestel heeft een bordje met een nummer.",
+     "toont": [
+      "nummers 1 t/m 7",
+      "de 7 vormen"
+     ],
+     "grap": "Op de bol zit een merel die fluit als je goed antwoordt."
+    }
+   ],
+   "stappen": [],
+   "antwoord": {
+    "waarde": "1 kubus, 2 balk, 3 bol, 4 kegel, 5 prisma, 6 piramide, 7 cilinder",
+    "expr": null
+   },
+   "voorbeeld": {
+    "vraag": [
+     "Een torentje heeft een rond grondvlak.",
+     "Het is overal even dik.",
+     "Welke 3D-figuur is dat?"
+    ],
+    "stappen": [
+     {
+      "tekst": "Rond grondvlak, rechte zijkant",
+      "som": "boven en onder een cirkel",
+      "expr": null,
+      "uitkomst": "cilinder",
+      "invoer": false
+     }
+    ],
+    "antwoord": {
+     "waarde": "cilinder",
+     "expr": null
+    }
+   }
+  },
+  {
+   "id": "O2-NIV-01",
+   "onderdeel": 2,
+   "sectie": "niveau",
+   "nummer": "1",
+   "afbeeldingen": [
+    "image30.png"
+   ],
+   "flags": [],
+   "autoCheck": true,
+   "origineel": "Welke kubus hoort bij de uitgevouwen kubus?",
+   "vraag": [
+    "Boo heeft zijn toverdobbelsteen uitgevouwen.",
+    "Hier zie je de uitgevouwen kubus.",
+    "Welke kubus hoort erbij?"
+   ],
+   "type": "keuze",
+   "keuzes": [
+    "A",
+    "B",
+    "C",
+    "D"
+   ],
+   "paneel": "keuze",
+   "object3d": "dobbelsteen",
+   "context": [
+    {
+     "soort": "tekening",
+     "beschrijving": "Uitslag als kruis: bovenste vlak oranje vierkantje; middenrij van links naar rechts: groene ster, leeg vlak (midden), blauwe ring, leeg vlak; onderste vlak rode stip. Opties (kubus met zichtbaar bovenvlak, linkervlak, rechtervlak): A boven leeg, links rode stip, rechts blauwe ring; B boven leeg, links rode stip, rechts leeg; C boven leeg, links groene ster, rechts blauwe ring; D boven groene ster, links leeg, rechts leeg."
+    }
+   ],
+   "beeld": [
+    {
+     "afbeelding": "image30.png",
+     "vorm": "model",
+     "ontwerp": "Op een sokkel staat een grote houten kubus met symbolen. Met de schuifregelaar klapt hij open tot de uitslag en weer dicht. Ernaast staan 4 kleine kubussen A, B, C en D op paaltjes.",
+     "toont": [
+      "uitslag met oranje vierkant, groene ster, blauwe ring, rode stip en 2 lege vlakken",
+      "kubussen A t/m D"
+     ],
+     "grap": "Kubus D wiebelt een beetje als je hem aanwijst."
+    }
+   ],
+   "stappen": [
+    {
+     "tekst": "Ster en ring liggen tegenover elkaar",
+     "som": "die zie je nooit samen",
+     "expr": null,
+     "uitkomst": "C valt af",
+     "invoer": false
+    },
+    {
+     "tekst": "De twee lege vlakken liggen tegenover elkaar",
+     "som": "ook die zie je nooit samen",
+     "expr": null,
+     "uitkomst": "B en D vallen af",
+     "invoer": false
+    }
+   ],
+   "antwoord": {
+    "waarde": "A",
+    "expr": null
+   },
+   "voorbeeld": {
+    "vraag": [
+     "Op een uitslag liggen een hart en een maan tegenover elkaar.",
+     "Kun je ze samen zien op de kubus?"
+    ],
+    "stappen": [
+     {
+      "tekst": "Tegenover elkaar",
+      "som": "voor- en achterkant",
+      "expr": null,
+      "uitkomst": "nee",
+      "invoer": false
+     }
+    ],
+    "antwoord": {
+     "waarde": "nee",
+     "expr": null
+    }
+   }
+  },
+  {
+   "id": "O2-NIV-02",
+   "onderdeel": 2,
+   "sectie": "niveau",
+   "nummer": "2",
+   "afbeeldingen": [
+    "image32.png"
+   ],
+   "flags": [
+    {
+     "soort": "dubbelzinnig",
+     "beschrijving": "Een balk is ook een (vierzijdig) prisma.",
+     "voorstel": "Keuzes in de app: kubus, balk, piramide, cilinder. Goed = balk."
+    }
+   ],
+   "autoCheck": true,
+   "origineel": "Hier onder staat een uitgevouwen 3D figuur. Welk 3D figuur krijg je als je dit zou vouwen?",
+   "vraag": [
+    "De smid heeft een vorm uit geel ijzer geknipt.",
+    "Hier zie je de uitgevouwen 3D-figuur.",
+    "Welke figuur krijg je als je hem vouwt?"
+   ],
+   "type": "keuze",
+   "keuzes": [
+    "kubus",
+    "balk",
+    "piramide",
+    "cilinder"
+   ],
+   "paneel": "keuze",
+   "object3d": "uitslag-balk",
+   "context": [
+    {
+     "soort": "tekening",
+     "beschrijving": "Gele uitslag: 4 even grote lange rechthoeken naast elkaar, met boven en onder aan de derde rechthoek een vierkant."
+    }
+   ],
+   "beeld": [
+    {
+     "afbeelding": "image32.png",
+     "vorm": "model",
+     "ontwerp": "Op de werkbank in de schuur ligt een gele kartonnen uitslag. Met de schuifregelaar vouwen de vlakken omhoog tot een staande balk.",
+     "toont": [
+      "4 lange rechthoeken",
+      "2 vierkanten"
+     ]
+    }
+   ],
+   "stappen": [
+    {
+     "tekst": "Tel de vlakken",
+     "som": "4 rechthoeken en 2 vierkanten",
+     "expr": null,
+     "uitkomst": "6 vlakken",
+     "invoer": false
+    }
+   ],
+   "antwoord": {
+    "waarde": "balk",
+    "expr": null
+   },
+   "voorbeeld": {
+    "vraag": [
+     "Een uitslag heeft 6 even grote vierkanten.",
+     "Welke figuur is dat?"
+    ],
+    "stappen": [
+     {
+      "tekst": "Alle vlakken gelijk",
+      "som": "6 vierkanten",
+      "expr": null,
+      "uitkomst": "kubus",
+      "invoer": false
+     }
+    ],
+    "antwoord": {
+     "waarde": "kubus",
+     "expr": null
+    }
+   }
+  },
+  {
+   "id": "O2-NIV-03",
+   "onderdeel": 2,
+   "sectie": "niveau",
+   "nummer": "3",
+   "afbeeldingen": [
+    "image31.png"
+   ],
+   "flags": [],
+   "autoCheck": true,
+   "origineel": "Wat is de omtrek van de afbeelding rechts?",
+   "vraag": [
+    "Het nieuwe terras bij de bouwplaats heeft een hoek eruit.",
+    "Hoeveel meter is de rand rondom?"
+   ],
+   "type": "getal",
+   "paneel": "deelsommen",
+   "object3d": "terras",
+   "context": [
+    {
+     "soort": "tekening",
+     "beschrijving": "L-vorm. Bovenkant 8 m, linkerkant 4 m, onderkant 6 m, rechterkant (boven) 2 m. Rechtsonder ontbreekt een hoek."
+    }
+   ],
+   "beeld": [
+    {
+     "afbeelding": "image31.png",
+     "vorm": "model",
+     "ontwerp": "Een houten L-vormig terras bij het café, met rondom een rood-wit lint op paaltjes. In de exploded view lichten de 6 zijden één voor één op.",
+     "toont": [
+      "8 m",
+      "4 m",
+      "6 m",
+      "2 m"
+     ],
+     "grap": "Op het terras staat een parasol die meedraait met de wind."
+    }
+   ],
+   "stappen": [
+    {
+     "tekst": "Zoek het stuk onder de hoek",
+     "som": "8 − 6",
+     "expr": "8-6",
+     "uitkomst": 2,
+     "eenheid": "m",
+     "invoer": true,
+     "deel": "zijde-in-onder"
+    },
+    {
+     "tekst": "Zoek het stuk naast de hoek",
+     "som": "4 − 2",
+     "expr": "4-2",
+     "uitkomst": 2,
+     "eenheid": "m",
+     "invoer": true,
+     "deel": "zijde-in-zij"
+    },
+    {
+     "tekst": "Tel alle zijden op",
+     "som": "8 + 2 + 2 + 2 + 6 + 4",
+     "expr": "8+2+2+2+6+4",
+     "uitkomst": 24,
+     "eenheid": "m",
+     "invoer": true
+    }
+   ],
+   "antwoord": {
+    "waarde": 24,
+    "eenheid": "m",
+    "expr": "8+2+2+2+6+4"
+   },
+   "voorbeeld": {
+    "vraag": [
+     "Een L-vorm is boven 10 m en links 5 m.",
+     "Onder is hij 7 m, rechts 3 m.",
+     "Hoe lang is de rand?"
+    ],
+    "stappen": [
+     {
+      "tekst": "Stuk onder de hoek",
+      "som": "10 − 7",
+      "expr": "10-7",
+      "uitkomst": 3,
+      "eenheid": "m",
+      "invoer": true
+     },
+     {
+      "tekst": "Stuk naast de hoek",
+      "som": "5 − 3",
+      "expr": "5-3",
+      "uitkomst": 2,
+      "eenheid": "m",
+      "invoer": true
+     },
+     {
+      "tekst": "Alles optellen",
+      "som": "10 + 3 + 3 + 2 + 7 + 5",
+      "expr": "10+3+3+2+7+5",
+      "uitkomst": 30,
+      "eenheid": "m",
+      "invoer": true
+     }
+    ],
+    "antwoord": {
+     "waarde": 30,
+     "eenheid": "m",
+     "expr": "10+3+3+2+7+5"
+    }
+   }
+  },
+  {
+   "id": "O2-NIV-04",
+   "onderdeel": 2,
+   "sectie": "niveau",
+   "nummer": "4",
+   "afbeeldingen": [
+    "image33.png"
+   ],
+   "flags": [],
+   "autoCheck": true,
+   "origineel": "In de afbeelding is de slaapkamer van Lucas nagetekend. Wat is de omtrek van zijn slaapkamer in meters?",
+   "vraag": [
+    "Dit is de slaapkamer van graaf Dracul.",
+    "De kamer is 3,4 m breed en 4 m lang.",
+    "Wat is de omtrek in meters?"
+   ],
+   "type": "getal",
+   "paneel": "deelsommen",
+   "object3d": "huis-lucas",
+   "context": [
+    {
+     "soort": "plattegrond",
+     "beschrijving": "Rechthoekige slaapkamer, bovenkant 3,4 m, linkerkant 4 m. Met bed, nachtkastje, kast en kleed."
+    }
+   ],
+   "beeld": [
+    {
+     "afbeelding": "image33.png",
+     "vorm": "model",
+     "ontwerp": "Het huis van Lucas staat in de wijk. In de exploded view gaat het dak omhoog en zie je de slaapkamer: houten vloer, bed, nachtkastje met lampje, kast en een groen kleed. Maatlijnen: 3,4 m en 4 m.",
+     "toont": [
+      "3,4 m",
+      "4 m"
+     ],
+     "grap": "Een kat ligt opgerold op het bed."
+    }
+   ],
+   "stappen": [
+    {
+     "tekst": "Tel een lengte en een breedte op",
+     "som": "3,4 + 4",
+     "expr": "3.4+4",
+     "uitkomst": 7.4,
+     "eenheid": "m",
+     "invoer": true
+    },
+    {
+     "tekst": "Doe keer 2",
+     "som": "7,4 × 2",
+     "expr": "7.4*2",
+     "uitkomst": 14.8,
+     "eenheid": "m",
+     "invoer": true,
+     "deel": "vloer"
+    }
+   ],
+   "antwoord": {
+    "waarde": 14.8,
+    "eenheid": "m",
+    "expr": "2*(3.4+4)"
+   },
+   "voorbeeld": {
+    "vraag": [
+     "Een kamer is 3 m breed en 5 m lang.",
+     "Wat is de omtrek?"
+    ],
+    "stappen": [
+     {
+      "tekst": "Optellen",
+      "som": "3 + 5",
+      "expr": "3+5",
+      "uitkomst": 8,
+      "eenheid": "m",
+      "invoer": true
+     },
+     {
+      "tekst": "Keer 2",
+      "som": "8 × 2",
+      "expr": "8*2",
+      "uitkomst": 16,
+      "eenheid": "m",
+      "invoer": true
+     }
+    ],
+    "antwoord": {
+     "waarde": 16,
+     "eenheid": "m",
+     "expr": "2*(3+5)"
+    }
+   }
+  },
+  {
+   "id": "O2-NIV-05",
+   "onderdeel": 2,
+   "sectie": "niveau",
+   "nummer": "5",
+   "afbeeldingen": [
+    "image33.png"
+   ],
+   "flags": [
+    {
+     "soort": "tekst",
+     "beschrijving": "Vraagteken ontbreekt; \"zijn\" verwijst naar Lucas uit de vorige vraag.",
+     "voorstel": "In de app: \"de slaapkamer van de graaf\" herhalen (kasteelverhaal, zelfde kamer en maten)."
+    }
+   ],
+   "autoCheck": true,
+   "origineel": "Wat is de oppervlakte van zijn slaapkamer in cm²",
+   "vraag": [
+    "Kijk weer naar de slaapkamer van de graaf.",
+    "Hoe groot is de vloer in cm²?"
+   ],
+   "type": "getal",
+   "paneel": "eenhedentrap",
+   "object3d": "huis-lucas",
+   "context": [
+    {
+     "soort": "plattegrond",
+     "beschrijving": "Zelfde kamer: 3,4 m bij 4 m."
+    }
+   ],
+   "beeld": [
+    {
+     "afbeelding": "image33.png",
+     "vorm": "model",
+     "ontwerp": "Het huis van Lucas staat in de wijk. In de exploded view gaat het dak omhoog en zie je de slaapkamer: houten vloer, bed, nachtkastje met lampje, kast en een groen kleed. Maatlijnen: 3,4 m en 4 m.",
+     "toont": [
+      "3,4 m",
+      "4 m"
+     ],
+     "grap": "Een kat ligt opgerold op het bed."
+    }
+   ],
+   "stappen": [
+    {
+     "tekst": "Maak cm van 3,4 m",
+     "som": "3,4 × 100",
+     "expr": "3.4*100",
+     "uitkomst": 340,
+     "eenheid": "cm",
+     "invoer": true,
+     "trap": {
+      "van": "m",
+      "naar": "cm"
+     }
+    },
+    {
+     "tekst": "Maak cm van 4 m",
+     "som": "4 × 100",
+     "expr": "4*100",
+     "uitkomst": 400,
+     "eenheid": "cm",
+     "invoer": true,
+     "trap": {
+      "van": "m",
+      "naar": "cm"
+     }
+    },
+    {
+     "tekst": "Lengte keer breedte",
+     "som": "340 × 400",
+     "expr": "340*400",
+     "uitkomst": 136000,
+     "eenheid": "cm²",
+     "invoer": true,
+     "deel": "vloer"
+    }
+   ],
+   "antwoord": {
+    "waarde": 136000,
+    "eenheid": "cm²",
+    "expr": "340*400"
+   },
+   "voorbeeld": {
+    "vraag": [
+     "Een kamer is 2,5 m bij 3 m.",
+     "Hoe groot is de vloer in cm²?"
+    ],
+    "stappen": [
+     {
+      "tekst": "2,5 m naar cm",
+      "som": "2,5 × 100",
+      "expr": "2.5*100",
+      "uitkomst": 250,
+      "eenheid": "cm",
+      "invoer": true,
+      "trap": {
+       "van": "m",
+       "naar": "cm"
+      }
+     },
+     {
+      "tekst": "3 m naar cm",
+      "som": "3 × 100",
+      "expr": "3*100",
+      "uitkomst": 300,
+      "eenheid": "cm",
+      "invoer": true,
+      "trap": {
+       "van": "m",
+       "naar": "cm"
+      }
+     },
+     {
+      "tekst": "Keer elkaar",
+      "som": "250 × 300",
+      "expr": "250*300",
+      "uitkomst": 75000,
+      "eenheid": "cm²",
+      "invoer": true
+     }
+    ],
+    "antwoord": {
+     "waarde": 75000,
+     "eenheid": "cm²",
+     "expr": "250*300"
+    }
+   }
+  },
+  {
+   "id": "O2-NIV-06",
+   "onderdeel": 2,
+   "sectie": "niveau",
+   "nummer": "6",
+   "afbeeldingen": [],
+   "flags": [],
+   "autoCheck": true,
+   "origineel": "Een badkamer heeft een oppervlakte van 80.000 cm² Hoeveel m² is dat?",
+   "vraag": [
+    "De badkamer van de graaf is 80.000 cm².",
+    "Hoeveel m² is dat?"
+   ],
+   "type": "getal",
+   "paneel": "eenhedentrap",
+   "object3d": "badkamer",
+   "stappen": [
+    {
+     "tekst": "Van cm² naar dm²",
+     "som": "80.000 : 100",
+     "expr": "80000/100",
+     "uitkomst": 800,
+     "eenheid": "dm²",
+     "invoer": true,
+     "trap": {
+      "van": "cm²",
+      "naar": "dm²"
+     }
+    },
+    {
+     "tekst": "Van dm² naar m²",
+     "som": "800 : 100",
+     "expr": "800/100",
+     "uitkomst": 8,
+     "eenheid": "m²",
+     "invoer": true,
+     "trap": {
+      "van": "dm²",
+      "naar": "m²"
+     }
+    }
+   ],
+   "antwoord": {
+    "waarde": 8,
+    "eenheid": "m²",
+    "expr": "80000/10000"
+   },
+   "voorbeeld": {
+    "vraag": [
+     "Een hal is 50.000 cm².",
+     "Hoeveel m² is dat?"
+    ],
+    "stappen": [
+     {
+      "tekst": "Naar dm²",
+      "som": "50.000 : 100",
+      "expr": "50000/100",
+      "uitkomst": 500,
+      "eenheid": "dm²",
+      "invoer": true,
+      "trap": {
+       "van": "cm²",
+       "naar": "dm²"
+      }
+     },
+     {
+      "tekst": "Naar m²",
+      "som": "500 : 100",
+      "expr": "500/100",
+      "uitkomst": 5,
+      "eenheid": "m²",
+      "invoer": true,
+      "trap": {
+       "van": "dm²",
+       "naar": "m²"
+      }
+     }
+    ],
+    "antwoord": {
+     "waarde": 5,
+     "eenheid": "m²",
+     "expr": "50000/10000"
+    }
+   }
+  },
+  {
+   "id": "O2-NIV-07",
+   "onderdeel": 2,
+   "sectie": "niveau",
+   "nummer": "7",
+   "afbeeldingen": [
+    "image34.png"
+   ],
+   "flags": [
+    {
+     "soort": "dubbelzinnig",
+     "beschrijving": "Alleen de bovenkant van de vijver heeft een maat (15 dm). De vijver is vierkant getekend.",
+     "voorstel": "De app gaat uit van een vierkante vijver van 15 dm bij 15 dm."
+    },
+    {
+     "soort": "fout-in-werkboek",
+     "beschrijving": "\"Frank ... wilt\" moet \"wil\" zijn; \"frank\" zonder hoofdletter.",
+     "voorstel": "In de app verbeterd."
+    }
+   ],
+   "autoCheck": true,
+   "origineel": "Precies in het midden van de tuin van Frank ligt een vijver. Frank wordt nu vader en wilt voorkomen dat zijn kind in de vijver valt, daarom wil frank een hekje om de vijver plaatsen. Hoeveel meter hek moet Frank kopen?",
+   "vraag": [
+    "In de tuin van Frank ligt een vijver.",
+    "Frank zet een hekje om de vijver.",
+    "Hoeveel meter hek koopt hij?"
+   ],
+   "type": "getal",
+   "paneel": "eenhedentrap",
+   "object3d": "tuin-frank",
+   "context": [
+    {
+     "soort": "tekening",
+     "beschrijving": "Vierkante tuin, elke zijde 6 m. In het midden een vierkante vijver; bovenkant 15 dm. 4 bomen, 2 struiken, 2 vissen."
+    }
+   ],
+   "beeld": [
+    {
+     "afbeelding": "image34.png",
+     "vorm": "model",
+     "ontwerp": "De tuin van Frank is een echt grasveld van 6 × 6 meter in de wijk, met een lage haag, 4 bomen, 2 struiken en in het midden een vierkante vijver van 15 dm met 2 visjes. Je loopt erheen. In de inspectie zie je hem als mini-diorama; de vijver tilt omhoog uit het gras.",
+     "toont": [
+      "6 m (alle zijden)",
+      "15 dm (vijver)"
+     ],
+     "grap": "De visjes zwemmen naar de kant als je dichtbij komt."
+    }
+   ],
+   "stappen": [
+    {
+     "tekst": "Maak meters van 15 dm",
+     "som": "15 : 10",
+     "expr": "15/10",
+     "uitkomst": 1.5,
+     "eenheid": "m",
+     "invoer": true,
+     "trap": {
+      "van": "dm",
+      "naar": "m"
+     }
+    },
+    {
+     "tekst": "De vijver heeft 4 zijden",
+     "som": "4 × 1,5",
+     "expr": "4*1.5",
+     "uitkomst": 6,
+     "eenheid": "m",
+     "invoer": true,
+     "deel": "vijver"
+    }
+   ],
+   "antwoord": {
+    "waarde": 6,
+    "eenheid": "m",
+    "expr": "4*15/10"
+   },
+   "voorbeeld": {
+    "vraag": [
+     "Een vierkante zandbak is 20 dm breed.",
+     "Hoeveel meter hek past eromheen?"
+    ],
+    "stappen": [
+     {
+      "tekst": "Naar meters",
+      "som": "20 : 10",
+      "expr": "20/10",
+      "uitkomst": 2,
+      "eenheid": "m",
+      "invoer": true,
+      "trap": {
+       "van": "dm",
+       "naar": "m"
+      }
+     },
+     {
+      "tekst": "4 zijden",
+      "som": "4 × 2",
+      "expr": "4*2",
+      "uitkomst": 8,
+      "eenheid": "m",
+      "invoer": true
+     }
+    ],
+    "antwoord": {
+     "waarde": 8,
+     "eenheid": "m",
+     "expr": "4*20/10"
+    }
+   }
+  },
+  {
+   "id": "O2-NIV-08a",
+   "onderdeel": 2,
+   "sectie": "niveau",
+   "nummer": "8a",
+   "afbeeldingen": [
+    "image34.png"
+   ],
+   "flags": [
+    {
+     "soort": "notatie",
+     "beschrijving": "\"M²\" met hoofdletter.",
+     "voorstel": "In de app: m²."
+    },
+    {
+     "soort": "dubbelzinnig",
+     "beschrijving": "Bomen en struiken staan ook op het gras.",
+     "voorstel": "De app telt alleen de vijver als \"geen gras\", zoals het werkboek bedoelt."
+    }
+   ],
+   "autoCheck": true,
+   "origineel": "Frank wil ook nieuw graszaad kopen. a. Hoeveel M² gras heeft Frank in zijn tuin?",
+   "vraag": [
+    "Frank wil nieuw gras zaaien.",
+    "Hoeveel m² gras heeft hij?",
+    "Let op: de vijver is geen gras."
+   ],
+   "type": "getal",
+   "paneel": "deelsommen",
+   "object3d": "tuin-frank",
+   "context": [
+    {
+     "soort": "tekening",
+     "beschrijving": "Tuin 6 m × 6 m, vijver 15 dm × 15 dm (= 1,5 m × 1,5 m)."
+    }
+   ],
+   "beeld": [
+    {
+     "afbeelding": "image34.png",
+     "vorm": "model",
+     "ontwerp": "De tuin van Frank is een echt grasveld van 6 × 6 meter in de wijk, met een lage haag, 4 bomen, 2 struiken en in het midden een vierkante vijver van 15 dm met 2 visjes. Je loopt erheen. In de inspectie zie je hem als mini-diorama; de vijver tilt omhoog uit het gras.",
+     "toont": [
+      "6 m (alle zijden)",
+      "15 dm (vijver)"
+     ],
+     "grap": "De visjes zwemmen naar de kant als je dichtbij komt."
+    }
+   ],
+   "stappen": [
+    {
+     "tekst": "Reken de hele tuin uit",
+     "som": "6 × 6",
+     "expr": "6*6",
+     "uitkomst": 36,
+     "eenheid": "m²",
+     "invoer": true,
+     "deel": "gras"
+    },
+    {
+     "tekst": "Reken de vijver uit",
+     "som": "1,5 × 1,5",
+     "expr": "1.5*1.5",
+     "uitkomst": 2.25,
+     "eenheid": "m²",
+     "invoer": true,
+     "deel": "vijver"
+    },
+    {
+     "tekst": "Haal de vijver eraf",
+     "som": "36 − 2,25",
+     "expr": "36-2.25",
+     "uitkomst": 33.75,
+     "eenheid": "m²",
+     "invoer": true
+    }
+   ],
+   "antwoord": {
+    "waarde": 33.75,
+    "eenheid": "m²",
+    "expr": "6*6-1.5*1.5"
+   },
+   "voorbeeld": {
+    "vraag": [
+     "Een tuin is 5 m bij 5 m.",
+     "Er ligt een vijver van 1 m bij 1 m.",
+     "Hoeveel m² gras is er?"
+    ],
+    "stappen": [
+     {
+      "tekst": "Hele tuin",
+      "som": "5 × 5",
+      "expr": "5*5",
+      "uitkomst": 25,
+      "eenheid": "m²",
+      "invoer": true
+     },
+     {
+      "tekst": "Vijver",
+      "som": "1 × 1",
+      "expr": "1*1",
+      "uitkomst": 1,
+      "eenheid": "m²",
+      "invoer": true
+     },
+     {
+      "tekst": "Eraf halen",
+      "som": "25 − 1",
+      "expr": "25-1",
+      "uitkomst": 24,
+      "eenheid": "m²",
+      "invoer": true
+     }
+    ],
+    "antwoord": {
+     "waarde": 24,
+     "eenheid": "m²",
+     "expr": "5*5-1"
+    }
+   }
+  },
+  {
+   "id": "O2-NIV-08b",
+   "onderdeel": 2,
+   "sectie": "niveau",
+   "nummer": "8b",
+   "afbeeldingen": [
+    "image34.png"
+   ],
+   "flags": [],
+   "autoCheck": true,
+   "origineel": "Met een klein zakje graszaad kan frank 2m² gras zaaien. b. Hoeveel zakjes moet Frank kopen?",
+   "vraag": [
+    "Met 1 zakje zaai je 2 m² gras.",
+    "Frank heeft 33,75 m² gras.",
+    "Hoeveel zakjes koopt hij?"
+   ],
+   "type": "getal",
+   "paneel": "stappen",
+   "object3d": "tuin-frank",
+   "context": [
+    {
+     "soort": "tekst",
+     "beschrijving": "Uitkomst 8a: 33,75 m² gras. 1 zakje = 2 m²."
+    }
+   ],
+   "beeld": [
+    {
+     "afbeelding": "image34.png",
+     "vorm": "model",
+     "ontwerp": "De tuin van Frank is een echt grasveld van 6 × 6 meter in de wijk, met een lage haag, 4 bomen, 2 struiken en in het midden een vierkante vijver van 15 dm met 2 visjes. Je loopt erheen. In de inspectie zie je hem als mini-diorama; de vijver tilt omhoog uit het gras.",
+     "toont": [
+      "6 m (alle zijden)",
+      "15 dm (vijver)"
+     ],
+     "grap": "De visjes zwemmen naar de kant als je dichtbij komt."
+    }
+   ],
+   "stappen": [
+    {
+     "tekst": "Deel door 2",
+     "som": "33,75 : 2",
+     "expr": "33.75/2",
+     "uitkomst": 16.875,
+     "eenheid": "zakjes",
+     "invoer": true
+    },
+    {
+     "tekst": "Je koopt hele zakjes. Rond naar boven af.",
+     "som": "16,875 → ...",
+     "expr": "Math.ceil(16.875)",
+     "uitkomst": 17,
+     "eenheid": "zakjes",
+     "invoer": true
+    }
+   ],
+   "antwoord": {
+    "waarde": 17,
+    "eenheid": "zakjes",
+    "expr": "33.75/2",
+    "afronding": "naar-boven"
+   },
+   "voorbeeld": {
+    "vraag": [
+     "Je hebt 24 m² gras.",
+     "1 zakje is voor 5 m².",
+     "Hoeveel zakjes koop je?"
+    ],
+    "stappen": [
+     {
+      "tekst": "Deel door 5",
+      "som": "24 : 5",
+      "expr": "24/5",
+      "uitkomst": 4.8,
+      "eenheid": "zakjes",
+      "invoer": true
+     },
+     {
+      "tekst": "Naar boven afronden",
+      "som": "4,8 → ...",
+      "expr": "Math.ceil(4.8)",
+      "uitkomst": 5,
+      "eenheid": "zakjes",
+      "invoer": true
+     }
+    ],
+    "antwoord": {
+     "waarde": 5,
+     "eenheid": "zakjes",
+     "expr": "24/5",
+     "afronding": "naar-boven"
+    }
+   }
+  },
+  {
+   "id": "O2-NIV-09",
+   "onderdeel": 2,
+   "sectie": "niveau",
+   "nummer": "9",
+   "afbeeldingen": [],
+   "flags": [
+    {
+     "soort": "notatie",
+     "beschrijving": "\"CM³\" met hoofdletters; vraagteken na een nieuwe zin zonder hoofdletter.",
+     "voorstel": "In de app: cm³ en twee zinnen."
+    }
+   ],
+   "autoCheck": true,
+   "origineel": "Een kubus heeft de inhoud van 1.000.000 CM³ hoeveel liter water past er in deze kubus?",
+   "vraag": [
+    "Frank vangt regenwater op in een kubus.",
+    "De kubus heeft een inhoud van 1.000.000 cm³.",
+    "Hoeveel liter water past erin?"
+   ],
+   "type": "getal",
+   "paneel": "eenhedentrap",
+   "object3d": "waterkubus",
+   "stappen": [
+    {
+     "tekst": "Van cm³ naar dm³",
+     "som": "1.000.000 : 1000",
+     "expr": "1000000/1000",
+     "uitkomst": 1000,
+     "eenheid": "dm³",
+     "invoer": true,
+     "trap": {
+      "van": "cm³",
+      "naar": "dm³"
+     }
+    },
+    {
+     "tekst": "1 dm³ is 1 liter",
+     "som": "1000 dm³ = 1000 liter",
+     "expr": null,
+     "uitkomst": 1000,
+     "invoer": false,
+     "eenheid": "liter"
+    }
+   ],
+   "antwoord": {
+    "waarde": 1000,
+    "eenheid": "liter",
+    "expr": "1000000/1000"
+   },
+   "voorbeeld": {
+    "vraag": [
+     "Een bak heeft een inhoud van 500.000 cm³.",
+     "Hoeveel liter is dat?"
+    ],
+    "stappen": [
+     {
+      "tekst": "Naar dm³",
+      "som": "500.000 : 1000",
+      "expr": "500000/1000",
+      "uitkomst": 500,
+      "eenheid": "dm³",
+      "invoer": true,
+      "trap": {
+       "van": "cm³",
+       "naar": "dm³"
+      }
+     }
+    ],
+    "antwoord": {
+     "waarde": 500,
+     "eenheid": "liter",
+     "expr": "500000/1000"
+    }
+   }
+  },
+  {
+   "id": "O2-NIV-10",
+   "onderdeel": 2,
+   "sectie": "niveau",
+   "nummer": "10",
+   "afbeeldingen": [
+    "image35.png"
+   ],
+   "flags": [
+    {
+     "soort": "auteursrecht",
+     "beschrijving": "Foto of scan uit een externe bron.",
+     "voorstel": "Getallen overnemen, beeld opnieuw maken in 3D (zie beeld)."
+    },
+    {
+     "soort": "notatie",
+     "beschrijving": "\"8 M\", \"2,5 M\" en \"M³\" met hoofdletters.",
+     "voorstel": "In de app: m en m³."
+    }
+   ],
+   "autoCheck": true,
+   "origineel": "In de goederenwagon wordt ijzererts vervoerd. De bak heeft een lengte van 8 M, een breedte van 2,5 M en een hoogte van 2,5 M. Hoeveel kuub (M³) ijzererts past er in de goederenwagon",
+   "vraag": [
+    "Een ertswagen brengt ijzererts naar de smidse.",
+    "De bak is 8 m lang, 2,5 m breed en 2,5 m hoog.",
+    "Hoeveel m³ erts past erin?"
+   ],
+   "type": "getal",
+   "paneel": "deelsommen",
+   "object3d": "goederenwagon",
+   "beeld": [
+    {
+     "afbeelding": "image35.png",
+     "vorm": "model",
+     "ontwerp": "Langs de rand van de wijk loopt een spoor met een groene goederenwagon vol zwarte ertsbrokken. In de exploded view tilt het erts als één blok uit de bak, met maatlijnen 8 m, 2,5 m en 2,5 m.",
+     "toont": [
+      "8 m",
+      "2,5 m",
+      "2,5 m"
+     ],
+     "grap": "Af en toe toetert er in de verte een trein."
+    }
+   ],
+   "stappen": [
+    {
+     "tekst": "Lengte × breedte × hoogte",
+     "som": "8 × 2,5 × 2,5",
+     "expr": "8*2.5*2.5",
+     "uitkomst": 50,
+     "eenheid": "m³",
+     "invoer": true,
+     "deel": "erts"
+    }
+   ],
+   "antwoord": {
+    "waarde": 50,
+    "eenheid": "m³",
+    "expr": "8*2.5*2.5"
+   },
+   "voorbeeld": {
+    "vraag": [
+     "Een container is 6 m lang, 2 m breed en 2 m hoog.",
+     "Hoeveel m³ past erin?"
+    ],
+    "stappen": [
+     {
+      "tekst": "Keer elkaar",
+      "som": "6 × 2 × 2",
+      "expr": "6*2*2",
+      "uitkomst": 24,
+      "eenheid": "m³",
+      "invoer": true
+     }
+    ],
+    "antwoord": {
+     "waarde": 24,
+     "eenheid": "m³",
+     "expr": "6*2*2"
+    }
+   }
+  },
+  {
+   "id": "O2-NIV-11a",
+   "onderdeel": 2,
+   "sectie": "niveau",
+   "nummer": "11a",
+   "afbeeldingen": [
+    "image36.png"
+   ],
+   "flags": [
+    {
+     "soort": "notatie",
+     "beschrijving": "\"M³\" met hoofdletter.",
+     "voorstel": "In de app: m³."
+    }
+   ],
+   "autoCheck": true,
+   "origineel": "Je ziet een tekening van een zwembad. De bodem van het zwembad is aan de linkerkant opgehoogd. Het zwembad is dus niet overal even diep. A. Wat is de inhoud van dit zwembad in M³?",
+   "vraag": [
+    "Onder het kasteel ligt een waterkelder.",
+    "Hij is 24 m lang, 12 m breed en 3 m diep.",
+    "Links ligt een verhoogde bodem van 12 × 12 × 0,5 m.",
+    "Hoeveel m³ water past erin?"
+   ],
+   "type": "getal",
+   "paneel": "deelsommen",
+   "object3d": "zwembad",
+   "context": [
+    {
+     "soort": "tekening",
+     "beschrijving": "Balk: onderkant 12 m + 12 m = 24 m lang, 12 m breed, 3 m hoog. Links op de bodem een blok van 12 m lang, 12 m breed en 0,5 m hoog."
+    }
+   ],
+   "beeld": [
+    {
+     "afbeelding": "image36.png",
+     "vorm": "model",
+     "ontwerp": "Het buurtzwembad van 24 × 12 m ligt echt in de wijk. Links is het water lichter: daar ligt de verhoogde bodem. In de exploded view schuift die bodem (12 × 12 × 0,5 m) omhoog uit de bak.",
+     "toont": [
+      "12 m + 12 m (lengte)",
+      "12 m (breedte)",
+      "3 m (diepte)",
+      "0,5 m (verhoging)"
+     ],
+     "grap": "Op de duikplank staat een opblaaseend."
+    }
+   ],
+   "stappen": [
+    {
+     "tekst": "Reken de hele bak uit",
+     "som": "24 × 12 × 3",
+     "expr": "24*12*3",
+     "uitkomst": 864,
+     "eenheid": "m³",
+     "invoer": true,
+     "deel": "bak"
+    },
+    {
+     "tekst": "Reken de verhoogde bodem uit",
+     "som": "12 × 12 × 0,5",
+     "expr": "12*12*0.5",
+     "uitkomst": 72,
+     "eenheid": "m³",
+     "invoer": true,
+     "deel": "verhoging"
+    },
+    {
+     "tekst": "Haal de bodem eraf",
+     "som": "864 − 72",
+     "expr": "864-72",
+     "uitkomst": 792,
+     "eenheid": "m³",
+     "invoer": true
+    }
+   ],
+   "antwoord": {
+    "waarde": 792,
+    "eenheid": "m³",
+    "expr": "24*12*3-12*12*0.5"
+   },
+   "voorbeeld": {
+    "vraag": [
+     "Een bad is 20 m lang, 10 m breed en 2 m diep.",
+     "Er ligt een blok van 10 × 10 × 0,5 m in.",
+     "Hoeveel m³ water past erin?"
+    ],
+    "stappen": [
+     {
+      "tekst": "Hele bak",
+      "som": "20 × 10 × 2",
+      "expr": "20*10*2",
+      "uitkomst": 400,
+      "eenheid": "m³",
+      "invoer": true
+     },
+     {
+      "tekst": "Blok",
+      "som": "10 × 10 × 0,5",
+      "expr": "10*10*0.5",
+      "uitkomst": 50,
+      "eenheid": "m³",
+      "invoer": true
+     },
+     {
+      "tekst": "Eraf halen",
+      "som": "400 − 50",
+      "expr": "400-50",
+      "uitkomst": 350,
+      "eenheid": "m³",
+      "invoer": true
+     }
+    ],
+    "antwoord": {
+     "waarde": 350,
+     "eenheid": "m³",
+     "expr": "20*10*2-10*10*0.5"
+    }
+   }
+  },
+  {
+   "id": "O2-NIV-11b",
+   "onderdeel": 2,
+   "sectie": "niveau",
+   "nummer": "11b",
+   "afbeeldingen": [
+    "image36.png"
+   ],
+   "flags": [],
+   "autoCheck": true,
+   "origineel": "B. Hoeveel Liter heb je nodig om het zwembad te kunnen vullen?",
+   "vraag": [
+    "In de waterkelder past 792 m³ water.",
+    "Hoeveel liter is dat?"
+   ],
+   "type": "getal",
+   "paneel": "eenhedentrap",
+   "object3d": "zwembad",
+   "beeld": [
+    {
+     "afbeelding": "image36.png",
+     "vorm": "model",
+     "ontwerp": "Het buurtzwembad van 24 × 12 m ligt echt in de wijk. Links is het water lichter: daar ligt de verhoogde bodem. In de exploded view schuift die bodem (12 × 12 × 0,5 m) omhoog uit de bak.",
+     "toont": [
+      "12 m + 12 m (lengte)",
+      "12 m (breedte)",
+      "3 m (diepte)",
+      "0,5 m (verhoging)"
+     ],
+     "grap": "Op de duikplank staat een opblaaseend."
+    }
+   ],
+   "stappen": [
+    {
+     "tekst": "Van m³ naar dm³",
+     "som": "792 × 1000",
+     "expr": "792*1000",
+     "uitkomst": 792000,
+     "eenheid": "dm³",
+     "invoer": true,
+     "trap": {
+      "van": "m³",
+      "naar": "dm³"
+     }
+    },
+    {
+     "tekst": "1 dm³ is 1 liter",
+     "som": "792.000 dm³ = 792.000 liter",
+     "expr": null,
+     "uitkomst": 792000,
+     "invoer": false,
+     "eenheid": "liter"
+    }
+   ],
+   "antwoord": {
+    "waarde": 792000,
+    "eenheid": "liter",
+    "expr": "792*1000"
+   },
+   "voorbeeld": {
+    "vraag": [
+     "In een bad past 350 m³.",
+     "Hoeveel liter is dat?"
+    ],
+    "stappen": [
+     {
+      "tekst": "Keer 1000",
+      "som": "350 × 1000",
+      "expr": "350*1000",
+      "uitkomst": 350000,
+      "eenheid": "dm³",
+      "invoer": true,
+      "trap": {
+       "van": "m³",
+       "naar": "dm³"
+      }
+     }
+    ],
+    "antwoord": {
+     "waarde": 350000,
+     "eenheid": "liter",
+     "expr": "350*1000"
+    }
+   }
+  },
+  {
+   "id": "O2-EXP-01",
+   "onderdeel": 2,
+   "sectie": "expert",
+   "nummer": "1",
+   "afbeeldingen": [
+    "image37.png"
+   ],
+   "flags": [
+    {
+     "soort": "auteursrecht",
+     "beschrijving": "Foto of scan uit een externe bron.",
+     "voorstel": "Getallen overnemen, beeld opnieuw maken in 3D (zie beeld)."
+    }
+   ],
+   "autoCheck": true,
+   "titel": "Afplakken",
+   "origineel": "Bekijk de afbeelding hieronder. De schilder plakt rondom de randen van het raam schilders tape. In de kamer zijn er 6 van deze ramen. Hoeveel rollen schilders tape heeft de schilder nodig? Schrijf je berekening op.",
+   "vraag": [
+    "Het poortgebouw heeft 6 ramen.",
+    "Een raam is 240 cm breed en 180 cm hoog.",
+    "De schilder plakt tape rond alle 6 ramen.",
+    "Op 1 rol zit 24 m tape.",
+    "Hoeveel rollen heeft hij nodig?"
+   ],
+   "type": "getal",
+   "paneel": "deelsommen",
+   "object3d": "ramenhuis",
+   "context": [
+    {
+     "soort": "prijzen",
+     "items": [
+      {
+       "label": "raam breedte",
+       "waarde": 240,
+       "eenheid": "cm"
+      },
+      {
+       "label": "raam hoogte",
+       "waarde": 180,
+       "eenheid": "cm"
+      },
+      {
+       "label": "schilderstape per rol",
+       "waarde": 24,
+       "eenheid": "m"
+      },
+      {
+       "label": "prijs per rol",
+       "waarde": "€ 1,29"
+      }
+     ],
+     "beschrijving": "Raam met maten 240 cm × 180 cm. Webwinkel: schilderstape, 24 m per rol, € 1,29."
+    }
+   ],
+   "beeld": [
+    {
+     "afbeelding": "image37.png",
+     "vorm": "model",
+     "ontwerp": "Een lang huis met 6 grote ramen. Een schilder staat op een ladder en plakt blauwe tape rond een raam. Op de stoep staat een kraampje met rollen tape: \"24 m per rol – € 1,29\".",
+     "toont": [
+      "240 cm",
+      "180 cm",
+      "24 m per rol",
+      "€ 1,29"
+     ],
+     "grap": "De schilder heeft tape op zijn neus geplakt."
+    }
+   ],
+   "stappen": [
+    {
+     "tekst": "Omtrek van 1 raam",
+     "som": "240 + 180 + 240 + 180",
+     "expr": "240+180+240+180",
+     "uitkomst": 840,
+     "eenheid": "cm",
+     "invoer": true,
+     "deel": "raam"
+    },
+    {
+     "tekst": "Maak er meters van",
+     "som": "840 : 100",
+     "expr": "840/100",
+     "uitkomst": 8.4,
+     "eenheid": "m",
+     "invoer": true,
+     "trap": {
+      "van": "cm",
+      "naar": "m"
+     }
+    },
+    {
+     "tekst": "Voor 6 ramen",
+     "som": "6 × 8,4",
+     "expr": "6*8.4",
+     "uitkomst": 50.4,
+     "eenheid": "m",
+     "invoer": true
+    },
+    {
+     "tekst": "Hoeveel rollen?",
+     "som": "50,4 : 24",
+     "expr": "50.4/24",
+     "uitkomst": 2.1,
+     "eenheid": "rollen",
+     "invoer": true
+    },
+    {
+     "tekst": "Hele rollen: rond naar boven af",
+     "som": "2,1 → ...",
+     "expr": "Math.ceil(2.1)",
+     "uitkomst": 3,
+     "eenheid": "rollen",
+     "invoer": true
+    }
+   ],
+   "antwoord": {
+    "waarde": 3,
+    "eenheid": "rollen",
+    "expr": "50.4/24",
+    "afronding": "naar-boven"
+   },
+   "voorbeeld": {
+    "vraag": [
+     "Een raam is 200 cm bij 100 cm.",
+     "Je plakt 4 ramen af.",
+     "Op 1 rol zit 20 m."
+    ],
+    "stappen": [
+     {
+      "tekst": "Omtrek 1 raam",
+      "som": "200 + 100 + 200 + 100",
+      "expr": "200+100+200+100",
+      "uitkomst": 600,
+      "eenheid": "cm",
+      "invoer": true
+     },
+     {
+      "tekst": "Naar meters",
+      "som": "600 : 100",
+      "expr": "600/100",
+      "uitkomst": 6,
+      "eenheid": "m",
+      "invoer": true,
+      "trap": {
+       "van": "cm",
+       "naar": "m"
+      }
+     },
+     {
+      "tekst": "4 ramen",
+      "som": "4 × 6",
+      "expr": "4*6",
+      "uitkomst": 24,
+      "eenheid": "m",
+      "invoer": true
+     },
+     {
+      "tekst": "Rollen",
+      "som": "24 : 20",
+      "expr": "24/20",
+      "uitkomst": 1.2,
+      "eenheid": "rollen",
+      "invoer": true
+     },
+     {
+      "tekst": "Naar boven",
+      "som": "1,2 → ...",
+      "expr": "Math.ceil(1.2)",
+      "uitkomst": 2,
+      "eenheid": "rollen",
+      "invoer": true
+     }
+    ],
+    "antwoord": {
+     "waarde": 2,
+     "eenheid": "rollen",
+     "expr": "24/20",
+     "afronding": "naar-boven"
+    }
+   }
+  },
+  {
+   "id": "O2-EXP-02",
+   "onderdeel": 2,
+   "sectie": "expert",
+   "nummer": "2",
+   "afbeeldingen": [],
+   "flags": [
+    {
+     "soort": "notatie",
+     "beschrijving": "\"4,8 M\" en \"4 M²\" met hoofdletters, \"m\" en \"M\" door elkaar.",
+     "voorstel": "In de app: m en m²."
+    }
+   ],
+   "autoCheck": true,
+   "titel": "Verven",
+   "origineel": "Sara wil een muur van 4,8 M bij 3,25 m verven. In de muur zit een raam van 4 M² Wat is de oppervlakte die Sara moet verven in M²? Schrijf je berekening op.",
+   "vraag": [
+    "Boo verft een muur van 4,8 m bij 3,25 m in de torenkamer.",
+    "In de muur zit een raam van 4 m².",
+    "Hoeveel m² verft Boo?"
+   ],
+   "type": "getal",
+   "paneel": "deelsommen",
+   "object3d": "verfmuur",
+   "stappen": [
+    {
+     "tekst": "Reken de hele muur uit",
+     "som": "4,8 × 3,25",
+     "expr": "4.8*3.25",
+     "uitkomst": 15.6,
+     "eenheid": "m²",
+     "invoer": true,
+     "deel": "muur"
+    },
+    {
+     "tekst": "Haal het raam eraf",
+     "som": "15,6 − 4",
+     "expr": "15.6-4",
+     "uitkomst": 11.6,
+     "eenheid": "m²",
+     "invoer": true,
+     "deel": "raam"
+    }
+   ],
+   "antwoord": {
+    "waarde": 11.6,
+    "eenheid": "m²",
+    "expr": "4.8*3.25-4"
+   },
+   "voorbeeld": {
+    "vraag": [
+     "Een muur is 5 m bij 3 m.",
+     "Er zit een raam van 2 m² in.",
+     "Hoeveel m² verf je?"
+    ],
+    "stappen": [
+     {
+      "tekst": "Hele muur",
+      "som": "5 × 3",
+      "expr": "5*3",
+      "uitkomst": 15,
+      "eenheid": "m²",
+      "invoer": true
+     },
+     {
+      "tekst": "Raam eraf",
+      "som": "15 − 2",
+      "expr": "15-2",
+      "uitkomst": 13,
+      "eenheid": "m²",
+      "invoer": true
+     }
+    ],
+    "antwoord": {
+     "waarde": 13,
+     "eenheid": "m²",
+     "expr": "5*3-2"
+    }
+   }
+  },
+  {
+   "id": "O2-EXP-03",
+   "onderdeel": 2,
+   "sectie": "expert",
+   "nummer": "3",
+   "afbeeldingen": [
+    "image38.png"
+   ],
+   "flags": [
+    {
+     "soort": "auteursrecht",
+     "beschrijving": "Foto of scan uit een externe bron.",
+     "voorstel": "Getallen overnemen, beeld opnieuw maken in 3D (zie beeld)."
+    }
+   ],
+   "autoCheck": true,
+   "titel": "Krijtbord",
+   "origineel": "Stoepborden kunnen worden gebruikt voor reclame op straat. De voorkant van een stoepbord bestaat uit een zwarte plaat met daaromheen een houten frame van 50 mm breed. Hoeveel cm² is de oppervlakte van deze zwarte plaat? Schrijf je berekening op.",
+   "vraag": [
+    "Bij de heksenkeuken staat een krijtbord met het menu.",
+    "Het bord is 700 mm breed en 900 mm hoog.",
+    "Rondom zit een houten rand van 50 mm.",
+    "Hoeveel cm² is de zwarte plaat?"
+   ],
+   "type": "getal",
+   "paneel": "deelsommen",
+   "object3d": "stoepbord",
+   "context": [
+    {
+     "soort": "tekening",
+     "beschrijving": "Vooraanzicht stoepbord: buitenmaat 700 mm breed, 900 mm hoog (zonder de pootjes). Frame rondom 50 mm breed. Binnen een zwarte plaat."
+    }
+   ],
+   "beeld": [
+    {
+     "afbeelding": "image38.png",
+     "vorm": "bord",
+     "ontwerp": "Voor het café staat een houten stoepbord met een krijtbord: \"Vandaag: soep € 4,50\". In de exploded view schuift de zwarte plaat naar voren uit het frame. Maatlijnen 700 mm, 900 mm en 50 mm.",
+     "toont": [
+      "700 mm",
+      "900 mm",
+      "50 mm"
+     ],
+     "grap": "Er staat een krijttekening van een lachende tomaat op."
+    }
+   ],
+   "stappen": [
+    {
+     "tekst": "Breedte zonder de randen",
+     "som": "700 − 50 − 50",
+     "expr": "700-50-50",
+     "uitkomst": 600,
+     "eenheid": "mm",
+     "invoer": true,
+     "deel": "plaat"
+    },
+    {
+     "tekst": "Hoogte zonder de randen",
+     "som": "900 − 50 − 50",
+     "expr": "900-50-50",
+     "uitkomst": 800,
+     "eenheid": "mm",
+     "invoer": true,
+     "deel": "plaat"
+    },
+    {
+     "tekst": "600 mm naar cm",
+     "som": "600 : 10",
+     "expr": "600/10",
+     "uitkomst": 60,
+     "eenheid": "cm",
+     "invoer": true,
+     "trap": {
+      "van": "mm",
+      "naar": "cm"
+     }
+    },
+    {
+     "tekst": "800 mm naar cm",
+     "som": "800 : 10",
+     "expr": "800/10",
+     "uitkomst": 80,
+     "eenheid": "cm",
+     "invoer": true,
+     "trap": {
+      "van": "mm",
+      "naar": "cm"
+     }
+    },
+    {
+     "tekst": "Breedte keer hoogte",
+     "som": "60 × 80",
+     "expr": "60*80",
+     "uitkomst": 4800,
+     "eenheid": "cm²",
+     "invoer": true
+    }
+   ],
+   "antwoord": {
+    "waarde": 4800,
+    "eenheid": "cm²",
+    "expr": "(700-100)/10*(900-100)/10"
+   },
+   "voorbeeld": {
+    "vraag": [
+     "Een bord is 500 mm breed en 700 mm hoog.",
+     "De rand is 50 mm.",
+     "Hoeveel cm² is de plaat?"
+    ],
+    "stappen": [
+     {
+      "tekst": "Breedte",
+      "som": "500 − 100",
+      "expr": "500-100",
+      "uitkomst": 400,
+      "eenheid": "mm",
+      "invoer": true
+     },
+     {
+      "tekst": "Hoogte",
+      "som": "700 − 100",
+      "expr": "700-100",
+      "uitkomst": 600,
+      "eenheid": "mm",
+      "invoer": true
+     },
+     {
+      "tekst": "Naar cm",
+      "som": "40 × 60",
+      "expr": "40*60",
+      "uitkomst": 2400,
+      "eenheid": "cm²",
+      "invoer": true
+     }
+    ],
+    "antwoord": {
+     "waarde": 2400,
+     "eenheid": "cm²",
+     "expr": "40*60"
+    }
+   }
+  },
+  {
+   "id": "O2-EXP-04",
+   "onderdeel": 2,
+   "sectie": "expert",
+   "nummer": "4",
+   "afbeeldingen": [
+    "image39.png"
+   ],
+   "flags": [
+    {
+     "soort": "auteursrecht",
+     "beschrijving": "Foto of scan uit een externe bron.",
+     "voorstel": "Getallen overnemen, beeld opnieuw maken in 3D (zie beeld)."
+    },
+    {
+     "soort": "tekst",
+     "beschrijving": "De maten staan alleen in de afbeelding.",
+     "voorstel": "In de app staan ze in de vraag en als maatlijn."
+    }
+   ],
+   "autoCheck": true,
+   "titel": "Bloembak",
+   "origineel": "Sjors maakt de bloembak leeg voor nieuwe plantjes. Hij vult de bak tot 1 dm hoog met nieuwe aarde. Hoeveel kubieke decimeter aarde heeft Sjors nodig? Schrijf je berekening op.",
+   "vraag": [
+    "Frank zet een bloembak op de walgang.",
+    "De bak is 50 cm lang en 32 cm breed.",
+    "Hij doet er 1 dm aarde in.",
+    "Hoeveel dm³ aarde heeft hij nodig?"
+   ],
+   "type": "getal",
+   "paneel": "eenhedentrap",
+   "object3d": "bloembak",
+   "context": [
+    {
+     "soort": "tekening",
+     "beschrijving": "Houten bloembak met gras. Lengte 50 cm, breedte 32 cm."
+    }
+   ],
+   "beeld": [
+    {
+     "afbeelding": "image39.png",
+     "vorm": "model",
+     "ontwerp": "Op de vensterbank van een huis staat een houten bloembak met gras. In de exploded view komt er een laag aarde van 1 dm uit de bak omhoog. Maatlijnen 50 cm en 32 cm.",
+     "toont": [
+      "50 cm",
+      "32 cm",
+      "1 dm"
+     ],
+     "grap": "Er kruipt een lieveheersbeestje over de rand."
+    }
+   ],
+   "stappen": [
+    {
+     "tekst": "50 cm naar dm",
+     "som": "50 : 10",
+     "expr": "50/10",
+     "uitkomst": 5,
+     "eenheid": "dm",
+     "invoer": true,
+     "trap": {
+      "van": "cm",
+      "naar": "dm"
+     }
+    },
+    {
+     "tekst": "32 cm naar dm",
+     "som": "32 : 10",
+     "expr": "32/10",
+     "uitkomst": 3.2,
+     "eenheid": "dm",
+     "invoer": true,
+     "trap": {
+      "van": "cm",
+      "naar": "dm"
+     }
+    },
+    {
+     "tekst": "Lengte × breedte × hoogte",
+     "som": "5 × 3,2 × 1",
+     "expr": "5*3.2*1",
+     "uitkomst": 16,
+     "eenheid": "dm³",
+     "invoer": true,
+     "deel": "aarde"
+    }
+   ],
+   "antwoord": {
+    "waarde": 16,
+    "eenheid": "dm³",
+    "expr": "5*3.2*1"
+   },
+   "voorbeeld": {
+    "vraag": [
+     "Een bak is 40 cm lang en 20 cm breed.",
+     "Je doet er 1 dm aarde in.",
+     "Hoeveel dm³ is dat?"
+    ],
+    "stappen": [
+     {
+      "tekst": "Naar dm",
+      "som": "40 : 10 en 20 : 10",
+      "expr": "4*2",
+      "uitkomst": 8,
+      "eenheid": "dm²",
+      "invoer": true
+     },
+     {
+      "tekst": "Keer de hoogte",
+      "som": "4 × 2 × 1",
+      "expr": "4*2*1",
+      "uitkomst": 8,
+      "eenheid": "dm³",
+      "invoer": true
+     }
+    ],
+    "antwoord": {
+     "waarde": 8,
+     "eenheid": "dm³",
+     "expr": "4*2*1"
+    }
+   }
+  },
+  {
+   "id": "O2-EXP-05",
+   "onderdeel": 2,
+   "sectie": "expert",
+   "nummer": "5",
+   "afbeeldingen": [
+    "image40.png"
+   ],
+   "flags": [],
+   "autoCheck": true,
+   "titel": "Schatkist",
+   "origineel": "In de opslagruimte van een bedrijf staat een grote rechthoekige doos. Wat is de inhoud van de doos in liters? Schrijf je berekening op.",
+   "vraag": [
+    "In de schatkamer staat een grote schatkist.",
+    "De kist is 1,2 m lang, 0,8 m breed en 0,6 m hoog.",
+    "Hoeveel liter past erin?"
+   ],
+   "type": "getal",
+   "paneel": "eenhedentrap",
+   "object3d": "grote-doos",
+   "context": [
+    {
+     "soort": "tekening",
+     "beschrijving": "Doos: 1,2 m lang, 0,8 m breed, 0,6 m hoog."
+    }
+   ],
+   "beeld": [
+    {
+     "afbeelding": "image40.png",
+     "vorm": "model",
+     "ontwerp": "In de garage van de wijk staat een grote kartonnen doos op een pallet. In de exploded view gaan de flappen open en zie je lagen van literpakken. Maatlijnen 1,2 m, 0,8 m en 0,6 m.",
+     "toont": [
+      "1,2 m",
+      "0,8 m",
+      "0,6 m"
+     ]
+    }
+   ],
+   "stappen": [
+    {
+     "tekst": "1,2 m naar dm",
+     "som": "1,2 × 10",
+     "expr": "1.2*10",
+     "uitkomst": 12,
+     "eenheid": "dm",
+     "invoer": true,
+     "trap": {
+      "van": "m",
+      "naar": "dm"
+     }
+    },
+    {
+     "tekst": "0,8 m naar dm",
+     "som": "0,8 × 10",
+     "expr": "0.8*10",
+     "uitkomst": 8,
+     "eenheid": "dm",
+     "invoer": true,
+     "trap": {
+      "van": "m",
+      "naar": "dm"
+     }
+    },
+    {
+     "tekst": "0,6 m naar dm",
+     "som": "0,6 × 10",
+     "expr": "0.6*10",
+     "uitkomst": 6,
+     "eenheid": "dm",
+     "invoer": true,
+     "trap": {
+      "van": "m",
+      "naar": "dm"
+     }
+    },
+    {
+     "tekst": "Keer elkaar (1 dm³ = 1 liter)",
+     "som": "12 × 8 × 6",
+     "expr": "12*8*6",
+     "uitkomst": 576,
+     "eenheid": "liter",
+     "invoer": true,
+     "deel": "doos"
+    }
+   ],
+   "antwoord": {
+    "waarde": 576,
+    "eenheid": "liter",
+    "expr": "12*8*6"
+   },
+   "voorbeeld": {
+    "vraag": [
+     "Een kist is 1 m lang, 0,5 m breed en 0,4 m hoog.",
+     "Hoeveel liter past erin?"
+    ],
+    "stappen": [
+     {
+      "tekst": "Naar dm",
+      "som": "10, 5 en 4",
+      "expr": "10*5*4",
+      "uitkomst": 200,
+      "eenheid": "dm³",
+      "invoer": true
+     },
+     {
+      "tekst": "1 dm³ = 1 liter",
+      "som": "200 dm³",
+      "expr": null,
+      "uitkomst": 200,
+      "invoer": false
+     }
+    ],
+    "antwoord": {
+     "waarde": 200,
+     "eenheid": "liter",
+     "expr": "10*5*4"
+    }
+   }
+  },
+  {
+   "id": "O2-EXP-06",
+   "onderdeel": 2,
+   "sectie": "expert",
+   "nummer": "6",
+   "afbeeldingen": [
+    "image41.png"
+   ],
+   "flags": [
+    {
+     "soort": "notatie",
+     "beschrijving": "\"€17.50\" met punt.",
+     "voorstel": "In de app: € 17,50."
+    },
+    {
+     "soort": "dubbelzinnig",
+     "beschrijving": "De smalle nis links boven (20 × 190 cm) hoort bij de kamer. Zonder nis is het € 280,00.",
+     "voorstel": "De app rekent de nis mee: € 286,65. Docent kan dit aanpassen."
+    }
+   ],
+   "autoCheck": true,
+   "titel": "Torenkamer huren",
+   "origineel": "Bekijk de afbeeldingen hieronder. Marly huurt deze studentenkamer. De huurprijs van de studentenkamer is €17.50 per m². Hoeveel huur moet Marly betalen? Schrijf je berekening op.",
+   "vraag": [
+    "Een student huurt een torenkamer van de graaf.",
+    "De huur is € 17,50 per m².",
+    "Hoeveel huur betaalt de student?"
+   ],
+   "type": "getal",
+   "paneel": "deelsommen",
+   "object3d": "studentenkamer",
+   "context": [
+    {
+     "soort": "plattegrond",
+     "beschrijving": "Kamer in L-vorm. Bovenkant 420 cm, rechterkant 400 cm, onderkant 400 cm. Links boven een nis van 190 cm hoog die 20 cm verder uitsteekt (420 − 400). Met bank, bed, bureau en kast."
+    }
+   ],
+   "beeld": [
+    {
+     "afbeelding": "image41.png",
+     "vorm": "kaart",
+     "ontwerp": "In de etalage van de makelaar staat een maquette van de studentenkamer zonder dak: bank, bed, bureau, kastje. Ernaast een bordje \"Te huur: € 17,50 per m²\". In de exploded view schuift de smalle nis los van de grote kamer.",
+     "toont": [
+      "420 cm",
+      "400 cm",
+      "400 cm",
+      "190 cm",
+      "€ 17,50 per m²"
+     ]
+    }
+   ],
+   "stappen": [
+    {
+     "tekst": "Grote deel: 400 cm = 4 m",
+     "som": "4 × 4",
+     "expr": "4*4",
+     "uitkomst": 16,
+     "eenheid": "m²",
+     "invoer": true,
+     "deel": "kamer"
+    },
+    {
+     "tekst": "Nis: 420 − 400 = 20 cm = 0,2 m",
+     "som": "0,2 × 1,9",
+     "expr": "0.2*1.9",
+     "uitkomst": 0.38,
+     "eenheid": "m²",
+     "invoer": true,
+     "deel": "nis"
+    },
+    {
+     "tekst": "Tel op",
+     "som": "16 + 0,38",
+     "expr": "16+0.38",
+     "uitkomst": 16.38,
+     "eenheid": "m²",
+     "invoer": true
+    },
+    {
+     "tekst": "Keer de prijs",
+     "som": "16,38 × 17,50",
+     "expr": "16.38*17.5",
+     "uitkomst": 286.65,
+     "eenheid": "euro",
+     "invoer": true
+    }
+   ],
+   "antwoord": {
+    "waarde": 286.65,
+    "eenheid": "euro",
+    "expr": "(4*4+0.2*1.9)*17.5",
+    "tolerantie": 0.005
+   },
+   "voorbeeld": {
+    "vraag": [
+     "Een kamer is 3 m bij 3 m.",
+     "Er is een nis van 1 m bij 2 m.",
+     "De huur is € 20 per m²."
+    ],
+    "stappen": [
+     {
+      "tekst": "Kamer",
+      "som": "3 × 3",
+      "expr": "3*3",
+      "uitkomst": 9,
+      "eenheid": "m²",
+      "invoer": true
+     },
+     {
+      "tekst": "Nis",
+      "som": "1 × 2",
+      "expr": "1*2",
+      "uitkomst": 2,
+      "eenheid": "m²",
+      "invoer": true
+     },
+     {
+      "tekst": "Totaal",
+      "som": "9 + 2",
+      "expr": "9+2",
+      "uitkomst": 11,
+      "eenheid": "m²",
+      "invoer": true
+     },
+     {
+      "tekst": "Huur",
+      "som": "11 × 20",
+      "expr": "11*20",
+      "uitkomst": 220,
+      "eenheid": "euro",
+      "invoer": true
+     }
+    ],
+    "antwoord": {
+     "waarde": 220,
+     "eenheid": "euro",
+     "expr": "11*20"
+    }
+   }
+  },
+  {
+   "id": "O2-EXP-07",
+   "onderdeel": 2,
+   "sectie": "expert",
+   "nummer": "7",
+   "afbeeldingen": [
+    "image42.png"
+   ],
+   "flags": [
+    {
+     "soort": "auteursrecht",
+     "beschrijving": "Foto of scan uit een externe bron.",
+     "voorstel": "Getallen overnemen, beeld opnieuw maken in 3D (zie beeld)."
+    },
+    {
+     "soort": "fout-in-werkboek",
+     "beschrijving": "\"William Wilt\" (hoofdletter W) en \"plattengrond\" (2×) moeten \"wil\" en \"plattegrond\" zijn.",
+     "voorstel": "In de app verbeterd."
+    },
+    {
+     "soort": "tekst",
+     "beschrijving": "Op papier meet je met een liniaal. In de app meet je niet.",
+     "voorstel": "In de app ligt een raster van ruitjes (1 ruitje = 1 m) onder de tuin: de student telt."
+    }
+   ],
+   "autoCheck": true,
+   "titel": "Tuinhuisje",
+   "origineel": "Bekijk en neem onderstaande afbeelding in je op. William Wilt een tuinhuis aanschaffen. Op de plattengrond heeft hij op schaal het tuinhuis getekend. Via tuinhuisjes.com kan William 3 tuinhuizen bestellen. Welk tuinhuis zou passen op de getekende plattengrond?",
+   "vraag": [
+    "De tuinman van het kasteel wil een tuinhuis.",
+    "Zijn tuin is 8 m breed en 12 m lang.",
+    "Op de tekening staat de plek van het tuinhuis.",
+    "Welk tuinhuis past precies?"
+   ],
+   "type": "keuze",
+   "keuzes": [
+    "Pelle",
+    "Axel",
+    "Sven"
+   ],
+   "paneel": "keuze",
+   "object3d": "tuinhuizen",
+   "context": [
+    {
+     "soort": "tabel",
+     "kolommen": [
+      "Tuinhuis",
+      "Lengte",
+      "Breedte",
+      "Hoogte"
+     ],
+     "rijen": [
+      [
+       "Pelle",
+       "120 cm",
+       "120 cm",
+       "220 cm"
+      ],
+      [
+       "Axel",
+       "800 cm",
+       "450 cm",
+       "260 cm"
+      ],
+      [
+       "Sven",
+       "300 cm",
+       "200 cm",
+       "250 cm"
+      ]
+     ],
+     "beschrijving": "Overzicht van 3 tuinhuizen."
+    },
+    {
+     "soort": "plattegrond",
+     "beschrijving": "Tuin 8 m breed, 12 m lang, op schaal. Rechtsboven tegen de rand een plek \"Tuinhuis\" van 3 m lang en 2 m breed (gemeten: 2,0 m × 3,0 m op schaal)."
+    }
+   ],
+   "beeld": [
+    {
+     "afbeelding": "image42.png",
+     "vorm": "model",
+     "ontwerp": "Bij het tuincentrum staan drie echte tuinhuisjes (Pelle, Axel en Sven) met een kaartje met hun maten. Ernaast ligt de tuin van William op de grond: 8 × 12 m met een raster van ruitjes van 1 m en een uitgezette plek met paaltjes en lint.",
+     "toont": [
+      "Pelle 120 × 120 × 220 cm",
+      "Axel 800 × 450 × 260 cm",
+      "Sven 300 × 200 × 250 cm",
+      "tuin 8 m × 12 m",
+      "plek 3 × 2 ruitjes"
+     ],
+     "grap": "Uit tuinhuis Pelle steekt een hark die steeds omvalt."
+    }
+   ],
+   "stappen": [
+    {
+     "tekst": "Tel de lengte van de plek (1 ruitje = 1 m)",
+     "som": "ruitjes tellen",
+     "expr": null,
+     "uitkomst": 3,
+     "eenheid": "m",
+     "invoer": true,
+     "deel": "plek"
+    },
+    {
+     "tekst": "Tel de breedte van de plek",
+     "som": "ruitjes tellen",
+     "expr": null,
+     "uitkomst": 2,
+     "eenheid": "m",
+     "invoer": true,
+     "deel": "plek"
+    },
+    {
+     "tekst": "Vergelijk met de kaartjes",
+     "som": "3 m × 2 m = 300 cm × 200 cm",
+     "expr": null,
+     "uitkomst": "Sven",
+     "invoer": false
+    }
+   ],
+   "antwoord": {
+    "waarde": "Sven",
+    "expr": null
+   },
+   "voorbeeld": {
+    "vraag": [
+     "De plek is 2 ruitjes lang en 2 ruitjes breed.",
+     "1 ruitje is 1 m.",
+     "Past een huisje van 200 × 200 cm?"
+    ],
+    "stappen": [
+     {
+      "tekst": "2 × 2 ruitjes",
+      "som": "2 m × 2 m = 200 cm × 200 cm",
+      "expr": null,
+      "uitkomst": "ja",
+      "invoer": false
+     }
+    ],
+    "antwoord": {
+     "waarde": "ja",
+     "expr": null
+    }
+   }
+  },
+  {
+   "id": "O2-EXP-08",
+   "onderdeel": 2,
+   "sectie": "expert",
+   "nummer": "8",
+   "afbeeldingen": [
+    "image43.png"
+   ],
+   "flags": [],
+   "autoCheck": true,
+   "titel": "Bouwkavel",
+   "origineel": "Een bouwkavel is een stuk grond waarop een huis gebouwd kan worden. Je ziet een schets van twee bouwkavels van beide 21 meter lang, maar met een verschillende breedte. De prijs per m² is voor beide kavels hetzelfde. Bereken, zonder te meten, hoeveel meter breed kavel 2 is. Schrijf je berekening op.",
+   "vraag": [
+    "Naast het kasteel liggen twee bouwkavels.",
+    "Ze zijn allebei 21 m lang.",
+    "Kavel 1 is 10,5 m breed en kost € 55.125.",
+    "Kavel 2 kost € 70.875.",
+    "De prijs per m² is gelijk.",
+    "Hoe breed is kavel 2?"
+   ],
+   "type": "getal",
+   "paneel": "stappen",
+   "object3d": "bouwkavels",
+   "context": [
+    {
+     "soort": "tekening",
+     "items": [
+      {
+       "label": "lengte beide kavels",
+       "waarde": 21,
+       "eenheid": "m"
+      },
+      {
+       "label": "breedte kavel 1",
+       "waarde": 10.5,
+       "eenheid": "m"
+      },
+      {
+       "label": "prijs kavel 1",
+       "waarde": "55125 euro"
+      },
+      {
+       "label": "prijs kavel 2",
+       "waarde": "70875 euro"
+      }
+     ],
+     "beschrijving": "Twee kavels naast elkaar, beide 21 meter lang. Kavel 1 is 10,5 m breed, prijs 55 125 euro. Kavel 2: prijs 70 875 euro, breedte onbekend."
+    }
+   ],
+   "beeld": [
+    {
+     "afbeelding": "image43.png",
+     "vorm": "model",
+     "ontwerp": "Achter de huizen liggen twee lege kavels met paaltjes en rood-wit lint. Op elk kavel staat een \"TE KOOP\"-bord met de prijs. Bij kavel 1 ligt een meetlint van 10,5 m; bij kavel 2 staat een vraagteken.",
+     "toont": [
+      "21 m",
+      "10,5 m",
+      "€ 55.125",
+      "€ 70.875"
+     ],
+     "grap": "Een mol steekt zijn kop omhoog op kavel 2."
+    }
+   ],
+   "stappen": [
+    {
+     "tekst": "Oppervlakte kavel 1",
+     "som": "10,5 × 21",
+     "expr": "10.5*21",
+     "uitkomst": 220.5,
+     "eenheid": "m²",
+     "invoer": true,
+     "deel": "kavel1"
+    },
+    {
+     "tekst": "Prijs per m²",
+     "som": "55.125 : 220,5",
+     "expr": "55125/220.5",
+     "uitkomst": 250,
+     "eenheid": "euro",
+     "invoer": true
+    },
+    {
+     "tekst": "Oppervlakte kavel 2",
+     "som": "70.875 : 250",
+     "expr": "70875/250",
+     "uitkomst": 283.5,
+     "eenheid": "m²",
+     "invoer": true,
+     "deel": "kavel2"
+    },
+    {
+     "tekst": "Breedte kavel 2",
+     "som": "283,5 : 21",
+     "expr": "283.5/21",
+     "uitkomst": 13.5,
+     "eenheid": "m",
+     "invoer": true
+    }
+   ],
+   "antwoord": {
+    "waarde": 13.5,
+    "eenheid": "m",
+    "expr": "70875/(55125/(10.5*21))/21"
+   },
+   "voorbeeld": {
+    "vraag": [
+     "Kavel 1 is 10 m × 20 m en kost € 40.000.",
+     "Kavel 2 is 20 m lang en kost € 60.000.",
+     "Hoe breed is kavel 2?"
+    ],
+    "stappen": [
+     {
+      "tekst": "m² kavel 1",
+      "som": "10 × 20",
+      "expr": "10*20",
+      "uitkomst": 200,
+      "eenheid": "m²",
+      "invoer": true
+     },
+     {
+      "tekst": "Prijs per m²",
+      "som": "40.000 : 200",
+      "expr": "40000/200",
+      "uitkomst": 200,
+      "eenheid": "euro",
+      "invoer": true
+     },
+     {
+      "tekst": "m² kavel 2",
+      "som": "60.000 : 200",
+      "expr": "60000/200",
+      "uitkomst": 300,
+      "eenheid": "m²",
+      "invoer": true
+     },
+     {
+      "tekst": "Breedte",
+      "som": "300 : 20",
+      "expr": "300/20",
+      "uitkomst": 15,
+      "eenheid": "m",
+      "invoer": true
+     }
+    ],
+    "antwoord": {
+     "waarde": 15,
+     "eenheid": "m",
+     "expr": "300/20"
+    }
+   }
+  },
+  {
+   "id": "O2-EXP-09",
+   "onderdeel": 2,
+   "sectie": "expert",
+   "nummer": "9",
+   "afbeeldingen": [
+    "image44.png"
+   ],
+   "flags": [
+    {
+     "soort": "auteursrecht",
+     "beschrijving": "Foto of scan uit een externe bron.",
+     "voorstel": "Getallen overnemen, beeld opnieuw maken in 3D (zie beeld)."
+    },
+    {
+     "soort": "tekst",
+     "beschrijving": "Punt ontbreekt na \"Bekijk de afbeelding\". De maten moet je uit de uitslag halen.",
+     "voorstel": "In de app: maten in de vraag en als maatlijn."
+    }
+   ],
+   "autoCheck": true,
+   "titel": "Kikkersap",
+   "origineel": "Bekijk de afbeelding Hoeveel liter sap past er in dit pak? Schrijf je berekening op.",
+   "vraag": [
+    "Dit is de uitslag van een pak kikkersap uit de heksenkeuken.",
+    "Het pak is 25 cm lang, 10 cm breed en 8 cm dik.",
+    "Hoeveel liter sap past erin?"
+   ],
+   "type": "getal",
+   "paneel": "eenhedentrap",
+   "object3d": "ananaspak",
+   "context": [
+    {
+     "soort": "tekening",
+     "beschrijving": "Uitslag van een pak: zijvlakken 25 cm lang; vlakken om en om 10 cm en 8 cm breed (10, 8, 10, 8). Totaal 26 cm voor 8 + 10 + 8. Boven- en ondervlak 10 cm × 8 cm, met een dop op het bovenvlak."
+    }
+   ],
+   "beeld": [
+    {
+     "afbeelding": "image44.png",
+     "vorm": "etiket",
+     "ontwerp": "In de supermarkt staat een reuzenpak ananassap met een eigen etiket (getekende ananas). Met de schuifregelaar klapt het pak open tot de uitslag en weer dicht. Maatlijnen 25 cm, 10 cm en 8 cm.",
+     "toont": [
+      "25 cm",
+      "10 cm",
+      "8 cm",
+      "26 cm",
+      "8 cm (dop-vlak)"
+     ],
+     "grap": "De ananas op het etiket knipoogt."
+    }
+   ],
+   "stappen": [
+    {
+     "tekst": "Lees de maten af",
+     "som": "lengte 25, breedte 10, dikte 8 cm",
+     "expr": null,
+     "uitkomst": "25 × 10 × 8",
+     "invoer": false
+    },
+    {
+     "tekst": "Reken de inhoud uit",
+     "som": "25 × 10 × 8",
+     "expr": "25*10*8",
+     "uitkomst": 2000,
+     "eenheid": "cm³",
+     "invoer": true,
+     "deel": "pak"
+    },
+    {
+     "tekst": "Maak er liters van",
+     "som": "2000 : 1000",
+     "expr": "2000/1000",
+     "uitkomst": 2,
+     "eenheid": "liter",
+     "invoer": true,
+     "trap": {
+      "van": "cm³",
+      "naar": "dm³"
+     }
+    }
+   ],
+   "antwoord": {
+    "waarde": 2,
+    "eenheid": "liter",
+    "expr": "25*10*8/1000"
+   },
+   "voorbeeld": {
+    "vraag": [
+     "Een pak is 20 cm lang, 10 cm breed en 5 cm dik.",
+     "Hoeveel liter past erin?"
+    ],
+    "stappen": [
+     {
+      "tekst": "Inhoud",
+      "som": "20 × 10 × 5",
+      "expr": "20*10*5",
+      "uitkomst": 1000,
+      "eenheid": "cm³",
+      "invoer": true
+     },
+     {
+      "tekst": "Naar liter",
+      "som": "1000 : 1000",
+      "expr": "1000/1000",
+      "uitkomst": 1,
+      "eenheid": "liter",
+      "invoer": true,
+      "trap": {
+       "van": "cm³",
+       "naar": "dm³"
+      }
+     }
+    ],
+    "antwoord": {
+     "waarde": 1,
+     "eenheid": "liter",
+     "expr": "20*10*5/1000"
+    }
+   }
+  },
+  {
+   "id": "O2-PRA-01",
+   "onderdeel": 2,
+   "sectie": "praktijk",
+   "nummer": "1",
+   "afbeeldingen": [],
+   "flags": [
+    {
+     "soort": "niet-automatisch",
+     "beschrijving": "Eigen ontwerp; de app kan dit niet nakijken.",
+     "voorstel": "Buitenmissie: de docent keurt goed met een code."
+    }
+   ],
+   "autoCheck": false,
+   "titel": "Ontwerp je eigen wachtershuisje",
+   "origineel": "Je krijgt de opdracht om je eigen tinyhouse te ontwerpen. Je hebt 25 m² vloeroppervlakte tot je beschikking. Stap 1 Plattegrond tekenen (1 ruitje = 0,5 m, zones woonruimte, keuken, badkamer, slaapruimte, opbergruimte, max 25 m²). Stap 2 Oppervlakte berekenen. Stap 3 Inhoud berekenen (bv. hoogte 2,5 m). Stap 4 Inrichten. Stap 5 Materialenlijst. Stap 6 Inleveren. Extra: kosten uitrekenen.",
+   "vraag": [
+    "Ontwerp een wachtershuisje voor de kasteelwacht.",
+    "Je hebt 25 m² vloer.",
+    "Teken, reken en richt in.",
+    "Lever het in bij je docent."
+   ],
+   "type": "open",
+   "paneel": "stappen",
+   "object3d": "tinyhouse",
+   "context": [
+    {
+     "soort": "tekst",
+     "beschrijving": "Werkboekstappen: 1 plattegrond tekenen (1 ruitje = 0,5 m; woonruimte, keuken, badkamer, slaapruimte, opbergruimte; max 25 m²). 2 oppervlakte per ruimte (lengte × breedte) en optellen. 3 inhoud: vloer × hoogte (bv. 2,5 m). 4 inrichten met echte meubelmaten. 5 materialenlijst (laminaat in m², verf: 2,5 m × omtrek). 6 inleveren: plattegrond, oppervlaktes en inhoud, uitleg, materialenlijst."
+    }
+   ],
+   "stappen": [
+    {
+     "tekst": "Teken een plattegrond",
+     "som": "1 ruitje = 0,5 m",
+     "expr": null,
+     "uitkomst": "tekening",
+     "invoer": false
+    },
+    {
+     "tekst": "Reken elke ruimte uit",
+     "som": "lengte × breedte",
+     "expr": null,
+     "uitkomst": "m² per ruimte",
+     "invoer": false
+    },
+    {
+     "tekst": "Tel alles op",
+     "som": "niet meer dan 25 m²",
+     "expr": null,
+     "uitkomst": "totaal",
+     "invoer": false
+    },
+    {
+     "tekst": "Reken de inhoud uit",
+     "som": "vloer × hoogte (bv. 2,5 m)",
+     "expr": null,
+     "uitkomst": "m³",
+     "invoer": false
+    },
+    {
+     "tekst": "Richt in en maak een materialenlijst",
+     "som": "meubels, laminaat, verf",
+     "expr": null,
+     "uitkomst": "lijst",
+     "invoer": false
+    }
+   ],
+   "antwoord": null
+  },
+  {
+   "id": "O2-PUZ-01",
+   "onderdeel": 2,
+   "sectie": "puzzel",
+   "nummer": "1",
+   "afbeeldingen": [
+    "image45.jpeg"
+   ],
+   "flags": [],
+   "autoCheck": true,
+   "titel": "Kruissom 1",
+   "origineel": "Vul de groene getallen op de juiste plek in zodat bij elke som een juiste uitkomst is.",
+   "vraag": [
+    "In de vloer zit een geheime puzzel.",
+    "Leg de groene tegels op de lege vakjes.",
+    "Elke som moet kloppen.",
+    "Je gebruikt elke tegel één keer."
+   ],
+   "type": "puzzel",
+   "paneel": "kruissom",
+   "object3d": "kruissom-1",
+   "puzzel": {
+    "rooster": [
+     [
+      "11",
+      "#",
+      "",
+      "#",
+      "40",
+      "#",
+      "#",
+      "#",
+      "#"
+     ],
+     [
+      "+",
+      "#",
+      "-",
+      "#",
+      "-",
+      "#",
+      "#",
+      "#",
+      "#"
+     ],
+     [
+      "14",
+      "+",
+      "19",
+      "=",
+      "",
+      "#",
+      "3",
+      "#",
+      "#"
+     ],
+     [
+      "=",
+      "#",
+      "=",
+      "#",
+      "=",
+      "#",
+      "+",
+      "#",
+      "#"
+     ],
+     [
+      "",
+      "#",
+      "",
+      "+",
+      "",
+      "=",
+      "",
+      "#",
+      ""
+     ],
+     [
+      "#",
+      "#",
+      "#",
+      "#",
+      "#",
+      "#",
+      "=",
+      "#",
+      "+"
+     ],
+     [
+      "#",
+      "#",
+      "#",
+      "#",
+      "7",
+      "+",
+      "",
+      "=",
+      "37"
+     ],
+     [
+      "#",
+      "#",
+      "#",
+      "#",
+      "#",
+      "#",
+      "#",
+      "#",
+      "="
+     ],
+     [
+      "#",
+      "#",
+      "#",
+      "#",
+      "",
+      "+",
+      "15",
+      "=",
+      "41"
+     ]
+    ],
+    "tegels": [
+     27,
+     25,
+     39,
+     26,
+     20,
+     4,
+     30,
+     7,
+     33
+    ]
+   },
+   "context": [
+    {
+     "soort": "anders",
+     "beschrijving": "Kruissom-rooster met 9 lege vakjes en groene tegels: 27, 25, 39, 26, 20, 4, 30, 7, 33."
+    }
+   ],
+   "beeld": [
+    {
+     "afbeelding": "image45.jpeg",
+     "vorm": "model",
+     "ontwerp": "Op het plein ligt een stenen mozaïek met rekensommen. Lege vakjes zijn putjes. De groene tegels liggen in een kruiwagen ernaast. Elke goede som licht groen op.",
+     "toont": [
+      "tegels 27, 25, 39, 26, 20, 4, 30, 7, 33",
+      "alle gegeven getallen en tekens uit het rooster"
+     ],
+     "grap": "Als alles klopt spuit er een fonteintje uit het midden."
+    }
+   ],
+   "stappen": [],
+   "antwoord": {
+    "waarde": "39, 33, 25, 20, 7, 27, 4, 30, 26",
+    "expr": null
+   }
+  },
+  {
+   "id": "O2-PUZ-02",
+   "onderdeel": 2,
+   "sectie": "puzzel",
+   "nummer": "2",
+   "afbeeldingen": [
+    "image46.jpeg"
+   ],
+   "flags": [],
+   "autoCheck": true,
+   "titel": "Kruissom 2",
+   "origineel": "Vul de groene getallen op de juiste plek in zodat bij elke som een juiste uitkomst is.",
+   "vraag": [
+    "In de vloer zit een geheime puzzel.",
+    "Leg de groene tegels op de lege vakjes.",
+    "Elke som moet kloppen.",
+    "Je gebruikt elke tegel één keer."
+   ],
+   "type": "puzzel",
+   "paneel": "kruissom",
+   "object3d": "kruissom-2",
+   "puzzel": {
+    "rooster": [
+     [
+      "22",
+      "-",
+      "",
+      "=",
+      "20",
+      "#",
+      "77",
+      "#",
+      "11",
+      "#",
+      "#"
+     ],
+     [
+      "#",
+      "#",
+      "#",
+      "#",
+      "x",
+      "#",
+      "-",
+      "#",
+      "+",
+      "#",
+      "#"
+     ],
+     [
+      "60",
+      ":",
+      "",
+      "=",
+      "3",
+      "#",
+      "7",
+      "+",
+      "7",
+      "=",
+      ""
+     ],
+     [
+      "#",
+      "#",
+      ":",
+      "#",
+      "=",
+      "#",
+      "=",
+      "#",
+      "=",
+      "#",
+      "#"
+     ],
+     [
+      "19",
+      "#",
+      "10",
+      "+",
+      "",
+      "=",
+      "",
+      "#",
+      "",
+      "#",
+      "#"
+     ],
+     [
+      "-",
+      "#",
+      "=",
+      "#",
+      "#",
+      "#",
+      "#",
+      "#",
+      "#",
+      "#",
+      "#"
+     ],
+     [
+      "",
+      "-",
+      "",
+      "=",
+      "11",
+      "#",
+      "#",
+      "#",
+      "5",
+      "#",
+      "#"
+     ],
+     [
+      "=",
+      "#",
+      "#",
+      "#",
+      "-",
+      "#",
+      "#",
+      "#",
+      "+",
+      "#",
+      "#"
+     ],
+     [
+      "6",
+      "-",
+      "",
+      "=",
+      "4",
+      "#",
+      "3",
+      "x",
+      "",
+      "=",
+      "81"
+     ],
+     [
+      "#",
+      "#",
+      "#",
+      "#",
+      "=",
+      "#",
+      "#",
+      "#",
+      "=",
+      "#",
+      "#"
+     ],
+     [
+      "#",
+      "#",
+      "#",
+      "#",
+      "",
+      "+",
+      "25",
+      "=",
+      "",
+      "#",
+      "#"
+     ]
+    ],
+    "tegels": [
+     27,
+     70,
+     2,
+     14,
+     20,
+     13,
+     7,
+     18,
+     32,
+     2,
+     60,
+     2
+    ]
+   },
+   "context": [
+    {
+     "soort": "anders",
+     "beschrijving": "Kruissom-rooster met 12 lege vakjes en groene tegels: 27, 70, 2, 14, 20, 13, 7, 18, 32, 2, 60, 2."
+    }
+   ],
+   "beeld": [
+    {
+     "afbeelding": "image46.jpeg",
+     "vorm": "model",
+     "ontwerp": "Op het plein ligt een stenen mozaïek met rekensommen. Lege vakjes zijn putjes. De groene tegels liggen in een kruiwagen ernaast. Elke goede som licht groen op.",
+     "toont": [
+      "tegels 27, 70, 2, 14, 20, 13, 7, 18, 32, 2, 60, 2",
+      "alle gegeven getallen en tekens uit het rooster"
+     ],
+     "grap": "Als alles klopt spuit er een fonteintje uit het midden."
+    }
+   ],
+   "stappen": [],
+   "antwoord": {
+    "waarde": "2, 20, 14, 60, 70, 18, 13, 2, 2, 27, 7, 32",
+    "expr": null
+   }
+  },
+  {
+   "id": "O2-PUZ-03",
+   "onderdeel": 2,
+   "sectie": "puzzel",
+   "nummer": "3",
+   "afbeeldingen": [
+    "image47.jpeg"
+   ],
+   "flags": [],
+   "autoCheck": true,
+   "titel": "Kruissom 3",
+   "origineel": "Vul de groene getallen op de juiste plek in zodat bij elke som een juiste uitkomst is.",
+   "vraag": [
+    "In de vloer zit een geheime puzzel.",
+    "Leg de groene tegels op de lege vakjes.",
+    "Elke som moet kloppen.",
+    "Je gebruikt elke tegel één keer."
+   ],
+   "type": "puzzel",
+   "paneel": "kruissom",
+   "object3d": "kruissom-3",
+   "puzzel": {
+    "rooster": [
+     [
+      "16",
+      "+",
+      "",
+      "=",
+      "",
+      "#",
+      "92",
+      ":",
+      "",
+      "=",
+      ""
+     ],
+     [
+      "-",
+      "#",
+      "#",
+      "#",
+      "-",
+      "#",
+      ":",
+      "#",
+      "#",
+      "#",
+      "x"
+     ],
+     [
+      "6",
+      "#",
+      "#",
+      "#",
+      "",
+      "+",
+      "",
+      "=",
+      "48",
+      "#",
+      "10"
+     ],
+     [
+      "=",
+      "#",
+      "#",
+      "#",
+      "+",
+      "#",
+      "=",
+      "#",
+      "#",
+      "#",
+      "="
+     ],
+     [
+      "",
+      "#",
+      "",
+      "-",
+      "2",
+      "=",
+      "",
+      "#",
+      "#",
+      "#",
+      "40"
+     ],
+     [
+      "#",
+      "#",
+      "+",
+      "#",
+      "=",
+      "#",
+      "#",
+      "#",
+      "#",
+      "#",
+      "#"
+     ],
+     [
+      "#",
+      "#",
+      "24",
+      "+",
+      "",
+      "=",
+      "",
+      "#",
+      "#",
+      "#",
+      "#"
+     ],
+     [
+      "#",
+      "#",
+      "=",
+      "#",
+      "#",
+      "#",
+      "#",
+      "#",
+      "#",
+      "#",
+      "#"
+     ],
+     [
+      "#",
+      "#",
+      "",
+      "-",
+      "25",
+      "=",
+      "5",
+      "#",
+      "#",
+      "#",
+      "#"
+     ]
+    ],
+    "tegels": [
+     4,
+     4,
+     10,
+     30,
+     11,
+     27,
+     6,
+     4,
+     23,
+     28,
+     23,
+     25
+    ]
+   },
+   "context": [
+    {
+     "soort": "anders",
+     "beschrijving": "Kruissom-rooster met 12 lege vakjes en groene tegels: 4, 4, 10, 30, 11, 27, 6, 4, 23, 28, 23, 25."
+    }
+   ],
+   "beeld": [
+    {
+     "afbeelding": "image47.jpeg",
+     "vorm": "model",
+     "ontwerp": "Op het plein ligt een stenen mozaïek met rekensommen. Lege vakjes zijn putjes. De groene tegels liggen in een kruiwagen ernaast. Elke goede som licht groen op.",
+     "toont": [
+      "tegels 4, 4, 10, 30, 11, 27, 6, 4, 23, 28, 23, 25",
+      "alle gegeven getallen en tekens uit het rooster"
+     ],
+     "grap": "Als alles klopt spuit er een fonteintje uit het midden."
+    }
+   ],
+   "stappen": [],
+   "antwoord": {
+    "waarde": "11, 27, 23, 4, 25, 23, 10, 6, 4, 4, 28, 30",
+    "expr": null
+   }
+  },
+  {
+   "id": "O2-EIN-01",
+   "onderdeel": 2,
+   "sectie": "eindtest",
+   "nummer": "1",
+   "afbeeldingen": [
+    "image48.jpeg"
+   ],
+   "flags": [
+    {
+     "soort": "auteursrecht",
+     "beschrijving": "Foto of scan uit een externe bron.",
+     "voorstel": "Getallen overnemen, beeld opnieuw maken in 3D (zie beeld)."
+    },
+    {
+     "soort": "notatie",
+     "beschrijving": "\"6,40m\", \"40cm x 40cm\" zonder spatie en met x.",
+     "voorstel": "In de app: 6,40 m en 40 cm × 40 cm."
+    }
+   ],
+   "autoCheck": true,
+   "origineel": "De woonkamer van een bungalow is 6,40m breed en 7,20m lang. Op de vloer worden tegels gelegd van 40cm x 40cm. Hoeveel tegels heb je minimaal nodig?",
+   "vraag": [
+    "De woonkamer van de graaf krijgt een nieuwe vloer.",
+    "De kamer is 6,40 m breed en 7,20 m lang.",
+    "Je legt tegels van 40 cm bij 40 cm.",
+    "Hoeveel tegels heb je minimaal nodig?"
+   ],
+   "type": "getal",
+   "paneel": "eenhedentrap",
+   "object3d": "tegelvloer",
+   "beeld": [
+    {
+     "afbeelding": "image48.jpeg",
+     "vorm": "model",
+     "ontwerp": "Op het poortplein ligt een halve tegelvloer van een woonkamer. Een tegelzetter heeft net een rij gelegd; de rest is nog zand. Je ziet rijen en kolommen tegels verschijnen als je rekent.",
+     "toont": [
+      "6,40 m",
+      "7,20 m",
+      "40 cm × 40 cm"
+     ]
+    }
+   ],
+   "stappen": [
+    {
+     "tekst": "6,40 m naar cm",
+     "som": "6,40 × 100",
+     "expr": "6.4*100",
+     "uitkomst": 640,
+     "eenheid": "cm",
+     "invoer": true,
+     "trap": {
+      "van": "m",
+      "naar": "cm"
+     }
+    },
+    {
+     "tekst": "Tegels in de breedte",
+     "som": "640 : 40",
+     "expr": "640/40",
+     "uitkomst": 16,
+     "eenheid": "tegels",
+     "invoer": true
+    },
+    {
+     "tekst": "7,20 m naar cm",
+     "som": "7,20 × 100",
+     "expr": "7.2*100",
+     "uitkomst": 720,
+     "eenheid": "cm",
+     "invoer": true,
+     "trap": {
+      "van": "m",
+      "naar": "cm"
+     }
+    },
+    {
+     "tekst": "Tegels in de lengte",
+     "som": "720 : 40",
+     "expr": "720/40",
+     "uitkomst": 18,
+     "eenheid": "tegels",
+     "invoer": true
+    },
+    {
+     "tekst": "Keer elkaar",
+     "som": "16 × 18",
+     "expr": "16*18",
+     "uitkomst": 288,
+     "eenheid": "tegels",
+     "invoer": true,
+     "deel": "vloer"
+    }
+   ],
+   "antwoord": {
+    "waarde": 288,
+    "eenheid": "tegels",
+    "expr": "(640/40)*(720/40)"
+   },
+   "voorbeeld": {
+    "vraag": [
+     "Een kamer is 4 m bij 3 m.",
+     "De tegels zijn 50 cm bij 50 cm.",
+     "Hoeveel tegels heb je nodig?"
+    ],
+    "stappen": [
+     {
+      "tekst": "Breedte",
+      "som": "400 : 50",
+      "expr": "400/50",
+      "uitkomst": 8,
+      "eenheid": "tegels",
+      "invoer": true
+     },
+     {
+      "tekst": "Lengte",
+      "som": "300 : 50",
+      "expr": "300/50",
+      "uitkomst": 6,
+      "eenheid": "tegels",
+      "invoer": true
+     },
+     {
+      "tekst": "Keer elkaar",
+      "som": "8 × 6",
+      "expr": "8*6",
+      "uitkomst": 48,
+      "eenheid": "tegels",
+      "invoer": true
+     }
+    ],
+    "antwoord": {
+     "waarde": 48,
+     "eenheid": "tegels",
+     "expr": "8*6"
+    }
+   }
+  },
+  {
+   "id": "O2-EIN-02",
+   "onderdeel": 2,
+   "sectie": "eindtest",
+   "nummer": "2",
+   "afbeeldingen": [],
+   "flags": [
+    {
+     "soort": "notatie",
+     "beschrijving": "\"3m\" en \"40cm\" zonder spatie.",
+     "voorstel": "In de app: 3 m en 40 cm."
+    }
+   ],
+   "autoCheck": true,
+   "origineel": "Je gaat een stuk grond van 3m lang en 40cm breed met bloembollen beplanten. Je plant 15 bloembollen per m². Hoeveel bloembollen heb je dan nodig?",
+   "vraag": [
+    "Frank plant bloembollen langs het kerkhof.",
+    "De strook grond is 3 m lang en 40 cm breed.",
+    "Hij plant 15 bollen per m².",
+    "Hoeveel bollen heeft hij nodig?"
+   ],
+   "type": "getal",
+   "paneel": "eenhedentrap",
+   "object3d": "bloembollen",
+   "stappen": [
+    {
+     "tekst": "40 cm naar m",
+     "som": "40 : 100",
+     "expr": "40/100",
+     "uitkomst": 0.4,
+     "eenheid": "m",
+     "invoer": true,
+     "trap": {
+      "van": "cm",
+      "naar": "m"
+     }
+    },
+    {
+     "tekst": "Oppervlakte",
+     "som": "3 × 0,4",
+     "expr": "3*0.4",
+     "uitkomst": 1.2,
+     "eenheid": "m²",
+     "invoer": true,
+     "deel": "strook"
+    },
+    {
+     "tekst": "Keer 15 bollen",
+     "som": "1,2 × 15",
+     "expr": "1.2*15",
+     "uitkomst": 18,
+     "eenheid": "bollen",
+     "invoer": true
+    }
+   ],
+   "antwoord": {
+    "waarde": 18,
+    "eenheid": "bollen",
+    "expr": "3*0.4*15"
+   },
+   "voorbeeld": {
+    "vraag": [
+     "Een strook is 2 m lang en 50 cm breed.",
+     "Je plant 10 bollen per m²."
+    ],
+    "stappen": [
+     {
+      "tekst": "Naar m",
+      "som": "50 : 100",
+      "expr": "50/100",
+      "uitkomst": 0.5,
+      "eenheid": "m",
+      "invoer": true
+     },
+     {
+      "tekst": "Oppervlakte",
+      "som": "2 × 0,5",
+      "expr": "2*0.5",
+      "uitkomst": 1,
+      "eenheid": "m²",
+      "invoer": true
+     },
+     {
+      "tekst": "Bollen",
+      "som": "1 × 10",
+      "expr": "1*10",
+      "uitkomst": 10,
+      "eenheid": "bollen",
+      "invoer": true
+     }
+    ],
+    "antwoord": {
+     "waarde": 10,
+     "eenheid": "bollen",
+     "expr": "2*0.5*10"
+    }
+   }
+  },
+  {
+   "id": "O2-EIN-03",
+   "onderdeel": 2,
+   "sectie": "eindtest",
+   "nummer": "3",
+   "afbeeldingen": [],
+   "flags": [],
+   "autoCheck": true,
+   "origineel": "Je wilt op internet een ring bestellen. De omtrek van je vinger is 6,5cm. De formule voor de ringmaat is: ringmaat in mm = omtrek vinger in mm : 3,14 Welke ringmaat moet je bestellen? Rond af op hele mm.",
+   "vraag": [
+    "De graaf bestelt een zegelring.",
+    "Zijn vinger is 6,5 cm rond.",
+    "Ringmaat in mm = omtrek in mm : 3,14.",
+    "Welke ringmaat bestelt hij? Rond af op hele mm."
+   ],
+   "type": "getal",
+   "paneel": "formule",
+   "object3d": "ring",
+   "stappen": [
+    {
+     "tekst": "6,5 cm naar mm",
+     "som": "6,5 × 10",
+     "expr": "6.5*10",
+     "uitkomst": 65,
+     "eenheid": "mm",
+     "invoer": true,
+     "trap": {
+      "van": "cm",
+      "naar": "mm"
+     }
+    },
+    {
+     "tekst": "Vul de formule in",
+     "som": "65 : 3,14",
+     "expr": "65/3.14",
+     "uitkomst": 20.7,
+     "eenheid": "mm",
+     "invoer": true,
+     "afronding": "1-decimaal"
+    },
+    {
+     "tekst": "Rond af op hele mm",
+     "som": "20,7 → ...",
+     "expr": "Math.round(65/3.14)",
+     "uitkomst": 21,
+     "eenheid": "mm",
+     "invoer": true
+    }
+   ],
+   "antwoord": {
+    "waarde": 21,
+    "eenheid": "mm",
+    "expr": "65/3.14",
+    "afronding": "heel"
+   },
+   "voorbeeld": {
+    "vraag": [
+     "Je vinger is 5,5 cm rond.",
+     "Welke ringmaat bestel je?"
+    ],
+    "stappen": [
+     {
+      "tekst": "Naar mm",
+      "som": "5,5 × 10",
+      "expr": "5.5*10",
+      "uitkomst": 55,
+      "eenheid": "mm",
+      "invoer": true
+     },
+     {
+      "tekst": "Formule",
+      "som": "55 : 3,14",
+      "expr": "55/3.14",
+      "uitkomst": 17.5,
+      "eenheid": "mm",
+      "invoer": true,
+      "afronding": "1-decimaal"
+     },
+     {
+      "tekst": "Afronden",
+      "som": "17,5 → ...",
+      "expr": "Math.round(55/3.14)",
+      "uitkomst": 18,
+      "eenheid": "mm",
+      "invoer": true
+     }
+    ],
+    "antwoord": {
+     "waarde": 18,
+     "eenheid": "mm",
+     "expr": "55/3.14",
+     "afronding": "heel"
+    }
+   }
+  },
+  {
+   "id": "O2-EIN-04",
+   "onderdeel": 2,
+   "sectie": "eindtest",
+   "nummer": "4",
+   "afbeeldingen": [
+    "image49.jpeg"
+   ],
+   "flags": [
+    {
+     "soort": "auteursrecht",
+     "beschrijving": "Foto of scan uit een externe bron.",
+     "voorstel": "Getallen overnemen, beeld opnieuw maken in 3D (zie beeld)."
+    }
+   ],
+   "autoCheck": true,
+   "origineel": "Hoeveel liter water past er in dit aquarium? Rond af op hele liters.",
+   "vraag": [
+    "In de kerker staat een aquarium met spookvissen.",
+    "Het is 48 cm lang, 21 cm breed en 36 cm hoog.",
+    "Hoeveel liter water past erin?",
+    "Rond af op hele liters."
+   ],
+   "type": "getal",
+   "paneel": "eenhedentrap",
+   "object3d": "aquarium",
+   "context": [
+    {
+     "soort": "tekening",
+     "beschrijving": "Aquarium: lengte 48 centimeter, breedte 21 centimeter, hoogte 36 centimeter."
+    }
+   ],
+   "beeld": [
+    {
+     "afbeelding": "image49.jpeg",
+     "vorm": "model",
+     "ontwerp": "In de dierenwinkel staat een aquarium met tropische visjes, waterplanten en een bubbelende steen. In de exploded view tilt het water als een blauw blok uit de glazen bak.",
+     "toont": [
+      "48 cm",
+      "21 cm",
+      "36 cm"
+     ],
+     "grap": "Eén visje zwemt steeds achter je vinger aan."
+    }
+   ],
+   "stappen": [
+    {
+     "tekst": "Reken de inhoud uit",
+     "som": "48 × 21 × 36",
+     "expr": "48*21*36",
+     "uitkomst": 36288,
+     "eenheid": "cm³",
+     "invoer": true,
+     "deel": "water"
+    },
+    {
+     "tekst": "Maak er liters van",
+     "som": "36.288 : 1000",
+     "expr": "36288/1000",
+     "uitkomst": 36.288,
+     "eenheid": "liter",
+     "invoer": true,
+     "trap": {
+      "van": "cm³",
+      "naar": "dm³"
+     }
+    },
+    {
+     "tekst": "Rond af op hele liters",
+     "som": "36,288 → ...",
+     "expr": "Math.round(36.288)",
+     "uitkomst": 36,
+     "eenheid": "liter",
+     "invoer": true
+    }
+   ],
+   "antwoord": {
+    "waarde": 36,
+    "eenheid": "liter",
+    "expr": "48*21*36/1000",
+    "afronding": "heel"
+   },
+   "voorbeeld": {
+    "vraag": [
+     "Een bak is 40 cm × 20 cm × 30 cm.",
+     "Hoeveel liter past erin?"
+    ],
+    "stappen": [
+     {
+      "tekst": "Inhoud",
+      "som": "40 × 20 × 30",
+      "expr": "40*20*30",
+      "uitkomst": 24000,
+      "eenheid": "cm³",
+      "invoer": true
+     },
+     {
+      "tekst": "Naar liter",
+      "som": "24.000 : 1000",
+      "expr": "24000/1000",
+      "uitkomst": 24,
+      "eenheid": "liter",
+      "invoer": true
+     }
+    ],
+    "antwoord": {
+     "waarde": 24,
+     "eenheid": "liter",
+     "expr": "40*20*30/1000"
+    }
+   }
+  },
+  {
+   "id": "O2-EIN-05",
+   "onderdeel": 2,
+   "sectie": "eindtest",
+   "nummer": "5",
+   "afbeeldingen": [
+    "image50.jpeg"
+   ],
+   "flags": [
+    {
+     "soort": "auteursrecht",
+     "beschrijving": "Foto of scan uit een externe bron.",
+     "voorstel": "Getallen overnemen, beeld opnieuw maken in 3D (zie beeld)."
+    }
+   ],
+   "autoCheck": true,
+   "origineel": "Je hebt zeven van de tien kisten verkocht. Hoeveel kilogram aardappelen blijven er over?",
+   "vraag": [
+    "In de kasteelkelder staan 10 kisten aardappelen.",
+    "In elke kist zit 25 kg.",
+    "De kok verkoopt 7 kisten.",
+    "Hoeveel kg blijft er over?"
+   ],
+   "type": "getal",
+   "paneel": "stappen",
+   "object3d": "aardappelkisten",
+   "context": [
+    {
+     "soort": "tekst",
+     "items": [
+      {
+       "label": "kisten",
+       "waarde": 10
+      },
+      {
+       "label": "per kist",
+       "waarde": 25,
+       "eenheid": "kg"
+      }
+     ],
+     "beschrijving": "Totaal: 10 kisten, 25 kg per kist."
+    }
+   ],
+   "beeld": [
+    {
+     "afbeelding": "image50.jpeg",
+     "vorm": "model",
+     "ontwerp": "Bij de marktkraam staan 10 houten kisten vol aardappelen, gestapeld. Op elke kist staat \"25 kg\". Verkochte kisten rijden weg op een steekkarretje.",
+     "toont": [
+      "10 kisten",
+      "25 kg per kist"
+     ],
+     "grap": "Eén aardappel heeft een gezichtje."
+    }
+   ],
+   "stappen": [
+    {
+     "tekst": "Hoeveel kisten blijven er?",
+     "som": "10 − 7",
+     "expr": "10-7",
+     "uitkomst": 3,
+     "eenheid": "kisten",
+     "invoer": true
+    },
+    {
+     "tekst": "Keer 25 kg",
+     "som": "3 × 25",
+     "expr": "3*25",
+     "uitkomst": 75,
+     "eenheid": "kg",
+     "invoer": true,
+     "deel": "kisten"
+    }
+   ],
+   "antwoord": {
+    "waarde": 75,
+    "eenheid": "kg",
+    "expr": "(10-7)*25"
+   },
+   "voorbeeld": {
+    "vraag": [
+     "Je hebt 8 kisten van 20 kg.",
+     "Je verkoopt er 5.",
+     "Hoeveel kg blijft over?"
+    ],
+    "stappen": [
+     {
+      "tekst": "Kisten over",
+      "som": "8 − 5",
+      "expr": "8-5",
+      "uitkomst": 3,
+      "eenheid": "kisten",
+      "invoer": true
+     },
+     {
+      "tekst": "Keer 20",
+      "som": "3 × 20",
+      "expr": "3*20",
+      "uitkomst": 60,
+      "eenheid": "kg",
+      "invoer": true
+     }
+    ],
+    "antwoord": {
+     "waarde": 60,
+     "eenheid": "kg",
+     "expr": "3*20"
+    }
+   }
+  },
+  {
+   "id": "O2-EIN-06",
+   "onderdeel": 2,
+   "sectie": "eindtest",
+   "nummer": "6",
+   "afbeeldingen": [
+    "image51.jpeg"
+   ],
+   "flags": [
+    {
+     "soort": "auteursrecht",
+     "beschrijving": "Foto of scan uit een externe bron.",
+     "voorstel": "Getallen overnemen, beeld opnieuw maken in 3D (zie beeld)."
+    }
+   ],
+   "autoCheck": true,
+   "origineel": "Door je tailleomvang te meten, kun je je spijkerbroek bepalen. Spijkerbroekmaat = tailleomvang in cm : 2,54 (rond af naar boven op een heel getal) Je tailleomvang is 83cm Welke maat spijkerbroek heb je?",
+   "vraag": [
+    "Een ridder koopt een spijkerbroek voor onder zijn harnas.",
+    "Zijn taille is 83 cm.",
+    "Maat = taille in cm : 2,54.",
+    "Rond naar boven af.",
+    "Welke maat spijkerbroek heeft hij?"
+   ],
+   "type": "getal",
+   "paneel": "formule",
+   "object3d": "spijkerbroek",
+   "beeld": [
+    {
+     "afbeelding": "image51.jpeg",
+     "vorm": "model",
+     "ontwerp": "In de kledingwinkel staat een paspop met een spijkerbroek en een meetlint om de taille. Aan het rek hangen labels met maten 30 t/m 36.",
+     "toont": [
+      "83 cm",
+      ": 2,54"
+     ]
+    }
+   ],
+   "stappen": [
+    {
+     "tekst": "Vul de formule in",
+     "som": "83 : 2,54",
+     "expr": "83/2.54",
+     "uitkomst": 32.68,
+     "eenheid": "maat",
+     "invoer": true,
+     "afronding": "2-decimalen"
+    },
+    {
+     "tekst": "Rond naar boven af",
+     "som": "32,68 → ...",
+     "expr": "Math.ceil(83/2.54)",
+     "uitkomst": 33,
+     "eenheid": "maat",
+     "invoer": true
+    }
+   ],
+   "antwoord": {
+    "waarde": 33,
+    "expr": "83/2.54",
+    "afronding": "naar-boven"
+   },
+   "voorbeeld": {
+    "vraag": [
+     "Je taille is 76 cm.",
+     "Welke maat heb je?"
+    ],
+    "stappen": [
+     {
+      "tekst": "Formule",
+      "som": "76 : 2,54",
+      "expr": "76/2.54",
+      "uitkomst": 29.92,
+      "eenheid": "maat",
+      "invoer": true,
+      "afronding": "2-decimalen"
+     },
+     {
+      "tekst": "Naar boven",
+      "som": "29,92 → ...",
+      "expr": "Math.ceil(76/2.54)",
+      "uitkomst": 30,
+      "eenheid": "maat",
+      "invoer": true
+     }
+    ],
+    "antwoord": {
+     "waarde": 30,
+     "expr": "76/2.54",
+     "afronding": "naar-boven"
+    }
+   }
+  },
+  {
+   "id": "O2-EIN-07",
+   "onderdeel": 2,
+   "sectie": "eindtest",
+   "nummer": "7",
+   "afbeeldingen": [
+    "image52.jpeg"
+   ],
+   "flags": [
+    {
+     "soort": "auteursrecht",
+     "beschrijving": "Foto of scan uit een externe bron.",
+     "voorstel": "Getallen overnemen, beeld opnieuw maken in 3D (zie beeld)."
+    }
+   ],
+   "autoCheck": true,
+   "origineel": "Je hebt 1,8 liter melk. Hoeveel glazen van 20 centiliter kun je daarmee vullen?",
+   "vraag": [
+    "Boo heeft 1,8 liter heksenmelk.",
+    "In een glas gaat 20 cl.",
+    "Hoeveel glazen kan hij vullen?"
+   ],
+   "type": "getal",
+   "paneel": "eenhedentrap",
+   "object3d": "melk",
+   "beeld": [
+    {
+     "afbeelding": "image52.jpeg",
+     "vorm": "model",
+     "ontwerp": "Op een picknicktafel staan een fles melk van 1,8 liter en een rij lege glazen. Als je rekent, vullen de glazen zich één voor één.",
+     "toont": [
+      "1,8 liter",
+      "20 cl per glas"
+     ],
+     "grap": "Er zit een snorretje van melk op het poppetje als je klaar bent."
+    }
+   ],
+   "stappen": [
+    {
+     "tekst": "1,8 liter naar cl",
+     "som": "1,8 × 100",
+     "expr": "1.8*100",
+     "uitkomst": 180,
+     "eenheid": "cl",
+     "invoer": true,
+     "trap": {
+      "van": "l",
+      "naar": "cl"
+     }
+    },
+    {
+     "tekst": "Hoeveel glazen?",
+     "som": "180 : 20",
+     "expr": "180/20",
+     "uitkomst": 9,
+     "eenheid": "glazen",
+     "invoer": true,
+     "deel": "glazen"
+    }
+   ],
+   "antwoord": {
+    "waarde": 9,
+    "eenheid": "glazen",
+    "expr": "180/20"
+   },
+   "voorbeeld": {
+    "vraag": [
+     "Je hebt 1,5 liter sap.",
+     "Een glas is 25 cl.",
+     "Hoeveel glazen?"
+    ],
+    "stappen": [
+     {
+      "tekst": "Naar cl",
+      "som": "1,5 × 100",
+      "expr": "1.5*100",
+      "uitkomst": 150,
+      "eenheid": "cl",
+      "invoer": true
+     },
+     {
+      "tekst": "Glazen",
+      "som": "150 : 25",
+      "expr": "150/25",
+      "uitkomst": 6,
+      "eenheid": "glazen",
+      "invoer": true
+     }
+    ],
+    "antwoord": {
+     "waarde": 6,
+     "eenheid": "glazen",
+     "expr": "150/25"
+    }
+   }
+  },
+  {
+   "id": "O2-EIN-08",
+   "onderdeel": 2,
+   "sectie": "eindtest",
+   "nummer": "8",
+   "afbeeldingen": [
+    "image53.gif"
+   ],
+   "flags": [
+    {
+     "soort": "auteursrecht",
+     "beschrijving": "Foto of scan uit een externe bron.",
+     "voorstel": "Getallen overnemen, beeld opnieuw maken in 3D (zie beeld)."
+    }
+   ],
+   "autoCheck": true,
+   "origineel": "Hoelang duurt de reis van Arnhem naar Zandvoort aan Zee inclusief overstappen?",
+   "vraag": [
+    "Boo gaat met de trein van Arnhem naar Zandvoort aan Zee.",
+    "Kijk op het stationsbord.",
+    "Hoe lang duurt de reis, met overstappen?"
+   ],
+   "type": "getal",
+   "paneel": "getallenlijn",
+   "object3d": "stationsbord",
+   "context": [
+    {
+     "soort": "tabel",
+     "kolommen": [
+      "Tijd",
+      "Station/Halte",
+      "Spoor",
+      "Richting",
+      "Reisdetails"
+     ],
+     "rijen": [
+      [
+       "07:31",
+       "Arnhem",
+       "11",
+       "Utrecht Centraal",
+       "Intercity (NS)"
+      ],
+      [
+       "08:37",
+       "Amsterdam Centraal",
+       "8a",
+       "",
+       ""
+      ],
+      [
+       "08:48",
+       "Amsterdam Centraal",
+       "1",
+       "Haarlem",
+       "Sprinter (NS)"
+      ],
+      [
+       "09:19",
+       "Zandvoort aan Zee",
+       "1",
+       "",
+       ""
+      ]
+     ],
+     "beschrijving": "Reisplanner: vertrek Arnhem 07:31, aankomst Amsterdam Centraal 08:37, vertrek 08:48, aankomst Zandvoort aan Zee 09:19."
+    }
+   ],
+   "beeld": [
+    {
+     "afbeelding": "image53.gif",
+     "vorm": "bord",
+     "ontwerp": "Bij het kleine station van de wijk hangt een stationsbord met klapletters. De tijden klapperen op hun plek: 07:31 Arnhem, 08:37 en 08:48 Amsterdam Centraal, 09:19 Zandvoort aan Zee.",
+     "toont": [
+      "07:31",
+      "08:37",
+      "08:48",
+      "09:19",
+      "spoor 11, 8a, 1, 1"
+     ],
+     "grap": "Een duif loopt over het perron en zoekt de juiste trein."
+    }
+   ],
+   "stappen": [
+    {
+     "tekst": "Van 07:31 tot 08:31",
+     "som": "1 uur",
+     "expr": "60",
+     "uitkomst": 60,
+     "eenheid": "minuten",
+     "invoer": true
+    },
+    {
+     "tekst": "Van 08:31 tot 09:19",
+     "som": "09:19 − 08:31",
+     "expr": "19+29",
+     "uitkomst": 48,
+     "eenheid": "minuten",
+     "invoer": true
+    },
+    {
+     "tekst": "Tel op",
+     "som": "60 + 48",
+     "expr": "60+48",
+     "uitkomst": 108,
+     "eenheid": "minuten",
+     "invoer": true
+    }
+   ],
+   "antwoord": {
+    "waarde": 108,
+    "eenheid": "minuten",
+    "expr": "(9*60+19)-(7*60+31)",
+    "alternatieven": [
+     "1:48",
+     "1 uur en 48 minuten"
+    ]
+   },
+   "voorbeeld": {
+    "vraag": [
+     "Je vertrekt om 10:15.",
+     "Je komt aan om 11:40.",
+     "Hoe lang duurt de reis?"
+    ],
+    "stappen": [
+     {
+      "tekst": "10:15 tot 11:15",
+      "som": "1 uur",
+      "expr": "60",
+      "uitkomst": 60,
+      "eenheid": "minuten",
+      "invoer": true
+     },
+     {
+      "tekst": "11:15 tot 11:40",
+      "som": "25 minuten",
+      "expr": "25",
+      "uitkomst": 25,
+      "eenheid": "minuten",
+      "invoer": true
+     },
+     {
+      "tekst": "Tel op",
+      "som": "60 + 25",
+      "expr": "60+25",
+      "uitkomst": 85,
+      "eenheid": "minuten",
+      "invoer": true
+     }
+    ],
+    "antwoord": {
+     "waarde": 85,
+     "eenheid": "minuten",
+     "expr": "(11*60+40)-(10*60+15)"
+    }
+   }
+  },
+  {
+   "id": "O2-EIN-09",
+   "onderdeel": 2,
+   "sectie": "eindtest",
+   "nummer": "9",
+   "afbeeldingen": [
+    "image54.png"
+   ],
+   "flags": [
+    {
+     "soort": "auteursrecht",
+     "beschrijving": "Foto of scan uit een externe bron.",
+     "voorstel": "Getallen overnemen, beeld opnieuw maken in 3D (zie beeld)."
+    },
+    {
+     "soort": "tekst",
+     "beschrijving": "Het logo \"extraas\" staat op de afbeelding.",
+     "voorstel": "Niet overnemen."
+    },
+    {
+     "soort": "dubbelzinnig",
+     "beschrijving": "\"Minstens\": knopen tellen niet mee.",
+     "voorstel": "De app rekent 310 cm goed."
+    }
+   ],
+   "autoCheck": true,
+   "origineel": "Hoeveel touw is minstens nodig om dit pakket zo in te pakken?",
+   "vraag": [
+    "De graaf stuurt een pakket naar zijn neef.",
+    "Het pakket is 50 cm lang, 35 cm breed en 35 cm hoog.",
+    "Er gaat 1 touw in de lengte omheen.",
+    "Er gaat 1 touw in de breedte omheen.",
+    "Hoeveel cm touw heb je minstens nodig?"
+   ],
+   "type": "getal",
+   "paneel": "deelsommen",
+   "object3d": "pakket",
+   "context": [
+    {
+     "soort": "tekening",
+     "beschrijving": "Bruin pakket, 50 cm lang, 35 cm breed, 35 cm hoog. Eén touw loopt in de lengte rondom (over boven, voor/achter... over lengte en hoogte), één touw in de breedte rondom (over breedte en hoogte); ze kruisen bovenop."
+    }
+   ],
+   "beeld": [
+    {
+     "afbeelding": "image54.png",
+     "vorm": "model",
+     "ontwerp": "Bij het postkantoortje staat een bruin pakket met twee touwen eromheen die bovenop kruisen. In de exploded view rollen de twee touwen los en liggen ze als rechte lijnen naast elkaar, zodat je de lengtes ziet.",
+     "toont": [
+      "50 cm",
+      "35 cm",
+      "35 cm"
+     ],
+     "grap": "Uit het pakket piept een muis."
+    }
+   ],
+   "stappen": [
+    {
+     "tekst": "Touw in de lengte",
+     "som": "50 + 35 + 50 + 35",
+     "expr": "50+35+50+35",
+     "uitkomst": 170,
+     "eenheid": "cm",
+     "invoer": true,
+     "deel": "touw-lang"
+    },
+    {
+     "tekst": "Touw in de breedte",
+     "som": "35 + 35 + 35 + 35",
+     "expr": "35+35+35+35",
+     "uitkomst": 140,
+     "eenheid": "cm",
+     "invoer": true,
+     "deel": "touw-breed"
+    },
+    {
+     "tekst": "Tel op",
+     "som": "170 + 140",
+     "expr": "170+140",
+     "uitkomst": 310,
+     "eenheid": "cm",
+     "invoer": true
+    }
+   ],
+   "antwoord": {
+    "waarde": 310,
+    "eenheid": "cm",
+    "expr": "2*(50+35)+2*(35+35)"
+   },
+   "voorbeeld": {
+    "vraag": [
+     "Een pakket is 40 cm lang, 20 cm breed en 20 cm hoog.",
+     "Er gaan 2 touwen omheen, zoals hier."
+    ],
+    "stappen": [
+     {
+      "tekst": "Lengte-touw",
+      "som": "40 + 20 + 40 + 20",
+      "expr": "40+20+40+20",
+      "uitkomst": 120,
+      "eenheid": "cm",
+      "invoer": true
+     },
+     {
+      "tekst": "Breedte-touw",
+      "som": "20 + 20 + 20 + 20",
+      "expr": "20+20+20+20",
+      "uitkomst": 80,
+      "eenheid": "cm",
+      "invoer": true
+     },
+     {
+      "tekst": "Totaal",
+      "som": "120 + 80",
+      "expr": "120+80",
+      "uitkomst": 200,
+      "eenheid": "cm",
+      "invoer": true
+     }
+    ],
+    "antwoord": {
+     "waarde": 200,
+     "eenheid": "cm",
+     "expr": "120+80"
+    }
+   }
+  },
+  {
+   "id": "O2-EIN-10",
+   "onderdeel": 2,
+   "sectie": "eindtest",
+   "nummer": "10",
+   "afbeeldingen": [
+    "image55.png"
+   ],
+   "flags": [
+    {
+     "soort": "auteursrecht",
+     "beschrijving": "Foto of scan uit een externe bron.",
+     "voorstel": "Getallen overnemen, beeld opnieuw maken in 3D (zie beeld)."
+    },
+    {
+     "soort": "notatie",
+     "beschrijving": "\"1500kg\" zonder spatie; punt ontbreekt.",
+     "voorstel": "In de app: 1500 kg."
+    }
+   ],
+   "autoCheck": true,
+   "origineel": "1 m³ puin weegt 1500kg Hoeveel ton weegt het puin in deze container?",
+   "vraag": [
+    "De oude toren wordt verbouwd.",
+    "In de container zit 6 m³ puin.",
+    "1 m³ puin weegt 1500 kg.",
+    "Hoeveel ton weegt het puin?"
+   ],
+   "type": "getal",
+   "paneel": "eenhedentrap",
+   "object3d": "container",
+   "context": [
+    {
+     "soort": "tekst",
+     "beschrijving": "Afvalcontainer puin, inhoud 6 m³."
+    }
+   ],
+   "beeld": [
+    {
+     "afbeelding": "image55.png",
+     "vorm": "model",
+     "ontwerp": "Naast de bouwkavels staat een gele afvalcontainer vol grijze brokken puin. Op de zijkant staat \"Puin – inhoud 6 m³\". In de exploded view tilt het puin eruit als 6 blokken van 1 m³.",
+     "toont": [
+      "6 m³",
+      "1500 kg per m³"
+     ],
+     "grap": "Een kraantje zwaait met zijn haak."
+    }
+   ],
+   "stappen": [
+    {
+     "tekst": "Keer 1500 kg",
+     "som": "6 × 1500",
+     "expr": "6*1500",
+     "uitkomst": 9000,
+     "eenheid": "kg",
+     "invoer": true,
+     "deel": "puin"
+    },
+    {
+     "tekst": "Kilo naar ton",
+     "som": "9000 : 1000",
+     "expr": "9000/1000",
+     "uitkomst": 9,
+     "eenheid": "ton",
+     "invoer": true,
+     "trap": {
+      "van": "kg",
+      "naar": "ton"
+     }
+    }
+   ],
+   "antwoord": {
+    "waarde": 9,
+    "eenheid": "ton",
+    "expr": "6*1500/1000"
+   },
+   "voorbeeld": {
+    "vraag": [
+     "In een bak zit 4 m³ zand.",
+     "1 m³ weegt 1500 kg.",
+     "Hoeveel ton is dat?"
+    ],
+    "stappen": [
+     {
+      "tekst": "Keer 1500",
+      "som": "4 × 1500",
+      "expr": "4*1500",
+      "uitkomst": 6000,
+      "eenheid": "kg",
+      "invoer": true
+     },
+     {
+      "tekst": "Naar ton",
+      "som": "6000 : 1000",
+      "expr": "6000/1000",
+      "uitkomst": 6,
+      "eenheid": "ton",
+      "invoer": true
+     }
+    ],
+    "antwoord": {
+     "waarde": 6,
+     "eenheid": "ton",
+     "expr": "4*1500/1000"
+    }
+   }
+  }
+ ]
+}

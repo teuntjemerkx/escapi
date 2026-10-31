@@ -1,0 +1,949 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1710" height="1128" viewBox="0 0 1710 1128" font-family="Inter, 'Segoe UI', Arial, sans-serif">
+<title>Wereld 1 – De Ellehaven: plattegrond (bovenaanzicht)</title>
+<desc>Ontwerp fase 1. Begane grond en verdieping 1 op schaal, zones gekleurd per DIM-fase, stations als genummerde stippen met id, kluizen, lampjes, startplek, uitgang en looproute per fase. x naar het oosten, z naar het zuiden (noord boven).</desc>
+<defs>
+<marker id="pijl-terugblik" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5.5" markerHeight="5.5" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#c8961e"/></marker>
+<marker id="pijl-instructie" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5.5" markerHeight="5.5" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#3f78bf"/></marker>
+<marker id="pijl-begeleid" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5.5" markerHeight="5.5" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#23897d"/></marker>
+<marker id="pijl-zelfstandig" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5.5" markerHeight="5.5" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#d9781c"/></marker>
+<marker id="pijl-evaluatie" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5.5" markerHeight="5.5" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#c43c4f"/></marker>
+<marker id="pijl-klaar" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5.5" markerHeight="5.5" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#2f8a41"/></marker>
+<pattern id="arcering" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="6" height="6" fill="#d9d2c4"/><line x1="0" y1="0" x2="0" y2="6" stroke="#a89f8e" stroke-width="1.6"/></pattern>
+<pattern id="tribune" width="8" height="8" patternUnits="userSpaceOnUse"><rect width="8" height="8" fill="#e2cfa9"/><line x1="0" y1="0" x2="0" y2="8" stroke="#a8875a" stroke-width="1"/></pattern>
+<pattern id="golf" width="18" height="8" patternUnits="userSpaceOnUse"><rect width="18" height="8" fill="#a9d0e0"/><path d="M0,5 q4.5,-3 9,0 t9,0" fill="none" stroke="#8dbcd1" stroke-width="1"/></pattern>
+<pattern id="vlonder" width="4" height="4" patternUnits="userSpaceOnUse"><rect width="4" height="4" fill="#d6b88a"/><line x1="0" y1="0" x2="4" y2="0" stroke="#a8875a" stroke-width="0.8"/></pattern>
+</defs>
+<rect x="0.0" y="0.0" width="1710.0" height="1128.0" fill="#fbf8f1" stroke="none" stroke-width="1.0"/>
+<text x="40.0" y="34.0" text-anchor="start" style="font-size:21px;fill:#1f2a33;font-weight:700;">Wereld 1 – De Ellehaven · plattegrond (bovenaanzicht)</text>
+<text x="40.0" y="56.0" text-anchor="start" style="font-size:11px;fill:#4a5560;">Ontwerp fase 1 · maten in meters · x naar het oosten, z naar het zuiden (noord boven) · kade en vloeren y = 0, water y = −1,2, steigers y = −0,8 · ooghoogte 1,55 m</text>
+<text x="40.0" y="74.0" text-anchor="start" style="font-size:11px;fill:#4a5560;">Zones gekleurd naar de fase waarin ze opengaan · klus-zones met een dikke rand in de klus-kleur · stippen = stations (nummer = tabel § 7 in wereld1.md)</text>
+<text x="40.0" y="94.0" text-anchor="start" style="font-size:13px;fill:#1f2a33;font-weight:700;">Begane grond (y = 0)</text>
+<clipPath id="kaart1"><rect x="40" y="100" width="840.0" height="768.0"/></clipPath>
+<g clip-path="url(#kaart1)">
+<rect x="40.0" y="100.0" width="840.0" height="768.0" fill="#e4ead7" stroke="none" stroke-width="1.0"/>
+<polygon points="40.0,100.0 880.0,100.0 880.0,340.0 784.0,340.0 784.0,244.0 568.0,244.0 568.0,340.0 496.0,340.0 496.0,628.0 304.0,628.0 304.0,148.0 232.0,148.0 232.0,268.0 40.0,268.0" fill="url(#golf)" stroke="#5f8fa6" stroke-width="1.2"/>
+<line x1="40.0" y1="100.0" x2="40.0" y2="868.0" stroke="#000" stroke-opacity="0.16" stroke-width="1"/>
+<line x1="64.0" y1="100.0" x2="64.0" y2="868.0" stroke="#000" stroke-opacity="0.05" stroke-width="0.6"/>
+<line x1="88.0" y1="100.0" x2="88.0" y2="868.0" stroke="#000" stroke-opacity="0.05" stroke-width="0.6"/>
+<line x1="112.0" y1="100.0" x2="112.0" y2="868.0" stroke="#000" stroke-opacity="0.05" stroke-width="0.6"/>
+<line x1="136.0" y1="100.0" x2="136.0" y2="868.0" stroke="#000" stroke-opacity="0.05" stroke-width="0.6"/>
+<line x1="160.0" y1="100.0" x2="160.0" y2="868.0" stroke="#000" stroke-opacity="0.16" stroke-width="1"/>
+<line x1="184.0" y1="100.0" x2="184.0" y2="868.0" stroke="#000" stroke-opacity="0.05" stroke-width="0.6"/>
+<line x1="208.0" y1="100.0" x2="208.0" y2="868.0" stroke="#000" stroke-opacity="0.05" stroke-width="0.6"/>
+<line x1="232.0" y1="100.0" x2="232.0" y2="868.0" stroke="#000" stroke-opacity="0.05" stroke-width="0.6"/>
+<line x1="256.0" y1="100.0" x2="256.0" y2="868.0" stroke="#000" stroke-opacity="0.05" stroke-width="0.6"/>
+<line x1="280.0" y1="100.0" x2="280.0" y2="868.0" stroke="#000" stroke-opacity="0.16" stroke-width="1"/>
+<line x1="304.0" y1="100.0" x2="304.0" y2="868.0" stroke="#000" stroke-opacity="0.05" stroke-width="0.6"/>
+<line x1="328.0" y1="100.0" x2="328.0" y2="868.0" stroke="#000" stroke-opacity="0.05" stroke-width="0.6"/>
+<line x1="352.0" y1="100.0" x2="352.0" y2="868.0" stroke="#000" stroke-opacity="0.05" stroke-width="0.6"/>
+<line x1="376.0" y1="100.0" x2="376.0" y2="868.0" stroke="#000" stroke-opacity="0.05" stroke-width="0.6"/>
+<line x1="400.0" y1="100.0" x2="400.0" y2="868.0" stroke="#000" stroke-opacity="0.16" stroke-width="1"/>
+<line x1="424.0" y1="100.0" x2="424.0" y2="868.0" stroke="#000" stroke-opacity="0.05" stroke-width="0.6"/>
+<line x1="448.0" y1="100.0" x2="448.0" y2="868.0" stroke="#000" stroke-opacity="0.05" stroke-width="0.6"/>
+<line x1="472.0" y1="100.0" x2="472.0" y2="868.0" stroke="#000" stroke-opacity="0.05" stroke-width="0.6"/>
+<line x1="496.0" y1="100.0" x2="496.0" y2="868.0" stroke="#000" stroke-opacity="0.05" stroke-width="0.6"/>
+<line x1="520.0" y1="100.0" x2="520.0" y2="868.0" stroke="#000" stroke-opacity="0.16" stroke-width="1"/>
+<line x1="544.0" y1="100.0" x2="544.0" y2="868.0" stroke="#000" stroke-opacity="0.05" stroke-width="0.6"/>
+<line x1="568.0" y1="100.0" x2="568.0" y2="868.0" stroke="#000" stroke-opacity="0.05" stroke-width="0.6"/>
+<line x1="592.0" y1="100.0" x2="592.0" y2="868.0" stroke="#000" stroke-opacity="0.05" stroke-width="0.6"/>
+<line x1="616.0" y1="100.0" x2="616.0" y2="868.0" stroke="#000" stroke-opacity="0.05" stroke-width="0.6"/>
+<line x1="640.0" y1="100.0" x2="640.0" y2="868.0" stroke="#000" stroke-opacity="0.16" stroke-width="1"/>
+<line x1="664.0" y1="100.0" x2="664.0" y2="868.0" stroke="#000" stroke-opacity="0.05" stroke-width="0.6"/>
+<line x1="688.0" y1="100.0" x2="688.0" y2="868.0" stroke="#000" stroke-opacity="0.05" stroke-width="0.6"/>
+<line x1="712.0" y1="100.0" x2="712.0" y2="868.0" stroke="#000" stroke-opacity="0.05" stroke-width="0.6"/>
+<line x1="736.0" y1="100.0" x2="736.0" y2="868.0" stroke="#000" stroke-opacity="0.05" stroke-width="0.6"/>
+<line x1="760.0" y1="100.0" x2="760.0" y2="868.0" stroke="#000" stroke-opacity="0.16" stroke-width="1"/>
+<line x1="784.0" y1="100.0" x2="784.0" y2="868.0" stroke="#000" stroke-opacity="0.05" stroke-width="0.6"/>
+<line x1="808.0" y1="100.0" x2="808.0" y2="868.0" stroke="#000" stroke-opacity="0.05" stroke-width="0.6"/>
+<line x1="832.0" y1="100.0" x2="832.0" y2="868.0" stroke="#000" stroke-opacity="0.05" stroke-width="0.6"/>
+<line x1="856.0" y1="100.0" x2="856.0" y2="868.0" stroke="#000" stroke-opacity="0.05" stroke-width="0.6"/>
+<line x1="880.0" y1="100.0" x2="880.0" y2="868.0" stroke="#000" stroke-opacity="0.16" stroke-width="1"/>
+<line x1="40.0" y1="100.0" x2="880.0" y2="100.0" stroke="#000" stroke-opacity="0.05" stroke-width="0.6"/>
+<line x1="40.0" y1="124.0" x2="880.0" y2="124.0" stroke="#000" stroke-opacity="0.05" stroke-width="0.6"/>
+<line x1="40.0" y1="148.0" x2="880.0" y2="148.0" stroke="#000" stroke-opacity="0.05" stroke-width="0.6"/>
+<line x1="40.0" y1="172.0" x2="880.0" y2="172.0" stroke="#000" stroke-opacity="0.05" stroke-width="0.6"/>
+<line x1="40.0" y1="196.0" x2="880.0" y2="196.0" stroke="#000" stroke-opacity="0.16" stroke-width="1"/>
+<line x1="40.0" y1="220.0" x2="880.0" y2="220.0" stroke="#000" stroke-opacity="0.05" stroke-width="0.6"/>
+<line x1="40.0" y1="244.0" x2="880.0" y2="244.0" stroke="#000" stroke-opacity="0.05" stroke-width="0.6"/>
+<line x1="40.0" y1="268.0" x2="880.0" y2="268.0" stroke="#000" stroke-opacity="0.05" stroke-width="0.6"/>
+<line x1="40.0" y1="292.0" x2="880.0" y2="292.0" stroke="#000" stroke-opacity="0.05" stroke-width="0.6"/>
+<line x1="40.0" y1="316.0" x2="880.0" y2="316.0" stroke="#000" stroke-opacity="0.16" stroke-width="1"/>
+<line x1="40.0" y1="340.0" x2="880.0" y2="340.0" stroke="#000" stroke-opacity="0.05" stroke-width="0.6"/>
+<line x1="40.0" y1="364.0" x2="880.0" y2="364.0" stroke="#000" stroke-opacity="0.05" stroke-width="0.6"/>
+<line x1="40.0" y1="388.0" x2="880.0" y2="388.0" stroke="#000" stroke-opacity="0.05" stroke-width="0.6"/>
+<line x1="40.0" y1="412.0" x2="880.0" y2="412.0" stroke="#000" stroke-opacity="0.05" stroke-width="0.6"/>
+<line x1="40.0" y1="436.0" x2="880.0" y2="436.0" stroke="#000" stroke-opacity="0.16" stroke-width="1"/>
+<line x1="40.0" y1="460.0" x2="880.0" y2="460.0" stroke="#000" stroke-opacity="0.05" stroke-width="0.6"/>
+<line x1="40.0" y1="484.0" x2="880.0" y2="484.0" stroke="#000" stroke-opacity="0.05" stroke-width="0.6"/>
+<line x1="40.0" y1="508.0" x2="880.0" y2="508.0" stroke="#000" stroke-opacity="0.05" stroke-width="0.6"/>
+<line x1="40.0" y1="532.0" x2="880.0" y2="532.0" stroke="#000" stroke-opacity="0.05" stroke-width="0.6"/>
+<line x1="40.0" y1="556.0" x2="880.0" y2="556.0" stroke="#000" stroke-opacity="0.16" stroke-width="1"/>
+<line x1="40.0" y1="580.0" x2="880.0" y2="580.0" stroke="#000" stroke-opacity="0.05" stroke-width="0.6"/>
+<line x1="40.0" y1="604.0" x2="880.0" y2="604.0" stroke="#000" stroke-opacity="0.05" stroke-width="0.6"/>
+<line x1="40.0" y1="628.0" x2="880.0" y2="628.0" stroke="#000" stroke-opacity="0.05" stroke-width="0.6"/>
+<line x1="40.0" y1="652.0" x2="880.0" y2="652.0" stroke="#000" stroke-opacity="0.05" stroke-width="0.6"/>
+<line x1="40.0" y1="676.0" x2="880.0" y2="676.0" stroke="#000" stroke-opacity="0.16" stroke-width="1"/>
+<line x1="40.0" y1="700.0" x2="880.0" y2="700.0" stroke="#000" stroke-opacity="0.05" stroke-width="0.6"/>
+<line x1="40.0" y1="724.0" x2="880.0" y2="724.0" stroke="#000" stroke-opacity="0.05" stroke-width="0.6"/>
+<line x1="40.0" y1="748.0" x2="880.0" y2="748.0" stroke="#000" stroke-opacity="0.05" stroke-width="0.6"/>
+<line x1="40.0" y1="772.0" x2="880.0" y2="772.0" stroke="#000" stroke-opacity="0.05" stroke-width="0.6"/>
+<line x1="40.0" y1="796.0" x2="880.0" y2="796.0" stroke="#000" stroke-opacity="0.16" stroke-width="1"/>
+<line x1="40.0" y1="820.0" x2="880.0" y2="820.0" stroke="#000" stroke-opacity="0.05" stroke-width="0.6"/>
+<line x1="40.0" y1="844.0" x2="880.0" y2="844.0" stroke="#000" stroke-opacity="0.05" stroke-width="0.6"/>
+<line x1="40.0" y1="868.0" x2="880.0" y2="868.0" stroke="#000" stroke-opacity="0.05" stroke-width="0.6"/>
+<rect x="40.0" y="826.0" width="744.0" height="42.0" fill="#d5dcc3" stroke="none" stroke-width="1.0"/>
+<rect x="64.0" y="832.0" width="32.4" height="31.2" fill="#c9574a" stroke="#5a4a3a" stroke-width="0.6"/>
+<rect x="100.0" y="832.0" width="39.6" height="31.2" fill="#e3b04b" stroke="#5a4a3a" stroke-width="0.6"/>
+<rect x="143.2" y="832.0" width="46.8" height="31.2" fill="#5b8fb9" stroke="#5a4a3a" stroke-width="0.6"/>
+<rect x="193.6" y="832.0" width="32.4" height="31.2" fill="#6f9a6b" stroke="#5a4a3a" stroke-width="0.6"/>
+<rect x="229.6" y="832.0" width="39.6" height="31.2" fill="#d98c5f" stroke="#5a4a3a" stroke-width="0.6"/>
+<rect x="272.8" y="832.0" width="46.8" height="31.2" fill="#9a6fb0" stroke="#5a4a3a" stroke-width="0.6"/>
+<rect x="323.2" y="832.0" width="32.4" height="31.2" fill="#e7dcc6" stroke="#5a4a3a" stroke-width="0.6"/>
+<rect x="359.2" y="832.0" width="39.6" height="31.2" fill="#3f6f8a" stroke="#5a4a3a" stroke-width="0.6"/>
+<rect x="402.4" y="832.0" width="46.8" height="31.2" fill="#c9574a" stroke="#5a4a3a" stroke-width="0.6"/>
+<rect x="452.8" y="832.0" width="32.4" height="31.2" fill="#e3b04b" stroke="#5a4a3a" stroke-width="0.6"/>
+<rect x="488.8" y="832.0" width="39.6" height="31.2" fill="#5b8fb9" stroke="#5a4a3a" stroke-width="0.6"/>
+<rect x="532.0" y="832.0" width="46.8" height="31.2" fill="#6f9a6b" stroke="#5a4a3a" stroke-width="0.6"/>
+<rect x="582.4" y="832.0" width="32.4" height="31.2" fill="#d98c5f" stroke="#5a4a3a" stroke-width="0.6"/>
+<rect x="618.4" y="832.0" width="39.6" height="31.2" fill="#9a6fb0" stroke="#5a4a3a" stroke-width="0.6"/>
+<rect x="661.6" y="832.0" width="46.8" height="31.2" fill="#e7dcc6" stroke="#5a4a3a" stroke-width="0.6"/>
+<rect x="712.0" y="832.0" width="32.4" height="31.2" fill="#3f6f8a" stroke="#5a4a3a" stroke-width="0.6"/>
+<rect x="748.0" y="832.0" width="39.6" height="31.2" fill="#c9574a" stroke="#5a4a3a" stroke-width="0.6"/>
+<text x="46.0" y="824.8" text-anchor="start" style="font-size:8.5px;fill:#5a6650;font-style:italic;paint-order:stroke;stroke:#ffffff;stroke-width:2.6px;stroke-linejoin:round;">dijk met huisjes (decor)</text>
+<circle cx="59.2" cy="298.0" r="6.5" fill="#7f9c6a" stroke="#5c7a4c" stroke-width="0.8"/>
+<circle cx="68.8" cy="334.0" r="6.5" fill="#7f9c6a" stroke="#5c7a4c" stroke-width="0.8"/>
+<circle cx="59.2" cy="370.0" r="6.5" fill="#7f9c6a" stroke="#5c7a4c" stroke-width="0.8"/>
+<circle cx="68.8" cy="406.0" r="6.5" fill="#7f9c6a" stroke="#5c7a4c" stroke-width="0.8"/>
+<circle cx="59.2" cy="442.0" r="6.5" fill="#7f9c6a" stroke="#5c7a4c" stroke-width="0.8"/>
+<circle cx="68.8" cy="478.0" r="6.5" fill="#7f9c6a" stroke="#5c7a4c" stroke-width="0.8"/>
+<circle cx="59.2" cy="514.0" r="6.5" fill="#7f9c6a" stroke="#5c7a4c" stroke-width="0.8"/>
+<circle cx="68.8" cy="550.0" r="6.5" fill="#7f9c6a" stroke="#5c7a4c" stroke-width="0.8"/>
+<circle cx="59.2" cy="586.0" r="6.5" fill="#7f9c6a" stroke="#5c7a4c" stroke-width="0.8"/>
+<circle cx="68.8" cy="622.0" r="6.5" fill="#7f9c6a" stroke="#5c7a4c" stroke-width="0.8"/>
+<circle cx="59.2" cy="658.0" r="6.5" fill="#7f9c6a" stroke="#5c7a4c" stroke-width="0.8"/>
+<circle cx="68.8" cy="694.0" r="6.5" fill="#7f9c6a" stroke="#5c7a4c" stroke-width="0.8"/>
+<circle cx="59.2" cy="730.0" r="6.5" fill="#7f9c6a" stroke="#5c7a4c" stroke-width="0.8"/>
+<circle cx="68.8" cy="766.0" r="6.5" fill="#7f9c6a" stroke="#5c7a4c" stroke-width="0.8"/>
+<circle cx="59.2" cy="802.0" r="6.5" fill="#7f9c6a" stroke="#5c7a4c" stroke-width="0.8"/>
+<text x="44.8" y="280.0" text-anchor="start" style="font-size:8.5px;fill:#5a6650;font-style:italic;paint-order:stroke;stroke:#ffffff;stroke-width:2.6px;stroke-linejoin:round;">bomen</text>
+<rect x="730.0" y="364.0" width="29.3" height="72.0" fill="#b4443a" stroke="#3a3a3a" stroke-width="0.5"/>
+<rect x="766.0" y="364.0" width="29.3" height="72.0" fill="#2f6f9a" stroke="#3a3a3a" stroke-width="0.5"/>
+<rect x="802.0" y="364.0" width="29.3" height="72.0" fill="#3f8f5a" stroke="#3a3a3a" stroke-width="0.5"/>
+<rect x="838.0" y="364.0" width="29.3" height="72.0" fill="#e0a63a" stroke="#3a3a3a" stroke-width="0.5"/>
+<rect x="730.0" y="448.0" width="29.3" height="72.0" fill="#2f6f9a" stroke="#3a3a3a" stroke-width="0.5"/>
+<rect x="766.0" y="448.0" width="29.3" height="72.0" fill="#3f8f5a" stroke="#3a3a3a" stroke-width="0.5"/>
+<rect x="802.0" y="448.0" width="29.3" height="72.0" fill="#e0a63a" stroke="#3a3a3a" stroke-width="0.5"/>
+<rect x="838.0" y="448.0" width="29.3" height="72.0" fill="#8b5fa8" stroke="#3a3a3a" stroke-width="0.5"/>
+<rect x="730.0" y="532.0" width="29.3" height="72.0" fill="#3f8f5a" stroke="#3a3a3a" stroke-width="0.5"/>
+<rect x="766.0" y="532.0" width="29.3" height="72.0" fill="#e0a63a" stroke="#3a3a3a" stroke-width="0.5"/>
+<rect x="802.0" y="532.0" width="29.3" height="72.0" fill="#8b5fa8" stroke="#3a3a3a" stroke-width="0.5"/>
+<rect x="838.0" y="532.0" width="29.3" height="72.0" fill="#b4443a" stroke="#3a3a3a" stroke-width="0.5"/>
+<rect x="730.0" y="616.0" width="29.3" height="72.0" fill="#e0a63a" stroke="#3a3a3a" stroke-width="0.5"/>
+<rect x="766.0" y="616.0" width="29.3" height="72.0" fill="#8b5fa8" stroke="#3a3a3a" stroke-width="0.5"/>
+<rect x="802.0" y="616.0" width="29.3" height="72.0" fill="#b4443a" stroke="#3a3a3a" stroke-width="0.5"/>
+<rect x="838.0" y="616.0" width="29.3" height="72.0" fill="#2f6f9a" stroke="#3a3a3a" stroke-width="0.5"/>
+<rect x="730.0" y="700.0" width="29.3" height="72.0" fill="#8b5fa8" stroke="#3a3a3a" stroke-width="0.5"/>
+<rect x="766.0" y="700.0" width="29.3" height="72.0" fill="#b4443a" stroke="#3a3a3a" stroke-width="0.5"/>
+<rect x="802.0" y="700.0" width="29.3" height="72.0" fill="#2f6f9a" stroke="#3a3a3a" stroke-width="0.5"/>
+<rect x="838.0" y="700.0" width="29.3" height="72.0" fill="#3f8f5a" stroke="#3a3a3a" stroke-width="0.5"/>
+<text x="726.4" y="793.6" text-anchor="start" style="font-size:8.5px;fill:#3a4048;font-style:italic;paint-order:stroke;stroke:#ffffff;stroke-width:2.6px;stroke-linejoin:round;">containerterrein (decor)</text>
+<rect x="580.0" y="742.0" width="29.3" height="72.0" fill="#9aa6ae" stroke="#3a3a3a" stroke-width="0.5"/>
+<rect x="616.0" y="742.0" width="29.3" height="72.0" fill="#9aa6ae" stroke="#3a3a3a" stroke-width="0.5"/>
+<rect x="652.0" y="742.0" width="29.3" height="72.0" fill="#9aa6ae" stroke="#3a3a3a" stroke-width="0.5"/>
+<rect x="232.0" y="628.0" width="336.0" height="96.0" fill="#f8ebc4" stroke="#6f6a60" stroke-width="0.9" stroke-dasharray="4 2.5"/>
+<rect x="304.0" y="724.0" width="192.0" height="96.0" fill="#d4e3f5" stroke="#2b2b2b" stroke-width="2.8"/>
+<rect x="88.0" y="628.0" width="144.0" height="192.0" fill="#cdeee8" stroke="#2b2b2b" stroke-width="2.8"/>
+<rect x="88.0" y="484.0" width="144.0" height="144.0" fill="#fde3c8" stroke="#2b2b2b" stroke-width="2.8"/>
+<rect x="232.0" y="340.0" width="72.0" height="288.0" fill="#fde3c8" stroke="#6f6a60" stroke-width="0.9" stroke-dasharray="4 2.5"/>
+<rect x="88.0" y="340.0" width="144.0" height="144.0" fill="#fde3c8" stroke="#2b2b2b" stroke-width="2.8"/>
+<rect x="88.0" y="268.0" width="216.0" height="72.0" fill="#fde3c8" stroke="#6f6a60" stroke-width="0.9" stroke-dasharray="4 2.5"/>
+<rect x="232.0" y="148.0" width="72.0" height="120.0" fill="#fde3c8" stroke="#6f6a60" stroke-width="0.9" stroke-dasharray="4 2.5"/>
+<rect x="304.0" y="340.0" width="192.0" height="36.0" fill="url(#arcering)" stroke="#6f6a60" stroke-width="0.9" stroke-dasharray="4 2.5"/>
+<rect x="388.0" y="568.0" width="24.0" height="60.0" fill="url(#vlonder)" stroke="#6f6a60" stroke-width="0.9" stroke-dasharray="4 2.5"/>
+<rect x="382.0" y="428.8" width="36.0" height="139.2" fill="url(#vlonder)" stroke="#6f6a60" stroke-width="0.9" stroke-dasharray="4 2.5"/>
+<rect x="322.0" y="500.8" width="60.0" height="33.6" fill="url(#vlonder)" stroke="#6f6a60" stroke-width="0.9" stroke-dasharray="4 2.5"/>
+<rect x="418.0" y="481.6" width="60.0" height="52.8" fill="url(#vlonder)" stroke="#6f6a60" stroke-width="0.9" stroke-dasharray="4 2.5"/>
+<rect x="334.0" y="388.0" width="132.0" height="40.8" fill="url(#vlonder)" stroke="#6f6a60" stroke-width="0.9" stroke-dasharray="4 2.5"/>
+<rect x="496.0" y="340.0" width="72.0" height="288.0" fill="#fde3c8" stroke="#6f6a60" stroke-width="0.9" stroke-dasharray="4 2.5"/>
+<rect x="568.0" y="484.0" width="144.0" height="144.0" fill="#fde3c8" stroke="#2b2b2b" stroke-width="2.8"/>
+<rect x="568.0" y="628.0" width="144.0" height="96.0" fill="#fde3c8" stroke="#2b2b2b" stroke-width="2.8"/>
+<rect x="568.0" y="340.0" width="144.0" height="144.0" fill="#f7d0d5" stroke="#2b2b2b" stroke-width="2.8"/>
+<rect x="568.0" y="244.0" width="216.0" height="96.0" fill="#f7d0d5" stroke="#6f6a60" stroke-width="0.9" stroke-dasharray="4 2.5"/>
+<rect x="580.0" y="184.0" width="36.0" height="60.0" fill="url(#vlonder)" stroke="#6f6a60" stroke-width="0.9" stroke-dasharray="4 2.5"/>
+<rect x="91.0" y="343.0" width="138.0" height="138.0" fill="none" stroke="#3b8ee8" stroke-width="2.4" stroke-opacity="0.9"/>
+<rect x="91.0" y="271.0" width="210.0" height="66.0" fill="none" stroke="#3b8ee8" stroke-width="2.4" stroke-opacity="0.9"/>
+<rect x="337.0" y="391.0" width="126.0" height="34.8" fill="none" stroke="#1fa597" stroke-width="2.4" stroke-opacity="0.9"/>
+<rect x="385.0" y="431.8" width="30.0" height="133.2" fill="none" stroke="#1fa597" stroke-width="2.4" stroke-opacity="0.9"/>
+<rect x="325.0" y="503.8" width="54.0" height="27.6" fill="none" stroke="#1fa597" stroke-width="2.4" stroke-opacity="0.9"/>
+<rect x="421.0" y="484.6" width="54.0" height="46.8" fill="none" stroke="#1fa597" stroke-width="2.4" stroke-opacity="0.9"/>
+<rect x="571.0" y="487.0" width="138.0" height="138.0" fill="none" stroke="#e0a800" stroke-width="2.4" stroke-opacity="0.9"/>
+<rect x="571.0" y="631.0" width="138.0" height="90.0" fill="none" stroke="#e0a800" stroke-width="2.4" stroke-opacity="0.9"/>
+<rect x="229.5" y="339.0" width="5.0" height="146.0" fill="#ffffff" stroke="none" stroke-width="1.0"/>
+<polyline points="232.0,340.0 232.0,484.0" fill="none" stroke="#2b2b2b" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="2 3"/>
+<rect x="229.0" y="337.0" width="6.0" height="6.0" fill="#2b2b2b" stroke="none" stroke-width="1.0"/>
+<rect x="229.0" y="385.0" width="6.0" height="6.0" fill="#2b2b2b" stroke="none" stroke-width="1.0"/>
+<rect x="229.0" y="433.0" width="6.0" height="6.0" fill="#2b2b2b" stroke="none" stroke-width="1.0"/>
+<rect x="229.0" y="481.0" width="6.0" height="6.0" fill="#2b2b2b" stroke="none" stroke-width="1.0"/>
+<rect x="565.5" y="483.0" width="5.0" height="146.0" fill="#ffffff" stroke="none" stroke-width="1.0"/>
+<polyline points="568.0,484.0 568.0,628.0" fill="none" stroke="#2b2b2b" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="2 3"/>
+<rect x="565.0" y="481.0" width="6.0" height="6.0" fill="#2b2b2b" stroke="none" stroke-width="1.0"/>
+<rect x="565.0" y="529.0" width="6.0" height="6.0" fill="#2b2b2b" stroke="none" stroke-width="1.0"/>
+<rect x="565.0" y="577.0" width="6.0" height="6.0" fill="#2b2b2b" stroke="none" stroke-width="1.0"/>
+<rect x="565.0" y="625.0" width="6.0" height="6.0" fill="#2b2b2b" stroke="none" stroke-width="1.0"/>
+<polyline points="232.0,628.0 304.0,628.0" fill="none" stroke="#4d555e" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="304.0,628.0 304.0,148.0" fill="none" stroke="#4d555e" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="304.0,148.0 232.0,148.0" fill="none" stroke="#4d555e" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="232.0,148.0 232.0,268.0" fill="none" stroke="#4d555e" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="232.0,268.0 88.0,268.0" fill="none" stroke="#4d555e" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="496.0,628.0 496.0,340.0" fill="none" stroke="#4d555e" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="304.0,628.0 496.0,628.0" fill="none" stroke="#4d555e" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="568.0,244.0 784.0,244.0" fill="none" stroke="#4d555e" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="784.0,244.0 784.0,340.0" fill="none" stroke="#4d555e" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="568.0,244.0 568.0,340.0" fill="none" stroke="#4d555e" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="496.0,340.0 568.0,340.0" fill="none" stroke="#4d555e" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="280.0" cy="628.0" r="1.7" fill="#1f2a33" stroke="none" stroke-width="0"/>
+<circle cx="304.0" cy="580.0" r="1.7" fill="#1f2a33" stroke="none" stroke-width="0"/>
+<circle cx="304.0" cy="532.0" r="1.7" fill="#1f2a33" stroke="none" stroke-width="0"/>
+<circle cx="304.0" cy="484.0" r="1.7" fill="#1f2a33" stroke="none" stroke-width="0"/>
+<circle cx="304.0" cy="436.0" r="1.7" fill="#1f2a33" stroke="none" stroke-width="0"/>
+<circle cx="304.0" cy="388.0" r="1.7" fill="#1f2a33" stroke="none" stroke-width="0"/>
+<circle cx="304.0" cy="340.0" r="1.7" fill="#1f2a33" stroke="none" stroke-width="0"/>
+<circle cx="304.0" cy="292.0" r="1.7" fill="#1f2a33" stroke="none" stroke-width="0"/>
+<circle cx="304.0" cy="244.0" r="1.7" fill="#1f2a33" stroke="none" stroke-width="0"/>
+<circle cx="304.0" cy="196.0" r="1.7" fill="#1f2a33" stroke="none" stroke-width="0"/>
+<circle cx="256.0" cy="148.0" r="1.7" fill="#1f2a33" stroke="none" stroke-width="0"/>
+<circle cx="232.0" cy="196.0" r="1.7" fill="#1f2a33" stroke="none" stroke-width="0"/>
+<circle cx="232.0" cy="244.0" r="1.7" fill="#1f2a33" stroke="none" stroke-width="0"/>
+<circle cx="184.0" cy="268.0" r="1.7" fill="#1f2a33" stroke="none" stroke-width="0"/>
+<circle cx="136.0" cy="268.0" r="1.7" fill="#1f2a33" stroke="none" stroke-width="0"/>
+<circle cx="496.0" cy="580.0" r="1.7" fill="#1f2a33" stroke="none" stroke-width="0"/>
+<circle cx="496.0" cy="532.0" r="1.7" fill="#1f2a33" stroke="none" stroke-width="0"/>
+<circle cx="496.0" cy="484.0" r="1.7" fill="#1f2a33" stroke="none" stroke-width="0"/>
+<circle cx="496.0" cy="436.0" r="1.7" fill="#1f2a33" stroke="none" stroke-width="0"/>
+<circle cx="496.0" cy="388.0" r="1.7" fill="#1f2a33" stroke="none" stroke-width="0"/>
+<circle cx="352.0" cy="628.0" r="1.7" fill="#1f2a33" stroke="none" stroke-width="0"/>
+<circle cx="400.0" cy="628.0" r="1.7" fill="#1f2a33" stroke="none" stroke-width="0"/>
+<circle cx="448.0" cy="628.0" r="1.7" fill="#1f2a33" stroke="none" stroke-width="0"/>
+<circle cx="616.0" cy="244.0" r="1.7" fill="#1f2a33" stroke="none" stroke-width="0"/>
+<circle cx="664.0" cy="244.0" r="1.7" fill="#1f2a33" stroke="none" stroke-width="0"/>
+<circle cx="712.0" cy="244.0" r="1.7" fill="#1f2a33" stroke="none" stroke-width="0"/>
+<circle cx="760.0" cy="244.0" r="1.7" fill="#1f2a33" stroke="none" stroke-width="0"/>
+<circle cx="784.0" cy="292.0" r="1.7" fill="#1f2a33" stroke="none" stroke-width="0"/>
+<circle cx="568.0" cy="292.0" r="1.7" fill="#1f2a33" stroke="none" stroke-width="0"/>
+<circle cx="544.0" cy="340.0" r="1.7" fill="#1f2a33" stroke="none" stroke-width="0"/>
+<polygon points="348.4,433.6 372.4,451.6 372.4,493.6 324.4,493.6 324.4,451.6" fill="#9b3b2f" stroke="#2b2b2b" stroke-width="0.8"/>
+<text x="348.4" y="467.8" text-anchor="middle" style="font-size:7.5px;fill:#ffffff;">kotter</text>
+<polygon points="449.2,436.0 472.0,447.5 472.0,474.4 426.4,474.4 426.4,447.5" fill="#5b4632" stroke="#2b2b2b" stroke-width="0.8"/>
+<text x="449.2" y="459.4" text-anchor="middle" style="font-size:7.5px;fill:#ffffff;">botter</text>
+<polygon points="319.6,558.4 328.0,574.2 328.0,611.2 311.2,611.2 311.2,574.2" fill="#efe9dc" stroke="#2b2b2b" stroke-width="0.8"/>
+<polygon points="491.2,600.4 476.2,580.0 431.2,580.0 431.2,620.8 476.2,620.8" fill="#2f6f9a" stroke="#2b2b2b" stroke-width="0.8"/>
+<text x="461.2" y="604.6" text-anchor="middle" style="font-size:7.5px;fill:#ffffff;">waterbus</text>
+<polygon points="118.0,304.0 202.0,304.0 202.0,148.0 118.0,148.0" fill="#c9c2b2" stroke="#6f6a60" stroke-width="0.8" stroke-dasharray="3 2"/>
+<polygon points="160.0,301.6 181.6,280.0 181.6,184.0 138.4,184.0 138.4,280.0" fill="#b4443a" stroke="#2b2b2b" stroke-width="0.8"/>
+<text x="160.0" y="226.0" text-anchor="middle" style="font-size:7px;fill:#fff;">kotter in</text>
+<text x="160.0" y="236.8" text-anchor="middle" style="font-size:7px;fill:#fff;">aanbouw</text>
+<text x="120.4" y="164.8" text-anchor="start" style="font-size:8px;fill:#3a4048;font-style:italic;paint-order:stroke;stroke:#ffffff;stroke-width:2.6px;stroke-linejoin:round;">helling</text>
+<polygon points="496.0,199.0 538.0,160.0 856.0,160.0 856.0,238.0 538.0,238.0" fill="#2f3f55" stroke="#121a24" stroke-width="1"/>
+<rect x="556.0" y="167.2" width="34.8" height="28.8" fill="#d86a4a" stroke="#121a24" stroke-width="0.4"/>
+<rect x="556.0" y="200.8" width="34.8" height="28.8" fill="#4f86b8" stroke="#121a24" stroke-width="0.4"/>
+<rect x="594.4" y="167.2" width="34.8" height="28.8" fill="#4f86b8" stroke="#121a24" stroke-width="0.4"/>
+<rect x="594.4" y="200.8" width="34.8" height="28.8" fill="#e6b43a" stroke="#121a24" stroke-width="0.4"/>
+<rect x="632.8" y="167.2" width="34.8" height="28.8" fill="#e6b43a" stroke="#121a24" stroke-width="0.4"/>
+<rect x="632.8" y="200.8" width="34.8" height="28.8" fill="#4f9a5a" stroke="#121a24" stroke-width="0.4"/>
+<rect x="671.2" y="167.2" width="34.8" height="28.8" fill="#4f9a5a" stroke="#121a24" stroke-width="0.4"/>
+<rect x="671.2" y="200.8" width="34.8" height="28.8" fill="#8b6bb5" stroke="#121a24" stroke-width="0.4"/>
+<rect x="709.6" y="167.2" width="34.8" height="28.8" fill="#8b6bb5" stroke="#121a24" stroke-width="0.4"/>
+<rect x="709.6" y="200.8" width="34.8" height="28.8" fill="#d86a4a" stroke="#121a24" stroke-width="0.4"/>
+<rect x="772.0" y="169.6" width="66.0" height="58.8" fill="#f3efe6" stroke="#121a24" stroke-width="0.6"/>
+<text x="804.4" y="204.4" text-anchor="middle" style="font-size:7.5px;fill:#2f3f55;">brug</text>
+<text x="676.0" y="148.0" text-anchor="middle" style="font-size:9px;fill:#1f2a33;font-weight:700;paint-order:stroke;stroke:#ffffff;stroke-width:2.6px;stroke-linejoin:round;">De Eenheid · kustvaarder 30 × 7 m (romp +2,8 m boven de kade)</text>
+<rect x="674.4" y="328.8" width="8.0" height="8.0" fill="#e9e3d8" stroke="#2f6f9a" stroke-width="1.4"/>
+<rect x="734.4" y="328.8" width="8.0" height="8.0" fill="#e9e3d8" stroke="#2f6f9a" stroke-width="1.4"/>
+<rect x="674.4" y="246.0" width="8.0" height="8.0" fill="#e9e3d8" stroke="#2f6f9a" stroke-width="1.4"/>
+<rect x="734.4" y="246.0" width="8.0" height="8.0" fill="#e9e3d8" stroke="#2f6f9a" stroke-width="1.4"/>
+<rect x="678.4" y="250.0" width="60.0" height="82.8" fill="none" stroke="#2f6f9a" stroke-width="1" stroke-dasharray="4 2"/>
+<polyline points="708.4,250.0 708.4,130.0" fill="none" stroke="#2f6f9a" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="748.0" y="344.8" text-anchor="start" style="font-size:8px;fill:#2f6f9a;font-weight:700;paint-order:stroke;stroke:#ffffff;stroke-width:2.6px;stroke-linejoin:round;">portaalkraan 16 m</text>
+<polyline points="239.2,346.0 239.2,622.0" fill="none" stroke="#7d6a55" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="1 2"/>
+<polyline points="296.8,346.0 296.8,622.0" fill="none" stroke="#7d6a55" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="1 2"/>
+<rect x="239.2" y="428.8" width="57.6" height="38.4" fill="none" stroke="#5d6b5a" stroke-width="1.6" stroke-dasharray="3 1.5"/>
+<rect x="236.7" y="426.3" width="5.0" height="5.0" fill="#5d6b5a" stroke="none" stroke-width="1.0"/>
+<rect x="294.3" y="426.3" width="5.0" height="5.0" fill="#5d6b5a" stroke="none" stroke-width="1.0"/>
+<rect x="236.7" y="464.7" width="5.0" height="5.0" fill="#5d6b5a" stroke="none" stroke-width="1.0"/>
+<rect x="294.3" y="464.7" width="5.0" height="5.0" fill="#5d6b5a" stroke="none" stroke-width="1.0"/>
+<text x="241.6" y="421.6" text-anchor="start" style="font-size:7.5px;fill:#3d4a3a;font-weight:700;paint-order:stroke;stroke:#ffffff;stroke-width:2.6px;stroke-linejoin:round;">oude havenkraan</text>
+<text x="241.6" y="479.2" text-anchor="start" style="font-size:7px;fill:#3d4a3a;font-style:italic;paint-order:stroke;stroke:#ffffff;stroke-width:2.6px;stroke-linejoin:round;">(je loopt eronder door)</text>
+<circle cx="268.0" cy="164.8" r="16.8" fill="#f3efe6" stroke="#1f2a33" stroke-width="1"/>
+<path d="M251.2,164.8 A16.8,16.8 0 0 1 284.8,164.8 z" fill="#d23a2a"/>
+<text x="268.0" y="191.6" text-anchor="middle" style="font-size:8px;fill:#8a1f17;font-weight:700;paint-order:stroke;stroke:#ffffff;stroke-width:2.6px;stroke-linejoin:round;">vuurtoren 9 m</text>
+<rect x="88.0" y="640.0" width="40.8" height="168.0" fill="url(#tribune)" stroke="#8a6a40" stroke-width="0.8"/>
+<polyline points="101.2,640.0 101.2,808.0" fill="none" stroke="#8a6a40" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="115.0,640.0 115.0,808.0" fill="none" stroke="#8a6a40" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="108.4" y="731.2" text-anchor="middle" transform="rotate(-90 108.4 731.2)" style="font-size:8px;font-weight:700;fill:#5a4020;paint-order:stroke;stroke:#fff;stroke-width:2.4px">tribune (3 treden)</text>
+<circle cx="223.6" cy="724.0" r="6" fill="#fff7e0" stroke="#1f2a33" stroke-width="1.2"/>
+<line x1="223.6" y1="724.0" x2="223.6" y2="719.5" stroke="#1f2a33" stroke-width="1"/>
+<line x1="223.6" y1="724.0" x2="226.8" y2="725.5" stroke="#1f2a33" stroke-width="1"/>
+<text x="212.8" y="700.0" text-anchor="end" style="font-size:7.5px;fill:#1f2a33;font-weight:700;paint-order:stroke;stroke:#ffffff;stroke-width:2.6px;stroke-linejoin:round;">veilingklok</text>
+<rect x="604.0" y="559.0" width="72.0" height="30.0" fill="#ffe9a0" stroke="#1f1f1f" stroke-width="1.2" stroke-dasharray="3 2"/>
+<rect x="607.6" y="563.2" width="64.8" height="21.6" fill="#b4443a" stroke="#3a3a3a" stroke-width="0.5"/>
+<text x="640.0" y="604.0" text-anchor="middle" style="font-size:7.5px;fill:#1f2a33;font-weight:700;paint-order:stroke;stroke:#ffffff;stroke-width:2.6px;stroke-linejoin:round;">weegbrug + container</text>
+<rect x="622.0" y="406.0" width="36.0" height="12.0" fill="#cfc7b8" stroke="#3a3a3a" stroke-width="0.8"/>
+<text x="640.0" y="401.2" text-anchor="middle" style="font-size:7px;fill:#3a3a3a;paint-order:stroke;stroke:#ffffff;stroke-width:2.6px;stroke-linejoin:round;">douanebalie</text>
+<rect x="424.0" y="742.0" width="48.0" height="12.0" fill="#cfc7b8" stroke="#3a3a3a" stroke-width="0.8"/>
+<text x="448.0" y="738.4" text-anchor="middle" style="font-size:7px;fill:#3a3a3a;paint-order:stroke;stroke:#ffffff;stroke-width:2.6px;stroke-linejoin:round;">balie Fenna</text>
+<text x="311.2" y="812.8" text-anchor="start" style="font-size:7.5px;fill:#2b2b2b;paint-order:stroke;stroke:#ffffff;stroke-width:2.6px;stroke-linejoin:round;">havenmeesterij 16 × 8</text>
+<rect x="305.8" y="740.8" width="3.6" height="38.4" fill="#2f4d6b" stroke="none" stroke-width="1.0"/>
+<text x="314.8" y="760.0" text-anchor="middle" transform="rotate(-90 314.8 760.0)" style="font-size:6.5px;fill:#2f4d6b;font-weight:700">wandbord</text>
+<rect x="376.0" y="748.0" width="48.0" height="48.0" fill="none" stroke="#1f2a33" stroke-width="1" stroke-dasharray="2 2"/>
+<circle cx="400.0" cy="772.0" r="5" fill="#fff7e0" stroke="#1f2a33" stroke-width="1"/>
+<text x="400.0" y="791.2" text-anchor="middle" style="font-size:7px;fill:#1f2a33;font-style:italic;paint-order:stroke;stroke:#ffffff;stroke-width:2.6px;stroke-linejoin:round;">toren 14 m</text>
+<line x1="304.0" y1="335.2" x2="304.0" y2="380.8" stroke="#1f1f1f" stroke-width="4"/>
+<line x1="496.0" y1="335.2" x2="496.0" y2="380.8" stroke="#1f1f1f" stroke-width="4"/>
+<text x="400.0" y="331.6" text-anchor="middle" style="font-size:8px;fill:#1f2a33;font-weight:700;paint-order:stroke;stroke:#ffffff;stroke-width:2.6px;stroke-linejoin:round;">ophaalbrug op keersluis · omhoog tot de Check</text>
+<rect x="415.6" y="799.6" width="52.8" height="14.4" fill="#efe7d6" stroke="#3a3a3a" stroke-width="0.9"/>
+<polyline points="420.9,799.6 420.9,814.0" fill="none" stroke="#3a3a3a" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="426.2,799.6 426.2,814.0" fill="none" stroke="#3a3a3a" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="431.4,799.6 431.4,814.0" fill="none" stroke="#3a3a3a" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="436.7,799.6 436.7,814.0" fill="none" stroke="#3a3a3a" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="442.0,799.6 442.0,814.0" fill="none" stroke="#3a3a3a" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="447.3,799.6 447.3,814.0" fill="none" stroke="#3a3a3a" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="452.6,799.6 452.6,814.0" fill="none" stroke="#3a3a3a" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="457.8,799.6 457.8,814.0" fill="none" stroke="#3a3a3a" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="463.1,799.6 463.1,814.0" fill="none" stroke="#3a3a3a" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="419.2,806.8 464.8,806.8" fill="none" stroke="#1f2a33" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#pijl-zelfstandig)"/>
+<text x="442.0" y="826.0" text-anchor="middle" style="font-size:7.5px;fill:#1f2a33;font-weight:700;paint-order:stroke;stroke:#ffffff;stroke-width:2.6px;stroke-linejoin:round;">T1 omhoog (vanaf Zelf)</text>
+<rect x="133.6" y="489.4" width="52.8" height="13.2" fill="#efe7d6" stroke="#3a3a3a" stroke-width="0.9"/>
+<polyline points="138.9,489.4 138.9,502.6" fill="none" stroke="#3a3a3a" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="144.2,489.4 144.2,502.6" fill="none" stroke="#3a3a3a" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="149.4,489.4 149.4,502.6" fill="none" stroke="#3a3a3a" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="154.7,489.4 154.7,502.6" fill="none" stroke="#3a3a3a" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="160.0,489.4 160.0,502.6" fill="none" stroke="#3a3a3a" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="165.3,489.4 165.3,502.6" fill="none" stroke="#3a3a3a" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="170.6,489.4 170.6,502.6" fill="none" stroke="#3a3a3a" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="175.8,489.4 175.8,502.6" fill="none" stroke="#3a3a3a" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="181.1,489.4 181.1,502.6" fill="none" stroke="#3a3a3a" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="182.8,496.0 137.2,496.0" fill="none" stroke="#1f2a33" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#pijl-zelfstandig)"/>
+<text x="160.0" y="514.6" text-anchor="middle" style="font-size:7.5px;fill:#1f2a33;font-weight:700;paint-order:stroke;stroke:#ffffff;stroke-width:2.6px;stroke-linejoin:round;">T2 omhoog naar zolder</text>
+<rect x="385.6" y="721.0" width="28.8" height="6.0" fill="#3f78bf" stroke="#ffffff" stroke-width="0.8"/>
+<rect x="229.0" y="700.0" width="6.0" height="48.0" fill="#23897d" stroke="#ffffff" stroke-width="0.8"/>
+<rect x="250.0" y="625.0" width="36.0" height="6.0" fill="#d9781c" stroke="#ffffff" stroke-width="0.8"/>
+<rect x="514.0" y="625.0" width="36.0" height="6.0" fill="#d9781c" stroke="#ffffff" stroke-width="0.8"/>
+<rect x="388.0" y="625.0" width="24.0" height="6.0" fill="#d9781c" stroke="#ffffff" stroke-width="0.8"/>
+<rect x="167.2" y="625.0" width="19.2" height="6.0" fill="#d9781c" stroke="#ffffff" stroke-width="0.8"/>
+<rect x="229.0" y="541.6" width="6.0" height="28.8" fill="#d9781c" stroke="#ffffff" stroke-width="0.8"/>
+<rect x="630.4" y="625.0" width="19.2" height="6.0" fill="#8a8a8a" stroke="#ffffff" stroke-width="0.8"/>
+<rect x="565.0" y="388.0" width="6.0" height="48.0" fill="#c43c4f" stroke="#ffffff" stroke-width="0.8"/>
+<rect x="586.0" y="337.0" width="48.0" height="6.0" fill="#c43c4f" stroke="#ffffff" stroke-width="0.8"/>
+<rect x="301.0" y="340.0" width="6.0" height="36.0" fill="#c43c4f" stroke="#ffffff" stroke-width="0.8"/>
+<rect x="493.0" y="340.0" width="6.0" height="36.0" fill="#c43c4f" stroke="#ffffff" stroke-width="0.8"/>
+<text x="419.2" y="714.4" text-anchor="middle" style="font-size:7.5px;fill:#1f2a33;font-weight:700;paint-order:stroke;stroke:#ffffff;stroke-width:2.6px;stroke-linejoin:round;">D1</text>
+<text x="239.2" y="695.2" text-anchor="middle" style="font-size:7.5px;fill:#1f2a33;font-weight:700;paint-order:stroke;stroke:#ffffff;stroke-width:2.6px;stroke-linejoin:round;">D2</text>
+<text x="268.0" y="618.4" text-anchor="middle" style="font-size:7.5px;fill:#1f2a33;font-weight:700;paint-order:stroke;stroke:#ffffff;stroke-width:2.6px;stroke-linejoin:round;">D3</text>
+<text x="532.0" y="618.4" text-anchor="middle" style="font-size:7.5px;fill:#1f2a33;font-weight:700;paint-order:stroke;stroke:#ffffff;stroke-width:2.6px;stroke-linejoin:round;">D4</text>
+<text x="380.8" y="619.6" text-anchor="middle" style="font-size:7.5px;fill:#1f2a33;font-weight:700;paint-order:stroke;stroke:#ffffff;stroke-width:2.6px;stroke-linejoin:round;">D5</text>
+<text x="196.0" y="641.2" text-anchor="middle" style="font-size:7.5px;fill:#1f2a33;font-weight:700;paint-order:stroke;stroke:#ffffff;stroke-width:2.6px;stroke-linejoin:round;">D6</text>
+<text x="240.4" y="538.0" text-anchor="middle" style="font-size:7.5px;fill:#1f2a33;font-weight:700;paint-order:stroke;stroke:#ffffff;stroke-width:2.6px;stroke-linejoin:round;">D7</text>
+<text x="654.4" y="622.0" text-anchor="middle" style="font-size:7.5px;fill:#1f2a33;font-weight:700;paint-order:stroke;stroke:#ffffff;stroke-width:2.6px;stroke-linejoin:round;">D10</text>
+<text x="554.8" y="382.0" text-anchor="middle" style="font-size:7.5px;fill:#1f2a33;font-weight:700;paint-order:stroke;stroke:#ffffff;stroke-width:2.6px;stroke-linejoin:round;">D12</text>
+<text x="582.4" y="349.6" text-anchor="middle" style="font-size:7.5px;fill:#1f2a33;font-weight:700;paint-order:stroke;stroke:#ffffff;stroke-width:2.6px;stroke-linejoin:round;">D13</text>
+<text x="296.8" y="385.6" text-anchor="middle" style="font-size:7.5px;fill:#1f2a33;font-weight:700;paint-order:stroke;stroke:#ffffff;stroke-width:2.6px;stroke-linejoin:round;">D14</text>
+<text x="503.2" y="385.6" text-anchor="middle" style="font-size:7.5px;fill:#1f2a33;font-weight:700;paint-order:stroke;stroke:#ffffff;stroke-width:2.6px;stroke-linejoin:round;">D15</text>
+<text x="236.8" y="638.8" text-anchor="start" style="font-size:8.5px;fill:#2b2b2b;font-weight:700;paint-order:stroke;stroke:#ffffff;stroke-width:2.6px;stroke-linejoin:round;">KADEPLEIN 28 × 8 (start)</text>
+<text x="311.2" y="799.6" text-anchor="start" style="font-size:8.5px;fill:#2b2b2b;font-weight:700;paint-order:stroke;stroke:#ffffff;stroke-width:2.6px;stroke-linejoin:round;">HAVENKANTOOR</text>
+<text x="133.6" y="814.0" text-anchor="start" style="font-size:8.5px;fill:#2b2b2b;font-weight:700;paint-order:stroke;stroke:#ffffff;stroke-width:2.6px;stroke-linejoin:round;">VISAFSLAG 12 × 16 · 6,5 m hoog</text>
+<text x="92.8" y="560.8" text-anchor="start" style="font-size:8.5px;fill:#2b2b2b;font-weight:700;paint-order:stroke;stroke:#ffffff;stroke-width:2.6px;stroke-linejoin:round;">PAKHUIS DE HIJSBALK</text>
+<text x="252.4" y="544.0" text-anchor="middle" transform="rotate(-90 252.4 544.0)" style="font-size:9px;font-weight:700;fill:#3a3a3a;letter-spacing:1px;paint-order:stroke;stroke:#fff;stroke-width:2.4px">PAKHUISKADE</text>
+<text x="92.8" y="462.4" text-anchor="start" style="font-size:8.5px;fill:#2b2b2b;font-weight:700;paint-order:stroke;stroke:#ffffff;stroke-width:2.6px;stroke-linejoin:round;">WERF · werkplaats (open)</text>
+<text x="92.8" y="280.0" text-anchor="start" style="font-size:8.5px;fill:#2b2b2b;font-weight:700;paint-order:stroke;stroke:#ffffff;stroke-width:2.6px;stroke-linejoin:round;">WERF · helling</text>
+<text x="308.8" y="256.0" text-anchor="end" style="font-size:8.5px;fill:#2b2b2b;font-weight:700;paint-order:stroke;stroke:#ffffff;stroke-width:2.6px;stroke-linejoin:round;">HAVENHOOFD</text>
+<text x="510.4" y="496.0" text-anchor="middle" transform="rotate(-90 510.4 496.0)" style="font-size:9px;font-weight:700;fill:#3a3a3a;letter-spacing:1px;paint-order:stroke;stroke:#fff;stroke-width:2.4px">OOSTKADE</text>
+<text x="575.2" y="496.0" text-anchor="start" style="font-size:8.5px;fill:#2b2b2b;font-weight:700;paint-order:stroke;stroke:#ffffff;stroke-width:2.6px;stroke-linejoin:round;">WEEGLOODS 12 × 12 (open)</text>
+<text x="707.2" y="716.8" text-anchor="end" style="font-size:8.5px;fill:#2b2b2b;font-weight:700;paint-order:stroke;stroke:#ffffff;stroke-width:2.6px;stroke-linejoin:round;">KANTINE</text>
+<text x="707.2" y="476.8" text-anchor="end" style="font-size:8.5px;fill:#2b2b2b;font-weight:700;paint-order:stroke;stroke:#ffffff;stroke-width:2.6px;stroke-linejoin:round;">VERTREKLOODS 12 × 12</text>
+<text x="779.2" y="332.8" text-anchor="end" style="font-size:8.5px;fill:#2b2b2b;font-weight:700;paint-order:stroke;stroke:#ffffff;stroke-width:2.6px;stroke-linejoin:round;">VERTREKKADE 18 × 8</text>
+<text x="426.4" y="566.8" text-anchor="start" style="font-size:8.5px;fill:#2c5a70;font-weight:700;paint-order:stroke;stroke:#ffffff;stroke-width:2.6px;stroke-linejoin:round;">HAVENKOM</text>
+<text x="92.8" y="574.0" text-anchor="start" style="font-size:7.5px;fill:#2b2b2b;paint-order:stroke;stroke:#ffffff;stroke-width:2.6px;stroke-linejoin:round;">12 × 12, twee lagen + kap</text>
+<text x="92.8" y="475.6" text-anchor="start" style="font-size:7.5px;fill:#2b2b2b;paint-order:stroke;stroke:#ffffff;stroke-width:2.6px;stroke-linejoin:round;">12 × 12, open naar de kade</text>
+<text x="400.0" y="296.8" text-anchor="middle" style="font-size:8.5px;fill:#2c5a70;font-weight:700;paint-order:stroke;stroke:#ffffff;stroke-width:2.6px;stroke-linejoin:round;">BUITENHAVEN</text>
+<text x="112.0" y="119.2" text-anchor="start" style="font-size:10px;fill:#2c5a70;font-weight:700;paint-order:stroke;stroke:#ffffff;stroke-width:2.6px;stroke-linejoin:round;">NOORDZEE</text>
+<text x="839.2" y="263.2" text-anchor="middle" style="font-size:8px;fill:#2c5a70;font-style:italic;paint-order:stroke;stroke:#ffffff;stroke-width:2.6px;stroke-linejoin:round;">zee</text>
+<polyline points="418.0,688.0 404.8,710.8 400.0,738.4 376.0,755.2" fill="none" stroke="#3f78bf" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#pijl-instructie)" stroke-opacity="0.92"/>
+<polyline points="407.2,679.6 304.0,707.2 241.6,716.8 188.8,716.8" fill="none" stroke="#23897d" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#pijl-begeleid)" stroke-opacity="0.92"/>
+<polyline points="383.2,678.4 272.8,647.2 265.6,484.0 248.8,406.0 174.4,397.6" fill="none" stroke="#d9781c" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#pijl-zelfstandig)" stroke-opacity="0.92"/>
+<polyline points="412.0,671.2 402.4,635.2 402.4,438.4" fill="none" stroke="#d9781c" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#pijl-zelfstandig)" stroke-opacity="0.92"/>
+<polyline points="438.4,673.6 527.2,649.6 534.4,548.8 589.6,541.6" fill="none" stroke="#d9781c" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#pijl-zelfstandig)" stroke-opacity="0.92"/>
+<polyline points="541.6,534.4 541.6,416.8 594.4,416.8" fill="none" stroke="#c43c4f" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#pijl-evaluatie)" stroke-opacity="0.92"/>
+<polyline points="258.4,392.8 284.8,364.0 512.8,364.0 534.4,400.0" fill="none" stroke="#c43c4f" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="5 3" marker-end="url(#pijl-evaluatie)" stroke-opacity="0.92"/>
+<polyline points="610.0,371.2 610.0,306.4" fill="none" stroke="#c43c4f" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="3 2.5" marker-end="url(#pijl-evaluatie)" stroke-opacity="0.92"/>
+<polyline points="604.0,296.8 598.0,244.0 598.0,200.8" fill="none" stroke="#2f8a41" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#pijl-klaar)" stroke-opacity="0.92"/>
+<text x="440.8" y="709.6" text-anchor="middle" style="font-size:8px;fill:#3f78bf;font-weight:700;paint-order:stroke;stroke:#ffffff;stroke-width:2.6px;stroke-linejoin:round;">1 Uitleg</text>
+<text x="282.4" y="694.0" text-anchor="middle" style="font-size:8px;fill:#23897d;font-weight:700;paint-order:stroke;stroke:#ffffff;stroke-width:2.6px;stroke-linejoin:round;">2 Samen</text>
+<text x="311.2" y="672.4" text-anchor="middle" style="font-size:8px;fill:#d9781c;font-weight:700;paint-order:stroke;stroke:#ffffff;stroke-width:2.6px;stroke-linejoin:round;">3 Zelf</text>
+<text x="488.8" y="679.6" text-anchor="middle" style="font-size:8px;fill:#d9781c;font-weight:700;paint-order:stroke;stroke:#ffffff;stroke-width:2.6px;stroke-linejoin:round;">3 Zelf</text>
+<text x="365.2" y="584.8" text-anchor="middle" style="font-size:8px;fill:#d9781c;font-weight:700;paint-order:stroke;stroke:#ffffff;stroke-width:2.6px;stroke-linejoin:round;">3 Zelf</text>
+<text x="547.6" y="448.0" text-anchor="middle" style="font-size:8px;fill:#c43c4f;font-weight:700;paint-order:stroke;stroke:#ffffff;stroke-width:2.6px;stroke-linejoin:round;">4 Check</text>
+<text x="400.0" y="364.0" text-anchor="middle" style="font-size:8px;fill:#c43c4f;font-weight:700;paint-order:stroke;stroke:#ffffff;stroke-width:2.6px;stroke-linejoin:round;">4 Check (brug)</text>
+<text x="594.4" y="311.2" text-anchor="end" style="font-size:8px;fill:#c43c4f;font-weight:700;paint-order:stroke;stroke:#ffffff;stroke-width:2.6px;stroke-linejoin:round;">na blok 1</text>
+<text x="620.8" y="210.4" text-anchor="start" style="font-size:8px;fill:#2f8a41;font-weight:700;paint-order:stroke;stroke:#ffffff;stroke-width:2.6px;stroke-linejoin:round;">5 Klaar</text>
+<path d="M418.0,688.0 L400.0,642.0 A50,50 0 0 1 448.0,648.0 z" fill="#c8961e" fill-opacity="0.18" stroke="none"/>
+<polygon points="418.0,679.0 425.0,694.0 418.0,690.0 411.0,694.0" fill="#c8961e" stroke="#1f2a33" stroke-width="1"/>
+<text x="409.0" y="692.0" text-anchor="end" style="font-size:9px;fill:#8a6410;font-weight:700;paint-order:stroke;stroke:#ffffff;stroke-width:2.6px;stroke-linejoin:round;">START</text>
+<rect x="577.6" y="240.5" width="40.8" height="7.0" fill="#2f8a41" stroke="#1f2a33" stroke-width="1"/>
+<rect x="574.1" y="239.0" width="7.0" height="10.0" fill="#3a3a3a" stroke="none" stroke-width="1.0"/>
+<rect x="614.9" y="239.0" width="7.0" height="10.0" fill="#3a3a3a" stroke="none" stroke-width="1.0"/>
+<circle cx="575.2" cy="260.8" r="7.5" fill="#1f2a33"/>
+<circle cx="571.2" cy="260.8" r="1.7" fill="#5aa9ff"/>
+<circle cx="575.2" cy="260.8" r="1.7" fill="#2ec4b6"/>
+<circle cx="579.2" cy="260.8" r="1.7" fill="#ffc94d"/>
+<text x="488.8" y="227.2" text-anchor="end" style="font-size:9px;fill:#2f8a41;font-weight:700;paint-order:stroke;stroke:#ffffff;stroke-width:2.6px;stroke-linejoin:round;">UITGANG: poort</text>
+<text x="488.8" y="240.4" text-anchor="end" style="font-size:9px;fill:#2f8a41;font-weight:700;paint-order:stroke;stroke:#ffffff;stroke-width:2.6px;stroke-linejoin:round;">+ seinmast 10 m  ▸</text>
+<rect x="89.4" y="405.0" width="14" height="14" rx="2" fill="#5aa9ff" stroke="#1f2a33" stroke-width="1.4"/>
+<circle cx="96.4" cy="412.0" r="3" fill="none" stroke="#1f2a33" stroke-width="1.2"/>
+<text x="96.4" y="402.0" text-anchor="middle" style="font-size:8px;fill:#1f2a33;font-weight:700;paint-order:stroke;stroke:#ffffff;stroke-width:2.6px;stroke-linejoin:round;">K1 kluis lengte</text>
+<rect x="393.0" y="390.6" width="14" height="14" rx="2" fill="#2ec4b6" stroke="#1f2a33" stroke-width="1.4"/>
+<circle cx="400.0" cy="397.6" r="3" fill="none" stroke="#1f2a33" stroke-width="1.2"/>
+<text x="400.0" y="387.6" text-anchor="middle" style="font-size:8px;fill:#1f2a33;font-weight:700;paint-order:stroke;stroke:#ffffff;stroke-width:2.6px;stroke-linejoin:round;">K2 kluis inhoud</text>
+<rect x="696.6" y="561.0" width="14" height="14" rx="2" fill="#ffc94d" stroke="#1f2a33" stroke-width="1.4"/>
+<circle cx="703.6" cy="568.0" r="3" fill="none" stroke="#1f2a33" stroke-width="1.2"/>
+<text x="703.6" y="558.0" text-anchor="middle" style="font-size:8px;fill:#1f2a33;font-weight:700;paint-order:stroke;stroke:#ffffff;stroke-width:2.6px;stroke-linejoin:round;">K3 kluis gewicht</text>
+<circle cx="239.2" cy="716.8" r="4" fill="#ffe14a" stroke="#7a5d00" stroke-width="1"/>
+<text x="244.7" y="712.8" text-anchor="start" style="font-size:7.5px;fill:#7a5d00;font-weight:700;paint-order:stroke;stroke:#ffffff;stroke-width:2.6px;stroke-linejoin:round;">L1</text>
+<circle cx="95.2" cy="811.6" r="4" fill="#ffe14a" stroke="#7a5d00" stroke-width="1"/>
+<text x="100.7" y="807.6" text-anchor="start" style="font-size:7.5px;fill:#7a5d00;font-weight:700;paint-order:stroke;stroke:#ffffff;stroke-width:2.6px;stroke-linejoin:round;">L2</text>
+<circle cx="95.2" cy="347.2" r="4" fill="#ffe14a" stroke="#7a5d00" stroke-width="1"/>
+<text x="100.7" y="343.2" text-anchor="start" style="font-size:7.5px;fill:#7a5d00;font-weight:700;paint-order:stroke;stroke:#ffffff;stroke-width:2.6px;stroke-linejoin:round;">L5</text>
+<circle cx="245.2" cy="155.2" r="4" fill="#ffe14a" stroke="#7a5d00" stroke-width="1"/>
+<text x="250.7" y="151.2" text-anchor="start" style="font-size:7.5px;fill:#7a5d00;font-weight:700;paint-order:stroke;stroke:#ffffff;stroke-width:2.6px;stroke-linejoin:round;">L6</text>
+<circle cx="472.0" cy="527.2" r="4" fill="#ffe14a" stroke="#7a5d00" stroke-width="1"/>
+<text x="477.5" y="523.2" text-anchor="start" style="font-size:7.5px;fill:#7a5d00;font-weight:700;paint-order:stroke;stroke:#ffffff;stroke-width:2.6px;stroke-linejoin:round;">L7</text>
+<circle cx="706.0" cy="490.0" r="4" fill="#ffe14a" stroke="#7a5d00" stroke-width="1"/>
+<text x="711.5" y="486.0" text-anchor="start" style="font-size:7.5px;fill:#7a5d00;font-weight:700;paint-order:stroke;stroke:#ffffff;stroke-width:2.6px;stroke-linejoin:round;">L8</text>
+<circle cx="466.0" cy="656.8" r="7.2" fill="#c8961e" stroke="#1f2a33" stroke-width="0.9"/>
+<text x="466.0" y="659.7" text-anchor="middle" style="font-size:7.6px;font-weight:700;fill:#ffffff">1</text>
+<text x="475.5" y="659.8" text-anchor="start" style="font-size:8px;fill:#1f2a33;paint-order:stroke;stroke:#ffffff;stroke-width:2.6px;stroke-linejoin:round;">terugblik</text>
+<circle cx="364.0" cy="764.8" r="7.2" fill="#3f78bf" stroke="#1f2a33" stroke-width="0.9"/>
+<text x="364.0" y="767.7" text-anchor="middle" style="font-size:7.6px;font-weight:700;fill:#ffffff">2</text>
+<text x="354.5" y="767.8" text-anchor="end" style="font-size:8px;fill:#1f2a33;paint-order:stroke;stroke:#ffffff;stroke-width:2.6px;stroke-linejoin:round;">uitleg</text>
+<circle cx="198.4" cy="791.2" r="7.2" fill="#23897d" stroke="#1f2a33" stroke-width="0.9"/>
+<text x="198.4" y="794.1" text-anchor="middle" style="font-size:7.6px;font-weight:700;fill:#ffffff">3</text>
+<text x="207.9" y="794.2" text-anchor="start" style="font-size:8px;fill:#1f2a33;paint-order:stroke;stroke:#ffffff;stroke-width:2.6px;stroke-linejoin:round;">meetkist</text>
+<circle cx="155.2" cy="791.2" r="7.2" fill="#23897d" stroke="#1f2a33" stroke-width="0.9"/>
+<text x="155.2" y="794.1" text-anchor="middle" style="font-size:7.6px;font-weight:700;fill:#ffffff">4</text>
+<text x="145.7" y="794.2" text-anchor="end" style="font-size:8px;fill:#1f2a33;paint-order:stroke;stroke:#ffffff;stroke-width:2.6px;stroke-linejoin:round;">meetlat</text>
+<circle cx="152.8" cy="724.0" r="7.2" fill="#23897d" stroke="#1f2a33" stroke-width="0.9"/>
+<text x="152.8" y="726.9" text-anchor="middle" style="font-size:7.6px;font-weight:700;fill:#ffffff">5</text>
+<text x="162.3" y="727.0" text-anchor="start" style="font-size:8px;fill:#1f2a33;paint-order:stroke;stroke:#ffffff;stroke-width:2.6px;stroke-linejoin:round;">maatbeker</text>
+<circle cx="155.2" cy="668.8" r="7.2" fill="#23897d" stroke="#1f2a33" stroke-width="0.9"/>
+<text x="155.2" y="671.7" text-anchor="middle" style="font-size:7.6px;font-weight:700;fill:#ffffff">6</text>
+<text x="145.7" y="671.8" text-anchor="end" style="font-size:8px;fill:#1f2a33;paint-order:stroke;stroke:#ffffff;stroke-width:2.6px;stroke-linejoin:round;">paddenstoel</text>
+<circle cx="198.4" cy="668.8" r="7.2" fill="#23897d" stroke="#1f2a33" stroke-width="0.9"/>
+<text x="198.4" y="671.7" text-anchor="middle" style="font-size:7.6px;font-weight:700;fill:#ffffff">7</text>
+<text x="207.9" y="671.8" text-anchor="start" style="font-size:8px;fill:#1f2a33;paint-order:stroke;stroke:#ffffff;stroke-width:2.6px;stroke-linejoin:round;">suikerpak</text>
+<circle cx="102.4" cy="313.6" r="7.2" fill="#3b8ee8" stroke="#1f2a33" stroke-width="0.9"/>
+<text x="102.4" y="316.5" text-anchor="middle" style="font-size:7.6px;font-weight:700;fill:#ffffff">8</text>
+<text x="111.9" y="316.6" text-anchor="start" style="font-size:8px;fill:#1f2a33;paint-order:stroke;stroke:#ffffff;stroke-width:2.6px;stroke-linejoin:round;">snelwegbord</text>
+<circle cx="140.8" cy="371.2" r="7.2" fill="#3b8ee8" stroke="#1f2a33" stroke-width="0.9"/>
+<text x="140.8" y="374.1" text-anchor="middle" style="font-size:7.6px;font-weight:700;fill:#ffffff">9</text>
+<text x="150.3" y="374.2" text-anchor="start" style="font-size:8px;fill:#1f2a33;paint-order:stroke;stroke:#ffffff;stroke-width:2.6px;stroke-linejoin:round;">werkplaats</text>
+<circle cx="191.2" cy="448.0" r="7.2" fill="#3b8ee8" stroke="#1f2a33" stroke-width="0.9"/>
+<text x="191.2" y="450.9" text-anchor="middle" style="font-size:7.6px;font-weight:700;fill:#ffffff">10</text>
+<text x="200.7" y="451.0" text-anchor="start" style="font-size:8px;fill:#1f2a33;paint-order:stroke;stroke:#ffffff;stroke-width:2.6px;stroke-linejoin:round;">hakken</text>
+<circle cx="263.2" cy="308.8" r="7.2" fill="#3b8ee8" stroke="#1f2a33" stroke-width="0.9"/>
+<text x="263.2" y="311.7" text-anchor="middle" style="font-size:7.6px;font-weight:700;fill:#ffffff">11</text>
+<text x="263.2" y="325.8" text-anchor="middle" style="font-size:8px;fill:#1f2a33;paint-order:stroke;stroke:#ffffff;stroke-width:2.6px;stroke-linejoin:round;">omleiding</text>
+<circle cx="347.2" cy="517.6" r="7.2" fill="#1fa597" stroke="#1f2a33" stroke-width="0.9"/>
+<text x="347.2" y="520.5" text-anchor="middle" style="font-size:7.6px;font-weight:700;fill:#ffffff">12</text>
+<text x="347.2" y="507.6" text-anchor="middle" style="font-size:8px;fill:#1f2a33;paint-order:stroke;stroke:#ffffff;stroke-width:2.6px;stroke-linejoin:round;">kombuis</text>
+<circle cx="452.8" cy="508.0" r="7.2" fill="#1fa597" stroke="#1f2a33" stroke-width="0.9"/>
+<text x="452.8" y="510.9" text-anchor="middle" style="font-size:7.6px;font-weight:700;fill:#ffffff">13</text>
+<text x="462.3" y="511.0" text-anchor="start" style="font-size:8px;fill:#1f2a33;paint-order:stroke;stroke:#ffffff;stroke-width:2.6px;stroke-linejoin:round;">cocktail</text>
+<circle cx="442.0" cy="408.4" r="7.2" fill="#1fa597" stroke="#1f2a33" stroke-width="0.9"/>
+<text x="442.0" y="411.3" text-anchor="middle" style="font-size:7.6px;font-weight:700;fill:#ffffff">14</text>
+<text x="451.5" y="411.4" text-anchor="start" style="font-size:8px;fill:#1f2a33;paint-order:stroke;stroke:#ffffff;stroke-width:2.6px;stroke-linejoin:round;">badje</text>
+<circle cx="356.8" cy="408.4" r="7.2" fill="#1fa597" stroke="#1f2a33" stroke-width="0.9"/>
+<text x="356.8" y="411.3" text-anchor="middle" style="font-size:7.6px;font-weight:700;fill:#ffffff">15</text>
+<text x="347.3" y="411.4" text-anchor="end" style="font-size:8px;fill:#1f2a33;paint-order:stroke;stroke:#ffffff;stroke-width:2.6px;stroke-linejoin:round;">smoothie</text>
+<circle cx="659.2" cy="680.8" r="7.2" fill="#e0a800" stroke="#1f2a33" stroke-width="0.9"/>
+<text x="659.2" y="683.7" text-anchor="middle" style="font-size:7.6px;font-weight:700;fill:#ffffff">16</text>
+<text x="668.7" y="683.8" text-anchor="start" style="font-size:8px;fill:#1f2a33;paint-order:stroke;stroke:#ffffff;stroke-width:2.6px;stroke-linejoin:round;">rijstkom</text>
+<circle cx="611.2" cy="517.6" r="7.2" fill="#e0a800" stroke="#1f2a33" stroke-width="0.9"/>
+<text x="611.2" y="520.5" text-anchor="middle" style="font-size:7.6px;font-weight:700;fill:#ffffff">17</text>
+<text x="620.7" y="520.6" text-anchor="start" style="font-size:8px;fill:#1f2a33;paint-order:stroke;stroke:#ffffff;stroke-width:2.6px;stroke-linejoin:round;">weegschaal</text>
+<circle cx="685.6" cy="508.0" r="7.2" fill="#e0a800" stroke="#1f2a33" stroke-width="0.9"/>
+<text x="685.6" y="510.9" text-anchor="middle" style="font-size:7.6px;font-weight:700;fill:#ffffff">18</text>
+<text x="685.6" y="525.0" text-anchor="middle" style="font-size:8px;fill:#1f2a33;paint-order:stroke;stroke:#ffffff;stroke-width:2.6px;stroke-linejoin:round;">klontjes</text>
+<circle cx="191.2" cy="527.2" r="7.2" fill="#8b5fbf" stroke="#1f2a33" stroke-width="0.9"/>
+<text x="191.2" y="530.1" text-anchor="middle" style="font-size:7.6px;font-weight:700;fill:#ffffff">25</text>
+<text x="191.2" y="544.2" text-anchor="middle" style="font-size:8px;fill:#1f2a33;paint-order:stroke;stroke:#ffffff;stroke-width:2.6px;stroke-linejoin:round;">kabelhaspel</text>
+<circle cx="124.0" cy="584.8" r="7.2" fill="#8b5fbf" stroke="#1f2a33" stroke-width="0.9"/>
+<text x="124.0" y="587.7" text-anchor="middle" style="font-size:7.6px;font-weight:700;fill:#ffffff">26</text>
+<text x="133.5" y="587.8" text-anchor="start" style="font-size:8px;fill:#1f2a33;paint-order:stroke;stroke:#ffffff;stroke-width:2.6px;stroke-linejoin:round;">cement</text>
+<circle cx="335.2" cy="707.2" r="7.2" fill="#8b5fbf" stroke="#1f2a33" stroke-width="0.9"/>
+<text x="335.2" y="710.1" text-anchor="middle" style="font-size:7.6px;font-weight:700;fill:#ffffff">29</text>
+<text x="325.7" y="710.2" text-anchor="end" style="font-size:8px;fill:#1f2a33;paint-order:stroke;stroke:#ffffff;stroke-width:2.6px;stroke-linejoin:round;">buitenmissie</text>
+<circle cx="162.4" cy="320.8" r="7.2" fill="#8b5fbf" stroke="#1f2a33" stroke-width="0.9"/>
+<text x="162.4" y="323.7" text-anchor="middle" style="font-size:7.6px;font-weight:700;fill:#ffffff">30</text>
+<text x="171.9" y="323.8" text-anchor="start" style="font-size:8px;fill:#1f2a33;paint-order:stroke;stroke:#ffffff;stroke-width:2.6px;stroke-linejoin:round;">champagne</text>
+<circle cx="601.6" cy="692.8" r="7.2" fill="#8b5fbf" stroke="#1f2a33" stroke-width="0.9"/>
+<text x="601.6" y="695.7" text-anchor="middle" style="font-size:7.6px;font-weight:700;fill:#ffffff">31</text>
+<text x="611.1" y="695.8" text-anchor="start" style="font-size:8px;fill:#1f2a33;paint-order:stroke;stroke:#ffffff;stroke-width:2.6px;stroke-linejoin:round;">auto</text>
+<circle cx="275.2" cy="234.4" r="7.2" fill="#8b5fbf" stroke="#1f2a33" stroke-width="0.9"/>
+<text x="275.2" y="237.3" text-anchor="middle" style="font-size:7.6px;font-weight:700;fill:#ffffff">32</text>
+<text x="284.7" y="237.4" text-anchor="start" style="font-size:8px;fill:#1f2a33;paint-order:stroke;stroke:#ffffff;stroke-width:2.6px;stroke-linejoin:round;">weerstation</text>
+<circle cx="248.8" cy="198.4" r="7.2" fill="#8b5fbf" stroke="#1f2a33" stroke-width="0.9"/>
+<text x="248.8" y="201.3" text-anchor="middle" style="font-size:7.6px;font-weight:700;fill:#ffffff">33</text>
+<text x="239.3" y="201.4" text-anchor="end" style="font-size:8px;fill:#1f2a33;paint-order:stroke;stroke:#ffffff;stroke-width:2.6px;stroke-linejoin:round;">kaart24-1</text>
+<circle cx="608.8" cy="460.0" r="7.2" fill="#c43c4f" stroke="#1f2a33" stroke-width="0.9"/>
+<text x="608.8" y="462.9" text-anchor="middle" style="font-size:7.6px;font-weight:700;fill:#ffffff">36</text>
+<text x="608.8" y="450.0" text-anchor="middle" style="font-size:8px;fill:#1f2a33;paint-order:stroke;stroke:#ffffff;stroke-width:2.6px;stroke-linejoin:round;">koffie</text>
+<circle cx="652.0" cy="460.0" r="7.2" fill="#c43c4f" stroke="#1f2a33" stroke-width="0.9"/>
+<text x="652.0" y="462.9" text-anchor="middle" style="font-size:7.6px;font-weight:700;fill:#ffffff">37</text>
+<text x="652.0" y="450.0" text-anchor="middle" style="font-size:8px;fill:#1f2a33;paint-order:stroke;stroke:#ffffff;stroke-width:2.6px;stroke-linejoin:round;">bessen</text>
+<circle cx="697.6" cy="436.0" r="7.2" fill="#c43c4f" stroke="#1f2a33" stroke-width="0.9"/>
+<text x="697.6" y="438.9" text-anchor="middle" style="font-size:7.6px;font-weight:700;fill:#ffffff">38</text>
+<text x="688.1" y="439.0" text-anchor="end" style="font-size:8px;fill:#1f2a33;paint-order:stroke;stroke:#ffffff;stroke-width:2.6px;stroke-linejoin:round;">goud</text>
+<circle cx="697.6" cy="385.6" r="7.2" fill="#c43c4f" stroke="#1f2a33" stroke-width="0.9"/>
+<text x="697.6" y="388.5" text-anchor="middle" style="font-size:7.6px;font-weight:700;fill:#ffffff">39</text>
+<text x="688.1" y="388.6" text-anchor="end" style="font-size:8px;fill:#1f2a33;paint-order:stroke;stroke:#ffffff;stroke-width:2.6px;stroke-linejoin:round;">vuistregel</text>
+<circle cx="668.8" cy="359.2" r="7.2" fill="#c43c4f" stroke="#1f2a33" stroke-width="0.9"/>
+<text x="668.8" y="362.1" text-anchor="middle" style="font-size:7.6px;font-weight:700;fill:#ffffff">40</text>
+<text x="659.3" y="362.2" text-anchor="end" style="font-size:8px;fill:#1f2a33;paint-order:stroke;stroke:#ffffff;stroke-width:2.6px;stroke-linejoin:round;">pont</text>
+<circle cx="652.0" cy="263.2" r="7.2" fill="#ffffff" stroke="#c43c4f" stroke-width="2.2"/>
+<text x="652.0" y="266.1" text-anchor="middle" style="font-size:7.6px;font-weight:700;fill:#c43c4f">41</text>
+<text x="652.0" y="253.2" text-anchor="middle" style="font-size:8px;fill:#1f2a33;paint-order:stroke;stroke:#ffffff;stroke-width:2.6px;stroke-linejoin:round;">regenmeter</text>
+<circle cx="760.0" cy="292.0" r="7.2" fill="#ffffff" stroke="#c43c4f" stroke-width="2.2"/>
+<text x="760.0" y="294.9" text-anchor="middle" style="font-size:7.6px;font-weight:700;fill:#c43c4f">42</text>
+<text x="769.5" y="295.0" text-anchor="start" style="font-size:8px;fill:#1f2a33;paint-order:stroke;stroke:#ffffff;stroke-width:2.6px;stroke-linejoin:round;">parkeerschijf</text>
+<circle cx="656.8" cy="320.8" r="7.2" fill="#ffffff" stroke="#c43c4f" stroke-width="2.2"/>
+<text x="656.8" y="323.7" text-anchor="middle" style="font-size:7.6px;font-weight:700;fill:#c43c4f">43</text>
+<text x="656.8" y="310.8" text-anchor="middle" style="font-size:8px;fill:#1f2a33;paint-order:stroke;stroke:#ffffff;stroke-width:2.6px;stroke-linejoin:round;">klontjesdoos</text>
+<circle cx="707.2" cy="257.2" r="7.2" fill="#ffffff" stroke="#c43c4f" stroke-width="2.2"/>
+<text x="707.2" y="260.1" text-anchor="middle" style="font-size:7.6px;font-weight:700;fill:#c43c4f">44</text>
+<text x="716.7" y="260.2" text-anchor="start" style="font-size:8px;fill:#1f2a33;paint-order:stroke;stroke:#ffffff;stroke-width:2.6px;stroke-linejoin:round;">watervat</text>
+<circle cx="707.2" cy="313.6" r="7.2" fill="#ffffff" stroke="#c43c4f" stroke-width="2.2"/>
+<text x="707.2" y="316.5" text-anchor="middle" style="font-size:7.6px;font-weight:700;fill:#c43c4f">45</text>
+<text x="716.7" y="316.6" text-anchor="start" style="font-size:8px;fill:#1f2a33;paint-order:stroke;stroke:#ffffff;stroke-width:2.6px;stroke-linejoin:round;">mondwater</text>
+</g>
+<rect x="40.0" y="100.0" width="840.0" height="768.0" fill="none" stroke="#1f2a33" stroke-width="1.2"/>
+<text x="40.0" y="880.0" text-anchor="middle" style="font-size:8px;fill:#5a6570;">x -30</text>
+<text x="160.0" y="880.0" text-anchor="middle" style="font-size:8px;fill:#5a6570;">x -20</text>
+<text x="280.0" y="880.0" text-anchor="middle" style="font-size:8px;fill:#5a6570;">x -10</text>
+<text x="400.0" y="880.0" text-anchor="middle" style="font-size:8px;fill:#5a6570;">x 0</text>
+<text x="520.0" y="880.0" text-anchor="middle" style="font-size:8px;fill:#5a6570;">x 10</text>
+<text x="640.0" y="880.0" text-anchor="middle" style="font-size:8px;fill:#5a6570;">x 20</text>
+<text x="760.0" y="880.0" text-anchor="middle" style="font-size:8px;fill:#5a6570;">x 30</text>
+<text x="880.0" y="880.0" text-anchor="middle" style="font-size:8px;fill:#5a6570;">x 40</text>
+<text x="37.0" y="199.0" text-anchor="end" style="font-size:8px;fill:#5a6570;">z -30</text>
+<text x="37.0" y="319.0" text-anchor="end" style="font-size:8px;fill:#5a6570;">z -20</text>
+<text x="37.0" y="439.0" text-anchor="end" style="font-size:8px;fill:#5a6570;">z -10</text>
+<text x="37.0" y="559.0" text-anchor="end" style="font-size:8px;fill:#5a6570;">z 0</text>
+<text x="37.0" y="679.0" text-anchor="end" style="font-size:8px;fill:#5a6570;">z 10</text>
+<text x="37.0" y="799.0" text-anchor="end" style="font-size:8px;fill:#5a6570;">z 20</text>
+<polygon points="850.0,116.0 857.0,136.0 850.0,131.0 843.0,136.0" fill="#1f2a33"/>
+<text x="850.0" y="148.0" text-anchor="middle" style="font-size:10px;fill:#1f2a33;font-weight:700;paint-order:stroke;stroke:#ffffff;stroke-width:2.6px;stroke-linejoin:round;">N</text>
+<rect x="44.0" y="902.0" width="60.0" height="5.0" fill="#1f2a33" stroke="#1f2a33" stroke-width="0.8"/>
+<rect x="104.0" y="902.0" width="60.0" height="5.0" fill="#ffffff" stroke="#1f2a33" stroke-width="0.8"/>
+<rect x="164.0" y="902.0" width="60.0" height="5.0" fill="#1f2a33" stroke="#1f2a33" stroke-width="0.8"/>
+<rect x="224.0" y="902.0" width="60.0" height="5.0" fill="#ffffff" stroke="#1f2a33" stroke-width="0.8"/>
+<text x="44.0" y="899.0" text-anchor="middle" style="font-size:8px;fill:#1f2a33;paint-order:stroke;stroke:#ffffff;stroke-width:2.6px;stroke-linejoin:round;">0</text>
+<text x="104.0" y="899.0" text-anchor="middle" style="font-size:8px;fill:#1f2a33;paint-order:stroke;stroke:#ffffff;stroke-width:2.6px;stroke-linejoin:round;">5</text>
+<text x="164.0" y="899.0" text-anchor="middle" style="font-size:8px;fill:#1f2a33;paint-order:stroke;stroke:#ffffff;stroke-width:2.6px;stroke-linejoin:round;">10</text>
+<text x="224.0" y="899.0" text-anchor="middle" style="font-size:8px;fill:#1f2a33;paint-order:stroke;stroke:#ffffff;stroke-width:2.6px;stroke-linejoin:round;">15</text>
+<text x="284.0" y="899.0" text-anchor="middle" style="font-size:8px;fill:#1f2a33;paint-order:stroke;stroke:#ffffff;stroke-width:2.6px;stroke-linejoin:round;">20 m</text>
+<text x="300.0" y="908.0" text-anchor="start" style="font-size:8.5px;fill:#4a5560;">schaal: 1 m = 12 px · rasterlijnen om de 2 m, dik om de 10 m</text>
+<text x="920.0" y="94.0" text-anchor="start" style="font-size:13px;fill:#1f2a33;font-weight:700;">Verdieping 1 (vloer +3,9 m): kaartenkamer, balkon, pakhuiszolder</text>
+<clipPath id="kaart2"><rect x="920" y="100" width="456.0" height="384.0"/></clipPath>
+<g clip-path="url(#kaart2)">
+<rect x="920.0" y="100.0" width="456.0" height="384.0" fill="#f1f1ec" stroke="none" stroke-width="1.0"/>
+<line x1="920.0" y1="100.0" x2="920.0" y2="484.0" stroke="#000" stroke-opacity="0.05" stroke-width="0.7"/>
+<line x1="944.0" y1="100.0" x2="944.0" y2="484.0" stroke="#000" stroke-opacity="0.05" stroke-width="0.7"/>
+<line x1="968.0" y1="100.0" x2="968.0" y2="484.0" stroke="#000" stroke-opacity="0.05" stroke-width="0.7"/>
+<line x1="992.0" y1="100.0" x2="992.0" y2="484.0" stroke="#000" stroke-opacity="0.05" stroke-width="0.7"/>
+<line x1="1016.0" y1="100.0" x2="1016.0" y2="484.0" stroke="#000" stroke-opacity="0.16" stroke-width="0.7"/>
+<line x1="1040.0" y1="100.0" x2="1040.0" y2="484.0" stroke="#000" stroke-opacity="0.05" stroke-width="0.7"/>
+<line x1="1064.0" y1="100.0" x2="1064.0" y2="484.0" stroke="#000" stroke-opacity="0.05" stroke-width="0.7"/>
+<line x1="1088.0" y1="100.0" x2="1088.0" y2="484.0" stroke="#000" stroke-opacity="0.05" stroke-width="0.7"/>
+<line x1="1112.0" y1="100.0" x2="1112.0" y2="484.0" stroke="#000" stroke-opacity="0.05" stroke-width="0.7"/>
+<line x1="1136.0" y1="100.0" x2="1136.0" y2="484.0" stroke="#000" stroke-opacity="0.16" stroke-width="0.7"/>
+<line x1="1160.0" y1="100.0" x2="1160.0" y2="484.0" stroke="#000" stroke-opacity="0.05" stroke-width="0.7"/>
+<line x1="1184.0" y1="100.0" x2="1184.0" y2="484.0" stroke="#000" stroke-opacity="0.05" stroke-width="0.7"/>
+<line x1="1208.0" y1="100.0" x2="1208.0" y2="484.0" stroke="#000" stroke-opacity="0.05" stroke-width="0.7"/>
+<line x1="1232.0" y1="100.0" x2="1232.0" y2="484.0" stroke="#000" stroke-opacity="0.05" stroke-width="0.7"/>
+<line x1="1256.0" y1="100.0" x2="1256.0" y2="484.0" stroke="#000" stroke-opacity="0.16" stroke-width="0.7"/>
+<line x1="1280.0" y1="100.0" x2="1280.0" y2="484.0" stroke="#000" stroke-opacity="0.05" stroke-width="0.7"/>
+<line x1="1304.0" y1="100.0" x2="1304.0" y2="484.0" stroke="#000" stroke-opacity="0.05" stroke-width="0.7"/>
+<line x1="1328.0" y1="100.0" x2="1328.0" y2="484.0" stroke="#000" stroke-opacity="0.05" stroke-width="0.7"/>
+<line x1="1352.0" y1="100.0" x2="1352.0" y2="484.0" stroke="#000" stroke-opacity="0.05" stroke-width="0.7"/>
+<line x1="1376.0" y1="100.0" x2="1376.0" y2="484.0" stroke="#000" stroke-opacity="0.16" stroke-width="0.7"/>
+<line x1="920.0" y1="100.0" x2="1376.0" y2="100.0" stroke="#000" stroke-opacity="0.05" stroke-width="0.7"/>
+<line x1="920.0" y1="124.0" x2="1376.0" y2="124.0" stroke="#000" stroke-opacity="0.05" stroke-width="0.7"/>
+<line x1="920.0" y1="148.0" x2="1376.0" y2="148.0" stroke="#000" stroke-opacity="0.05" stroke-width="0.7"/>
+<line x1="920.0" y1="172.0" x2="1376.0" y2="172.0" stroke="#000" stroke-opacity="0.05" stroke-width="0.7"/>
+<line x1="920.0" y1="196.0" x2="1376.0" y2="196.0" stroke="#000" stroke-opacity="0.16" stroke-width="0.7"/>
+<line x1="920.0" y1="220.0" x2="1376.0" y2="220.0" stroke="#000" stroke-opacity="0.05" stroke-width="0.7"/>
+<line x1="920.0" y1="244.0" x2="1376.0" y2="244.0" stroke="#000" stroke-opacity="0.05" stroke-width="0.7"/>
+<line x1="920.0" y1="268.0" x2="1376.0" y2="268.0" stroke="#000" stroke-opacity="0.05" stroke-width="0.7"/>
+<line x1="920.0" y1="292.0" x2="1376.0" y2="292.0" stroke="#000" stroke-opacity="0.05" stroke-width="0.7"/>
+<line x1="920.0" y1="316.0" x2="1376.0" y2="316.0" stroke="#000" stroke-opacity="0.16" stroke-width="0.7"/>
+<line x1="920.0" y1="340.0" x2="1376.0" y2="340.0" stroke="#000" stroke-opacity="0.05" stroke-width="0.7"/>
+<line x1="920.0" y1="364.0" x2="1376.0" y2="364.0" stroke="#000" stroke-opacity="0.05" stroke-width="0.7"/>
+<line x1="920.0" y1="388.0" x2="1376.0" y2="388.0" stroke="#000" stroke-opacity="0.05" stroke-width="0.7"/>
+<line x1="920.0" y1="412.0" x2="1376.0" y2="412.0" stroke="#000" stroke-opacity="0.05" stroke-width="0.7"/>
+<line x1="920.0" y1="436.0" x2="1376.0" y2="436.0" stroke="#000" stroke-opacity="0.16" stroke-width="0.7"/>
+<line x1="920.0" y1="460.0" x2="1376.0" y2="460.0" stroke="#000" stroke-opacity="0.05" stroke-width="0.7"/>
+<line x1="920.0" y1="484.0" x2="1376.0" y2="484.0" stroke="#000" stroke-opacity="0.05" stroke-width="0.7"/>
+<rect x="944.0" y="268.0" width="144.0" height="192.0" fill="none" stroke="#9aa0a6" stroke-width="0.8" stroke-dasharray="3 3"/>
+<rect x="1088.0" y="268.0" width="336.0" height="96.0" fill="none" stroke="#9aa0a6" stroke-width="0.8" stroke-dasharray="3 3"/>
+<rect x="1088.0" y="-20.0" width="72.0" height="288.0" fill="none" stroke="#9aa0a6" stroke-width="0.8" stroke-dasharray="3 3"/>
+<polygon points="1160.0,268.0 1352.0,268.0 1352.0,100.0 1160.0,100.0" fill="#a9d0e0" stroke="none" stroke-width="1.0" fill-opacity="0.5"/>
+<text x="1016.0" y="364.0" text-anchor="middle" style="font-size:8.5px;fill:#7a8088;font-style:italic;paint-order:stroke;stroke:#ffffff;stroke-width:2.6px;stroke-linejoin:round;">(dak van de visafslag)</text>
+<text x="1256.0" y="304.0" text-anchor="middle" style="font-size:8.5px;fill:#7a8088;font-style:italic;paint-order:stroke;stroke:#ffffff;stroke-width:2.6px;stroke-linejoin:round;">(kadeplein, beneden)</text>
+<text x="1256.0" y="160.0" text-anchor="middle" style="font-size:8.5px;fill:#5f8fa6;font-style:italic;paint-order:stroke;stroke:#ffffff;stroke-width:2.6px;stroke-linejoin:round;">(havenkom)</text>
+<rect x="944.0" y="124.0" width="144.0" height="144.0" fill="#fde3c8" stroke="#2b2b2b" stroke-width="2.8"/>
+<rect x="1160.0" y="364.0" width="192.0" height="96.0" fill="#fde3c8" stroke="#2b2b2b" stroke-width="2.8"/>
+<rect x="1208.0" y="334.0" width="96.0" height="30.0" fill="url(#vlonder)" stroke="#6f6a60" stroke-width="1" stroke-dasharray="4 2.5"/>
+<polyline points="1208.0,364.0 1208.0,334.0 1304.0,334.0 1304.0,364.0" fill="none" stroke="#1f2a33" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="1271.6" y="439.6" width="52.8" height="14.4" fill="#ffffff" stroke="#1f2a33" stroke-width="1" stroke-dasharray="3 2"/>
+<text x="1298.0" y="467.2" text-anchor="middle" style="font-size:7.5px;fill:#1f2a33;font-weight:700;paint-order:stroke;stroke:#ffffff;stroke-width:2.6px;stroke-linejoin:round;">trapgat T1</text>
+<circle cx="1335.2" cy="446.8" r="3" fill="#d9781c" stroke="#1f2a33" stroke-width="0.8"/>
+<rect x="989.6" y="129.4" width="52.8" height="13.2" fill="#ffffff" stroke="#1f2a33" stroke-width="1" stroke-dasharray="3 2"/>
+<text x="1016.0" y="155.8" text-anchor="middle" style="font-size:7.5px;fill:#1f2a33;font-weight:700;paint-order:stroke;stroke:#ffffff;stroke-width:2.6px;stroke-linejoin:round;">trapgat T2</text>
+<circle cx="977.6" cy="136.0" r="3" fill="#d9781c" stroke="#1f2a33" stroke-width="0.8"/>
+<rect x="1046.0" y="186.4" width="24.0" height="19.2" fill="#ffffff" stroke="#1f2a33" stroke-width="1.2"/>
+<text x="1058.0" y="218.8" text-anchor="middle" style="font-size:7.5px;fill:#1f2a33;paint-order:stroke;stroke:#ffffff;stroke-width:2.6px;stroke-linejoin:round;">vide (vloerluik)</text>
+<rect x="1085.0" y="186.4" width="6.0" height="19.2" fill="#2c4a3b" stroke="none" stroke-width="1.0"/>
+<polyline points="1090.4,196.0 1142.0,196.0" fill="none" stroke="#2c4a3b" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#pijl-zelfstandig)"/>
+<text x="1092.8" y="184.0" text-anchor="start" style="font-size:7.5px;fill:#2c4a3b;font-weight:700;paint-order:stroke;stroke:#ffffff;stroke-width:2.6px;stroke-linejoin:round;">open hijsluik + hijsbalk:</text>
+<text x="1092.8" y="217.6" text-anchor="start" style="font-size:7.5px;fill:#2c4a3b;paint-order:stroke;stroke:#ffffff;stroke-width:2.6px;stroke-linejoin:round;">uitzicht over de kom</text>
+<rect x="1277.6" y="361.0" width="19.2" height="6.0" fill="#d9781c" stroke="#ffffff" stroke-width="0.8"/>
+<text x="1287.2" y="353.2" text-anchor="middle" style="font-size:7.5px;fill:#1f2a33;font-weight:700;paint-order:stroke;stroke:#ffffff;stroke-width:2.6px;stroke-linejoin:round;">D9</text>
+<rect x="1161.8" y="376.0" width="4.0" height="72.0" fill="#2f4d6b" stroke="none" stroke-width="1.0"/>
+<text x="1151.6" y="412.0" text-anchor="middle" transform="rotate(-90 1151.6 412.0)" style="font-size:7.5px;fill:#2f4d6b;font-weight:700">grote rekenkaart</text>
+<circle cx="1180.4" cy="439.6" r="4" fill="#7fb0d9" stroke="#1f2a33" stroke-width="0.8"/>
+<rect x="1232.0" y="388.0" width="48.0" height="48.0" fill="none" stroke="#1f2a33" stroke-width="0.8" stroke-dasharray="2 2"/>
+<text x="948.8" y="116.8" text-anchor="start" style="font-size:9px;fill:#2b2b2b;font-weight:700;paint-order:stroke;stroke:#ffffff;stroke-width:2.6px;stroke-linejoin:round;">PAKHUIS · ZOLDER (kap, nok +5,5 m)</text>
+<text x="1164.8" y="478.0" text-anchor="start" style="font-size:9px;fill:#2b2b2b;font-weight:700;paint-order:stroke;stroke:#ffffff;stroke-width:2.6px;stroke-linejoin:round;">KAARTENKAMER 16 × 8 · 3,3 m</text>
+<text x="1306.4" y="344.8" text-anchor="start" style="font-size:8.5px;fill:#2b2b2b;font-weight:700;paint-order:stroke;stroke:#ffffff;stroke-width:2.6px;stroke-linejoin:round;">BALKON</text>
+<text x="1306.4" y="358.0" text-anchor="start" style="font-size:7.5px;fill:#2b2b2b;paint-order:stroke;stroke:#ffffff;stroke-width:2.6px;stroke-linejoin:round;">(reling 1,1 m)</text>
+<circle cx="1167.2" cy="452.8" r="4" fill="#ffe14a" stroke="#7a5d00" stroke-width="1"/>
+<text x="1172.7" y="448.8" text-anchor="start" style="font-size:7.5px;fill:#7a5d00;font-weight:700;paint-order:stroke;stroke:#ffffff;stroke-width:2.6px;stroke-linejoin:round;">L3</text>
+<circle cx="1076.0" cy="259.6" r="4" fill="#ffe14a" stroke="#7a5d00" stroke-width="1"/>
+<text x="1081.5" y="255.6" text-anchor="start" style="font-size:7.5px;fill:#7a5d00;font-weight:700;paint-order:stroke;stroke:#ffffff;stroke-width:2.6px;stroke-linejoin:round;">L4</text>
+<circle cx="1193.6" cy="400.0" r="7.2" fill="#8b5fbf" stroke="#1f2a33" stroke-width="0.9"/>
+<text x="1193.6" y="402.9" text-anchor="middle" style="font-size:7.6px;font-weight:700;fill:#ffffff">19</text>
+<text x="1193.6" y="390.0" text-anchor="middle" style="font-size:8px;fill:#1f2a33;paint-order:stroke;stroke:#ffffff;stroke-width:2.6px;stroke-linejoin:round;">kaart-lengte</text>
+<circle cx="1256.0" cy="400.0" r="7.2" fill="#8b5fbf" stroke="#1f2a33" stroke-width="0.9"/>
+<text x="1256.0" y="402.9" text-anchor="middle" style="font-size:7.6px;font-weight:700;fill:#ffffff">20</text>
+<text x="1256.0" y="390.0" text-anchor="middle" style="font-size:8px;fill:#1f2a33;paint-order:stroke;stroke:#ffffff;stroke-width:2.6px;stroke-linejoin:round;">kaart-opp</text>
+<circle cx="1318.4" cy="400.0" r="7.2" fill="#8b5fbf" stroke="#1f2a33" stroke-width="0.9"/>
+<text x="1318.4" y="402.9" text-anchor="middle" style="font-size:7.6px;font-weight:700;fill:#ffffff">21</text>
+<text x="1318.4" y="390.0" text-anchor="middle" style="font-size:8px;fill:#1f2a33;paint-order:stroke;stroke:#ffffff;stroke-width:2.6px;stroke-linejoin:round;">kaart-inhoud</text>
+<circle cx="1193.6" cy="424.0" r="7.2" fill="#8b5fbf" stroke="#1f2a33" stroke-width="0.9"/>
+<text x="1193.6" y="426.9" text-anchor="middle" style="font-size:7.6px;font-weight:700;fill:#ffffff">22</text>
+<text x="1193.6" y="441.0" text-anchor="middle" style="font-size:8px;fill:#1f2a33;paint-order:stroke;stroke:#ffffff;stroke-width:2.6px;stroke-linejoin:round;">kaart-liter1</text>
+<circle cx="1256.0" cy="424.0" r="7.2" fill="#8b5fbf" stroke="#1f2a33" stroke-width="0.9"/>
+<text x="1256.0" y="426.9" text-anchor="middle" style="font-size:7.6px;font-weight:700;fill:#ffffff">23</text>
+<text x="1256.0" y="441.0" text-anchor="middle" style="font-size:8px;fill:#1f2a33;paint-order:stroke;stroke:#ffffff;stroke-width:2.6px;stroke-linejoin:round;">kaart-liter2</text>
+<circle cx="1318.4" cy="424.0" r="7.2" fill="#8b5fbf" stroke="#1f2a33" stroke-width="0.9"/>
+<text x="1318.4" y="426.9" text-anchor="middle" style="font-size:7.6px;font-weight:700;fill:#ffffff">24</text>
+<text x="1318.4" y="441.0" text-anchor="middle" style="font-size:8px;fill:#1f2a33;paint-order:stroke;stroke:#ffffff;stroke-width:2.6px;stroke-linejoin:round;">kaart-gewicht</text>
+<circle cx="987.2" cy="227.2" r="7.2" fill="#8b5fbf" stroke="#1f2a33" stroke-width="0.9"/>
+<text x="987.2" y="230.1" text-anchor="middle" style="font-size:7.6px;font-weight:700;fill:#ffffff">27</text>
+<text x="987.2" y="244.2" text-anchor="middle" style="font-size:8px;fill:#1f2a33;paint-order:stroke;stroke:#ffffff;stroke-width:2.6px;stroke-linejoin:round;">zandbak</text>
+<circle cx="1049.6" cy="236.8" r="7.2" fill="#8b5fbf" stroke="#1f2a33" stroke-width="0.9"/>
+<text x="1049.6" y="239.7" text-anchor="middle" style="font-size:7.6px;font-weight:700;fill:#ffffff">28</text>
+<text x="1049.6" y="253.8" text-anchor="middle" style="font-size:8px;fill:#1f2a33;paint-order:stroke;stroke:#ffffff;stroke-width:2.6px;stroke-linejoin:round;">bag-in-box</text>
+<circle cx="1068.8" cy="155.2" r="7.2" fill="#8b5fbf" stroke="#1f2a33" stroke-width="0.9"/>
+<text x="1068.8" y="158.1" text-anchor="middle" style="font-size:7.6px;font-weight:700;fill:#ffffff">34</text>
+<text x="1068.8" y="172.2" text-anchor="middle" style="font-size:8px;fill:#1f2a33;paint-order:stroke;stroke:#ffffff;stroke-width:2.6px;stroke-linejoin:round;">kaart24-2</text>
+<circle cx="1232.0" cy="347.2" r="7.2" fill="#8b5fbf" stroke="#1f2a33" stroke-width="0.9"/>
+<text x="1232.0" y="350.1" text-anchor="middle" style="font-size:7.6px;font-weight:700;fill:#ffffff">35</text>
+<text x="1222.5" y="350.2" text-anchor="end" style="font-size:8px;fill:#1f2a33;paint-order:stroke;stroke:#ffffff;stroke-width:2.6px;stroke-linejoin:round;">kaart24-3</text>
+</g>
+<rect x="920.0" y="100.0" width="456.0" height="384.0" fill="none" stroke="#1f2a33" stroke-width="1.2"/>
+<text x="1016.0" y="496.0" text-anchor="middle" style="font-size:8px;fill:#5a6570;">x -20</text>
+<text x="1136.0" y="496.0" text-anchor="middle" style="font-size:8px;fill:#5a6570;">x -10</text>
+<text x="1256.0" y="496.0" text-anchor="middle" style="font-size:8px;fill:#5a6570;">x 0</text>
+<text x="1376.0" y="496.0" text-anchor="middle" style="font-size:8px;fill:#5a6570;">x 10</text>
+<text x="917.0" y="199.0" text-anchor="end" style="font-size:8px;fill:#5a6570;">z 0</text>
+<text x="917.0" y="319.0" text-anchor="end" style="font-size:8px;fill:#5a6570;">z 10</text>
+<text x="917.0" y="439.0" text-anchor="end" style="font-size:8px;fill:#5a6570;">z 20</text>
+<text x="1392.0" y="104.0" text-anchor="start" style="font-size:11.5px;fill:#1f2a33;font-weight:700;">Fases (zone en route)</text>
+<rect x="1392.0" y="113.0" width="22.0" height="12.0" fill="#f8ebc4" stroke="#c8961e" stroke-width="1.6"/>
+<line x1="1420" y1="119" x2="1442" y2="119" stroke="#c8961e" stroke-width="2.6" marker-end="url(#pijl-terugblik)"/>
+<text x="1448.0" y="123.0" text-anchor="start" style="font-size:9.5px;fill:#1f2a33;">Start (Terugblik + Doel)</text>
+<rect x="1392.0" y="132.0" width="22.0" height="12.0" fill="#d4e3f5" stroke="#3f78bf" stroke-width="1.6"/>
+<line x1="1420" y1="138" x2="1442" y2="138" stroke="#3f78bf" stroke-width="2.6" marker-end="url(#pijl-instructie)"/>
+<text x="1448.0" y="142.0" text-anchor="start" style="font-size:9.5px;fill:#1f2a33;">Uitleg</text>
+<rect x="1392.0" y="151.0" width="22.0" height="12.0" fill="#cdeee8" stroke="#23897d" stroke-width="1.6"/>
+<line x1="1420" y1="157" x2="1442" y2="157" stroke="#23897d" stroke-width="2.6" marker-end="url(#pijl-begeleid)"/>
+<text x="1448.0" y="161.0" text-anchor="start" style="font-size:9.5px;fill:#1f2a33;">Samen oefenen</text>
+<rect x="1392.0" y="170.0" width="22.0" height="12.0" fill="#fde3c8" stroke="#d9781c" stroke-width="1.6"/>
+<line x1="1420" y1="176" x2="1442" y2="176" stroke="#d9781c" stroke-width="2.6" marker-end="url(#pijl-zelfstandig)"/>
+<text x="1448.0" y="180.0" text-anchor="start" style="font-size:9.5px;fill:#1f2a33;">Zelf doen (klussen + keuze)</text>
+<rect x="1392.0" y="189.0" width="22.0" height="12.0" fill="#f7d0d5" stroke="#c43c4f" stroke-width="1.6"/>
+<line x1="1420" y1="195" x2="1442" y2="195" stroke="#c43c4f" stroke-width="2.6" marker-end="url(#pijl-evaluatie)"/>
+<text x="1448.0" y="199.0" text-anchor="start" style="font-size:9.5px;fill:#1f2a33;">Eindcheck</text>
+<rect x="1392.0" y="208.0" width="22.0" height="12.0" fill="#d3efd6" stroke="#2f8a41" stroke-width="1.6"/>
+<line x1="1420" y1="214" x2="1442" y2="214" stroke="#2f8a41" stroke-width="2.6" marker-end="url(#pijl-klaar)"/>
+<text x="1448.0" y="218.0" text-anchor="start" style="font-size:9.5px;fill:#1f2a33;">Klaar (uitgang)</text>
+<text x="1392.0" y="242.0" text-anchor="start" style="font-size:11.5px;fill:#1f2a33;font-weight:700;">Klussen (rand + kluis)</text>
+<rect x="1392.0" y="251.0" width="22.0" height="12.0" fill="#ffffff" stroke="#3b8ee8" stroke-width="2.4"/>
+<text x="1422.0" y="261.0" text-anchor="start" style="font-size:9.2px;fill:#1f2a33;">lengte: Meten op de werf</text>
+<rect x="1392.0" y="269.0" width="22.0" height="12.0" fill="#ffffff" stroke="#1fa597" stroke-width="2.4"/>
+<text x="1422.0" y="279.0" text-anchor="start" style="font-size:9.2px;fill:#1f2a33;">inhoud: Schenken op de steigers</text>
+<rect x="1392.0" y="287.0" width="22.0" height="12.0" fill="#ffffff" stroke="#e0a800" stroke-width="2.4"/>
+<text x="1422.0" y="297.0" text-anchor="start" style="font-size:9.2px;fill:#1f2a33;">gewicht: Wegen in de loods</text>
+<text x="1392.0" y="320.0" text-anchor="start" style="font-size:11.5px;fill:#1f2a33;font-weight:700;">Stippen (stations)</text>
+<circle cx="1400" cy="335" r="6.5" fill="#c8961e" stroke="#1f2a33" stroke-width="0.9"/>
+<text x="1414.0" y="339.0" text-anchor="start" style="font-size:9.2px;fill:#1f2a33;">terugblik</text>
+<circle cx="1400" cy="352" r="6.5" fill="#3f78bf" stroke="#1f2a33" stroke-width="0.9"/>
+<text x="1414.0" y="356.0" text-anchor="start" style="font-size:9.2px;fill:#1f2a33;">uitleg</text>
+<circle cx="1400" cy="369" r="6.5" fill="#23897d" stroke="#1f2a33" stroke-width="0.9"/>
+<text x="1414.0" y="373.0" text-anchor="start" style="font-size:9.2px;fill:#1f2a33;">samen oefenen</text>
+<circle cx="1400" cy="386" r="6.5" fill="#3b8ee8" stroke="#1f2a33" stroke-width="0.9"/>
+<text x="1414.0" y="390.0" text-anchor="start" style="font-size:9.2px;fill:#1f2a33;">klus (kleur van de klus)</text>
+<circle cx="1400" cy="403" r="6.5" fill="#8b5fbf" stroke="#1f2a33" stroke-width="0.9"/>
+<text x="1414.0" y="407.0" text-anchor="start" style="font-size:9.2px;fill:#1f2a33;">keuze (expert, puzzel, praktijk)</text>
+<circle cx="1400" cy="420" r="6.5" fill="#c43c4f" stroke="#1f2a33" stroke-width="0.9"/>
+<text x="1414.0" y="424.0" text-anchor="start" style="font-size:9.2px;fill:#1f2a33;">eindcheck blok 1</text>
+<circle cx="1400" cy="437" r="6.5" fill="#fff" stroke="#c43c4f" stroke-width="2.2"/>
+<text x="1414.0" y="441.0" text-anchor="start" style="font-size:9.2px;fill:#1f2a33;">eindcheck blok 2</text>
+<text x="920.0" y="514.0" text-anchor="start" style="font-size:11.5px;fill:#1f2a33;font-weight:700;">Symbolen</text>
+<rect x="920.0" y="524.0" width="24.0" height="14.0" fill="#fde3c8" stroke="#2b2b2b" stroke-width="2.6"/>
+<text x="952.0" y="535.0" text-anchor="start" style="font-size:9.2px;fill:#1f2a33;">binnenruimte (dikke lijn = muur)</text>
+<rect x="1178.0" y="524.0" width="24.0" height="14.0" fill="#f8ebc4" stroke="#6f6a60" stroke-width="0.9" stroke-dasharray="4 2.5"/>
+<text x="1210.0" y="535.0" text-anchor="start" style="font-size:9.2px;fill:#1f2a33;">buitenruimte (stippellijn)</text>
+<line x1="1436" y1="531" x2="1460" y2="531" stroke="#4d555e" stroke-width="2.2"/>
+<circle cx="1441" cy="531" r="1.7" fill="#1f2a33"/>
+<circle cx="1448" cy="531" r="1.7" fill="#1f2a33"/>
+<circle cx="1455" cy="531" r="1.7" fill="#1f2a33"/>
+<text x="1468.0" y="535.0" text-anchor="start" style="font-size:9.2px;fill:#1f2a33;">kaderand met bolders (om de 4 m)</text>
+<rect x="920.0" y="550.0" width="24.0" height="14.0" fill="url(#golf)" stroke="#5f8fa6" stroke-width="0.8"/>
+<text x="952.0" y="561.0" text-anchor="start" style="font-size:9.2px;fill:#1f2a33;">water</text>
+<rect x="1178.0" y="550.0" width="24.0" height="14.0" fill="url(#vlonder)" stroke="#6f6a60" stroke-width="0.8"/>
+<text x="1210.0" y="561.0" text-anchor="start" style="font-size:9.2px;fill:#1f2a33;">steiger, loopbrug, loopplank</text>
+<line x1="1436" y1="557" x2="1460" y2="557" stroke="#2b2b2b" stroke-width="1.2" stroke-dasharray="2 3"/>
+<rect x="1435.0" y="554.0" width="6.0" height="6.0" fill="#2b2b2b" stroke="none" stroke-width="1.0"/>
+<rect x="1445.0" y="554.0" width="6.0" height="6.0" fill="#2b2b2b" stroke="none" stroke-width="1.0"/>
+<rect x="1455.0" y="554.0" width="6.0" height="6.0" fill="#2b2b2b" stroke="none" stroke-width="1.0"/>
+<text x="1468.0" y="561.0" text-anchor="start" style="font-size:9.2px;fill:#1f2a33;">open zijde met kolommen</text>
+<rect x="920.0" y="580.0" width="5.5" height="6.0" fill="#3f78bf" stroke="none" stroke-width="1.0"/>
+<rect x="926.5" y="580.0" width="5.5" height="6.0" fill="#23897d" stroke="none" stroke-width="1.0"/>
+<rect x="933.0" y="580.0" width="5.5" height="6.0" fill="#d9781c" stroke="none" stroke-width="1.0"/>
+<rect x="939.5" y="580.0" width="5.5" height="6.0" fill="#c43c4f" stroke="none" stroke-width="1.0"/>
+<text x="952.0" y="587.0" text-anchor="start" style="font-size:9.2px;fill:#1f2a33;">doorgang (kleur = fase waarin hij opengaat)</text>
+<rect x="1178.0" y="577.0" width="24.0" height="11.0" fill="#efe7d6" stroke="#3a3a3a" stroke-width="0.9"/>
+<line x1="1181" y1="582.5" x2="1199" y2="582.5" stroke="#1f2a33" stroke-width="1.2" marker-end="url(#pijl-zelfstandig)"/>
+<text x="1210.0" y="587.0" text-anchor="start" style="font-size:9.2px;fill:#1f2a33;">trap (pijl = omhoog)</text>
+<rect x="1441" y="576" width="14" height="14" rx="2" fill="#2ec4b6" stroke="#1f2a33" stroke-width="1.4"/>
+<text x="1468.0" y="587.0" text-anchor="start" style="font-size:9.2px;fill:#1f2a33;">kluis (kleur = klus)</text>
+<circle cx="932" cy="609" r="4" fill="#ffe14a" stroke="#7a5d00" stroke-width="1"/>
+<text x="952.0" y="613.0" text-anchor="start" style="font-size:9.2px;fill:#1f2a33;">lampje (verstopte tip)</text>
+<polygon points="1190,600 1197,615 1190,611 1183,615" fill="#c8961e" stroke="#1f2a33" stroke-width="1"/>
+<text x="1210.0" y="613.0" text-anchor="start" style="font-size:9.2px;fill:#1f2a33;">startplek + kijkrichting</text>
+<rect x="1438.0" y="606.0" width="20.0" height="6.0" fill="#2f8a41" stroke="#1f2a33" stroke-width="1"/>
+<circle cx="1448" cy="609" r="5" fill="#1f2a33"/>
+<circle cx="1445.5" cy="609" r="1.1" fill="#5aa9ff"/>
+<circle cx="1448.0" cy="609" r="1.1" fill="#2ec4b6"/>
+<circle cx="1450.5" cy="609" r="1.1" fill="#ffc94d"/>
+<text x="1468.0" y="613.0" text-anchor="start" style="font-size:9.2px;fill:#1f2a33;">uitgang: poort + seinmast</text>
+<text x="920.0" y="644.0" text-anchor="start" style="font-size:11.5px;fill:#1f2a33;font-weight:700;">Stations (nr · id · zone) — opdrachten en reden: zie wereld1.md § 7</text>
+<circle cx="927" cy="658.5" r="6.4" fill="#c8961e" stroke="#1f2a33" stroke-width="0.8"/>
+<text x="927" y="661.2" text-anchor="middle" style="font-size:7px;font-weight:700;fill:#fff">1</text>
+<text x="937.0" y="662.0" text-anchor="start" style="font-size:8.8px;fill:#1f2a33;">terugblik · kadeplein</text>
+<circle cx="927" cy="675.7" r="6.4" fill="#3f78bf" stroke="#1f2a33" stroke-width="0.8"/>
+<text x="927" y="678.4000000000001" text-anchor="middle" style="font-size:7px;font-weight:700;fill:#fff">2</text>
+<text x="937.0" y="679.2" text-anchor="start" style="font-size:8.8px;fill:#1f2a33;">uitleg · havenmeesterij</text>
+<circle cx="927" cy="692.9" r="6.4" fill="#23897d" stroke="#1f2a33" stroke-width="0.8"/>
+<text x="927" y="695.6" text-anchor="middle" style="font-size:7px;font-weight:700;fill:#fff">3</text>
+<text x="937.0" y="696.4" text-anchor="start" style="font-size:8.8px;fill:#1f2a33;">meetkist · visafslag</text>
+<circle cx="927" cy="710.1" r="6.4" fill="#23897d" stroke="#1f2a33" stroke-width="0.8"/>
+<text x="927" y="712.8000000000001" text-anchor="middle" style="font-size:7px;font-weight:700;fill:#fff">4</text>
+<text x="937.0" y="713.6" text-anchor="start" style="font-size:8.8px;fill:#1f2a33;">meetlat · visafslag</text>
+<circle cx="927" cy="727.3" r="6.4" fill="#23897d" stroke="#1f2a33" stroke-width="0.8"/>
+<text x="927" y="730.0" text-anchor="middle" style="font-size:7px;font-weight:700;fill:#fff">5</text>
+<text x="937.0" y="730.8" text-anchor="start" style="font-size:8.8px;fill:#1f2a33;">maatbeker · visafslag</text>
+<circle cx="927" cy="744.5" r="6.4" fill="#23897d" stroke="#1f2a33" stroke-width="0.8"/>
+<text x="927" y="747.2" text-anchor="middle" style="font-size:7px;font-weight:700;fill:#fff">6</text>
+<text x="937.0" y="748.0" text-anchor="start" style="font-size:8.8px;fill:#1f2a33;">paddenstoel · visafslag</text>
+<circle cx="927" cy="761.7" r="6.4" fill="#23897d" stroke="#1f2a33" stroke-width="0.8"/>
+<text x="927" y="764.4000000000001" text-anchor="middle" style="font-size:7px;font-weight:700;fill:#fff">7</text>
+<text x="937.0" y="765.2" text-anchor="start" style="font-size:8.8px;fill:#1f2a33;">suikerpak · visafslag</text>
+<circle cx="927" cy="778.9" r="6.4" fill="#3b8ee8" stroke="#1f2a33" stroke-width="0.8"/>
+<text x="927" y="781.6" text-anchor="middle" style="font-size:7px;font-weight:700;fill:#fff">8</text>
+<text x="937.0" y="782.4" text-anchor="start" style="font-size:8.8px;fill:#1f2a33;">snelwegbord · werf helling</text>
+<circle cx="927" cy="796.1" r="6.4" fill="#3b8ee8" stroke="#1f2a33" stroke-width="0.8"/>
+<text x="927" y="798.8000000000001" text-anchor="middle" style="font-size:7px;font-weight:700;fill:#fff">9</text>
+<text x="937.0" y="799.6" text-anchor="start" style="font-size:8.8px;fill:#1f2a33;">werkplaats · werf werkplaats</text>
+<circle cx="927" cy="813.3" r="6.4" fill="#3b8ee8" stroke="#1f2a33" stroke-width="0.8"/>
+<text x="927" y="816.0" text-anchor="middle" style="font-size:7px;font-weight:700;fill:#fff">10</text>
+<text x="937.0" y="816.8" text-anchor="start" style="font-size:8.8px;fill:#1f2a33;">hakken · werf werkplaats</text>
+<circle cx="927" cy="830.5" r="6.4" fill="#3b8ee8" stroke="#1f2a33" stroke-width="0.8"/>
+<text x="927" y="833.2" text-anchor="middle" style="font-size:7px;font-weight:700;fill:#fff">11</text>
+<text x="937.0" y="834.0" text-anchor="start" style="font-size:8.8px;fill:#1f2a33;">omleiding · werf helling</text>
+<circle cx="927" cy="847.7" r="6.4" fill="#1fa597" stroke="#1f2a33" stroke-width="0.8"/>
+<text x="927" y="850.4000000000001" text-anchor="middle" style="font-size:7px;font-weight:700;fill:#fff">12</text>
+<text x="937.0" y="851.2" text-anchor="start" style="font-size:8.8px;fill:#1f2a33;">kombuis · werkponton</text>
+<circle cx="927" cy="864.9" r="6.4" fill="#1fa597" stroke="#1f2a33" stroke-width="0.8"/>
+<text x="927" y="867.6" text-anchor="middle" style="font-size:7px;font-weight:700;fill:#fff">13</text>
+<text x="937.0" y="868.4" text-anchor="start" style="font-size:8.8px;fill:#1f2a33;">cocktail · caféponton</text>
+<circle cx="927" cy="882.1" r="6.4" fill="#1fa597" stroke="#1f2a33" stroke-width="0.8"/>
+<text x="927" y="884.8000000000001" text-anchor="middle" style="font-size:7px;font-weight:700;fill:#fff">14</text>
+<text x="937.0" y="885.6" text-anchor="start" style="font-size:8.8px;fill:#1f2a33;">badje · kopponton</text>
+<circle cx="927" cy="899.3" r="6.4" fill="#1fa597" stroke="#1f2a33" stroke-width="0.8"/>
+<text x="927" y="902.0" text-anchor="middle" style="font-size:7px;font-weight:700;fill:#fff">15</text>
+<text x="937.0" y="902.8" text-anchor="start" style="font-size:8.8px;fill:#1f2a33;">smoothie · kopponton</text>
+<circle cx="1185" cy="658.5" r="6.4" fill="#e0a800" stroke="#1f2a33" stroke-width="0.8"/>
+<text x="1185" y="661.2" text-anchor="middle" style="font-size:7px;font-weight:700;fill:#fff">16</text>
+<text x="1195.0" y="662.0" text-anchor="start" style="font-size:8.8px;fill:#1f2a33;">rijstkom · kantine</text>
+<circle cx="1185" cy="675.7" r="6.4" fill="#e0a800" stroke="#1f2a33" stroke-width="0.8"/>
+<text x="1185" y="678.4000000000001" text-anchor="middle" style="font-size:7px;font-weight:700;fill:#fff">17</text>
+<text x="1195.0" y="679.2" text-anchor="start" style="font-size:8.8px;fill:#1f2a33;">weegschaal · weegloods</text>
+<circle cx="1185" cy="692.9" r="6.4" fill="#e0a800" stroke="#1f2a33" stroke-width="0.8"/>
+<text x="1185" y="695.6" text-anchor="middle" style="font-size:7px;font-weight:700;fill:#fff">18</text>
+<text x="1195.0" y="696.4" text-anchor="start" style="font-size:8.8px;fill:#1f2a33;">klontjes · weegloods</text>
+<circle cx="1185" cy="710.1" r="6.4" fill="#8b5fbf" stroke="#1f2a33" stroke-width="0.8"/>
+<text x="1185" y="712.8000000000001" text-anchor="middle" style="font-size:7px;font-weight:700;fill:#fff">19</text>
+<text x="1195.0" y="713.6" text-anchor="start" style="font-size:8.8px;fill:#1f2a33;">kaart-lengte · kaartenkamer (v1)</text>
+<circle cx="1185" cy="727.3" r="6.4" fill="#8b5fbf" stroke="#1f2a33" stroke-width="0.8"/>
+<text x="1185" y="730.0" text-anchor="middle" style="font-size:7px;font-weight:700;fill:#fff">20</text>
+<text x="1195.0" y="730.8" text-anchor="start" style="font-size:8.8px;fill:#1f2a33;">kaart-opp · kaartenkamer (v1)</text>
+<circle cx="1185" cy="744.5" r="6.4" fill="#8b5fbf" stroke="#1f2a33" stroke-width="0.8"/>
+<text x="1185" y="747.2" text-anchor="middle" style="font-size:7px;font-weight:700;fill:#fff">21</text>
+<text x="1195.0" y="748.0" text-anchor="start" style="font-size:8.8px;fill:#1f2a33;">kaart-inhoud · kaartenkamer (v1)</text>
+<circle cx="1185" cy="761.7" r="6.4" fill="#8b5fbf" stroke="#1f2a33" stroke-width="0.8"/>
+<text x="1185" y="764.4000000000001" text-anchor="middle" style="font-size:7px;font-weight:700;fill:#fff">22</text>
+<text x="1195.0" y="765.2" text-anchor="start" style="font-size:8.8px;fill:#1f2a33;">kaart-liter1 · kaartenkamer (v1)</text>
+<circle cx="1185" cy="778.9" r="6.4" fill="#8b5fbf" stroke="#1f2a33" stroke-width="0.8"/>
+<text x="1185" y="781.6" text-anchor="middle" style="font-size:7px;font-weight:700;fill:#fff">23</text>
+<text x="1195.0" y="782.4" text-anchor="start" style="font-size:8.8px;fill:#1f2a33;">kaart-liter2 · kaartenkamer (v1)</text>
+<circle cx="1185" cy="796.1" r="6.4" fill="#8b5fbf" stroke="#1f2a33" stroke-width="0.8"/>
+<text x="1185" y="798.8000000000001" text-anchor="middle" style="font-size:7px;font-weight:700;fill:#fff">24</text>
+<text x="1195.0" y="799.6" text-anchor="start" style="font-size:8.8px;fill:#1f2a33;">kaart-gewicht · kaartenkamer (v1)</text>
+<circle cx="1185" cy="813.3" r="6.4" fill="#8b5fbf" stroke="#1f2a33" stroke-width="0.8"/>
+<text x="1185" y="816.0" text-anchor="middle" style="font-size:7px;font-weight:700;fill:#fff">25</text>
+<text x="1195.0" y="816.8" text-anchor="start" style="font-size:8.8px;fill:#1f2a33;">kabelhaspel · pakhuis</text>
+<circle cx="1185" cy="830.5" r="6.4" fill="#8b5fbf" stroke="#1f2a33" stroke-width="0.8"/>
+<text x="1185" y="833.2" text-anchor="middle" style="font-size:7px;font-weight:700;fill:#fff">26</text>
+<text x="1195.0" y="834.0" text-anchor="start" style="font-size:8.8px;fill:#1f2a33;">cement · pakhuis</text>
+<circle cx="1185" cy="847.7" r="6.4" fill="#8b5fbf" stroke="#1f2a33" stroke-width="0.8"/>
+<text x="1185" y="850.4000000000001" text-anchor="middle" style="font-size:7px;font-weight:700;fill:#fff">27</text>
+<text x="1195.0" y="851.2" text-anchor="start" style="font-size:8.8px;fill:#1f2a33;">zandbak · zolder (v1)</text>
+<circle cx="1185" cy="864.9" r="6.4" fill="#8b5fbf" stroke="#1f2a33" stroke-width="0.8"/>
+<text x="1185" y="867.6" text-anchor="middle" style="font-size:7px;font-weight:700;fill:#fff">28</text>
+<text x="1195.0" y="868.4" text-anchor="start" style="font-size:8.8px;fill:#1f2a33;">bag-in-box · zolder (v1)</text>
+<circle cx="1185" cy="882.1" r="6.4" fill="#8b5fbf" stroke="#1f2a33" stroke-width="0.8"/>
+<text x="1185" y="884.8000000000001" text-anchor="middle" style="font-size:7px;font-weight:700;fill:#fff">29</text>
+<text x="1195.0" y="885.6" text-anchor="start" style="font-size:8.8px;fill:#1f2a33;">buitenmissie · kadeplein</text>
+<circle cx="1185" cy="899.3" r="6.4" fill="#8b5fbf" stroke="#1f2a33" stroke-width="0.8"/>
+<text x="1185" y="902.0" text-anchor="middle" style="font-size:7px;font-weight:700;fill:#fff">30</text>
+<text x="1195.0" y="902.8" text-anchor="start" style="font-size:8.8px;fill:#1f2a33;">champagne · werf helling</text>
+<circle cx="1443" cy="658.5" r="6.4" fill="#8b5fbf" stroke="#1f2a33" stroke-width="0.8"/>
+<text x="1443" y="661.2" text-anchor="middle" style="font-size:7px;font-weight:700;fill:#fff">31</text>
+<text x="1453.0" y="662.0" text-anchor="start" style="font-size:8.8px;fill:#1f2a33;">auto · kantine</text>
+<circle cx="1443" cy="675.7" r="6.4" fill="#8b5fbf" stroke="#1f2a33" stroke-width="0.8"/>
+<text x="1443" y="678.4000000000001" text-anchor="middle" style="font-size:7px;font-weight:700;fill:#fff">32</text>
+<text x="1453.0" y="679.2" text-anchor="start" style="font-size:8.8px;fill:#1f2a33;">weerstation · havenhoofd</text>
+<circle cx="1443" cy="692.9" r="6.4" fill="#8b5fbf" stroke="#1f2a33" stroke-width="0.8"/>
+<text x="1443" y="695.6" text-anchor="middle" style="font-size:7px;font-weight:700;fill:#fff">33</text>
+<text x="1453.0" y="696.4" text-anchor="start" style="font-size:8.8px;fill:#1f2a33;">kaart24-1 · havenhoofd</text>
+<circle cx="1443" cy="710.1" r="6.4" fill="#8b5fbf" stroke="#1f2a33" stroke-width="0.8"/>
+<text x="1443" y="712.8000000000001" text-anchor="middle" style="font-size:7px;font-weight:700;fill:#fff">34</text>
+<text x="1453.0" y="713.6" text-anchor="start" style="font-size:8.8px;fill:#1f2a33;">kaart24-2 · zolder (v1)</text>
+<circle cx="1443" cy="727.3" r="6.4" fill="#8b5fbf" stroke="#1f2a33" stroke-width="0.8"/>
+<text x="1443" y="730.0" text-anchor="middle" style="font-size:7px;font-weight:700;fill:#fff">35</text>
+<text x="1453.0" y="730.8" text-anchor="start" style="font-size:8.8px;fill:#1f2a33;">kaart24-3 · balkon (v1)</text>
+<circle cx="1443" cy="744.5" r="6.4" fill="#c43c4f" stroke="#1f2a33" stroke-width="0.8"/>
+<text x="1443" y="747.2" text-anchor="middle" style="font-size:7px;font-weight:700;fill:#fff">36</text>
+<text x="1453.0" y="748.0" text-anchor="start" style="font-size:8.8px;fill:#1f2a33;">koffie · vertrekloods</text>
+<circle cx="1443" cy="761.7" r="6.4" fill="#c43c4f" stroke="#1f2a33" stroke-width="0.8"/>
+<text x="1443" y="764.4000000000001" text-anchor="middle" style="font-size:7px;font-weight:700;fill:#fff">37</text>
+<text x="1453.0" y="765.2" text-anchor="start" style="font-size:8.8px;fill:#1f2a33;">bessen · vertrekloods</text>
+<circle cx="1443" cy="778.9" r="6.4" fill="#c43c4f" stroke="#1f2a33" stroke-width="0.8"/>
+<text x="1443" y="781.6" text-anchor="middle" style="font-size:7px;font-weight:700;fill:#fff">38</text>
+<text x="1453.0" y="782.4" text-anchor="start" style="font-size:8.8px;fill:#1f2a33;">goud · vertrekloods</text>
+<circle cx="1443" cy="796.1" r="6.4" fill="#c43c4f" stroke="#1f2a33" stroke-width="0.8"/>
+<text x="1443" y="798.8000000000001" text-anchor="middle" style="font-size:7px;font-weight:700;fill:#fff">39</text>
+<text x="1453.0" y="799.6" text-anchor="start" style="font-size:8.8px;fill:#1f2a33;">vuistregel · vertrekloods</text>
+<circle cx="1443" cy="813.3" r="6.4" fill="#c43c4f" stroke="#1f2a33" stroke-width="0.8"/>
+<text x="1443" y="816.0" text-anchor="middle" style="font-size:7px;font-weight:700;fill:#fff">40</text>
+<text x="1453.0" y="816.8" text-anchor="start" style="font-size:8.8px;fill:#1f2a33;">pont · vertrekloods</text>
+<circle cx="1443" cy="830.5" r="6.4" fill="#fff" stroke="#c43c4f" stroke-width="2"/>
+<text x="1443" y="833.2" text-anchor="middle" style="font-size:7px;font-weight:700;fill:#c43c4f">41</text>
+<text x="1453.0" y="834.0" text-anchor="start" style="font-size:8.8px;fill:#1f2a33;">regenmeter · vertrekkade</text>
+<circle cx="1443" cy="847.7" r="6.4" fill="#fff" stroke="#c43c4f" stroke-width="2"/>
+<text x="1443" y="850.4000000000001" text-anchor="middle" style="font-size:7px;font-weight:700;fill:#c43c4f">42</text>
+<text x="1453.0" y="851.2" text-anchor="start" style="font-size:8.8px;fill:#1f2a33;">parkeerschijf · vertrekkade</text>
+<circle cx="1443" cy="864.9" r="6.4" fill="#fff" stroke="#c43c4f" stroke-width="2"/>
+<text x="1443" y="867.6" text-anchor="middle" style="font-size:7px;font-weight:700;fill:#c43c4f">43</text>
+<text x="1453.0" y="868.4" text-anchor="start" style="font-size:8.8px;fill:#1f2a33;">klontjesdoos · vertrekkade</text>
+<circle cx="1443" cy="882.1" r="6.4" fill="#fff" stroke="#c43c4f" stroke-width="2"/>
+<text x="1443" y="884.8000000000001" text-anchor="middle" style="font-size:7px;font-weight:700;fill:#c43c4f">44</text>
+<text x="1453.0" y="885.6" text-anchor="start" style="font-size:8.8px;fill:#1f2a33;">watervat · vertrekkade</text>
+<circle cx="1443" cy="899.3" r="6.4" fill="#fff" stroke="#c43c4f" stroke-width="2"/>
+<text x="1443" y="902.0" text-anchor="middle" style="font-size:7px;font-weight:700;fill:#c43c4f">45</text>
+<text x="1453.0" y="902.8" text-anchor="start" style="font-size:8.8px;fill:#1f2a33;">mondwater · vertrekkade</text>
+<text x="920.0" y="926.0" text-anchor="start" style="font-size:9px;fill:#1f2a33;">Kluizen: K1 lengte (werkplaats) · K2 inhoud (kopponton) · K3 gewicht (weegloods).</text>
+<text x="920.0" y="941.0" text-anchor="start" style="font-size:9px;fill:#1f2a33;">Lampjes: L1 kadeplein · L2 visafslag · L3 kaartenkamer (v1) · L4 zolder (v1) · L5 werkplaats · L6 havenhoofd · L7 caféponton · L8 weegloods.</text>
+<text x="920.0" y="956.0" text-anchor="start" style="font-size:9px;fill:#4a5560;">Doorgangen D1–D15 en trappen T1–T2: zie wereld1.md § 5.2. Klus-stations blijven per klus bij elkaar; keuzestations liggen verspreid (ontdekken).</text>
+<text x="40.0" y="934.0" text-anchor="start" style="font-size:11.5px;fill:#1f2a33;font-weight:700;">Doorsnede over de havenkom (x ≈ 0), van zuid (links) naar noord (rechts) · hoogtes in m · 1 m = 9 px</text>
+<rect x="40.0" y="950.0" width="558.0" height="162.0" fill="#eef3f7" stroke="none" stroke-width="1.0"/>
+<polygon points="220.0,1095.8 598.0,1095.8 598.0,1112.0 220.0,1112.0" fill="#a9d0e0" stroke="none" stroke-width="1.0"/>
+<polygon points="40.0,1085.0 220.0,1085.0 220.0,1112.0 40.0,1112.0" fill="#cfc4ae" stroke="none" stroke-width="1.0"/>
+<polygon points="512.5,1095.8 512.5,1059.8 571.0,1059.8 571.0,1095.8" fill="#9aa7b8" stroke="none" stroke-width="1.0" fill-opacity="0.75"/>
+<polygon points="548.5,1059.8 548.5,1004.0 567.4,1004.0 567.4,1059.8" fill="#c3cbd6" stroke="none" stroke-width="1.0" fill-opacity="0.85"/>
+<text x="531.4" y="991.4" text-anchor="middle" style="font-size:7.5px;fill:#4a5560;font-style:italic;paint-order:stroke;stroke:#ffffff;stroke-width:2.6px;stroke-linejoin:round;">De Eenheid (achter, x 8–38)</text>
+<polygon points="562.0,1095.8 562.0,1004.0 572.8,1004.0 572.8,1095.8" fill="#e8b0a8" stroke="none" stroke-width="1.0" fill-opacity="0.8"/>
+<text x="567.4" y="971.6" text-anchor="middle" style="font-size:7.5px;fill:#8a1f17;font-style:italic;paint-order:stroke;stroke:#ffffff;stroke-width:2.6px;stroke-linejoin:round;">vuurtoren</text>
+<text x="567.4" y="983.3" text-anchor="middle" style="font-size:7px;fill:#8a1f17;font-style:italic;paint-order:stroke;stroke:#ffffff;stroke-width:2.6px;stroke-linejoin:round;">(achter, x −11)</text>
+<polygon points="76.0,1085.0 148.0,1085.0 148.0,1020.2 76.0,1020.2" fill="#d4a48a" stroke="#5a3a26" stroke-width="1"/>
+<polyline points="76.0,1049.9 148.0,1049.9" fill="none" stroke="#5a3a26" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="76.0,1020.2 148.0,1020.2 125.5,1000.4 98.5,1000.4" fill="#3b4148" stroke="none" stroke-width="1.0"/>
+<polygon points="94.0,1020.2 130.0,1020.2 130.0,966.2 94.0,966.2" fill="#c38a6c" stroke="#5a3a26" stroke-width="1"/>
+<polygon points="94.0,966.2 130.0,966.2 112.0,959.0 112.0,959.0" fill="#3b4148" stroke="#3b4148" stroke-width="1"/>
+<circle cx="112.0" cy="986.0" r="6" fill="#fff7e0" stroke="#1f2a33" stroke-width="1"/>
+<circle cx="112.0" cy="954.5" r="3.2" fill="#d23a2a" stroke="#1f2a33" stroke-width="0.6"/>
+<polyline points="148.0,1049.9 170.5,1049.9" fill="none" stroke="#1f2a33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="170.5,1049.9 170.5,1040.0" fill="none" stroke="#1f2a33" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="155.2" y="1070.6" text-anchor="end" style="font-size:7.5px;fill:#5a3a26;font-style:italic;paint-order:stroke;stroke:#ffffff;stroke-width:2.6px;stroke-linejoin:round;">havenkantoor</text>
+<text x="135.4" y="984.2" text-anchor="start" style="font-size:7.5px;fill:#1f2a33;paint-order:stroke;stroke:#ffffff;stroke-width:2.6px;stroke-linejoin:round;">klok 11 m</text>
+<text x="119.2" y="951.8" text-anchor="start" style="font-size:7.5px;fill:#1f2a33;paint-order:stroke;stroke:#ffffff;stroke-width:2.6px;stroke-linejoin:round;">tijdbal 14 m</text>
+<text x="172.3" y="1034.6" text-anchor="end" style="font-size:7.5px;fill:#1f2a33;paint-order:stroke;stroke:#ffffff;stroke-width:2.6px;stroke-linejoin:round;">balkon</text>
+<line x1="188.5" y1="1085.0" x2="188.5" y2="1074.0" stroke="#1f2a33" stroke-width="2"/>
+<circle cx="188.5" cy="1071.0" r="3" fill="#c8961e" stroke="#1f2a33" stroke-width="0.8"/>
+<text x="188.5" y="1061.6" text-anchor="middle" style="font-size:7.5px;fill:#8a6410;font-weight:700;paint-order:stroke;stroke:#ffffff;stroke-width:2.6px;stroke-linejoin:round;">oog 1,55</text>
+<polygon points="220.0,1085.0 223.6,1085.0 223.6,1112.0 220.0,1112.0" fill="#5a3a30" stroke="none" stroke-width="1.0"/>
+<polyline points="220.0,1085.0 265.0,1092.2" fill="none" stroke="#8a6440" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="265.0,1092.2 369.4,1092.2" fill="none" stroke="#8a6440" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="369.4,1092.2 400.0,1092.2" fill="none" stroke="#8a6440" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<line x1="310.0" y1="1092.2" x2="310.0" y2="1081.2" stroke="#1f2a33" stroke-width="2"/>
+<circle cx="310.0" cy="1078.2" r="3" fill="#c8961e" stroke="#1f2a33" stroke-width="0.8"/>
+<text x="310.0" y="1070.6" text-anchor="middle" style="font-size:7.5px;fill:#8a6410;font-weight:700;paint-order:stroke;stroke:#ffffff;stroke-width:2.6px;stroke-linejoin:round;">oog op de steiger: kade +0,75</text>
+<rect x="387.8" y="1081.2" width="10" height="11" fill="#2ec4b6" stroke="#1f2a33" stroke-width="1"/>
+<text x="392.8" y="1078.2" text-anchor="middle" style="font-size:7.5px;fill:#1f2a33;font-weight:700;paint-order:stroke;stroke:#ffffff;stroke-width:2.6px;stroke-linejoin:round;">K2</text>
+<polygon points="409.0,1085.0 409.0,1112.0 414.4,1112.0 414.4,1085.0" fill="#7d7468" stroke="none" stroke-width="1.0"/>
+<polygon points="430.6,1085.0 430.6,1112.0 436.0,1112.0 436.0,1085.0" fill="#7d7468" stroke="none" stroke-width="1.0"/>
+<polyline points="411.7,1082.3 411.7,1013.0" fill="none" stroke="#1f1f1f" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="433.3,1082.3 433.3,1013.0" fill="none" stroke="#1f1f1f" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="405.4,1004.0 439.6,1004.0" fill="none" stroke="#1f1f1f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="422.5" y="992.3" text-anchor="middle" style="font-size:7.5px;fill:#1f1f1f;paint-order:stroke;stroke:#ffffff;stroke-width:2.6px;stroke-linejoin:round;">brug op</text>
+<text x="602.0" y="1083.0" text-anchor="start" style="font-size:7.5px;fill:#1f2a33;paint-order:stroke;stroke:#ffffff;stroke-width:2.6px;stroke-linejoin:round;">kade 0</text>
+<text x="602.0" y="1090.2" text-anchor="start" style="font-size:7.5px;fill:#1f2a33;paint-order:stroke;stroke:#ffffff;stroke-width:2.6px;stroke-linejoin:round;">steiger −0,8</text>
+<text x="602.0" y="1105.8" text-anchor="start" style="font-size:7.5px;fill:#1f2a33;paint-order:stroke;stroke:#ffffff;stroke-width:2.6px;stroke-linejoin:round;">water −1,2</text>
+<rect x="40.0" y="950.0" width="558.0" height="162.0" fill="none" stroke="#1f2a33" stroke-width="1"/>
+<text x="94.0" y="1123.0" text-anchor="middle" style="font-size:7.5px;fill:#5a6570;">z 20</text>
+<text x="184.0" y="1123.0" text-anchor="middle" style="font-size:7.5px;fill:#5a6570;">z 10</text>
+<text x="274.0" y="1123.0" text-anchor="middle" style="font-size:7.5px;fill:#5a6570;">z 0</text>
+<text x="364.0" y="1123.0" text-anchor="middle" style="font-size:7.5px;fill:#5a6570;">z -10</text>
+<text x="454.0" y="1123.0" text-anchor="middle" style="font-size:7.5px;fill:#5a6570;">z -20</text>
+<text x="544.0" y="1123.0" text-anchor="middle" style="font-size:7.5px;fill:#5a6570;">z -30</text>
+<text x="660.0" y="968.0" text-anchor="start" style="font-size:9.5px;fill:#1f2a33;font-weight:700;">Lees de doorsnede zo:</text>
+<text x="660.0" y="984.0" text-anchor="start" style="font-size:9px;fill:#4a5560;">Op de steigers zit je oog maar</text>
+<text x="660.0" y="998.0" text-anchor="start" style="font-size:9px;fill:#4a5560;">0,75 m boven de kade: alles</text>
+<text x="660.0" y="1012.0" text-anchor="start" style="font-size:9px;fill:#4a5560;">voelt lager en dichter bij het water.</text>
+<text x="660.0" y="1026.0" text-anchor="start" style="font-size:9px;fill:#4a5560;">De klok (11 m) en de seinmast (10 m)</text>
+<text x="660.0" y="1040.0" text-anchor="start" style="font-size:9px;fill:#4a5560;">zie je vanaf bijna elke plek.</text>
+<text x="660.0" y="1054.0" text-anchor="start" style="font-size:9px;fill:#4a5560;">De brug staat omhoog tot de</text>
+<text x="660.0" y="1068.0" text-anchor="start" style="font-size:9px;fill:#4a5560;">Eindcheck en zakt dan dicht.</text>
+</svg>

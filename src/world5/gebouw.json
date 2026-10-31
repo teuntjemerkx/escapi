@@ -1,0 +1,2113 @@
+{
+ "muurHoogte": 3.2,
+ "verdiepingHoogte": 3.5,
+ "gevel": "#7f8892",
+ "gevelSoort": "pleister",
+ "kamers": [
+  {
+   "id": "sluis",
+   "naam": "Sluis",
+   "pos": [
+    0,
+    10.5
+   ],
+   "maat": [
+    4,
+    3
+   ],
+   "vloer": "rubber",
+   "vloerKleur": "#3a3f45",
+   "muur": "#c9ced4",
+   "lambrisering": "#6b737c",
+   "plafondKleur": "#dfe3e8",
+   "dak": "plat"
+  },
+  {
+   "id": "hal",
+   "naam": "Hal",
+   "pos": [
+    0,
+    5.5
+   ],
+   "maat": [
+    16,
+    7
+   ],
+   "vloer": "terrazzo",
+   "vloerKleur": "#d9d2c4",
+   "muur": "#e6ddcf",
+   "lambrisering": "#8a6a4a",
+   "plafondKleur": "#efe9df",
+   "dak": "plat",
+   "lampen": [
+    [
+     -4.5,
+     5.6
+    ],
+    [
+     3.2,
+     4.6
+    ]
+   ]
+  },
+  {
+   "id": "uitleg",
+   "naam": "Uitlegkamer",
+   "pos": [
+    -12,
+    5.5
+   ],
+   "maat": [
+    8,
+    7
+   ],
+   "vloer": "tapijt",
+   "vloerKleur": "#3b4a5c",
+   "muur": "#d8dee4",
+   "lambrisering": "#4f5d6b",
+   "plafondKleur": "#e3e7ec",
+   "dak": "plat",
+   "lampen": [
+    [
+     -13.2,
+     5.5
+    ]
+   ]
+  },
+  {
+   "id": "controlezaal",
+   "naam": "Controlezaal",
+   "pos": [
+    0,
+    -4
+   ],
+   "maat": [
+    16,
+    12
+   ],
+   "hoogte": 6.7,
+   "vide": true,
+   "vloer": "tapijt",
+   "vloerKleur": "#27323e",
+   "muur": "#3a4754",
+   "lambrisering": "#222a33",
+   "plafondKleur": "#262e37",
+   "dak": "plat"
+  },
+  {
+   "id": "pauze",
+   "naam": "Pauzeruimte",
+   "pos": [
+    12,
+    -0.5
+   ],
+   "maat": [
+    8,
+    5
+   ],
+   "vloer": "tegels",
+   "vloerKleur": "#cfc6b8",
+   "muur": "#dfe6ea",
+   "lambrisering": "#7d8a96",
+   "plafondKleur": "#e8ecef",
+   "dak": "plat"
+  },
+  {
+   "id": "techniek",
+   "naam": "Techniek",
+   "pos": [
+    -12,
+    -1
+   ],
+   "maat": [
+    8,
+    6
+   ],
+   "vloer": "rubber",
+   "vloerKleur": "#2f3338",
+   "muurSoort": "steen",
+   "muur": "#77716b",
+   "plafondKleur": "#6c7076",
+   "dak": "plat"
+  },
+  {
+   "id": "garage",
+   "naam": "Garage",
+   "pos": [
+    -12,
+    -7
+   ],
+   "maat": [
+    8,
+    6
+   ],
+   "vloer": "beton",
+   "vloerKleur": "#8d8a83",
+   "muur": "#b9bec4",
+   "lambrisering": "#5b6168",
+   "plafondKleur": "#9aa0a6",
+   "dak": "plat"
+  },
+  {
+   "id": "verblijf",
+   "naam": "Bemanningsverblijf",
+   "pos": [
+    12,
+    5.5
+   ],
+   "maat": [
+    8,
+    7
+   ],
+   "vloer": "planken",
+   "vloerKleur": "#b88352",
+   "muur": "#eadfcb",
+   "lambrisering": "#8a5a32",
+   "plafondKleur": "#f1ebe0",
+   "dak": "plat"
+  },
+  {
+   "id": "vluchtleiding",
+   "naam": "Vluchtleiding",
+   "pos": [
+    12,
+    -6.5
+   ],
+   "maat": [
+    8,
+    7
+   ],
+   "vloer": "tapijt",
+   "vloerKleur": "#2f3a46",
+   "muur": "#c6ccd3",
+   "lambrisering": "#4a5563",
+   "plafondKleur": "#d5dae0",
+   "dak": "plat"
+  },
+  {
+   "id": "sluistoren",
+   "naam": "Sluis",
+   "pos": [
+    0,
+    10.5
+   ],
+   "maat": [
+    4,
+    3
+   ],
+   "verdieping": 1,
+   "vloer": "beton",
+   "vloerKleur": "#8d929a",
+   "muur": "#c9ced4",
+   "lambrisering": "#6b737c",
+   "plafondKleur": "#dfe3e8",
+   "dak": "plat"
+  },
+  {
+   "id": "galerij",
+   "naam": "Galerij",
+   "pos": [
+    0,
+    4
+   ],
+   "maat": [
+    16,
+    10
+   ],
+   "verdieping": 1,
+   "galerij": true,
+   "vloer": "planken",
+   "vloerKleur": "#a8754a",
+   "muur": "#e2e6ea",
+   "lambrisering": "#6b737c",
+   "plafondKleur": "#e9ecef",
+   "dak": "plat"
+  },
+  {
+   "id": "kaartenkamer",
+   "naam": "Kaartenkamer",
+   "pos": [
+    -12,
+    5.5
+   ],
+   "maat": [
+    8,
+    7
+   ],
+   "verdieping": 1,
+   "vloer": "visgraat",
+   "vloerKleur": "#9c6a3c",
+   "muur": "#d7c9b0",
+   "lambrisering": "#5a3a24",
+   "dak": "plat"
+  },
+  {
+   "id": "opslag",
+   "naam": "Opslag",
+   "pos": [
+    -12,
+    -1
+   ],
+   "maat": [
+    8,
+    6
+   ],
+   "verdieping": 1,
+   "vloer": "beton",
+   "vloerKleur": "#9a9790",
+   "muur": "#c3c7cb",
+   "lambrisering": "#6b7178",
+   "plafondKleur": "#b8bdc2",
+   "dak": "plat"
+  },
+  {
+   "id": "datakamer",
+   "naam": "Datakamer",
+   "pos": [
+    -12,
+    -7
+   ],
+   "maat": [
+    8,
+    6
+   ],
+   "verdieping": 1,
+   "vloer": "tapijt",
+   "vloerKleur": "#2e3844",
+   "muur": "#45515d",
+   "lambrisering": "#262e37",
+   "plafondKleur": "#3a434c",
+   "dak": "plat"
+  },
+  {
+   "id": "recreatie",
+   "naam": "Recreatie",
+   "pos": [
+    12,
+    4.5
+   ],
+   "maat": [
+    8,
+    9
+   ],
+   "verdieping": 1,
+   "vloer": "planken",
+   "vloerKleur": "#c8955e",
+   "muur": "#e6ecef",
+   "lambrisering": "#3b6b7d",
+   "plafondKleur": "#eef1f3",
+   "dak": "plat"
+  },
+  {
+   "id": "uitkijkpost",
+   "naam": "Uitkijkpost",
+   "pos": [
+    12,
+    -5
+   ],
+   "maat": [
+    8,
+    10
+   ],
+   "verdieping": 1,
+   "vloer": "tapijt",
+   "vloerKleur": "#2b3540",
+   "muur": "#cfd5db",
+   "lambrisering": "#4a5563",
+   "plafondKleur": "#dde1e6",
+   "dak": "plat"
+  },
+  {
+   "id": "voorplein",
+   "naam": "Voorplein",
+   "pos": [
+    0,
+    14.5
+   ],
+   "maat": [
+    20,
+    5
+   ],
+   "vloer": "sneeuw",
+   "vloerKleur": "#e8eef5",
+   "buiten": true,
+   "rand": "reling",
+   "gevel": "#7f8892"
+  },
+  {
+   "id": "voorplein-w",
+   "naam": "Voorplein",
+   "pos": [
+    -6,
+    10.5
+   ],
+   "maat": [
+    8,
+    3
+   ],
+   "vloer": "sneeuw",
+   "vloerKleur": "#e8eef5",
+   "buiten": true,
+   "rand": "reling",
+   "gevel": "#7f8892"
+  },
+  {
+   "id": "voorplein-o",
+   "naam": "Voorplein",
+   "pos": [
+    6,
+    10.5
+   ],
+   "maat": [
+    8,
+    3
+   ],
+   "vloer": "sneeuw",
+   "vloerKleur": "#e8eef5",
+   "buiten": true,
+   "rand": "reling",
+   "gevel": "#7f8892"
+  },
+  {
+   "id": "tankplaats",
+   "naam": "Tankplaats",
+   "pos": [
+    -20,
+    -6
+   ],
+   "maat": [
+    8,
+    8
+   ],
+   "vloer": "asfalt",
+   "vloerKleur": "#3b3e44",
+   "buiten": true,
+   "rand": "reling",
+   "gevel": "#7f8892"
+  },
+  {
+   "id": "meetveld",
+   "naam": "Meetveld",
+   "pos": [
+    20,
+    -1
+   ],
+   "maat": [
+    8,
+    10
+   ],
+   "vloer": "sneeuw",
+   "vloerKleur": "#e3eaf2",
+   "buiten": true,
+   "rand": "hek",
+   "gevel": "#7f8892"
+  },
+  {
+   "id": "platform",
+   "naam": "Helikopterplatform",
+   "pos": [
+    0,
+    -16
+   ],
+   "maat": [
+    12,
+    12
+   ],
+   "vloer": "beton",
+   "vloerKleur": "#6c7178",
+   "buiten": true,
+   "rand": "reling",
+   "gevel": "#a8412f"
+  }
+ ],
+ "doorgangen": [
+  {
+   "pos": [
+    0,
+    12
+   ],
+   "as": "x",
+   "soort": "pui",
+   "breed": 2.4,
+   "deurBreed": 2.4
+  },
+  {
+   "pos": [
+    0,
+    9
+   ],
+   "as": "x",
+   "soort": "pui",
+   "breed": 2.4,
+   "deurBreed": 2.4
+  },
+  {
+   "pos": [
+    -8,
+    5.5
+   ],
+   "as": "z",
+   "soort": "deur",
+   "vanaf": "instructie"
+  },
+  {
+   "pos": [
+    0,
+    2
+   ],
+   "as": "x",
+   "soort": "pui",
+   "breed": 15.4,
+   "deurBreed": 2.4,
+   "vanaf": "begeleid"
+  },
+  {
+   "pos": [
+    8,
+    1.1
+   ],
+   "as": "z",
+   "soort": "boog"
+  },
+  {
+   "pos": [
+    8,
+    5.5
+   ],
+   "as": "z",
+   "soort": "deur",
+   "vanaf": "zelfstandig"
+  },
+  {
+   "pos": [
+    -8,
+    1.2
+   ],
+   "as": "z",
+   "soort": "deur",
+   "vanaf": "zelfstandig"
+  },
+  {
+   "pos": [
+    -10.4,
+    -4
+   ],
+   "as": "x",
+   "soort": "deur"
+  },
+  {
+   "pos": [
+    -16,
+    -7.4
+   ],
+   "as": "z",
+   "soort": "roldeur",
+   "breed": 3.6
+  },
+  {
+   "pos": [
+    9.6,
+    2
+   ],
+   "as": "x",
+   "soort": "deur",
+   "vanaf": "zelfstandig"
+  },
+  {
+   "pos": [
+    16,
+    -0.6
+   ],
+   "as": "z",
+   "soort": "deur",
+   "vanaf": "zelfstandig"
+  },
+  {
+   "pos": [
+    8,
+    -5
+   ],
+   "as": "z",
+   "soort": "pui",
+   "breed": 1.8,
+   "deurBreed": 1.8,
+   "vanaf": "evaluatie"
+  },
+  {
+   "pos": [
+    -5.25,
+    -10
+   ],
+   "as": "x",
+   "soort": "raam",
+   "breed": 4.7,
+   "borst": 0.9,
+   "hoog": 2.9
+  },
+  {
+   "pos": [
+    5.25,
+    -10
+   ],
+   "as": "x",
+   "soort": "raam",
+   "breed": 4.7,
+   "borst": 0.9,
+   "hoog": 2.9
+  },
+  {
+   "pos": [
+    -5.2,
+    9
+   ],
+   "as": "x",
+   "soort": "raam",
+   "breed": 3.0,
+   "borst": 0.9,
+   "hoog": 2.4
+  },
+  {
+   "pos": [
+    -12,
+    9
+   ],
+   "as": "x",
+   "soort": "raam",
+   "breed": 3.0,
+   "borst": 0.9,
+   "hoog": 2.4
+  },
+  {
+   "pos": [
+    16,
+    8.0
+   ],
+   "as": "z",
+   "soort": "raam",
+   "breed": 1.4,
+   "borst": 0.9,
+   "hoog": 2.4
+  },
+  {
+   "pos": [
+    14.8,
+    9
+   ],
+   "as": "x",
+   "soort": "raam",
+   "breed": 1.6,
+   "borst": 0.9,
+   "hoog": 2.4
+  },
+  {
+   "pos": [
+    13.0,
+    -10
+   ],
+   "as": "x",
+   "soort": "raam",
+   "breed": 2.4,
+   "borst": 0.9,
+   "hoog": 2.4
+  },
+  {
+   "pos": [
+    -8,
+    5.5
+   ],
+   "as": "z",
+   "soort": "deur",
+   "vanaf": "zelfstandig",
+   "verdieping": 1
+  },
+  {
+   "pos": [
+    -8,
+    0.5
+   ],
+   "as": "z",
+   "soort": "deur",
+   "vanaf": "zelfstandig",
+   "verdieping": 1
+  },
+  {
+   "pos": [
+    -9,
+    2
+   ],
+   "as": "x",
+   "soort": "boog",
+   "verdieping": 1
+  },
+  {
+   "pos": [
+    -9.2,
+    -4
+   ],
+   "as": "x",
+   "soort": "deur",
+   "verdieping": 1
+  },
+  {
+   "pos": [
+    8,
+    5.5
+   ],
+   "as": "z",
+   "soort": "deur",
+   "vanaf": "zelfstandig",
+   "verdieping": 1
+  },
+  {
+   "pos": [
+    14,
+    0
+   ],
+   "as": "x",
+   "soort": "deur",
+   "vanaf": "evaluatie",
+   "verdieping": 1
+  },
+  {
+   "pos": [
+    -5.0,
+    9
+   ],
+   "as": "x",
+   "soort": "raam",
+   "breed": 5.0,
+   "borst": 0.9,
+   "hoog": 2.6,
+   "verdieping": 1
+  },
+  {
+   "pos": [
+    -16,
+    5.6
+   ],
+   "as": "z",
+   "soort": "raam",
+   "breed": 2.6,
+   "borst": 0.9,
+   "hoog": 2.4,
+   "verdieping": 1
+  },
+  {
+   "pos": [
+    -12,
+    9
+   ],
+   "as": "x",
+   "soort": "raam",
+   "breed": 3.0,
+   "borst": 0.9,
+   "hoog": 2.4,
+   "verdieping": 1
+  },
+  {
+   "pos": [
+    -15.0,
+    -10
+   ],
+   "as": "x",
+   "soort": "raam",
+   "breed": 1.2,
+   "borst": 0.9,
+   "hoog": 2.4,
+   "verdieping": 1
+  },
+  {
+   "pos": [
+    -9.4,
+    -10
+   ],
+   "as": "x",
+   "soort": "raam",
+   "breed": 1.6,
+   "borst": 0.9,
+   "hoog": 2.4,
+   "verdieping": 1
+  },
+  {
+   "pos": [
+    12.2,
+    -10
+   ],
+   "as": "x",
+   "soort": "raam",
+   "breed": 6.8,
+   "borst": 0.9,
+   "hoog": 2.9,
+   "verdieping": 1
+  },
+  {
+   "pos": [
+    16,
+    -5.0
+   ],
+   "as": "z",
+   "soort": "raam",
+   "breed": 9.2,
+   "borst": 0.9,
+   "hoog": 2.9,
+   "verdieping": 1
+  },
+  {
+   "pos": [
+    16,
+    1.0
+   ],
+   "as": "z",
+   "soort": "raam",
+   "breed": 1.6,
+   "borst": 0.9,
+   "hoog": 2.4,
+   "verdieping": 1
+  },
+  {
+   "pos": [
+    16,
+    8.0
+   ],
+   "as": "z",
+   "soort": "raam",
+   "breed": 1.4,
+   "borst": 0.9,
+   "hoog": 2.4,
+   "verdieping": 1
+  },
+  {
+   "pos": [
+    14.6,
+    9
+   ],
+   "as": "x",
+   "soort": "raam",
+   "breed": 2.0,
+   "borst": 0.9,
+   "hoog": 2.4,
+   "verdieping": 1
+  }
+ ],
+ "trappen": [
+  {
+   "pos": [
+    4.0,
+    8.15
+   ],
+   "as": "x",
+   "richting": 1,
+   "lengte": 5.4,
+   "breed": 1.2,
+   "van": 0
+  },
+  {
+   "pos": [
+    15.2,
+    -6.1
+   ],
+   "as": "z",
+   "richting": 1,
+   "lengte": 5.0,
+   "breed": 1.2,
+   "van": 0,
+   "vanaf": "evaluatie"
+  }
+ ],
+ "uitgang": {
+  "pos": [
+   0,
+   -10
+  ],
+  "as": "x"
+ },
+ "spawn": [
+  0,
+  15.5
+ ],
+ "stations": {
+  "terugblik": {
+   "botser": [
+    1.9,
+    1.0
+   ],
+   "opdrachten": [
+    "W5-TERUG"
+   ],
+   "pos": [
+    -5.0,
+    7.4
+   ],
+   "rot": 1.5708
+  },
+  "instructie": {
+   "botser": [
+    2.7,
+    0.6
+   ],
+   "opdrachten": [
+    "W5-INSTR"
+   ],
+   "pos": [
+    -15.38,
+    5.5
+   ],
+   "rot": 1.5708
+  },
+  "aquarium-kassa": {
+   "schaal": 0.8,
+   "botser": [
+    3.4,
+    0.72
+   ],
+   "opdrachten": [
+    "O5-INS-01"
+   ],
+   "pos": [
+    14.1,
+    -2.47
+   ]
+  },
+  "lesrooster": {
+   "schaal": 0.8,
+   "botser": [
+    3.44,
+    0.4
+   ],
+   "opdrachten": [
+    "O5-INS-02"
+   ],
+   "pos": [
+    7.63,
+    -1.9
+   ],
+   "rot": -1.5708
+  },
+  "vliegschema": {
+   "schaal": 0.9,
+   "botser": [
+    3.96,
+    0.9
+   ],
+   "opdrachten": [
+    "O5-INS-03"
+   ],
+   "pos": [
+    -7.38,
+    -1.75
+   ],
+   "rot": 1.5708
+  },
+  "taartscherm": {
+   "botser": [
+    3.7,
+    1.6
+   ],
+   "opdrachten": [
+    "O5-INS-04"
+   ],
+   "pos": [
+    -2.9,
+    -5.4
+   ]
+  },
+  "ijsdikte": {
+   "schaal": 0.9,
+   "botser": [
+    3.5,
+    0.45
+   ],
+   "opdrachten": [
+    "O5-INS-05"
+   ],
+   "pos": [
+    7.6,
+    -7.85
+   ],
+   "rot": -1.5708
+  },
+  "smartphone": {
+   "schaal": 0.8,
+   "botser": [
+    4.4,
+    0.8
+   ],
+   "opdrachten": [
+    "O5-INS-06"
+   ],
+   "pos": [
+    -7.43,
+    -7.6
+   ],
+   "rot": 1.5708
+  },
+  "drankautomaat": {
+   "schaal": 0.8,
+   "botser": [
+    3.9,
+    0.72
+   ],
+   "opdrachten": [
+    "O5-INS-07"
+   ],
+   "pos": [
+    10.3,
+    -2.47
+   ]
+  },
+  "strandfeest": {
+   "schaal": 0.75,
+   "botser": [
+    3.7,
+    0.6
+   ],
+   "opdrachten": [
+    "O5-INS-08"
+   ],
+   "pos": [
+    13.6,
+    1.53
+   ],
+   "rot": 3.14159
+  },
+  "studieschuld": {
+   "botser": [
+    3.2,
+    1.2
+   ],
+   "opdrachten": [
+    "O5-INS-09"
+   ],
+   "pos": [
+    2.9,
+    -5.3
+   ]
+  },
+  "schepsnoep": {
+   "botser": [
+    2.9,
+    1.1
+   ],
+   "opdrachten": [
+    "O5-INS-10"
+   ],
+   "pos": [
+    11.3,
+    -0.55
+   ]
+  },
+  "tankstation": {
+   "schaal": 1.1,
+   "botser": [
+    5.05,
+    0.88
+   ],
+   "opdrachten": [
+    "O5-NIV-07"
+   ],
+   "pos": [
+    -22.9,
+    -6.0
+   ],
+   "rot": 1.5708
+  },
+  "autoverhuur": {
+   "schaal": 1.1,
+   "botser": [
+    3.96,
+    1.37
+   ],
+   "opdrachten": [
+    "O5-NIV-06"
+   ],
+   "pos": [
+    -8.85,
+    -7.0
+   ],
+   "rot": -1.5708
+  },
+  "lease": {
+   "schaal": 0.7,
+   "botser": [
+    3.8,
+    1.54
+   ],
+   "opdrachten": [
+    "O5-NIV-09"
+   ],
+   "pos": [
+    -12.6,
+    -9.06
+   ]
+  },
+  "huishoudens": {
+   "schaal": 0.75,
+   "botser": [
+    3.8,
+    0.15
+   ],
+   "opdrachten": [
+    "O5-NIV-03"
+   ],
+   "pos": [
+    15.76,
+    5.3
+   ],
+   "rot": -1.5708
+  },
+  "stukadoor": {
+   "schaal": 0.85,
+   "botser": [
+    2.9,
+    1.2
+   ],
+   "opdrachten": [
+    "O5-NIV-01"
+   ],
+   "pos": [
+    12.0,
+    8.23
+   ],
+   "rot": 3.14159
+  },
+  "energie": {
+   "botser": [
+    2.6,
+    1.1
+   ],
+   "opdrachten": [
+    "O5-NIV-05"
+   ],
+   "pos": [
+    11.0,
+    4.3
+   ]
+  },
+  "triatlon": {
+   "schaal": 0.75,
+   "botser": [
+    3.45,
+    0.68
+   ],
+   "opdrachten": [
+    "O5-NIV-08"
+   ],
+   "pos": [
+    11.4,
+    8.49
+   ],
+   "rot": 3.14159,
+   "verdieping": 1
+  },
+  "frisdrank": {
+   "schaal": 0.65,
+   "botser": [
+    3.5,
+    0.52
+   ],
+   "opdrachten": [
+    "O5-NIV-04"
+   ],
+   "pos": [
+    11.2,
+    0.43
+   ],
+   "verdieping": 1
+  },
+  "wisselkantoor": {
+   "schaal": 0.85,
+   "botser": [
+    2.7,
+    0.98
+   ],
+   "opdrachten": [
+    "O5-NIV-02"
+   ],
+   "pos": [
+    8.66,
+    2.6
+   ],
+   "rot": 1.5708,
+   "verdieping": 1
+  },
+  "tabletzuil": {
+   "botser": [
+    2.3,
+    1.8
+   ],
+   "opdrachten": [
+    "O5-NIV-10"
+   ],
+   "pos": [
+    11.6,
+    4.4
+   ],
+   "verdieping": 1
+  },
+  "kvick": {
+   "schaal": 0.7,
+   "botser": [
+    3.8,
+    0.9
+   ],
+   "opdrachten": [
+    "O5-EXP-01",
+    "O5-EXP-02"
+   ],
+   "pos": [
+    -15.38,
+    -0.7
+   ],
+   "rot": 1.5708
+  },
+  "spaargeld": {
+   "schaal": 0.7,
+   "botser": [
+    3.2,
+    0.46
+   ],
+   "opdrachten": [
+    "O5-EXP-05"
+   ],
+   "pos": [
+    -12.4,
+    -9.6
+   ],
+   "verdieping": 1
+  },
+  "tv-wand": {
+   "schaal": 0.65,
+   "botser": [
+    3.4,
+    0.33
+   ],
+   "opdrachten": [
+    "O5-EXP-03"
+   ],
+   "pos": [
+    -8.32,
+    -7.2
+   ],
+   "rot": -1.5708,
+   "verdieping": 1
+  },
+  "zomertemperatuur": {
+   "schaal": 1.0,
+   "botser": [
+    4.5,
+    0.57
+   ],
+   "opdrachten": [
+    "O5-EXP-06"
+   ],
+   "pos": [
+    23.4,
+    -1.0
+   ],
+   "rot": -1.5708
+  },
+  "stroomkast": {
+   "schaal": 0.8,
+   "botser": [
+    3.2,
+    1.04
+   ],
+   "opdrachten": [
+    "O5-PUZ-02a",
+    "O5-PUZ-02b",
+    "O5-PUZ-02c",
+    "O5-PUZ-02d",
+    "O5-PUZ-02e",
+    "O5-PUZ-02f",
+    "O5-PUZ-02g",
+    "O5-PUZ-02h"
+   ],
+   "pos": [
+    -12.0,
+    1.31
+   ],
+   "rot": 3.14159
+  },
+  "examens": {
+   "schaal": 0.75,
+   "botser": [
+    3.8,
+    0.15
+   ],
+   "opdrachten": [
+    "O5-EXP-07"
+   ],
+   "pos": [
+    -15.76,
+    -7.0
+   ],
+   "rot": 1.5708,
+   "verdieping": 1
+  },
+  "vakantiegids": {
+   "schaal": 0.85,
+   "botser": [
+    3.06,
+    1.45
+   ],
+   "opdrachten": [
+    "O5-EXP-04"
+   ],
+   "pos": [
+    -14.0,
+    3.9
+   ],
+   "verdieping": 1
+  },
+  "molenronde": {
+   "schaal": 0.85,
+   "botser": [
+    3.15,
+    1.45
+   ],
+   "opdrachten": [
+    "O5-EXP-09"
+   ],
+   "pos": [
+    -14.0,
+    7.6
+   ],
+   "rot": 3.14159,
+   "verdieping": 1
+  },
+  "kleurkubussen": {
+   "schaal": 0.85,
+   "botser": [
+    2.1,
+    1.8
+   ],
+   "opdrachten": [
+    "O5-PUZ-01a",
+    "O5-PUZ-01b",
+    "O5-PUZ-01c",
+    "O5-PUZ-01d"
+   ],
+   "pos": [
+    -10.6,
+    4.1
+   ],
+   "verdieping": 1
+  },
+  "reisroutes": {
+   "schaal": 0.85,
+   "botser": [
+    2.3,
+    1.6
+   ],
+   "opdrachten": [
+    "O5-PRA-05a",
+    "O5-PRA-05b",
+    "O5-PRA-05c",
+    "O5-PRA-06",
+    "O5-PRA-07",
+    "O5-PRA-08",
+    "O5-PRA-09"
+   ],
+   "pos": [
+    -10.7,
+    7.6
+   ],
+   "rot": 3.14159,
+   "verdieping": 1
+  },
+  "coopertest": {
+   "schaal": 1.0,
+   "botser": [
+    5.0,
+    1.55
+   ],
+   "opdrachten": [
+    "O5-EXP-08"
+   ],
+   "pos": [
+    15.06,
+    4.6
+   ],
+   "rot": -1.5708,
+   "verdieping": 1
+  },
+  "magazijn": {
+   "schaal": 0.65,
+   "botser": [
+    3.4,
+    0.33
+   ],
+   "opdrachten": [
+    "O5-EXP-10"
+   ],
+   "pos": [
+    -13.3,
+    -3.66
+   ],
+   "verdieping": 1
+  },
+  "sportwinkel": {
+   "schaal": 0.85,
+   "botser": [
+    3.15,
+    0.5
+   ],
+   "opdrachten": [
+    "O5-PRA-01a",
+    "O5-PRA-01b",
+    "O5-PRA-01c",
+    "O5-PRA-02",
+    "O5-PRA-03",
+    "O5-PRA-04"
+   ],
+   "pos": [
+    -12.6,
+    1.58
+   ],
+   "rot": 3.14159,
+   "verdieping": 1
+  },
+  "werkrooster": {
+   "schaal": 0.9,
+   "botser": [
+    3.0,
+    0.9
+   ],
+   "opdrachten": [
+    "O5-PRA-10a",
+    "O5-PRA-10b",
+    "O5-PRA-10c",
+    "O5-PRA-11",
+    "O5-PRA-12",
+    "O5-PRA-13",
+    "O5-PRA-14"
+   ],
+   "pos": [
+    -15.38,
+    -0.8
+   ],
+   "rot": 1.5708,
+   "verdieping": 1
+  },
+  "treinstoringen": {
+   "schaal": 0.85,
+   "botser": [
+    2.7,
+    0.85
+   ],
+   "opdrachten": [
+    "O5-EIN-01"
+   ],
+   "pos": [
+    10.4,
+    -9.4
+   ]
+  },
+  "bmi": {
+   "schaal": 0.9,
+   "botser": [
+    2.6,
+    0.9
+   ],
+   "opdrachten": [
+    "O5-EIN-02"
+   ],
+   "pos": [
+    11.6,
+    -6.6
+   ]
+  },
+  "voetbalschema": {
+   "schaal": 0.7,
+   "botser": [
+    2.7,
+    0.6
+   ],
+   "opdrachten": [
+    "O5-EIN-03"
+   ],
+   "pos": [
+    9.8,
+    -3.47
+   ],
+   "rot": 3.14159
+  },
+  "pluggen": {
+   "schaal": 0.65,
+   "botser": [
+    2.7,
+    0.8
+   ],
+   "opdrachten": [
+    "O5-EIN-04"
+   ],
+   "pos": [
+    8.57,
+    -7.4
+   ],
+   "rot": 1.5708
+  },
+  "belasting": {
+   "schaal": 0.85,
+   "botser": [
+    2.7,
+    0.7
+   ],
+   "opdrachten": [
+    "O5-EIN-05"
+   ],
+   "pos": [
+    12.6,
+    -3.52
+   ],
+   "rot": 3.14159
+  },
+  "huisdieren": {
+   "schaal": 0.9,
+   "botser": [
+    2.9,
+    0.3
+   ],
+   "opdrachten": [
+    "O5-EIN-06"
+   ],
+   "pos": [
+    8.32,
+    -8.4
+   ],
+   "rot": 1.5708,
+   "verdieping": 1
+  },
+  "netflix": {
+   "schaal": 0.8,
+   "botser": [
+    2.9,
+    0.64
+   ],
+   "opdrachten": [
+    "O5-EIN-07"
+   ],
+   "pos": [
+    8.49,
+    -5.2
+   ],
+   "rot": 1.5708,
+   "verdieping": 1
+  },
+  "rondreis": {
+   "schaal": 0.62,
+   "botser": [
+    2.9,
+    0.62
+   ],
+   "opdrachten": [
+    "O5-EIN-08"
+   ],
+   "pos": [
+    8.48,
+    -1.95
+   ],
+   "rot": 1.5708,
+   "verdieping": 1
+  },
+  "huurprijzen": {
+   "schaal": 0.8,
+   "botser": [
+    3.2,
+    1.3
+   ],
+   "opdrachten": [
+    "O5-EIN-09"
+   ],
+   "pos": [
+    11.8,
+    -7.6
+   ],
+   "verdieping": 1
+  },
+  "tshirts": {
+   "botser": [
+    2.6,
+    1.0
+   ],
+   "opdrachten": [
+    "O5-EIN-10"
+   ],
+   "pos": [
+    12.0,
+    -2.0
+   ],
+   "verdieping": 1
+  }
+ },
+ "kluizen": {
+  "vervoer": {
+   "pos": [
+    -14.6,
+    -5.0
+   ],
+   "rot": 1.5708
+  },
+  "wonen": {
+   "pos": [
+    9.0,
+    8.2
+   ],
+   "rot": 1.5708
+  },
+  "vrijetijd": {
+   "pos": [
+    9.0,
+    7.4
+   ],
+   "rot": 1.5708,
+   "verdieping": 1
+  }
+ },
+ "lampjes": [
+  [
+   -0.9,
+   11.6
+  ],
+  [
+   -7.4,
+   2.6
+  ],
+  [
+   4.6,
+   1.2
+  ],
+  [
+   -15.4,
+   -3.5
+  ],
+  [
+   19.0,
+   -5.6
+  ],
+  [
+   -23.4,
+   -2.6
+  ],
+  [
+   -7.3,
+   8.4,
+   1
+  ],
+  [
+   13.6,
+   8.5,
+   1
+  ]
+ ],
+ "buitendecor": [
+  {
+   "naam": "welkomstbord",
+   "pos": [
+    -6.2,
+    16.0
+   ],
+   "maat": [
+    2.9,
+    0.4
+   ]
+  },
+  {
+   "naam": "sneeuwscooter",
+   "pos": [
+    5.4,
+    14.6
+   ],
+   "maat": [
+    2.6,
+    1.2
+   ]
+  },
+  {
+   "naam": "sneeuwpop",
+   "pos": [
+    -8.6,
+    10.6
+   ],
+   "maat": [
+    1.0,
+    1.0
+   ],
+   "rond": true
+  },
+  {
+   "naam": "pompeiland",
+   "pos": [
+    -19.0,
+    -9.0
+   ],
+   "maat": [
+    3.2,
+    1.0
+   ]
+  },
+  {
+   "naam": "sneeuwruimer",
+   "pos": [
+    -19.6,
+    -3.6
+   ],
+   "maat": [
+    3.6,
+    2.2
+   ]
+  },
+  {
+   "naam": "sneeuwhoop tank",
+   "pos": [
+    -23.2,
+    -9.3
+   ],
+   "maat": [
+    1.1,
+    1.1
+   ],
+   "rond": true
+  },
+  {
+   "naam": "weerhut",
+   "pos": [
+    19.0,
+    -4.4
+   ],
+   "maat": [
+    0.9,
+    0.8
+   ]
+  },
+  {
+   "naam": "windmast",
+   "pos": [
+    21.8,
+    -5.2
+   ],
+   "maat": [
+    0.6,
+    0.6
+   ],
+   "rond": true
+  },
+  {
+   "naam": "regenmeter",
+   "pos": [
+    18.0,
+    2.6
+   ],
+   "maat": [
+    0.4,
+    0.4
+   ],
+   "rond": true
+  },
+  {
+   "naam": "zonnepanelen",
+   "pos": [
+    21.0,
+    2.9
+   ],
+   "maat": [
+    3.6,
+    1.1
+   ]
+  },
+  {
+   "naam": "helikopter",
+   "pos": [
+    0.6,
+    -16.6
+   ],
+   "maat": [
+    3.6,
+    2.3
+   ]
+  },
+  {
+   "naam": "staart helikopter",
+   "pos": [
+    -3.3,
+    -16.6
+   ],
+   "maat": [
+    3.8,
+    0.5
+   ]
+  },
+  {
+   "naam": "windzak",
+   "pos": [
+    4.8,
+    -21.0
+   ],
+   "maat": [
+    0.4,
+    0.4
+   ],
+   "rond": true
+  }
+ ],
+ "lantaarns": [
+  [
+   -9.2,
+   16.3
+  ],
+  [
+   9.2,
+   16.3
+  ],
+  [
+   -17.0,
+   -2.8
+  ],
+  [
+   16.9,
+   3.3
+  ]
+ ],
+ "binnendecor": [
+  {
+   "naam": "laarzenrek",
+   "pos": [
+    -1.62,
+    10.5
+   ],
+   "maat": [
+    0.4,
+    1.6
+   ]
+  },
+  {
+   "naam": "jassenrek",
+   "pos": [
+    1.65,
+    10.5
+   ],
+   "maat": [
+    0.35,
+    1.6
+   ]
+  },
+  {
+   "naam": "wachtbank",
+   "pos": [
+    -7.45,
+    7.9
+   ],
+   "maat": [
+    0.7,
+    1.8
+   ]
+  },
+  {
+   "naam": "plant hal",
+   "pos": [
+    7.3,
+    2.7
+   ],
+   "maat": [
+    0.7,
+    0.7
+   ],
+   "rond": true
+  },
+  {
+   "naam": "bank uitleg 1",
+   "pos": [
+    -13.0,
+    5.5
+   ],
+   "maat": [
+    0.6,
+    2.6
+   ]
+  },
+  {
+   "naam": "bank uitleg 2",
+   "pos": [
+    -11.3,
+    5.5
+   ],
+   "maat": [
+    0.6,
+    2.6
+   ]
+  },
+  {
+   "naam": "loep",
+   "pos": [
+    -14.8,
+    3.0
+   ],
+   "maat": [
+    0.6,
+    0.6
+   ],
+   "rond": true
+  },
+  {
+   "naam": "console rij 2 west",
+   "pos": [
+    -2.9,
+    -3.25
+   ],
+   "maat": [
+    4.0,
+    0.8
+   ]
+  },
+  {
+   "naam": "console rij 2 oost",
+   "pos": [
+    2.9,
+    -3.25
+   ],
+   "maat": [
+    4.0,
+    0.8
+   ]
+  },
+  {
+   "naam": "console rij 3 west",
+   "pos": [
+    -2.9,
+    -0.95
+   ],
+   "maat": [
+    4.0,
+    0.8
+   ]
+  },
+  {
+   "naam": "console rij 3 oost",
+   "pos": [
+    2.9,
+    -0.95
+   ],
+   "maat": [
+    4.0,
+    0.8
+   ]
+  },
+  {
+   "naam": "aggregaat",
+   "pos": [
+    -13.2,
+    -3.25
+   ],
+   "maat": [
+    2.2,
+    1.0
+   ]
+  },
+  {
+   "naam": "serverkast",
+   "pos": [
+    -8.6,
+    -3.4
+   ],
+   "maat": [
+    0.8,
+    0.7
+   ]
+  },
+  {
+   "naam": "werkbank",
+   "pos": [
+    -12.6,
+    -4.45
+   ],
+   "maat": [
+    1.6,
+    0.6
+   ]
+  },
+  {
+   "naam": "banden",
+   "pos": [
+    -9.0,
+    -9.4
+   ],
+   "maat": [
+    0.8,
+    0.8
+   ],
+   "rond": true
+  },
+  {
+   "naam": "keuken",
+   "pos": [
+    13.6,
+    2.5
+   ],
+   "maat": [
+    3.6,
+    0.6
+   ]
+  },
+  {
+   "naam": "bank galerij 1",
+   "pos": [
+    -4.5,
+    -0.25
+   ],
+   "maat": [
+    2.4,
+    0.55
+   ],
+   "verdieping": 1
+  },
+  {
+   "naam": "bank galerij 2",
+   "pos": [
+    2.0,
+    -0.25
+   ],
+   "maat": [
+    2.4,
+    0.55
+   ],
+   "verdieping": 1
+  },
+  {
+   "naam": "telescoop galerij",
+   "pos": [
+    -6.4,
+    -0.1
+   ],
+   "maat": [
+    0.7,
+    0.7
+   ],
+   "verdieping": 1,
+   "rond": true
+  },
+  {
+   "naam": "zithoek",
+   "pos": [
+    -3.5,
+    6.0
+   ],
+   "maat": [
+    2.2,
+    1.6
+   ],
+   "verdieping": 1
+  },
+  {
+   "naam": "infozuil",
+   "pos": [
+    5.5,
+    3.0
+   ],
+   "maat": [
+    0.6,
+    0.6
+   ],
+   "verdieping": 1,
+   "rond": true
+  },
+  {
+   "naam": "plant galerij",
+   "pos": [
+    -7.3,
+    2.1
+   ],
+   "maat": [
+    0.6,
+    0.6
+   ],
+   "verdieping": 1,
+   "rond": true
+  },
+  {
+   "naam": "globe",
+   "pos": [
+    -8.75,
+    8.35
+   ],
+   "maat": [
+    0.6,
+    0.6
+   ],
+   "verdieping": 1,
+   "rond": true
+  },
+  {
+   "naam": "kaartenkast",
+   "pos": [
+    -13.4,
+    2.4
+   ],
+   "maat": [
+    3.0,
+    0.45
+   ],
+   "verdieping": 1
+  },
+  {
+   "naam": "datatafel",
+   "pos": [
+    -11.8,
+    -6.6
+   ],
+   "maat": [
+    2.0,
+    1.0
+   ],
+   "verdieping": 1
+  },
+  {
+   "naam": "bank recreatie",
+   "pos": [
+    14.9,
+    8.3
+   ],
+   "maat": [
+    1.6,
+    0.75
+   ],
+   "verdieping": 1
+  },
+  {
+   "naam": "halterrek",
+   "pos": [
+    15.3,
+    0.6
+   ],
+   "maat": [
+    0.8,
+    0.6
+   ],
+   "verdieping": 1
+  },
+  {
+   "naam": "radarconsole",
+   "pos": [
+    11.8,
+    -9.45
+   ],
+   "maat": [
+    2.4,
+    0.6
+   ],
+   "verdieping": 1
+  },
+  {
+   "naam": "telescoop uitkijk",
+   "pos": [
+    15.0,
+    -9.3
+   ],
+   "maat": [
+    0.6,
+    0.6
+   ],
+   "verdieping": 1,
+   "rond": true
+  }
+ ]
+}

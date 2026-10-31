@@ -1,0 +1,6473 @@
+{
+ "onderdeel": 3,
+ "titel": "Verhouding herkennen en gebruiken",
+ "opdrachten": [
+  {
+   "id": "O3-INS-01",
+   "onderdeel": 3,
+   "sectie": "instap",
+   "nummer": "1",
+   "afbeeldingen": [],
+   "flags": [],
+   "autoCheck": true,
+   "origineel": "In een zak met snoepjes zitten 6 rode en 4 groene snoepjes. Wat is de verhouding tussen rode en groene snoepjes?",
+   "vraag": [
+    "In een zak zitten 6 rode snoepjes.",
+    "Er zitten ook 4 groene snoepjes in.",
+    "Wat is de verhouding rood : groen?"
+   ],
+   "type": "tekst",
+   "paneel": "verhoudingstabel",
+   "object3d": "snoepzak",
+   "stappen": [
+    {
+     "tekst": "Rood boven, groen onder",
+     "som": "6 : 4",
+     "expr": null,
+     "uitkomst": "6 : 4",
+     "invoer": false,
+     "tabel": {
+      "boven": [
+       "6 rood"
+      ],
+      "onder": [
+       "4 groen"
+      ]
+     }
+    },
+    {
+     "tekst": "Deel rood door 2",
+     "som": "6 : 2",
+     "expr": "6/2",
+     "uitkomst": 3,
+     "invoer": true,
+     "tabel": {
+      "boven": [
+       "6 rood",
+       "3 rood"
+      ],
+      "onder": [
+       "4 groen",
+       "?"
+      ],
+      "pijl": ": 2"
+     }
+    },
+    {
+     "tekst": "Deel groen ook door 2",
+     "som": "4 : 2",
+     "expr": "4/2",
+     "uitkomst": 2,
+     "invoer": true,
+     "tabel": {
+      "boven": [
+       "6 rood",
+       "3 rood"
+      ],
+      "onder": [
+       "4 groen",
+       "2 groen"
+      ],
+      "pijl": ": 2"
+     }
+    }
+   ],
+   "antwoord": {
+    "waarde": "3 : 2",
+    "expr": null,
+    "alternatieven": [
+     "3 : 2",
+     "6 : 4"
+    ]
+   },
+   "voorbeeld": {
+    "vraag": [
+     "In een schaal liggen 8 bananen en 6 peren.",
+     "Wat is de verhouding bananen : peren?"
+    ],
+    "stappen": [
+     {
+      "tekst": "Deel bananen door 2",
+      "som": "8 : 2",
+      "expr": "8/2",
+      "uitkomst": 4,
+      "invoer": true,
+      "tabel": {
+       "boven": [
+        "8 bananen",
+        "4 bananen"
+       ],
+       "onder": [
+        "6 peren",
+        "?"
+       ],
+       "pijl": ": 2"
+      }
+     },
+     {
+      "tekst": "Deel peren ook door 2",
+      "som": "6 : 2",
+      "expr": "6/2",
+      "uitkomst": 3,
+      "invoer": true,
+      "tabel": {
+       "boven": [
+        "8 bananen",
+        "4 bananen"
+       ],
+       "onder": [
+        "6 peren",
+        "3 peren"
+       ],
+       "pijl": ": 2"
+      }
+     }
+    ],
+    "antwoord": {
+     "waarde": "4 : 3",
+     "expr": null,
+     "alternatieven": [
+      "4 : 3",
+      "8 : 6"
+     ]
+    }
+   }
+  },
+  {
+   "id": "O3-INS-02",
+   "onderdeel": 3,
+   "sectie": "instap",
+   "nummer": "2",
+   "afbeeldingen": [],
+   "flags": [
+    {
+     "soort": "fout-in-werkboek",
+     "beschrijving": "De vraag stopt na \"voor 6\": het woord \"personen\" en het vraagteken ontbreken.",
+     "voorstel": "In de app aangevuld: \"voor 6 personen?\"."
+    }
+   ],
+   "autoCheck": true,
+   "origineel": "Een recept is voor 2 personen en gebruikt 200 ml melk. Hoeveel melk heb je nodig voor 6",
+   "vraag": [
+    "Een recept is voor 2 personen.",
+    "Je gebruikt 200 ml melk.",
+    "Hoeveel melk heb je nodig voor 6 personen?"
+   ],
+   "type": "getal",
+   "paneel": "verhoudingstabel",
+   "object3d": "melkpak",
+   "stappen": [
+    {
+     "tekst": "Hoeveel keer zo veel personen?",
+     "som": "6 : 2",
+     "expr": "6/2",
+     "uitkomst": 3,
+     "eenheid": "keer",
+     "invoer": true,
+     "tabel": {
+      "boven": [
+       "2 personen",
+       "6 personen"
+      ],
+      "onder": [
+       "200 ml",
+       "?"
+      ],
+      "pijl": "× 3"
+     }
+    },
+    {
+     "tekst": "Doe de melk ook keer 3",
+     "som": "3 × 200",
+     "expr": "3*200",
+     "uitkomst": 600,
+     "eenheid": "ml",
+     "invoer": true,
+     "tabel": {
+      "boven": [
+       "2 personen",
+       "6 personen"
+      ],
+      "onder": [
+       "200 ml",
+       "600 ml"
+      ],
+      "pijl": "× 3"
+     }
+    }
+   ],
+   "antwoord": {
+    "waarde": 600,
+    "eenheid": "ml",
+    "expr": "200/2*6"
+   },
+   "voorbeeld": {
+    "vraag": [
+     "Een recept voor 3 personen gebruikt 150 gram rijst.",
+     "Hoeveel rijst heb je nodig voor 9 personen?"
+    ],
+    "stappen": [
+     {
+      "tekst": "Hoeveel keer zo veel personen?",
+      "som": "9 : 3",
+      "expr": "9/3",
+      "uitkomst": 3,
+      "eenheid": "keer",
+      "invoer": true,
+      "tabel": {
+       "boven": [
+        "3 personen",
+        "9 personen"
+       ],
+       "onder": [
+        "150 g",
+        "?"
+       ],
+       "pijl": "× 3"
+      }
+     },
+     {
+      "tekst": "Doe de rijst ook keer 3",
+      "som": "3 × 150",
+      "expr": "3*150",
+      "uitkomst": 450,
+      "eenheid": "gram",
+      "invoer": true,
+      "tabel": {
+       "boven": [
+        "3 personen",
+        "9 personen"
+       ],
+       "onder": [
+        "150 g",
+        "450 g"
+       ],
+       "pijl": "× 3"
+      }
+     }
+    ],
+    "antwoord": {
+     "waarde": 450,
+     "eenheid": "gram",
+     "expr": "150/3*9"
+    }
+   }
+  },
+  {
+   "id": "O3-INS-03",
+   "onderdeel": 3,
+   "sectie": "instap",
+   "nummer": "3",
+   "afbeeldingen": [],
+   "flags": [],
+   "autoCheck": true,
+   "origineel": "Er zitten 3 jongens en 5 meisjes in een groep. Wat is de verhouding jongens : meisjes?",
+   "vraag": [
+    "In een groep zitten 3 jongens en 5 meisjes.",
+    "Wat is de verhouding jongens : meisjes?"
+   ],
+   "type": "tekst",
+   "paneel": "verhoudingstabel",
+   "stappen": [
+    {
+     "tekst": "Hoeveel jongens zijn er?",
+     "som": "3",
+     "expr": "3",
+     "uitkomst": 3,
+     "eenheid": "jongens",
+     "invoer": true,
+     "tabel": {
+      "boven": [
+       "3 jongens"
+      ],
+      "onder": [
+       "? meisjes"
+      ]
+     }
+    },
+    {
+     "tekst": "Hoeveel meisjes zijn er?",
+     "som": "5",
+     "expr": "5",
+     "uitkomst": 5,
+     "eenheid": "meisjes",
+     "invoer": true,
+     "tabel": {
+      "boven": [
+       "3 jongens"
+      ],
+      "onder": [
+       "5 meisjes"
+      ]
+     }
+    },
+    {
+     "tekst": "Kun je nog delen?",
+     "som": "3 en 5 delen allebei alleen door 1",
+     "expr": null,
+     "uitkomst": "nee: 3 : 5 is al zo klein mogelijk",
+     "invoer": false
+    }
+   ],
+   "antwoord": {
+    "waarde": "3 : 5",
+    "expr": null,
+    "alternatieven": [
+     "3 : 5"
+    ]
+   },
+   "voorbeeld": {
+    "vraag": [
+     "In een team zitten 4 jongens en 6 meisjes.",
+     "Wat is de verhouding jongens : meisjes?"
+    ],
+    "stappen": [
+     {
+      "tekst": "Deel 4 door 2",
+      "som": "4 : 2",
+      "expr": "4/2",
+      "uitkomst": 2,
+      "invoer": true,
+      "tabel": {
+       "boven": [
+        "4 jongens",
+        "2 jongens"
+       ],
+       "onder": [
+        "6 meisjes",
+        "?"
+       ],
+       "pijl": ": 2"
+      }
+     },
+     {
+      "tekst": "Deel 6 ook door 2",
+      "som": "6 : 2",
+      "expr": "6/2",
+      "uitkomst": 3,
+      "invoer": true,
+      "tabel": {
+       "boven": [
+        "4 jongens",
+        "2 jongens"
+       ],
+       "onder": [
+        "6 meisjes",
+        "3 meisjes"
+       ],
+       "pijl": ": 2"
+      }
+     }
+    ],
+    "antwoord": {
+     "waarde": "2 : 3",
+     "expr": null,
+     "alternatieven": [
+      "2 : 3",
+      "4 : 6"
+     ]
+    }
+   }
+  },
+  {
+   "id": "O3-INS-04",
+   "onderdeel": 3,
+   "sectie": "instap",
+   "nummer": "4",
+   "afbeeldingen": [],
+   "flags": [
+    {
+     "soort": "notatie",
+     "beschrijving": "\"1:1000\" zonder spaties.",
+     "voorstel": "In de app: 1 : 1000."
+    }
+   ],
+   "autoCheck": true,
+   "origineel": "Een kaart heeft een schaal van 1:1000. Hoeveel meter is 4 cm op de kaart in het echt?",
+   "vraag": [
+    "Een kaart heeft schaal 1 : 1000.",
+    "Op de kaart meet je 4 cm.",
+    "Hoeveel meter is dat in het echt?"
+   ],
+   "type": "getal",
+   "paneel": "verhoudingstabel",
+   "object3d": "kaarttafel",
+   "stappen": [
+    {
+     "tekst": "1 cm is 1000 cm echt. Doe keer 4.",
+     "som": "4 × 1000",
+     "expr": "4*1000",
+     "uitkomst": 4000,
+     "eenheid": "cm",
+     "invoer": true,
+     "tabel": {
+      "boven": [
+       "1 cm kaart",
+       "4 cm kaart"
+      ],
+      "onder": [
+       "1000 cm echt",
+       "?"
+      ],
+      "pijl": "× 4"
+     }
+    },
+    {
+     "tekst": "Maak meters van cm",
+     "som": "4000 : 100",
+     "expr": "4000/100",
+     "uitkomst": 40,
+     "eenheid": "m",
+     "invoer": true,
+     "trap": {
+      "van": "cm",
+      "naar": "m"
+     }
+    }
+   ],
+   "antwoord": {
+    "waarde": 40,
+    "eenheid": "m",
+    "expr": "4*1000/100"
+   },
+   "voorbeeld": {
+    "vraag": [
+     "Een kaart heeft schaal 1 : 500.",
+     "Op de kaart meet je 6 cm.",
+     "Hoeveel meter is dat echt?"
+    ],
+    "stappen": [
+     {
+      "tekst": "Doe keer 6",
+      "som": "6 × 500",
+      "expr": "6*500",
+      "uitkomst": 3000,
+      "eenheid": "cm",
+      "invoer": true,
+      "tabel": {
+       "boven": [
+        "1 cm kaart",
+        "6 cm kaart"
+       ],
+       "onder": [
+        "500 cm echt",
+        "3000 cm echt"
+       ],
+       "pijl": "× 6"
+      }
+     },
+     {
+      "tekst": "Maak meters van cm",
+      "som": "3000 : 100",
+      "expr": "3000/100",
+      "uitkomst": 30,
+      "eenheid": "m",
+      "invoer": true,
+      "trap": {
+       "van": "cm",
+       "naar": "m"
+      }
+     }
+    ],
+    "antwoord": {
+     "waarde": 30,
+     "eenheid": "m",
+     "expr": "6*500/100"
+    }
+   }
+  },
+  {
+   "id": "O3-INS-05",
+   "onderdeel": 3,
+   "sectie": "instap",
+   "nummer": "5",
+   "afbeeldingen": [],
+   "flags": [],
+   "autoCheck": true,
+   "origineel": "Op een verpakking staat: \"1 deel siroop, 7 delen water.\" Hoeveel siroop gebruik je bij in totaal 2 liter limonade?",
+   "vraag": [
+    "Op de fles staat: 1 deel siroop, 7 delen water.",
+    "Je maakt in totaal 2 liter limonade.",
+    "Hoeveel liter siroop gebruik je?"
+   ],
+   "type": "getal",
+   "paneel": "verhoudingstabel",
+   "object3d": "siroopfles",
+   "stappen": [
+    {
+     "tekst": "Tel alle delen op",
+     "som": "1 + 7",
+     "expr": "1+7",
+     "uitkomst": 8,
+     "eenheid": "delen",
+     "invoer": true
+    },
+    {
+     "tekst": "Deel 2 liter door 8",
+     "som": "2 : 8",
+     "expr": "2/8",
+     "uitkomst": 0.25,
+     "eenheid": "liter",
+     "invoer": true,
+     "tabel": {
+      "boven": [
+       "8 delen",
+       "1 deel"
+      ],
+      "onder": [
+       "2 liter",
+       "?"
+      ],
+      "pijl": ": 8"
+     }
+    }
+   ],
+   "antwoord": {
+    "waarde": 0.25,
+    "eenheid": "liter",
+    "expr": "2/(1+7)",
+    "alternatieven": [
+     "250 ml"
+    ]
+   },
+   "voorbeeld": {
+    "vraag": [
+     "Je mengt 1 deel siroop en 9 delen water.",
+     "Je maakt 3 liter limonade.",
+     "Hoeveel liter siroop gebruik je?"
+    ],
+    "stappen": [
+     {
+      "tekst": "Tel alle delen op",
+      "som": "1 + 9",
+      "expr": "1+9",
+      "uitkomst": 10,
+      "eenheid": "delen",
+      "invoer": true
+     },
+     {
+      "tekst": "Deel 3 liter door 10",
+      "som": "3 : 10",
+      "expr": "3/10",
+      "uitkomst": 0.3,
+      "eenheid": "liter",
+      "invoer": true,
+      "tabel": {
+       "boven": [
+        "10 delen",
+        "1 deel"
+       ],
+       "onder": [
+        "3 liter",
+        "0,3 liter"
+       ],
+       "pijl": ": 10"
+      }
+     }
+    ],
+    "antwoord": {
+     "waarde": 0.3,
+     "eenheid": "liter",
+     "expr": "3/(1+9)"
+    }
+   }
+  },
+  {
+   "id": "O3-INS-06",
+   "onderdeel": 3,
+   "sectie": "instap",
+   "nummer": "6",
+   "afbeeldingen": [],
+   "flags": [
+    {
+     "soort": "notatie",
+     "beschrijving": "\"€18\" zonder spatie.",
+     "voorstel": "In de app: € 18."
+    }
+   ],
+   "autoCheck": true,
+   "origineel": "Een stuk stof van 3 meter kost €18. Wat is de prijs per meter?",
+   "vraag": [
+    "Een stuk stof van 3 meter kost € 18.",
+    "Wat kost 1 meter?"
+   ],
+   "type": "getal",
+   "paneel": "verhoudingstabel",
+   "object3d": "stofrol",
+   "stappen": [
+    {
+     "tekst": "Zet het in de tabel",
+     "som": "3 m → € 18",
+     "expr": null,
+     "uitkomst": "3 m = € 18",
+     "invoer": false,
+     "tabel": {
+      "boven": [
+       "3 m",
+       "1 m"
+      ],
+      "onder": [
+       "€ 18",
+       "?"
+      ],
+      "pijl": ": 3"
+     }
+    },
+    {
+     "tekst": "Deel door 3",
+     "som": "18 : 3",
+     "expr": "18/3",
+     "uitkomst": 6,
+     "eenheid": "euro",
+     "invoer": true,
+     "tabel": {
+      "boven": [
+       "3 m",
+       "1 m"
+      ],
+      "onder": [
+       "€ 18",
+       "€ 6"
+      ],
+      "pijl": ": 3"
+     }
+    }
+   ],
+   "antwoord": {
+    "waarde": 6,
+    "eenheid": "euro",
+    "expr": "18/3"
+   },
+   "voorbeeld": {
+    "vraag": [
+     "Een touw van 4 meter kost € 10.",
+     "Wat kost 1 meter?"
+    ],
+    "stappen": [
+     {
+      "tekst": "Zet het in de tabel",
+      "som": "4 m → € 10",
+      "expr": null,
+      "uitkomst": "4 m = € 10",
+      "invoer": false,
+      "tabel": {
+       "boven": [
+        "4 m",
+        "1 m"
+       ],
+       "onder": [
+        "€ 10",
+        "?"
+       ],
+       "pijl": ": 4"
+      }
+     },
+     {
+      "tekst": "Deel door 4",
+      "som": "10 : 4",
+      "expr": "10/4",
+      "uitkomst": 2.5,
+      "eenheid": "euro",
+      "invoer": true,
+      "tabel": {
+       "boven": [
+        "4 m",
+        "1 m"
+       ],
+       "onder": [
+        "€ 10",
+        "€ 2,50"
+       ],
+       "pijl": ": 4"
+      }
+     }
+    ],
+    "antwoord": {
+     "waarde": 2.5,
+     "eenheid": "euro",
+     "expr": "10/4"
+    }
+   }
+  },
+  {
+   "id": "O3-INS-07",
+   "onderdeel": 3,
+   "sectie": "instap",
+   "nummer": "7",
+   "afbeeldingen": [],
+   "flags": [],
+   "autoCheck": true,
+   "origineel": "In een klas van 20 studenten zijn er 5 met rood haar. Wat is het percentage studenten met rood haar?",
+   "vraag": [
+    "In een klas zitten 20 studenten.",
+    "5 studenten hebben rood haar.",
+    "Hoeveel procent is dat?"
+   ],
+   "type": "getal",
+   "paneel": "procentenbalk",
+   "stappen": [
+    {
+     "tekst": "Hoe vaak past 5 in 20?",
+     "som": "20 : 5",
+     "expr": "20/5",
+     "uitkomst": 4,
+     "eenheid": "keer",
+     "invoer": true,
+     "balk": {
+      "procent": 100,
+      "deel": 20,
+      "geheel": 20
+     }
+    },
+    {
+     "tekst": "Deel 100 % ook door 4",
+     "som": "100 : 4",
+     "expr": "100/4",
+     "uitkomst": 25,
+     "eenheid": "%",
+     "invoer": true,
+     "balk": {
+      "procent": 25,
+      "deel": 5,
+      "geheel": 20
+     }
+    }
+   ],
+   "antwoord": {
+    "waarde": 25,
+    "eenheid": "%",
+    "expr": "5/20*100"
+   },
+   "voorbeeld": {
+    "vraag": [
+     "In een groep zitten 30 studenten.",
+     "6 studenten dragen een bril.",
+     "Hoeveel procent is dat?"
+    ],
+    "stappen": [
+     {
+      "tekst": "Hoe vaak past 6 in 30?",
+      "som": "30 : 6",
+      "expr": "30/6",
+      "uitkomst": 5,
+      "eenheid": "keer",
+      "invoer": true,
+      "balk": {
+       "procent": 100,
+       "deel": 30,
+       "geheel": 30
+      }
+     },
+     {
+      "tekst": "Deel 100 % ook door 5",
+      "som": "100 : 5",
+      "expr": "100/5",
+      "uitkomst": 20,
+      "eenheid": "%",
+      "invoer": true,
+      "balk": {
+       "procent": 20,
+       "deel": 6,
+       "geheel": 30
+      }
+     }
+    ],
+    "antwoord": {
+     "waarde": 20,
+     "eenheid": "%",
+     "expr": "6/30*100"
+    }
+   }
+  },
+  {
+   "id": "O3-INS-08",
+   "onderdeel": 3,
+   "sectie": "instap",
+   "nummer": "8",
+   "afbeeldingen": [],
+   "flags": [],
+   "autoCheck": true,
+   "origineel": "Je maakt 10 foto's en kiest er 4 uit om te bewerken. Wat is de verhouding tussen bewerkte en niet-bewerkte foto's?",
+   "vraag": [
+    "Je maakt 10 foto's.",
+    "Je bewerkt er 4.",
+    "Wat is de verhouding bewerkt : niet bewerkt?"
+   ],
+   "type": "tekst",
+   "paneel": "verhoudingstabel",
+   "object3d": "fotocamera",
+   "stappen": [
+    {
+     "tekst": "Hoeveel foto's zijn niet bewerkt?",
+     "som": "10 − 4",
+     "expr": "10-4",
+     "uitkomst": 6,
+     "eenheid": "foto's",
+     "invoer": true
+    },
+    {
+     "tekst": "Deel 4 door 2",
+     "som": "4 : 2",
+     "expr": "4/2",
+     "uitkomst": 2,
+     "invoer": true,
+     "tabel": {
+      "boven": [
+       "4 bewerkt",
+       "2 bewerkt"
+      ],
+      "onder": [
+       "6 niet bewerkt",
+       "?"
+      ],
+      "pijl": ": 2"
+     }
+    },
+    {
+     "tekst": "Deel 6 ook door 2",
+     "som": "6 : 2",
+     "expr": "6/2",
+     "uitkomst": 3,
+     "invoer": true,
+     "tabel": {
+      "boven": [
+       "4 bewerkt",
+       "2 bewerkt"
+      ],
+      "onder": [
+       "6 niet bewerkt",
+       "3 niet bewerkt"
+      ],
+      "pijl": ": 2"
+     }
+    }
+   ],
+   "antwoord": {
+    "waarde": "2 : 3",
+    "expr": null,
+    "alternatieven": [
+     "2 : 3",
+     "4 : 6"
+    ]
+   },
+   "voorbeeld": {
+    "vraag": [
+     "Je maakt 12 tekeningen.",
+     "Je kleurt er 3 in.",
+     "Wat is de verhouding ingekleurd : niet ingekleurd?"
+    ],
+    "stappen": [
+     {
+      "tekst": "Hoeveel zijn niet ingekleurd?",
+      "som": "12 − 3",
+      "expr": "12-3",
+      "uitkomst": 9,
+      "eenheid": "tekeningen",
+      "invoer": true
+     },
+     {
+      "tekst": "Deel 3 door 3",
+      "som": "3 : 3",
+      "expr": "3/3",
+      "uitkomst": 1,
+      "invoer": true,
+      "tabel": {
+       "boven": [
+        "3 ingekleurd",
+        "1"
+       ],
+       "onder": [
+        "9 niet",
+        "?"
+       ],
+       "pijl": ": 3"
+      }
+     },
+     {
+      "tekst": "Deel 9 ook door 3",
+      "som": "9 : 3",
+      "expr": "9/3",
+      "uitkomst": 3,
+      "invoer": true,
+      "tabel": {
+       "boven": [
+        "3 ingekleurd",
+        "1"
+       ],
+       "onder": [
+        "9 niet",
+        "3"
+       ],
+       "pijl": ": 3"
+      }
+     }
+    ],
+    "antwoord": {
+     "waarde": "1 : 3",
+     "expr": null,
+     "alternatieven": [
+      "1 : 3",
+      "3 : 9"
+     ]
+    }
+   }
+  },
+  {
+   "id": "O3-INS-09",
+   "onderdeel": 3,
+   "sectie": "instap",
+   "nummer": "9",
+   "afbeeldingen": [],
+   "flags": [
+    {
+     "soort": "notatie",
+     "beschrijving": "\"€1\" zonder spatie.",
+     "voorstel": "In de app: € 1."
+    }
+   ],
+   "autoCheck": true,
+   "origineel": "Als 4 appels €1 kosten, hoeveel kosten 10 appels?",
+   "vraag": [
+    "4 appels kosten samen € 1.",
+    "Wat kosten 10 appels?"
+   ],
+   "type": "getal",
+   "paneel": "verhoudingstabel",
+   "object3d": "appelkist",
+   "stappen": [
+    {
+     "tekst": "Wat kosten 2 appels?",
+     "som": "1 : 2",
+     "expr": "1/2",
+     "uitkomst": 0.5,
+     "eenheid": "euro",
+     "invoer": true,
+     "tabel": {
+      "boven": [
+       "4 appels",
+       "2 appels"
+      ],
+      "onder": [
+       "€ 1",
+       "?"
+      ],
+      "pijl": ": 2"
+     }
+    },
+    {
+     "tekst": "10 appels is 5 × 2 appels",
+     "som": "5 × 0,50",
+     "expr": "5*0.5",
+     "uitkomst": 2.5,
+     "eenheid": "euro",
+     "invoer": true,
+     "tabel": {
+      "boven": [
+       "2 appels",
+       "10 appels"
+      ],
+      "onder": [
+       "€ 0,50",
+       "€ 2,50"
+      ],
+      "pijl": "× 5"
+     }
+    }
+   ],
+   "antwoord": {
+    "waarde": 2.5,
+    "eenheid": "euro",
+    "expr": "1/4*10"
+   },
+   "voorbeeld": {
+    "vraag": [
+     "5 peren kosten samen € 2.",
+     "Wat kosten 15 peren?"
+    ],
+    "stappen": [
+     {
+      "tekst": "15 peren is hoeveel keer 5 peren?",
+      "som": "15 : 5",
+      "expr": "15/5",
+      "uitkomst": 3,
+      "eenheid": "keer",
+      "invoer": true,
+      "tabel": {
+       "boven": [
+        "5 peren",
+        "15 peren"
+       ],
+       "onder": [
+        "€ 2",
+        "?"
+       ],
+       "pijl": "× 3"
+      }
+     },
+     {
+      "tekst": "Doe de prijs ook keer 3",
+      "som": "3 × 2",
+      "expr": "3*2",
+      "uitkomst": 6,
+      "eenheid": "euro",
+      "invoer": true,
+      "tabel": {
+       "boven": [
+        "5 peren",
+        "15 peren"
+       ],
+       "onder": [
+        "€ 2",
+        "€ 6"
+       ],
+       "pijl": "× 3"
+      }
+     }
+    ],
+    "antwoord": {
+     "waarde": 6,
+     "eenheid": "euro",
+     "expr": "2/5*15"
+    }
+   }
+  },
+  {
+   "id": "O3-INS-10",
+   "onderdeel": 3,
+   "sectie": "instap",
+   "nummer": "10",
+   "afbeeldingen": [],
+   "flags": [
+    {
+     "soort": "dubbel",
+     "beschrijving": "Zelfde verhouding (3 : 5) en zelfde soort vraag als instap 3, alleen een andere context.",
+     "voorstel": "Laten staan, of de docent kiest hier andere getallen."
+    }
+   ],
+   "autoCheck": true,
+   "origineel": "Op een werkdag werk je 3 uur voor klant A en 5 uur voor klant B. Wat is de verhouding klant A tot klant B in werktijd?",
+   "vraag": [
+    "Je werkt 3 uur voor klant A.",
+    "Je werkt 5 uur voor klant B.",
+    "Wat is de verhouding A : B in werktijd?"
+   ],
+   "type": "tekst",
+   "paneel": "verhoudingstabel",
+   "stappen": [
+    {
+     "tekst": "Uren voor klant A",
+     "som": "3",
+     "expr": "3",
+     "uitkomst": 3,
+     "eenheid": "uur",
+     "invoer": true,
+     "tabel": {
+      "boven": [
+       "A: 3 uur"
+      ],
+      "onder": [
+       "B: ? uur"
+      ]
+     }
+    },
+    {
+     "tekst": "Uren voor klant B",
+     "som": "5",
+     "expr": "5",
+     "uitkomst": 5,
+     "eenheid": "uur",
+     "invoer": true,
+     "tabel": {
+      "boven": [
+       "A: 3 uur"
+      ],
+      "onder": [
+       "B: 5 uur"
+      ]
+     }
+    },
+    {
+     "tekst": "Kun je nog delen?",
+     "som": "3 en 5 delen allebei alleen door 1",
+     "expr": null,
+     "uitkomst": "nee: 3 : 5",
+     "invoer": false
+    }
+   ],
+   "antwoord": {
+    "waarde": "3 : 5",
+    "expr": null,
+    "alternatieven": [
+     "3 : 5"
+    ]
+   },
+   "voorbeeld": {
+    "vraag": [
+     "Je werkt 6 uur in de winkel.",
+     "Je werkt 2 uur in het magazijn.",
+     "Wat is de verhouding winkel : magazijn?"
+    ],
+    "stappen": [
+     {
+      "tekst": "Deel 6 door 2",
+      "som": "6 : 2",
+      "expr": "6/2",
+      "uitkomst": 3,
+      "invoer": true,
+      "tabel": {
+       "boven": [
+        "winkel 6 uur",
+        "3"
+       ],
+       "onder": [
+        "magazijn 2 uur",
+        "?"
+       ],
+       "pijl": ": 2"
+      }
+     },
+     {
+      "tekst": "Deel 2 ook door 2",
+      "som": "2 : 2",
+      "expr": "2/2",
+      "uitkomst": 1,
+      "invoer": true,
+      "tabel": {
+       "boven": [
+        "winkel 6 uur",
+        "3"
+       ],
+       "onder": [
+        "magazijn 2 uur",
+        "1"
+       ],
+       "pijl": ": 2"
+      }
+     }
+    ],
+    "antwoord": {
+     "waarde": "3 : 1",
+     "expr": null,
+     "alternatieven": [
+      "3 : 1",
+      "6 : 2"
+     ]
+    }
+   }
+  },
+  {
+   "id": "O3-NIV-01",
+   "onderdeel": 3,
+   "sectie": "niveau",
+   "nummer": "1",
+   "afbeeldingen": [
+    "image56.png",
+    "image57.png"
+   ],
+   "flags": [
+    {
+     "soort": "auteursrecht",
+     "beschrijving": "Productfoto's met de merken Sunil en Fleuril.",
+     "voorstel": "Getallen overnemen, beeld opnieuw maken in 3D (zie beeld)."
+    },
+    {
+     "soort": "fout-in-werkboek",
+     "beschrijving": "Op de foto van Sunil staat \"66 wasbeurten\", in de tekst 30. Met 66 wasbeurten is Sunil goedkoper (€ 10,98 : 66 = € 0,17 per wasbeurt).",
+     "voorstel": "De app volgt de tekst (30 wasbeurten); het 3D-etiket toont 30. Docent controleert welk getal bedoeld is."
+    },
+    {
+     "soort": "notatie",
+     "beschrijving": "\"€6,23\" en \"€10,98\" zonder spatie; zinnen zonder punt.",
+     "voorstel": "In de app: € 6,23 en € 10,98."
+    },
+    {
+     "soort": "tekst",
+     "beschrijving": "\"Leg uit aan de hand van een berekening\": een uitleg schrijven kan niet in de app.",
+     "voorstel": "De berekening zit in de stappen; daarna kiest de student de fles."
+    }
+   ],
+   "autoCheck": true,
+   "origineel": "Met de rode fles Fleuril kun je 23 wasbeurten doen. Deze fles kost €6,23 De paarse fles Sunil is goed voor 30 wasbeurten en kost €10,98 Welke fles is het voordeligst? Leg uit aan de hand van een berekening",
+   "vraag": [
+    "De rode fles Fleuril kost € 6,23.",
+    "Daarmee doe je 23 wasbeurten.",
+    "De paarse fles Sunil kost € 10,98.",
+    "Daarmee doe je 30 wasbeurten.",
+    "Welke fles is het voordeligst?"
+   ],
+   "type": "keuze",
+   "keuzes": [
+    "Fleuril",
+    "Sunil"
+   ],
+   "paneel": "verhoudingstabel",
+   "object3d": "wasmiddelflessen",
+   "context": [
+    {
+     "soort": "prijzen",
+     "items": [
+      {
+       "label": "Fleuril (rode fles), 23 wasbeurten",
+       "waarde": "€ 6,23"
+      },
+      {
+       "label": "Sunil (paarse fles), 30 wasbeurten",
+       "waarde": "€ 10,98"
+      }
+     ],
+     "beschrijving": "Twee productfoto's. image56: paarse fles Sunil met grijze dop en handvat rechts, blauw Sunil-logo met geel vlindertje, lavendel en witte/blauwe bloemetjes; geel label linksboven \"66 wasbeurten MEGA Voordeelfles\" en rechtsonder een icoontje \"66\". image57: rode fles fleuril met witte dop; label \"NIEUW 23\" met wasbeurt-icoon, wit logo \"fleuril\", \"renew 3D KLEUR\", rood gebreid stofje met pijl, onderaan icoontje \"23\". De prijzen staan alleen in de tekst."
+    }
+   ],
+   "beeld": [
+    {
+     "afbeelding": "image56.png",
+     "vorm": "model",
+     "ontwerp": "Op de toonbank van de drogisterijkraam in de Markthal staat een grote paarse fles wasmiddel met grijze dop en lavendelbloemetjes, zonder merklogo. Op het etiket staat \"Sunil – 30 wasbeurten\" en aan de hals hangt een prijslabel \"€ 10,98\". Klik op de fles: hij draait rond en er komen 30 kleine zeepbelletjes uit de dop.",
+     "toont": [
+      "Sunil (paars)",
+      "30 wasbeurten",
+      "€ 10,98"
+     ],
+     "grap": "Eén zeepbel blijft hangen en knapt pas als je hem aanklikt."
+    },
+    {
+     "afbeelding": "image57.png",
+     "vorm": "model",
+     "ontwerp": "Naast de paarse fles staat een kleinere rode fles met witte dop en een rood gebreid stofje op het etiket, ook zonder merklogo. Het etiket zegt \"Fleuril – 23 wasbeurten\", het prijslabel \"€ 6,23\". Klik erop en er komen 23 zeepbelletjes uit.",
+     "toont": [
+      "Fleuril (rood)",
+      "23 wasbeurten",
+      "€ 6,23"
+     ]
+    }
+   ],
+   "stappen": [
+    {
+     "tekst": "Fleuril: prijs per wasbeurt",
+     "som": "6,23 : 23",
+     "expr": "6.23/23",
+     "uitkomst": 0.27,
+     "eenheid": "euro",
+     "invoer": true,
+     "afronding": "2-decimalen",
+     "tabel": {
+      "boven": [
+       "23 wasbeurten",
+       "1 wasbeurt"
+      ],
+      "onder": [
+       "€ 6,23",
+       "?"
+      ],
+      "pijl": ": 23"
+     }
+    },
+    {
+     "tekst": "Sunil: prijs per wasbeurt",
+     "som": "10,98 : 30",
+     "expr": "10.98/30",
+     "uitkomst": 0.37,
+     "eenheid": "euro",
+     "invoer": true,
+     "afronding": "2-decimalen",
+     "tabel": {
+      "boven": [
+       "30 wasbeurten",
+       "1 wasbeurt"
+      ],
+      "onder": [
+       "€ 10,98",
+       "?"
+      ],
+      "pijl": ": 30"
+     }
+    },
+    {
+     "tekst": "Vergelijk de prijzen",
+     "som": "€ 0,27 < € 0,37",
+     "expr": null,
+     "uitkomst": "Fleuril is voordeliger",
+     "invoer": false
+    }
+   ],
+   "antwoord": {
+    "waarde": "Fleuril",
+    "expr": null
+   },
+   "voorbeeld": {
+    "vraag": [
+     "Fles A kost € 5 voor 20 wasbeurten.",
+     "Fles B kost € 8 voor 40 wasbeurten.",
+     "Welke fles is voordeliger?"
+    ],
+    "stappen": [
+     {
+      "tekst": "Fles A per wasbeurt",
+      "som": "5 : 20",
+      "expr": "5/20",
+      "uitkomst": 0.25,
+      "eenheid": "euro",
+      "invoer": true,
+      "tabel": {
+       "boven": [
+        "20 wasbeurten",
+        "1 wasbeurt"
+       ],
+       "onder": [
+        "€ 5",
+        "€ 0,25"
+       ],
+       "pijl": ": 20"
+      }
+     },
+     {
+      "tekst": "Fles B per wasbeurt",
+      "som": "8 : 40",
+      "expr": "8/40",
+      "uitkomst": 0.2,
+      "eenheid": "euro",
+      "invoer": true,
+      "tabel": {
+       "boven": [
+        "40 wasbeurten",
+        "1 wasbeurt"
+       ],
+       "onder": [
+        "€ 8",
+        "€ 0,20"
+       ],
+       "pijl": ": 40"
+      }
+     },
+     {
+      "tekst": "Vergelijk",
+      "som": "€ 0,20 < € 0,25",
+      "expr": null,
+      "uitkomst": "fles B",
+      "invoer": false
+     }
+    ],
+    "antwoord": {
+     "waarde": "fles B",
+     "expr": null
+    }
+   }
+  },
+  {
+   "id": "O3-NIV-02",
+   "onderdeel": 3,
+   "sectie": "niveau",
+   "nummer": "2",
+   "afbeeldingen": [
+    "image58.png"
+   ],
+   "flags": [
+    {
+     "soort": "auteursrecht",
+     "beschrijving": "Nagemaakte webshop met productfoto's van camembert en geitenkaas.",
+     "voorstel": "Getallen overnemen, beeld opnieuw maken in 3D (zie beeld)."
+    },
+    {
+     "soort": "fout-in-werkboek",
+     "beschrijving": "\"koop hij geitenkaas\" moet \"koopt hij geitenkaas\" zijn.",
+     "voorstel": "In de app verbeterd."
+    },
+    {
+     "soort": "notatie",
+     "beschrijving": "\"€4,50\" zonder spatie.",
+     "voorstel": "In de app: € 4,50."
+    },
+    {
+     "soort": "dubbelzinnig",
+     "beschrijving": "Precies is het 41,67 gram. Naar beneden afronden (41 g, dan is er genoeg geld) of gewoon afronden (42 g) is ook te verdedigen.",
+     "voorstel": "De app rekent 41,67 g goed, met een marge van 0,7 g (41 g en 42 g ook goed)."
+    }
+   ],
+   "autoCheck": true,
+   "origineel": "Billie wil voor €4,50 kaas kopen bij kaasshop.nl. Hij koopt een heerlijk stuk camembert en voor de rest van zijn geld koop hij geitenkaas. Hoeveel gram geitenkaas kan Billie kopen?",
+   "vraag": [
+    "Billie heeft € 4,50 voor kaas.",
+    "Hij koopt 1 camembert.",
+    "Van de rest koopt hij geitenkaas.",
+    "Hoeveel gram geitenkaas kan hij kopen?"
+   ],
+   "type": "getal",
+   "paneel": "verhoudingstabel",
+   "object3d": "kaaskraam",
+   "context": [
+    {
+     "soort": "prijzen",
+     "titel": "KaasShop.nl – Webshop",
+     "items": [
+      {
+       "label": "Camembert",
+       "waarde": "€ 3,75 per stuk"
+      },
+      {
+       "label": "Geitenkaas",
+       "waarde": "€ 1,80 per 100 gram"
+      }
+     ],
+     "beschrijving": "Webshop-scherm van \"KaasShop.nl\" (logo: KAAS met gele driehoekjes, daaronder \"Shop.nl\"). Links menuknoppen: Home, Soorten kaas, Webshop (grijs = actief, met pijltje), Extra. Midden de titel \"Webshop\" (vet, onderstreept) met 2 foto's: camembert met \"€ 3,75 per stuk\" en geitenkaas met \"€ 1,80 per 100 gram\". Rechts een kolom \"Winkelwagen – Uw winkelwagen is nu nog leeg. € 0,00\"."
+    }
+   ],
+   "beeld": [
+    {
+     "afbeelding": "image58.png",
+     "vorm": "bord",
+     "ontwerp": "Bij de kaaskraam in de Markthal hangt boven de toonbank een groot krijtbord in de vorm van een webshop: links de knoppen Home, Soorten kaas, Webshop en Extra, rechts een vakje \"Winkelwagen € 0,00\". Op de toonbank liggen een ronde camembert met vlaggetje \"€ 3,75 per stuk\" en een rol geitenkaas met vlaggetje \"€ 1,80 per 100 gram\". Klik op de geitenkaas: een mes schuift langs een liniaal in grammen en het winkelwagenbedrag loopt op.",
+     "toont": [
+      "Camembert € 3,75 per stuk",
+      "Geitenkaas € 1,80 per 100 gram",
+      "Winkelwagen € 0,00"
+     ],
+     "grap": "Een muis gluurt achter de camembert vandaan."
+    }
+   ],
+   "stappen": [
+    {
+     "tekst": "Wat houdt Billie over? Reken in cent.",
+     "som": "450 − 375",
+     "expr": "450-375",
+     "uitkomst": 75,
+     "eenheid": "cent",
+     "invoer": true
+    },
+    {
+     "tekst": "Wat kost 1 gram geitenkaas?",
+     "som": "180 : 100",
+     "expr": "180/100",
+     "uitkomst": 1.8,
+     "eenheid": "cent",
+     "invoer": true,
+     "tabel": {
+      "boven": [
+       "100 g",
+       "1 g"
+      ],
+      "onder": [
+       "180 cent",
+       "?"
+      ],
+      "pijl": ": 100"
+     }
+    },
+    {
+     "tekst": "Hoeveel gram voor 75 cent?",
+     "som": "75 : 1,8",
+     "expr": "75/1.8",
+     "uitkomst": 41.67,
+     "eenheid": "gram",
+     "invoer": true,
+     "afronding": "2-decimalen",
+     "tabel": {
+      "boven": [
+       "1,8 cent",
+       "75 cent"
+      ],
+      "onder": [
+       "1 g",
+       "?"
+      ]
+     }
+    }
+   ],
+   "antwoord": {
+    "waarde": 41.67,
+    "eenheid": "gram",
+    "expr": "(4.5-3.75)/1.8*100",
+    "afronding": "2-decimalen",
+    "tolerantie": 0.7
+   },
+   "voorbeeld": {
+    "vraag": [
+     "Je hebt € 5.",
+     "Je koopt een brood van € 2.",
+     "Van de rest koop je ham.",
+     "Ham kost € 1,50 per 100 gram.",
+     "Hoeveel gram ham koop je?"
+    ],
+    "stappen": [
+     {
+      "tekst": "Wat houd je over?",
+      "som": "5 − 2",
+      "expr": "5-2",
+      "uitkomst": 3,
+      "eenheid": "euro",
+      "invoer": true
+     },
+     {
+      "tekst": "Hoe vaak past € 1,50 in € 3?",
+      "som": "3 : 1,50",
+      "expr": "3/1.5",
+      "uitkomst": 2,
+      "eenheid": "keer",
+      "invoer": true,
+      "tabel": {
+       "boven": [
+        "€ 1,50",
+        "€ 3"
+       ],
+       "onder": [
+        "100 g",
+        "?"
+       ],
+       "pijl": "× 2"
+      }
+     },
+     {
+      "tekst": "Doe 100 gram ook keer 2",
+      "som": "2 × 100",
+      "expr": "2*100",
+      "uitkomst": 200,
+      "eenheid": "gram",
+      "invoer": true,
+      "tabel": {
+       "boven": [
+        "€ 1,50",
+        "€ 3"
+       ],
+       "onder": [
+        "100 g",
+        "200 g"
+       ],
+       "pijl": "× 2"
+      }
+     }
+    ],
+    "antwoord": {
+     "waarde": 200,
+     "eenheid": "gram",
+     "expr": "(5-2)/1.5*100"
+    }
+   }
+  },
+  {
+   "id": "O3-NIV-03",
+   "onderdeel": 3,
+   "sectie": "niveau",
+   "nummer": "3",
+   "afbeeldingen": [
+    "image59.png"
+   ],
+   "flags": [
+    {
+     "soort": "auteursrecht",
+     "beschrijving": "Productfoto met het merk \"Casa Royale\".",
+     "voorstel": "Getallen overnemen, beeld opnieuw maken in 3D (zie beeld)."
+    },
+    {
+     "soort": "dubbelzinnig",
+     "beschrijving": "\"(breuk / .. : ..)\": een breuk of een verhouding mag. Let op: 1 : 4 is avocado : rest, dat is niet gevraagd.",
+     "voorstel": "De app rekent 1/5 en 1 : 5 goed."
+    }
+   ],
+   "autoCheck": true,
+   "origineel": "Hiernaast zie je een pot met heerlijke Mexicaanse guacamole, met echte avocado erin verwerkt. Hoeveelste deel is de avocado ten opzichte van de hele pot (breuk / .. : ..). Vereenvoudig zo klein mogelijk.",
+   "vraag": [
+    "Een pot guacamole is 250 gram.",
+    "Er zit 50 gram avocado in.",
+    "Welk deel van de pot is avocado?",
+    "Schrijf het zo klein mogelijk."
+   ],
+   "type": "tekst",
+   "paneel": "verhoudingstabel",
+   "object3d": "guacamolepot",
+   "context": [
+    {
+     "soort": "tekst",
+     "titel": "Etiket pot guacamole",
+     "items": [
+      {
+       "label": "Inhoud pot",
+       "waarde": 250,
+       "eenheid": "gram"
+      },
+      {
+       "label": "Avocado",
+       "waarde": 50,
+       "eenheid": "gram"
+      }
+     ],
+     "beschrijving": "Ronde plastic pot met oranje deksel, merk \"Casa Royale\" (rood met goud). Op het etiket groene guacamole, tortillachips en rode pepers. Tekst: \"Echte Mexicaanse guacamole 250 gram bevat 50 gram avocado\"."
+    }
+   ],
+   "beeld": [
+    {
+     "afbeelding": "image59.png",
+     "vorm": "model",
+     "ontwerp": "In de open keuken van de Markthal staat op het aanrecht een ronde pot guacamole met oranje deksel en een etiket zonder merknaam: \"Echte Mexicaanse guacamole – 250 gram – bevat 50 gram avocado\". Klik op de pot: de deksel springt open en de inhoud splitst in 5 even dikke laagjes, waarvan 1 laagje knalgroen kleurt (avocado).",
+     "toont": [
+      "250 gram",
+      "bevat 50 gram avocado"
+     ],
+     "grap": "Een tortillachip steekt uit de pot en wiebelt als je ernaar kijkt."
+    }
+   ],
+   "stappen": [
+    {
+     "tekst": "Avocado boven, hele pot onder",
+     "som": "50 : 250",
+     "expr": null,
+     "uitkomst": "50 : 250",
+     "invoer": false,
+     "tabel": {
+      "boven": [
+       "50 g avocado"
+      ],
+      "onder": [
+       "250 g pot"
+      ]
+     }
+    },
+    {
+     "tekst": "Deel 50 door 50",
+     "som": "50 : 50",
+     "expr": "50/50",
+     "uitkomst": 1,
+     "invoer": true,
+     "tabel": {
+      "boven": [
+       "50 g avocado",
+       "1"
+      ],
+      "onder": [
+       "250 g pot",
+       "?"
+      ],
+      "pijl": ": 50"
+     }
+    },
+    {
+     "tekst": "Deel 250 ook door 50",
+     "som": "250 : 50",
+     "expr": "250/50",
+     "uitkomst": 5,
+     "invoer": true,
+     "tabel": {
+      "boven": [
+       "50 g avocado",
+       "1"
+      ],
+      "onder": [
+       "250 g pot",
+       "5"
+      ],
+      "pijl": ": 50"
+     }
+    }
+   ],
+   "antwoord": {
+    "waarde": "1/5",
+    "expr": null,
+    "alternatieven": [
+     "1/5",
+     "1 : 5"
+    ]
+   },
+   "voorbeeld": {
+    "vraag": [
+     "Een fles saus is 300 ml.",
+     "Er zit 100 ml tomaat in.",
+     "Welk deel van de saus is tomaat?"
+    ],
+    "stappen": [
+     {
+      "tekst": "Deel 100 door 100",
+      "som": "100 : 100",
+      "expr": "100/100",
+      "uitkomst": 1,
+      "invoer": true,
+      "tabel": {
+       "boven": [
+        "100 ml tomaat",
+        "1"
+       ],
+       "onder": [
+        "300 ml saus",
+        "?"
+       ],
+       "pijl": ": 100"
+      }
+     },
+     {
+      "tekst": "Deel 300 ook door 100",
+      "som": "300 : 100",
+      "expr": "300/100",
+      "uitkomst": 3,
+      "invoer": true,
+      "tabel": {
+       "boven": [
+        "100 ml tomaat",
+        "1"
+       ],
+       "onder": [
+        "300 ml saus",
+        "3"
+       ],
+       "pijl": ": 100"
+      }
+     }
+    ],
+    "antwoord": {
+     "waarde": "1/3",
+     "expr": null,
+     "alternatieven": [
+      "1/3",
+      "1 : 3"
+     ]
+    }
+   }
+  },
+  {
+   "id": "O3-NIV-04",
+   "onderdeel": 3,
+   "sectie": "niveau",
+   "nummer": "4",
+   "afbeeldingen": [],
+   "flags": [
+    {
+     "soort": "tekst",
+     "beschrijving": "\"3 op de 8 heeft een auto\": de som gaat ervan uit dat elke autobezitter precies 1 auto heeft.",
+     "voorstel": "De app rekent 56.250 auto's goed."
+    }
+   ],
+   "autoCheck": true,
+   "origineel": "Arnhem heeft 150.000 inwoners. 3 op de 8 heeft een auto. Hoeveel auto's zijn er in Arnhem?",
+   "vraag": [
+    "Arnhem heeft 150.000 inwoners.",
+    "3 op de 8 inwoners hebben een auto.",
+    "Hoeveel auto's zijn er in Arnhem?"
+   ],
+   "type": "getal",
+   "paneel": "verhoudingstabel",
+   "stappen": [
+    {
+     "tekst": "Hoe vaak past 8 in 150.000?",
+     "som": "150.000 : 8",
+     "expr": "150000/8",
+     "uitkomst": 18750,
+     "eenheid": "keer",
+     "invoer": true,
+     "tabel": {
+      "boven": [
+       "8 inwoners",
+       "150.000 inwoners"
+      ],
+      "onder": [
+       "3 auto's",
+       "?"
+      ],
+      "pijl": "× 18.750"
+     }
+    },
+    {
+     "tekst": "Doe 3 ook keer 18.750",
+     "som": "18.750 × 3",
+     "expr": "18750*3",
+     "uitkomst": 56250,
+     "eenheid": "auto's",
+     "invoer": true,
+     "tabel": {
+      "boven": [
+       "8 inwoners",
+       "150.000 inwoners"
+      ],
+      "onder": [
+       "3 auto's",
+       "56.250 auto's"
+      ],
+      "pijl": "× 18.750"
+     }
+    }
+   ],
+   "antwoord": {
+    "waarde": 56250,
+    "eenheid": "auto's",
+    "expr": "150000/8*3"
+   },
+   "voorbeeld": {
+    "vraag": [
+     "Een dorp heeft 4000 inwoners.",
+     "2 op de 5 inwoners hebben een hond.",
+     "Hoeveel inwoners hebben een hond?"
+    ],
+    "stappen": [
+     {
+      "tekst": "Hoe vaak past 5 in 4000?",
+      "som": "4000 : 5",
+      "expr": "4000/5",
+      "uitkomst": 800,
+      "eenheid": "keer",
+      "invoer": true,
+      "tabel": {
+       "boven": [
+        "5 inwoners",
+        "4000 inwoners"
+       ],
+       "onder": [
+        "2 honden",
+        "?"
+       ],
+       "pijl": "× 800"
+      }
+     },
+     {
+      "tekst": "Doe 2 ook keer 800",
+      "som": "800 × 2",
+      "expr": "800*2",
+      "uitkomst": 1600,
+      "eenheid": "inwoners",
+      "invoer": true,
+      "tabel": {
+       "boven": [
+        "5 inwoners",
+        "4000 inwoners"
+       ],
+       "onder": [
+        "2 honden",
+        "1600"
+       ],
+       "pijl": "× 800"
+      }
+     }
+    ],
+    "antwoord": {
+     "waarde": 1600,
+     "eenheid": "inwoners",
+     "expr": "4000/5*2"
+    }
+   }
+  },
+  {
+   "id": "O3-NIV-05",
+   "onderdeel": 3,
+   "sectie": "niveau",
+   "nummer": "5",
+   "afbeeldingen": [
+    "image60.jpeg"
+   ],
+   "flags": [
+    {
+     "soort": "auteursrecht",
+     "beschrijving": "Foto van een marktkraam (herkomst onbekend).",
+     "voorstel": "Getallen overnemen, beeld opnieuw maken in 3D (zie beeld)."
+    },
+    {
+     "soort": "tekst",
+     "beschrijving": "De prijs staat alleen op het bordje in de afbeelding; in de bron staat het plaatje bij opdracht 4.",
+     "voorstel": "In de app staat de prijs in de vraag en op het 3D-bordje."
+    }
+   ],
+   "autoCheck": true,
+   "origineel": "Ruben koopt 150 gram abrikozen. Hoeveel moet hij betalen?",
+   "vraag": [
+    "Abrikozen kosten € 4,50 per 500 gram.",
+    "Ruben koopt 150 gram.",
+    "Hoeveel moet hij betalen?"
+   ],
+   "type": "getal",
+   "paneel": "verhoudingstabel",
+   "object3d": "fruitkist",
+   "context": [
+    {
+     "soort": "prijzen",
+     "items": [
+      {
+       "label": "Abrikozen 500 gram",
+       "waarde": "€ 4,50"
+      }
+     ],
+     "beschrijving": "Houten kist vol oranje abrikozen; vooraan één doorgesneden abrikoos met pit, rechtsonder een groen blaadje. In de kist steekt een houten prijsbordje: \"Abrikozen 500 gram €4,50\". (In de bron staat dit plaatje bij opdracht 4; het hoort bij opdracht 5.)"
+    }
+   ],
+   "beeld": [
+    {
+     "afbeelding": "image60.jpeg",
+     "vorm": "bord",
+     "ontwerp": "In de fruitkraam van de Markthal staat een houten kist vol oranje abrikozen; vooraan ligt een opengesneden abrikoos met pit. In de kist steekt een houten prijsbordje \"Abrikozen 500 gram € 4,50\". Ernaast staat een weegschaal: klik erop en er rollen abrikozen op tot de wijzer op 150 gram staat.",
+     "toont": [
+      "Abrikozen",
+      "500 gram",
+      "€ 4,50",
+      "150 gram (weegschaal)"
+     ],
+     "grap": "Een wesp cirkelt rond de opengesneden abrikoos."
+    }
+   ],
+   "stappen": [
+    {
+     "tekst": "Wat kost 100 gram?",
+     "som": "4,50 : 5",
+     "expr": "4.5/5",
+     "uitkomst": 0.9,
+     "eenheid": "euro",
+     "invoer": true,
+     "tabel": {
+      "boven": [
+       "500 g",
+       "100 g"
+      ],
+      "onder": [
+       "€ 4,50",
+       "?"
+      ],
+      "pijl": ": 5"
+     }
+    },
+    {
+     "tekst": "Wat kost 50 gram?",
+     "som": "0,90 : 2",
+     "expr": "0.9/2",
+     "uitkomst": 0.45,
+     "eenheid": "euro",
+     "invoer": true,
+     "tabel": {
+      "boven": [
+       "100 g",
+       "50 g"
+      ],
+      "onder": [
+       "€ 0,90",
+       "?"
+      ],
+      "pijl": ": 2"
+     }
+    },
+    {
+     "tekst": "150 gram = 100 g + 50 g",
+     "som": "0,90 + 0,45",
+     "expr": "0.9+0.45",
+     "uitkomst": 1.35,
+     "eenheid": "euro",
+     "invoer": true
+    }
+   ],
+   "antwoord": {
+    "waarde": 1.35,
+    "eenheid": "euro",
+    "expr": "4.5/500*150"
+   },
+   "voorbeeld": {
+    "vraag": [
+     "Kersen kosten € 6 per 500 gram.",
+     "Je koopt 200 gram.",
+     "Hoeveel betaal je?"
+    ],
+    "stappen": [
+     {
+      "tekst": "Wat kost 100 gram?",
+      "som": "6 : 5",
+      "expr": "6/5",
+      "uitkomst": 1.2,
+      "eenheid": "euro",
+      "invoer": true,
+      "tabel": {
+       "boven": [
+        "500 g",
+        "100 g"
+       ],
+       "onder": [
+        "€ 6",
+        "€ 1,20"
+       ],
+       "pijl": ": 5"
+      }
+     },
+     {
+      "tekst": "Wat kost 200 gram?",
+      "som": "1,20 × 2",
+      "expr": "1.2*2",
+      "uitkomst": 2.4,
+      "eenheid": "euro",
+      "invoer": true,
+      "tabel": {
+       "boven": [
+        "100 g",
+        "200 g"
+       ],
+       "onder": [
+        "€ 1,20",
+        "€ 2,40"
+       ],
+       "pijl": "× 2"
+      }
+     }
+    ],
+    "antwoord": {
+     "waarde": 2.4,
+     "eenheid": "euro",
+     "expr": "6/500*200"
+    }
+   }
+  },
+  {
+   "id": "O3-NIV-06",
+   "onderdeel": 3,
+   "sectie": "niveau",
+   "nummer": "6",
+   "afbeeldingen": [],
+   "flags": [
+    {
+     "soort": "notatie",
+     "beschrijving": "\"€3,50\" zonder spatie.",
+     "voorstel": "In de app: € 3,50."
+    }
+   ],
+   "autoCheck": true,
+   "origineel": "Max verdient €3,50 per uur en werkt 16 uur per week. Hij zet een kwart van zijn geld dat hij verdient op een spaarrekening. Hoeveel stort Max elke week op zijn spaarrekening?",
+   "vraag": [
+    "Max verdient € 3,50 per uur.",
+    "Hij werkt 16 uur per week.",
+    "Een kwart zet hij op zijn spaarrekening.",
+    "Hoeveel spaart Max per week?"
+   ],
+   "type": "getal",
+   "paneel": "blokmodel",
+   "object3d": "spaarpot",
+   "stappen": [
+    {
+     "tekst": "Wat verdient Max per week?",
+     "som": "16 × 3,50",
+     "expr": "16*3.5",
+     "uitkomst": 56,
+     "eenheid": "euro",
+     "invoer": true
+    },
+    {
+     "tekst": "Een kwart: deel door 4",
+     "som": "56 : 4",
+     "expr": "56/4",
+     "uitkomst": 14,
+     "eenheid": "euro",
+     "invoer": true
+    }
+   ],
+   "antwoord": {
+    "waarde": 14,
+    "eenheid": "euro",
+    "expr": "16*3.5/4"
+   },
+   "voorbeeld": {
+    "vraag": [
+     "Sam verdient € 5 per uur.",
+     "Hij werkt 12 uur per week.",
+     "Een derde spaart hij.",
+     "Hoeveel spaart Sam per week?"
+    ],
+    "stappen": [
+     {
+      "tekst": "Wat verdient Sam per week?",
+      "som": "12 × 5",
+      "expr": "12*5",
+      "uitkomst": 60,
+      "eenheid": "euro",
+      "invoer": true
+     },
+     {
+      "tekst": "Een derde: deel door 3",
+      "som": "60 : 3",
+      "expr": "60/3",
+      "uitkomst": 20,
+      "eenheid": "euro",
+      "invoer": true
+     }
+    ],
+    "antwoord": {
+     "waarde": 20,
+     "eenheid": "euro",
+     "expr": "12*5/3"
+    }
+   }
+  },
+  {
+   "id": "O3-NIV-07",
+   "onderdeel": 3,
+   "sectie": "niveau",
+   "nummer": "7",
+   "afbeeldingen": [
+    "image61.png"
+   ],
+   "flags": [
+    {
+     "soort": "auteursrecht",
+     "beschrijving": "Receptkaart van een supermarkt met de merken Poiesz, Knorr, Heinz, Napolina en Blue Band.",
+     "voorstel": "Getallen overnemen, beeld opnieuw maken in 3D (zie beeld)."
+    },
+    {
+     "soort": "dubbelzinnig",
+     "beschrijving": "Je koopt hele pakken: 3,5 pak wordt 4 pakken = 1560 gram. Wat Duke nodig heeft, is 1365 gram.",
+     "voorstel": "De app rekent 1365 gram goed en ook 1560 gram (4 hele pakken)."
+    },
+    {
+     "soort": "fout-in-werkboek",
+     "beschrijving": "\"Voor hoeveel gram aan ... moet Duke gaan kopen?\" is een kromme zin; \"Spaghetti\" midden in de zin met hoofdletter.",
+     "voorstel": "In de app: \"Hoeveel gram tomatenblokjes moet Duke kopen?\""
+    },
+    {
+     "soort": "tekst",
+     "beschrijving": "\"Heinz Tomato blokjes\" is een merknaam.",
+     "voorstel": "In de app: tomatenblokjes."
+    }
+   ],
+   "autoCheck": true,
+   "origineel": "Duke gaat Spaghetti Bolognese koken voor zijn familie. Zijn familie bestaat uit 14 personen. Hij heeft bijna alles al in huis om de Spaghetti te kunnen maken, alleen de Heinz Tomato blokjes moeten gekocht worden in de winkel. Voor hoeveel gram aan Heinz Tomato blokjes moet Duke gaan kopen?",
+   "vraag": [
+    "Duke kookt spaghetti voor 14 personen.",
+    "Het recept is voor 4 personen.",
+    "Daarin zit 1 pak tomatenblokjes van 390 gram.",
+    "Hoeveel gram tomatenblokjes moet Duke kopen?"
+   ],
+   "type": "getal",
+   "paneel": "verhoudingstabel",
+   "object3d": "receptenboek",
+   "context": [
+    {
+     "soort": "tekst",
+     "titel": "Recept Spaghetti Bolognese – ingrediënten voor 4 personen",
+     "items": [
+      {
+       "label": "Italiaans gehakt",
+       "waarde": 350,
+       "eenheid": "gram"
+      },
+      {
+       "label": "Italiaanse roerbakgroente",
+       "waarde": "1 zak à 400 gram"
+      },
+      {
+       "label": "Knorr mix voor spaghetti",
+       "waarde": "1 pakje"
+      },
+      {
+       "label": "Heinz tomato blokjes naturel",
+       "waarde": "1 pak à 390 gram"
+      },
+      {
+       "label": "Napolina ei spaghetti",
+       "waarde": "1 zak à 500 gram"
+      },
+      {
+       "label": "Blue Band Vloeibare boter",
+       "waarde": "geen hoeveelheid"
+      }
+     ],
+     "beschrijving": "Receptkaart op gelinieerd papier met een blauw-wit geruite rand. Boven een foto van rauw gehakt op een schaaltje, \"+\" en een pakje Knorr Italiaanse Spaghetti; rechtsboven het logo \"Poiesz – wat maak je menu\". Titel \"Recept – Spaghetti Bolognese\". Kopje \"Ingrediënten voor 4 personen\" met 6 regels (zie items)."
+    }
+   ],
+   "beeld": [
+    {
+     "afbeelding": "image61.png",
+     "vorm": "boek",
+     "ontwerp": "In de open keuken van de Markthal ligt op de toonbank een groot opengeslagen receptenboek met een blauw-wit geruite rand. Links een tekening van gehakt en een pakje spaghettimix, rechts \"Recept Spaghetti Bolognese – Ingrediënten voor 4 personen\" met de 6 regels. Naast het boek staat een stapel pakken tomatenblokjes van 390 gram; klik erop en er schuiven pakken naar de pan (3 hele en een half).",
+     "toont": [
+      "Ingrediënten voor 4 personen",
+      "350 gram Italiaans gehakt",
+      "1 zak à 400 gram roerbakgroente",
+      "1 pakje mix voor spaghetti",
+      "1 pak à 390 gram tomatenblokjes",
+      "1 zak à 500 gram spaghetti",
+      "vloeibare boter"
+     ],
+     "grap": "Een sliert spaghetti hangt over de rand van de pan en zwaait heen en weer."
+    }
+   ],
+   "stappen": [
+    {
+     "tekst": "Hoeveel keer 4 personen is 14?",
+     "som": "14 : 4",
+     "expr": "14/4",
+     "uitkomst": 3.5,
+     "eenheid": "keer",
+     "invoer": true,
+     "tabel": {
+      "boven": [
+       "4 personen",
+       "14 personen"
+      ],
+      "onder": [
+       "390 g",
+       "?"
+      ],
+      "pijl": "× 3,5"
+     }
+    },
+    {
+     "tekst": "Doe 390 gram ook keer 3,5",
+     "som": "3,5 × 390",
+     "expr": "3.5*390",
+     "uitkomst": 1365,
+     "eenheid": "gram",
+     "invoer": true,
+     "tabel": {
+      "boven": [
+       "4 personen",
+       "14 personen"
+      ],
+      "onder": [
+       "390 g",
+       "1365 g"
+      ],
+      "pijl": "× 3,5"
+     }
+    }
+   ],
+   "antwoord": {
+    "waarde": 1365,
+    "eenheid": "gram",
+    "expr": "390/4*14",
+    "alternatieven": [
+     1560,
+     "1.560"
+    ]
+   },
+   "voorbeeld": {
+    "vraag": [
+     "Een recept voor 4 personen gebruikt 250 gram room.",
+     "Je kookt voor 10 personen.",
+     "Hoeveel gram room heb je nodig?"
+    ],
+    "stappen": [
+     {
+      "tekst": "Hoeveel keer 4 personen is 10?",
+      "som": "10 : 4",
+      "expr": "10/4",
+      "uitkomst": 2.5,
+      "eenheid": "keer",
+      "invoer": true,
+      "tabel": {
+       "boven": [
+        "4 personen",
+        "10 personen"
+       ],
+       "onder": [
+        "250 g",
+        "?"
+       ],
+       "pijl": "× 2,5"
+      }
+     },
+     {
+      "tekst": "Doe 250 gram ook keer 2,5",
+      "som": "2,5 × 250",
+      "expr": "2.5*250",
+      "uitkomst": 625,
+      "eenheid": "gram",
+      "invoer": true,
+      "tabel": {
+       "boven": [
+        "4 personen",
+        "10 personen"
+       ],
+       "onder": [
+        "250 g",
+        "625 g"
+       ],
+       "pijl": "× 2,5"
+      }
+     }
+    ],
+    "antwoord": {
+     "waarde": 625,
+     "eenheid": "gram",
+     "expr": "250/4*10"
+    }
+   }
+  },
+  {
+   "id": "O3-NIV-08",
+   "onderdeel": 3,
+   "sectie": "niveau",
+   "nummer": "8",
+   "afbeeldingen": [
+    "image62.jpeg"
+   ],
+   "flags": [
+    {
+     "soort": "auteursrecht",
+     "beschrijving": "Persfoto van een tankstation met productnamen (V-Power).",
+     "voorstel": "Getallen overnemen, beeld opnieuw maken in 3D (zie beeld)."
+    },
+    {
+     "soort": "dubbelzinnig",
+     "beschrijving": "Op het bord staan 2 dieselprijzen: Diesel 155,9 en V-Power Diesel 182,9 cent. Het kleine cijfer is een tiende cent. Met V-Power Diesel kost het € 82,31; zonder de tiende cent € 69,75.",
+     "voorstel": "De app gebruikt gewone diesel (155,9 cent): € 70,16 (€ 70,15 ook goed)."
+    },
+    {
+     "soort": "fout-in-werkboek",
+     "beschrijving": "\"brandstof prijzen\" moet \"brandstofprijzen\" zijn; de zin mist een punt.",
+     "voorstel": "In de app verbeterd."
+    }
+   ],
+   "autoCheck": true,
+   "origineel": "Tygo kan met zijn auto 800 kilometer rijden op een volle tank diesel van 60 liter. Wat zijn de dieselkosten als Tygo 600 kilometer rijdt? (De brandstof prijzen zijn in centen)",
+   "vraag": [
+    "Tygo rijdt 800 km op een volle tank.",
+    "In de tank zit 60 liter diesel.",
+    "Tygo rijdt 600 km.",
+    "Op het bord staan de prijzen in centen.",
+    "Wat kost de diesel voor 600 km?"
+   ],
+   "type": "getal",
+   "paneel": "verhoudingstabel",
+   "object3d": "prijspaal",
+   "context": [
+    {
+     "soort": "prijzen",
+     "titel": "Prijsbord tankstation (cent per liter)",
+     "items": [
+      {
+       "label": "Euro Liter",
+       "waarde": "252,9",
+       "eenheid": "cent"
+      },
+      {
+       "label": "V-Power Liter",
+       "waarde": "258,1",
+       "eenheid": "cent"
+      },
+      {
+       "label": "Diesel Liter",
+       "waarde": "155,9",
+       "eenheid": "cent"
+      },
+      {
+       "label": "V-Power Diesel",
+       "waarde": "182,9",
+       "eenheid": "cent"
+      }
+     ],
+     "beschrijving": "Blauwe prijspaal van een tankstation met 4 gele vakken met zwarte cijfers. Het laatste cijfer staat klein rechtsboven (tiende cent): 252⁹, 258¹, 155⁹ en 182⁹. Op de achtergrond pompen onder een overkapping, een donkere auto, iemand bij de pomp en een voorrangsbord."
+    }
+   ],
+   "beeld": [
+    {
+     "afbeelding": "image62.jpeg",
+     "vorm": "bord",
+     "ontwerp": "Bij de laadkade van de Markthal staat een kleine tankpomp voor de bezorgbusjes met een hoge blauwe prijspaal. Vier gele vakken met zwarte klapcijfers: Euro Liter 252⁹, V-Power Liter 258¹, Diesel Liter 155⁹ en V-Power Diesel 182⁹; de tiende cent staat klein rechtsboven. Klik op \"Diesel Liter\" en dat vak gaat knipperen.",
+     "toont": [
+      "Euro Liter 252,9",
+      "V-Power Liter 258,1",
+      "Diesel Liter 155,9",
+      "V-Power Diesel 182,9",
+      "prijzen in centen"
+     ],
+     "grap": "Een bezorgbusje met een grote kaas op het dak staat te tanken."
+    }
+   ],
+   "stappen": [
+    {
+     "tekst": "Liters voor 200 km",
+     "som": "60 : 4",
+     "expr": "60/4",
+     "uitkomst": 15,
+     "eenheid": "liter",
+     "invoer": true,
+     "tabel": {
+      "boven": [
+       "800 km",
+       "200 km"
+      ],
+      "onder": [
+       "60 l",
+       "?"
+      ],
+      "pijl": ": 4"
+     }
+    },
+    {
+     "tekst": "Liters voor 600 km",
+     "som": "15 × 3",
+     "expr": "15*3",
+     "uitkomst": 45,
+     "eenheid": "liter",
+     "invoer": true,
+     "tabel": {
+      "boven": [
+       "200 km",
+       "600 km"
+      ],
+      "onder": [
+       "15 l",
+       "45 l"
+      ],
+      "pijl": "× 3"
+     }
+    },
+    {
+     "tekst": "Kosten in cent",
+     "som": "45 × 155,9",
+     "expr": "45*155.9",
+     "uitkomst": 7015.5,
+     "eenheid": "cent",
+     "invoer": true
+    },
+    {
+     "tekst": "Maak er euro van (rond af op centen)",
+     "som": "7015,5 : 100",
+     "expr": "Math.round(45*155.9)/100",
+     "uitkomst": 70.16,
+     "eenheid": "euro",
+     "invoer": true
+    }
+   ],
+   "antwoord": {
+    "waarde": 70.16,
+    "eenheid": "euro",
+    "expr": "Math.round(45*155.9)/100",
+    "tolerantie": 0.01
+   },
+   "voorbeeld": {
+    "vraag": [
+     "Een auto rijdt 600 km op 40 liter.",
+     "Je rijdt 300 km.",
+     "Benzine kost 200 cent per liter.",
+     "Wat kost de benzine?"
+    ],
+    "stappen": [
+     {
+      "tekst": "Liters voor 300 km",
+      "som": "40 : 2",
+      "expr": "40/2",
+      "uitkomst": 20,
+      "eenheid": "liter",
+      "invoer": true,
+      "tabel": {
+       "boven": [
+        "600 km",
+        "300 km"
+       ],
+       "onder": [
+        "40 l",
+        "20 l"
+       ],
+       "pijl": ": 2"
+      }
+     },
+     {
+      "tekst": "Kosten in cent",
+      "som": "20 × 200",
+      "expr": "20*200",
+      "uitkomst": 4000,
+      "eenheid": "cent",
+      "invoer": true
+     },
+     {
+      "tekst": "Maak er euro van",
+      "som": "4000 : 100",
+      "expr": "4000/100",
+      "uitkomst": 40,
+      "eenheid": "euro",
+      "invoer": true
+     }
+    ],
+    "antwoord": {
+     "waarde": 40,
+     "eenheid": "euro",
+     "expr": "40/2*200/100"
+    }
+   }
+  },
+  {
+   "id": "O3-NIV-09",
+   "onderdeel": 3,
+   "sectie": "niveau",
+   "nummer": "9",
+   "afbeeldingen": [
+    "image63.jpeg"
+   ],
+   "flags": [
+    {
+     "soort": "onleesbaar",
+     "beschrijving": "De prijs van keuken Leona staat nergens: niet in de tekst en niet op de foto. Zonder totaalbedrag kun je 2/5 niet uitrekenen.",
+     "voorstel": "Niet automatisch tot de docent een prijs invult; dan is het antwoord: prijs : 5 × 2."
+    },
+    {
+     "soort": "fout-in-werkboek",
+     "beschrijving": "Er ontbreekt informatie: het totaalbedrag van de keuken (stond waarschijnlijk in een folder of op een prijskaartje).",
+     "voorstel": "Docent vult de prijs aan."
+    },
+    {
+     "soort": "niet-automatisch",
+     "beschrijving": "Zonder prijs kan de app dit niet nakijken.",
+     "voorstel": "Tijdelijk: buitenmissie, docent keurt goed met code."
+    },
+    {
+     "soort": "auteursrecht",
+     "beschrijving": "Foto van een keukenshowroom van een website.",
+     "voorstel": "Getallen overnemen, beeld opnieuw maken in 3D (zie beeld)."
+    }
+   ],
+   "autoCheck": false,
+   "origineel": "Tom koopt zijn keuken Leona met apparatuur. Tom moet twee vijfde deel (2/5) van het totaalbedrag aanbetalen. Hoeveel euro moet Tom aanbetalen?",
+   "vraag": [
+    "Tom koopt keuken Leona met apparatuur.",
+    "Hij betaalt 2/5 deel van het totaal vooraf.",
+    "Hoeveel euro betaalt Tom vooraf?"
+   ],
+   "type": "getal",
+   "paneel": "blokmodel",
+   "object3d": "showroomkeuken",
+   "context": [
+    {
+     "soort": "anders",
+     "beschrijving": "Foto van een showroomkeuken: rechte keuken met houten (eiken) fronten, grijs werkblad, zwarte kraan en spoelbak, kookplaat, zwarte schuine afzuigkap, 2 zwarte open bovenkastjes en rechts een hoge kast met inbouwoven. Op het aanrecht een plantje, een cactus en gele bananen. Er staat GEEN prijs op de foto en ook niet in de tekst. De alt-tekst van het plaatje (\"Keukens tot 15000 euro?\") komt van een website en is geen prijs van keuken Leona."
+    }
+   ],
+   "beeld": [
+    {
+     "afbeelding": "image63.jpeg",
+     "vorm": "model",
+     "ontwerp": "In de keukenhoek van de Markthal staat een showroomkeuken: eikenhouten onderkasten, grijs werkblad, zwarte afzuigkap en 2 zwarte bovenkastjes, met een cactus en een plantje op het aanrecht. Aan de kraan hangt een groot prijskaartje \"Keuken Leona € .....\" dat nog leeg is; de docent kan het bedrag invullen. Klik op het kaartje en het splitst in 5 even grote strookjes, waarvan er 2 oplichten (aanbetaling).",
+     "toont": [
+      "Keuken Leona met apparatuur",
+      "aanbetaling 2/5 deel",
+      "prijs: ontbreekt (docent vult in)"
+     ],
+     "grap": "De cactus draagt een klein koksmutsje."
+    }
+   ],
+   "stappen": [
+    {
+     "tekst": "Zoek het totaalbedrag van keuken Leona",
+     "som": "prijs keuken Leona",
+     "expr": null,
+     "uitkomst": "ontbreekt in het werkboek",
+     "invoer": false
+    },
+    {
+     "tekst": "Deel het totaal door 5",
+     "som": "totaal : 5",
+     "expr": null,
+     "uitkomst": "1/5 deel",
+     "invoer": false
+    },
+    {
+     "tekst": "Doe dat keer 2",
+     "som": "1/5 deel × 2",
+     "expr": null,
+     "uitkomst": "2/5 deel",
+     "invoer": false
+    }
+   ],
+   "antwoord": null,
+   "voorbeeld": {
+    "vraag": [
+     "Een keuken kost € 10.000.",
+     "Je betaalt 2/5 deel vooraf.",
+     "Hoeveel betaal je vooraf?"
+    ],
+    "stappen": [
+     {
+      "tekst": "Wat is 1/5 deel?",
+      "som": "10.000 : 5",
+      "expr": "10000/5",
+      "uitkomst": 2000,
+      "eenheid": "euro",
+      "invoer": true
+     },
+     {
+      "tekst": "Wat is 2/5 deel?",
+      "som": "2 × 2000",
+      "expr": "2*2000",
+      "uitkomst": 4000,
+      "eenheid": "euro",
+      "invoer": true
+     }
+    ],
+    "antwoord": {
+     "waarde": 4000,
+     "eenheid": "euro",
+     "expr": "10000/5*2"
+    }
+   }
+  },
+  {
+   "id": "O3-NIV-10",
+   "onderdeel": 3,
+   "sectie": "niveau",
+   "nummer": "10",
+   "afbeeldingen": [
+    "image64.jpeg"
+   ],
+   "flags": [
+    {
+     "soort": "tekst",
+     "beschrijving": "De schaal (1 : 500) staat alleen op de kaart, niet in de vraag.",
+     "voorstel": "In de app staat de schaal in de vraag en op de 3D-kaart."
+    }
+   ],
+   "autoCheck": true,
+   "origineel": "Een ontdekkingsreiziger heeft een schatkaart gevonden. Op de kaart staat een startpunt en een schatkist. De afstand tussen het startpunt en de schatkist is 12 cm. Hoeveel meter is de afstand in werkelijkheid?",
+   "vraag": [
+    "Een ontdekkingsreiziger vindt een schatkaart.",
+    "De schaal is 1 : 500.",
+    "Start en schatkist liggen 12 cm uit elkaar.",
+    "Hoeveel meter is dat in het echt?"
+   ],
+   "type": "getal",
+   "paneel": "verhoudingstabel",
+   "object3d": "schatkaart",
+   "context": [
+    {
+     "soort": "kaart",
+     "beschrijving": "Getekende schatkaart op oud, beige papier: een eiland met golvende kust en golfjes in het water, 5 dennenbomen en heuveltjes. Een stippellijn loopt van links (startpunt) naar een kruis rechts (schatkist). Linksboven een kompasroos met N. Rechtsonder onderstreept: \"Schaal 1 : 500\". De 12 cm staat alleen in de tekst."
+    }
+   ],
+   "beeld": [
+    {
+     "afbeelding": "image64.jpeg",
+     "vorm": "kaart",
+     "ontwerp": "In de kaartenwinkel van de Markthal ligt op een eikenhouten tafel een oude schatkaart die vanzelf openrolt als je dichtbij komt. Je ziet een eiland met dennenbomen, een kompasroos met N en een stippellijn van het startpunt naar een rood kruis. Rechtsonder staat \"Schaal 1 : 500\"; klik op de stippellijn en er verschijnt een liniaal van 12 cm.",
+     "toont": [
+      "Schaal 1 : 500",
+      "startpunt",
+      "schatkist (kruis)",
+      "12 cm op de kaart"
+     ],
+     "grap": "Een papegaai zit op de kaartrol en knikt mee bij elke stap."
+    }
+   ],
+   "stappen": [
+    {
+     "tekst": "1 cm is 500 cm echt. Doe keer 12.",
+     "som": "12 × 500",
+     "expr": "12*500",
+     "uitkomst": 6000,
+     "eenheid": "cm",
+     "invoer": true,
+     "tabel": {
+      "boven": [
+       "1 cm kaart",
+       "12 cm kaart"
+      ],
+      "onder": [
+       "500 cm echt",
+       "?"
+      ],
+      "pijl": "× 12"
+     }
+    },
+    {
+     "tekst": "Maak meters van cm",
+     "som": "6000 : 100",
+     "expr": "6000/100",
+     "uitkomst": 60,
+     "eenheid": "m",
+     "invoer": true,
+     "trap": {
+      "van": "cm",
+      "naar": "m"
+     }
+    }
+   ],
+   "antwoord": {
+    "waarde": 60,
+    "eenheid": "m",
+    "expr": "12*500/100"
+   },
+   "voorbeeld": {
+    "vraag": [
+     "Een kaart heeft schaal 1 : 200.",
+     "Op de kaart is een pad 15 cm.",
+     "Hoeveel meter is het pad echt?"
+    ],
+    "stappen": [
+     {
+      "tekst": "Doe keer 15",
+      "som": "15 × 200",
+      "expr": "15*200",
+      "uitkomst": 3000,
+      "eenheid": "cm",
+      "invoer": true,
+      "tabel": {
+       "boven": [
+        "1 cm kaart",
+        "15 cm kaart"
+       ],
+       "onder": [
+        "200 cm echt",
+        "3000 cm echt"
+       ],
+       "pijl": "× 15"
+      }
+     },
+     {
+      "tekst": "Maak meters van cm",
+      "som": "3000 : 100",
+      "expr": "3000/100",
+      "uitkomst": 30,
+      "eenheid": "m",
+      "invoer": true,
+      "trap": {
+       "van": "cm",
+       "naar": "m"
+      }
+     }
+    ],
+    "antwoord": {
+     "waarde": 30,
+     "eenheid": "m",
+     "expr": "15*200/100"
+    }
+   }
+  },
+  {
+   "id": "O3-EXP-01",
+   "onderdeel": 3,
+   "sectie": "expert",
+   "nummer": "1",
+   "afbeeldingen": [
+    "image65.png"
+   ],
+   "flags": [
+    {
+     "soort": "dubbelzinnig",
+     "beschrijving": "Wie alleen de tomaten telt (8 : 0,8 = 10 flessen) komt op € 21,90. Maar water en kookroom horen ook bij de soep: 1 fles geeft 1,6 liter soep. Tijm telt niet mee.",
+     "voorstel": "De app rekent € 10,95 goed (5 flessen)."
+    }
+   ],
+   "autoCheck": true,
+   "titel": "Tomatensoep",
+   "origineel": "Bekijk de afbeelding. Sander wil 8 liter tomatensoep maken. Hoeveel kosten de gezeefde tomaten in totaal die Sander moet kopen voor de tomatensoep? Schrijf je berekening op.",
+   "vraag": [
+    "Sander maakt 8 liter tomatensoep.",
+    "Kijk naar de fles en het recept.",
+    "Hoeveel kosten de gezeefde tomaten samen?"
+   ],
+   "type": "getal",
+   "paneel": "verhoudingstabel",
+   "object3d": "tomatenfles",
+   "context": [
+    {
+     "soort": "prijzen",
+     "titel": "Fles gezeefde tomaten",
+     "items": [
+      {
+       "label": "Prijs per fles",
+       "waarde": "€ 2,19"
+      },
+      {
+       "label": "Inhoud gezeefde tomaten",
+       "waarde": "0,8",
+       "eenheid": "l"
+      },
+      {
+       "label": "Water",
+       "waarde": "0,5",
+       "eenheid": "l"
+      },
+      {
+       "label": "Kookroom",
+       "waarde": "0,3",
+       "eenheid": "l"
+      },
+      {
+       "label": "Tijm",
+       "waarde": "1 takje"
+      }
+     ],
+     "beschrijving": "Hoge glazen fles met zwarte dop (zwart-witfoto). Rechtsboven een grijze cirkel \"€ 2,19\". Etiket: \"Gezeefde tomaten – Inhoud 0,8 l\". Daaronder: \"Benodigdheden voor tomatensoep: 1 fles gezeefde tomaten, 0,5 l water, 0,3 l kookroom, 1 takje tijm\" met een tekeningetje van een tomaat."
+    }
+   ],
+   "beeld": [
+    {
+     "afbeelding": "image65.png",
+     "vorm": "model",
+     "ontwerp": "In de open keuken van de Markthal staat een hoge glazen fles gezeefde tomaten met een rond prijsstickertje \"€ 2,19\". Het etiket kun je ronddraaien: voorkant \"Gezeefde tomaten – Inhoud 0,8 l\", achterkant het recept \"1 fles gezeefde tomaten, 0,5 l water, 0,3 l kookroom, 1 takje tijm\". Ernaast staat een grote soeppan met een maatstreep \"8 liter\"; elke fles die je erin giet, vult de pan met 1,6 liter.",
+     "toont": [
+      "€ 2,19",
+      "Inhoud 0,8 l",
+      "0,5 l water",
+      "0,3 l kookroom",
+      "1 takje tijm",
+      "8 liter (pan)"
+     ],
+     "grap": "Uit de pan stijgt stoom in de vorm van een kleine tomaat."
+    }
+   ],
+   "stappen": [
+    {
+     "tekst": "Hoeveel soep maak je met 1 fles?",
+     "som": "0,8 + 0,5 + 0,3",
+     "expr": "0.8+0.5+0.3",
+     "uitkomst": 1.6,
+     "eenheid": "liter",
+     "invoer": true
+    },
+    {
+     "tekst": "Hoeveel flessen voor 8 liter?",
+     "som": "8 : 1,6",
+     "expr": "8/1.6",
+     "uitkomst": 5,
+     "eenheid": "flessen",
+     "invoer": true,
+     "tabel": {
+      "boven": [
+       "1,6 l soep",
+       "8 l soep"
+      ],
+      "onder": [
+       "1 fles",
+       "?"
+      ],
+      "pijl": "× 5"
+     }
+    },
+    {
+     "tekst": "Keer de prijs",
+     "som": "5 × 2,19",
+     "expr": "5*2.19",
+     "uitkomst": 10.95,
+     "eenheid": "euro",
+     "invoer": true
+    }
+   ],
+   "antwoord": {
+    "waarde": 10.95,
+    "eenheid": "euro",
+    "expr": "8/(0.8+0.5+0.3)*2.19"
+   },
+   "voorbeeld": {
+    "vraag": [
+     "Een pak bouillon is 0,5 liter.",
+     "Je doet er 1,5 liter water bij.",
+     "Je wilt 6 liter soep.",
+     "Een pak kost € 1,50.",
+     "Wat kosten de pakken samen?"
+    ],
+    "stappen": [
+     {
+      "tekst": "Soep uit 1 pak",
+      "som": "0,5 + 1,5",
+      "expr": "0.5+1.5",
+      "uitkomst": 2,
+      "eenheid": "liter",
+      "invoer": true
+     },
+     {
+      "tekst": "Hoeveel pakken voor 6 liter?",
+      "som": "6 : 2",
+      "expr": "6/2",
+      "uitkomst": 3,
+      "eenheid": "pakken",
+      "invoer": true,
+      "tabel": {
+       "boven": [
+        "2 l soep",
+        "6 l soep"
+       ],
+       "onder": [
+        "1 pak",
+        "3 pakken"
+       ],
+       "pijl": "× 3"
+      }
+     },
+     {
+      "tekst": "Keer de prijs",
+      "som": "3 × 1,50",
+      "expr": "3*1.5",
+      "uitkomst": 4.5,
+      "eenheid": "euro",
+      "invoer": true
+     }
+    ],
+    "antwoord": {
+     "waarde": 4.5,
+     "eenheid": "euro",
+     "expr": "6/(0.5+1.5)*1.5"
+    }
+   }
+  },
+  {
+   "id": "O3-EXP-02",
+   "onderdeel": 3,
+   "sectie": "expert",
+   "nummer": "2",
+   "afbeeldingen": [],
+   "flags": [
+    {
+     "soort": "dubbelzinnig",
+     "beschrijving": "\"4 op 7\" kun je lezen als 4 : 7 (met : zonder) → 11 delen → 1276 leerlingen. Of als \"4 van de 7 leerlingen\" → 812 leerlingen. De zin noemt \"met\" en \"zonder\", dus 4 : 7 is het meest logisch.",
+     "voorstel": "De app rekent 1276 goed; 812 staat als alternatief (docent beslist)."
+    },
+    {
+     "soort": "fout-in-werkboek",
+     "beschrijving": "\"464 Leerlingen\" met hoofdletter. \"Hoeveel leerlingen zitten er in de bovenbouw het Hudde College zitten.\" heeft \"zitten\" dubbel, mist \"van\" en eindigt met een punt.",
+     "voorstel": "In de app verbeterd."
+    }
+   ],
+   "autoCheck": true,
+   "titel": "De bovenbouw",
+   "origineel": "In de bovenbouw van het Hudde College hebben 464 Leerlingen een scooter. De verhouding tussen het aantal leerlingen met een scooter en het aantal leerlingen zonder een scooter is 4 op 7. Hoeveel leerlingen zitten er in de bovenbouw het Hudde College zitten. Schrijf je berekening op.",
+   "vraag": [
+    "In de bovenbouw van het Hudde College hebben 464 leerlingen een scooter.",
+    "Met scooter : zonder scooter = 4 : 7.",
+    "Hoeveel leerlingen zitten er in de bovenbouw?"
+   ],
+   "type": "getal",
+   "paneel": "verhoudingstabel",
+   "object3d": "scooter",
+   "stappen": [
+    {
+     "tekst": "Hoeveel leerlingen is 1 deel?",
+     "som": "464 : 4",
+     "expr": "464/4",
+     "uitkomst": 116,
+     "eenheid": "leerlingen",
+     "invoer": true,
+     "tabel": {
+      "boven": [
+       "4 delen",
+       "1 deel"
+      ],
+      "onder": [
+       "464",
+       "?"
+      ],
+      "pijl": ": 4"
+     }
+    },
+    {
+     "tekst": "Hoeveel delen zijn er samen?",
+     "som": "4 + 7",
+     "expr": "4+7",
+     "uitkomst": 11,
+     "eenheid": "delen",
+     "invoer": true
+    },
+    {
+     "tekst": "Doe 116 keer 11",
+     "som": "11 × 116",
+     "expr": "11*116",
+     "uitkomst": 1276,
+     "eenheid": "leerlingen",
+     "invoer": true,
+     "tabel": {
+      "boven": [
+       "1 deel",
+       "11 delen"
+      ],
+      "onder": [
+       "116",
+       "1276"
+      ],
+      "pijl": "× 11"
+     }
+    }
+   ],
+   "antwoord": {
+    "waarde": 1276,
+    "eenheid": "leerlingen",
+    "expr": "464/4*(4+7)",
+    "alternatieven": [
+     812
+    ]
+   },
+   "voorbeeld": {
+    "vraag": [
+     "In een klas fietsen 10 leerlingen naar school.",
+     "Fietsers : niet-fietsers = 2 : 3.",
+     "Hoeveel leerlingen zitten er in de klas?"
+    ],
+    "stappen": [
+     {
+      "tekst": "Hoeveel is 1 deel?",
+      "som": "10 : 2",
+      "expr": "10/2",
+      "uitkomst": 5,
+      "eenheid": "leerlingen",
+      "invoer": true,
+      "tabel": {
+       "boven": [
+        "2 delen",
+        "1 deel"
+       ],
+       "onder": [
+        "10",
+        "5"
+       ],
+       "pijl": ": 2"
+      }
+     },
+     {
+      "tekst": "Hoeveel delen samen?",
+      "som": "2 + 3",
+      "expr": "2+3",
+      "uitkomst": 5,
+      "eenheid": "delen",
+      "invoer": true
+     },
+     {
+      "tekst": "Doe 5 keer 5",
+      "som": "5 × 5",
+      "expr": "5*5",
+      "uitkomst": 25,
+      "eenheid": "leerlingen",
+      "invoer": true
+     }
+    ],
+    "antwoord": {
+     "waarde": 25,
+     "eenheid": "leerlingen",
+     "expr": "10/2*(2+3)"
+    }
+   }
+  },
+  {
+   "id": "O3-EXP-03",
+   "onderdeel": 3,
+   "sectie": "expert",
+   "nummer": "3",
+   "afbeeldingen": [
+    "image66.jpeg"
+   ],
+   "flags": [
+    {
+     "soort": "auteursrecht",
+     "beschrijving": "Stockfoto (iStock) met herkenbare personen.",
+     "voorstel": "Getallen overnemen, beeld opnieuw maken in 3D (zie beeld)."
+    },
+    {
+     "soort": "dubbelzinnig",
+     "beschrijving": "De uitkomst is 1573,8: dat zijn geen hele mensen.",
+     "voorstel": "De app rekent 1574 goed (1573,8 ook)."
+    }
+   ],
+   "autoCheck": true,
+   "titel": "Selfie",
+   "origineel": "Een selfie is een foto waar degene die hem maakt ook zelf op staat. In het jaar 2014 waren er meerdere wereldrecords die te maken hadden met selfies. Makati City in de Filipijnen had de meeste mensen die weleens een selfie maakten, namelijk 258 selfiemakers per 100.000 mensen. In totaal had Makati City 610.000 inwoners in 2014. Bereken hoeveel selfiemakers er in totaal in Makati City woonden in het jaar 2014. Schrijf je berekening op.",
+   "vraag": [
+    "Een selfie is een foto waar je zelf op staat.",
+    "In 2014 had Makati City 610.000 inwoners.",
+    "Per 100.000 mensen waren er 258 selfiemakers.",
+    "Hoeveel selfiemakers woonden er in Makati City?"
+   ],
+   "type": "getal",
+   "paneel": "verhoudingstabel",
+   "context": [
+    {
+     "soort": "anders",
+     "beschrijving": "Stockfoto (iStock): een groep van 11 lachende jongeren in een schoolgang maakt samen een selfie; vooraan houdt een jongen de telefoon vast. Geen getallen op de foto. Makati City ligt in de Filipijnen."
+    }
+   ],
+   "beeld": [
+    {
+     "afbeelding": "image66.jpeg",
+     "vorm": "schilderij",
+     "ontwerp": "Bij de fotostand in de Markthal hangt een groot pop-art-schilderij: 11 vrolijke poppetjes in felle kleuren maken samen een selfie. Onder de lijst hangt een bordje \"Makati City 2014: 258 selfiemakers per 100.000 mensen – 610.000 inwoners\". Ga je voor het schilderij staan, dan flitst er een camera.",
+     "toont": [
+      "2014",
+      "258 per 100.000 mensen",
+      "610.000 inwoners"
+     ],
+     "grap": "Na de flits sta jij ook als poppetje op het schilderij."
+    }
+   ],
+   "stappen": [
+    {
+     "tekst": "Hoe vaak past 100.000 in 610.000?",
+     "som": "610.000 : 100.000",
+     "expr": "610000/100000",
+     "uitkomst": 6.1,
+     "eenheid": "keer",
+     "invoer": true,
+     "tabel": {
+      "boven": [
+       "100.000 mensen",
+       "610.000 mensen"
+      ],
+      "onder": [
+       "258",
+       "?"
+      ],
+      "pijl": "× 6,1"
+     }
+    },
+    {
+     "tekst": "Doe 258 ook keer 6,1",
+     "som": "6,1 × 258",
+     "expr": "6.1*258",
+     "uitkomst": 1573.8,
+     "eenheid": "selfiemakers",
+     "invoer": true,
+     "tabel": {
+      "boven": [
+       "100.000 mensen",
+       "610.000 mensen"
+      ],
+      "onder": [
+       "258",
+       "1573,8"
+      ],
+      "pijl": "× 6,1"
+     }
+    },
+    {
+     "tekst": "Rond af op hele mensen",
+     "som": "1573,8 ≈ 1574",
+     "expr": "6.1*258",
+     "uitkomst": 1574,
+     "eenheid": "selfiemakers",
+     "invoer": true,
+     "afronding": "heel"
+    }
+   ],
+   "antwoord": {
+    "waarde": 1574,
+    "eenheid": "selfiemakers",
+    "expr": "610000/100000*258",
+    "afronding": "heel",
+    "tolerantie": 0.2
+   },
+   "voorbeeld": {
+    "vraag": [
+     "Een stad heeft 300.000 inwoners.",
+     "Per 100.000 mensen hebben er 50 een drone.",
+     "Hoeveel inwoners hebben een drone?"
+    ],
+    "stappen": [
+     {
+      "tekst": "Hoe vaak past 100.000 in 300.000?",
+      "som": "300.000 : 100.000",
+      "expr": "300000/100000",
+      "uitkomst": 3,
+      "eenheid": "keer",
+      "invoer": true,
+      "tabel": {
+       "boven": [
+        "100.000 mensen",
+        "300.000 mensen"
+       ],
+       "onder": [
+        "50",
+        "?"
+       ],
+       "pijl": "× 3"
+      }
+     },
+     {
+      "tekst": "Doe 50 ook keer 3",
+      "som": "3 × 50",
+      "expr": "3*50",
+      "uitkomst": 150,
+      "eenheid": "inwoners",
+      "invoer": true,
+      "tabel": {
+       "boven": [
+        "100.000 mensen",
+        "300.000 mensen"
+       ],
+       "onder": [
+        "50",
+        "150"
+       ],
+       "pijl": "× 3"
+      }
+     }
+    ],
+    "antwoord": {
+     "waarde": 150,
+     "eenheid": "inwoners",
+     "expr": "300000/100000*50"
+    }
+   }
+  },
+  {
+   "id": "O3-EXP-04",
+   "onderdeel": 3,
+   "sectie": "expert",
+   "nummer": "4",
+   "afbeeldingen": [
+    "image67.png"
+   ],
+   "flags": [
+    {
+     "soort": "auteursrecht",
+     "beschrijving": "Screenshot van een webshop met merknamen en productfoto's.",
+     "voorstel": "Getallen overnemen, beeld opnieuw maken in 3D (zie beeld)."
+    }
+   ],
+   "autoCheck": true,
+   "titel": "Schroeven",
+   "origineel": "Bekijk onderstaande afbeelding. Welke schroeven zijn in verhouding het goedkoopst? Schrijf je berekening op.",
+   "vraag": [
+    "Een webshop verkoopt 3 soorten schroeven van 40 mm.",
+    "Welke schroeven zijn in verhouding het goedkoopst?"
+   ],
+   "type": "keuze",
+   "keuzes": [
+    "Heco",
+    "Orvy",
+    "Outline"
+   ],
+   "paneel": "verhoudingstabel",
+   "object3d": "schroevenbakjes",
+   "context": [
+    {
+     "soort": "tabel",
+     "titel": "Schroevenshop.nl",
+     "kolommen": [
+      "Merk",
+      "Aantal schroeven",
+      "Lengte",
+      "Prijs"
+     ],
+     "rijen": [
+      [
+       "Heco",
+       350,
+       "40 mm",
+       "€ 25,55"
+      ],
+      [
+       "Orvy",
+       400,
+       "40 mm",
+       "€ 29,45"
+      ],
+      [
+       "Outline",
+       90,
+       "40 mm",
+       "€ 6,70"
+      ]
+     ],
+     "beschrijving": "Webshop-tabel met de kop \"Schroevenshop.nl\" en een schroef-logo. Bij Heco een open kartonnen doosje schroeven, bij Orvy een zwarte stapelbak, bij Outline een glazen kommetje."
+    }
+   ],
+   "beeld": [
+    {
+     "afbeelding": "image67.png",
+     "vorm": "bord",
+     "ontwerp": "In de ijzerwarenkraam van de Markthal hangt een grijs bord \"Schroevenshop\" met 3 rijen. Op de toonbank staan de echte bakjes: een open kartonnen doosje (Heco), een zwarte stapelbak (Orvy) en een glazen kommetje (Outline), elk met een prijskaartje. Klik op een bakje en de schroeven leggen zich in rijtjes van 10.",
+     "toont": [
+      "Heco: 350 schroeven, 40 mm, € 25,55",
+      "Orvy: 400 schroeven, 40 mm, € 29,45",
+      "Outline: 90 schroeven, 40 mm, € 6,70"
+     ],
+     "grap": "Eén schroef rolt steeds van de toonbank en rolt dan weer terug."
+    }
+   ],
+   "stappen": [
+    {
+     "tekst": "Heco: prijs per schroef",
+     "som": "2555 cent : 350",
+     "expr": "2555/350",
+     "uitkomst": 7.3,
+     "eenheid": "cent",
+     "invoer": true,
+     "tabel": {
+      "boven": [
+       "350 schroeven",
+       "1 schroef"
+      ],
+      "onder": [
+       "2555 cent",
+       "?"
+      ],
+      "pijl": ": 350"
+     }
+    },
+    {
+     "tekst": "Orvy: prijs per schroef",
+     "som": "2945 cent : 400",
+     "expr": "2945/400",
+     "uitkomst": 7.36,
+     "eenheid": "cent",
+     "invoer": true,
+     "afronding": "2-decimalen",
+     "tabel": {
+      "boven": [
+       "400 schroeven",
+       "1 schroef"
+      ],
+      "onder": [
+       "2945 cent",
+       "?"
+      ],
+      "pijl": ": 400"
+     }
+    },
+    {
+     "tekst": "Outline: prijs per schroef",
+     "som": "670 cent : 90",
+     "expr": "670/90",
+     "uitkomst": 7.44,
+     "eenheid": "cent",
+     "invoer": true,
+     "afronding": "2-decimalen",
+     "tabel": {
+      "boven": [
+       "90 schroeven",
+       "1 schroef"
+      ],
+      "onder": [
+       "670 cent",
+       "?"
+      ],
+      "pijl": ": 90"
+     }
+    },
+    {
+     "tekst": "Vergelijk",
+     "som": "7,30 < 7,36 < 7,44",
+     "expr": null,
+     "uitkomst": "Heco is het goedkoopst",
+     "invoer": false
+    }
+   ],
+   "antwoord": {
+    "waarde": "Heco",
+    "expr": null
+   },
+   "voorbeeld": {
+    "vraag": [
+     "Doos A: 200 spijkers voor € 4.",
+     "Doos B: 500 spijkers voor € 9.",
+     "Welke doos is in verhouding goedkoper?"
+    ],
+    "stappen": [
+     {
+      "tekst": "Doos A: prijs per spijker",
+      "som": "400 cent : 200",
+      "expr": "400/200",
+      "uitkomst": 2,
+      "eenheid": "cent",
+      "invoer": true
+     },
+     {
+      "tekst": "Doos B: prijs per spijker",
+      "som": "900 cent : 500",
+      "expr": "900/500",
+      "uitkomst": 1.8,
+      "eenheid": "cent",
+      "invoer": true
+     },
+     {
+      "tekst": "Vergelijk",
+      "som": "1,8 < 2",
+      "expr": null,
+      "uitkomst": "doos B",
+      "invoer": false
+     }
+    ],
+    "antwoord": {
+     "waarde": "doos B",
+     "expr": null
+    }
+   }
+  },
+  {
+   "id": "O3-EXP-05",
+   "onderdeel": 3,
+   "sectie": "expert",
+   "nummer": "5",
+   "afbeeldingen": [],
+   "flags": [
+    {
+     "soort": "notatie",
+     "beschrijving": "\"225 ML\" en \"21 DL\" met hoofdletters; de zin \"verhouding 1 : 3\" mist een punt.",
+     "voorstel": "In de app: 225 ml en 21 dl."
+    },
+    {
+     "soort": "dubbelzinnig",
+     "beschrijving": "Alle verf optellen geeft 1,8 + 4,2 = 6 liter, maar dan klopt de verhouding 1 : 3 niet. Er is te weinig wit voor alle blauw.",
+     "voorstel": "De app rekent 5,6 liter goed (er blijft 0,4 liter blauw over)."
+    }
+   ],
+   "autoCheck": true,
+   "titel": "Verf mengen",
+   "origineel": "Maud mengt blauwe en witte verf in de verhouding 1 : 3 Ze heeft 8 blikken blauwe verf met elk 225 ML verf en ze heeft 2 blikken witte verf van 21 DL. Hoeveel liter verf kan Maud in totaal mengen? Schrijf je berekening op.",
+   "vraag": [
+    "Maud mengt blauw en wit in de verhouding 1 : 3.",
+    "Ze heeft 8 blikken blauw van 225 ml.",
+    "Ze heeft 2 blikken wit van 21 dl.",
+    "Hoeveel liter verf kan ze in totaal mengen?"
+   ],
+   "type": "getal",
+   "paneel": "verhoudingstabel",
+   "object3d": "verfblikken",
+   "stappen": [
+    {
+     "tekst": "Hoeveel liter blauw?",
+     "som": "8 × 225 ml = 1800 ml",
+     "expr": "8*225/1000",
+     "uitkomst": 1.8,
+     "eenheid": "liter",
+     "invoer": true,
+     "trap": {
+      "van": "ml",
+      "naar": "l"
+     }
+    },
+    {
+     "tekst": "Hoeveel liter wit?",
+     "som": "2 × 21 dl = 42 dl",
+     "expr": "2*21/10",
+     "uitkomst": 4.2,
+     "eenheid": "liter",
+     "invoer": true,
+     "trap": {
+      "van": "dl",
+      "naar": "l"
+     }
+    },
+    {
+     "tekst": "Wit nodig bij 1,8 l blauw",
+     "som": "3 × 1,8",
+     "expr": "3*1.8",
+     "uitkomst": 5.4,
+     "eenheid": "liter",
+     "invoer": true,
+     "tabel": {
+      "boven": [
+       "1 deel blauw",
+       "1,8 l blauw"
+      ],
+      "onder": [
+       "3 delen wit",
+       "?"
+      ],
+      "pijl": "× 1,8"
+     }
+    },
+    {
+     "tekst": "Te weinig wit! Blauw bij 4,2 l wit",
+     "som": "4,2 : 3",
+     "expr": "4.2/3",
+     "uitkomst": 1.4,
+     "eenheid": "liter",
+     "invoer": true,
+     "tabel": {
+      "boven": [
+       "3 delen wit",
+       "4,2 l wit"
+      ],
+      "onder": [
+       "1 deel blauw",
+       "?"
+      ],
+      "pijl": "× 1,4"
+     }
+    },
+    {
+     "tekst": "Tel blauw en wit op",
+     "som": "1,4 + 4,2",
+     "expr": "1.4+4.2",
+     "uitkomst": 5.6,
+     "eenheid": "liter",
+     "invoer": true
+    }
+   ],
+   "antwoord": {
+    "waarde": 5.6,
+    "eenheid": "liter",
+    "expr": "2*21/10*(1+3)/3"
+   },
+   "voorbeeld": {
+    "vraag": [
+     "Je mengt geel en rood in de verhouding 1 : 2.",
+     "Je hebt 1 liter geel en 1 liter rood.",
+     "Hoeveel liter verf kun je mengen?"
+    ],
+    "stappen": [
+     {
+      "tekst": "Rood nodig bij 1 l geel",
+      "som": "2 × 1",
+      "expr": "2*1",
+      "uitkomst": 2,
+      "eenheid": "liter",
+      "invoer": true,
+      "tabel": {
+       "boven": [
+        "1 deel geel",
+        "1 l geel"
+       ],
+       "onder": [
+        "2 delen rood",
+        "2 l rood"
+       ],
+       "pijl": "× 1"
+      }
+     },
+     {
+      "tekst": "Te weinig rood! Geel bij 1 l rood",
+      "som": "1 : 2",
+      "expr": "1/2",
+      "uitkomst": 0.5,
+      "eenheid": "liter",
+      "invoer": true,
+      "tabel": {
+       "boven": [
+        "2 delen rood",
+        "1 l rood"
+       ],
+       "onder": [
+        "1 deel geel",
+        "0,5 l geel"
+       ],
+       "pijl": ": 2"
+      }
+     },
+     {
+      "tekst": "Tel op",
+      "som": "0,5 + 1",
+      "expr": "0.5+1",
+      "uitkomst": 1.5,
+      "eenheid": "liter",
+      "invoer": true
+     }
+    ],
+    "antwoord": {
+     "waarde": 1.5,
+     "eenheid": "liter",
+     "expr": "1/2+1"
+    }
+   }
+  },
+  {
+   "id": "O3-EXP-06",
+   "onderdeel": 3,
+   "sectie": "expert",
+   "nummer": "6",
+   "afbeeldingen": [
+    "image68.png"
+   ],
+   "flags": [
+    {
+     "soort": "auteursrecht",
+     "beschrijving": "Screenshot van een website met een foto van een persoon.",
+     "voorstel": "Getallen overnemen, beeld opnieuw maken in 3D (zie beeld)."
+    }
+   ],
+   "autoCheck": true,
+   "titel": "Bezorger",
+   "origineel": "Tom bezorgt kranten. Hij wordt per krant betaald. Op 5 februari werkt Tom 130 minuten. Hij doet 26 minuten over een stapel kranten. Een stapel kranten bestaat uit 78 kranten. Bekijk de afbeelding. Hoeveel heeft Tom op 5 februari verdiend? Schrijf je berekening op.",
+   "vraag": [
+    "Tom bezorgt kranten.",
+    "Hij krijgt € 0,05 per krant.",
+    "Op 5 februari werkt hij 130 minuten.",
+    "Over 1 stapel doet hij 26 minuten.",
+    "Een stapel heeft 78 kranten.",
+    "Hoeveel verdient Tom op 5 februari?"
+   ],
+   "type": "getal",
+   "paneel": "verhoudingstabel",
+   "object3d": "krantenstapel",
+   "context": [
+    {
+     "soort": "tekst",
+     "titel": "www.bezorger.nl",
+     "items": [
+      {
+       "label": "Verdienste",
+       "waarde": "€ 0,05 per krant"
+      }
+     ],
+     "beschrijving": "Screenshot van de website www.bezorger.nl (grijs met oranje). Menu: Home, Verdiensten, F.A.Q., Contact. Kruimelpad: Home > Verdiensten > Hoeveel kan ik verdienen? Tekstwolk: \"Hoeveel verdien ik als bezorger? Hoeveel je verdient, hangt af van het aantal kranten dat je bezorgt. Je verdient € 0,05 per krant.\" Knoppen \"< Terug\" en \"Meld je nu aan >\". Links een foto van een jongen met krullen. Rechts staat de opdracht nog een keer, met een invulvak \"€\" en een vak \"Berekening:\"."
+    }
+   ],
+   "beeld": [
+    {
+     "afbeelding": "image68.png",
+     "vorm": "poster",
+     "ontwerp": "Bij de krantenkiosk in de Markthal hangt een oranje-grijze poster \"Bezorgers gezocht!\" met een pop-art-tekening van een bezorger en een tekstballon \"Je verdient € 0,05 per krant\". Op de toonbank liggen stapels kranten met een bandje \"78 kranten\". Een klok boven de kiosk loopt 130 minuten; elke 26 minuten schuift er een stapel in de bezorgtas.",
+     "toont": [
+      "€ 0,05 per krant",
+      "130 minuten",
+      "26 minuten per stapel",
+      "78 kranten per stapel"
+     ],
+     "grap": "Een duif probeert stiekem een krant mee te nemen."
+    }
+   ],
+   "stappen": [
+    {
+     "tekst": "Hoeveel stapels doet Tom?",
+     "som": "130 : 26",
+     "expr": "130/26",
+     "uitkomst": 5,
+     "eenheid": "stapels",
+     "invoer": true,
+     "tabel": {
+      "boven": [
+       "26 min",
+       "130 min"
+      ],
+      "onder": [
+       "1 stapel",
+       "?"
+      ],
+      "pijl": "× 5"
+     }
+    },
+    {
+     "tekst": "Hoeveel kranten zijn dat?",
+     "som": "5 × 78",
+     "expr": "5*78",
+     "uitkomst": 390,
+     "eenheid": "kranten",
+     "invoer": true
+    },
+    {
+     "tekst": "Wat verdient Tom?",
+     "som": "390 × 0,05",
+     "expr": "390*0.05",
+     "uitkomst": 19.5,
+     "eenheid": "euro",
+     "invoer": true
+    }
+   ],
+   "antwoord": {
+    "waarde": 19.5,
+    "eenheid": "euro",
+    "expr": "130/26*78*0.05"
+   },
+   "voorbeeld": {
+    "vraag": [
+     "Je bezorgt folders voor € 0,10 per folder.",
+     "In 20 minuten bezorg je 50 folders.",
+     "Je werkt 60 minuten.",
+     "Hoeveel verdien je?"
+    ],
+    "stappen": [
+     {
+      "tekst": "Hoe vaak 20 minuten?",
+      "som": "60 : 20",
+      "expr": "60/20",
+      "uitkomst": 3,
+      "eenheid": "keer",
+      "invoer": true,
+      "tabel": {
+       "boven": [
+        "20 min",
+        "60 min"
+       ],
+       "onder": [
+        "50 folders",
+        "?"
+       ],
+       "pijl": "× 3"
+      }
+     },
+     {
+      "tekst": "Hoeveel folders?",
+      "som": "3 × 50",
+      "expr": "3*50",
+      "uitkomst": 150,
+      "eenheid": "folders",
+      "invoer": true
+     },
+     {
+      "tekst": "Wat verdien je?",
+      "som": "150 × 0,10",
+      "expr": "150*0.1",
+      "uitkomst": 15,
+      "eenheid": "euro",
+      "invoer": true
+     }
+    ],
+    "antwoord": {
+     "waarde": 15,
+     "eenheid": "euro",
+     "expr": "60/20*50*0.1"
+    }
+   }
+  },
+  {
+   "id": "O3-EXP-07",
+   "onderdeel": 3,
+   "sectie": "expert",
+   "nummer": "7",
+   "afbeeldingen": [
+    "image69.png"
+   ],
+   "flags": [
+    {
+     "soort": "tekst",
+     "beschrijving": "\"Schrijf je berekening op\": een uitleg schrijven kan niet in de app.",
+     "voorstel": "De berekening zit in de stappen; daarna kiest de student ja of nee."
+    }
+   ],
+   "autoCheck": true,
+   "titel": "Olympische Spelen",
+   "origineel": "In 2008 deed Nederland voor de 23ste keer mee aan de Olympische Spelen. In de tabel hieronder is de Nederlandse medailleoogst van een aantal Olympische Spelen weergegeven. Het Nederlandse team behaalde in het jaar 2000 veel meer medailles dan tijdens vroegere Olympische Spelen. Dat is niet zo verwonderlijk, omdat het aantal onderdelen waarop een medaille behaald kan worden flink is gestegen. In 1900 waren er 6 medailles op 85 onderdelen. In 2000 waren er 25 medailles op 276 onderdelen. Heeft Nederland in verhouding in 2000 beter gepresteerd dan in 1900? Schrijf je berekening op.",
+   "vraag": [
+    "In 1900 won Nederland 6 medailles op 85 onderdelen.",
+    "In 2000 won Nederland 25 medailles op 276 onderdelen.",
+    "Was Nederland in 2000 in verhouding beter dan in 1900?"
+   ],
+   "type": "keuze",
+   "keuzes": [
+    "Ja",
+    "Nee"
+   ],
+   "paneel": "verhoudingstabel",
+   "context": [
+    {
+     "soort": "tabel",
+     "titel": "Nederlandse medailleoogst Olympische Spelen",
+     "kolommen": [
+      "jaar",
+      "goud",
+      "zilver",
+      "brons",
+      "totaal"
+     ],
+     "rijen": [
+      [
+       2008,
+       7,
+       5,
+       4,
+       16
+      ],
+      [
+       2004,
+       4,
+       9,
+       9,
+       22
+      ],
+      [
+       2000,
+       11,
+       10,
+       4,
+       25
+      ],
+      [
+       1996,
+       4,
+       5,
+       10,
+       19
+      ],
+      [
+       1992,
+       2,
+       6,
+       7,
+       15
+      ],
+      [
+       "…",
+       "",
+       "",
+       "",
+       ""
+      ],
+      [
+       1928,
+       6,
+       9,
+       4,
+       19
+      ],
+      [
+       "…",
+       "",
+       "",
+       "",
+       ""
+      ],
+      [
+       1900,
+       1,
+       2,
+       3,
+       6
+      ]
+     ],
+     "beschrijving": "Tabel met grijze lijnen; \"…\" betekent: jaren weggelaten. Inleiding: in 2008 deed Nederland voor de 23ste keer mee aan de Olympische Spelen. Onderdelen: 85 in 1900 en 276 in 2000 (staat in de tekst)."
+    }
+   ],
+   "beeld": [
+    {
+     "afbeelding": "image69.png",
+     "vorm": "scherm",
+     "ontwerp": "Boven de sportkraam in de Markthal hangt een groot scorebord met oranje lampjes: kolommen jaar, goud, zilver, brons en totaal, met alle 9 rijen (ook de \"…\"-rijen). Klik op 1900 of 2000 en er schuift een balk uit met het aantal onderdelen: 85 en 276.",
+     "toont": [
+      "2008: 7, 5, 4, 16",
+      "2004: 4, 9, 9, 22",
+      "2000: 11, 10, 4, 25",
+      "1996: 4, 5, 10, 19",
+      "1992: 2, 6, 7, 15",
+      "1928: 6, 9, 4, 19",
+      "1900: 1, 2, 3, 6",
+      "1900: 85 onderdelen",
+      "2000: 276 onderdelen"
+     ],
+     "grap": "Een klein oranje leeuwtje juicht als je de goede rij aanklikt."
+    }
+   ],
+   "stappen": [
+    {
+     "tekst": "1900: medailles per 100 onderdelen",
+     "som": "6 : 85 × 100",
+     "expr": "6/85*100",
+     "uitkomst": 7.1,
+     "eenheid": "medailles",
+     "invoer": true,
+     "afronding": "1-decimaal",
+     "tabel": {
+      "boven": [
+       "85 onderdelen",
+       "100 onderdelen"
+      ],
+      "onder": [
+       "6 medailles",
+       "?"
+      ]
+     }
+    },
+    {
+     "tekst": "2000: medailles per 100 onderdelen",
+     "som": "25 : 276 × 100",
+     "expr": "25/276*100",
+     "uitkomst": 9.1,
+     "eenheid": "medailles",
+     "invoer": true,
+     "afronding": "1-decimaal",
+     "tabel": {
+      "boven": [
+       "276 onderdelen",
+       "100 onderdelen"
+      ],
+      "onder": [
+       "25 medailles",
+       "?"
+      ]
+     }
+    },
+    {
+     "tekst": "Vergelijk",
+     "som": "9,1 > 7,1",
+     "expr": null,
+     "uitkomst": "ja, in 2000 beter",
+     "invoer": false
+    }
+   ],
+   "antwoord": {
+    "waarde": "Ja",
+    "expr": null
+   },
+   "voorbeeld": {
+    "vraag": [
+     "Team A won 4 prijzen bij 40 wedstrijden.",
+     "Team B won 6 prijzen bij 50 wedstrijden.",
+     "Welk team deed het in verhouding beter?"
+    ],
+    "stappen": [
+     {
+      "tekst": "Team A per 100 wedstrijden",
+      "som": "4 : 40 × 100",
+      "expr": "4/40*100",
+      "uitkomst": 10,
+      "eenheid": "prijzen",
+      "invoer": true
+     },
+     {
+      "tekst": "Team B per 100 wedstrijden",
+      "som": "6 : 50 × 100",
+      "expr": "6/50*100",
+      "uitkomst": 12,
+      "eenheid": "prijzen",
+      "invoer": true
+     },
+     {
+      "tekst": "Vergelijk",
+      "som": "12 > 10",
+      "expr": null,
+      "uitkomst": "team B",
+      "invoer": false
+     }
+    ],
+    "antwoord": {
+     "waarde": "team B",
+     "expr": null
+    }
+   }
+  },
+  {
+   "id": "O3-EXP-08a",
+   "onderdeel": 3,
+   "sectie": "expert",
+   "nummer": "8a",
+   "afbeeldingen": [],
+   "flags": [
+    {
+     "soort": "notatie",
+     "beschrijving": "\"48 KG\", \"31 L\", \"2 KG\" en \"4.5 KG\": hoofdletters en een punt als decimaalteken.",
+     "voorstel": "In de app: 48 kg, 31 l, 2 kg en 4,5 kg."
+    }
+   ],
+   "autoCheck": true,
+   "titel": "Pitabrood",
+   "origineel": "Op zondag 12 december 2004 werd in Eindhoven het grootste pitabrood ter wereld gebakken. a) Voor het maken van pitabrood wordt bloem, water en gist gebruikt. Per 48 KG bloem wordt 31 L water en 2 KG gist gebruikt. Er is voor het grootste pitabrood in totaal 4.5 KG gist gebruikt. Hoeveel KG bloem is er gebruikt voor het grootste pitabrood? Schrijf je berekening op.",
+   "vraag": [
+    "In Eindhoven bakten ze het grootste pitabrood ter wereld.",
+    "Per 48 kg bloem gebruik je 31 l water en 2 kg gist.",
+    "Ze gebruikten 4,5 kg gist.",
+    "Hoeveel kg bloem gebruikten ze?"
+   ],
+   "type": "getal",
+   "paneel": "verhoudingstabel",
+   "object3d": "pitabrood",
+   "context": [
+    {
+     "soort": "tekst",
+     "beschrijving": "Inleiding: op zondag 12 december 2004 werd in Eindhoven het grootste pitabrood ter wereld gebakken. Recept: per 48 kg bloem 31 l water en 2 kg gist."
+    }
+   ],
+   "stappen": [
+    {
+     "tekst": "Bloem bij 1 kg gist",
+     "som": "48 : 2",
+     "expr": "48/2",
+     "uitkomst": 24,
+     "eenheid": "kg",
+     "invoer": true,
+     "tabel": {
+      "boven": [
+       "2 kg gist",
+       "1 kg gist"
+      ],
+      "onder": [
+       "48 kg bloem",
+       "?"
+      ],
+      "pijl": ": 2"
+     }
+    },
+    {
+     "tekst": "Bloem bij 4,5 kg gist",
+     "som": "4,5 × 24",
+     "expr": "4.5*24",
+     "uitkomst": 108,
+     "eenheid": "kg",
+     "invoer": true,
+     "tabel": {
+      "boven": [
+       "1 kg gist",
+       "4,5 kg gist"
+      ],
+      "onder": [
+       "24 kg bloem",
+       "108 kg bloem"
+      ],
+      "pijl": "× 4,5"
+     }
+    }
+   ],
+   "antwoord": {
+    "waarde": 108,
+    "eenheid": "kg",
+    "expr": "48/2*4.5"
+   },
+   "voorbeeld": {
+    "vraag": [
+     "Per 20 kg bloem gebruik je 1 kg zout.",
+     "De bakker gebruikt 3 kg zout.",
+     "Hoeveel kg bloem gebruikt hij?"
+    ],
+    "stappen": [
+     {
+      "tekst": "Zet het in de tabel",
+      "som": "1 kg zout → 20 kg bloem",
+      "expr": null,
+      "uitkomst": "20 kg bloem per kg zout",
+      "invoer": false,
+      "tabel": {
+       "boven": [
+        "1 kg zout",
+        "3 kg zout"
+       ],
+       "onder": [
+        "20 kg bloem",
+        "?"
+       ],
+       "pijl": "× 3"
+      }
+     },
+     {
+      "tekst": "Doe 20 kg keer 3",
+      "som": "3 × 20",
+      "expr": "3*20",
+      "uitkomst": 60,
+      "eenheid": "kg",
+      "invoer": true,
+      "tabel": {
+       "boven": [
+        "1 kg zout",
+        "3 kg zout"
+       ],
+       "onder": [
+        "20 kg bloem",
+        "60 kg bloem"
+       ],
+       "pijl": "× 3"
+      }
+     }
+    ],
+    "antwoord": {
+     "waarde": 60,
+     "eenheid": "kg",
+     "expr": "20*3"
+    }
+   }
+  },
+  {
+   "id": "O3-EXP-08b",
+   "onderdeel": 3,
+   "sectie": "expert",
+   "nummer": "8b",
+   "afbeeldingen": [],
+   "flags": [
+    {
+     "soort": "notatie",
+     "beschrijving": "\"28.3 m²\" met een punt en \"KG\" met hoofdletters; de zin na \"gebruikt\" mist een punt.",
+     "voorstel": "In de app: 28,3 m² en kg."
+    },
+    {
+     "soort": "dubbelzinnig",
+     "beschrijving": "\"Stukken van ongeveer 100 cm²\": het antwoord is dus ook ongeveer.",
+     "voorstel": "De app rekent 84,9 kg goed (85 kg ook, marge 0,1)."
+    }
+   ],
+   "autoCheck": true,
+   "titel": "Pitabrood",
+   "origineel": "b) Toen het pitabrood van 28.3 m² eenmaal klaar was, werd het in stukken van ongeveer 100 cm² gesneden en belegd. Per stuk brood van 100 cm² werd er 30 gram beleg gebruikt Hoeveel KG beleg is er in totaal gebruikt? Schrijf je berekening op.",
+   "vraag": [
+    "Het pitabrood was 28,3 m² groot.",
+    "Ze sneden het in stukken van ongeveer 100 cm².",
+    "Op elk stuk kwam 30 gram beleg.",
+    "Hoeveel kg beleg gebruikten ze in totaal?"
+   ],
+   "type": "getal",
+   "paneel": "eenhedentrap",
+   "object3d": "pitabrood",
+   "stappen": [
+    {
+     "tekst": "Maak cm² van 28,3 m²",
+     "som": "28,3 × 10.000",
+     "expr": "28.3*10000",
+     "uitkomst": 283000,
+     "eenheid": "cm²",
+     "invoer": true,
+     "trap": {
+      "van": "m²",
+      "naar": "cm²"
+     }
+    },
+    {
+     "tekst": "Hoeveel stukken van 100 cm²?",
+     "som": "283.000 : 100",
+     "expr": "283000/100",
+     "uitkomst": 2830,
+     "eenheid": "stukken",
+     "invoer": true
+    },
+    {
+     "tekst": "Hoeveel gram beleg?",
+     "som": "2830 × 30",
+     "expr": "2830*30",
+     "uitkomst": 84900,
+     "eenheid": "g",
+     "invoer": true,
+     "tabel": {
+      "boven": [
+       "1 stuk",
+       "2830 stukken"
+      ],
+      "onder": [
+       "30 g",
+       "?"
+      ],
+      "pijl": "× 2830"
+     }
+    },
+    {
+     "tekst": "Maak kg van gram",
+     "som": "84.900 : 1000",
+     "expr": "84900/1000",
+     "uitkomst": 84.9,
+     "eenheid": "kg",
+     "invoer": true,
+     "trap": {
+      "van": "g",
+      "naar": "kg"
+     }
+    }
+   ],
+   "antwoord": {
+    "waarde": 84.9,
+    "eenheid": "kg",
+    "expr": "28.3*10000/100*30/1000",
+    "tolerantie": 0.1
+   },
+   "voorbeeld": {
+    "vraag": [
+     "Een plaat cake is 2 m².",
+     "Je snijdt stukken van 100 cm².",
+     "Op elk stuk gaat 20 gram slagroom.",
+     "Hoeveel kg slagroom is dat?"
+    ],
+    "stappen": [
+     {
+      "tekst": "Maak cm² van 2 m²",
+      "som": "2 × 10.000",
+      "expr": "2*10000",
+      "uitkomst": 20000,
+      "eenheid": "cm²",
+      "invoer": true,
+      "trap": {
+       "van": "m²",
+       "naar": "cm²"
+      }
+     },
+     {
+      "tekst": "Hoeveel stukken?",
+      "som": "20.000 : 100",
+      "expr": "20000/100",
+      "uitkomst": 200,
+      "eenheid": "stukken",
+      "invoer": true
+     },
+     {
+      "tekst": "Hoeveel gram?",
+      "som": "200 × 20",
+      "expr": "200*20",
+      "uitkomst": 4000,
+      "eenheid": "g",
+      "invoer": true
+     },
+     {
+      "tekst": "Maak kg van gram",
+      "som": "4000 : 1000",
+      "expr": "4000/1000",
+      "uitkomst": 4,
+      "eenheid": "kg",
+      "invoer": true,
+      "trap": {
+       "van": "g",
+       "naar": "kg"
+      }
+     }
+    ],
+    "antwoord": {
+     "waarde": 4,
+     "eenheid": "kg",
+     "expr": "2*10000/100*20/1000"
+    }
+   }
+  },
+  {
+   "id": "O3-EXP-09",
+   "onderdeel": 3,
+   "sectie": "expert",
+   "nummer": "9",
+   "afbeeldingen": [
+    "image70.png"
+   ],
+   "flags": [
+    {
+     "soort": "fout-in-werkboek",
+     "beschrijving": "In de tekst heet het meisje Lisa, in de afbeelding Elizabeth.",
+     "voorstel": "In de app overal Lisa."
+    },
+    {
+     "soort": "auteursrecht",
+     "beschrijving": "Screenshot van een online lesmethode met een foto van de Tower Bridge.",
+     "voorstel": "Getallen overnemen, beeld opnieuw maken in 3D (zie beeld)."
+    },
+    {
+     "soort": "dubbelzinnig",
+     "beschrijving": "Het A4 kan staand of liggend. Liggend (297 mm breed) wordt de tekening het grootst: 1 : 440. Staand wordt het 1 : 580.",
+     "voorstel": "De app rekent 1 : 440 goed."
+    }
+   ],
+   "autoCheck": true,
+   "titel": "Schaal",
+   "origineel": "Lisa tekent dit deel van de Tower Bridge zo groot mogelijk na op een A4'tje van 210 mm bij 297 mm. Op welke schaal tekent Lisa? Schrijf je berekening op.",
+   "vraag": [
+    "Lisa tekent de Tower Bridge na op een A4.",
+    "De brug is 121,7 m breed en 92,4 m hoog.",
+    "Een A4 is 210 mm bij 297 mm.",
+    "Ze tekent zo groot mogelijk.",
+    "Op welke schaal tekent Lisa? Schaal 1 : ..."
+   ],
+   "type": "getal",
+   "paneel": "stappen",
+   "context": [
+    {
+     "soort": "tekening",
+     "items": [
+      {
+       "label": "breedte brug",
+       "waarde": "121,7",
+       "eenheid": "m"
+      },
+      {
+       "label": "hoogte brug",
+       "waarde": "92,4",
+       "eenheid": "m"
+      },
+      {
+       "label": "A4",
+       "waarde": "210 mm × 297 mm"
+      }
+     ],
+     "beschrijving": "Foto van de Tower Bridge in een bordeauxrode lijst: twee grijze torens met spitse torentjes, een blauwe loopbrug bovenin, een rode dubbeldekker op de brug, water en stad op de achtergrond. Maatpijl onder: 121,7 m (breedte). Maatpijl rechts: 92,4 m (hoogte). Rechts de opdracht (met de naam Elizabeth), een invulvak \"1 : ...\", een vak \"Berekening:\" en een blauwe knop \"Volgende\"."
+    }
+   ],
+   "beeld": [
+    {
+     "afbeelding": "image70.png",
+     "vorm": "schilderij",
+     "ontwerp": "In de kaartenwinkel van de Markthal hangt een groot schilderij van de Tower Bridge in een bordeauxrode lijst, met maatpijlen 121,7 m (onder) en 92,4 m (rechts). Op de tekentafel ervoor ligt een liggend A4-vel van 297 × 210 mm. Klik op het vel en de brug krimpt tot hij er precies op past.",
+     "toont": [
+      "121,7 m (breedte)",
+      "92,4 m (hoogte)",
+      "A4: 210 mm × 297 mm"
+     ],
+     "grap": "Over de brug rijdt een piepkleine rode dubbeldekker heen en weer."
+    }
+   ],
+   "stappen": [
+    {
+     "tekst": "Breedte in mm",
+     "som": "121,7 × 1000",
+     "expr": "121.7*1000",
+     "uitkomst": 121700,
+     "eenheid": "mm",
+     "invoer": true,
+     "trap": {
+      "van": "m",
+      "naar": "mm"
+     }
+    },
+    {
+     "tekst": "Hoogte in mm",
+     "som": "92,4 × 1000",
+     "expr": "92.4*1000",
+     "uitkomst": 92400,
+     "eenheid": "mm",
+     "invoer": true,
+     "trap": {
+      "van": "m",
+      "naar": "mm"
+     }
+    },
+    {
+     "tekst": "Breedte op 297 mm (A4 liggend)",
+     "som": "121.700 : 297",
+     "expr": "121700/297",
+     "uitkomst": 409.8,
+     "invoer": true,
+     "afronding": "1-decimaal"
+    },
+    {
+     "tekst": "Hoogte op 210 mm",
+     "som": "92.400 : 210",
+     "expr": "92400/210",
+     "uitkomst": 440,
+     "invoer": true
+    },
+    {
+     "tekst": "Neem het grootste getal, anders past de hoogte niet",
+     "som": "440 > 409,8",
+     "expr": null,
+     "uitkomst": "schaal 1 : 440",
+     "invoer": false
+    }
+   ],
+   "antwoord": {
+    "waarde": 440,
+    "expr": "Math.max(121700/297, 92400/210)"
+   },
+   "voorbeeld": {
+    "vraag": [
+     "Een gebouw is 30 m breed en 15 m hoog.",
+     "Je tekent het zo groot mogelijk op papier van 300 mm bij 200 mm.",
+     "Op welke schaal teken je?"
+    ],
+    "stappen": [
+     {
+      "tekst": "Breedte: 30.000 mm op 300 mm",
+      "som": "30.000 : 300",
+      "expr": "30000/300",
+      "uitkomst": 100,
+      "invoer": true
+     },
+     {
+      "tekst": "Hoogte: 15.000 mm op 200 mm",
+      "som": "15.000 : 200",
+      "expr": "15000/200",
+      "uitkomst": 75,
+      "invoer": true
+     },
+     {
+      "tekst": "Neem het grootste getal",
+      "som": "100 > 75",
+      "expr": null,
+      "uitkomst": "schaal 1 : 100",
+      "invoer": false
+     }
+    ],
+    "antwoord": {
+     "waarde": 100,
+     "expr": "Math.max(30000/300, 15000/200)"
+    }
+   }
+  },
+  {
+   "id": "O3-PRA-01",
+   "onderdeel": 3,
+   "sectie": "praktijk",
+   "nummer": "1",
+   "afbeeldingen": [],
+   "flags": [
+    {
+     "soort": "niet-automatisch",
+     "beschrijving": "Eigen onderzoek in de supermarkt; de app kan dit niet nakijken.",
+     "voorstel": "Buitenmissie: de docent keurt goed met een code."
+    },
+    {
+     "soort": "fout-in-werkboek",
+     "beschrijving": "De formule \"(totaalprijs ÷ aantal gram/milliliter) × 100\" geeft de prijs per 100 gram of per 100 ml, niet per liter (dan is het × 1000). \"Je wil\" moet \"Je wilt\" zijn; \"Welke supermarkt is voor je feestje goedkoper.\" eindigt met een punt.",
+     "voorstel": "In de app: per 100 g = prijs : gram × 100; per liter = prijs : ml × 1000; per stuk = prijs : aantal."
+    },
+    {
+     "soort": "notatie",
+     "beschrijving": "\"€1,20\", \"€2,10\", \"€0,24\" zonder spatie en het deelteken \"÷\".",
+     "voorstel": "In de app: € 1,20 en het deelteken \":\"."
+    }
+   ],
+   "autoCheck": false,
+   "titel": "Prijzen vergelijken voor een feestje",
+   "origineel": "Leerdoel: De student kan prijzen vergelijken door de prijs per eenheid (bijvoorbeeld per 100 gram of per liter) uit te rekenen en zo een goede keuze maken. Situatie: Je wil een feestje geven en hebt daar enkele spullen voor nodig. Vlakbij je huis staat een Jumbo en een Albert Heijn. Welke supermarkt is voor je feestje goedkoper. Jij gaat dit onderzoeken door de prijs per eenheid uit te rekenen. Stap 1 – Begrijpen: Maak een lijst van 10 producten die jij nodig hebt voor een feestje. Stap 2 – Reken uit: Bereken de prijs per 100 gram of per liter of per stuk: Formule: Prijs per eenheid = (Totaalprijs ÷ aantal gram/milliliter) × 100. Voorbeeld: Product A: 500 gram rijst voor €1,20. Product B: 1000 gram rijst voor €2,10. Product A: €1,20 ÷ 500 gram × 100 = €0,24 per 100 gram. Product B: €2,10 ÷ 1000 gram × 100 = €0,21 per 100 gram. [Tabellen Jumbo en Albert Heijn: Product, Prijs, Gewicht, liter of aantal, Prijs per 100 gram, per liter of per stuk.] Opdracht (basisniveau): Naar welke supermarkt kan je het beste toe gaan? Welke supermarkt is in verhouding het goedkoopste?",
+   "vraag": [
+    "Je geeft een feestje.",
+    "Kies 10 producten die je nodig hebt.",
+    "Zoek prijs en inhoud bij Jumbo en Albert Heijn.",
+    "Reken de prijs per 100 gram, per liter of per stuk uit.",
+    "Welke supermarkt is in verhouding het goedkoopst?"
+   ],
+   "type": "open",
+   "paneel": "stappen",
+   "object3d": "boodschappenmand",
+   "context": [
+    {
+     "soort": "tabel",
+     "titel": "Prijsvergelijking (2 keer: Jumbo en Albert Heijn)",
+     "kolommen": [
+      "Product",
+      "Prijs",
+      "Gewicht, liter of aantal",
+      "Prijs per 100 gram, per liter of per stuk"
+     ],
+     "beschrijving": "Een lege lijst \"10 producten voor het feestje\" en twee lege tabellen (Jumbo en Albert Heijn) met elk 10 rijen. Formule uit het werkboek: prijs per eenheid = (totaalprijs : aantal gram of milliliter) × 100. Voorbeeld uit het werkboek: product A 500 gram rijst voor € 1,20 → € 1,20 : 500 × 100 = € 0,24 per 100 gram; product B 1000 gram rijst voor € 2,10 → € 2,10 : 1000 × 100 = € 0,21 per 100 gram."
+    }
+   ],
+   "stappen": [
+    {
+     "tekst": "Maak een lijst van 10 producten",
+     "som": "chips, drinken, ...",
+     "expr": null,
+     "uitkomst": "lijst",
+     "invoer": false
+    },
+    {
+     "tekst": "Zoek prijs en inhoud bij Jumbo en Albert Heijn",
+     "som": "prijs + gram, liter of stuks",
+     "expr": null,
+     "uitkomst": "twee tabellen",
+     "invoer": false
+    },
+    {
+     "tekst": "Reken de prijs per eenheid uit",
+     "som": "prijs : gram × 100",
+     "expr": null,
+     "uitkomst": "prijs per 100 g",
+     "invoer": false
+    },
+    {
+     "tekst": "Vergelijk de twee supermarkten",
+     "som": "Jumbo of Albert Heijn",
+     "expr": null,
+     "uitkomst": "goedkoopste supermarkt",
+     "invoer": false
+    }
+   ],
+   "antwoord": null,
+   "voorbeeld": {
+    "vraag": [
+     "Chips A: 200 gram voor € 1,60.",
+     "Chips B: 300 gram voor € 2,10.",
+     "Welke chips is per 100 gram goedkoper?"
+    ],
+    "stappen": [
+     {
+      "tekst": "A per 100 gram",
+      "som": "1,60 : 200 × 100",
+      "expr": "1.6/200*100",
+      "uitkomst": 0.8,
+      "eenheid": "euro",
+      "invoer": true
+     },
+     {
+      "tekst": "B per 100 gram",
+      "som": "2,10 : 300 × 100",
+      "expr": "2.1/300*100",
+      "uitkomst": 0.7,
+      "eenheid": "euro",
+      "invoer": true
+     },
+     {
+      "tekst": "Vergelijk",
+      "som": "€ 0,70 < € 0,80",
+      "expr": null,
+      "uitkomst": "chips B",
+      "invoer": false
+     }
+    ],
+    "antwoord": {
+     "waarde": "chips B",
+     "expr": null
+    }
+   }
+  },
+  {
+   "id": "O3-PUZ-01",
+   "onderdeel": 3,
+   "sectie": "puzzel",
+   "nummer": "1",
+   "afbeeldingen": [
+    "image71.jpeg"
+   ],
+   "flags": [
+    {
+     "soort": "auteursrecht",
+     "beschrijving": "Puzzelplaatje van internet.",
+     "voorstel": "Getallen overnemen, beeld opnieuw maken in 3D (zie beeld)."
+    }
+   ],
+   "autoCheck": true,
+   "titel": "Drankjespuzzel",
+   "origineel": "Los onderstaande puzzels op: [afbeelding: glas + glas + glas + glas = 28; kopje + kopje + glas = 17; kopje + mok = 9; glas + kopje + mok − glas = ?]",
+   "vraag": [
+    "4 glazen sap zijn samen 28.",
+    "2 kopjes koffie en 1 glas sap zijn samen 17.",
+    "1 kopje koffie en 1 blauwe mok zijn samen 9.",
+    "Hoeveel is glas + kopje + mok − glas?"
+   ],
+   "type": "getal",
+   "paneel": "stappen",
+   "context": [
+    {
+     "soort": "anders",
+     "beschrijving": "Lichtblauwe achtergrond met 4 rijen. Rij 1: 4 glazen geel sap met een rood rietje, met plustekens ertussen, = 28. Rij 2: wit kopje + wit kopje + glas sap = 17. Rij 3: wit kopje + blauwe mok (met stoom) = 9. Rij 4: glas sap + wit kopje + blauwe mok − glas sap = ?. Alle glazen, kopjes en mokken zien er hetzelfde uit (geen verschil in vulling of aantal)."
+    }
+   ],
+   "beeld": [
+    {
+     "afbeelding": "image71.jpeg",
+     "vorm": "bord",
+     "ontwerp": "In het koffiehoekje van de Markthal hangt een lichtblauw krijtbord met de 4 rijen, getekend in krijt: glazen sap met een rood rietje, witte kopjes en een blauwe mok. Op de bar eronder staan de echte drankjes; klik op een drankje en er verschijnt een prijskaartje met een vraagteken waarop jij de waarde invult.",
+     "toont": [
+      "glas + glas + glas + glas = 28",
+      "kopje + kopje + glas = 17",
+      "kopje + mok = 9",
+      "glas + kopje + mok − glas = ?"
+     ],
+     "grap": "Uit de blauwe mok komt een stoomwolkje in de vorm van een vraagteken."
+    }
+   ],
+   "stappen": [
+    {
+     "tekst": "Wat is 1 glas sap?",
+     "som": "28 : 4",
+     "expr": "28/4",
+     "uitkomst": 7,
+     "invoer": true
+    },
+    {
+     "tekst": "Wat is 1 kopje?",
+     "som": "(17 − 7) : 2",
+     "expr": "(17-7)/2",
+     "uitkomst": 5,
+     "invoer": true
+    },
+    {
+     "tekst": "Wat is 1 mok?",
+     "som": "9 − 5",
+     "expr": "9-5",
+     "uitkomst": 4,
+     "invoer": true
+    },
+    {
+     "tekst": "Reken de laatste rij uit",
+     "som": "7 + 5 + 4 − 7",
+     "expr": "7+5+4-7",
+     "uitkomst": 9,
+     "invoer": true
+    }
+   ],
+   "antwoord": {
+    "waarde": 9,
+    "expr": "7+5+4-7"
+   },
+   "voorbeeld": {
+    "vraag": [
+     "3 appels zijn samen 15.",
+     "1 appel en 2 peren zijn samen 11.",
+     "Hoeveel is 1 peer?"
+    ],
+    "stappen": [
+     {
+      "tekst": "Wat is 1 appel?",
+      "som": "15 : 3",
+      "expr": "15/3",
+      "uitkomst": 5,
+      "invoer": true
+     },
+     {
+      "tekst": "Wat is 1 peer?",
+      "som": "(11 − 5) : 2",
+      "expr": "(11-5)/2",
+      "uitkomst": 3,
+      "invoer": true
+     }
+    ],
+    "antwoord": {
+     "waarde": 3,
+     "expr": "(11-15/3)/2"
+    }
+   }
+  },
+  {
+   "id": "O3-PUZ-02",
+   "onderdeel": 3,
+   "sectie": "puzzel",
+   "nummer": "2",
+   "afbeeldingen": [
+    "image72.jpeg"
+   ],
+   "flags": [
+    {
+     "soort": "auteursrecht",
+     "beschrijving": "Puzzelplaatje van internet.",
+     "voorstel": "Getallen overnemen, beeld opnieuw maken in 3D (zie beeld)."
+    },
+    {
+     "soort": "tekst",
+     "beschrijving": "Het werkboek geeft geen tegels: je moet de getallen zelf vinden. De app toont tegels 0, 2, 5 en 8.",
+     "voorstel": "Docent kiest: tegels tonen (makkelijker) of verbergen."
+    }
+   ],
+   "autoCheck": true,
+   "titel": "Vakjespuzzel",
+   "origineel": "Los onderstaande puzzels op: [afbeelding: □ + □ = 5; □ − □ = 6; kolom links □ + □ = 8; kolom rechts □ + □ = 7]",
+   "vraag": [
+    "Vul de 4 lege vakjes in.",
+    "Elke rij en elke kolom moet kloppen."
+   ],
+   "type": "puzzel",
+   "paneel": "kruissom",
+   "puzzel": {
+    "rooster": [
+     [
+      "",
+      "+",
+      "",
+      "=",
+      "5"
+     ],
+     [
+      "+",
+      "#",
+      "+",
+      "#",
+      "#"
+     ],
+     [
+      "",
+      "-",
+      "",
+      "=",
+      "6"
+     ],
+     [
+      "=",
+      "#",
+      "=",
+      "#",
+      "#"
+     ],
+     [
+      "8",
+      "#",
+      "7",
+      "#",
+      "#"
+     ]
+    ],
+    "tegels": [
+     0,
+     2,
+     5,
+     8
+    ]
+   },
+   "context": [
+    {
+     "soort": "anders",
+     "beschrijving": "Geel vlak met 4 lege vierkanten in 2 rijen en 2 kolommen. Rij 1: □ + □ = 5. Rij 2: □ − □ = 6. Kolom links: □ + □ = 8. Kolom rechts: □ + □ = 7. Er staan geen tegels of te kiezen getallen bij."
+    }
+   ],
+   "beeld": [
+    {
+     "afbeelding": "image72.jpeg",
+     "vorm": "bord",
+     "ontwerp": "Bij de ingang van de bakkerij in de Markthal staat een knalgeel stoepbord met 4 lege vakjes, plus- en mintekens en de uitkomsten 5, 6, 8 en 7. In de vakjes leg je ronde koekjes met cijfers erop. Klopt een rij of kolom, dan licht die op.",
+     "toont": [
+      "□ + □ = 5",
+      "□ − □ = 6",
+      "kolom links = 8",
+      "kolom rechts = 7"
+     ],
+     "grap": "De bakker steekt zijn duim op door het raam als alles klopt."
+    }
+   ],
+   "stappen": [],
+   "antwoord": {
+    "waarde": "0, 5, 8, 2",
+    "expr": null
+   },
+   "voorbeeld": {
+    "vraag": [
+     "□ + □ = 7.",
+     "□ − □ = 1.",
+     "Het zijn twee keer dezelfde getallen.",
+     "Welke getallen zijn het?"
+    ],
+    "stappen": [
+     {
+      "tekst": "Groot getal: (7 + 1) : 2",
+      "som": "(7 + 1) : 2",
+      "expr": "(7+1)/2",
+      "uitkomst": 4,
+      "invoer": true
+     },
+     {
+      "tekst": "Klein getal",
+      "som": "7 − 4",
+      "expr": "7-4",
+      "uitkomst": 3,
+      "invoer": true
+     }
+    ],
+    "antwoord": {
+     "waarde": "4, 3",
+     "expr": null
+    }
+   }
+  },
+  {
+   "id": "O3-PUZ-03",
+   "onderdeel": 3,
+   "sectie": "puzzel",
+   "nummer": "3",
+   "afbeeldingen": [
+    "image73.jpeg"
+   ],
+   "flags": [
+    {
+     "soort": "auteursrecht",
+     "beschrijving": "Puzzelplaatje met het watermerk \"© BRIGHTSIDE\".",
+     "voorstel": "Getallen overnemen, beeld opnieuw maken in 3D (zie beeld)."
+    }
+   ],
+   "autoCheck": true,
+   "titel": "Lijnenpuzzel",
+   "origineel": "Los onderstaande puzzels op: [afbeelding: figuur van 3 liggende en 3 staande lijnen = 9; figuur van 1 liggende en 1 staande lijn = 1; figuur van 2 liggende en 2 staande lijnen = ?]",
+   "vraag": [
+    "Op het bord staan figuren van lijnen.",
+    "Figuur 1 is 9. Figuur 2 is 1.",
+    "Hoeveel is figuur 3?"
+   ],
+   "type": "getal",
+   "paneel": "stappen",
+   "context": [
+    {
+     "soort": "tekening",
+     "beschrijving": "Groen schoolbord met witte krijtlijnen. Figuur 1: 3 liggende en 3 staande lijnen (een raster) = 9. Figuur 2: 1 liggende en 1 staande lijn (een kruis) = 1. Figuur 3: 2 liggende en 2 staande lijnen (een hekje #) = ? (geel vraagteken). Rechtsonder \"© BRIGHTSIDE\"."
+    }
+   ],
+   "beeld": [
+    {
+     "afbeelding": "image73.jpeg",
+     "vorm": "bord",
+     "ontwerp": "In de kaartenwinkel van de Markthal hangt een groen krijtbord met drie figuren van witte krijtstrepen: een raster (= 9), een kruis (= 1) en een hekje (= ?). Klik op een figuur en de kruispunten lichten op als gele stipjes.",
+     "toont": [
+      "raster van 3 + 3 lijnen = 9",
+      "kruis van 1 + 1 lijn = 1",
+      "hekje van 2 + 2 lijnen = ?"
+     ],
+     "grap": "Een stukje krijt tekent vanzelf een smiley als je het goede antwoord geeft."
+    }
+   ],
+   "stappen": [
+    {
+     "tekst": "Kruispunten in figuur 1",
+     "som": "3 × 3",
+     "expr": "3*3",
+     "uitkomst": 9,
+     "eenheid": "kruispunten",
+     "invoer": true
+    },
+    {
+     "tekst": "Kruispunten in figuur 2",
+     "som": "1 × 1",
+     "expr": "1*1",
+     "uitkomst": 1,
+     "eenheid": "kruispunten",
+     "invoer": true
+    },
+    {
+     "tekst": "Kruispunten in figuur 3",
+     "som": "2 × 2",
+     "expr": "2*2",
+     "uitkomst": 4,
+     "eenheid": "kruispunten",
+     "invoer": true
+    }
+   ],
+   "antwoord": {
+    "waarde": 4,
+    "expr": "2*2"
+   },
+   "voorbeeld": {
+    "vraag": [
+     "Een figuur heeft 4 liggende en 2 staande lijnen.",
+     "Hoeveel kruispunten zijn er?"
+    ],
+    "stappen": [
+     {
+      "tekst": "Liggend keer staand",
+      "som": "4 × 2",
+      "expr": "4*2",
+      "uitkomst": 8,
+      "eenheid": "kruispunten",
+      "invoer": true
+     }
+    ],
+    "antwoord": {
+     "waarde": 8,
+     "expr": "4*2"
+    }
+   }
+  },
+  {
+   "id": "O3-PUZ-04",
+   "onderdeel": 3,
+   "sectie": "puzzel",
+   "nummer": "4",
+   "afbeeldingen": [
+    "image74.jpeg"
+   ],
+   "flags": [
+    {
+     "soort": "auteursrecht",
+     "beschrijving": "Puzzelplaatje van internet.",
+     "voorstel": "Getallen overnemen, beeld opnieuw maken in 3D (zie beeld)."
+    }
+   ],
+   "autoCheck": true,
+   "titel": "Weegschaalpuzzel",
+   "origineel": "Los onderstaande puzzels op: [afbeelding: weegschaal in evenwicht; links 2 witte bollen en 1 rode bol; rechts een kleine weegschaal in evenwicht met 3 rode bollen tegen een groene bol \"30\"; ○ = ?]",
+   "vraag": [
+    "Een weegschaal is in evenwicht.",
+    "Links liggen 2 witte bollen en 1 rode bol.",
+    "Rechts hangt een kleine weegschaal.",
+    "Daarop liggen 3 rode bollen tegen 1 groene bol van 30.",
+    "Hoeveel weegt 1 witte bol?"
+   ],
+   "type": "getal",
+   "paneel": "stappen",
+   "object3d": "balans",
+   "context": [
+    {
+     "soort": "tekening",
+     "beschrijving": "Grote grijze balansweegschaal op een voet, in evenwicht. Linkerschaal: 2 witte bollen en 1 rode bol. Aan de rechterarm hangt een kleine balans, ook in evenwicht: links 3 rode bollen, rechts 1 groene bol met \"30\". Onder: \"○ = ?\" (de witte bol)."
+    }
+   ],
+   "beeld": [
+    {
+     "afbeelding": "image74.jpeg",
+     "vorm": "model",
+     "ontwerp": "Bij de kaaskraam in de Markthal hangt een grote gietijzeren balansweegschaal. Links liggen 2 witte geitenkaasjes en 1 rood edammertje; rechts hangt een kleine balans met 3 rode edammertjes tegen een groen gewicht \"30\". Alles is in evenwicht; haal je iets weg, dan kantelt de balans.",
+     "toont": [
+      "links: 2 wit + 1 rood",
+      "kleine balans: 3 rood = groen 30",
+      "○ = ?"
+     ],
+     "grap": "Een muis zit op het groene gewicht en wiebelt mee."
+    }
+   ],
+   "stappen": [
+    {
+     "tekst": "Kleine weegschaal: 3 rood = 30",
+     "som": "30 : 3",
+     "expr": "30/3",
+     "uitkomst": 10,
+     "invoer": true
+    },
+    {
+     "tekst": "Rechts samen",
+     "som": "3 × 10 + 30",
+     "expr": "3*10+30",
+     "uitkomst": 60,
+     "invoer": true
+    },
+    {
+     "tekst": "Links: 2 wit + 10 = 60",
+     "som": "60 − 10",
+     "expr": "60-10",
+     "uitkomst": 50,
+     "invoer": true
+    },
+    {
+     "tekst": "Wat weegt 1 witte bol?",
+     "som": "50 : 2",
+     "expr": "50/2",
+     "uitkomst": 25,
+     "invoer": true
+    }
+   ],
+   "antwoord": {
+    "waarde": 25,
+    "expr": "(3*10+30-10)/2"
+   },
+   "voorbeeld": {
+    "vraag": [
+     "Op een kleine balans: 2 rode bollen = 16.",
+     "Grote balans: 1 witte + 1 rode bol = 2 rode bollen + 8.",
+     "Hoeveel weegt de witte bol?"
+    ],
+    "stappen": [
+     {
+      "tekst": "Wat weegt 1 rode bol?",
+      "som": "16 : 2",
+      "expr": "16/2",
+      "uitkomst": 8,
+      "invoer": true
+     },
+     {
+      "tekst": "Rechts samen",
+      "som": "16 + 8",
+      "expr": "16+8",
+      "uitkomst": 24,
+      "invoer": true
+     },
+     {
+      "tekst": "Wit = 24 − 8",
+      "som": "24 − 8",
+      "expr": "24-8",
+      "uitkomst": 16,
+      "invoer": true
+     }
+    ],
+    "antwoord": {
+     "waarde": 16,
+     "expr": "16+8-16/2"
+    }
+   }
+  },
+  {
+   "id": "O3-PUZ-05",
+   "onderdeel": 3,
+   "sectie": "puzzel",
+   "nummer": "5",
+   "afbeeldingen": [
+    "image75.jpeg"
+   ],
+   "flags": [
+    {
+     "soort": "dubbelzinnig",
+     "beschrijving": "Je ziet de groene achtergrond door de scheuren: ze gaan door voor- én achterkant (4 gaten) + 4 openingen = 8. Tel je alleen de voorkant, dan kom je op 6.",
+     "voorstel": "De app rekent 8 goed; 6 ook (alternatief)."
+    },
+    {
+     "soort": "tekst",
+     "beschrijving": "De tekst op het plaatje is Engels (\"How Many Holes Are In This Shirt?\").",
+     "voorstel": "In de app in het Nederlands."
+    },
+    {
+     "soort": "auteursrecht",
+     "beschrijving": "Meme-plaatje van internet.",
+     "voorstel": "Getallen overnemen, beeld opnieuw maken in 3D (zie beeld)."
+    }
+   ],
+   "autoCheck": true,
+   "titel": "Gatenpuzzel",
+   "origineel": "Los onderstaande puzzels op: [afbeelding: \"99% of people fail to get this right\" – \"How Many Holes Are In This Shirt?\" – wit T-shirt met 2 scheuren]",
+   "vraag": [
+    "Bekijk het T-shirt.",
+    "Er zitten 2 scheuren in.",
+    "Hoeveel gaten zitten er in het shirt?"
+   ],
+   "type": "getal",
+   "paneel": "stappen",
+   "object3d": "tshirt",
+   "context": [
+    {
+     "soort": "tekening",
+     "beschrijving": "Mintgroene achtergrond. Boven: \"99% of people fail to get this right\" en \"How Many Holes\". Midden: wit T-shirt met 2 scheuren in de voorkant (onder elkaar, rechts van het midden); door de scheuren zie je de groene achtergrond, dus ze gaan door voor- en achterkant. Onder: \"Are In This Shirt?\"."
+    }
+   ],
+   "beeld": [
+    {
+     "afbeelding": "image75.jpeg",
+     "vorm": "model",
+     "ontwerp": "In de kledingkraam van de Markthal hangt een wit T-shirt aan een rek tegen een mintgroene wand. Er zitten 2 scheuren in de voorkant; je ziet het groen erdoorheen. Draai het shirt rond en je ziet dat de scheuren ook in de achterkant zitten. Boven het rek hangt een bordje \"Hoeveel gaten zitten er in dit shirt?\".",
+     "toont": [
+      "2 scheuren (door voor- en achterkant)",
+      "halsgat",
+      "2 mouwgaten",
+      "onderkant"
+     ],
+     "grap": "Een mot vliegt verlegen weg uit één van de gaten."
+    }
+   ],
+   "stappen": [
+    {
+     "tekst": "Openingen: hals, 2 mouwen, onderkant",
+     "som": "1 + 2 + 1",
+     "expr": "1+2+1",
+     "uitkomst": 4,
+     "eenheid": "gaten",
+     "invoer": true
+    },
+    {
+     "tekst": "Scheuren in voorkant én achterkant",
+     "som": "2 × 2",
+     "expr": "2*2",
+     "uitkomst": 4,
+     "eenheid": "gaten",
+     "invoer": true
+    },
+    {
+     "tekst": "Tel op",
+     "som": "4 + 4",
+     "expr": "4+4",
+     "uitkomst": 8,
+     "eenheid": "gaten",
+     "invoer": true
+    }
+   ],
+   "antwoord": {
+    "waarde": 8,
+    "eenheid": "gaten",
+    "expr": "1+2+1+2*2",
+    "alternatieven": [
+     6
+    ]
+   },
+   "voorbeeld": {
+    "vraag": [
+     "Een broek heeft een opening bij de taille en 2 pijpen.",
+     "Er zit 1 gat in de knie.",
+     "Hoeveel gaten heeft de broek?"
+    ],
+    "stappen": [
+     {
+      "tekst": "Openingen van de broek",
+      "som": "1 + 2",
+      "expr": "1+2",
+      "uitkomst": 3,
+      "eenheid": "gaten",
+      "invoer": true
+     },
+     {
+      "tekst": "Plus het gat in de knie",
+      "som": "3 + 1",
+      "expr": "3+1",
+      "uitkomst": 4,
+      "eenheid": "gaten",
+      "invoer": true
+     }
+    ],
+    "antwoord": {
+     "waarde": 4,
+     "eenheid": "gaten",
+     "expr": "1+2+1"
+    }
+   }
+  },
+  {
+   "id": "O3-EIN-01",
+   "onderdeel": 3,
+   "sectie": "eindtest",
+   "nummer": "1",
+   "afbeeldingen": [],
+   "flags": [
+    {
+     "soort": "dubbel",
+     "beschrijving": "Dezelfde som staat in onderdeel 1, eindtest opdracht 1 (O1-EIN-01); daar met \"8 kopjes\".",
+     "voorstel": "Docent kiest: in één van beide onderdelen andere getallen gebruiken."
+    },
+    {
+     "soort": "notatie",
+     "beschrijving": "\"acht kopjes\" in letters.",
+     "voorstel": "In de app: 8 kopjes."
+    }
+   ],
+   "autoCheck": true,
+   "origineel": "In een pak koffie zit 500 gram. Voor het zetten van acht kopjes koffie gebruik je 60 gram koffie. Hoeveel kopjes koffie kun je zetten met dit pak?",
+   "vraag": [
+    "In een pak zit 500 gram koffie.",
+    "Voor 8 kopjes gebruik je 60 gram.",
+    "Hoeveel kopjes kun je zetten met dit pak?"
+   ],
+   "type": "getal",
+   "paneel": "verhoudingstabel",
+   "object3d": "koffiepak",
+   "stappen": [
+    {
+     "tekst": "Koffie voor 1 kopje",
+     "som": "60 : 8",
+     "expr": "60/8",
+     "uitkomst": 7.5,
+     "eenheid": "gram",
+     "invoer": true,
+     "tabel": {
+      "boven": [
+       "8 kopjes",
+       "1 kopje"
+      ],
+      "onder": [
+       "60 g",
+       "?"
+      ],
+      "pijl": ": 8"
+     }
+    },
+    {
+     "tekst": "Kopjes uit 500 gram",
+     "som": "500 : 7,5",
+     "expr": "500/7.5",
+     "uitkomst": 66.67,
+     "eenheid": "kopjes",
+     "invoer": true,
+     "afronding": "2-decimalen",
+     "tabel": {
+      "boven": [
+       "7,5 g",
+       "500 g"
+      ],
+      "onder": [
+       "1 kopje",
+       "?"
+      ]
+     }
+    },
+    {
+     "tekst": "Alleen hele kopjes: rond naar beneden af",
+     "som": "66,67 → 66",
+     "expr": "500/7.5",
+     "uitkomst": 66,
+     "eenheid": "kopjes",
+     "invoer": true,
+     "afronding": "naar-beneden"
+    }
+   ],
+   "antwoord": {
+    "waarde": 66,
+    "eenheid": "kopjes",
+    "expr": "500/60*8",
+    "afronding": "naar-beneden"
+   },
+   "voorbeeld": {
+    "vraag": [
+     "In een pak thee zit 250 gram.",
+     "Voor 10 koppen gebruik je 30 gram.",
+     "Hoeveel koppen kun je zetten?"
+    ],
+    "stappen": [
+     {
+      "tekst": "Thee voor 1 kop",
+      "som": "30 : 10",
+      "expr": "30/10",
+      "uitkomst": 3,
+      "eenheid": "gram",
+      "invoer": true
+     },
+     {
+      "tekst": "Koppen uit 250 gram",
+      "som": "250 : 3",
+      "expr": "250/3",
+      "uitkomst": 83.33,
+      "eenheid": "koppen",
+      "invoer": true,
+      "afronding": "2-decimalen"
+     },
+     {
+      "tekst": "Alleen hele koppen",
+      "som": "83,33 → 83",
+      "expr": "250/3",
+      "uitkomst": 83,
+      "eenheid": "koppen",
+      "invoer": true,
+      "afronding": "naar-beneden"
+     }
+    ],
+    "antwoord": {
+     "waarde": 83,
+     "eenheid": "koppen",
+     "expr": "250/30*10",
+     "afronding": "naar-beneden"
+    }
+   }
+  },
+  {
+   "id": "O3-EIN-02",
+   "onderdeel": 3,
+   "sectie": "eindtest",
+   "nummer": "2",
+   "afbeeldingen": [
+    "image76.jpeg"
+   ],
+   "flags": [
+    {
+     "soort": "auteursrecht",
+     "beschrijving": "Productfoto van bestek uit een webshop.",
+     "voorstel": "Getallen overnemen, beeld opnieuw maken in 3D (zie beeld)."
+    }
+   ],
+   "autoCheck": true,
+   "origineel": "Driedelig bestek voor één persoon bestaat uit een mes, een vork en een lepel. Je koopt een driedelig bestek voor 8 personen. Hoeveel moet je in totaal betalen?",
+   "vraag": [
+    "Bestek voor 1 persoon is een mes, een vork en een lepel.",
+    "Je koopt bestek voor 8 personen.",
+    "Messen, vorken en lepels kosten € 1,99 per 4 stuks.",
+    "Hoeveel betaal je in totaal?"
+   ],
+   "type": "getal",
+   "paneel": "verhoudingstabel",
+   "object3d": "bestek",
+   "context": [
+    {
+     "soort": "prijzen",
+     "items": [
+      {
+       "label": "Messen",
+       "waarde": "€ 1,99 per 4 stuks"
+      },
+      {
+       "label": "Vorken",
+       "waarde": "€ 1,99 per 4 stuks"
+      },
+      {
+       "label": "Lepels",
+       "waarde": "€ 1,99 per 4 stuks"
+      }
+     ],
+     "beschrijving": "Drie vakken naast elkaar met zilverkleurig bestek: 4 messen, 4 vorken en 4 lepels. Onder elk vak \"€ 1,99 per 4 stuks\"."
+    }
+   ],
+   "beeld": [
+    {
+     "afbeelding": "image76.jpeg",
+     "vorm": "model",
+     "ontwerp": "In de huishoudkraam van de Markthal staan 3 houten bakjes op de toonbank: 4 glanzende messen, 4 vorken en 4 lepels. Voor elk bakje staat een krijtbordje \"€ 1,99 per 4 stuks\". Klik op een bakje en de kraamhouder dekt een lange tafel voor 8 personen.",
+     "toont": [
+      "messen: € 1,99 per 4 stuks",
+      "vorken: € 1,99 per 4 stuks",
+      "lepels: € 1,99 per 4 stuks"
+     ],
+     "grap": "In één lepel zie je jezelf ondersteboven."
+    }
+   ],
+   "stappen": [
+    {
+     "tekst": "Pakjes messen voor 8 personen",
+     "som": "8 : 4",
+     "expr": "8/4",
+     "uitkomst": 2,
+     "eenheid": "pakjes",
+     "invoer": true,
+     "tabel": {
+      "boven": [
+       "4 messen",
+       "8 messen"
+      ],
+      "onder": [
+       "1 pakje",
+       "?"
+      ],
+      "pijl": "× 2"
+     }
+    },
+    {
+     "tekst": "Pakjes voor mes, vork en lepel",
+     "som": "3 × 2",
+     "expr": "3*2",
+     "uitkomst": 6,
+     "eenheid": "pakjes",
+     "invoer": true
+    },
+    {
+     "tekst": "Keer € 1,99",
+     "som": "6 × 1,99",
+     "expr": "6*1.99",
+     "uitkomst": 11.94,
+     "eenheid": "euro",
+     "invoer": true
+    }
+   ],
+   "antwoord": {
+    "waarde": 11.94,
+    "eenheid": "euro",
+    "expr": "3*(8/4)*1.99"
+   },
+   "voorbeeld": {
+    "vraag": [
+     "Borden kosten € 2,50 per 2 stuks.",
+     "Kommen kosten ook € 2,50 per 2 stuks.",
+     "Je koopt een bord en een kom voor 6 personen.",
+     "Hoeveel betaal je?"
+    ],
+    "stappen": [
+     {
+      "tekst": "Pakjes borden voor 6 personen",
+      "som": "6 : 2",
+      "expr": "6/2",
+      "uitkomst": 3,
+      "eenheid": "pakjes",
+      "invoer": true,
+      "tabel": {
+       "boven": [
+        "2 borden",
+        "6 borden"
+       ],
+       "onder": [
+        "1 pakje",
+        "3 pakjes"
+       ],
+       "pijl": "× 3"
+      }
+     },
+     {
+      "tekst": "Pakjes borden en kommen",
+      "som": "2 × 3",
+      "expr": "2*3",
+      "uitkomst": 6,
+      "eenheid": "pakjes",
+      "invoer": true
+     },
+     {
+      "tekst": "Keer € 2,50",
+      "som": "6 × 2,50",
+      "expr": "6*2.5",
+      "uitkomst": 15,
+      "eenheid": "euro",
+      "invoer": true
+     }
+    ],
+    "antwoord": {
+     "waarde": 15,
+     "eenheid": "euro",
+     "expr": "2*(6/2)*2.5"
+    }
+   }
+  },
+  {
+   "id": "O3-EIN-03",
+   "onderdeel": 3,
+   "sectie": "eindtest",
+   "nummer": "3",
+   "afbeeldingen": [
+    "image77.jpeg"
+   ],
+   "flags": [
+    {
+     "soort": "auteursrecht",
+     "beschrijving": "Foto van een echte auto van een automerk.",
+     "voorstel": "Getallen overnemen, beeld opnieuw maken in 3D (zie beeld)."
+    },
+    {
+     "soort": "fout-in-werkboek",
+     "beschrijving": "\"legt hij in 12 minuten in 86,8 km af\": het tweede \"in\" is te veel. \"is begin 2012\" moet \"was begin 2012\" zijn.",
+     "voorstel": "In de app verbeterd."
+    }
+   ],
+   "autoCheck": true,
+   "origineel": "De 'Bugatti Veyron Super Sport' is begin 2012 de snelste auto ter wereld. Op topsnelheid legt hij in 12 minuten in 86,8 km af. Wat is de topsnelheid in kilometer per uur (km/h)?",
+   "vraag": [
+    "Begin 2012 was de Bugatti Veyron Super Sport de snelste auto.",
+    "Op topsnelheid rijdt hij 86,8 km in 12 minuten.",
+    "Wat is zijn topsnelheid in km/h?"
+   ],
+   "type": "getal",
+   "paneel": "verhoudingstabel",
+   "object3d": "sportwagen",
+   "context": [
+    {
+     "soort": "anders",
+     "beschrijving": "Foto van een zwart-oranje sportwagen (Bugatti Veyron Super Sport) die over een weg rijdt, met de zon op de achtergrond. Geen getallen op de foto."
+    }
+   ],
+   "beeld": [
+    {
+     "afbeelding": "image77.jpeg",
+     "vorm": "model",
+     "ontwerp": "In de speelgoedkraam van de Markthal ligt een lange racebaan. Een zwart-oranje sportwagentje (zonder logo) zoeft eroverheen. Langs de baan staan een klok \"12 minuten\" en een bordje \"86,8 km\". Klik op de auto: hij rijdt 5 rondjes terwijl de klok tot 60 minuten tikt.",
+     "toont": [
+      "12 minuten",
+      "86,8 km"
+     ],
+     "grap": "Een slak op de racebaan steekt een geruite vlag op."
+    }
+   ],
+   "stappen": [
+    {
+     "tekst": "Hoe vaak past 12 minuten in 1 uur?",
+     "som": "60 : 12",
+     "expr": "60/12",
+     "uitkomst": 5,
+     "eenheid": "keer",
+     "invoer": true,
+     "tabel": {
+      "boven": [
+       "12 min",
+       "60 min"
+      ],
+      "onder": [
+       "86,8 km",
+       "?"
+      ],
+      "pijl": "× 5"
+     }
+    },
+    {
+     "tekst": "Doe de km ook keer 5",
+     "som": "5 × 86,8",
+     "expr": "5*86.8",
+     "uitkomst": 434,
+     "eenheid": "km",
+     "invoer": true,
+     "tabel": {
+      "boven": [
+       "12 min",
+       "60 min"
+      ],
+      "onder": [
+       "86,8 km",
+       "434 km"
+      ],
+      "pijl": "× 5"
+     }
+    }
+   ],
+   "antwoord": {
+    "waarde": 434,
+    "eenheid": "km/h",
+    "expr": "86.8/12*60"
+   },
+   "voorbeeld": {
+    "vraag": [
+     "Een trein rijdt 40 km in 15 minuten.",
+     "Hoe hard rijdt de trein in km/h?"
+    ],
+    "stappen": [
+     {
+      "tekst": "Hoe vaak past 15 minuten in 1 uur?",
+      "som": "60 : 15",
+      "expr": "60/15",
+      "uitkomst": 4,
+      "eenheid": "keer",
+      "invoer": true,
+      "tabel": {
+       "boven": [
+        "15 min",
+        "60 min"
+       ],
+       "onder": [
+        "40 km",
+        "?"
+       ],
+       "pijl": "× 4"
+      }
+     },
+     {
+      "tekst": "Doe de km ook keer 4",
+      "som": "4 × 40",
+      "expr": "4*40",
+      "uitkomst": 160,
+      "eenheid": "km",
+      "invoer": true,
+      "tabel": {
+       "boven": [
+        "15 min",
+        "60 min"
+       ],
+       "onder": [
+        "40 km",
+        "160 km"
+       ],
+       "pijl": "× 4"
+      }
+     }
+    ],
+    "antwoord": {
+     "waarde": 160,
+     "eenheid": "km/h",
+     "expr": "40/15*60"
+    }
+   }
+  },
+  {
+   "id": "O3-EIN-04",
+   "onderdeel": 3,
+   "sectie": "eindtest",
+   "nummer": "4",
+   "afbeeldingen": [
+    "image78.jpeg"
+   ],
+   "flags": [
+    {
+     "soort": "auteursrecht",
+     "beschrijving": "Foto's van een bekend gebouw en van een merkpuzzel.",
+     "voorstel": "Getallen overnemen, beeld opnieuw maken in 3D (zie beeld)."
+    }
+   ],
+   "autoCheck": true,
+   "origineel": "Op de linkerfoto staat het Empire State Building in New York. Rechts staat de 3D-puzzel van dat gebouw. Wat is de schaal van deze 3D-puzzel? Rond af op een geheel getal. Schaal 1 :",
+   "vraag": [
+    "Het Empire State Building is 381 m hoog.",
+    "De 3D-puzzel van het gebouw is 47,6 cm hoog.",
+    "Wat is de schaal van de puzzel?",
+    "Rond af op een heel getal: schaal 1 : ..."
+   ],
+   "type": "getal",
+   "paneel": "eenhedentrap",
+   "object3d": "empire-puzzel",
+   "context": [
+    {
+     "soort": "tekening",
+     "items": [
+      {
+       "label": "hoogte gebouw",
+       "waarde": 381,
+       "eenheid": "m"
+      },
+      {
+       "label": "hoogte puzzel",
+       "waarde": "47,6",
+       "eenheid": "cm"
+      }
+     ],
+     "beschrijving": "Twee foto's naast elkaar. Links het Empire State Building in New York met blauwe lucht, onderschrift \"hoogte = 381 m\". Rechts een donkerblauwe 3D-puzzel van het gebouw met verlichte raampjes en een witte spits, op een zwarte voet, onderschrift \"hoogte puzzel = 47,6 cm\"."
+    }
+   ],
+   "beeld": [
+    {
+     "afbeelding": "image78.jpeg",
+     "vorm": "model",
+     "ontwerp": "In de kaartenwinkel van de Markthal staat op een sokkel een donkerblauwe 3D-puzzel van het Empire State Building met lichtjes in de ramen en een label \"hoogte puzzel = 47,6 cm\". Erachter hangt een groot schilderij van het echte gebouw met het bordje \"hoogte = 381 m\". Klik op de puzzel en hij groeit even tot het echte formaat en weer terug.",
+     "toont": [
+      "hoogte = 381 m",
+      "hoogte puzzel = 47,6 cm"
+     ],
+     "grap": "Op de top van de puzzel zit een piepklein aapje te zwaaien."
+    }
+   ],
+   "stappen": [
+    {
+     "tekst": "Maak cm van 381 m",
+     "som": "381 × 100",
+     "expr": "381*100",
+     "uitkomst": 38100,
+     "eenheid": "cm",
+     "invoer": true,
+     "trap": {
+      "van": "m",
+      "naar": "cm"
+     }
+    },
+    {
+     "tekst": "Deel door 47,6",
+     "som": "38.100 : 47,6",
+     "expr": "38100/47.6",
+     "uitkomst": 800.42,
+     "invoer": true,
+     "afronding": "2-decimalen"
+    },
+    {
+     "tekst": "Rond af op een heel getal",
+     "som": "800,42 → 800",
+     "expr": "38100/47.6",
+     "uitkomst": 800,
+     "invoer": true,
+     "afronding": "heel"
+    }
+   ],
+   "antwoord": {
+    "waarde": 800,
+    "expr": "381*100/47.6",
+    "afronding": "heel"
+   },
+   "voorbeeld": {
+    "vraag": [
+     "Een toren is 120 m hoog.",
+     "Het model is 40 cm hoog.",
+     "Wat is de schaal? Schaal 1 : ..."
+    ],
+    "stappen": [
+     {
+      "tekst": "Maak cm van 120 m",
+      "som": "120 × 100",
+      "expr": "120*100",
+      "uitkomst": 12000,
+      "eenheid": "cm",
+      "invoer": true,
+      "trap": {
+       "van": "m",
+       "naar": "cm"
+      }
+     },
+     {
+      "tekst": "Deel door 40",
+      "som": "12.000 : 40",
+      "expr": "12000/40",
+      "uitkomst": 300,
+      "invoer": true
+     }
+    ],
+    "antwoord": {
+     "waarde": 300,
+     "expr": "120*100/40"
+    }
+   }
+  },
+  {
+   "id": "O3-EIN-05",
+   "onderdeel": 3,
+   "sectie": "eindtest",
+   "nummer": "5",
+   "afbeeldingen": [],
+   "flags": [
+    {
+     "soort": "fout-in-werkboek",
+     "beschrijving": "De vraag eindigt met een punt in plaats van een vraagteken.",
+     "voorstel": "In de app verbeterd."
+    }
+   ],
+   "autoCheck": true,
+   "origineel": "In 2014 waren er in Nederland 9,45 miljoen sim-only gebruikers. Van de sim-only gebruikers betaalde 1/3 deel zijn telefoonkosten prepaid. Hoeveel miljoen sim-only gebruikers betaalden hun telefoonkosten in 2014 prepaid. ....... miljoen sim-only gebruikers",
+   "vraag": [
+    "In 2014 had Nederland 9,45 miljoen sim-only gebruikers.",
+    "1/3 deel betaalde prepaid.",
+    "Hoeveel miljoen gebruikers betaalden prepaid?"
+   ],
+   "type": "getal",
+   "paneel": "blokmodel",
+   "stappen": [
+    {
+     "tekst": "1/3 deel: verdeel in 3 gelijke stukken",
+     "som": "9,45 in 3 blokken",
+     "expr": null,
+     "uitkomst": "3 blokken",
+     "invoer": false
+    },
+    {
+     "tekst": "Deel door 3",
+     "som": "9,45 : 3",
+     "expr": "9.45/3",
+     "uitkomst": 3.15,
+     "eenheid": "miljoen",
+     "invoer": true
+    }
+   ],
+   "antwoord": {
+    "waarde": 3.15,
+    "eenheid": "miljoen",
+    "expr": "9.45/3"
+   },
+   "voorbeeld": {
+    "vraag": [
+     "In een stad wonen 2,4 miljoen mensen.",
+     "1/4 deel fietst naar het werk.",
+     "Hoeveel miljoen mensen fietsen?"
+    ],
+    "stappen": [
+     {
+      "tekst": "1/4 deel: verdeel in 4 gelijke stukken",
+      "som": "2,4 in 4 blokken",
+      "expr": null,
+      "uitkomst": "4 blokken",
+      "invoer": false
+     },
+     {
+      "tekst": "Deel door 4",
+      "som": "2,4 : 4",
+      "expr": "2.4/4",
+      "uitkomst": 0.6,
+      "eenheid": "miljoen",
+      "invoer": true
+     }
+    ],
+    "antwoord": {
+     "waarde": 0.6,
+     "eenheid": "miljoen",
+     "expr": "2.4/4"
+    }
+   }
+  },
+  {
+   "id": "O3-EIN-06",
+   "onderdeel": 3,
+   "sectie": "eindtest",
+   "nummer": "6",
+   "afbeeldingen": [
+    "image79.jpeg",
+    "image80.jpeg"
+   ],
+   "flags": [
+    {
+     "soort": "auteursrecht",
+     "beschrijving": "Foto uit een supermarkt met productstickers.",
+     "voorstel": "Getallen overnemen, beeld opnieuw maken in 3D (zie beeld)."
+    }
+   ],
+   "autoCheck": true,
+   "origineel": "Welke appels zijn per kg het goedkoopst?",
+   "vraag": [
+    "Elstar kost € 2,29 per zak van 1,5 kg.",
+    "Golden Delicious kost € 1,29 per schaal van 0,8 kg.",
+    "Jonagold kost € 1,49 per kg.",
+    "Welke appels zijn per kg het goedkoopst?"
+   ],
+   "type": "keuze",
+   "keuzes": [
+    "Elstar",
+    "Golden Delicious",
+    "Jonagold"
+   ],
+   "paneel": "verhoudingstabel",
+   "object3d": "appelkraam",
+   "context": [
+    {
+     "soort": "prijzen",
+     "titel": "Appels",
+     "items": [
+      {
+       "label": "Elstar",
+       "waarde": "€ 2,29 per zak van 1,5 kg"
+      },
+      {
+       "label": "Golden Delicious",
+       "waarde": "€ 1,29 per schaal van 0,8 kg"
+      },
+      {
+       "label": "Jonagold",
+       "waarde": "€ 1,49 per kg"
+      }
+     ],
+     "beschrijving": "image80: prijslijstje \"Appels\" met 3 regels (zie items). image79: foto van een supermarktschap met rode appels in plastic zakken en losse gele en groene appels met groene stickers; geen leesbare prijzen."
+    }
+   ],
+   "beeld": [
+    {
+     "afbeelding": "image79.jpeg",
+     "vorm": "model",
+     "ontwerp": "De fruitkraam in de Markthal: kratten met rode appels in zakjes en schuine bakken met losse gele en groene appels. Je kunt een appel oppakken en ronddraaien.",
+     "toont": [],
+     "grap": "Uit één appel kijkt een wormpje dat zich snel weer verstopt."
+    },
+    {
+     "afbeelding": "image80.jpeg",
+     "vorm": "bord",
+     "ontwerp": "Boven de fruitkraam hangt een wit prijsbord \"Appels\" met 3 regels. Onder het bord liggen een zak Elstar, een schaal Golden Delicious en losse Jonagolds bij een weegschaal; klik op een soort en de weegschaal toont 1 kg.",
+     "toont": [
+      "Elstar € 2,29 per zak van 1,5 kg",
+      "Golden Delicious € 1,29 per schaal van 0,8 kg",
+      "Jonagold € 1,49 per kg"
+     ]
+    }
+   ],
+   "stappen": [
+    {
+     "tekst": "Elstar per kg",
+     "som": "2,29 : 1,5",
+     "expr": "2.29/1.5",
+     "uitkomst": 1.53,
+     "eenheid": "euro",
+     "invoer": true,
+     "afronding": "2-decimalen",
+     "tabel": {
+      "boven": [
+       "1,5 kg",
+       "1 kg"
+      ],
+      "onder": [
+       "€ 2,29",
+       "?"
+      ],
+      "pijl": ": 1,5"
+     }
+    },
+    {
+     "tekst": "Golden Delicious per kg",
+     "som": "1,29 : 0,8",
+     "expr": "1.29/0.8",
+     "uitkomst": 1.61,
+     "eenheid": "euro",
+     "invoer": true,
+     "afronding": "2-decimalen",
+     "tabel": {
+      "boven": [
+       "0,8 kg",
+       "1 kg"
+      ],
+      "onder": [
+       "€ 1,29",
+       "?"
+      ],
+      "pijl": ": 0,8"
+     }
+    },
+    {
+     "tekst": "Jonagold per kg",
+     "som": "1,49 : 1",
+     "expr": "1.49/1",
+     "uitkomst": 1.49,
+     "eenheid": "euro",
+     "invoer": true
+    },
+    {
+     "tekst": "Vergelijk",
+     "som": "€ 1,49 < € 1,53 < € 1,61",
+     "expr": null,
+     "uitkomst": "Jonagold",
+     "invoer": false
+    }
+   ],
+   "antwoord": {
+    "waarde": "Jonagold",
+    "expr": null
+   },
+   "voorbeeld": {
+    "vraag": [
+     "Peren A kosten € 3 per zak van 2 kg.",
+     "Peren B kosten € 1,40 per kg.",
+     "Welke peren zijn per kg goedkoper?"
+    ],
+    "stappen": [
+     {
+      "tekst": "A per kg",
+      "som": "3 : 2",
+      "expr": "3/2",
+      "uitkomst": 1.5,
+      "eenheid": "euro",
+      "invoer": true
+     },
+     {
+      "tekst": "B per kg",
+      "som": "1,40 : 1",
+      "expr": "1.4/1",
+      "uitkomst": 1.4,
+      "eenheid": "euro",
+      "invoer": true
+     },
+     {
+      "tekst": "Vergelijk",
+      "som": "€ 1,40 < € 1,50",
+      "expr": null,
+      "uitkomst": "peren B",
+      "invoer": false
+     }
+    ],
+    "antwoord": {
+     "waarde": "peren B",
+     "expr": null
+    }
+   }
+  },
+  {
+   "id": "O3-EIN-07",
+   "onderdeel": 3,
+   "sectie": "eindtest",
+   "nummer": "7",
+   "afbeeldingen": [
+    "image81.png"
+   ],
+   "flags": [
+    {
+     "soort": "fout-in-werkboek",
+     "beschrijving": "\"Je wil\" moet \"Je wilt\" zijn.",
+     "voorstel": "In de app herschreven."
+    }
+   ],
+   "autoCheck": true,
+   "origineel": "Je wil folders rondbrengen. Met welk pakket verdien je gemiddeld per uur het meest?",
+   "vraag": [
+    "Je brengt folders rond.",
+    "Er zijn 3 pakketten.",
+    "Met welk pakket verdien je per uur het meest?"
+   ],
+   "type": "keuze",
+   "keuzes": [
+    "Pakket 1",
+    "Pakket 2",
+    "Pakket 3"
+   ],
+   "paneel": "verhoudingstabel",
+   "object3d": "folderstapels",
+   "context": [
+    {
+     "soort": "tabel",
+     "kolommen": [
+      "pakket met folders",
+      "bezorgtijd",
+      "verdiensten totaal"
+     ],
+     "rijen": [
+      [
+       1,
+       "45 minuten",
+       "€ 6,30"
+      ],
+      [
+       2,
+       "60 minuten",
+       "€ 7,80"
+      ],
+      [
+       3,
+       "90 minuten",
+       "€ 11,25"
+      ]
+     ],
+     "beschrijving": "Eenvoudige tabel met 3 pakketten folders, de bezorgtijd en de verdiensten."
+    }
+   ],
+   "beeld": [
+    {
+     "afbeelding": "image81.png",
+     "vorm": "bord",
+     "ontwerp": "Bij de folderbalie van de Markthal hangt een whiteboard met de tabel van de 3 pakketten. Op de balie liggen 3 stapels folders met een groen, blauw en oranje lint. Klik op een stapel en een zandloper laat de bezorgtijd zien.",
+     "toont": [
+      "pakket 1: 45 minuten, € 6,30",
+      "pakket 2: 60 minuten, € 7,80",
+      "pakket 3: 90 minuten, € 11,25"
+     ],
+     "grap": "Een folder fladdert weg als je te dicht bij de balie loopt."
+    }
+   ],
+   "stappen": [
+    {
+     "tekst": "Pakket 1: per 15 minuten",
+     "som": "6,30 : 3",
+     "expr": "6.3/3",
+     "uitkomst": 2.1,
+     "eenheid": "euro",
+     "invoer": true,
+     "tabel": {
+      "boven": [
+       "45 min",
+       "15 min"
+      ],
+      "onder": [
+       "€ 6,30",
+       "?"
+      ],
+      "pijl": ": 3"
+     }
+    },
+    {
+     "tekst": "Pakket 1: per uur",
+     "som": "2,10 × 4",
+     "expr": "2.1*4",
+     "uitkomst": 8.4,
+     "eenheid": "euro",
+     "invoer": true,
+     "tabel": {
+      "boven": [
+       "15 min",
+       "60 min"
+      ],
+      "onder": [
+       "€ 2,10",
+       "€ 8,40"
+      ],
+      "pijl": "× 4"
+     }
+    },
+    {
+     "tekst": "Pakket 2: 60 minuten is al 1 uur",
+     "som": "7,80",
+     "expr": "7.8",
+     "uitkomst": 7.8,
+     "eenheid": "euro",
+     "invoer": true
+    },
+    {
+     "tekst": "Pakket 3: 90 minuten is 1,5 uur",
+     "som": "11,25 : 1,5",
+     "expr": "11.25/1.5",
+     "uitkomst": 7.5,
+     "eenheid": "euro",
+     "invoer": true,
+     "tabel": {
+      "boven": [
+       "90 min",
+       "60 min"
+      ],
+      "onder": [
+       "€ 11,25",
+       "?"
+      ],
+      "pijl": ": 1,5"
+     }
+    },
+    {
+     "tekst": "Vergelijk",
+     "som": "€ 8,40 > € 7,80 > € 7,50",
+     "expr": null,
+     "uitkomst": "Pakket 1",
+     "invoer": false
+    }
+   ],
+   "antwoord": {
+    "waarde": "Pakket 1",
+    "expr": null
+   },
+   "voorbeeld": {
+    "vraag": [
+     "Klus A: 30 minuten voor € 4.",
+     "Klus B: 60 minuten voor € 7.",
+     "Met welke klus verdien je per uur meer?"
+    ],
+    "stappen": [
+     {
+      "tekst": "Klus A per uur",
+      "som": "4 × 2",
+      "expr": "4*2",
+      "uitkomst": 8,
+      "eenheid": "euro",
+      "invoer": true,
+      "tabel": {
+       "boven": [
+        "30 min",
+        "60 min"
+       ],
+       "onder": [
+        "€ 4",
+        "€ 8"
+       ],
+       "pijl": "× 2"
+      }
+     },
+     {
+      "tekst": "Klus B per uur",
+      "som": "7",
+      "expr": "7",
+      "uitkomst": 7,
+      "eenheid": "euro",
+      "invoer": true
+     },
+     {
+      "tekst": "Vergelijk",
+      "som": "€ 8 > € 7",
+      "expr": null,
+      "uitkomst": "klus A",
+      "invoer": false
+     }
+    ],
+    "antwoord": {
+     "waarde": "klus A",
+     "expr": null
+    }
+   }
+  },
+  {
+   "id": "O3-EIN-08",
+   "onderdeel": 3,
+   "sectie": "eindtest",
+   "nummer": "8",
+   "afbeeldingen": [
+    "image82.jpeg"
+   ],
+   "flags": [
+    {
+     "soort": "fout-in-werkboek",
+     "beschrijving": "\"ski-westrijd\" moet \"skiwedstrijd\" zijn; \"Rond af op hele kilometers per uur?\" is geen vraag.",
+     "voorstel": "In de app verbeterd."
+    },
+    {
+     "soort": "auteursrecht",
+     "beschrijving": "Foto met een echte naam (Luuk Arentz) en het logo van een skischool.",
+     "voorstel": "Achternaam en logo weglaten, beeld opnieuw maken in 3D."
+    },
+    {
+     "soort": "notatie",
+     "beschrijving": "\"26,0 sec\" en \"1e plaats\".",
+     "voorstel": "In de app: 26,0 seconden."
+    }
+   ],
+   "autoCheck": true,
+   "origineel": "Luuk deed mee aan een ski-westrijd. Hoeveel kilometer per uur was de gemiddelde snelheid van Luuk? Rond af op hele kilometers per uur?",
+   "vraag": [
+    "Luuk deed mee aan een skiwedstrijd.",
+    "Het parcours is 250 meter lang.",
+    "Luuk deed er 26,0 seconden over.",
+    "Wat was zijn gemiddelde snelheid in km/h?",
+    "Rond af op hele km/h."
+   ],
+   "type": "getal",
+   "paneel": "verhoudingstabel",
+   "object3d": "sneeuwbol",
+   "context": [
+    {
+     "soort": "tekst",
+     "items": [
+      {
+       "label": "Lengte wedstrijdparcours",
+       "waarde": 250,
+       "eenheid": "meter"
+      },
+      {
+       "label": "Tijd Luuk",
+       "waarde": "26,0",
+       "eenheid": "sec"
+      }
+     ],
+     "beschrijving": "Foto van een skiër tussen rode en blauwe poortvlaggen op een sneeuwhelling, met een spandoek van de skischool Scheffau. Kaartje: \"Lengte wedstrijdparcours: 250 meter\". Oorkonde: \"De skischool van Scheffau feliciteert Luuk Arentz met de 1e plaats in een tijd van: 26,0 sec\"."
+    }
+   ],
+   "beeld": [
+    {
+     "afbeelding": "image82.jpeg",
+     "vorm": "model",
+     "ontwerp": "In de wintersportkraam van de Markthal staat een grote sneeuwbol met daarin een skipiste met rode en blauwe poortjes. Een skiërtje zoeft van boven naar beneden; onderaan staan een bordje \"Lengte wedstrijdparcours: 250 meter\" en een oorkonde \"Luuk – 1e plaats – 26,0 sec\". Klik op de sneeuwbol en het skiërtje maakt opnieuw zijn run, met een stopwatch erbij.",
+     "toont": [
+      "250 meter",
+      "26,0 sec",
+      "1e plaats"
+     ],
+     "grap": "Als je de sneeuwbol aanklikt, gaat het even sneeuwen."
+    }
+   ],
+   "stappen": [
+    {
+     "tekst": "Meters per seconde",
+     "som": "250 : 26",
+     "expr": "250/26",
+     "uitkomst": 9.62,
+     "eenheid": "m",
+     "invoer": true,
+     "afronding": "2-decimalen",
+     "tabel": {
+      "boven": [
+       "26 s",
+       "1 s"
+      ],
+      "onder": [
+       "250 m",
+       "?"
+      ],
+      "pijl": ": 26"
+     }
+    },
+    {
+     "tekst": "Meters per uur (3600 s)",
+     "som": "9,62 × 3600",
+     "expr": "9.62*3600",
+     "uitkomst": 34632,
+     "eenheid": "m",
+     "invoer": true,
+     "tabel": {
+      "boven": [
+       "1 s",
+       "3600 s"
+      ],
+      "onder": [
+       "9,62 m",
+       "?"
+      ],
+      "pijl": "× 3600"
+     }
+    },
+    {
+     "tekst": "Maak km van m",
+     "som": "34.632 : 1000",
+     "expr": "34632/1000",
+     "uitkomst": 34.632,
+     "eenheid": "km",
+     "invoer": true,
+     "trap": {
+      "van": "m",
+      "naar": "km"
+     }
+    },
+    {
+     "tekst": "Rond af op hele km/h",
+     "som": "34,632 → 35",
+     "expr": "34632/1000",
+     "uitkomst": 35,
+     "eenheid": "km/h",
+     "invoer": true,
+     "afronding": "heel"
+    }
+   ],
+   "antwoord": {
+    "waarde": 35,
+    "eenheid": "km/h",
+    "expr": "250/26*3.6",
+    "afronding": "heel"
+   },
+   "voorbeeld": {
+    "vraag": [
+     "Een fietser rijdt 300 m in 30 seconden.",
+     "Hoe hard rijdt hij in km/h?"
+    ],
+    "stappen": [
+     {
+      "tekst": "Meters per seconde",
+      "som": "300 : 30",
+      "expr": "300/30",
+      "uitkomst": 10,
+      "eenheid": "m",
+      "invoer": true
+     },
+     {
+      "tekst": "Meters per uur (3600 s)",
+      "som": "10 × 3600",
+      "expr": "10*3600",
+      "uitkomst": 36000,
+      "eenheid": "m",
+      "invoer": true
+     },
+     {
+      "tekst": "Maak km van m",
+      "som": "36.000 : 1000",
+      "expr": "36000/1000",
+      "uitkomst": 36,
+      "eenheid": "km",
+      "invoer": true,
+      "trap": {
+       "van": "m",
+       "naar": "km"
+      }
+     }
+    ],
+    "antwoord": {
+     "waarde": 36,
+     "eenheid": "km/h",
+     "expr": "300/30*3.6"
+    }
+   }
+  },
+  {
+   "id": "O3-EIN-09",
+   "onderdeel": 3,
+   "sectie": "eindtest",
+   "nummer": "9",
+   "afbeeldingen": [
+    "image83.gif"
+   ],
+   "flags": [],
+   "autoCheck": true,
+   "origineel": "Om betonspecie te maken worden 15 kruiwagens met grind gebruikt. Hoeveel kruiwagens zand zijn er dan nodig?",
+   "vraag": [
+    "Je maakt betonspecie.",
+    "Je gebruikt 15 kruiwagens grind.",
+    "Hoeveel kruiwagens zand heb je nodig?"
+   ],
+   "type": "getal",
+   "paneel": "verhoudingstabel",
+   "object3d": "kruiwagens",
+   "context": [
+    {
+     "soort": "tabel",
+     "titel": "Samenstelling betonspecie",
+     "kolommen": [
+      "stof",
+      "delen"
+     ],
+     "rijen": [
+      [
+       "Cement",
+       "1 deel"
+      ],
+      [
+       "Zand",
+       "2 delen"
+      ],
+      [
+       "Grind",
+       "3 delen"
+      ]
+     ],
+     "beschrijving": "Tabel met roze en witte rijen. Daaronder letters gemaakt van het materiaal: C (cement) + Z Z (zand) + G G G (grind)."
+    }
+   ],
+   "beeld": [
+    {
+     "afbeelding": "image83.gif",
+     "vorm": "bord",
+     "ontwerp": "Achter de Markthal wordt verbouwd en draait een oranje betonmolen. Op een bouwbord staat \"Samenstelling betonspecie: Cement 1 deel – Zand 2 delen – Grind 3 delen\", met de letters C, ZZ en GGG gemaakt van echt cement, zand en grind. Ernaast staan 15 kruiwagens met grind in een rij; klik op een groepje van 3 en het licht op als 1 deel.",
+     "toont": [
+      "Cement 1 deel",
+      "Zand 2 delen",
+      "Grind 3 delen",
+      "15 kruiwagens grind"
+     ],
+     "grap": "Eén kruiwagen heeft een piepend wiel."
+    }
+   ],
+   "stappen": [
+    {
+     "tekst": "Hoeveel kruiwagens is 1 deel?",
+     "som": "15 : 3",
+     "expr": "15/3",
+     "uitkomst": 5,
+     "eenheid": "kruiwagens",
+     "invoer": true,
+     "tabel": {
+      "boven": [
+       "3 delen grind",
+       "1 deel"
+      ],
+      "onder": [
+       "15 kruiwagens",
+       "?"
+      ],
+      "pijl": ": 3"
+     }
+    },
+    {
+     "tekst": "Zand is 2 delen",
+     "som": "2 × 5",
+     "expr": "2*5",
+     "uitkomst": 10,
+     "eenheid": "kruiwagens",
+     "invoer": true,
+     "tabel": {
+      "boven": [
+       "1 deel",
+       "2 delen zand"
+      ],
+      "onder": [
+       "5 kruiwagens",
+       "10 kruiwagens"
+      ],
+      "pijl": "× 2"
+     }
+    }
+   ],
+   "antwoord": {
+    "waarde": 10,
+    "eenheid": "kruiwagens",
+    "expr": "15/3*2"
+   },
+   "voorbeeld": {
+    "vraag": [
+     "Voor mortel meng je 1 deel cement en 4 delen zand.",
+     "Je gebruikt 3 emmers cement.",
+     "Hoeveel emmers zand heb je nodig?"
+    ],
+    "stappen": [
+     {
+      "tekst": "1 deel is 3 emmers",
+      "som": "1 deel = 3 emmers",
+      "expr": null,
+      "uitkomst": "3 emmers",
+      "invoer": false,
+      "tabel": {
+       "boven": [
+        "1 deel cement",
+        "4 delen zand"
+       ],
+       "onder": [
+        "3 emmers",
+        "?"
+       ],
+       "pijl": "× 4"
+      }
+     },
+     {
+      "tekst": "Zand is 4 delen",
+      "som": "4 × 3",
+      "expr": "4*3",
+      "uitkomst": 12,
+      "eenheid": "emmers",
+      "invoer": true,
+      "tabel": {
+       "boven": [
+        "1 deel cement",
+        "4 delen zand"
+       ],
+       "onder": [
+        "3 emmers",
+        "12 emmers"
+       ],
+       "pijl": "× 4"
+      }
+     }
+    ],
+    "antwoord": {
+     "waarde": 12,
+     "eenheid": "emmers",
+     "expr": "3*4"
+    }
+   }
+  },
+  {
+   "id": "O3-EIN-10",
+   "onderdeel": 3,
+   "sectie": "eindtest",
+   "nummer": "10",
+   "afbeeldingen": [
+    "image84.jpeg"
+   ],
+   "flags": [
+    {
+     "soort": "auteursrecht",
+     "beschrijving": "Foto van een bloemenzaak.",
+     "voorstel": "Getallen overnemen, beeld opnieuw maken in 3D (zie beeld)."
+    }
+   ],
+   "autoCheck": true,
+   "origineel": "Corine maakt boeketten met 5 gerbera's, 1 hortensia en 3 grote rozen. Hoeveel van deze boeketten kan zij maximaal maken?",
+   "vraag": [
+    "Corine maakt boeketten.",
+    "In elk boeket: 5 gerbera's, 1 hortensia en 3 grote rozen.",
+    "Ze heeft 89 gerbera's, 19 hortensia's en 56 grote rozen.",
+    "Hoeveel boeketten kan ze maximaal maken?"
+   ],
+   "type": "getal",
+   "paneel": "stappen",
+   "object3d": "bloemenkraam",
+   "context": [
+    {
+     "soort": "anders",
+     "items": [
+      {
+       "label": "Voorraad gerbera's",
+       "waarde": 89
+      },
+      {
+       "label": "Voorraad hortensia's",
+       "waarde": 19
+      },
+      {
+       "label": "Voorraad grote rozen",
+       "waarde": 56
+      }
+     ],
+     "beschrijving": "Foto van een bloemenzaak met rieten manden vol bloemen. Drie tekstballonnen wijzen naar de bloemen: \"Voorraad gerbera's: 89\" (roze gerbera's links), \"Voorraad hortensia's: 19\" (groene hortensia's midden) en \"Voorraad grote rozen: 56\" (lichtgele rozen boven)."
+    }
+   ],
+   "beeld": [
+    {
+     "afbeelding": "image84.jpeg",
+     "vorm": "model",
+     "ontwerp": "De bloemenkraam in de Markthal staat vol rieten manden: roze gerbera's, groene hortensia's en lichtgele grote rozen. Aan elke mand hangt een voorraadkaartje. Corine bindt aan de toonbank boeketten; bij elk klaar boeket tellen de kaartjes terug.",
+     "toont": [
+      "Voorraad gerbera's: 89",
+      "Voorraad hortensia's: 19",
+      "Voorraad grote rozen: 56",
+      "boeket: 5 gerbera's, 1 hortensia, 3 grote rozen"
+     ],
+     "grap": "Een hommel landt telkens op de hortensia's."
+    }
+   ],
+   "stappen": [
+    {
+     "tekst": "Boeketten met de gerbera's",
+     "som": "89 : 5",
+     "expr": "89/5",
+     "uitkomst": 17,
+     "eenheid": "boeketten",
+     "invoer": true,
+     "afronding": "naar-beneden"
+    },
+    {
+     "tekst": "Boeketten met de hortensia's",
+     "som": "19 : 1",
+     "expr": "19/1",
+     "uitkomst": 19,
+     "eenheid": "boeketten",
+     "invoer": true
+    },
+    {
+     "tekst": "Boeketten met de rozen",
+     "som": "56 : 3",
+     "expr": "56/3",
+     "uitkomst": 18,
+     "eenheid": "boeketten",
+     "invoer": true,
+     "afronding": "naar-beneden"
+    },
+    {
+     "tekst": "Het kleinste getal is het maximum",
+     "som": "kleinste van 17, 19 en 18",
+     "expr": "Math.min(17, 19, 18)",
+     "uitkomst": 17,
+     "eenheid": "boeketten",
+     "invoer": true
+    }
+   ],
+   "antwoord": {
+    "waarde": 17,
+    "eenheid": "boeketten",
+    "expr": "Math.min(Math.floor(89/5), 19, Math.floor(56/3))"
+   },
+   "voorbeeld": {
+    "vraag": [
+     "In een fruitschaal gaan 2 appels en 3 peren.",
+     "Je hebt 11 appels en 12 peren.",
+     "Hoeveel schalen kun je maximaal maken?"
+    ],
+    "stappen": [
+     {
+      "tekst": "Schalen met de appels",
+      "som": "11 : 2",
+      "expr": "11/2",
+      "uitkomst": 5,
+      "eenheid": "schalen",
+      "invoer": true,
+      "afronding": "naar-beneden"
+     },
+     {
+      "tekst": "Schalen met de peren",
+      "som": "12 : 3",
+      "expr": "12/3",
+      "uitkomst": 4,
+      "eenheid": "schalen",
+      "invoer": true
+     },
+     {
+      "tekst": "Het kleinste getal",
+      "som": "kleinste van 5 en 4",
+      "expr": "Math.min(5, 4)",
+      "uitkomst": 4,
+      "eenheid": "schalen",
+      "invoer": true
+     }
+    ],
+    "antwoord": {
+     "waarde": 4,
+     "eenheid": "schalen",
+     "expr": "Math.min(Math.floor(11/2), 12/3)"
+    }
+   }
+  }
+ ]
+}

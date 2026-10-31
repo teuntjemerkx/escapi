@@ -1,0 +1,6175 @@
+{
+ "onderdeel": 4,
+ "titel": "Procenten gebruiken",
+ "opdrachten": [
+  {
+   "id": "O4-INS-01",
+   "onderdeel": 4,
+   "sectie": "instap",
+   "nummer": "1",
+   "afbeeldingen": [],
+   "flags": [],
+   "autoCheck": true,
+   "origineel": "Wat is 50% van 80 euro?",
+   "vraag": [
+    "Wat is 50% van 80 euro?"
+   ],
+   "type": "getal",
+   "paneel": "procentenbalk",
+   "stappen": [
+    {
+     "tekst": "80 euro is 100%",
+     "som": "100% = 80 euro",
+     "expr": null,
+     "uitkomst": 80,
+     "invoer": false,
+     "eenheid": "euro",
+     "balk": {
+      "procent": 100,
+      "deel": 80,
+      "geheel": 80
+     }
+    },
+    {
+     "tekst": "50% is de helft",
+     "som": "80 : 2",
+     "expr": "80/2",
+     "uitkomst": 40,
+     "eenheid": "euro",
+     "invoer": true,
+     "balk": {
+      "procent": 50,
+      "deel": 40,
+      "geheel": 80
+     }
+    }
+   ],
+   "antwoord": {
+    "waarde": 40,
+    "eenheid": "euro",
+    "expr": "0.5*80"
+   },
+   "voorbeeld": {
+    "vraag": [
+     "Wat is 50% van 60 euro?"
+    ],
+    "stappen": [
+     {
+      "tekst": "50% is de helft",
+      "som": "60 : 2",
+      "expr": "60/2",
+      "uitkomst": 30,
+      "eenheid": "euro",
+      "invoer": true,
+      "balk": {
+       "procent": 50,
+       "deel": 30,
+       "geheel": 60
+      }
+     }
+    ],
+    "antwoord": {
+     "waarde": 30,
+     "eenheid": "euro",
+     "expr": "0.5*60"
+    }
+   }
+  },
+  {
+   "id": "O4-INS-02",
+   "onderdeel": 4,
+   "sectie": "instap",
+   "nummer": "2",
+   "afbeeldingen": [],
+   "flags": [
+    {
+     "soort": "notatie",
+     "beschrijving": "\"€30\" zonder spatie.",
+     "voorstel": "In de app: € 30."
+    }
+   ],
+   "autoCheck": true,
+   "origineel": "Een T-shirt kost €30. Er is 25% korting. Hoeveel betaal je?",
+   "vraag": [
+    "Een T-shirt kost € 30.",
+    "Er is 25% korting.",
+    "Hoeveel betaal je?"
+   ],
+   "type": "getal",
+   "paneel": "procentenbalk",
+   "object3d": "t-shirt",
+   "stappen": [
+    {
+     "tekst": "25% is een kwart",
+     "som": "30 : 4",
+     "expr": "30/4",
+     "uitkomst": 7.5,
+     "eenheid": "euro",
+     "invoer": true,
+     "balk": {
+      "procent": 25,
+      "deel": 7.5,
+      "geheel": 30
+     }
+    },
+    {
+     "tekst": "Haal de korting eraf",
+     "som": "30 − 7,50",
+     "expr": "30-7.5",
+     "uitkomst": 22.5,
+     "eenheid": "euro",
+     "invoer": true,
+     "balk": {
+      "procent": 75,
+      "deel": 22.5,
+      "geheel": 30
+     }
+    }
+   ],
+   "antwoord": {
+    "waarde": 22.5,
+    "eenheid": "euro",
+    "expr": "30*0.75"
+   },
+   "voorbeeld": {
+    "vraag": [
+     "Een trui kost € 40.",
+     "Er is 25% korting.",
+     "Hoeveel betaal je?"
+    ],
+    "stappen": [
+     {
+      "tekst": "25% is een kwart",
+      "som": "40 : 4",
+      "expr": "40/4",
+      "uitkomst": 10,
+      "eenheid": "euro",
+      "invoer": true,
+      "balk": {
+       "procent": 25,
+       "deel": 10,
+       "geheel": 40
+      }
+     },
+     {
+      "tekst": "Haal de korting eraf",
+      "som": "40 − 10",
+      "expr": "40-10",
+      "uitkomst": 30,
+      "eenheid": "euro",
+      "invoer": true,
+      "balk": {
+       "procent": 75,
+       "deel": 30,
+       "geheel": 40
+      }
+     }
+    ],
+    "antwoord": {
+     "waarde": 30,
+     "eenheid": "euro",
+     "expr": "40*0.75"
+    }
+   }
+  },
+  {
+   "id": "O4-INS-03",
+   "onderdeel": 4,
+   "sectie": "instap",
+   "nummer": "3",
+   "afbeeldingen": [],
+   "flags": [],
+   "autoCheck": true,
+   "origineel": "Een klas heeft 20 studenten. 5 daarvan zijn afwezig. Hoeveel procent is dat?",
+   "vraag": [
+    "Een klas heeft 20 studenten.",
+    "5 studenten zijn afwezig.",
+    "Hoeveel procent is dat?"
+   ],
+   "type": "getal",
+   "paneel": "procentenbalk",
+   "stappen": [
+    {
+     "tekst": "1 student is ...%",
+     "som": "100 : 20",
+     "expr": "100/20",
+     "uitkomst": 5,
+     "eenheid": "%",
+     "invoer": true,
+     "balk": {
+      "procent": 5,
+      "deel": 1,
+      "geheel": 20
+     }
+    },
+    {
+     "tekst": "5 studenten",
+     "som": "5 × 5",
+     "expr": "5*5",
+     "uitkomst": 25,
+     "eenheid": "%",
+     "invoer": true,
+     "balk": {
+      "procent": 25,
+      "deel": 5,
+      "geheel": 20
+     }
+    }
+   ],
+   "antwoord": {
+    "waarde": 25,
+    "eenheid": "%",
+    "expr": "5/20*100"
+   },
+   "voorbeeld": {
+    "vraag": [
+     "Een team heeft 10 spelers.",
+     "2 spelers zijn ziek.",
+     "Hoeveel procent is dat?"
+    ],
+    "stappen": [
+     {
+      "tekst": "1 speler is ...%",
+      "som": "100 : 10",
+      "expr": "100/10",
+      "uitkomst": 10,
+      "eenheid": "%",
+      "invoer": true,
+      "balk": {
+       "procent": 10,
+       "deel": 1,
+       "geheel": 10
+      }
+     },
+     {
+      "tekst": "2 spelers",
+      "som": "2 × 10",
+      "expr": "2*10",
+      "uitkomst": 20,
+      "eenheid": "%",
+      "invoer": true,
+      "balk": {
+       "procent": 20,
+       "deel": 2,
+       "geheel": 10
+      }
+     }
+    ],
+    "antwoord": {
+     "waarde": 20,
+     "eenheid": "%",
+     "expr": "2/10*100"
+    }
+   }
+  },
+  {
+   "id": "O4-INS-04",
+   "onderdeel": 4,
+   "sectie": "instap",
+   "nummer": "4",
+   "afbeeldingen": [],
+   "flags": [],
+   "autoCheck": true,
+   "origineel": "Wat is 10% van 200 gram?",
+   "vraag": [
+    "Wat is 10% van 200 gram?"
+   ],
+   "type": "getal",
+   "paneel": "procentenbalk",
+   "stappen": [
+    {
+     "tekst": "10% is een tiende",
+     "som": "200 : 10",
+     "expr": "200/10",
+     "uitkomst": 20,
+     "eenheid": "gram",
+     "invoer": true,
+     "balk": {
+      "procent": 10,
+      "deel": 20,
+      "geheel": 200
+     }
+    }
+   ],
+   "antwoord": {
+    "waarde": 20,
+    "eenheid": "gram",
+    "expr": "0.1*200"
+   },
+   "voorbeeld": {
+    "vraag": [
+     "Wat is 10% van 500 gram?"
+    ],
+    "stappen": [
+     {
+      "tekst": "10% is een tiende",
+      "som": "500 : 10",
+      "expr": "500/10",
+      "uitkomst": 50,
+      "eenheid": "gram",
+      "invoer": true,
+      "balk": {
+       "procent": 10,
+       "deel": 50,
+       "geheel": 500
+      }
+     }
+    ],
+    "antwoord": {
+     "waarde": 50,
+     "eenheid": "gram",
+     "expr": "0.1*500"
+    }
+   }
+  },
+  {
+   "id": "O4-INS-05",
+   "onderdeel": 4,
+   "sectie": "instap",
+   "nummer": "5",
+   "afbeeldingen": [],
+   "flags": [
+    {
+     "soort": "notatie",
+     "beschrijving": "\"€600\" zonder spatie.",
+     "voorstel": "In de app: € 600."
+    }
+   ],
+   "autoCheck": true,
+   "origineel": "Je spaart €600 en je rente is 2%. Hoeveel rente krijg je na 1 jaar?",
+   "vraag": [
+    "Je spaart € 600.",
+    "Je krijgt 2% rente.",
+    "Hoeveel rente krijg je na 1 jaar?"
+   ],
+   "type": "getal",
+   "paneel": "procentenbalk",
+   "object3d": "spaarpot",
+   "stappen": [
+    {
+     "tekst": "Reken 1% uit",
+     "som": "600 : 100",
+     "expr": "600/100",
+     "uitkomst": 6,
+     "eenheid": "euro",
+     "invoer": true,
+     "balk": {
+      "procent": 1,
+      "deel": 6,
+      "geheel": 600
+     }
+    },
+    {
+     "tekst": "2% is 2 × 1%",
+     "som": "2 × 6",
+     "expr": "2*6",
+     "uitkomst": 12,
+     "eenheid": "euro",
+     "invoer": true,
+     "balk": {
+      "procent": 2,
+      "deel": 12,
+      "geheel": 600
+     }
+    }
+   ],
+   "antwoord": {
+    "waarde": 12,
+    "eenheid": "euro",
+    "expr": "600*0.02"
+   },
+   "voorbeeld": {
+    "vraag": [
+     "Je spaart € 800.",
+     "Je krijgt 3% rente.",
+     "Hoeveel rente krijg je na 1 jaar?"
+    ],
+    "stappen": [
+     {
+      "tekst": "Reken 1% uit",
+      "som": "800 : 100",
+      "expr": "800/100",
+      "uitkomst": 8,
+      "eenheid": "euro",
+      "invoer": true,
+      "balk": {
+       "procent": 1,
+       "deel": 8,
+       "geheel": 800
+      }
+     },
+     {
+      "tekst": "3% is 3 × 1%",
+      "som": "3 × 8",
+      "expr": "3*8",
+      "uitkomst": 24,
+      "eenheid": "euro",
+      "invoer": true,
+      "balk": {
+       "procent": 3,
+       "deel": 24,
+       "geheel": 800
+      }
+     }
+    ],
+    "antwoord": {
+     "waarde": 24,
+     "eenheid": "euro",
+     "expr": "800*0.03"
+    }
+   }
+  },
+  {
+   "id": "O4-INS-06",
+   "onderdeel": 4,
+   "sectie": "instap",
+   "nummer": "6",
+   "afbeeldingen": [],
+   "flags": [
+    {
+     "soort": "notatie",
+     "beschrijving": "\"€40\" zonder spatie.",
+     "voorstel": "In de app: € 40."
+    }
+   ],
+   "autoCheck": true,
+   "origineel": "Een broek kost €40. De prijs stijgt met 10%. Wat is de nieuwe prijs?",
+   "vraag": [
+    "Een broek kost € 40.",
+    "De prijs gaat 10% omhoog.",
+    "Wat is de nieuwe prijs?"
+   ],
+   "type": "getal",
+   "paneel": "procentenbalk",
+   "object3d": "broek",
+   "stappen": [
+    {
+     "tekst": "10% is een tiende",
+     "som": "40 : 10",
+     "expr": "40/10",
+     "uitkomst": 4,
+     "eenheid": "euro",
+     "invoer": true,
+     "balk": {
+      "procent": 10,
+      "deel": 4,
+      "geheel": 40
+     }
+    },
+    {
+     "tekst": "Tel het erbij op",
+     "som": "40 + 4",
+     "expr": "40+4",
+     "uitkomst": 44,
+     "eenheid": "euro",
+     "invoer": true,
+     "balk": {
+      "procent": 110,
+      "deel": 44,
+      "geheel": 40
+     }
+    }
+   ],
+   "antwoord": {
+    "waarde": 44,
+    "eenheid": "euro",
+    "expr": "40*1.1"
+   },
+   "voorbeeld": {
+    "vraag": [
+     "Een rok kost € 60.",
+     "De prijs gaat 10% omhoog.",
+     "Wat is de nieuwe prijs?"
+    ],
+    "stappen": [
+     {
+      "tekst": "10% is een tiende",
+      "som": "60 : 10",
+      "expr": "60/10",
+      "uitkomst": 6,
+      "eenheid": "euro",
+      "invoer": true,
+      "balk": {
+       "procent": 10,
+       "deel": 6,
+       "geheel": 60
+      }
+     },
+     {
+      "tekst": "Tel het erbij op",
+      "som": "60 + 6",
+      "expr": "60+6",
+      "uitkomst": 66,
+      "eenheid": "euro",
+      "invoer": true,
+      "balk": {
+       "procent": 110,
+       "deel": 66,
+       "geheel": 60
+      }
+     }
+    ],
+    "antwoord": {
+     "waarde": 66,
+     "eenheid": "euro",
+     "expr": "60*1.1"
+    }
+   }
+  },
+  {
+   "id": "O4-INS-07",
+   "onderdeel": 4,
+   "sectie": "instap",
+   "nummer": "7",
+   "afbeeldingen": [],
+   "flags": [
+    {
+     "soort": "notatie",
+     "beschrijving": "\"€80\" zonder spatie.",
+     "voorstel": "In de app: € 80."
+    }
+   ],
+   "autoCheck": true,
+   "origineel": "In een winkel krijg je 15% korting op een jas van €80. Hoeveel korting krijg je?",
+   "vraag": [
+    "Een jas kost € 80.",
+    "Je krijgt 15% korting.",
+    "Hoeveel korting krijg je?"
+   ],
+   "type": "getal",
+   "paneel": "procentenbalk",
+   "object3d": "jas",
+   "stappen": [
+    {
+     "tekst": "Reken 10% uit",
+     "som": "80 : 10",
+     "expr": "80/10",
+     "uitkomst": 8,
+     "eenheid": "euro",
+     "invoer": true,
+     "balk": {
+      "procent": 10,
+      "deel": 8,
+      "geheel": 80
+     }
+    },
+    {
+     "tekst": "5% is de helft van 10%",
+     "som": "8 : 2",
+     "expr": "8/2",
+     "uitkomst": 4,
+     "eenheid": "euro",
+     "invoer": true,
+     "balk": {
+      "procent": 5,
+      "deel": 4,
+      "geheel": 80
+     }
+    },
+    {
+     "tekst": "Tel op: 10% + 5%",
+     "som": "8 + 4",
+     "expr": "8+4",
+     "uitkomst": 12,
+     "eenheid": "euro",
+     "invoer": true,
+     "balk": {
+      "procent": 15,
+      "deel": 12,
+      "geheel": 80
+     }
+    }
+   ],
+   "antwoord": {
+    "waarde": 12,
+    "eenheid": "euro",
+    "expr": "80*0.15"
+   },
+   "voorbeeld": {
+    "vraag": [
+     "Een jas kost € 60.",
+     "Je krijgt 15% korting.",
+     "Hoeveel korting krijg je?"
+    ],
+    "stappen": [
+     {
+      "tekst": "Reken 10% uit",
+      "som": "60 : 10",
+      "expr": "60/10",
+      "uitkomst": 6,
+      "eenheid": "euro",
+      "invoer": true,
+      "balk": {
+       "procent": 10,
+       "deel": 6,
+       "geheel": 60
+      }
+     },
+     {
+      "tekst": "5% is de helft",
+      "som": "6 : 2",
+      "expr": "6/2",
+      "uitkomst": 3,
+      "eenheid": "euro",
+      "invoer": true,
+      "balk": {
+       "procent": 5,
+       "deel": 3,
+       "geheel": 60
+      }
+     },
+     {
+      "tekst": "Tel op",
+      "som": "6 + 3",
+      "expr": "6+3",
+      "uitkomst": 9,
+      "eenheid": "euro",
+      "invoer": true,
+      "balk": {
+       "procent": 15,
+       "deel": 9,
+       "geheel": 60
+      }
+     }
+    ],
+    "antwoord": {
+     "waarde": 9,
+     "eenheid": "euro",
+     "expr": "60*0.15"
+    }
+   }
+  },
+  {
+   "id": "O4-INS-08",
+   "onderdeel": 4,
+   "sectie": "instap",
+   "nummer": "8",
+   "afbeeldingen": [],
+   "flags": [],
+   "autoCheck": true,
+   "origineel": "Een student haalt 18 van de 20 punten op een toets. Welk percentage is dat?",
+   "vraag": [
+    "Een student haalt 18 van de 20 punten.",
+    "Welk percentage is dat?"
+   ],
+   "type": "getal",
+   "paneel": "procentenbalk",
+   "stappen": [
+    {
+     "tekst": "1 punt is ...%",
+     "som": "100 : 20",
+     "expr": "100/20",
+     "uitkomst": 5,
+     "eenheid": "%",
+     "invoer": true,
+     "balk": {
+      "procent": 5,
+      "deel": 1,
+      "geheel": 20
+     }
+    },
+    {
+     "tekst": "18 punten",
+     "som": "18 × 5",
+     "expr": "18*5",
+     "uitkomst": 90,
+     "eenheid": "%",
+     "invoer": true,
+     "balk": {
+      "procent": 90,
+      "deel": 18,
+      "geheel": 20
+     }
+    }
+   ],
+   "antwoord": {
+    "waarde": 90,
+    "eenheid": "%",
+    "expr": "18/20*100"
+   },
+   "voorbeeld": {
+    "vraag": [
+     "Je haalt 30 van de 40 punten.",
+     "Welk percentage is dat?"
+    ],
+    "stappen": [
+     {
+      "tekst": "1 punt is ...%",
+      "som": "100 : 40",
+      "expr": "100/40",
+      "uitkomst": 2.5,
+      "eenheid": "%",
+      "invoer": true,
+      "balk": {
+       "procent": 2.5,
+       "deel": 1,
+       "geheel": 40
+      }
+     },
+     {
+      "tekst": "30 punten",
+      "som": "30 × 2,5",
+      "expr": "30*2.5",
+      "uitkomst": 75,
+      "eenheid": "%",
+      "invoer": true,
+      "balk": {
+       "procent": 75,
+       "deel": 30,
+       "geheel": 40
+      }
+     }
+    ],
+    "antwoord": {
+     "waarde": 75,
+     "eenheid": "%",
+     "expr": "30/40*100"
+    }
+   }
+  },
+  {
+   "id": "O4-INS-09",
+   "onderdeel": 4,
+   "sectie": "instap",
+   "nummer": "9",
+   "afbeeldingen": [],
+   "flags": [
+    {
+     "soort": "notatie",
+     "beschrijving": "\"€50\" en \"€35\" zonder spatie.",
+     "voorstel": "In de app: € 50 en € 35."
+    }
+   ],
+   "autoCheck": true,
+   "origineel": "Een product is afgeprijsd van €50 naar €35. Hoeveel procent korting is dat?",
+   "vraag": [
+    "Een product kostte € 50.",
+    "Nu kost het € 35.",
+    "Hoeveel procent korting is dat?"
+   ],
+   "type": "getal",
+   "paneel": "procentenbalk",
+   "stappen": [
+    {
+     "tekst": "Korting in euro",
+     "som": "50 − 35",
+     "expr": "50-35",
+     "uitkomst": 15,
+     "eenheid": "euro",
+     "invoer": true
+    },
+    {
+     "tekst": "Deel door de oude prijs",
+     "som": "15 : 50",
+     "expr": "15/50",
+     "uitkomst": 0.3,
+     "invoer": true
+    },
+    {
+     "tekst": "Maak er procent van",
+     "som": "0,3 × 100",
+     "expr": "0.3*100",
+     "uitkomst": 30,
+     "eenheid": "%",
+     "invoer": true,
+     "balk": {
+      "procent": 30,
+      "deel": 15,
+      "geheel": 50
+     }
+    }
+   ],
+   "antwoord": {
+    "waarde": 30,
+    "eenheid": "%",
+    "expr": "(50-35)/50*100"
+   },
+   "voorbeeld": {
+    "vraag": [
+     "Een tas kostte € 80.",
+     "Nu kost hij € 60.",
+     "Hoeveel procent korting is dat?"
+    ],
+    "stappen": [
+     {
+      "tekst": "Korting in euro",
+      "som": "80 − 60",
+      "expr": "80-60",
+      "uitkomst": 20,
+      "eenheid": "euro",
+      "invoer": true
+     },
+     {
+      "tekst": "Deel door de oude prijs",
+      "som": "20 : 80",
+      "expr": "20/80",
+      "uitkomst": 0.25,
+      "invoer": true
+     },
+     {
+      "tekst": "Maak er procent van",
+      "som": "0,25 × 100",
+      "expr": "0.25*100",
+      "uitkomst": 25,
+      "eenheid": "%",
+      "invoer": true,
+      "balk": {
+       "procent": 25,
+       "deel": 20,
+       "geheel": 80
+      }
+     }
+    ],
+    "antwoord": {
+     "waarde": 25,
+     "eenheid": "%",
+     "expr": "(80-60)/80*100"
+    }
+   }
+  },
+  {
+   "id": "O4-INS-10",
+   "onderdeel": 4,
+   "sectie": "instap",
+   "nummer": "10",
+   "afbeeldingen": [],
+   "flags": [],
+   "autoCheck": true,
+   "origineel": "Er zitten 120 mensen in de zaal. 75% is vrouw. Hoeveel vrouwen zijn er?",
+   "vraag": [
+    "In de zaal zitten 120 mensen.",
+    "75% is vrouw.",
+    "Hoeveel vrouwen zijn er?"
+   ],
+   "type": "getal",
+   "paneel": "procentenbalk",
+   "stappen": [
+    {
+     "tekst": "25% is een kwart",
+     "som": "120 : 4",
+     "expr": "120/4",
+     "uitkomst": 30,
+     "eenheid": "mensen",
+     "invoer": true,
+     "balk": {
+      "procent": 25,
+      "deel": 30,
+      "geheel": 120
+     }
+    },
+    {
+     "tekst": "75% is 3 kwart",
+     "som": "3 × 30",
+     "expr": "3*30",
+     "uitkomst": 90,
+     "eenheid": "vrouwen",
+     "invoer": true,
+     "balk": {
+      "procent": 75,
+      "deel": 90,
+      "geheel": 120
+     }
+    }
+   ],
+   "antwoord": {
+    "waarde": 90,
+    "eenheid": "vrouwen",
+    "expr": "120*0.75"
+   },
+   "voorbeeld": {
+    "vraag": [
+     "In de bus zitten 200 mensen.",
+     "75% is man.",
+     "Hoeveel mannen zijn er?"
+    ],
+    "stappen": [
+     {
+      "tekst": "25% is een kwart",
+      "som": "200 : 4",
+      "expr": "200/4",
+      "uitkomst": 50,
+      "eenheid": "mensen",
+      "invoer": true,
+      "balk": {
+       "procent": 25,
+       "deel": 50,
+       "geheel": 200
+      }
+     },
+     {
+      "tekst": "75% is 3 kwart",
+      "som": "3 × 50",
+      "expr": "3*50",
+      "uitkomst": 150,
+      "eenheid": "mannen",
+      "invoer": true,
+      "balk": {
+       "procent": 75,
+       "deel": 150,
+       "geheel": 200
+      }
+     }
+    ],
+    "antwoord": {
+     "waarde": 150,
+     "eenheid": "mannen",
+     "expr": "200*0.75"
+    }
+   }
+  },
+  {
+   "id": "O4-NIV-01",
+   "onderdeel": 4,
+   "sectie": "niveau",
+   "nummer": "1",
+   "afbeeldingen": [],
+   "flags": [
+    {
+     "soort": "fout-in-werkboek",
+     "beschrijving": "De vraag begint met een kleine letter (\"hoeveel\"). Rommelige zin: \"Op school hebben van alle studenten 3 op de 10 bruin haar\".",
+     "voorstel": "In de app: korte zinnen met hoofdletter."
+    }
+   ],
+   "autoCheck": true,
+   "origineel": "Op school hebben van alle studenten 3 op de 10 bruin haar. hoeveel procent van alle studenten op school hebben bruin haar?",
+   "vraag": [
+    "Op school heeft 3 op de 10 studenten bruin haar.",
+    "Hoeveel procent is dat?"
+   ],
+   "type": "getal",
+   "paneel": "procentenbalk",
+   "stappen": [
+    {
+     "tekst": "3 op de 10 is 3 : 10",
+     "som": "3 : 10",
+     "expr": "3/10",
+     "uitkomst": 0.3,
+     "invoer": true
+    },
+    {
+     "tekst": "Maak er procent van",
+     "som": "0,3 × 100",
+     "expr": "0.3*100",
+     "uitkomst": 30,
+     "eenheid": "%",
+     "invoer": true,
+     "balk": {
+      "procent": 30,
+      "deel": 3,
+      "geheel": 10
+     }
+    }
+   ],
+   "antwoord": {
+    "waarde": 30,
+    "eenheid": "%",
+    "expr": "3/10*100"
+   },
+   "voorbeeld": {
+    "vraag": [
+     "In de klas draagt 7 op de 10 een bril.",
+     "Hoeveel procent is dat?"
+    ],
+    "stappen": [
+     {
+      "tekst": "7 op de 10",
+      "som": "7 : 10",
+      "expr": "7/10",
+      "uitkomst": 0.7,
+      "invoer": true
+     },
+     {
+      "tekst": "Maak er procent van",
+      "som": "0,7 × 100",
+      "expr": "0.7*100",
+      "uitkomst": 70,
+      "eenheid": "%",
+      "invoer": true,
+      "balk": {
+       "procent": 70,
+       "deel": 7,
+       "geheel": 10
+      }
+     }
+    ],
+    "antwoord": {
+     "waarde": 70,
+     "eenheid": "%",
+     "expr": "7/10*100"
+    }
+   }
+  },
+  {
+   "id": "O4-NIV-02",
+   "onderdeel": 4,
+   "sectie": "niveau",
+   "nummer": "2",
+   "afbeeldingen": [],
+   "flags": [],
+   "autoCheck": true,
+   "origineel": "In een magazijn liggen 250 dozen. Tijdens de controle blijkt dat 35 dozen beschadigd zijn. Hoeveel procent van de dozen is beschadigd?",
+   "vraag": [
+    "In een magazijn liggen 250 dozen.",
+    "Bij de controle zijn 35 dozen beschadigd.",
+    "Hoeveel procent van de dozen is beschadigd?"
+   ],
+   "type": "getal",
+   "paneel": "procentenbalk",
+   "object3d": "dozenstapel",
+   "stappen": [
+    {
+     "tekst": "Deel door het totaal",
+     "som": "35 : 250",
+     "expr": "35/250",
+     "uitkomst": 0.14,
+     "invoer": true
+    },
+    {
+     "tekst": "Maak er procent van",
+     "som": "0,14 × 100",
+     "expr": "0.14*100",
+     "uitkomst": 14,
+     "eenheid": "%",
+     "invoer": true,
+     "balk": {
+      "procent": 14,
+      "deel": 35,
+      "geheel": 250
+     }
+    }
+   ],
+   "antwoord": {
+    "waarde": 14,
+    "eenheid": "%",
+    "expr": "35/250*100"
+   },
+   "voorbeeld": {
+    "vraag": [
+     "In een loods staan 200 dozen.",
+     "30 dozen zijn nat geworden.",
+     "Hoeveel procent is nat?"
+    ],
+    "stappen": [
+     {
+      "tekst": "Deel door het totaal",
+      "som": "30 : 200",
+      "expr": "30/200",
+      "uitkomst": 0.15,
+      "invoer": true
+     },
+     {
+      "tekst": "Maak er procent van",
+      "som": "0,15 × 100",
+      "expr": "0.15*100",
+      "uitkomst": 15,
+      "eenheid": "%",
+      "invoer": true,
+      "balk": {
+       "procent": 15,
+       "deel": 30,
+       "geheel": 200
+      }
+     }
+    ],
+    "antwoord": {
+     "waarde": 15,
+     "eenheid": "%",
+     "expr": "30/200*100"
+    }
+   }
+  },
+  {
+   "id": "O4-NIV-03",
+   "onderdeel": 4,
+   "sectie": "niveau",
+   "nummer": "3",
+   "afbeeldingen": [],
+   "flags": [],
+   "autoCheck": true,
+   "origineel": "In een straat staan 25 huizen. 28% van deze huizen hebben een rode deur. Hoeveel rode deuren zijn er in deze straat?",
+   "vraag": [
+    "In een straat staan 25 huizen.",
+    "28% heeft een rode deur.",
+    "Hoeveel rode deuren zijn er?"
+   ],
+   "type": "getal",
+   "paneel": "procentenbalk",
+   "stappen": [
+    {
+     "tekst": "Reken 1% uit",
+     "som": "25 : 100",
+     "expr": "25/100",
+     "uitkomst": 0.25,
+     "eenheid": "huizen",
+     "invoer": true,
+     "balk": {
+      "procent": 1,
+      "deel": 0.25,
+      "geheel": 25
+     }
+    },
+    {
+     "tekst": "Keer 28",
+     "som": "28 × 0,25",
+     "expr": "28*0.25",
+     "uitkomst": 7,
+     "eenheid": "deuren",
+     "invoer": true,
+     "balk": {
+      "procent": 28,
+      "deel": 7,
+      "geheel": 25
+     }
+    }
+   ],
+   "antwoord": {
+    "waarde": 7,
+    "eenheid": "deuren",
+    "expr": "25*0.28"
+   },
+   "voorbeeld": {
+    "vraag": [
+     "In een straat staan 50 huizen.",
+     "12% heeft een blauwe deur.",
+     "Hoeveel blauwe deuren zijn er?"
+    ],
+    "stappen": [
+     {
+      "tekst": "Reken 1% uit",
+      "som": "50 : 100",
+      "expr": "50/100",
+      "uitkomst": 0.5,
+      "eenheid": "huizen",
+      "invoer": true,
+      "balk": {
+       "procent": 1,
+       "deel": 0.5,
+       "geheel": 50
+      }
+     },
+     {
+      "tekst": "Keer 12",
+      "som": "12 × 0,5",
+      "expr": "12*0.5",
+      "uitkomst": 6,
+      "eenheid": "deuren",
+      "invoer": true,
+      "balk": {
+       "procent": 12,
+       "deel": 6,
+       "geheel": 50
+      }
+     }
+    ],
+    "antwoord": {
+     "waarde": 6,
+     "eenheid": "deuren",
+     "expr": "50*0.12"
+    }
+   }
+  },
+  {
+   "id": "O4-NIV-04",
+   "onderdeel": 4,
+   "sectie": "niveau",
+   "nummer": "4",
+   "afbeeldingen": [],
+   "flags": [
+    {
+     "soort": "tekst",
+     "beschrijving": "Rommelige zin: \"Je batterij van de telefoon zit nog voor 45% vol en je kunt hem nog ...\".",
+     "voorstel": "In de app: korte zinnen, zelfde getallen."
+    }
+   ],
+   "autoCheck": true,
+   "origineel": "Je batterij van de telefoon zit nog voor 45% vol en je kunt hem nog 495 minuten gebruiken. Hoeveel minuten gaat een volle batterij mee?",
+   "vraag": [
+    "Je telefoon is nog 45% vol.",
+    "Je kunt hem nog 495 minuten gebruiken.",
+    "Hoeveel minuten gaat een volle batterij mee?"
+   ],
+   "type": "getal",
+   "paneel": "procentenbalk",
+   "object3d": "telefoon",
+   "stappen": [
+    {
+     "tekst": "45% is 495 minuten",
+     "som": "45% = 495 min",
+     "expr": null,
+     "uitkomst": 495,
+     "invoer": false,
+     "eenheid": "minuten",
+     "balk": {
+      "procent": 45,
+      "deel": 495
+     }
+    },
+    {
+     "tekst": "Reken 1% uit",
+     "som": "495 : 45",
+     "expr": "495/45",
+     "uitkomst": 11,
+     "eenheid": "minuten",
+     "invoer": true,
+     "balk": {
+      "procent": 1,
+      "deel": 11
+     }
+    },
+    {
+     "tekst": "Reken 100% uit",
+     "som": "11 × 100",
+     "expr": "11*100",
+     "uitkomst": 1100,
+     "eenheid": "minuten",
+     "invoer": true,
+     "balk": {
+      "procent": 100,
+      "deel": 1100,
+      "geheel": 1100
+     }
+    }
+   ],
+   "antwoord": {
+    "waarde": 1100,
+    "eenheid": "minuten",
+    "expr": "495/45*100"
+   },
+   "voorbeeld": {
+    "vraag": [
+     "Je tablet is nog 40% vol.",
+     "Je kunt hem nog 300 minuten gebruiken.",
+     "Hoeveel minuten gaat een volle batterij mee?"
+    ],
+    "stappen": [
+     {
+      "tekst": "Reken 1% uit",
+      "som": "300 : 40",
+      "expr": "300/40",
+      "uitkomst": 7.5,
+      "eenheid": "minuten",
+      "invoer": true,
+      "balk": {
+       "procent": 1,
+       "deel": 7.5
+      }
+     },
+     {
+      "tekst": "Reken 100% uit",
+      "som": "7,5 × 100",
+      "expr": "7.5*100",
+      "uitkomst": 750,
+      "eenheid": "minuten",
+      "invoer": true,
+      "balk": {
+       "procent": 100,
+       "deel": 750,
+       "geheel": 750
+      }
+     }
+    ],
+    "antwoord": {
+     "waarde": 750,
+     "eenheid": "minuten",
+     "expr": "300/40*100"
+    }
+   }
+  },
+  {
+   "id": "O4-NIV-05",
+   "onderdeel": 4,
+   "sectie": "niveau",
+   "nummer": "5",
+   "afbeeldingen": [
+    "image85.png"
+   ],
+   "flags": [
+    {
+     "soort": "auteursrecht",
+     "beschrijving": "Festivalfoto met logo's van Hardware, Onelove en Live Nation.",
+     "voorstel": "Getallen overnemen, beeld opnieuw maken in 3D (zie beeld)."
+    },
+    {
+     "soort": "fout-in-werkboek",
+     "beschrijving": "\"buitenlands bezoekers\" moet \"buitenlandse bezoekers\" zijn. \"Vraag:\" staat midden in de tekst en daarna volgt een kleine letter.",
+     "voorstel": "In de app verbeterd."
+    }
+   ],
+   "autoCheck": true,
+   "origineel": "In 2019 kwamen er 24.000 bezoekers naar het Festival X waarvan een derde uit het buitenland kwam. Van het aantal buitenlands bezoekers kwam 12% uit Polen. Vraag: hoeveel Poolse bezoekers kwamen er dat jaar naar Festival X?",
+   "vraag": [
+    "In 2019 kwamen 24.000 bezoekers naar Festival X.",
+    "Een derde kwam uit het buitenland.",
+    "Van de buitenlandse bezoekers kwam 12% uit Polen.",
+    "Hoeveel Poolse bezoekers waren er?"
+   ],
+   "type": "getal",
+   "paneel": "procentenbalk",
+   "context": [
+    {
+     "soort": "anders",
+     "titel": "Festival X",
+     "beschrijving": "Festivalposter: donkere foto van een juichend publiek voor een podium met blauwwitte lichtstralen en vonkenfonteinen. Grote witte letters \"festival\" met een gele \"X\". Bovenaan drie logo's (Hardware, Onelove, Live Nation). Er staan geen getallen op die je nodig hebt."
+    }
+   ],
+   "beeld": [
+    {
+     "afbeelding": "image85.png",
+     "vorm": "poster",
+     "ontwerp": "Op de infozuil bij de ingang van het winkelcentrum hangt een lichtgevende poster \"Festival X\" met een grote gele X. Achter het glas staat een mini-podium met draaiende blauwe lichtstralen en een dansend publiek van kleine poppetjes. Klik op de poster en er verschijnt een teller: 24.000 bezoekers in 2019.",
+     "toont": [
+      "Festival X",
+      "2019",
+      "24.000 bezoekers",
+      "een derde uit het buitenland",
+      "12% uit Polen"
+     ],
+     "grap": "Eén poppetje in het publiek zwaait met een Poolse vlag."
+    }
+   ],
+   "stappen": [
+    {
+     "tekst": "Een derde komt uit het buitenland",
+     "som": "24.000 : 3",
+     "expr": "24000/3",
+     "uitkomst": 8000,
+     "eenheid": "bezoekers",
+     "invoer": true
+    },
+    {
+     "tekst": "Reken 1% van 8000 uit",
+     "som": "8000 : 100",
+     "expr": "8000/100",
+     "uitkomst": 80,
+     "eenheid": "bezoekers",
+     "invoer": true,
+     "balk": {
+      "procent": 1,
+      "deel": 80,
+      "geheel": 8000
+     }
+    },
+    {
+     "tekst": "Keer 12",
+     "som": "12 × 80",
+     "expr": "12*80",
+     "uitkomst": 960,
+     "eenheid": "bezoekers",
+     "invoer": true,
+     "balk": {
+      "procent": 12,
+      "deel": 960,
+      "geheel": 8000
+     }
+    }
+   ],
+   "antwoord": {
+    "waarde": 960,
+    "eenheid": "Poolse bezoekers",
+    "expr": "24000/3*0.12"
+   },
+   "voorbeeld": {
+    "vraag": [
+     "Er kwamen 30.000 bezoekers naar een markt.",
+     "Een derde kwam uit het buitenland.",
+     "Van hen kwam 10% uit België.",
+     "Hoeveel Belgen waren er?"
+    ],
+    "stappen": [
+     {
+      "tekst": "Een derde",
+      "som": "30.000 : 3",
+      "expr": "30000/3",
+      "uitkomst": 10000,
+      "eenheid": "bezoekers",
+      "invoer": true
+     },
+     {
+      "tekst": "10% is een tiende",
+      "som": "10.000 : 10",
+      "expr": "10000/10",
+      "uitkomst": 1000,
+      "eenheid": "bezoekers",
+      "invoer": true,
+      "balk": {
+       "procent": 10,
+       "deel": 1000,
+       "geheel": 10000
+      }
+     }
+    ],
+    "antwoord": {
+     "waarde": 1000,
+     "eenheid": "Belgen",
+     "expr": "30000/3*0.1"
+    }
+   }
+  },
+  {
+   "id": "O4-NIV-06",
+   "onderdeel": 4,
+   "sectie": "niveau",
+   "nummer": "6",
+   "afbeeldingen": [
+    "image86.png"
+   ],
+   "flags": [
+    {
+     "soort": "auteursrecht",
+     "beschrijving": "Krantenknipsel uit een externe bron.",
+     "voorstel": "Getallen overnemen, beeld opnieuw maken in 3D (zie beeld)."
+    },
+    {
+     "soort": "tekst",
+     "beschrijving": "Alle gegevens staan alleen in het artikel. De vraag zegt \"vrachtauto's\", het artikel \"vrachtwagens\".",
+     "voorstel": "In de app: gegevens in de vraag, overal \"vrachtwagens\"."
+    },
+    {
+     "soort": "dubbelzinnig",
+     "beschrijving": "Het artikel zegt dat 14% van álle vrachtwagens in België een gevaar is. Dat bij de controle ook 14% een gevaar was, staat er niet letterlijk.",
+     "voorstel": "De app gaat uit van 1.330 = 14% van de gecontroleerde vrachtwagens: 9.500."
+    }
+   ],
+   "autoCheck": true,
+   "origineel": "Hoeveel vrachtauto's werden er uiteindelijk gecontroleerd?",
+   "vraag": [
+    "14% van de vrachtwagens in België is een gevaar op de weg.",
+    "Bij een controle waren 1.330 vrachtwagens een gevaar.",
+    "Hoeveel vrachtwagens zijn er gecontroleerd?"
+   ],
+   "type": "getal",
+   "paneel": "procentenbalk",
+   "object3d": "vrachtwagen",
+   "context": [
+    {
+     "soort": "tekst",
+     "titel": "14 procent vrachtwagens in België gevaar op de weg",
+     "items": [
+      {
+       "label": "deel vrachtwagens dat een gevaar is",
+       "waarde": 14,
+       "eenheid": "%"
+      },
+      {
+       "label": "vrachtwagens bij de controle die een gevaar waren",
+       "waarde": 1330
+      }
+     ],
+     "beschrijving": "Krantenknipsel op oud, gevlekt papier. Kop: \"14 procent vrachtwagens in België gevaar op de weg\". Tekst: \"14% van de vrachtwagens in België is een gevaar op de weg. Bij een controle bleken 1.330 vrachtwagens een gevaar op de weg te vormen. De vrachtwagens hadden bijvoorbeeld slechte remmen, versleten banden of kapotte verlichting en richtingaanwijzers.\""
+    }
+   ],
+   "beeld": [
+    {
+     "afbeelding": "image86.png",
+     "vorm": "scherm",
+     "ontwerp": "Op de infozuil met nieuwsberichten in het winkelcentrum schuift een krantenbericht op vergeeld papier in beeld: \"14 procent vrachtwagens in België gevaar op de weg\". Onder het scherm rijdt een klein vrachtwagentje over een strook weg, met een rookpluimpje en een wiebelende band. Klik op het bericht om de hele tekst te lezen.",
+     "toont": [
+      "14 procent vrachtwagens in België gevaar op de weg",
+      "14%",
+      "1.330 vrachtwagens",
+      "slechte remmen, versleten banden, kapotte verlichting en richtingaanwijzers"
+     ],
+     "grap": "Het vrachtwagentje knippert steeds met de verkeerde richtingaanwijzer."
+    }
+   ],
+   "stappen": [
+    {
+     "tekst": "14% is 1.330 vrachtwagens",
+     "som": "14% = 1.330",
+     "expr": null,
+     "uitkomst": 1330,
+     "invoer": false,
+     "eenheid": "vrachtwagens",
+     "balk": {
+      "procent": 14,
+      "deel": 1330
+     }
+    },
+    {
+     "tekst": "Reken 1% uit",
+     "som": "1.330 : 14",
+     "expr": "1330/14",
+     "uitkomst": 95,
+     "eenheid": "vrachtwagens",
+     "invoer": true,
+     "balk": {
+      "procent": 1,
+      "deel": 95
+     }
+    },
+    {
+     "tekst": "Reken 100% uit",
+     "som": "95 × 100",
+     "expr": "95*100",
+     "uitkomst": 9500,
+     "eenheid": "vrachtwagens",
+     "invoer": true,
+     "balk": {
+      "procent": 100,
+      "deel": 9500,
+      "geheel": 9500
+     }
+    }
+   ],
+   "antwoord": {
+    "waarde": 9500,
+    "eenheid": "vrachtwagens",
+    "expr": "1330/14*100"
+   },
+   "voorbeeld": {
+    "vraag": [
+     "Bij een controle was 20% van de fietsen niet in orde.",
+     "Dat waren 300 fietsen.",
+     "Hoeveel fietsen zijn er gecontroleerd?"
+    ],
+    "stappen": [
+     {
+      "tekst": "Reken 1% uit",
+      "som": "300 : 20",
+      "expr": "300/20",
+      "uitkomst": 15,
+      "eenheid": "fietsen",
+      "invoer": true,
+      "balk": {
+       "procent": 1,
+       "deel": 15
+      }
+     },
+     {
+      "tekst": "Reken 100% uit",
+      "som": "15 × 100",
+      "expr": "15*100",
+      "uitkomst": 1500,
+      "eenheid": "fietsen",
+      "invoer": true,
+      "balk": {
+       "procent": 100,
+       "deel": 1500,
+       "geheel": 1500
+      }
+     }
+    ],
+    "antwoord": {
+     "waarde": 1500,
+     "eenheid": "fietsen",
+     "expr": "300/20*100"
+    }
+   }
+  },
+  {
+   "id": "O4-NIV-07",
+   "onderdeel": 4,
+   "sectie": "niveau",
+   "nummer": "7",
+   "afbeeldingen": [
+    "image87.png"
+   ],
+   "flags": [
+    {
+     "soort": "auteursrecht",
+     "beschrijving": "Productfoto met merk (Maltesers).",
+     "voorstel": "Getallen overnemen, beeld opnieuw maken in 3D (zie beeld)."
+    },
+    {
+     "soort": "tekst",
+     "beschrijving": "De tekst zegt \"pak Maltesers\", maar de afbeelding is een pot Maltesers Hot Chocolate. Op de pot staat Engels: \"15% EXTRA FREE\".",
+     "voorstel": "In de app: een pot chocoladedrank zonder merk, met \"+15% extra\"."
+    }
+   ],
+   "autoCheck": true,
+   "origineel": "Door een nieuwe verpakking van een pak Maltesers zit er nu 368 gram in het pak. Er is 15% extra in de nieuwe verpakking erbij gekomen. Hoeveel gram zat er in de oude verpakking?",
+   "vraag": [
+    "In de nieuwe verpakking zit 368 gram.",
+    "Er zit 15% extra in.",
+    "Hoeveel gram zat er in de oude verpakking?"
+   ],
+   "type": "getal",
+   "paneel": "procentenbalk",
+   "object3d": "pot-chocodrank",
+   "context": [
+    {
+     "soort": "anders",
+     "items": [
+      {
+       "label": "extra",
+       "waarde": "15% EXTRA FREE*"
+      }
+     ],
+     "beschrijving": "Rode pot \"Maltesers Hot Chocolate\" (chocoladedrank) met rode schroefdop. Bovenaan een gele band met drie keer \"15% EXTRA FREE*\". Onderaan: \"INSTANT DELICIOUSNESS JUST ADD WATER\". Er staat geen gewicht op."
+    }
+   ],
+   "beeld": [
+    {
+     "afbeelding": "image87.png",
+     "vorm": "model",
+     "ontwerp": "In de etalage van de supermarkt staat een grote rode pot chocoladedrank op een draaiplateau, met een gele band \"+15% extra\". Je kunt de pot ronddraaien en op het weegschaaltje ernaast zetten: dat toont 368 g. Naast de nieuwe pot staat een kleinere grijze \"oude\" pot met een vraagteken.",
+     "toont": [
+      "+15% extra",
+      "368 gram (nieuwe verpakking)"
+     ],
+     "grap": "Uit de dop piept een chocoladebolletje dat terugrolt als je de pot draait."
+    }
+   ],
+   "stappen": [
+    {
+     "tekst": "Nieuw = oud + 15% = 115%",
+     "som": "115% = 368 gram",
+     "expr": null,
+     "uitkomst": 368,
+     "invoer": false,
+     "eenheid": "gram",
+     "balk": {
+      "procent": 115,
+      "deel": 368
+     }
+    },
+    {
+     "tekst": "Reken 1% uit",
+     "som": "368 : 115",
+     "expr": "368/115",
+     "uitkomst": 3.2,
+     "eenheid": "gram",
+     "invoer": true,
+     "balk": {
+      "procent": 1,
+      "deel": 3.2
+     }
+    },
+    {
+     "tekst": "Reken 100% uit",
+     "som": "3,2 × 100",
+     "expr": "3.2*100",
+     "uitkomst": 320,
+     "eenheid": "gram",
+     "invoer": true,
+     "balk": {
+      "procent": 100,
+      "deel": 320,
+      "geheel": 320
+     }
+    }
+   ],
+   "antwoord": {
+    "waarde": 320,
+    "eenheid": "gram",
+    "expr": "368/1.15"
+   },
+   "voorbeeld": {
+    "vraag": [
+     "In een nieuwe zak chips zit 440 gram.",
+     "Er zit 10% extra in.",
+     "Hoeveel gram zat er in de oude zak?"
+    ],
+    "stappen": [
+     {
+      "tekst": "Nieuw is 110%",
+      "som": "110% = 440 gram",
+      "expr": null,
+      "uitkomst": 440,
+      "invoer": false,
+      "eenheid": "gram",
+      "balk": {
+       "procent": 110,
+       "deel": 440
+      }
+     },
+     {
+      "tekst": "Reken 1% uit",
+      "som": "440 : 110",
+      "expr": "440/110",
+      "uitkomst": 4,
+      "eenheid": "gram",
+      "invoer": true,
+      "balk": {
+       "procent": 1,
+       "deel": 4
+      }
+     },
+     {
+      "tekst": "Reken 100% uit",
+      "som": "4 × 100",
+      "expr": "4*100",
+      "uitkomst": 400,
+      "eenheid": "gram",
+      "invoer": true,
+      "balk": {
+       "procent": 100,
+       "deel": 400,
+       "geheel": 400
+      }
+     }
+    ],
+    "antwoord": {
+     "waarde": 400,
+     "eenheid": "gram",
+     "expr": "440/1.1"
+    }
+   }
+  },
+  {
+   "id": "O4-NIV-08",
+   "onderdeel": 4,
+   "sectie": "niveau",
+   "nummer": "8",
+   "afbeeldingen": [],
+   "flags": [
+    {
+     "soort": "fout-in-werkboek",
+     "beschrijving": "\"Pieter betaald\" moet \"betaalt\" zijn. Na \"€856,36\" ontbreekt een punt.",
+     "voorstel": "In de app verbeterd."
+    },
+    {
+     "soort": "notatie",
+     "beschrijving": "\"€856,36\" zonder spatie.",
+     "voorstel": "In de app: € 856,36."
+    }
+   ],
+   "autoCheck": true,
+   "origineel": "Pieter gaat een nieuwe laptop kopen. De laptop die hij heeft uitgekozen heeft nu 21% korting. Pieter betaald nu bij de kassa €856,36 Hoeveel kostte de laptop zonder korting?",
+   "vraag": [
+    "Pieter koopt een nieuwe laptop.",
+    "De laptop heeft 21% korting.",
+    "Pieter betaalt nu € 856,36.",
+    "Hoeveel kostte de laptop zonder korting?"
+   ],
+   "type": "getal",
+   "paneel": "procentenbalk",
+   "object3d": "laptop",
+   "stappen": [
+    {
+     "tekst": "Welk deel betaal je?",
+     "som": "100% − 21%",
+     "expr": "100-21",
+     "uitkomst": 79,
+     "eenheid": "%",
+     "invoer": true,
+     "balk": {
+      "procent": 79,
+      "deel": 856.36
+     }
+    },
+    {
+     "tekst": "Reken 1% uit",
+     "som": "856,36 : 79",
+     "expr": "856.36/79",
+     "uitkomst": 10.84,
+     "eenheid": "euro",
+     "invoer": true,
+     "balk": {
+      "procent": 1,
+      "deel": 10.84
+     }
+    },
+    {
+     "tekst": "Reken 100% uit",
+     "som": "10,84 × 100",
+     "expr": "10.84*100",
+     "uitkomst": 1084,
+     "eenheid": "euro",
+     "invoer": true,
+     "balk": {
+      "procent": 100,
+      "deel": 1084,
+      "geheel": 1084
+     }
+    }
+   ],
+   "antwoord": {
+    "waarde": 1084,
+    "eenheid": "euro",
+    "expr": "856.36/0.79"
+   },
+   "voorbeeld": {
+    "vraag": [
+     "Een fiets heeft 20% korting.",
+     "Je betaalt € 400.",
+     "Wat kostte de fiets zonder korting?"
+    ],
+    "stappen": [
+     {
+      "tekst": "Welk deel betaal je?",
+      "som": "100% − 20%",
+      "expr": "100-20",
+      "uitkomst": 80,
+      "eenheid": "%",
+      "invoer": true,
+      "balk": {
+       "procent": 80,
+       "deel": 400
+      }
+     },
+     {
+      "tekst": "Reken 1% uit",
+      "som": "400 : 80",
+      "expr": "400/80",
+      "uitkomst": 5,
+      "eenheid": "euro",
+      "invoer": true,
+      "balk": {
+       "procent": 1,
+       "deel": 5
+      }
+     },
+     {
+      "tekst": "Reken 100% uit",
+      "som": "5 × 100",
+      "expr": "5*100",
+      "uitkomst": 500,
+      "eenheid": "euro",
+      "invoer": true,
+      "balk": {
+       "procent": 100,
+       "deel": 500,
+       "geheel": 500
+      }
+     }
+    ],
+    "antwoord": {
+     "waarde": 500,
+     "eenheid": "euro",
+     "expr": "400/0.8"
+    }
+   }
+  },
+  {
+   "id": "O4-NIV-09",
+   "onderdeel": 4,
+   "sectie": "niveau",
+   "nummer": "9",
+   "afbeeldingen": [
+    "image88.png"
+   ],
+   "flags": [
+    {
+     "soort": "auteursrecht",
+     "beschrijving": "Folder van Kruidvat met merk en producten.",
+     "voorstel": "Getallen overnemen, beeld opnieuw maken in 3D (zie beeld)."
+    },
+    {
+     "soort": "notatie",
+     "beschrijving": "Prijzen \"2.38\" en \"1.79\" met punt en kleine centen.",
+     "voorstel": "In de app: € 2,38 en € 1,79."
+    },
+    {
+     "soort": "tekst",
+     "beschrijving": "Alle gegevens staan alleen in de folder. Dat de prijzen voor 2 stuks gelden, staat klein op het kaartje. Punt ontbreekt na \"Rond af op hele procent\".",
+     "voorstel": "In de app staan \"2 stuks\" en de prijzen in de vraag."
+    }
+   ],
+   "autoCheck": true,
+   "origineel": "Hoeveel procent korting krijg je? Rond af op hele procent",
+   "vraag": [
+    "Je koopt 2 stylingproducten.",
+    "Normaal kosten ze samen € 2,38.",
+    "Met de actie betaal je € 1,79.",
+    "Hoeveel procent korting krijg je?",
+    "Rond af op hele procenten."
+   ],
+   "type": "getal",
+   "paneel": "procentenbalk",
+   "object3d": "stylingproducten",
+   "context": [
+    {
+     "soort": "prijzen",
+     "titel": "Styling zwarte serie",
+     "items": [
+      {
+       "label": "2 stuks, oude prijs (doorgestreept)",
+       "waarde": "€ 2,38"
+      },
+      {
+       "label": "2 stuks, actieprijs",
+       "waarde": "€ 1,79"
+      },
+      {
+       "label": "actie",
+       "waarde": "2e halve prijs"
+      }
+     ],
+     "beschrijving": "Folder van een drogist: \"STYLING ZWARTE SERIE\". Vier zwarte producten: stylingspray (oranje etiket), stylingmousse (groen), stylinggel (blauw) en stylinggel (roze). Rode ovale sticker: \"2e HALVE PRIJS*\". Prijskaartje met \"2 STUKS\": rood vlak met doorgestreepte 2.38 en een gele ster met 1.79."
+    }
+   ],
+   "beeld": [
+    {
+     "afbeelding": "image88.png",
+     "vorm": "bord",
+     "ontwerp": "In de etalage van de drogisterij staan vier zwarte stylingbusjes en tubes met gekleurde etiketten (oranje, groen, blauw, roze). Ervoor staat een rood-geel prijsbord \"2 STUKS\": de oude prijs € 2,38 is doorgestreept en een gele ster met € 1,79 springt naar voren. Een rode sticker \"2e halve prijs\" draait langzaam rond.",
+     "toont": [
+      "2 stuks",
+      "€ 2,38 (doorgestreept)",
+      "€ 1,79",
+      "2e halve prijs"
+     ],
+     "grap": "Op de tube gel staat een poppetje met een kuif die omhoog springt als je klikt."
+    }
+   ],
+   "stappen": [
+    {
+     "tekst": "Korting in euro",
+     "som": "2,38 − 1,79",
+     "expr": "2.38-1.79",
+     "uitkomst": 0.59,
+     "eenheid": "euro",
+     "invoer": true
+    },
+    {
+     "tekst": "Deel door oude prijs, × 100",
+     "som": "0,59 : 2,38 × 100",
+     "expr": "0.59/2.38*100",
+     "uitkomst": 24.79,
+     "eenheid": "%",
+     "invoer": true,
+     "afronding": "2-decimalen",
+     "balk": {
+      "procent": 24.79,
+      "deel": 0.59,
+      "geheel": 2.38
+     }
+    },
+    {
+     "tekst": "Rond af op hele procent",
+     "som": "24,79 → ...",
+     "expr": "Math.round(0.59/2.38*100)",
+     "uitkomst": 25,
+     "eenheid": "%",
+     "invoer": true,
+     "balk": {
+      "procent": 25,
+      "deel": 0.59,
+      "geheel": 2.38
+     }
+    }
+   ],
+   "antwoord": {
+    "waarde": 25,
+    "eenheid": "%",
+    "expr": "(2.38-1.79)/2.38*100",
+    "afronding": "heel"
+   },
+   "voorbeeld": {
+    "vraag": [
+     "2 flessen kosten normaal € 3,00.",
+     "Met de actie betaal je € 2,00.",
+     "Hoeveel procent korting is dat?",
+     "Rond af op hele procenten."
+    ],
+    "stappen": [
+     {
+      "tekst": "Korting in euro",
+      "som": "3,00 − 2,00",
+      "expr": "3-2",
+      "uitkomst": 1,
+      "eenheid": "euro",
+      "invoer": true
+     },
+     {
+      "tekst": "Deel door oude prijs, × 100",
+      "som": "1 : 3 × 100",
+      "expr": "1/3*100",
+      "uitkomst": 33.33,
+      "eenheid": "%",
+      "invoer": true,
+      "afronding": "2-decimalen",
+      "balk": {
+       "procent": 33.33,
+       "deel": 1,
+       "geheel": 3
+      }
+     },
+     {
+      "tekst": "Rond af",
+      "som": "33,33 → ...",
+      "expr": "Math.round(100/3)",
+      "uitkomst": 33,
+      "eenheid": "%",
+      "invoer": true
+     }
+    ],
+    "antwoord": {
+     "waarde": 33,
+     "eenheid": "%",
+     "expr": "1/3*100",
+     "afronding": "heel"
+    }
+   }
+  },
+  {
+   "id": "O4-NIV-10",
+   "onderdeel": 4,
+   "sectie": "niveau",
+   "nummer": "10",
+   "afbeeldingen": [
+    "image89.png"
+   ],
+   "flags": [
+    {
+     "soort": "notatie",
+     "beschrijving": "In de grafiek staan getallen met een spatie als duizendtal (337 554).",
+     "voorstel": "In de app: 337.554 en 303.306."
+    }
+   ],
+   "autoCheck": true,
+   "origineel": "Hoeveel procent is het ledental van BNN in 2014 gegroeid ten opzichte van 2009? Rond af op een decimaal.",
+   "vraag": [
+    "Kijk naar de staaf van BNN.",
+    "In 2009 had BNN 303.306 leden.",
+    "In 2014 waren dat er 337.554.",
+    "Met hoeveel procent is het ledental gegroeid?",
+    "Rond af op 1 decimaal."
+   ],
+   "type": "getal",
+   "paneel": "procentenbalk",
+   "context": [
+    {
+     "soort": "grafiek",
+     "titel": "Ledenaantallen van enkele publieke omroepen",
+     "kolommen": [
+      "Omroep",
+      "2014",
+      "2009"
+     ],
+     "rijen": [
+      [
+       "EO",
+       440788,
+       439293
+      ],
+      [
+       "VPRO",
+       339623,
+       362340
+      ],
+      [
+       "BNN",
+       337554,
+       303306
+      ],
+      [
+       "WNL",
+       52996,
+       59501
+      ],
+      [
+       "PowNed",
+       51609,
+       52249
+      ]
+     ],
+     "beschrijving": "Liggend staafdiagram. Per omroep twee staven: donkerbruin = 2014 (boven), lichtoranje = 2009 (onder). Het getal staat achter elke staaf, met een spatie als duizendtal: EO 440 788 en 439 293; VPRO 339 623 en 362 340; BNN 337 554 en 303 306; WNL 52 996 en 59 501; PowNed 51 609 en 52 249. Legenda rechtsonder."
+    }
+   ],
+   "beeld": [
+    {
+     "afbeelding": "image89.png",
+     "vorm": "scherm",
+     "ontwerp": "Naast de tv-winkel hangt een breed scherm met het liggende staafdiagram \"Ledenaantallen van enkele publieke omroepen\". Per omroep groeien twee staven van links naar rechts: donkerbruin voor 2014 en lichtoranje voor 2009, met het getal erachter. Tik op een omroep en zijn twee staven lichten op.",
+     "toont": [
+      "EO: 440.788 (2014), 439.293 (2009)",
+      "VPRO: 339.623 (2014), 362.340 (2009)",
+      "BNN: 337.554 (2014), 303.306 (2009)",
+      "WNL: 52.996 (2014), 59.501 (2009)",
+      "PowNed: 51.609 (2014), 52.249 (2009)",
+      "legenda: donkerbruin 2014, lichtoranje 2009"
+     ],
+     "grap": "Een vlieg wandelt over de staaf van BNN."
+    }
+   ],
+   "stappen": [
+    {
+     "tekst": "Hoeveel leden erbij?",
+     "som": "337.554 − 303.306",
+     "expr": "337554-303306",
+     "uitkomst": 34248,
+     "eenheid": "leden",
+     "invoer": true
+    },
+    {
+     "tekst": "Deel door 2009, × 100",
+     "som": "34.248 : 303.306 × 100",
+     "expr": "34248/303306*100",
+     "uitkomst": 11.29,
+     "eenheid": "%",
+     "invoer": true,
+     "afronding": "2-decimalen",
+     "balk": {
+      "procent": 11.29,
+      "deel": 34248,
+      "geheel": 303306
+     }
+    },
+    {
+     "tekst": "Rond af op 1 decimaal",
+     "som": "11,29 → ...",
+     "expr": "Math.round(34248/303306*1000)/10",
+     "uitkomst": 11.3,
+     "eenheid": "%",
+     "invoer": true,
+     "balk": {
+      "procent": 11.3,
+      "deel": 34248,
+      "geheel": 303306
+     }
+    }
+   ],
+   "antwoord": {
+    "waarde": 11.3,
+    "eenheid": "%",
+    "expr": "(337554-303306)/303306*100",
+    "afronding": "1-decimaal"
+   },
+   "voorbeeld": {
+    "vraag": [
+     "Een club had 2000 leden.",
+     "Nu zijn het er 2250.",
+     "Met hoeveel procent is de club gegroeid?"
+    ],
+    "stappen": [
+     {
+      "tekst": "Hoeveel leden erbij?",
+      "som": "2250 − 2000",
+      "expr": "2250-2000",
+      "uitkomst": 250,
+      "eenheid": "leden",
+      "invoer": true
+     },
+     {
+      "tekst": "Deel door het oude aantal, × 100",
+      "som": "250 : 2000 × 100",
+      "expr": "250/2000*100",
+      "uitkomst": 12.5,
+      "eenheid": "%",
+      "invoer": true,
+      "balk": {
+       "procent": 12.5,
+       "deel": 250,
+       "geheel": 2000
+      }
+     }
+    ],
+    "antwoord": {
+     "waarde": 12.5,
+     "eenheid": "%",
+     "expr": "250/2000*100",
+     "afronding": "1-decimaal"
+    }
+   }
+  },
+  {
+   "id": "O4-EXP-01",
+   "onderdeel": 4,
+   "sectie": "expert",
+   "nummer": "1",
+   "afbeeldingen": [
+    "image90.png"
+   ],
+   "flags": [
+    {
+     "soort": "notatie",
+     "beschrijving": "\"€1.75\" met een punt als decimaalteken en zonder spatie.",
+     "voorstel": "In de app: € 1,75."
+    },
+    {
+     "soort": "auteursrecht",
+     "beschrijving": "Kermisposter met foto van een reuzenrad.",
+     "voorstel": "Getallen overnemen, beeld opnieuw maken in 3D (zie beeld)."
+    },
+    {
+     "soort": "tekst",
+     "beschrijving": "De 30% meer zitplaatsen staat alleen op de poster, niet in de vraag.",
+     "voorstel": "In de app staat 30% ook in de vraag."
+    }
+   ],
+   "autoCheck": true,
+   "titel": "Reuzenrad",
+   "origineel": "Bekijk onderstaande afbeelding. Vorig jaar konden er 250 mensen tegelijk in het reuzenrad. Een kaartje voor het reuzenrad kost €1.75. Laat met een berekening zien wat de opbrengst van de kaartjes is als het reuzenrad helemaal gevuld is.",
+   "vraag": [
+    "Het reuzenrad heeft 30% meer plaatsen dan vorig jaar.",
+    "Vorig jaar konden er 250 mensen in.",
+    "Een kaartje kost € 1,75.",
+    "Het reuzenrad zit helemaal vol.",
+    "Hoeveel geld leveren de kaartjes op?"
+   ],
+   "type": "getal",
+   "paneel": "procentenbalk",
+   "object3d": "reuzenrad",
+   "context": [
+    {
+     "soort": "tekst",
+     "titel": "Kermis in Devidam",
+     "items": [
+      {
+       "label": "meer zitplaatsen dan vorig jaar",
+       "waarde": 30,
+       "eenheid": "%"
+      }
+     ],
+     "beschrijving": "Grijze kermisposter. Links in grote witte letters van lampjes: \"KERMIS IN DEVIDAM\". Daaronder: \"Het reuzenrad heeft 30% meer zitplaatsen dan vorig jaar!\" en \"Durf jij het aan?\". Rechts een zwart-witfoto van een reuzenrad met gondels."
+    }
+   ],
+   "beeld": [
+    {
+     "afbeelding": "image90.png",
+     "vorm": "model",
+     "ontwerp": "Op de kermis naast het winkelcentrum draait een echt reuzenrad met gekleurde gondels en knipperende lampjes. Bij het loket hangt een grijs spandoek in lampjesletters: \"KERMIS IN DEVIDAM – Het reuzenrad heeft 30% meer zitplaatsen dan vorig jaar! Durf jij het aan?\". Op het loket staat een prijsbordje \"€ 1,75 per kaartje\"; als je rekent, vullen de gondels zich met poppetjes.",
+     "toont": [
+      "Kermis in Devidam",
+      "30% meer zitplaatsen dan vorig jaar",
+      "vorig jaar 250 plaatsen",
+      "€ 1,75 per kaartje"
+     ],
+     "grap": "In de bovenste gondel zit een meeuw die ook een kaartje heeft."
+    }
+   ],
+   "stappen": [
+    {
+     "tekst": "Reken 30% van 250 uit",
+     "som": "250 : 10 × 3",
+     "expr": "250/10*3",
+     "uitkomst": 75,
+     "eenheid": "plaatsen",
+     "invoer": true,
+     "balk": {
+      "procent": 30,
+      "deel": 75,
+      "geheel": 250
+     }
+    },
+    {
+     "tekst": "Plaatsen dit jaar",
+     "som": "250 + 75",
+     "expr": "250+75",
+     "uitkomst": 325,
+     "eenheid": "plaatsen",
+     "invoer": true,
+     "balk": {
+      "procent": 130,
+      "deel": 325,
+      "geheel": 250
+     }
+    },
+    {
+     "tekst": "Keer de prijs van een kaartje",
+     "som": "325 × 1,75",
+     "expr": "325*1.75",
+     "uitkomst": 568.75,
+     "eenheid": "euro",
+     "invoer": true
+    }
+   ],
+   "antwoord": {
+    "waarde": 568.75,
+    "eenheid": "euro",
+    "expr": "250*1.3*1.75"
+   },
+   "voorbeeld": {
+    "vraag": [
+     "De draaimolen heeft 20% meer plaatsen dan vorig jaar.",
+     "Vorig jaar waren er 50 plaatsen.",
+     "Een kaartje kost € 2,00.",
+     "Hoeveel leveren de kaartjes op als hij vol zit?"
+    ],
+    "stappen": [
+     {
+      "tekst": "20% van 50",
+      "som": "50 : 10 × 2",
+      "expr": "50/10*2",
+      "uitkomst": 10,
+      "eenheid": "plaatsen",
+      "invoer": true,
+      "balk": {
+       "procent": 20,
+       "deel": 10,
+       "geheel": 50
+      }
+     },
+     {
+      "tekst": "Plaatsen nu",
+      "som": "50 + 10",
+      "expr": "50+10",
+      "uitkomst": 60,
+      "eenheid": "plaatsen",
+      "invoer": true,
+      "balk": {
+       "procent": 120,
+       "deel": 60,
+       "geheel": 50
+      }
+     },
+     {
+      "tekst": "Keer de prijs",
+      "som": "60 × 2",
+      "expr": "60*2",
+      "uitkomst": 120,
+      "eenheid": "euro",
+      "invoer": true
+     }
+    ],
+    "antwoord": {
+     "waarde": 120,
+     "eenheid": "euro",
+     "expr": "50*1.2*2"
+    }
+   }
+  },
+  {
+   "id": "O4-EXP-02",
+   "onderdeel": 4,
+   "sectie": "expert",
+   "nummer": "2",
+   "afbeeldingen": [
+    "image91.png"
+   ],
+   "flags": [
+    {
+     "soort": "fout-in-werkboek",
+     "beschrijving": "\"hans\" zonder hoofdletter. De tekst zegt \"winkelmandje\", de afbeelding \"winkelwagentje\".",
+     "voorstel": "In de app: \"Hans\" en \"winkelwagentje\"."
+    },
+    {
+     "soort": "auteursrecht",
+     "beschrijving": "Productfoto uit een webwinkel.",
+     "voorstel": "Getallen overnemen, beeld opnieuw maken in 3D (zie beeld)."
+    }
+   ],
+   "autoCheck": true,
+   "titel": "Voetbaltafel",
+   "origineel": "Bekijk onderstaande afbeelding. Hans koopt de voetbaltafel. Hans krijgt 15% extra korting op de actieprijs in het winkelmandje. Laat met een berekening zien hoeveel procent korting hans in totaal krijgt.",
+   "vraag": [
+    "Een voetbaltafel kost normaal € 399,00.",
+    "Nu is er 20% korting.",
+    "Hans krijgt nog 15% extra korting op de actieprijs.",
+    "Hoeveel procent korting krijgt Hans in totaal?"
+   ],
+   "type": "getal",
+   "paneel": "procentenbalk",
+   "object3d": "voetbaltafel",
+   "context": [
+    {
+     "soort": "prijzen",
+     "items": [
+      {
+       "label": "normale prijs",
+       "waarde": "€ 399,00"
+      },
+      {
+       "label": "korting",
+       "waarde": 20,
+       "eenheid": "%"
+      }
+     ],
+     "beschrijving": "Webwinkelplaatje: grijze voetbaltafel op vier poten met 8 stangen. Zilveren ster: \"Nu met 20% korting!\". Tekst: \"Normale prijs € 399,00\". Knop: \"+ In winkelwagentje\" met een winkelwagen-icoon."
+    }
+   ],
+   "beeld": [
+    {
+     "afbeelding": "image91.png",
+     "vorm": "model",
+     "ontwerp": "In de etalage van de speelgoedwinkel staat een echte grijze voetbaltafel met 8 stangen; je kunt aan elke stang draaien. Erboven hangt een zilveren ster \"Nu met 20% korting!\" en een prijsbord \"Normale prijs € 399,00\". Naast de tafel staat een winkelwagentje met een groen kaartje \"+15% extra korting op de actieprijs\".",
+     "toont": [
+      "Normale prijs € 399,00",
+      "Nu met 20% korting!",
+      "+15% extra korting op de actieprijs"
+     ],
+     "grap": "Het balletje rolt vanzelf in het doel als je het goede antwoord geeft."
+    }
+   ],
+   "stappen": [
+    {
+     "tekst": "Actieprijs: je betaalt 80%",
+     "som": "399 × 0,8",
+     "expr": "399*0.8",
+     "uitkomst": 319.2,
+     "eenheid": "euro",
+     "invoer": true,
+     "balk": {
+      "procent": 80,
+      "deel": 319.2,
+      "geheel": 399
+     }
+    },
+    {
+     "tekst": "Extra korting: je betaalt 85%",
+     "som": "319,20 × 0,85",
+     "expr": "319.2*0.85",
+     "uitkomst": 271.32,
+     "eenheid": "euro",
+     "invoer": true,
+     "balk": {
+      "procent": 68,
+      "deel": 271.32,
+      "geheel": 399
+     }
+    },
+    {
+     "tekst": "Korting in euro",
+     "som": "399 − 271,32",
+     "expr": "399-271.32",
+     "uitkomst": 127.68,
+     "eenheid": "euro",
+     "invoer": true
+    },
+    {
+     "tekst": "Maak er procent van",
+     "som": "127,68 : 399 × 100",
+     "expr": "127.68/399*100",
+     "uitkomst": 32,
+     "eenheid": "%",
+     "invoer": true,
+     "balk": {
+      "procent": 32,
+      "deel": 127.68,
+      "geheel": 399
+     }
+    }
+   ],
+   "antwoord": {
+    "waarde": 32,
+    "eenheid": "%",
+    "expr": "(1-0.8*0.85)*100"
+   },
+   "voorbeeld": {
+    "vraag": [
+     "Een fiets kost € 200.",
+     "Er is 10% korting.",
+     "Je krijgt nog 10% extra op de actieprijs.",
+     "Hoeveel procent korting krijg je in totaal?"
+    ],
+    "stappen": [
+     {
+      "tekst": "Actieprijs: 90%",
+      "som": "200 × 0,9",
+      "expr": "200*0.9",
+      "uitkomst": 180,
+      "eenheid": "euro",
+      "invoer": true,
+      "balk": {
+       "procent": 90,
+       "deel": 180,
+       "geheel": 200
+      }
+     },
+     {
+      "tekst": "Nog eens 90%",
+      "som": "180 × 0,9",
+      "expr": "180*0.9",
+      "uitkomst": 162,
+      "eenheid": "euro",
+      "invoer": true,
+      "balk": {
+       "procent": 81,
+       "deel": 162,
+       "geheel": 200
+      }
+     },
+     {
+      "tekst": "Korting in euro",
+      "som": "200 − 162",
+      "expr": "200-162",
+      "uitkomst": 38,
+      "eenheid": "euro",
+      "invoer": true
+     },
+     {
+      "tekst": "Maak er procent van",
+      "som": "38 : 200 × 100",
+      "expr": "38/200*100",
+      "uitkomst": 19,
+      "eenheid": "%",
+      "invoer": true,
+      "balk": {
+       "procent": 19,
+       "deel": 38,
+       "geheel": 200
+      }
+     }
+    ],
+    "antwoord": {
+     "waarde": 19,
+     "eenheid": "%",
+     "expr": "(1-0.9*0.9)*100"
+    }
+   }
+  },
+  {
+   "id": "O4-EXP-03",
+   "onderdeel": 4,
+   "sectie": "expert",
+   "nummer": "3",
+   "afbeeldingen": [
+    "image92.png"
+   ],
+   "flags": [
+    {
+     "soort": "fout-in-werkboek",
+     "beschrijving": "De naam wisselt: in de tekst \"Oma's Snoepwinkel\", in de tabel \"Oma's Snoepwinkeltje\". Na \"Bekijk de tabel\" en aan het eind ontbreekt een punt.",
+     "voorstel": "In de app overal \"Oma's Snoepwinkeltje\"."
+    }
+   ],
+   "autoCheck": true,
+   "titel": "Oma's Snoepwinkeltje",
+   "origineel": "Bekijk de tabel Laat met een berekening zien welk filiaal van Oma's Snoepwinkel procentueel de meeste winst heeft gemaakt vergeleken met de omzet",
+   "vraag": [
+    "Oma's Snoepwinkeltje heeft 3 winkels.",
+    "Je ziet per winkel de omzet en de winst.",
+    "Welke winkel heeft de meeste winst in procent van de omzet?"
+   ],
+   "type": "keuze",
+   "keuzes": [
+    "Amsterdam",
+    "Deventer",
+    "Den Bosch"
+   ],
+   "paneel": "procentenbalk",
+   "object3d": "snoeppotten",
+   "context": [
+    {
+     "soort": "tabel",
+     "titel": "Jaarcijfers Oma's Snoepwinkeltje",
+     "kolommen": [
+      "Filiaal",
+      "Omzet",
+      "Winst"
+     ],
+     "rijen": [
+      [
+       "Amsterdam",
+       "€ 534.000",
+       "€ 69.000"
+      ],
+      [
+       "Deventer",
+       "€ 389.000",
+       "€ 62.000"
+      ],
+      [
+       "Den Bosch",
+       "€ 331.000",
+       "€ 46.000"
+      ]
+     ],
+     "beschrijving": "Tabel met de kop \"Jaarcijfers Oma's Snoepwinkeltje\" en drie kolommen: Filiaal, Omzet en Winst."
+    }
+   ],
+   "beeld": [
+    {
+     "afbeelding": "image92.png",
+     "vorm": "bord",
+     "ontwerp": "Boven de toonbank van Oma's Snoepwinkeltje hangt een groot krijtbord \"Jaarcijfers\" met drie rijen: Amsterdam, Deventer en Den Bosch, met omzet en winst. Op de toonbank staan drie glazen snoeppotten met de namen van de winkels. Reken je een percentage goed uit, dan vult die pot zich tot dat percentage met snoep.",
+     "toont": [
+      "Amsterdam: omzet € 534.000, winst € 69.000",
+      "Deventer: omzet € 389.000, winst € 62.000",
+      "Den Bosch: omzet € 331.000, winst € 46.000"
+     ],
+     "grap": "Oma zit achter de toonbank in een schommelstoel te breien."
+    }
+   ],
+   "stappen": [
+    {
+     "tekst": "Amsterdam: winst : omzet × 100",
+     "som": "69.000 : 534.000 × 100",
+     "expr": "69000/534000*100",
+     "uitkomst": 12.9,
+     "eenheid": "%",
+     "invoer": true,
+     "afronding": "1-decimaal",
+     "balk": {
+      "procent": 12.9,
+      "deel": 69000,
+      "geheel": 534000
+     }
+    },
+    {
+     "tekst": "Deventer",
+     "som": "62.000 : 389.000 × 100",
+     "expr": "62000/389000*100",
+     "uitkomst": 15.9,
+     "eenheid": "%",
+     "invoer": true,
+     "afronding": "1-decimaal",
+     "balk": {
+      "procent": 15.9,
+      "deel": 62000,
+      "geheel": 389000
+     }
+    },
+    {
+     "tekst": "Den Bosch",
+     "som": "46.000 : 331.000 × 100",
+     "expr": "46000/331000*100",
+     "uitkomst": 13.9,
+     "eenheid": "%",
+     "invoer": true,
+     "afronding": "1-decimaal",
+     "balk": {
+      "procent": 13.9,
+      "deel": 46000,
+      "geheel": 331000
+     }
+    },
+    {
+     "tekst": "Welk percentage is het hoogst?",
+     "som": "15,9% > 13,9% > 12,9%",
+     "expr": null,
+     "uitkomst": "Deventer",
+     "invoer": false
+    }
+   ],
+   "antwoord": {
+    "waarde": "Deventer",
+    "expr": null
+   },
+   "voorbeeld": {
+    "vraag": [
+     "Winkel A: omzet € 100.000, winst € 10.000.",
+     "Winkel B: omzet € 200.000, winst € 30.000.",
+     "Welke winkel heeft de meeste winst in procent?"
+    ],
+    "stappen": [
+     {
+      "tekst": "Winkel A",
+      "som": "10.000 : 100.000 × 100",
+      "expr": "10000/100000*100",
+      "uitkomst": 10,
+      "eenheid": "%",
+      "invoer": true,
+      "balk": {
+       "procent": 10,
+       "deel": 10000,
+       "geheel": 100000
+      }
+     },
+     {
+      "tekst": "Winkel B",
+      "som": "30.000 : 200.000 × 100",
+      "expr": "30000/200000*100",
+      "uitkomst": 15,
+      "eenheid": "%",
+      "invoer": true,
+      "balk": {
+       "procent": 15,
+       "deel": 30000,
+       "geheel": 200000
+      }
+     },
+     {
+      "tekst": "Vergelijk",
+      "som": "15% > 10%",
+      "expr": null,
+      "uitkomst": "Winkel B",
+      "invoer": false
+     }
+    ],
+    "antwoord": {
+     "waarde": "Winkel B",
+     "expr": null
+    }
+   }
+  },
+  {
+   "id": "O4-EXP-04",
+   "onderdeel": 4,
+   "sectie": "expert",
+   "nummer": "4",
+   "afbeeldingen": [
+    "image93.png"
+   ],
+   "flags": [
+    {
+     "soort": "notatie",
+     "beschrijving": "\"BTW\" in hoofdletters; op de offerte staat \"btw\".",
+     "voorstel": "In de app: btw."
+    },
+    {
+     "soort": "auteursrecht",
+     "beschrijving": "Scan van een offertebrief met namen en adressen.",
+     "voorstel": "Getallen overnemen, beeld opnieuw maken in 3D (zie beeld)."
+    }
+   ],
+   "autoCheck": true,
+   "titel": "Bloemperk",
+   "origineel": "Bekijk onderstaande afbeelding. Henk laat een bloemperk aanleggen door hoveniersbedrijf Jansen. Hij krijgt 10% korting op bovenstaande offerte. Laat met een berekening zien hoeveel Henk inclusief BTW moet betalen voor het aanleggen van het bloemperk.",
+   "vraag": [
+    "Hovenier Jansen legt een bloemperk aan bij Henk.",
+    "Dat is 52 uur werk voor € 16 per uur.",
+    "Samen is dat € 832 zonder btw.",
+    "Henk krijgt 10% korting.",
+    "Daarna komt er 21% btw bij.",
+    "Hoeveel betaalt Henk met btw?"
+   ],
+   "type": "getal",
+   "paneel": "procentenbalk",
+   "context": [
+    {
+     "soort": "tabel",
+     "titel": "Offerte 215421",
+     "kolommen": [
+      "Uren",
+      "Omschrijving",
+      "Bedrag",
+      "Totaal excl. btw",
+      "Btw"
+     ],
+     "rijen": [
+      [
+       "52 uur",
+       "Aanleggen van een bloemperk",
+       "€ 16 per uur",
+       "€ 832",
+       "21%"
+      ]
+     ],
+     "beschrijving": "Brief van Hoveniersbedrijf Jansen (Tuinstraat 164, 3723 BV De Bilt; logo met grijze bloemen) aan Henk Slagter (Bospad 1, 5152 TG Drunen). Kop \"Offerte 215421\", offertedatum 21 november 2016. \"Geachte heer/mevrouw, Hierbij ontvangt u de offerte voor het aanleggen van het bloemperk.\" Daarna de tabel met één regel. Onder de tabel: \"Eventuele aanpassingen in de offerte zijn bespreekbaar. Met vriendelijke groeten, Barry Jansen\"."
+    }
+   ],
+   "beeld": [
+    {
+     "afbeelding": "image93.png",
+     "vorm": "boek",
+     "ontwerp": "In de tuinwinkel van het winkelcentrum ligt op de toonbank een opengeslagen offertemap van Hoveniersbedrijf Jansen, met een tekening van grijze bloemen bovenaan. Op de offerte staat één regel: 52 uur, aanleggen van een bloemperk, € 16 per uur, € 832, btw 21%. Ernaast ligt een stempel \"10% korting\" dat je op de offerte kunt drukken.",
+     "toont": [
+      "Offerte 215421",
+      "52 uur",
+      "Aanleggen van een bloemperk",
+      "€ 16 per uur",
+      "Totaal excl. btw € 832",
+      "Btw 21%"
+     ],
+     "grap": "Uit de map groeit een bloemetje dat opengaat als je klaar bent."
+    }
+   ],
+   "stappen": [
+    {
+     "tekst": "Korting: je betaalt 90%",
+     "som": "832 × 0,9",
+     "expr": "832*0.9",
+     "uitkomst": 748.8,
+     "eenheid": "euro",
+     "invoer": true,
+     "balk": {
+      "procent": 90,
+      "deel": 748.8,
+      "geheel": 832
+     }
+    },
+    {
+     "tekst": "Btw erbij: 121%",
+     "som": "748,80 × 1,21",
+     "expr": "748.8*1.21",
+     "uitkomst": 906.048,
+     "eenheid": "euro",
+     "invoer": true,
+     "balk": {
+      "procent": 121,
+      "deel": 906.048,
+      "geheel": 748.8
+     }
+    },
+    {
+     "tekst": "Rond af op centen",
+     "som": "906,048 → ...",
+     "expr": "Math.round(748.8*1.21*100)/100",
+     "uitkomst": 906.05,
+     "eenheid": "euro",
+     "invoer": true
+    }
+   ],
+   "antwoord": {
+    "waarde": 906.05,
+    "eenheid": "euro",
+    "expr": "832*0.9*1.21",
+    "afronding": "2-decimalen",
+    "tolerantie": 0.01
+   },
+   "voorbeeld": {
+    "vraag": [
+     "Een klus kost € 500 zonder btw.",
+     "Je krijgt 10% korting.",
+     "Daarna komt er 21% btw bij.",
+     "Hoeveel betaal je?"
+    ],
+    "stappen": [
+     {
+      "tekst": "Korting: 90%",
+      "som": "500 × 0,9",
+      "expr": "500*0.9",
+      "uitkomst": 450,
+      "eenheid": "euro",
+      "invoer": true,
+      "balk": {
+       "procent": 90,
+       "deel": 450,
+       "geheel": 500
+      }
+     },
+     {
+      "tekst": "Btw erbij: 121%",
+      "som": "450 × 1,21",
+      "expr": "450*1.21",
+      "uitkomst": 544.5,
+      "eenheid": "euro",
+      "invoer": true,
+      "balk": {
+       "procent": 121,
+       "deel": 544.5,
+       "geheel": 450
+      }
+     }
+    ],
+    "antwoord": {
+     "waarde": 544.5,
+     "eenheid": "euro",
+     "expr": "500*0.9*1.21"
+    }
+   }
+  },
+  {
+   "id": "O4-EXP-05",
+   "onderdeel": 4,
+   "sectie": "expert",
+   "nummer": "5",
+   "afbeeldingen": [
+    "image94.png"
+   ],
+   "flags": [
+    {
+     "soort": "tekst",
+     "beschrijving": "Punt ontbreekt aan het eind van de vraag. Valkuil: 8% van 161.000 (= 12.880) is fout, want 2012 is 100%.",
+     "voorstel": "In de app: korte zinnen; de stappen laten zien dat 2012 = 100% is."
+    },
+    {
+     "soort": "auteursrecht",
+     "beschrijving": "Schermafbeelding van een nieuwssite.",
+     "voorstel": "Getallen overnemen, beeld opnieuw maken in 3D (zie beeld)."
+    }
+   ],
+   "autoCheck": true,
+   "titel": "Griep",
+   "origineel": "Lees het artikel. Laat met een berekening zien hoeveel meer mensen met griep naar de huisarts gingen in 2012 dan in 2013",
+   "vraag": [
+    "In 2013 gingen 161.000 mensen met griep naar de huisarts.",
+    "Dat was 8% minder dan in 2012.",
+    "Hoeveel mensen meer gingen er in 2012?"
+   ],
+   "type": "getal",
+   "paneel": "procentenbalk",
+   "context": [
+    {
+     "soort": "tekst",
+     "titel": "Minder griepmeldingen in 2013",
+     "items": [
+      {
+       "label": "met griep naar de huisarts in 2013",
+       "waarde": 161000
+      },
+      {
+       "label": "minder dan in 2012",
+       "waarde": 8,
+       "eenheid": "%"
+      }
+     ],
+     "beschrijving": "Nieuwssite met logo \"N\" in een wereldbol. Menu links: Algemeen (gekozen), Sport, Financieel, Tech, Wetenschap. Kop: \"Minder griepmeldingen in 2013\". Tekst: \"In 2013 gingen 161.000 mensen met griep naar de huisarts. Dit was 8% minder dan in 2012. Het griepinstituut verwacht een verdere daling in 2014.\""
+    }
+   ],
+   "beeld": [
+    {
+     "afbeelding": "image94.png",
+     "vorm": "scherm",
+     "ontwerp": "Op de infozuil met nieuwsberichten staat een nieuwssite met een \"N\"-wereldbol als logo en een menu (Algemeen, Sport, Financieel, Tech, Wetenschap). Het bericht \"Minder griepmeldingen in 2013\" schuift in beeld. Naast de zuil staat een apotheek-etalage waar een poppetje met een sjaal niest.",
+     "toont": [
+      "Minder griepmeldingen in 2013",
+      "161.000 mensen met griep in 2013",
+      "8% minder dan in 2012",
+      "verdere daling verwacht in 2014"
+     ],
+     "grap": "Bij elke nies waait er een krant van het bankje."
+    }
+   ],
+   "stappen": [
+    {
+     "tekst": "2012 is 100%, 2013 is 92%",
+     "som": "100% − 8% = 92%",
+     "expr": null,
+     "uitkomst": 92,
+     "invoer": false,
+     "eenheid": "%",
+     "balk": {
+      "procent": 92,
+      "deel": 161000
+     }
+    },
+    {
+     "tekst": "Reken 1% uit",
+     "som": "161.000 : 92",
+     "expr": "161000/92",
+     "uitkomst": 1750,
+     "eenheid": "mensen",
+     "invoer": true,
+     "balk": {
+      "procent": 1,
+      "deel": 1750
+     }
+    },
+    {
+     "tekst": "Reken 2012 uit (100%)",
+     "som": "1750 × 100",
+     "expr": "1750*100",
+     "uitkomst": 175000,
+     "eenheid": "mensen",
+     "invoer": true,
+     "balk": {
+      "procent": 100,
+      "deel": 175000,
+      "geheel": 175000
+     }
+    },
+    {
+     "tekst": "Hoeveel meer?",
+     "som": "175.000 − 161.000",
+     "expr": "175000-161000",
+     "uitkomst": 14000,
+     "eenheid": "mensen",
+     "invoer": true,
+     "balk": {
+      "procent": 8,
+      "deel": 14000,
+      "geheel": 175000
+     }
+    }
+   ],
+   "antwoord": {
+    "waarde": 14000,
+    "eenheid": "mensen",
+    "expr": "161000/0.92-161000"
+   },
+   "voorbeeld": {
+    "vraag": [
+     "Dit jaar kwamen 9.000 mensen naar de beurs.",
+     "Dat was 10% minder dan vorig jaar.",
+     "Hoeveel mensen kwamen er vorig jaar meer?"
+    ],
+    "stappen": [
+     {
+      "tekst": "Vorig jaar is 100%, nu 90%",
+      "som": "100% − 10% = 90%",
+      "expr": null,
+      "uitkomst": 90,
+      "invoer": false,
+      "eenheid": "%",
+      "balk": {
+       "procent": 90,
+       "deel": 9000
+      }
+     },
+     {
+      "tekst": "Reken 1% uit",
+      "som": "9000 : 90",
+      "expr": "9000/90",
+      "uitkomst": 100,
+      "eenheid": "mensen",
+      "invoer": true,
+      "balk": {
+       "procent": 1,
+       "deel": 100
+      }
+     },
+     {
+      "tekst": "Vorig jaar (100%)",
+      "som": "100 × 100",
+      "expr": "100*100",
+      "uitkomst": 10000,
+      "eenheid": "mensen",
+      "invoer": true,
+      "balk": {
+       "procent": 100,
+       "deel": 10000,
+       "geheel": 10000
+      }
+     },
+     {
+      "tekst": "Hoeveel meer?",
+      "som": "10.000 − 9.000",
+      "expr": "10000-9000",
+      "uitkomst": 1000,
+      "eenheid": "mensen",
+      "invoer": true
+     }
+    ],
+    "antwoord": {
+     "waarde": 1000,
+     "eenheid": "mensen",
+     "expr": "9000/0.9-9000"
+    }
+   }
+  },
+  {
+   "id": "O4-EXP-06",
+   "onderdeel": 4,
+   "sectie": "expert",
+   "nummer": "6",
+   "afbeeldingen": [
+    "image95.png"
+   ],
+   "flags": [
+    {
+     "soort": "fout-in-werkboek",
+     "beschrijving": "\"Hoeveel procent betaald Ronald\" moet \"betaalt\" zijn.",
+     "voorstel": "In de app verbeterd."
+    },
+    {
+     "soort": "notatie",
+     "beschrijving": "\"€1224\" zonder spatie en zonder punt.",
+     "voorstel": "In de app: € 1.224."
+    },
+    {
+     "soort": "auteursrecht",
+     "beschrijving": "Stockillustraties van personen.",
+     "voorstel": "Getallen overnemen, beeld opnieuw maken in 3D (zie beeld)."
+    }
+   ],
+   "autoCheck": true,
+   "titel": "Energie besparen",
+   "origineel": "Bekijk de afbeelding: Ronald past de twee besparende tips toe. Daarvoor betaalde hij €1224 per jaar aan energie. Ronald draait 100 keer per jaar een was. Hoeveel procent betaald Ronald per jaar minder aan energie nadat hij de besparingen heeft toegepast? Rond af op 1 decimaal.",
+   "vraag": [
+    "Ronald betaalde € 1.224 per jaar aan energie.",
+    "Nu gebruikt hij twee bespaartips.",
+    "Tip 1: was op 30 graden in plaats van 40 graden.",
+    "Een was op 40 graden kost € 0,49.",
+    "Op 30 graden bespaar je 40%.",
+    "Ronald wast 100 keer per jaar.",
+    "Tip 2: de laptop bespaart € 25 per jaar.",
+    "Hoeveel procent betaalt hij nu minder?",
+    "Rond af op 1 decimaal."
+   ],
+   "type": "getal",
+   "paneel": "procentenbalk",
+   "object3d": "wasmachine",
+   "context": [
+    {
+     "soort": "prijzen",
+     "items": [
+      {
+       "label": "wasbeurt op 40 graden",
+       "waarde": "€ 0,49"
+      },
+      {
+       "label": "besparing als je op 30 graden wast",
+       "waarde": 40,
+       "eenheid": "%"
+      },
+      {
+       "label": "besparing laptop in plaats van pc, per jaar",
+       "waarde": "€ 25"
+      },
+      {
+       "label": "energiekosten per jaar vóór de tips (uit de vraag)",
+       "waarde": 1224,
+       "eenheid": "euro"
+      },
+      {
+       "label": "wasbeurten per jaar (uit de vraag)",
+       "waarde": 100
+      }
+     ],
+     "beschrijving": "Twee getekende kaartjes op een groene achtergrond. Kaartje 1: een vrouw met een wasmand bij twee witte wasmachines in een wasruimte; tekst: \"Elke wasbeurt op 40 graden kost € 0,49. Was op 30 graden, en bespaar 40%!\". Kaartje 2: een vrouw met een baby op schoot achter een roze laptop bij een raam met gele gordijnen; tekst: \"Gebruik de laptop in plaats van de pc en bespaar € 25 per jaar.\""
+    }
+   ],
+   "beeld": [
+    {
+     "afbeelding": "image95.png",
+     "vorm": "poster",
+     "ontwerp": "In de energiewinkel van het winkelcentrum hangen twee grote groene posters met getekende poppetjes. Poster 1 is een wasruimte met twee wasmachines; de draaiknop springt van 40 naar 30 graden en er staat \"€ 0,49 per was op 40 graden – op 30 graden bespaar je 40%\". Poster 2 toont iemand met een baby achter een roze laptop: \"Laptop in plaats van pc: bespaar € 25 per jaar\".",
+     "toont": [
+      "Elke wasbeurt op 40 graden kost € 0,49",
+      "Was op 30 graden en bespaar 40%",
+      "Laptop in plaats van pc: bespaar € 25 per jaar"
+     ],
+     "grap": "Uit de wasmachine kruipt een sok die naar je zwaait."
+    }
+   ],
+   "stappen": [
+    {
+     "tekst": "Besparing per was: 40% van € 0,49",
+     "som": "0,49 × 0,4",
+     "expr": "0.49*0.4",
+     "uitkomst": 0.196,
+     "eenheid": "euro",
+     "invoer": true,
+     "balk": {
+      "procent": 40,
+      "deel": 0.196,
+      "geheel": 0.49
+     }
+    },
+    {
+     "tekst": "Voor 100 wassen",
+     "som": "100 × 0,196",
+     "expr": "100*0.196",
+     "uitkomst": 19.6,
+     "eenheid": "euro",
+     "invoer": true
+    },
+    {
+     "tekst": "Tel de laptop erbij",
+     "som": "19,60 + 25",
+     "expr": "19.6+25",
+     "uitkomst": 44.6,
+     "eenheid": "euro",
+     "invoer": true
+    },
+    {
+     "tekst": "Deel door € 1.224, × 100",
+     "som": "44,60 : 1224 × 100",
+     "expr": "44.6/1224*100",
+     "uitkomst": 3.64,
+     "eenheid": "%",
+     "invoer": true,
+     "afronding": "2-decimalen",
+     "balk": {
+      "procent": 3.64,
+      "deel": 44.6,
+      "geheel": 1224
+     }
+    },
+    {
+     "tekst": "Rond af op 1 decimaal",
+     "som": "3,64 → ...",
+     "expr": "Math.round(44.6/1224*1000)/10",
+     "uitkomst": 3.6,
+     "eenheid": "%",
+     "invoer": true,
+     "balk": {
+      "procent": 3.6,
+      "deel": 44.6,
+      "geheel": 1224
+     }
+    }
+   ],
+   "antwoord": {
+    "waarde": 3.6,
+    "eenheid": "%",
+    "expr": "(0.49*0.4*100+25)/1224*100",
+    "afronding": "1-decimaal"
+   },
+   "voorbeeld": {
+    "vraag": [
+     "Je betaalt € 1.000 per jaar aan energie.",
+     "Een was kost € 0,50.",
+     "Op 30 graden bespaar je 40% per was.",
+     "Je wast 100 keer per jaar.",
+     "Op licht bespaar je € 30.",
+     "Hoeveel procent betaal je minder?"
+    ],
+    "stappen": [
+     {
+      "tekst": "Besparing per was",
+      "som": "0,50 × 0,4",
+      "expr": "0.5*0.4",
+      "uitkomst": 0.2,
+      "eenheid": "euro",
+      "invoer": true,
+      "balk": {
+       "procent": 40,
+       "deel": 0.2,
+       "geheel": 0.5
+      }
+     },
+     {
+      "tekst": "Voor 100 wassen",
+      "som": "100 × 0,20",
+      "expr": "100*0.2",
+      "uitkomst": 20,
+      "eenheid": "euro",
+      "invoer": true
+     },
+     {
+      "tekst": "Tel het licht erbij",
+      "som": "20 + 30",
+      "expr": "20+30",
+      "uitkomst": 50,
+      "eenheid": "euro",
+      "invoer": true
+     },
+     {
+      "tekst": "Deel door € 1.000, × 100",
+      "som": "50 : 1000 × 100",
+      "expr": "50/1000*100",
+      "uitkomst": 5,
+      "eenheid": "%",
+      "invoer": true,
+      "balk": {
+       "procent": 5,
+       "deel": 50,
+       "geheel": 1000
+      }
+     }
+    ],
+    "antwoord": {
+     "waarde": 5,
+     "eenheid": "%",
+     "expr": "50/1000*100",
+     "afronding": "1-decimaal"
+    }
+   }
+  },
+  {
+   "id": "O4-EXP-07a",
+   "onderdeel": 4,
+   "sectie": "expert",
+   "nummer": "7a",
+   "afbeeldingen": [],
+   "flags": [
+    {
+     "soort": "dubbelzinnig",
+     "beschrijving": "Het werkboek zegt niet hoe je afrondt. Precies is het −45,62...% (een daling). Ook 46%, 45,62% of −45,6% is goed.",
+     "voorstel": "De app rekent 45,1 t/m 46,1 goed, ook met minteken."
+    }
+   ],
+   "autoCheck": true,
+   "titel": "Spaanse toeristen",
+   "origineel": "In 2007 kwamen er 2.775 Spanjaarden naar Nederland op vakantie. In de meting van 2023 is te zien dat er maar 1.509 Spanjaarden naar Nederland zijn gekomen voor vakantie. Wat is de procentuele verandering?",
+   "vraag": [
+    "In 2007 kwamen 2.775 Spanjaarden op vakantie naar Nederland.",
+    "In 2023 waren dat er maar 1.509.",
+    "Met hoeveel procent is het aantal veranderd?"
+   ],
+   "type": "getal",
+   "paneel": "procentenbalk",
+   "stappen": [
+    {
+     "tekst": "Hoeveel minder?",
+     "som": "2.775 − 1.509",
+     "expr": "2775-1509",
+     "uitkomst": 1266,
+     "eenheid": "Spanjaarden",
+     "invoer": true
+    },
+    {
+     "tekst": "Deel door 2007, × 100",
+     "som": "1266 : 2775 × 100",
+     "expr": "1266/2775*100",
+     "uitkomst": 45.62,
+     "eenheid": "%",
+     "invoer": true,
+     "afronding": "2-decimalen",
+     "balk": {
+      "procent": 45.62,
+      "deel": 1266,
+      "geheel": 2775
+     }
+    },
+    {
+     "tekst": "Rond af op 1 decimaal",
+     "som": "45,62 → ...",
+     "expr": "Math.round(1266/2775*1000)/10",
+     "uitkomst": 45.6,
+     "eenheid": "%",
+     "invoer": true,
+     "balk": {
+      "procent": 45.6,
+      "deel": 1266,
+      "geheel": 2775
+     }
+    }
+   ],
+   "antwoord": {
+    "waarde": 45.6,
+    "eenheid": "%",
+    "expr": "(2775-1509)/2775*100",
+    "afronding": "1-decimaal",
+    "tolerantie": 0.5,
+    "alternatieven": [
+     -45.6,
+     46,
+     -46
+    ]
+   },
+   "voorbeeld": {
+    "vraag": [
+     "In 2010 kwamen 2.000 toeristen.",
+     "In 2020 waren het er 1.500.",
+     "Met hoeveel procent is het aantal veranderd?"
+    ],
+    "stappen": [
+     {
+      "tekst": "Hoeveel minder?",
+      "som": "2000 − 1500",
+      "expr": "2000-1500",
+      "uitkomst": 500,
+      "eenheid": "toeristen",
+      "invoer": true
+     },
+     {
+      "tekst": "Deel door 2010, × 100",
+      "som": "500 : 2000 × 100",
+      "expr": "500/2000*100",
+      "uitkomst": 25,
+      "eenheid": "%",
+      "invoer": true,
+      "balk": {
+       "procent": 25,
+       "deel": 500,
+       "geheel": 2000
+      }
+     }
+    ],
+    "antwoord": {
+     "waarde": 25,
+     "eenheid": "%",
+     "expr": "500/2000*100",
+     "afronding": "1-decimaal"
+    }
+   }
+  },
+  {
+   "id": "O4-EXP-07b",
+   "onderdeel": 4,
+   "sectie": "expert",
+   "nummer": "7b",
+   "afbeeldingen": [],
+   "flags": [],
+   "autoCheck": true,
+   "titel": "Spaanse toeristen",
+   "origineel": "En is dit een daling of stijging?",
+   "vraag": [
+    "Het aantal ging van 2.775 naar 1.509.",
+    "Is dat een daling of een stijging?"
+   ],
+   "type": "keuze",
+   "keuzes": [
+    "daling",
+    "stijging"
+   ],
+   "paneel": "keuze",
+   "stappen": [
+    {
+     "tekst": "Vergelijk de aantallen",
+     "som": "1.509 is minder dan 2.775",
+     "expr": null,
+     "uitkomst": "daling",
+     "invoer": false
+    }
+   ],
+   "antwoord": {
+    "waarde": "daling",
+    "expr": null
+   },
+   "voorbeeld": {
+    "vraag": [
+     "Vorig jaar kwamen 300 bezoekers.",
+     "Dit jaar kwamen er 450.",
+     "Is dat een daling of een stijging?"
+    ],
+    "stappen": [
+     {
+      "tekst": "Vergelijk de aantallen",
+      "som": "450 is meer dan 300",
+      "expr": null,
+      "uitkomst": "stijging",
+      "invoer": false
+     }
+    ],
+    "antwoord": {
+     "waarde": "stijging",
+     "expr": null
+    }
+   }
+  },
+  {
+   "id": "O4-EXP-08",
+   "onderdeel": 4,
+   "sectie": "expert",
+   "nummer": "8",
+   "afbeeldingen": [
+    "image96.png"
+   ],
+   "flags": [
+    {
+     "soort": "fout-in-werkboek",
+     "beschrijving": "\"Niveau\" (2×) moet \"Nivea\" zijn; de naam wisselt met \"Nivea-crème\". De jaartallen wisselen: \"In 2003 woonden er 7 miljard mensen\", maar de vraag gaat over 2013.",
+     "voorstel": "In de app: overal \"Nivea\" en overal 2013. Het antwoord blijft 7%. Docent beslist definitief."
+    },
+    {
+     "soort": "auteursrecht",
+     "beschrijving": "Productfoto met merk (Nivea).",
+     "voorstel": "Getallen overnemen, beeld opnieuw maken in 3D (zie beeld)."
+    },
+    {
+     "soort": "tekst",
+     "beschrijving": "De tekst noemt \"blikjes en flesjes\"; de foto toont een pot. Punt ontbreekt na \"Rond af op hele procenten\".",
+     "voorstel": "In de app: een crèmepot."
+    }
+   ],
+   "autoCheck": true,
+   "titel": "Crème",
+   "origineel": "Niveau verkoopt al 100 jaar crème in verschillende blikjes en flesjes. Een half miljard mensen wereldwijd gebruiken Niveau-crème. In 2003 woonden er 7 miljard mensen op de wereld. Hoeveel procent van de mensen op de wereld gebruikte in 2013 Nivea-crème? Rond af op hele procenten",
+   "vraag": [
+    "Nivea verkoopt al 100 jaar crème.",
+    "Een half miljard mensen gebruikt Nivea-crème.",
+    "In 2013 woonden er 7 miljard mensen op de wereld.",
+    "Hoeveel procent gebruikte in 2013 Nivea-crème?",
+    "Rond af op hele procenten."
+   ],
+   "type": "getal",
+   "paneel": "procentenbalk",
+   "object3d": "cremepot",
+   "context": [
+    {
+     "soort": "anders",
+     "beschrijving": "Productfoto: ronde donkerblauwe crèmepot met witte letters \"NIVEA Creme\" en klein \"NET WT 13.5 oz · 382 g\". Er staan geen getallen op die je voor de som nodig hebt."
+    }
+   ],
+   "beeld": [
+    {
+     "afbeelding": "image96.png",
+     "vorm": "model",
+     "ontwerp": "In de drogisterij van het winkelcentrum staat op een draaiende sokkel een grote donkerblauwe crèmepot met witte letters \"Crème\". Boven de pot draait een kleine wereldbol met twee tellers: \"7 miljard mensen\" en in blauw \"een half miljard gebruikers\". Je kunt de pot oppakken en de deksel eraf draaien.",
+     "toont": [
+      "een half miljard gebruikers",
+      "7 miljard mensen op de wereld"
+     ],
+     "grap": "Onder de deksel is een glimlach in de crème getekend."
+    }
+   ],
+   "stappen": [
+    {
+     "tekst": "Een half miljard = 0,5 miljard",
+     "som": "500.000.000 van 7.000.000.000",
+     "expr": null,
+     "uitkomst": "0,5 van 7 miljard",
+     "invoer": false
+    },
+    {
+     "tekst": "Deel en doe × 100",
+     "som": "0,5 : 7 × 100",
+     "expr": "0.5/7*100",
+     "uitkomst": 7.14,
+     "eenheid": "%",
+     "invoer": true,
+     "afronding": "2-decimalen",
+     "balk": {
+      "procent": 7.14,
+      "deel": 0.5,
+      "geheel": 7
+     }
+    },
+    {
+     "tekst": "Rond af op hele procenten",
+     "som": "7,14 → ...",
+     "expr": "Math.round(0.5/7*100)",
+     "uitkomst": 7,
+     "eenheid": "%",
+     "invoer": true,
+     "balk": {
+      "procent": 7,
+      "deel": 0.5,
+      "geheel": 7
+     }
+    }
+   ],
+   "antwoord": {
+    "waarde": 7,
+    "eenheid": "%",
+    "expr": "500000000/7000000000*100",
+    "afronding": "heel"
+   },
+   "voorbeeld": {
+    "vraag": [
+     "Een app heeft 3 miljoen gebruikers.",
+     "Het land heeft 16 miljoen inwoners.",
+     "Hoeveel procent gebruikt de app?",
+     "Rond af op hele procenten."
+    ],
+    "stappen": [
+     {
+      "tekst": "Deel en doe × 100",
+      "som": "3 : 16 × 100",
+      "expr": "3/16*100",
+      "uitkomst": 18.75,
+      "eenheid": "%",
+      "invoer": true,
+      "balk": {
+       "procent": 18.75,
+       "deel": 3,
+       "geheel": 16
+      }
+     },
+     {
+      "tekst": "Rond af",
+      "som": "18,75 → ...",
+      "expr": "Math.round(18.75)",
+      "uitkomst": 19,
+      "eenheid": "%",
+      "invoer": true
+     }
+    ],
+    "antwoord": {
+     "waarde": 19,
+     "eenheid": "%",
+     "expr": "3/16*100",
+     "afronding": "heel"
+    }
+   }
+  },
+  {
+   "id": "O4-PRA-01a",
+   "onderdeel": 4,
+   "sectie": "praktijk",
+   "nummer": "Aa",
+   "afbeeldingen": [],
+   "flags": [
+    {
+     "soort": "notatie",
+     "beschrijving": "In de tabel \"€500\", \"€480\" en \"€520\" zonder spatie (geldt voor heel opdracht A).",
+     "voorstel": "In de app: € 500, € 480 en € 520."
+    }
+   ],
+   "autoCheck": true,
+   "titel": "Aanbiedingen vergelijken",
+   "paneel": "procentenbalk",
+   "object3d": "telefoon",
+   "context": [
+    {
+     "soort": "tabel",
+     "titel": "Aanbiedingen telefoon",
+     "kolommen": [
+      "Winkel",
+      "Prijs",
+      "Korting"
+     ],
+     "rijen": [
+      [
+       "A",
+       "€ 500",
+       "10%"
+      ],
+      [
+       "B",
+       "€ 480",
+       "5%"
+      ],
+      [
+       "C",
+       "€ 520",
+       "15%"
+      ]
+     ],
+     "beschrijving": "Tabel uit het werkboek: drie winkels verkopen dezelfde telefoon. Winkel A € 500 met 10% korting, winkel B € 480 met 5% korting, winkel C € 520 met 15% korting."
+    }
+   ],
+   "origineel": "Reken uit hoeveel korting je krijgt bij elke winkel.",
+   "vraag": [
+    "Winkel A verkoopt de telefoon voor € 500.",
+    "Je krijgt 10% korting.",
+    "Hoeveel euro korting krijg je?"
+   ],
+   "type": "getal",
+   "stappen": [
+    {
+     "tekst": "10% is een tiende",
+     "som": "500 : 10",
+     "expr": "500/10",
+     "uitkomst": 50,
+     "eenheid": "euro",
+     "invoer": true,
+     "balk": {
+      "procent": 10,
+      "deel": 50,
+      "geheel": 500
+     }
+    }
+   ],
+   "antwoord": {
+    "waarde": 50,
+    "eenheid": "euro",
+    "expr": "500*0.1"
+   },
+   "voorbeeld": {
+    "vraag": [
+     "Een telefoon kost € 300.",
+     "Je krijgt 10% korting.",
+     "Hoeveel euro korting is dat?"
+    ],
+    "stappen": [
+     {
+      "tekst": "10% is een tiende",
+      "som": "300 : 10",
+      "expr": "300/10",
+      "uitkomst": 30,
+      "eenheid": "euro",
+      "invoer": true,
+      "balk": {
+       "procent": 10,
+       "deel": 30,
+       "geheel": 300
+      }
+     }
+    ],
+    "antwoord": {
+     "waarde": 30,
+     "eenheid": "euro",
+     "expr": "300*0.1"
+    }
+   }
+  },
+  {
+   "id": "O4-PRA-01b",
+   "onderdeel": 4,
+   "sectie": "praktijk",
+   "nummer": "Ab",
+   "afbeeldingen": [],
+   "flags": [],
+   "autoCheck": true,
+   "titel": "Aanbiedingen vergelijken",
+   "paneel": "procentenbalk",
+   "object3d": "telefoon",
+   "context": [
+    {
+     "soort": "tabel",
+     "titel": "Aanbiedingen telefoon",
+     "kolommen": [
+      "Winkel",
+      "Prijs",
+      "Korting"
+     ],
+     "rijen": [
+      [
+       "A",
+       "€ 500",
+       "10%"
+      ],
+      [
+       "B",
+       "€ 480",
+       "5%"
+      ],
+      [
+       "C",
+       "€ 520",
+       "15%"
+      ]
+     ],
+     "beschrijving": "Tabel uit het werkboek: drie winkels verkopen dezelfde telefoon. Winkel A € 500 met 10% korting, winkel B € 480 met 5% korting, winkel C € 520 met 15% korting."
+    }
+   ],
+   "origineel": "Reken uit hoeveel korting je krijgt bij elke winkel.",
+   "vraag": [
+    "Winkel B verkoopt de telefoon voor € 480.",
+    "Je krijgt 5% korting.",
+    "Hoeveel euro korting krijg je?"
+   ],
+   "type": "getal",
+   "stappen": [
+    {
+     "tekst": "Reken 10% uit",
+     "som": "480 : 10",
+     "expr": "480/10",
+     "uitkomst": 48,
+     "eenheid": "euro",
+     "invoer": true,
+     "balk": {
+      "procent": 10,
+      "deel": 48,
+      "geheel": 480
+     }
+    },
+    {
+     "tekst": "5% is de helft",
+     "som": "48 : 2",
+     "expr": "48/2",
+     "uitkomst": 24,
+     "eenheid": "euro",
+     "invoer": true,
+     "balk": {
+      "procent": 5,
+      "deel": 24,
+      "geheel": 480
+     }
+    }
+   ],
+   "antwoord": {
+    "waarde": 24,
+    "eenheid": "euro",
+    "expr": "480*0.05"
+   },
+   "voorbeeld": {
+    "vraag": [
+     "Een telefoon kost € 600.",
+     "Je krijgt 5% korting.",
+     "Hoeveel euro korting is dat?"
+    ],
+    "stappen": [
+     {
+      "tekst": "Reken 10% uit",
+      "som": "600 : 10",
+      "expr": "600/10",
+      "uitkomst": 60,
+      "eenheid": "euro",
+      "invoer": true,
+      "balk": {
+       "procent": 10,
+       "deel": 60,
+       "geheel": 600
+      }
+     },
+     {
+      "tekst": "5% is de helft",
+      "som": "60 : 2",
+      "expr": "60/2",
+      "uitkomst": 30,
+      "eenheid": "euro",
+      "invoer": true,
+      "balk": {
+       "procent": 5,
+       "deel": 30,
+       "geheel": 600
+      }
+     }
+    ],
+    "antwoord": {
+     "waarde": 30,
+     "eenheid": "euro",
+     "expr": "600*0.05"
+    }
+   }
+  },
+  {
+   "id": "O4-PRA-01c",
+   "onderdeel": 4,
+   "sectie": "praktijk",
+   "nummer": "Ac",
+   "afbeeldingen": [],
+   "flags": [],
+   "autoCheck": true,
+   "titel": "Aanbiedingen vergelijken",
+   "paneel": "procentenbalk",
+   "object3d": "telefoon",
+   "context": [
+    {
+     "soort": "tabel",
+     "titel": "Aanbiedingen telefoon",
+     "kolommen": [
+      "Winkel",
+      "Prijs",
+      "Korting"
+     ],
+     "rijen": [
+      [
+       "A",
+       "€ 500",
+       "10%"
+      ],
+      [
+       "B",
+       "€ 480",
+       "5%"
+      ],
+      [
+       "C",
+       "€ 520",
+       "15%"
+      ]
+     ],
+     "beschrijving": "Tabel uit het werkboek: drie winkels verkopen dezelfde telefoon. Winkel A € 500 met 10% korting, winkel B € 480 met 5% korting, winkel C € 520 met 15% korting."
+    }
+   ],
+   "origineel": "Reken uit hoeveel korting je krijgt bij elke winkel.",
+   "vraag": [
+    "Winkel C verkoopt de telefoon voor € 520.",
+    "Je krijgt 15% korting.",
+    "Hoeveel euro korting krijg je?"
+   ],
+   "type": "getal",
+   "stappen": [
+    {
+     "tekst": "Reken 10% uit",
+     "som": "520 : 10",
+     "expr": "520/10",
+     "uitkomst": 52,
+     "eenheid": "euro",
+     "invoer": true,
+     "balk": {
+      "procent": 10,
+      "deel": 52,
+      "geheel": 520
+     }
+    },
+    {
+     "tekst": "5% is de helft",
+     "som": "52 : 2",
+     "expr": "52/2",
+     "uitkomst": 26,
+     "eenheid": "euro",
+     "invoer": true,
+     "balk": {
+      "procent": 5,
+      "deel": 26,
+      "geheel": 520
+     }
+    },
+    {
+     "tekst": "Tel op: 10% + 5%",
+     "som": "52 + 26",
+     "expr": "52+26",
+     "uitkomst": 78,
+     "eenheid": "euro",
+     "invoer": true,
+     "balk": {
+      "procent": 15,
+      "deel": 78,
+      "geheel": 520
+     }
+    }
+   ],
+   "antwoord": {
+    "waarde": 78,
+    "eenheid": "euro",
+    "expr": "520*0.15"
+   },
+   "voorbeeld": {
+    "vraag": [
+     "Een telefoon kost € 400.",
+     "Je krijgt 15% korting.",
+     "Hoeveel euro korting is dat?"
+    ],
+    "stappen": [
+     {
+      "tekst": "Reken 10% uit",
+      "som": "400 : 10",
+      "expr": "400/10",
+      "uitkomst": 40,
+      "eenheid": "euro",
+      "invoer": true,
+      "balk": {
+       "procent": 10,
+       "deel": 40,
+       "geheel": 400
+      }
+     },
+     {
+      "tekst": "5% is de helft",
+      "som": "40 : 2",
+      "expr": "40/2",
+      "uitkomst": 20,
+      "eenheid": "euro",
+      "invoer": true,
+      "balk": {
+       "procent": 5,
+       "deel": 20,
+       "geheel": 400
+      }
+     },
+     {
+      "tekst": "Tel op",
+      "som": "40 + 20",
+      "expr": "40+20",
+      "uitkomst": 60,
+      "eenheid": "euro",
+      "invoer": true,
+      "balk": {
+       "procent": 15,
+       "deel": 60,
+       "geheel": 400
+      }
+     }
+    ],
+    "antwoord": {
+     "waarde": 60,
+     "eenheid": "euro",
+     "expr": "400*0.15"
+    }
+   }
+  },
+  {
+   "id": "O4-PRA-01d",
+   "onderdeel": 4,
+   "sectie": "praktijk",
+   "nummer": "Ad",
+   "afbeeldingen": [],
+   "flags": [],
+   "autoCheck": true,
+   "titel": "Aanbiedingen vergelijken",
+   "paneel": "procentenbalk",
+   "object3d": "telefoon",
+   "context": [
+    {
+     "soort": "tabel",
+     "titel": "Aanbiedingen telefoon",
+     "kolommen": [
+      "Winkel",
+      "Prijs",
+      "Korting"
+     ],
+     "rijen": [
+      [
+       "A",
+       "€ 500",
+       "10%"
+      ],
+      [
+       "B",
+       "€ 480",
+       "5%"
+      ],
+      [
+       "C",
+       "€ 520",
+       "15%"
+      ]
+     ],
+     "beschrijving": "Tabel uit het werkboek: drie winkels verkopen dezelfde telefoon. Winkel A € 500 met 10% korting, winkel B € 480 met 5% korting, winkel C € 520 met 15% korting."
+    }
+   ],
+   "origineel": "Bereken de prijs die je uiteindelijk betaalt bij elke winkel.",
+   "vraag": [
+    "Winkel A: € 500 met € 50 korting.",
+    "Hoeveel betaal je bij winkel A?"
+   ],
+   "type": "getal",
+   "stappen": [
+    {
+     "tekst": "Haal de korting eraf",
+     "som": "500 − 50",
+     "expr": "500-50",
+     "uitkomst": 450,
+     "eenheid": "euro",
+     "invoer": true,
+     "balk": {
+      "procent": 90,
+      "deel": 450,
+      "geheel": 500
+     }
+    }
+   ],
+   "antwoord": {
+    "waarde": 450,
+    "eenheid": "euro",
+    "expr": "500*0.9"
+   },
+   "voorbeeld": {
+    "vraag": [
+     "Een telefoon kost € 300.",
+     "Je krijgt € 30 korting.",
+     "Hoeveel betaal je?"
+    ],
+    "stappen": [
+     {
+      "tekst": "Haal de korting eraf",
+      "som": "300 − 30",
+      "expr": "300-30",
+      "uitkomst": 270,
+      "eenheid": "euro",
+      "invoer": true,
+      "balk": {
+       "procent": 90,
+       "deel": 270,
+       "geheel": 300
+      }
+     }
+    ],
+    "antwoord": {
+     "waarde": 270,
+     "eenheid": "euro",
+     "expr": "300-30"
+    }
+   }
+  },
+  {
+   "id": "O4-PRA-01e",
+   "onderdeel": 4,
+   "sectie": "praktijk",
+   "nummer": "Ae",
+   "afbeeldingen": [],
+   "flags": [],
+   "autoCheck": true,
+   "titel": "Aanbiedingen vergelijken",
+   "paneel": "procentenbalk",
+   "object3d": "telefoon",
+   "context": [
+    {
+     "soort": "tabel",
+     "titel": "Aanbiedingen telefoon",
+     "kolommen": [
+      "Winkel",
+      "Prijs",
+      "Korting"
+     ],
+     "rijen": [
+      [
+       "A",
+       "€ 500",
+       "10%"
+      ],
+      [
+       "B",
+       "€ 480",
+       "5%"
+      ],
+      [
+       "C",
+       "€ 520",
+       "15%"
+      ]
+     ],
+     "beschrijving": "Tabel uit het werkboek: drie winkels verkopen dezelfde telefoon. Winkel A € 500 met 10% korting, winkel B € 480 met 5% korting, winkel C € 520 met 15% korting."
+    }
+   ],
+   "origineel": "Bereken de prijs die je uiteindelijk betaalt bij elke winkel.",
+   "vraag": [
+    "Winkel B: € 480 met € 24 korting.",
+    "Hoeveel betaal je bij winkel B?"
+   ],
+   "type": "getal",
+   "stappen": [
+    {
+     "tekst": "Haal de korting eraf",
+     "som": "480 − 24",
+     "expr": "480-24",
+     "uitkomst": 456,
+     "eenheid": "euro",
+     "invoer": true,
+     "balk": {
+      "procent": 95,
+      "deel": 456,
+      "geheel": 480
+     }
+    }
+   ],
+   "antwoord": {
+    "waarde": 456,
+    "eenheid": "euro",
+    "expr": "480*0.95"
+   },
+   "voorbeeld": {
+    "vraag": [
+     "Een telefoon kost € 600.",
+     "Je krijgt € 30 korting.",
+     "Hoeveel betaal je?"
+    ],
+    "stappen": [
+     {
+      "tekst": "Haal de korting eraf",
+      "som": "600 − 30",
+      "expr": "600-30",
+      "uitkomst": 570,
+      "eenheid": "euro",
+      "invoer": true,
+      "balk": {
+       "procent": 95,
+       "deel": 570,
+       "geheel": 600
+      }
+     }
+    ],
+    "antwoord": {
+     "waarde": 570,
+     "eenheid": "euro",
+     "expr": "600-30"
+    }
+   }
+  },
+  {
+   "id": "O4-PRA-01f",
+   "onderdeel": 4,
+   "sectie": "praktijk",
+   "nummer": "Af",
+   "afbeeldingen": [],
+   "flags": [],
+   "autoCheck": true,
+   "titel": "Aanbiedingen vergelijken",
+   "paneel": "procentenbalk",
+   "object3d": "telefoon",
+   "context": [
+    {
+     "soort": "tabel",
+     "titel": "Aanbiedingen telefoon",
+     "kolommen": [
+      "Winkel",
+      "Prijs",
+      "Korting"
+     ],
+     "rijen": [
+      [
+       "A",
+       "€ 500",
+       "10%"
+      ],
+      [
+       "B",
+       "€ 480",
+       "5%"
+      ],
+      [
+       "C",
+       "€ 520",
+       "15%"
+      ]
+     ],
+     "beschrijving": "Tabel uit het werkboek: drie winkels verkopen dezelfde telefoon. Winkel A € 500 met 10% korting, winkel B € 480 met 5% korting, winkel C € 520 met 15% korting."
+    }
+   ],
+   "origineel": "Bereken de prijs die je uiteindelijk betaalt bij elke winkel.",
+   "vraag": [
+    "Winkel C: € 520 met € 78 korting.",
+    "Hoeveel betaal je bij winkel C?"
+   ],
+   "type": "getal",
+   "stappen": [
+    {
+     "tekst": "Haal de korting eraf",
+     "som": "520 − 78",
+     "expr": "520-78",
+     "uitkomst": 442,
+     "eenheid": "euro",
+     "invoer": true,
+     "balk": {
+      "procent": 85,
+      "deel": 442,
+      "geheel": 520
+     }
+    }
+   ],
+   "antwoord": {
+    "waarde": 442,
+    "eenheid": "euro",
+    "expr": "520*0.85"
+   },
+   "voorbeeld": {
+    "vraag": [
+     "Een telefoon kost € 400.",
+     "Je krijgt € 60 korting.",
+     "Hoeveel betaal je?"
+    ],
+    "stappen": [
+     {
+      "tekst": "Haal de korting eraf",
+      "som": "400 − 60",
+      "expr": "400-60",
+      "uitkomst": 340,
+      "eenheid": "euro",
+      "invoer": true,
+      "balk": {
+       "procent": 85,
+       "deel": 340,
+       "geheel": 400
+      }
+     }
+    ],
+    "antwoord": {
+     "waarde": 340,
+     "eenheid": "euro",
+     "expr": "400-60"
+    }
+   }
+  },
+  {
+   "id": "O4-PRA-01g",
+   "onderdeel": 4,
+   "sectie": "praktijk",
+   "nummer": "Ag",
+   "afbeeldingen": [],
+   "flags": [],
+   "autoCheck": true,
+   "titel": "Aanbiedingen vergelijken",
+   "paneel": "tabel",
+   "object3d": "telefoon",
+   "context": [
+    {
+     "soort": "tabel",
+     "titel": "Aanbiedingen telefoon",
+     "kolommen": [
+      "Winkel",
+      "Prijs",
+      "Korting"
+     ],
+     "rijen": [
+      [
+       "A",
+       "€ 500",
+       "10%"
+      ],
+      [
+       "B",
+       "€ 480",
+       "5%"
+      ],
+      [
+       "C",
+       "€ 520",
+       "15%"
+      ]
+     ],
+     "beschrijving": "Tabel uit het werkboek: drie winkels verkopen dezelfde telefoon. Winkel A € 500 met 10% korting, winkel B € 480 met 5% korting, winkel C € 520 met 15% korting."
+    }
+   ],
+   "origineel": "Zet de drie prijzen op volgorde van laag naar hoog.",
+   "vraag": [
+    "Winkel A kost € 450.",
+    "Winkel B kost € 456.",
+    "Winkel C kost € 442.",
+    "Zet de winkels op volgorde van laag naar hoog."
+   ],
+   "type": "tekst",
+   "stappen": [
+    {
+     "tekst": "Zoek de laagste prijs",
+     "som": "€ 442 is het laagst",
+     "expr": null,
+     "uitkomst": "C",
+     "invoer": false
+    },
+    {
+     "tekst": "Zet de rest erachter",
+     "som": "€ 442 < € 450 < € 456",
+     "expr": null,
+     "uitkomst": "C, A, B",
+     "invoer": false
+    }
+   ],
+   "antwoord": {
+    "waarde": "C, A, B",
+    "expr": null,
+    "alternatieven": [
+     "C A B",
+     "CAB",
+     "€ 442, € 450, € 456",
+     "442, 450, 456"
+    ]
+   },
+   "voorbeeld": {
+    "vraag": [
+     "Winkel P kost € 90.",
+     "Winkel Q kost € 85.",
+     "Winkel R kost € 95.",
+     "Zet ze op volgorde van laag naar hoog."
+    ],
+    "stappen": [
+     {
+      "tekst": "Vergelijk",
+      "som": "€ 85 < € 90 < € 95",
+      "expr": null,
+      "uitkomst": "Q, P, R",
+      "invoer": false
+     }
+    ],
+    "antwoord": {
+     "waarde": "Q, P, R",
+     "expr": null
+    }
+   }
+  },
+  {
+   "id": "O4-PRA-01h",
+   "onderdeel": 4,
+   "sectie": "praktijk",
+   "nummer": "Ah",
+   "afbeeldingen": [],
+   "flags": [],
+   "autoCheck": true,
+   "titel": "Aanbiedingen vergelijken",
+   "paneel": "keuze",
+   "object3d": "telefoon",
+   "context": [
+    {
+     "soort": "tabel",
+     "titel": "Aanbiedingen telefoon",
+     "kolommen": [
+      "Winkel",
+      "Prijs",
+      "Korting"
+     ],
+     "rijen": [
+      [
+       "A",
+       "€ 500",
+       "10%"
+      ],
+      [
+       "B",
+       "€ 480",
+       "5%"
+      ],
+      [
+       "C",
+       "€ 520",
+       "15%"
+      ]
+     ],
+     "beschrijving": "Tabel uit het werkboek: drie winkels verkopen dezelfde telefoon. Winkel A € 500 met 10% korting, winkel B € 480 met 5% korting, winkel C € 520 met 15% korting."
+    }
+   ],
+   "origineel": "Welke winkel is het voordeligst?",
+   "vraag": [
+    "A kost € 450, B € 456 en C € 442.",
+    "Welke winkel is het voordeligst?"
+   ],
+   "type": "keuze",
+   "keuzes": [
+    "Winkel A",
+    "Winkel B",
+    "Winkel C"
+   ],
+   "stappen": [
+    {
+     "tekst": "Kies de laagste prijs",
+     "som": "€ 442 is het laagst",
+     "expr": null,
+     "uitkomst": "Winkel C",
+     "invoer": false
+    }
+   ],
+   "antwoord": {
+    "waarde": "Winkel C",
+    "expr": null,
+    "alternatieven": [
+     "C"
+    ]
+   },
+   "voorbeeld": {
+    "vraag": [
+     "P kost € 90, Q € 85 en R € 95.",
+     "Welke winkel is het voordeligst?"
+    ],
+    "stappen": [
+     {
+      "tekst": "Kies de laagste prijs",
+      "som": "€ 85 is het laagst",
+      "expr": null,
+      "uitkomst": "Q",
+      "invoer": false
+     }
+    ],
+    "antwoord": {
+     "waarde": "Q",
+     "expr": null
+    }
+   }
+  },
+  {
+   "id": "O4-PRA-01i",
+   "onderdeel": 4,
+   "sectie": "praktijk",
+   "nummer": "Ai",
+   "afbeeldingen": [],
+   "flags": [],
+   "autoCheck": true,
+   "titel": "Aanbiedingen vergelijken",
+   "paneel": "procentenbalk",
+   "object3d": "telefoon",
+   "context": [
+    {
+     "soort": "tabel",
+     "titel": "Aanbiedingen telefoon",
+     "kolommen": [
+      "Winkel",
+      "Prijs",
+      "Korting"
+     ],
+     "rijen": [
+      [
+       "A",
+       "€ 500",
+       "10%"
+      ],
+      [
+       "B",
+       "€ 480",
+       "5%"
+      ],
+      [
+       "C",
+       "€ 520",
+       "15%"
+      ]
+     ],
+     "beschrijving": "Tabel uit het werkboek: drie winkels verkopen dezelfde telefoon. Winkel A € 500 met 10% korting, winkel B € 480 met 5% korting, winkel C € 520 met 15% korting."
+    }
+   ],
+   "origineel": "Extra uitdaging: - Wat als winkel B ineens 10% korting geeft? Hoe verandert je keuze dan?",
+   "vraag": [
+    "Winkel B geeft nu 10% korting.",
+    "De telefoon kost daar € 480.",
+    "Wat betaal je nu bij winkel B?"
+   ],
+   "type": "getal",
+   "stappen": [
+    {
+     "tekst": "Reken 10% uit",
+     "som": "480 : 10",
+     "expr": "480/10",
+     "uitkomst": 48,
+     "eenheid": "euro",
+     "invoer": true,
+     "balk": {
+      "procent": 10,
+      "deel": 48,
+      "geheel": 480
+     }
+    },
+    {
+     "tekst": "Haal de korting eraf",
+     "som": "480 − 48",
+     "expr": "480-48",
+     "uitkomst": 432,
+     "eenheid": "euro",
+     "invoer": true,
+     "balk": {
+      "procent": 90,
+      "deel": 432,
+      "geheel": 480
+     }
+    }
+   ],
+   "antwoord": {
+    "waarde": 432,
+    "eenheid": "euro",
+    "expr": "480*0.9"
+   },
+   "voorbeeld": {
+    "vraag": [
+     "Een telefoon kost € 250.",
+     "Je krijgt 10% korting.",
+     "Wat betaal je?"
+    ],
+    "stappen": [
+     {
+      "tekst": "Reken 10% uit",
+      "som": "250 : 10",
+      "expr": "250/10",
+      "uitkomst": 25,
+      "eenheid": "euro",
+      "invoer": true,
+      "balk": {
+       "procent": 10,
+       "deel": 25,
+       "geheel": 250
+      }
+     },
+     {
+      "tekst": "Haal de korting eraf",
+      "som": "250 − 25",
+      "expr": "250-25",
+      "uitkomst": 225,
+      "eenheid": "euro",
+      "invoer": true,
+      "balk": {
+       "procent": 90,
+       "deel": 225,
+       "geheel": 250
+      }
+     }
+    ],
+    "antwoord": {
+     "waarde": 225,
+     "eenheid": "euro",
+     "expr": "250*0.9"
+    }
+   }
+  },
+  {
+   "id": "O4-PRA-01j",
+   "onderdeel": 4,
+   "sectie": "praktijk",
+   "nummer": "Aj",
+   "afbeeldingen": [],
+   "flags": [
+    {
+     "soort": "tekst",
+     "beschrijving": "\"Hoe verandert je keuze dan?\" is een open vraag.",
+     "voorstel": "De app vraagt: welke winkel is nu het voordeligst? (Je keuze gaat van C naar B.)"
+    }
+   ],
+   "autoCheck": true,
+   "titel": "Aanbiedingen vergelijken",
+   "paneel": "keuze",
+   "object3d": "telefoon",
+   "context": [
+    {
+     "soort": "tabel",
+     "titel": "Aanbiedingen telefoon",
+     "kolommen": [
+      "Winkel",
+      "Prijs",
+      "Korting"
+     ],
+     "rijen": [
+      [
+       "A",
+       "€ 500",
+       "10%"
+      ],
+      [
+       "B",
+       "€ 480",
+       "5%"
+      ],
+      [
+       "C",
+       "€ 520",
+       "15%"
+      ]
+     ],
+     "beschrijving": "Tabel uit het werkboek: drie winkels verkopen dezelfde telefoon. Winkel A € 500 met 10% korting, winkel B € 480 met 5% korting, winkel C € 520 met 15% korting."
+    }
+   ],
+   "origineel": "Extra uitdaging: - Wat als winkel B ineens 10% korting geeft? Hoe verandert je keuze dan?",
+   "vraag": [
+    "Winkel B geeft nu 10% korting: € 432.",
+    "Winkel A kost € 450, winkel C € 442.",
+    "Welke winkel is nu het voordeligst?"
+   ],
+   "type": "keuze",
+   "keuzes": [
+    "Winkel A",
+    "Winkel B",
+    "Winkel C"
+   ],
+   "stappen": [
+    {
+     "tekst": "Vergelijk de nieuwe prijzen",
+     "som": "€ 432 < € 442 < € 450",
+     "expr": null,
+     "uitkomst": "Winkel B",
+     "invoer": false
+    }
+   ],
+   "antwoord": {
+    "waarde": "Winkel B",
+    "expr": null,
+    "alternatieven": [
+     "B"
+    ]
+   },
+   "voorbeeld": {
+    "vraag": [
+     "P kost nu € 80, Q € 85 en R € 95.",
+     "Welke winkel is nu het voordeligst?"
+    ],
+    "stappen": [
+     {
+      "tekst": "Vergelijk",
+      "som": "€ 80 < € 85 < € 95",
+      "expr": null,
+      "uitkomst": "P",
+      "invoer": false
+     }
+    ],
+    "antwoord": {
+     "waarde": "P",
+     "expr": null
+    }
+   }
+  },
+  {
+   "id": "O4-PRA-02",
+   "onderdeel": 4,
+   "sectie": "praktijk",
+   "nummer": "B",
+   "afbeeldingen": [],
+   "flags": [
+    {
+     "soort": "niet-automatisch",
+     "beschrijving": "Eigen product, eigen prijzen en eigen actie; de app kan dit niet nakijken.",
+     "voorstel": "Buitenmissie: docent keurt goed met code."
+    },
+    {
+     "soort": "tekst",
+     "beschrijving": "Voor \"winst\" heb je ook de kosten per product nodig; die vraagt het werkboek niet. \"50 of 100 producten\" kan ook \"50 en 100\" betekenen.",
+     "voorstel": "In de app: vraag ook naar de kosten per product en reken beide aantallen uit."
+    },
+    {
+     "soort": "notatie",
+     "beschrijving": "\"€1,50\" zonder spatie.",
+     "voorstel": "In de app: € 1,50."
+    }
+   ],
+   "autoCheck": false,
+   "titel": "Je eigen actie bedenken",
+   "origineel": "Situatie: Je organiseert een actie voor een goed doel, bijvoorbeeld voor dierenopvang, sportclub of een klasuitje. Je verkoopt iets (cupcakes, armbandjes, sleutelhangers, enz.). Opdracht: - Kies een product om te verkopen. Bijvoorbeeld: Cupcakes voor €1,50 per stuk. - Bedenk een kortingsactie. Bijvoorbeeld: 'Koop er 3, betaal 20% minder.' - Maak een prijzentabel voor verschillende aantallen (1 t/m 10 stuks), mét en zonder korting. - Reken uit hoeveel winst je maakt bij het verkopen van 50 of 100 producten. - Hoeveel geld kun je ophalen voor het goede doel?",
+   "vraag": [
+    "Je houdt een actie voor een goed doel.",
+    "Kies een product en een prijs.",
+    "Bijvoorbeeld: cupcakes voor € 1,50 per stuk.",
+    "Bedenk een kortingsactie.",
+    "Bijvoorbeeld: koop er 3, betaal 20% minder.",
+    "Maak een prijzentabel voor 1 tot en met 10 stuks.",
+    "Reken je winst uit bij 50 en bij 100 stuks.",
+    "Hoeveel geld haal je op?"
+   ],
+   "type": "open",
+   "paneel": "stappen",
+   "object3d": "actiekraam",
+   "context": [
+    {
+     "soort": "tekst",
+     "beschrijving": "Werkboekstappen: kies een product (bv. cupcakes voor € 1,50 per stuk); bedenk een kortingsactie (bv. \"Koop er 3, betaal 20% minder\"); maak een prijzentabel voor 1 t/m 10 stuks, met en zonder korting; reken uit hoeveel winst je maakt bij 50 of 100 producten; hoeveel geld haal je op voor het goede doel?"
+    }
+   ],
+   "stappen": [
+    {
+     "tekst": "Kies product en prijs",
+     "som": "bv. cupcake € 1,50",
+     "expr": null,
+     "uitkomst": "eigen keuze",
+     "invoer": false
+    },
+    {
+     "tekst": "Voorbeeld: 3 stuks zonder korting",
+     "som": "3 × 1,50",
+     "expr": "3*1.5",
+     "uitkomst": 4.5,
+     "eenheid": "euro",
+     "invoer": false
+    },
+    {
+     "tekst": "Met 20% korting betaal je 80%",
+     "som": "4,50 × 0,8",
+     "expr": "4.5*0.8",
+     "uitkomst": 3.6,
+     "eenheid": "euro",
+     "invoer": false,
+     "balk": {
+      "procent": 80,
+      "deel": 3.6,
+      "geheel": 4.5
+     }
+    },
+    {
+     "tekst": "Maak de prijzentabel",
+     "som": "1 t/m 10 stuks, met en zonder korting",
+     "expr": null,
+     "uitkomst": "tabel",
+     "invoer": false
+    },
+    {
+     "tekst": "Winst = opbrengst − kosten",
+     "som": "bij 50 en bij 100 stuks",
+     "expr": null,
+     "uitkomst": "eigen berekening",
+     "invoer": false
+    }
+   ],
+   "antwoord": null
+  },
+  {
+   "id": "O4-PUZ-01",
+   "onderdeel": 4,
+   "sectie": "puzzel",
+   "nummer": "1",
+   "afbeeldingen": [
+    "image97.jpeg"
+   ],
+   "flags": [
+    {
+     "soort": "tekst",
+     "beschrijving": "\"½ of\" is Engels: bedoeld is \"de helft van\". Rekentekens \"x\" en \"÷\".",
+     "voorstel": "In de app: \"de helft van\", × en :."
+    },
+    {
+     "soort": "auteursrecht",
+     "beschrijving": "Puzzelplaatje van internet.",
+     "voorstel": "Getallen overnemen, beeld opnieuw maken in 3D (zie beeld)."
+    }
+   ],
+   "autoCheck": true,
+   "titel": "Vormenpuzzel",
+   "origineel": "Los onderstaande puzzels op! Puzzel 1:",
+   "vraag": [
+    "Elke vorm staat voor een getal.",
+    "Zoek eerst de driehoek en de cirkel.",
+    "Zoek dan het vierkant, de vijfhoek en de rechthoek.",
+    "Hoeveel is rechthoek × rechthoek?"
+   ],
+   "type": "puzzel",
+   "paneel": "stappen",
+   "context": [
+    {
+     "soort": "anders",
+     "titel": "Vormenpuzzel",
+     "kolommen": [
+      "Regel",
+      "Som"
+     ],
+     "rijen": [
+      [
+       1,
+       "6 × driehoek = 3 × 10"
+      ],
+      [
+       2,
+       "driehoek × 20 = cirkel × 4"
+      ],
+      [
+       3,
+       "cirkel + driehoek = vierkant − 70"
+      ],
+      [
+       4,
+       "vierkant × 8 = de helft van vijfhoek"
+      ],
+      [
+       5,
+       "vijfhoek : vierkant = rechthoek + 5"
+      ],
+      [
+       6,
+       "rechthoek × rechthoek = ?"
+      ]
+     ],
+     "beschrijving": "Lichtgeel vlak met zwarte rand en vijf regels; de zesde regel staat eronder. Vormen: blauwe driehoek, rode cirkel, groen vierkant, gele vijfhoek, bruine liggende rechthoek. In het origineel staat \"x\" voor keer, \"÷\" voor delen en \"½ of\" voor \"de helft van\"."
+    }
+   ],
+   "beeld": [
+    {
+     "afbeelding": "image97.jpeg",
+     "vorm": "bord",
+     "ontwerp": "In de speelhal van het winkelcentrum hangt een lichtgeel puzzelbord met zes regels sommen. De vormen (blauwe driehoek, rode cirkel, groen vierkant, gele vijfhoek, bruine rechthoek) zijn losse knoppen. Klik op een vorm en zet er een getal op; klopt een regel, dan licht hij groen op.",
+     "toont": [
+      "6 × driehoek = 3 × 10",
+      "driehoek × 20 = cirkel × 4",
+      "cirkel + driehoek = vierkant − 70",
+      "vierkant × 8 = de helft van vijfhoek",
+      "vijfhoek : vierkant = rechthoek + 5",
+      "rechthoek × rechthoek = ?"
+     ],
+     "grap": "De vijfhoek draait als een ster rond als hij goed is."
+    }
+   ],
+   "stappen": [
+    {
+     "tekst": "Driehoek",
+     "som": "3 × 10 : 6",
+     "expr": "3*10/6",
+     "uitkomst": 5,
+     "invoer": true
+    },
+    {
+     "tekst": "Cirkel",
+     "som": "5 × 20 : 4",
+     "expr": "5*20/4",
+     "uitkomst": 25,
+     "invoer": true
+    },
+    {
+     "tekst": "Vierkant",
+     "som": "25 + 5 + 70",
+     "expr": "25+5+70",
+     "uitkomst": 100,
+     "invoer": true
+    },
+    {
+     "tekst": "Vijfhoek",
+     "som": "100 × 8 × 2",
+     "expr": "100*8*2",
+     "uitkomst": 1600,
+     "invoer": true
+    },
+    {
+     "tekst": "Rechthoek is 1600 : 100 − 5 = 11",
+     "som": "11 × 11",
+     "expr": "(1600/100-5)*(1600/100-5)",
+     "uitkomst": 121,
+     "invoer": true
+    }
+   ],
+   "antwoord": {
+    "waarde": 121,
+    "expr": "11*11"
+   },
+   "voorbeeld": {
+    "vraag": [
+     "2 × ster = 10.",
+     "ster + maan = 12.",
+     "Hoeveel is maan × maan?"
+    ],
+    "stappen": [
+     {
+      "tekst": "Ster",
+      "som": "10 : 2",
+      "expr": "10/2",
+      "uitkomst": 5,
+      "invoer": true
+     },
+     {
+      "tekst": "Maan",
+      "som": "12 − 5",
+      "expr": "12-5",
+      "uitkomst": 7,
+      "invoer": true
+     },
+     {
+      "tekst": "Maan × maan",
+      "som": "7 × 7",
+      "expr": "7*7",
+      "uitkomst": 49,
+      "invoer": true
+     }
+    ],
+    "antwoord": {
+     "waarde": 49,
+     "expr": "7*7"
+    }
+   }
+  },
+  {
+   "id": "O4-PUZ-02",
+   "onderdeel": 4,
+   "sectie": "puzzel",
+   "nummer": "2",
+   "afbeeldingen": [
+    "image98.jpeg"
+   ],
+   "flags": [
+    {
+     "soort": "auteursrecht",
+     "beschrijving": "Plaatje met logo van quizondo.com.",
+     "voorstel": "Getallen overnemen, beeld opnieuw maken in 3D (zie beeld)."
+    },
+    {
+     "soort": "tekst",
+     "beschrijving": "De tekst op het plaatje is Engels (\"Move only 1 match to fix the equation\").",
+     "voorstel": "In de app Nederlands: \"Verplaats 1 lucifer zodat de som klopt.\""
+    }
+   ],
+   "autoCheck": true,
+   "titel": "Lucifersom",
+   "origineel": "Puzzel 2: Een lucifer moet je verplaatsen om de som kloppend te maken. Welke lucifer is dit? En wat wordt de som dan?",
+   "vraag": [
+    "Met lucifers staat er: 1 + 2 = 8.",
+    "Verplaats 1 lucifer.",
+    "Dan klopt de som.",
+    "Welke lucifer verplaats je?",
+    "Wat wordt de som?"
+   ],
+   "type": "puzzel",
+   "paneel": "stappen",
+   "context": [
+    {
+     "soort": "tekening",
+     "beschrijving": "Zwarte achtergrond. Gele Engelse tekst: \"MOVE ONLY 1 MATCH TO FIX THE EQUATION\". Daaronder met lucifers (rode kopjes) de som 1 + 2 = 8, als digitale cijfers: de 1 = 2 staande lucifers boven elkaar; het plusteken = 2 lucifers; de 2 = 5 lucifers (boven, rechtsboven, midden, linksonder, onder); het =-teken = 2 liggende lucifers; de 8 = 7 lucifers. Onderaan \"QUIZONDO.COM\"."
+    }
+   ],
+   "beeld": [
+    {
+     "afbeelding": "image98.jpeg",
+     "vorm": "model",
+     "ontwerp": "Op een zwarte tafel in de speelhal liggen echte lucifers met rode kopjes in de som 1 + 2 = 8. Je kunt één lucifer oppakken en verslepen; hij gloeit oranje zolang je hem vasthoudt. Klopt de som, dan flitsen alle kopjes even als vuurwerkjes.",
+     "toont": [
+      "1 + 2 = 8 van lucifers",
+      "1 = 2 lucifers, + = 2, 2 = 5, = = 2, 8 = 7 lucifers"
+     ],
+     "grap": "Een lucifer met een gezichtje probeert stiekem weg te rollen."
+    }
+   ],
+   "stappen": [
+    {
+     "tekst": "Pak de lucifer linksonder uit de 8",
+     "som": "8 wordt 9",
+     "expr": null,
+     "uitkomst": "9",
+     "invoer": false
+    },
+    {
+     "tekst": "Leg hem bovenop de 1",
+     "som": "1 wordt 7",
+     "expr": null,
+     "uitkomst": "7",
+     "invoer": false
+    },
+    {
+     "tekst": "Controleer de som",
+     "som": "7 + 2",
+     "expr": "7+2",
+     "uitkomst": 9,
+     "invoer": true
+    }
+   ],
+   "antwoord": {
+    "waarde": "7 + 2 = 9",
+    "expr": null,
+    "alternatieven": [
+     "7+2=9"
+    ]
+   },
+   "voorbeeld": {
+    "vraag": [
+     "Met lucifers staat er: 3 + 3 = 8.",
+     "Verplaats 1 lucifer zodat de som klopt."
+    ],
+    "stappen": [
+     {
+      "tekst": "Pak de lucifer rechtsboven van de tweede 3",
+      "som": "leg hem linksboven",
+      "expr": null,
+      "uitkomst": "3 wordt 5",
+      "invoer": false
+     },
+     {
+      "tekst": "Controleer de som",
+      "som": "3 + 5",
+      "expr": "3+5",
+      "uitkomst": 8,
+      "invoer": true
+     }
+    ],
+    "antwoord": {
+     "waarde": "3 + 5 = 8",
+     "expr": null
+    }
+   }
+  },
+  {
+   "id": "O4-EIN-01",
+   "onderdeel": 4,
+   "sectie": "eindtest",
+   "nummer": "1",
+   "afbeeldingen": [],
+   "flags": [
+    {
+     "soort": "notatie",
+     "beschrijving": "\"€63,50\" zonder spatie.",
+     "voorstel": "In de app: € 63,50."
+    }
+   ],
+   "autoCheck": true,
+   "origineel": "Sandalen van €63,50 nu 40% korting. Wat is de nieuwe prijs voor de sandalen?",
+   "vraag": [
+    "Sandalen kosten € 63,50.",
+    "Nu is er 40% korting.",
+    "Wat is de nieuwe prijs?"
+   ],
+   "type": "getal",
+   "paneel": "procentenbalk",
+   "object3d": "sandalen",
+   "stappen": [
+    {
+     "tekst": "Reken 10% uit",
+     "som": "63,50 : 10",
+     "expr": "63.5/10",
+     "uitkomst": 6.35,
+     "eenheid": "euro",
+     "invoer": true,
+     "balk": {
+      "procent": 10,
+      "deel": 6.35,
+      "geheel": 63.5
+     }
+    },
+    {
+     "tekst": "40% is 4 × 10%",
+     "som": "4 × 6,35",
+     "expr": "4*6.35",
+     "uitkomst": 25.4,
+     "eenheid": "euro",
+     "invoer": true,
+     "balk": {
+      "procent": 40,
+      "deel": 25.4,
+      "geheel": 63.5
+     }
+    },
+    {
+     "tekst": "Haal de korting eraf",
+     "som": "63,50 − 25,40",
+     "expr": "63.5-25.4",
+     "uitkomst": 38.1,
+     "eenheid": "euro",
+     "invoer": true,
+     "balk": {
+      "procent": 60,
+      "deel": 38.1,
+      "geheel": 63.5
+     }
+    }
+   ],
+   "antwoord": {
+    "waarde": 38.1,
+    "eenheid": "euro",
+    "expr": "63.5*0.6"
+   },
+   "voorbeeld": {
+    "vraag": [
+     "Slippers kosten € 45.",
+     "Nu is er 40% korting.",
+     "Wat is de nieuwe prijs?"
+    ],
+    "stappen": [
+     {
+      "tekst": "Reken 10% uit",
+      "som": "45 : 10",
+      "expr": "45/10",
+      "uitkomst": 4.5,
+      "eenheid": "euro",
+      "invoer": true,
+      "balk": {
+       "procent": 10,
+       "deel": 4.5,
+       "geheel": 45
+      }
+     },
+     {
+      "tekst": "40% is 4 × 10%",
+      "som": "4 × 4,50",
+      "expr": "4*4.5",
+      "uitkomst": 18,
+      "eenheid": "euro",
+      "invoer": true,
+      "balk": {
+       "procent": 40,
+       "deel": 18,
+       "geheel": 45
+      }
+     },
+     {
+      "tekst": "Haal de korting eraf",
+      "som": "45 − 18",
+      "expr": "45-18",
+      "uitkomst": 27,
+      "eenheid": "euro",
+      "invoer": true,
+      "balk": {
+       "procent": 60,
+       "deel": 27,
+       "geheel": 45
+      }
+     }
+    ],
+    "antwoord": {
+     "waarde": 27,
+     "eenheid": "euro",
+     "expr": "45*0.6"
+    }
+   }
+  },
+  {
+   "id": "O4-EIN-02",
+   "onderdeel": 4,
+   "sectie": "eindtest",
+   "nummer": "2",
+   "afbeeldingen": [],
+   "flags": [
+    {
+     "soort": "fout-in-werkboek",
+     "beschrijving": "\"Vorige week kosten\" moet \"kostten\" zijn (verleden tijd).",
+     "voorstel": "In de app verbeterd."
+    }
+   ],
+   "autoCheck": true,
+   "origineel": "Vorige week kosten de badslippers nog 60 euro en nu liggen ze voor 48 euro te koop. Hoeveel procent korting zit er nu op de badslippers?",
+   "vraag": [
+    "Vorige week kostten de badslippers 60 euro.",
+    "Nu kosten ze 48 euro.",
+    "Hoeveel procent korting is dat?"
+   ],
+   "type": "getal",
+   "paneel": "procentenbalk",
+   "object3d": "badslippers",
+   "stappen": [
+    {
+     "tekst": "Korting in euro",
+     "som": "60 − 48",
+     "expr": "60-48",
+     "uitkomst": 12,
+     "eenheid": "euro",
+     "invoer": true
+    },
+    {
+     "tekst": "Deel door oude prijs, × 100",
+     "som": "12 : 60 × 100",
+     "expr": "12/60*100",
+     "uitkomst": 20,
+     "eenheid": "%",
+     "invoer": true,
+     "balk": {
+      "procent": 20,
+      "deel": 12,
+      "geheel": 60
+     }
+    }
+   ],
+   "antwoord": {
+    "waarde": 20,
+    "eenheid": "%",
+    "expr": "(60-48)/60*100"
+   },
+   "voorbeeld": {
+    "vraag": [
+     "Vorige week kostte een pet 80 euro.",
+     "Nu kost hij 60 euro.",
+     "Hoeveel procent korting is dat?"
+    ],
+    "stappen": [
+     {
+      "tekst": "Korting in euro",
+      "som": "80 − 60",
+      "expr": "80-60",
+      "uitkomst": 20,
+      "eenheid": "euro",
+      "invoer": true
+     },
+     {
+      "tekst": "Deel door oude prijs, × 100",
+      "som": "20 : 80 × 100",
+      "expr": "20/80*100",
+      "uitkomst": 25,
+      "eenheid": "%",
+      "invoer": true,
+      "balk": {
+       "procent": 25,
+       "deel": 20,
+       "geheel": 80
+      }
+     }
+    ],
+    "antwoord": {
+     "waarde": 25,
+     "eenheid": "%",
+     "expr": "(80-60)/80*100"
+    }
+   }
+  },
+  {
+   "id": "O4-EIN-03",
+   "onderdeel": 4,
+   "sectie": "eindtest",
+   "nummer": "3",
+   "afbeeldingen": [],
+   "flags": [
+    {
+     "soort": "notatie",
+     "beschrijving": "\"€25\" en \"€75\" zonder spatie.",
+     "voorstel": "In de app: € 25 en € 75."
+    },
+    {
+     "soort": "tekst",
+     "beschrijving": "\"nu kost het\" moet \"nu kost hij\" zijn (de kerstboom). Valkuil: de nieuwe prijs is 300% van de oude, maar de stijging is 200%.",
+     "voorstel": "In de app verbeterd; de procentenbalk laat 100% + 200% zien."
+    }
+   ],
+   "autoCheck": true,
+   "origineel": "Twee jaar geleden kostte de kerstboom €25 en nu kost het €75. Hoeveel procent is de prijs gestegen?",
+   "vraag": [
+    "Twee jaar geleden kostte de kerstboom € 25.",
+    "Nu kost hij € 75.",
+    "Hoeveel procent is de prijs gestegen?"
+   ],
+   "type": "getal",
+   "paneel": "procentenbalk",
+   "object3d": "kerstboom",
+   "stappen": [
+    {
+     "tekst": "Hoeveel duurder?",
+     "som": "75 − 25",
+     "expr": "75-25",
+     "uitkomst": 50,
+     "eenheid": "euro",
+     "invoer": true
+    },
+    {
+     "tekst": "Deel door oude prijs, × 100",
+     "som": "50 : 25 × 100",
+     "expr": "50/25*100",
+     "uitkomst": 200,
+     "eenheid": "%",
+     "invoer": true,
+     "balk": {
+      "procent": 200,
+      "deel": 50,
+      "geheel": 25
+     }
+    }
+   ],
+   "antwoord": {
+    "waarde": 200,
+    "eenheid": "%",
+    "expr": "(75-25)/25*100"
+   },
+   "voorbeeld": {
+    "vraag": [
+     "Vorig jaar kostte een lamp € 20.",
+     "Nu kost hij € 50.",
+     "Hoeveel procent is de prijs gestegen?"
+    ],
+    "stappen": [
+     {
+      "tekst": "Hoeveel duurder?",
+      "som": "50 − 20",
+      "expr": "50-20",
+      "uitkomst": 30,
+      "eenheid": "euro",
+      "invoer": true
+     },
+     {
+      "tekst": "Deel door oude prijs, × 100",
+      "som": "30 : 20 × 100",
+      "expr": "30/20*100",
+      "uitkomst": 150,
+      "eenheid": "%",
+      "invoer": true,
+      "balk": {
+       "procent": 150,
+       "deel": 30,
+       "geheel": 20
+      }
+     }
+    ],
+    "antwoord": {
+     "waarde": 150,
+     "eenheid": "%",
+     "expr": "(50-20)/20*100"
+    }
+   }
+  },
+  {
+   "id": "O4-EIN-04",
+   "onderdeel": 4,
+   "sectie": "eindtest",
+   "nummer": "4",
+   "afbeeldingen": [
+    "image99.png"
+   ],
+   "flags": [],
+   "autoCheck": true,
+   "origineel": "In Nederland verbruikt een persoon 120 liter water per dag. Hoeveel liter water verbruikt een persoon gemiddeld per dag in de badkamer?",
+   "vraag": [
+    "Een persoon gebruikt 120 liter water per dag.",
+    "Kijk in het cirkeldiagram.",
+    "Hoeveel liter per dag gaat naar de badkamer?"
+   ],
+   "type": "getal",
+   "paneel": "procentenbalk",
+   "context": [
+    {
+     "soort": "grafiek",
+     "titel": "Gemiddeld waterverbruik per dag",
+     "kolommen": [
+      "Plek",
+      "Deel"
+     ],
+     "rijen": [
+      [
+       "Badkamer",
+       "45%"
+      ],
+      [
+       "Toilet",
+       "30%"
+      ],
+      [
+       "Keuken",
+       "13%"
+      ],
+      [
+       "Wasmachine",
+       "12%"
+      ]
+     ],
+     "beschrijving": "3D-cirkeldiagram met vier stukken: Badkamer 45% (rechts, houtkleur), Toilet 30% (linksboven, blauw), Keuken 13% (onder, lichtgrijs) en Wasmachine 12% (links, roze). Samen 100%."
+    }
+   ],
+   "beeld": [
+    {
+     "afbeelding": "image99.png",
+     "vorm": "model",
+     "ontwerp": "In de badkamerwinkel van het winkelcentrum staat een grote ronde taart van vier kleuren water: een 3D-cirkeldiagram \"Gemiddeld waterverbruik per dag\". Elk stuk heeft een vlaggetje: Badkamer 45% (houtkleur), Toilet 30% (blauw), Keuken 13% (lichtgrijs) en Wasmachine 12% (roze). Klik op een stuk en het schuift naar voren.",
+     "toont": [
+      "Gemiddeld waterverbruik per dag",
+      "Badkamer 45%",
+      "Toilet 30%",
+      "Keuken 13%",
+      "Wasmachine 12%"
+     ],
+     "grap": "Uit het stuk \"Badkamer\" steekt een badeendje."
+    }
+   ],
+   "stappen": [
+    {
+     "tekst": "Reken 1% uit",
+     "som": "120 : 100",
+     "expr": "120/100",
+     "uitkomst": 1.2,
+     "eenheid": "liter",
+     "invoer": true,
+     "balk": {
+      "procent": 1,
+      "deel": 1.2,
+      "geheel": 120
+     }
+    },
+    {
+     "tekst": "Badkamer is 45%",
+     "som": "45 × 1,2",
+     "expr": "45*1.2",
+     "uitkomst": 54,
+     "eenheid": "liter",
+     "invoer": true,
+     "balk": {
+      "procent": 45,
+      "deel": 54,
+      "geheel": 120
+     }
+    }
+   ],
+   "antwoord": {
+    "waarde": 54,
+    "eenheid": "liter",
+    "expr": "120*0.45"
+   },
+   "voorbeeld": {
+    "vraag": [
+     "Een gezin gebruikt 200 liter water per dag.",
+     "Het toilet is 30%.",
+     "Hoeveel liter gaat naar het toilet?"
+    ],
+    "stappen": [
+     {
+      "tekst": "Reken 10% uit",
+      "som": "200 : 10",
+      "expr": "200/10",
+      "uitkomst": 20,
+      "eenheid": "liter",
+      "invoer": true,
+      "balk": {
+       "procent": 10,
+       "deel": 20,
+       "geheel": 200
+      }
+     },
+     {
+      "tekst": "30% is 3 × 10%",
+      "som": "3 × 20",
+      "expr": "3*20",
+      "uitkomst": 60,
+      "eenheid": "liter",
+      "invoer": true,
+      "balk": {
+       "procent": 30,
+       "deel": 60,
+       "geheel": 200
+      }
+     }
+    ],
+    "antwoord": {
+     "waarde": 60,
+     "eenheid": "liter",
+     "expr": "200*0.3"
+    }
+   }
+  },
+  {
+   "id": "O4-EIN-05",
+   "onderdeel": 4,
+   "sectie": "eindtest",
+   "nummer": "5",
+   "afbeeldingen": [
+    "image99.png"
+   ],
+   "flags": [
+    {
+     "soort": "dubbelzinnig",
+     "beschrijving": "Veel studenten rekenen 45% − 13% = 32. Dat is een verschil in procentpunten. Bedoeld is: hoeveel procent minder dan de badkamer (badkamer = 100%) = 71%.",
+     "voorstel": "De app rekent 71 goed. Bij 32 geeft de app de hint \"procentpunt is iets anders dan procent\"."
+    }
+   ],
+   "autoCheck": true,
+   "origineel": "Bij opdracht 4 heb je uitgerekend hoeveel water je verbruikt in de badkamer. Hoeveel procent water verbruik je minder in de keuken dan in de badkamer? Rond af op een geheel getal.",
+   "vraag": [
+    "Bij opdracht 4 vond je: badkamer 54 liter per dag.",
+    "De keuken is 13% van 120 liter.",
+    "Hoeveel procent minder gebruik je in de keuken?",
+    "Rond af op een heel getal."
+   ],
+   "type": "getal",
+   "paneel": "procentenbalk",
+   "context": [
+    {
+     "soort": "grafiek",
+     "titel": "Gemiddeld waterverbruik per dag",
+     "kolommen": [
+      "Plek",
+      "Deel"
+     ],
+     "rijen": [
+      [
+       "Badkamer",
+       "45%"
+      ],
+      [
+       "Toilet",
+       "30%"
+      ],
+      [
+       "Keuken",
+       "13%"
+      ],
+      [
+       "Wasmachine",
+       "12%"
+      ]
+     ],
+     "beschrijving": "3D-cirkeldiagram met vier stukken: Badkamer 45% (rechts, houtkleur), Toilet 30% (linksboven, blauw), Keuken 13% (onder, lichtgrijs) en Wasmachine 12% (links, roze). Samen 100%."
+    }
+   ],
+   "beeld": [
+    {
+     "afbeelding": "image99.png",
+     "vorm": "model",
+     "ontwerp": "In de badkamerwinkel van het winkelcentrum staat een grote ronde taart van vier kleuren water: een 3D-cirkeldiagram \"Gemiddeld waterverbruik per dag\". Elk stuk heeft een vlaggetje: Badkamer 45% (houtkleur), Toilet 30% (blauw), Keuken 13% (lichtgrijs) en Wasmachine 12% (roze). Klik op een stuk en het schuift naar voren.",
+     "toont": [
+      "Gemiddeld waterverbruik per dag",
+      "Badkamer 45%",
+      "Toilet 30%",
+      "Keuken 13%",
+      "Wasmachine 12%"
+     ],
+     "grap": "Uit het stuk \"Badkamer\" steekt een badeendje."
+    }
+   ],
+   "stappen": [
+    {
+     "tekst": "Liters in de keuken",
+     "som": "120 × 0,13",
+     "expr": "120*0.13",
+     "uitkomst": 15.6,
+     "eenheid": "liter",
+     "invoer": true,
+     "balk": {
+      "procent": 13,
+      "deel": 15.6,
+      "geheel": 120
+     }
+    },
+    {
+     "tekst": "Hoeveel liter minder?",
+     "som": "54 − 15,6",
+     "expr": "54-15.6",
+     "uitkomst": 38.4,
+     "eenheid": "liter",
+     "invoer": true
+    },
+    {
+     "tekst": "Deel door de badkamer, × 100",
+     "som": "38,4 : 54 × 100",
+     "expr": "38.4/54*100",
+     "uitkomst": 71.11,
+     "eenheid": "%",
+     "invoer": true,
+     "afronding": "2-decimalen",
+     "balk": {
+      "procent": 71.11,
+      "deel": 38.4,
+      "geheel": 54
+     }
+    },
+    {
+     "tekst": "Rond af op een heel getal",
+     "som": "71,11 → ...",
+     "expr": "Math.round(38.4/54*100)",
+     "uitkomst": 71,
+     "eenheid": "%",
+     "invoer": true,
+     "balk": {
+      "procent": 71,
+      "deel": 38.4,
+      "geheel": 54
+     }
+    }
+   ],
+   "antwoord": {
+    "waarde": 71,
+    "eenheid": "%",
+    "expr": "(45-13)/45*100",
+    "afronding": "heel"
+   },
+   "voorbeeld": {
+    "vraag": [
+     "In de badkamer gebruik je 50 liter.",
+     "In de keuken gebruik je 20 liter.",
+     "Hoeveel procent minder gebruik je in de keuken?"
+    ],
+    "stappen": [
+     {
+      "tekst": "Hoeveel liter minder?",
+      "som": "50 − 20",
+      "expr": "50-20",
+      "uitkomst": 30,
+      "eenheid": "liter",
+      "invoer": true
+     },
+     {
+      "tekst": "Deel door de badkamer, × 100",
+      "som": "30 : 50 × 100",
+      "expr": "30/50*100",
+      "uitkomst": 60,
+      "eenheid": "%",
+      "invoer": true,
+      "balk": {
+       "procent": 60,
+       "deel": 30,
+       "geheel": 50
+      }
+     }
+    ],
+    "antwoord": {
+     "waarde": 60,
+     "eenheid": "%",
+     "expr": "30/50*100",
+     "afronding": "heel"
+    }
+   }
+  },
+  {
+   "id": "O4-EIN-06",
+   "onderdeel": 4,
+   "sectie": "eindtest",
+   "nummer": "6",
+   "afbeeldingen": [],
+   "flags": [
+    {
+     "soort": "fout-in-werkboek",
+     "beschrijving": "\"had gewoon kaartje\": het woord \"een\" ontbreekt.",
+     "voorstel": "In de app verbeterd."
+    }
+   ],
+   "autoCheck": true,
+   "origineel": "Mick houdt een enquête onder 220 treinreizigers: - één op de twintig reizigers had een OV-studentkaart; - 35% van de reizigers had een kortingskaart; - 15% van de reizigers had een abonnement; - de rest van de reizigers had gewoon kaartje. Hoeveel van de ondervraagde reizigers hadden een gewoon kaartje?",
+   "vraag": [
+    "Mick vraagt 220 treinreizigers naar hun kaartje.",
+    "1 op de 20 heeft een OV-studentkaart.",
+    "35% heeft een kortingskaart.",
+    "15% heeft een abonnement.",
+    "De rest heeft een gewoon kaartje.",
+    "Hoeveel reizigers hebben een gewoon kaartje?"
+   ],
+   "type": "getal",
+   "paneel": "procentenbalk",
+   "stappen": [
+    {
+     "tekst": "1 op de 20 is ...%",
+     "som": "100 : 20",
+     "expr": "100/20",
+     "uitkomst": 5,
+     "eenheid": "%",
+     "invoer": true,
+     "balk": {
+      "procent": 5
+     }
+    },
+    {
+     "tekst": "Tel de procenten op",
+     "som": "5 + 35 + 15",
+     "expr": "5+35+15",
+     "uitkomst": 55,
+     "eenheid": "%",
+     "invoer": true,
+     "balk": {
+      "procent": 55
+     }
+    },
+    {
+     "tekst": "De rest",
+     "som": "100 − 55",
+     "expr": "100-55",
+     "uitkomst": 45,
+     "eenheid": "%",
+     "invoer": true,
+     "balk": {
+      "procent": 45
+     }
+    },
+    {
+     "tekst": "45% van 220",
+     "som": "220 × 0,45",
+     "expr": "220*0.45",
+     "uitkomst": 99,
+     "eenheid": "reizigers",
+     "invoer": true,
+     "balk": {
+      "procent": 45,
+      "deel": 99,
+      "geheel": 220
+     }
+    }
+   ],
+   "antwoord": {
+    "waarde": 99,
+    "eenheid": "reizigers",
+    "expr": "220*(100-5-35-15)/100"
+   },
+   "voorbeeld": {
+    "vraag": [
+     "Je vraagt 200 mensen hoe ze reizen.",
+     "1 op de 10 komt lopend.",
+     "40% komt met de fiets.",
+     "De rest komt met de bus.",
+     "Hoeveel mensen komen met de bus?"
+    ],
+    "stappen": [
+     {
+      "tekst": "1 op de 10 is ...%",
+      "som": "100 : 10",
+      "expr": "100/10",
+      "uitkomst": 10,
+      "eenheid": "%",
+      "invoer": true
+     },
+     {
+      "tekst": "Tel op",
+      "som": "10 + 40",
+      "expr": "10+40",
+      "uitkomst": 50,
+      "eenheid": "%",
+      "invoer": true
+     },
+     {
+      "tekst": "De rest",
+      "som": "100 − 50",
+      "expr": "100-50",
+      "uitkomst": 50,
+      "eenheid": "%",
+      "invoer": true
+     },
+     {
+      "tekst": "50% van 200",
+      "som": "200 : 2",
+      "expr": "200/2",
+      "uitkomst": 100,
+      "eenheid": "mensen",
+      "invoer": true,
+      "balk": {
+       "procent": 50,
+       "deel": 100,
+       "geheel": 200
+      }
+     }
+    ],
+    "antwoord": {
+     "waarde": 100,
+     "eenheid": "mensen",
+     "expr": "200*0.5"
+    }
+   }
+  },
+  {
+   "id": "O4-EIN-07",
+   "onderdeel": 4,
+   "sectie": "eindtest",
+   "nummer": "7",
+   "afbeeldingen": [],
+   "flags": [
+    {
+     "soort": "tekst",
+     "beschrijving": "\"Deelnemers\" betekent hier de hele klas, ook wie de toets niet maakte. Valkuil: 20% is het deel van de hele klas, niet van wie de toets maakte.",
+     "voorstel": "In de app: \"klas\" in plaats van \"deelnemers\"."
+    }
+   ],
+   "autoCheck": true,
+   "origineel": "In een klas heeft één op de vijf deelnemers een onvoldoende voor een rekentoets. 3/5 van de deelnemers had een voldoende en de rest heeft de rekentoets niet gemaakt. Hoeveel procent van de deelnemers die de toets hebben gemaakt, had een onvoldoende?",
+   "vraag": [
+    "In een klas heeft 1 op de 5 een onvoldoende.",
+    "3/5 van de klas heeft een voldoende.",
+    "De rest heeft de toets niet gemaakt.",
+    "Kijk alleen naar wie de toets maakte.",
+    "Hoeveel procent daarvan heeft een onvoldoende?"
+   ],
+   "type": "getal",
+   "paneel": "procentenbalk",
+   "stappen": [
+    {
+     "tekst": "Onvoldoende: 1 op de 5",
+     "som": "1 : 5 × 100",
+     "expr": "1/5*100",
+     "uitkomst": 20,
+     "eenheid": "%",
+     "invoer": true,
+     "balk": {
+      "procent": 20
+     }
+    },
+    {
+     "tekst": "Voldoende: 3/5",
+     "som": "3 : 5 × 100",
+     "expr": "3/5*100",
+     "uitkomst": 60,
+     "eenheid": "%",
+     "invoer": true,
+     "balk": {
+      "procent": 60
+     }
+    },
+    {
+     "tekst": "Toets gemaakt",
+     "som": "20 + 60",
+     "expr": "20+60",
+     "uitkomst": 80,
+     "eenheid": "%",
+     "invoer": true,
+     "balk": {
+      "procent": 80
+     }
+    },
+    {
+     "tekst": "Onvoldoende van wie het maakte",
+     "som": "20 : 80 × 100",
+     "expr": "20/80*100",
+     "uitkomst": 25,
+     "eenheid": "%",
+     "invoer": true,
+     "balk": {
+      "procent": 25,
+      "deel": 20,
+      "geheel": 80
+     }
+    }
+   ],
+   "antwoord": {
+    "waarde": 25,
+    "eenheid": "%",
+    "expr": "(1/5)/(1/5+3/5)*100"
+   },
+   "voorbeeld": {
+    "vraag": [
+     "In een groep heeft 1 op de 10 een onvoldoende.",
+     "7/10 heeft een voldoende.",
+     "De rest deed niet mee.",
+     "Hoeveel procent van wie meedeed, heeft een onvoldoende?"
+    ],
+    "stappen": [
+     {
+      "tekst": "Onvoldoende",
+      "som": "1 : 10 × 100",
+      "expr": "1/10*100",
+      "uitkomst": 10,
+      "eenheid": "%",
+      "invoer": true
+     },
+     {
+      "tekst": "Voldoende",
+      "som": "7 : 10 × 100",
+      "expr": "7/10*100",
+      "uitkomst": 70,
+      "eenheid": "%",
+      "invoer": true
+     },
+     {
+      "tekst": "Meegedaan",
+      "som": "10 + 70",
+      "expr": "10+70",
+      "uitkomst": 80,
+      "eenheid": "%",
+      "invoer": true
+     },
+     {
+      "tekst": "Onvoldoende van wie meedeed",
+      "som": "10 : 80 × 100",
+      "expr": "10/80*100",
+      "uitkomst": 12.5,
+      "eenheid": "%",
+      "invoer": true,
+      "balk": {
+       "procent": 12.5,
+       "deel": 10,
+       "geheel": 80
+      }
+     }
+    ],
+    "antwoord": {
+     "waarde": 12.5,
+     "eenheid": "%",
+     "expr": "10/80*100"
+    }
+   }
+  },
+  {
+   "id": "O4-EIN-08",
+   "onderdeel": 4,
+   "sectie": "eindtest",
+   "nummer": "8",
+   "afbeeldingen": [],
+   "flags": [],
+   "autoCheck": true,
+   "origineel": "Facebook heeft wereldwijd 400 miljoen leden. Daarvan komen er 8,8 miljoen uit Spanje. Hoeveel procent van de leden van Facebook komt uit Spanje?",
+   "vraag": [
+    "Facebook heeft 400 miljoen leden.",
+    "8,8 miljoen leden komen uit Spanje.",
+    "Hoeveel procent van de leden is dat?"
+   ],
+   "type": "getal",
+   "paneel": "procentenbalk",
+   "stappen": [
+    {
+     "tekst": "Reken 1% uit",
+     "som": "400 : 100",
+     "expr": "400/100",
+     "uitkomst": 4,
+     "eenheid": "miljoen",
+     "invoer": true,
+     "balk": {
+      "procent": 1,
+      "deel": 4,
+      "geheel": 400
+     }
+    },
+    {
+     "tekst": "Hoe vaak past 4 in 8,8?",
+     "som": "8,8 : 4",
+     "expr": "8.8/4",
+     "uitkomst": 2.2,
+     "eenheid": "%",
+     "invoer": true,
+     "balk": {
+      "procent": 2.2,
+      "deel": 8.8,
+      "geheel": 400
+     }
+    }
+   ],
+   "antwoord": {
+    "waarde": 2.2,
+    "eenheid": "%",
+    "expr": "8.8/400*100"
+   },
+   "voorbeeld": {
+    "vraag": [
+     "Een app heeft 300 miljoen leden.",
+     "6 miljoen leden komen uit België.",
+     "Hoeveel procent is dat?"
+    ],
+    "stappen": [
+     {
+      "tekst": "Reken 1% uit",
+      "som": "300 : 100",
+      "expr": "300/100",
+      "uitkomst": 3,
+      "eenheid": "miljoen",
+      "invoer": true,
+      "balk": {
+       "procent": 1,
+       "deel": 3,
+       "geheel": 300
+      }
+     },
+     {
+      "tekst": "Hoe vaak past 3 in 6?",
+      "som": "6 : 3",
+      "expr": "6/3",
+      "uitkomst": 2,
+      "eenheid": "%",
+      "invoer": true,
+      "balk": {
+       "procent": 2,
+       "deel": 6,
+       "geheel": 300
+      }
+     }
+    ],
+    "antwoord": {
+     "waarde": 2,
+     "eenheid": "%",
+     "expr": "6/300*100"
+    }
+   }
+  },
+  {
+   "id": "O4-EIN-09",
+   "onderdeel": 4,
+   "sectie": "eindtest",
+   "nummer": "9",
+   "afbeeldingen": [],
+   "flags": [],
+   "autoCheck": true,
+   "origineel": "Karlijn gaat een dag naar een pretpark en geeft het volgende uit: - € 21 aan het kaartje voor het pretpark; - € 8,50 aan de lunch; - € 5,50 aan een knuffel in de pretparkwinkel. Hoeveel procent van haar totale uitgaven besteedde Karlijn aan het kaartje voor het pretpark?",
+   "vraag": [
+    "Karlijn gaat een dag naar een pretpark.",
+    "Het kaartje kost € 21.",
+    "De lunch kost € 8,50.",
+    "Een knuffel kost € 5,50.",
+    "Hoeveel procent van alles gaat naar het kaartje?"
+   ],
+   "type": "getal",
+   "paneel": "procentenbalk",
+   "stappen": [
+    {
+     "tekst": "Tel alles op",
+     "som": "21 + 8,50 + 5,50",
+     "expr": "21+8.5+5.5",
+     "uitkomst": 35,
+     "eenheid": "euro",
+     "invoer": true,
+     "balk": {
+      "procent": 100,
+      "deel": 35,
+      "geheel": 35
+     }
+    },
+    {
+     "tekst": "Kaartje : totaal × 100",
+     "som": "21 : 35 × 100",
+     "expr": "21/35*100",
+     "uitkomst": 60,
+     "eenheid": "%",
+     "invoer": true,
+     "balk": {
+      "procent": 60,
+      "deel": 21,
+      "geheel": 35
+     }
+    }
+   ],
+   "antwoord": {
+    "waarde": 60,
+    "eenheid": "%",
+    "expr": "21/(21+8.5+5.5)*100"
+   },
+   "voorbeeld": {
+    "vraag": [
+     "Je koopt een kaartje voor € 30.",
+     "Eten kost € 6 en drinken € 4.",
+     "Hoeveel procent ging naar het kaartje?"
+    ],
+    "stappen": [
+     {
+      "tekst": "Tel alles op",
+      "som": "30 + 6 + 4",
+      "expr": "30+6+4",
+      "uitkomst": 40,
+      "eenheid": "euro",
+      "invoer": true
+     },
+     {
+      "tekst": "Kaartje : totaal × 100",
+      "som": "30 : 40 × 100",
+      "expr": "30/40*100",
+      "uitkomst": 75,
+      "eenheid": "%",
+      "invoer": true,
+      "balk": {
+       "procent": 75,
+       "deel": 30,
+       "geheel": 40
+      }
+     }
+    ],
+    "antwoord": {
+     "waarde": 75,
+     "eenheid": "%",
+     "expr": "30/40*100"
+    }
+   }
+  },
+  {
+   "id": "O4-EIN-10",
+   "onderdeel": 4,
+   "sectie": "eindtest",
+   "nummer": "10",
+   "afbeeldingen": [],
+   "flags": [],
+   "autoCheck": true,
+   "origineel": "José verdient € 8,09 per uur. Van dit bedrag draagt hij 11,5% aan belasting af. Hoeveel verdient José per uur als je de belasting eraf haalt? Rond indien nodig af op twee decimalen.",
+   "vraag": [
+    "José verdient € 8,09 per uur.",
+    "Hij betaalt 11,5% belasting.",
+    "Hoeveel houdt hij per uur over?",
+    "Rond af op 2 decimalen."
+   ],
+   "type": "getal",
+   "paneel": "procentenbalk",
+   "stappen": [
+    {
+     "tekst": "Belasting: 11,5% van € 8,09",
+     "som": "8,09 × 0,115",
+     "expr": "8.09*0.115",
+     "uitkomst": 0.93,
+     "eenheid": "euro",
+     "invoer": true,
+     "afronding": "2-decimalen",
+     "balk": {
+      "procent": 11.5,
+      "deel": 0.93,
+      "geheel": 8.09
+     }
+    },
+    {
+     "tekst": "Haal de belasting eraf",
+     "som": "8,09 − 0,93",
+     "expr": "8.09-0.93",
+     "uitkomst": 7.16,
+     "eenheid": "euro",
+     "invoer": true,
+     "balk": {
+      "procent": 88.5,
+      "deel": 7.16,
+      "geheel": 8.09
+     }
+    }
+   ],
+   "antwoord": {
+    "waarde": 7.16,
+    "eenheid": "euro",
+    "expr": "8.09*(1-0.115)",
+    "afronding": "2-decimalen",
+    "tolerantie": 0.01
+   },
+   "voorbeeld": {
+    "vraag": [
+     "Je verdient € 10,00 per uur.",
+     "Je betaalt 12,5% belasting.",
+     "Hoeveel houd je per uur over?"
+    ],
+    "stappen": [
+     {
+      "tekst": "Belasting: 12,5% van € 10",
+      "som": "10 × 0,125",
+      "expr": "10*0.125",
+      "uitkomst": 1.25,
+      "eenheid": "euro",
+      "invoer": true,
+      "balk": {
+       "procent": 12.5,
+       "deel": 1.25,
+       "geheel": 10
+      }
+     },
+     {
+      "tekst": "Haal de belasting eraf",
+      "som": "10 − 1,25",
+      "expr": "10-1.25",
+      "uitkomst": 8.75,
+      "eenheid": "euro",
+      "invoer": true,
+      "balk": {
+       "procent": 87.5,
+       "deel": 8.75,
+       "geheel": 10
+      }
+     }
+    ],
+    "antwoord": {
+     "waarde": 8.75,
+     "eenheid": "euro",
+     "expr": "10*(1-0.125)",
+     "afronding": "2-decimalen"
+    }
+   }
+  },
+  {
+   "id": "O4-EIN-11",
+   "onderdeel": 4,
+   "sectie": "eindtest",
+   "nummer": "11",
+   "afbeeldingen": [
+    "image100.png"
+   ],
+   "flags": [],
+   "autoCheck": true,
+   "origineel": "Jan koopt via internet een boek. Het boek kost € 15 en de verzendkosten zijn € 2,25. Hoeveel procent wordt het boek duurder met de verzendkosten erbij?",
+   "vraag": [
+    "Jan koopt een boek op internet.",
+    "Het boek kost € 15.",
+    "De verzendkosten zijn € 2,25.",
+    "Hoeveel procent duurder wordt het boek?"
+   ],
+   "type": "getal",
+   "paneel": "procentenbalk",
+   "object3d": "boek",
+   "context": [
+    {
+     "soort": "prijzen",
+     "items": [
+      {
+       "label": "verzendkosten per zending binnen NL",
+       "waarde": "€ 2,25"
+      }
+     ],
+     "beschrijving": "Tekening van een opengeslagen boek. Rechts een grijs vlak met oranje stippen en zwarte tekst: \"Verzendkosten € 2,25 Per zending Binnen NL\"."
+    }
+   ],
+   "beeld": [
+    {
+     "afbeelding": "image100.png",
+     "vorm": "bord",
+     "ontwerp": "Bij de boekwinkel in het winkelcentrum ligt een groot opengeslagen boek op een standaard, met een prijskaartje \"€ 15\". Ernaast staat een grijs stoepbord met oranje stippen: \"Verzendkosten € 2,25 – per zending – binnen NL\". Klik op het bord en een klein bestelbusje rijdt weg met een pakketje.",
+     "toont": [
+      "Verzendkosten € 2,25",
+      "Per zending",
+      "Binnen NL",
+      "boek € 15"
+     ],
+     "grap": "De bladzijden slaan vanzelf om als er een windvlaag langskomt."
+    }
+   ],
+   "stappen": [
+    {
+     "tekst": "Reken 1% van € 15 uit",
+     "som": "15 : 100",
+     "expr": "15/100",
+     "uitkomst": 0.15,
+     "eenheid": "euro",
+     "invoer": true,
+     "balk": {
+      "procent": 1,
+      "deel": 0.15,
+      "geheel": 15
+     }
+    },
+    {
+     "tekst": "Hoe vaak past 0,15 in 2,25?",
+     "som": "2,25 : 0,15",
+     "expr": "2.25/0.15",
+     "uitkomst": 15,
+     "eenheid": "%",
+     "invoer": true,
+     "balk": {
+      "procent": 15,
+      "deel": 2.25,
+      "geheel": 15
+     }
+    }
+   ],
+   "antwoord": {
+    "waarde": 15,
+    "eenheid": "%",
+    "expr": "2.25/15*100"
+   },
+   "voorbeeld": {
+    "vraag": [
+     "Een spel kost € 20.",
+     "De verzendkosten zijn € 5.",
+     "Hoeveel procent duurder wordt het spel?"
+    ],
+    "stappen": [
+     {
+      "tekst": "Reken 1% van € 20 uit",
+      "som": "20 : 100",
+      "expr": "20/100",
+      "uitkomst": 0.2,
+      "eenheid": "euro",
+      "invoer": true,
+      "balk": {
+       "procent": 1,
+       "deel": 0.2,
+       "geheel": 20
+      }
+     },
+     {
+      "tekst": "Hoe vaak past 0,20 in 5?",
+      "som": "5 : 0,2",
+      "expr": "5/0.2",
+      "uitkomst": 25,
+      "eenheid": "%",
+      "invoer": true,
+      "balk": {
+       "procent": 25,
+       "deel": 5,
+       "geheel": 20
+      }
+     }
+    ],
+    "antwoord": {
+     "waarde": 25,
+     "eenheid": "%",
+     "expr": "5/20*100"
+    }
+   }
+  }
+ ]
+}

@@ -1,0 +1,399 @@
+{
+ "kamers": {
+  "lift": {
+   "naam": "Liftportaal (terugblik)",
+   "kamers": [
+    "lift"
+   ]
+  },
+  "klantenservice": {
+   "naam": "Klantenservice (uitleg)",
+   "kamers": [
+    "klantenservice"
+   ]
+  },
+  "markthal": {
+   "naam": "Markthal (samen oefenen 1-5)",
+   "kamers": [
+    "markthal"
+   ]
+  },
+  "modehuis": {
+   "naam": "Modehuis (samen oefenen 6, 7 en 9)",
+   "kamers": [
+    "modehuis"
+   ]
+  },
+  "foyer": {
+   "naam": "Foyer en speelhal (samen oefenen 8 en 10)",
+   "kamers": [
+    "foyer"
+   ]
+  },
+  "mediaplein": {
+   "naam": "Mediaplein, 1e verdieping: klus Nieuws en media",
+   "kamers": [
+    "mediaplein"
+   ]
+  },
+  "drogist": {
+   "naam": "Drogist en kapsalon: klus Kapper en drogist",
+   "kamers": [
+    "drogist",
+    "kapsalon"
+   ]
+  },
+  "bouwmarkt": {
+   "naam": "Bouwmarkt en magazijn: klus Bouwmarkt en elektro",
+   "kamers": [
+    "bouwmarkt",
+    "magazijn"
+   ]
+  },
+  "foodcourt": {
+   "naam": "Foodcourt, 1e verdieping (keuze)",
+   "kamers": [
+    "foodcourt"
+   ]
+  },
+  "galerijstraat": {
+   "naam": "Galerijstraat, 1e verdieping (keuze)",
+   "kamers": [
+    "galerijstraat"
+   ]
+  },
+  "dakterras": {
+   "naam": "Dakterras, 1e verdieping buiten (keuze)",
+   "kamers": [
+    "dakterras"
+   ]
+  },
+  "etalagestraat": {
+   "naam": "Etalagestraat met 8 winkeltjes (eindcheck)",
+   "kamers": [
+    "etalagestraat",
+    "L1",
+    "L2",
+    "L3",
+    "L4",
+    "R1",
+    "R2",
+    "R3",
+    "R4"
+   ]
+  }
+ },
+ "stations": {
+  "terugblik": {
+   "kamer": "lift",
+   "opdrachten": [
+    "W4-TERUG"
+   ]
+  },
+  "uitleg": {
+   "kamer": "klantenservice",
+   "opdrachten": [
+    "W4-INSTR"
+   ]
+  },
+  "kassa": {
+   "kamer": "markthal",
+   "opdrachten": [
+    "O4-INS-01"
+   ]
+  },
+  "tshirt": {
+   "kamer": "markthal",
+   "opdrachten": [
+    "O4-INS-02"
+   ]
+  },
+  "klas": {
+   "kamer": "markthal",
+   "opdrachten": [
+    "O4-INS-03"
+   ]
+  },
+  "weegschaal": {
+   "kamer": "markthal",
+   "opdrachten": [
+    "O4-INS-04"
+   ]
+  },
+  "spaarpot": {
+   "kamer": "markthal",
+   "opdrachten": [
+    "O4-INS-05"
+   ]
+  },
+  "broek": {
+   "kamer": "modehuis",
+   "opdrachten": [
+    "O4-INS-06"
+   ]
+  },
+  "jas": {
+   "kamer": "modehuis",
+   "opdrachten": [
+    "O4-INS-07"
+   ]
+  },
+  "quiz": {
+   "kamer": "foyer",
+   "opdrachten": [
+    "O4-INS-08"
+   ]
+  },
+  "sneakers": {
+   "kamer": "modehuis",
+   "opdrachten": [
+    "O4-INS-09"
+   ]
+  },
+  "bioscoop": {
+   "kamer": "foyer",
+   "opdrachten": [
+    "O4-INS-10"
+   ]
+  },
+  "festival": {
+   "kamer": "mediaplein",
+   "opdrachten": [
+    "O4-NIV-05"
+   ]
+  },
+  "krant": {
+   "kamer": "mediaplein",
+   "opdrachten": [
+    "O4-NIV-06"
+   ]
+  },
+  "omroepen": {
+   "kamer": "mediaplein",
+   "opdrachten": [
+    "O4-NIV-10"
+   ]
+  },
+  "kapsalon": {
+   "kamer": "drogist",
+   "opdrachten": [
+    "O4-NIV-01"
+   ]
+  },
+  "chocodrank": {
+   "kamer": "drogist",
+   "opdrachten": [
+    "O4-NIV-07"
+   ]
+  },
+  "styling": {
+   "kamer": "drogist",
+   "opdrachten": [
+    "O4-NIV-09"
+   ]
+  },
+  "dozen": {
+   "kamer": "bouwmarkt",
+   "opdrachten": [
+    "O4-NIV-02"
+   ]
+  },
+  "rode-deuren": {
+   "kamer": "bouwmarkt",
+   "opdrachten": [
+    "O4-NIV-03"
+   ]
+  },
+  "telefoon": {
+   "kamer": "bouwmarkt",
+   "opdrachten": [
+    "O4-NIV-04"
+   ]
+  },
+  "laptop": {
+   "kamer": "bouwmarkt",
+   "opdrachten": [
+    "O4-NIV-08"
+   ]
+  },
+  "snoepwinkel": {
+   "kamer": "foodcourt",
+   "opdrachten": [
+    "O4-EXP-03"
+   ]
+  },
+  "voetbaltafel": {
+   "kamer": "foodcourt",
+   "opdrachten": [
+    "O4-EXP-02"
+   ]
+  },
+  "creme": {
+   "kamer": "galerijstraat",
+   "opdrachten": [
+    "O4-EXP-08"
+   ]
+  },
+  "energie": {
+   "kamer": "galerijstraat",
+   "opdrachten": [
+    "O4-EXP-06"
+   ]
+  },
+  "reisbureau": {
+   "kamer": "galerijstraat",
+   "opdrachten": [
+    "O4-EXP-07a",
+    "O4-EXP-07b"
+   ]
+  },
+  "griep": {
+   "kamer": "galerijstraat",
+   "opdrachten": [
+    "O4-EXP-05"
+   ]
+  },
+  "offerte": {
+   "kamer": "dakterras",
+   "opdrachten": [
+    "O4-EXP-04"
+   ]
+  },
+  "reuzenrad": {
+   "kamer": "dakterras",
+   "opdrachten": [
+    "O4-EXP-01"
+   ]
+  },
+  "vormen": {
+   "kamer": "dakterras",
+   "opdrachten": [
+    "O4-PUZ-01"
+   ]
+  },
+  "lucifers": {
+   "kamer": "dakterras",
+   "opdrachten": [
+    "O4-PUZ-02"
+   ]
+  },
+  "actiekraam": {
+   "kamer": "dakterras",
+   "opdrachten": [
+    "O4-PRA-02"
+   ]
+  },
+  "drie-winkels": {
+   "kamer": "galerijstraat",
+   "opdrachten": [
+    "O4-PRA-01a",
+    "O4-PRA-01b",
+    "O4-PRA-01c",
+    "O4-PRA-01d",
+    "O4-PRA-01e",
+    "O4-PRA-01f",
+    "O4-PRA-01g",
+    "O4-PRA-01h",
+    "O4-PRA-01i",
+    "O4-PRA-01j"
+   ]
+  },
+  "sandalen": {
+   "kamer": "etalagestraat",
+   "opdrachten": [
+    "O4-EIN-01"
+   ]
+  },
+  "badslippers": {
+   "kamer": "etalagestraat",
+   "opdrachten": [
+    "O4-EIN-02"
+   ]
+  },
+  "kerstboom": {
+   "kamer": "etalagestraat",
+   "opdrachten": [
+    "O4-EIN-03"
+   ]
+  },
+  "waterverbruik": {
+   "kamer": "etalagestraat",
+   "opdrachten": [
+    "O4-EIN-04",
+    "O4-EIN-05"
+   ]
+  },
+  "reizigers": {
+   "kamer": "etalagestraat",
+   "opdrachten": [
+    "O4-EIN-06"
+   ]
+  },
+  "toets": {
+   "kamer": "etalagestraat",
+   "opdrachten": [
+    "O4-EIN-07"
+   ]
+  },
+  "netwerk": {
+   "kamer": "etalagestraat",
+   "opdrachten": [
+    "O4-EIN-08"
+   ]
+  },
+  "pretpark": {
+   "kamer": "etalagestraat",
+   "opdrachten": [
+    "O4-EIN-09"
+   ]
+  },
+  "loon": {
+   "kamer": "etalagestraat",
+   "opdrachten": [
+    "O4-EIN-10"
+   ]
+  },
+  "boek": {
+   "kamer": "etalagestraat",
+   "opdrachten": [
+    "O4-EIN-11"
+   ]
+  }
+ },
+ "klussen": [
+  {
+   "id": "media",
+   "naam": "Nieuws en media",
+   "kleur": "#5aa9ff",
+   "kamer": "mediaplein",
+   "stations": [
+    "festival",
+    "krant",
+    "omroepen"
+   ]
+  },
+  {
+   "id": "verzorging",
+   "naam": "Kapper en drogist",
+   "kleur": "#2ec4b6",
+   "kamer": "drogist",
+   "stations": [
+    "kapsalon",
+    "chocodrank",
+    "styling"
+   ]
+  },
+  {
+   "id": "elektro",
+   "naam": "Bouwmarkt en elektro",
+   "kleur": "#ffc94d",
+   "kamer": "bouwmarkt",
+   "stations": [
+    "dozen",
+    "rode-deuren",
+    "telefoon",
+    "laptop"
+   ]
+  }
+ ]
+}
