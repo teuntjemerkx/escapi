@@ -2,7 +2,7 @@
 import { useId } from 'react';
 
 /** Het adres waarop het spel online staat. Draait het spel op een echt webadres, dan tonen we dat adres. */
-export const DOMEIN = 'escapi.vercel.app';
+export const DOMEIN = 'escapi-nu.vercel.app';
 export function domein() {
   try {
     const { hostname, protocol } = location;
