@@ -34,6 +34,12 @@ export type Kwaliteit = 'hoog' | 'midden' | 'laag';
  */
 export const sfeerFx = { korrel: 0, aberratie: 0, vignet: 0 };
 
+// Veiligheid: geen enkel materiaal mag oneindig fel of negatief worden (een felle glans van de zaklamp op metaal kan op
+// sommige videokaarten boven het maximum van de beeldbuffer komen; de gloed smeert dat dan over het hele beeld uit).
+if (!THREE.ShaderChunk.opaque_fragment.includes('ESCAPI_GRENS')) {
+  THREE.ShaderChunk.opaque_fragment += '\n// ESCAPI_GRENS\ngl_FragColor.rgb = min( max( gl_FragColor.rgb, vec3( 0.0 ) ), vec3( 512.0 ) );\n';
+}
+
 /** Hoogste pixeldichtheid per stand (de resolutie gaat vanzelf omlaag als het te zwaar is). */
 export const MAX_DPR: Record<Kwaliteit, number> = { hoog: 2, midden: 1.5, laag: 1 };
 export const MIN_DPR = 0.7;
@@ -55,6 +61,7 @@ export class Beeld {
   verzadiging: HueSaturationEffect;
   contrast: BrightnessContrastEffect;
   aberratie: ChromaticAberrationEffect;
+  randKleur: EffectPass;
   vignet: VignetteEffect;
   kwaliteit: Kwaliteit = 'midden';
 
@@ -113,10 +120,10 @@ export class Beeld {
     this.composer.addPass(this.maatje);
 
     this.bloom = new BloomEffect({ mipmapBlur: true, luminanceThreshold: 1.0, luminanceSmoothing: 0.3, intensity: 0.7, radius: 0.75, levels: 6 });
-    // AgX: filmische kleurweergave (zachte hooglichten, natuurlijke lucht); iets meer contrast en kleur zodat het niet flets wordt
-    const contrast = new BrightnessContrastEffect({ brightness: 0, contrast: 0.12 });
-    const verzadiging = new HueSaturationEffect({ hue: 0, saturation: 0.18 });
-    const tonen = new ToneMappingEffect({ mode: ToneMappingMode.AGX });
+    // Neutral: werkt op elke videokaart. (AgX maakte op sommige kaarten de donkerste pixels wit.)
+    const contrast = new BrightnessContrastEffect({ brightness: 0, contrast: 0.08 });
+    const verzadiging = new HueSaturationEffect({ hue: 0, saturation: 0.09 });
+    const tonen = new ToneMappingEffect({ mode: ToneMappingMode.NEUTRAL });
     this.tonen = tonen;
     this.verzadiging = verzadiging;
     this.contrast = contrast;
@@ -126,8 +133,13 @@ export class Beeld {
     this.korrel = new NoiseEffect({ blendFunction: BlendFunction.OVERLAY, premultiply: false });
     this.korrel.blendMode.opacity.value = 0;
     this.aberratie = new ChromaticAberrationEffect({ offset: new THREE.Vector2(0, 0), radialModulation: true, modulationOffset: 0.25 });
-    this.effecten = new EffectPass(camera, this.bloom, tonen, contrast, verzadiging, this.aberratie, vignet, this.korrel);
+    this.effecten = new EffectPass(camera, this.bloom, tonen, contrast, verzadiging, vignet, this.korrel);
     this.composer.addPass(this.effecten);
+    // kleurranden in een eigen stap ná de kleurberekening: het effect leest het beeld opnieuw in, en moet dan het
+    // afgewerkte beeld lezen (anders komen rood en blauw aan de rand onbewerkt in beeld). Staat alleen aan als het nodig is.
+    this.randKleur = new EffectPass(camera, this.aberratie);
+    this.randKleur.enabled = false;
+    this.composer.addPass(this.randKleur);
 
     this.smaa = new SMAAEffect({ preset: SMAAPreset.MEDIUM });
     this.randen = new EffectPass(camera, this.smaa);
@@ -158,6 +170,7 @@ export class Beeld {
     this.korrel.blendMode.opacity.value = sfeerFx.korrel * 0.55;
     const a = sfeerFx.aberratie * 0.006;
     this.aberratie.offset.set(a, a * 0.6);
+    this.randKleur.enabled = a > 0.0002;
     this.vignet.darkness = 0.42 + sfeerFx.vignet * 0.5;
     this.sluier.enabled = laag.sluier;
     this.stage.enabled = laag.stage;

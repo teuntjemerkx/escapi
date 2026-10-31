@@ -115,7 +115,7 @@ function BosSchrik() {
     const { x, z } = speler.pos;
     if (z < 35.6 && z > 29 && Math.abs(x) < 3.2) {
       gedaan.current = true;
-      schrik(SCHRIKBOOM[0] + 0.6, SCHRIKBOOM[1] - 0.6, 'BOE! Haha, schrok je? Ik ben het maar. Kijk, daar in het meer: Slot Maansteyn!');
+      schrik(SCHRIKBOOM[0] + 0.6, SCHRIKBOOM[1] - 0.6, 'Sst… Schrok je? Ik ben het maar, Boo. Kijk, daar in het meer: Slot Maansteyn. Daar moet je naartoe.');
     }
   });
   return null;
