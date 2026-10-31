@@ -697,22 +697,24 @@ export function Vuurvliegjes({ gebied, n = 50, kleur = '#d8ff7a', hoogte = [0.3,
       uniforms: { uTijd: { value: 0 }, uPx: { value: 900 }, uGrootte: { value: grootte }, uKleur: { value: new THREE.Color(kleur) } },
       vertexShader: /* glsl */ `
         uniform float uTijd; uniform float uPx; uniform float uGrootte;
-        attribute float aFase; varying float vA;
+        attribute float aFase; varying float vA; varying float vN;
         void main() {
           vec3 p = position;
           float t = uTijd * 0.5 + aFase * 40.0;
           p += vec3(sin(t * 0.9) * 0.9, sin(t * 1.3 + aFase * 7.0) * 0.35, cos(t * 0.7) * 0.9);
           vec4 mv = modelViewMatrix * vec4(p, 1.0);
           gl_Position = projectionMatrix * mv;
+          // vlak voor de camera vervagen ze (anders zie je grote groene vlekken)
           vA = pow(0.5 + 0.5 * sin(uTijd * (1.5 + aFase * 2.0) + aFase * 30.0), 3.0);
-          gl_PointSize = uGrootte * uPx / -mv.z * (0.6 + vA);
+          vN = smoothstep(0.8, 2.5, -mv.z);
+          gl_PointSize = min(uGrootte * uPx / -mv.z * (0.6 + vA), 28.0);
         }`,
       fragmentShader: /* glsl */ `
-        uniform vec3 uKleur; varying float vA;
+        uniform vec3 uKleur; varying float vA; varying float vN;
         void main() {
           float d = length(gl_PointCoord - 0.5);
           float a = smoothstep(0.5, 0.0, d);
-          gl_FragColor = vec4(uKleur * (0.6 + a), a * a * (0.15 + vA));
+          gl_FragColor = vec4(uKleur * (0.6 + a), a * a * (0.15 + vA) * vN);
         }`,
       transparent: true,
       depthWrite: false,

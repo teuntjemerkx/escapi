@@ -364,7 +364,7 @@ export function ZaklampInHand() {
               <mesh key={i} geometry={d.geo} material={d.mat} renderOrder={1000 + i} frustumCulled={false} />
             ))}
           </group>
-          <sprite ref={gloed} material={gloedMat} scale={0.16} renderOrder={1100} visible={false} />
+          <sprite ref={gloed} material={gloedMat} scale={0.09} renderOrder={1100} visible={false} />
           {/* een beetje licht van de lamp zelf op je hand, en een vleugje licht uit de omgeving */}
           <pointLight ref={handLicht} color="#ffe2b8" intensity={0.14} distance={0.7} decay={2} />
           <hemisphereLight args={['#aab8e0', '#1c1612', 0.12]} />
